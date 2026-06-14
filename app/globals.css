@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────────────────────────── Base ───────────────────────────── */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-[#F4F6F9] text-navy antialiased;
+    font-feature-settings: "ss01", "cv01", "tnum";
+  }
+  .dark body {
+    @apply bg-navy-950 text-slate-100;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  /* Foco accesible y consistente en toda la app. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-pitch ring-offset-2 ring-offset-white;
+  }
+  .dark :focus-visible {
+    @apply ring-offset-navy-950;
+  }
+
+  ::selection {
+    @apply bg-pitch/25;
+  }
+}
+
+/* ─────────────────────────── Componentes ─────────────────────────── */
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-card transition-colors;
+  }
+  .dark .card {
+    @apply border-white/10 bg-navy-900;
+  }
+
+  .card-hover {
+    @apply transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card-hover;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.16em] text-pitch-600;
+  }
+  .dark .eyebrow {
+    @apply text-pitch-300;
+  }
+
+  .section-title {
+    @apply font-display text-2xl font-bold tracking-tight sm:text-3xl;
+  }
+
+  .stat-num {
+    @apply font-display tabular-nums;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-pitch text-white shadow-sm hover:bg-pitch-600;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-navy-950 shadow-sm hover:bg-gold-600;
+  }
+  .btn-ghost {
+    @apply btn border border-slate-300 bg-white text-navy hover:border-pitch hover:text-pitch;
+  }
+  .dark .btn-ghost {
+    @apply border-white/15 bg-transparent text-slate-100 hover:border-pitch-300 hover:text-pitch-300;
+  }
+
+  /* Pista de barra de probabilidad / estadística. */
+  .prob-track {
+    @apply relative h-2 w-full overflow-hidden rounded-full bg-slate-200;
+  }
+  .dark .prob-track {
+    @apply bg-white/10;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+
+  .data-link {
+    @apply font-semibold text-pitch-600 underline-offset-4 hover:underline;
+  }
+  .dark .data-link {
+    @apply text-pitch-300;
+  }
+
+  /* Oculta la barra de scroll en carruseles de filtros móviles. */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* ─────────────────────────── Utilidades ─────────────────────────── */
+@layer utilities {
+  /* Motivo sutil de líneas de campo para cabeceras oscuras. */
+  .bg-field {
+    background-image:
+      radial-gradient(circle at 50% 120%, rgba(11, 161, 74, 0.25), transparent 60%),
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 86px,
+        rgba(255, 255, 255, 0.04) 86px,
+        rgba(255, 255, 255, 0.04) 88px
+      );
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
