@@ -6,6 +6,7 @@ type TeamSeed = {
   slug: string;
   name: string;
   flag: string;
+  isoCode: string;
   group: string;
   confederation: Confederation;
   fifaRank: number;
@@ -16,65 +17,65 @@ type TeamSeed = {
 // Grupos reales del Mundial 2026 según el calendario público de FIFA/Wikipedia.
 // Las métricas de modelo se derivan de ranking/grupo; no son resultados reales.
 const teamSeeds: TeamSeed[] = [
-  { slug: "mexico", name: "México", flag: "🇲🇽", group: "A", confederation: "CONCACAF", fifaRank: 14, condition: "Anfitrión", keyPlayer: "Raúl Jiménez" },
-  { slug: "sudafrica", name: "Sudáfrica", flag: "🇿🇦", group: "A", confederation: "CAF", fifaRank: 60 },
-  { slug: "corea-del-sur", name: "Corea del Sur", flag: "🇰🇷", group: "A", confederation: "AFC", fifaRank: 25, keyPlayer: "Son Heung-min" },
-  { slug: "chequia", name: "Chequia", flag: "🇨🇿", group: "A", confederation: "UEFA", fifaRank: 40, keyPlayer: "Patrik Schick" },
+  { slug: "mexico", name: "México", flag: "🇲🇽", isoCode: "mx", group: "A", confederation: "CONCACAF", fifaRank: 14, condition: "Anfitrión", keyPlayer: "Raúl Jiménez" },
+  { slug: "sudafrica", name: "Sudáfrica", flag: "🇿🇦", isoCode: "za", group: "A", confederation: "CAF", fifaRank: 60 },
+  { slug: "corea-del-sur", name: "Corea del Sur", flag: "🇰🇷", isoCode: "kr", group: "A", confederation: "AFC", fifaRank: 25, keyPlayer: "Son Heung-min" },
+  { slug: "chequia", name: "Chequia", flag: "🇨🇿", isoCode: "cz", group: "A", confederation: "UEFA", fifaRank: 40, keyPlayer: "Patrik Schick" },
 
-  { slug: "canada", name: "Canadá", flag: "🇨🇦", group: "B", confederation: "CONCACAF", fifaRank: 28, condition: "Anfitrión", keyPlayer: "Alphonso Davies" },
-  { slug: "bosnia-herzegovina", name: "Bosnia y Herzegovina", flag: "🇧🇦", group: "B", confederation: "UEFA", fifaRank: 62 },
-  { slug: "catar", name: "Catar", flag: "🇶🇦", group: "B", confederation: "AFC", fifaRank: 53, keyPlayer: "Akram Afif" },
-  { slug: "suiza", name: "Suiza", flag: "🇨🇭", group: "B", confederation: "UEFA", fifaRank: 19, keyPlayer: "Granit Xhaka" },
+  { slug: "canada", name: "Canadá", flag: "🇨🇦", isoCode: "ca", group: "B", confederation: "CONCACAF", fifaRank: 28, condition: "Anfitrión", keyPlayer: "Alphonso Davies" },
+  { slug: "bosnia-herzegovina", name: "Bosnia y Herzegovina", flag: "🇧🇦", isoCode: "ba", group: "B", confederation: "UEFA", fifaRank: 62 },
+  { slug: "catar", name: "Catar", flag: "🇶🇦", isoCode: "qa", group: "B", confederation: "AFC", fifaRank: 53, keyPlayer: "Akram Afif" },
+  { slug: "suiza", name: "Suiza", flag: "🇨🇭", isoCode: "ch", group: "B", confederation: "UEFA", fifaRank: 19, keyPlayer: "Granit Xhaka" },
 
-  { slug: "brasil", name: "Brasil", flag: "🇧🇷", group: "C", confederation: "CONMEBOL", fifaRank: 5, keyPlayer: "Vinícius Júnior" },
-  { slug: "marruecos", name: "Marruecos", flag: "🇲🇦", group: "C", confederation: "CAF", fifaRank: 12, keyPlayer: "Achraf Hakimi" },
-  { slug: "haiti", name: "Haití", flag: "🇭🇹", group: "C", confederation: "CONCACAF", fifaRank: 83 },
-  { slug: "escocia", name: "Escocia", flag: "🏴", group: "C", confederation: "UEFA", fifaRank: 39 },
+  { slug: "brasil", name: "Brasil", flag: "🇧🇷", isoCode: "br", group: "C", confederation: "CONMEBOL", fifaRank: 5, keyPlayer: "Vinícius Júnior" },
+  { slug: "marruecos", name: "Marruecos", flag: "🇲🇦", isoCode: "ma", group: "C", confederation: "CAF", fifaRank: 12, keyPlayer: "Achraf Hakimi" },
+  { slug: "haiti", name: "Haití", flag: "🇭🇹", isoCode: "ht", group: "C", confederation: "CONCACAF", fifaRank: 83 },
+  { slug: "escocia", name: "Escocia", flag: "🏴", isoCode: "gb-sct", group: "C", confederation: "UEFA", fifaRank: 39 },
 
-  { slug: "estados-unidos", name: "Estados Unidos", flag: "🇺🇸", group: "D", confederation: "CONCACAF", fifaRank: 13, condition: "Anfitrión", keyPlayer: "Folarin Balogun" },
-  { slug: "paraguay", name: "Paraguay", flag: "🇵🇾", group: "D", confederation: "CONMEBOL", fifaRank: 48 },
-  { slug: "australia", name: "Australia", flag: "🇦🇺", group: "D", confederation: "AFC", fifaRank: 24 },
-  { slug: "turquia", name: "Turquía", flag: "🇹🇷", group: "D", confederation: "UEFA", fifaRank: 27 },
+  { slug: "estados-unidos", name: "Estados Unidos", flag: "🇺🇸", isoCode: "us", group: "D", confederation: "CONCACAF", fifaRank: 13, condition: "Anfitrión", keyPlayer: "Folarin Balogun" },
+  { slug: "paraguay", name: "Paraguay", flag: "🇵🇾", isoCode: "py", group: "D", confederation: "CONMEBOL", fifaRank: 48 },
+  { slug: "australia", name: "Australia", flag: "🇦🇺", isoCode: "au", group: "D", confederation: "AFC", fifaRank: 24 },
+  { slug: "turquia", name: "Turquía", flag: "🇹🇷", isoCode: "tr", group: "D", confederation: "UEFA", fifaRank: 27 },
 
-  { slug: "alemania", name: "Alemania", flag: "🇩🇪", group: "E", confederation: "UEFA", fifaRank: 9, keyPlayer: "Jamal Musiala" },
-  { slug: "curazao", name: "Curaçao", flag: "🇨🇼", group: "E", confederation: "CONCACAF", fifaRank: 82 },
-  { slug: "costa-de-marfil", name: "Costa de Marfil", flag: "🇨🇮", group: "E", confederation: "CAF", fifaRank: 42 },
-  { slug: "ecuador", name: "Ecuador", flag: "🇪🇨", group: "E", confederation: "CONMEBOL", fifaRank: 31 },
+  { slug: "alemania", name: "Alemania", flag: "🇩🇪", isoCode: "de", group: "E", confederation: "UEFA", fifaRank: 9, keyPlayer: "Jamal Musiala" },
+  { slug: "curazao", name: "Curaçao", flag: "🇨🇼", isoCode: "cw", group: "E", confederation: "CONCACAF", fifaRank: 82 },
+  { slug: "costa-de-marfil", name: "Costa de Marfil", flag: "🇨🇮", isoCode: "ci", group: "E", confederation: "CAF", fifaRank: 42 },
+  { slug: "ecuador", name: "Ecuador", flag: "🇪🇨", isoCode: "ec", group: "E", confederation: "CONMEBOL", fifaRank: 31 },
 
-  { slug: "paises-bajos", name: "Países Bajos", flag: "🇳🇱", group: "F", confederation: "UEFA", fifaRank: 7, keyPlayer: "Virgil van Dijk" },
-  { slug: "japon", name: "Japón", flag: "🇯🇵", group: "F", confederation: "AFC", fifaRank: 18 },
-  { slug: "suecia", name: "Suecia", flag: "🇸🇪", group: "F", confederation: "UEFA", fifaRank: 32 },
-  { slug: "tunez", name: "Túnez", flag: "🇹🇳", group: "F", confederation: "CAF", fifaRank: 46 },
+  { slug: "paises-bajos", name: "Países Bajos", flag: "🇳🇱", isoCode: "nl", group: "F", confederation: "UEFA", fifaRank: 7, keyPlayer: "Virgil van Dijk" },
+  { slug: "japon", name: "Japón", flag: "🇯🇵", isoCode: "jp", group: "F", confederation: "AFC", fifaRank: 18 },
+  { slug: "suecia", name: "Suecia", flag: "🇸🇪", isoCode: "se", group: "F", confederation: "UEFA", fifaRank: 32 },
+  { slug: "tunez", name: "Túnez", flag: "🇹🇳", isoCode: "tn", group: "F", confederation: "CAF", fifaRank: 46 },
 
-  { slug: "belgica", name: "Bélgica", flag: "🇧🇪", group: "G", confederation: "UEFA", fifaRank: 8, keyPlayer: "Jérémy Doku" },
-  { slug: "egipto", name: "Egipto", flag: "🇪🇬", group: "G", confederation: "CAF", fifaRank: 33, keyPlayer: "Mohamed Salah" },
-  { slug: "iran", name: "Irán", flag: "🇮🇷", group: "G", confederation: "AFC", fifaRank: 20, keyPlayer: "Mehdi Taremi" },
-  { slug: "nueva-zelanda", name: "Nueva Zelanda", flag: "🇳🇿", group: "G", confederation: "OFC", fifaRank: 89, keyPlayer: "Chris Wood" },
+  { slug: "belgica", name: "Bélgica", flag: "🇧🇪", isoCode: "be", group: "G", confederation: "UEFA", fifaRank: 8, keyPlayer: "Jérémy Doku" },
+  { slug: "egipto", name: "Egipto", flag: "🇪🇬", isoCode: "eg", group: "G", confederation: "CAF", fifaRank: 33, keyPlayer: "Mohamed Salah" },
+  { slug: "iran", name: "Irán", flag: "🇮🇷", isoCode: "ir", group: "G", confederation: "AFC", fifaRank: 20, keyPlayer: "Mehdi Taremi" },
+  { slug: "nueva-zelanda", name: "Nueva Zelanda", flag: "🇳🇿", isoCode: "nz", group: "G", confederation: "OFC", fifaRank: 89, keyPlayer: "Chris Wood" },
 
-  { slug: "espana", name: "España", flag: "🇪🇸", group: "H", confederation: "UEFA", fifaRank: 2, keyPlayer: "Pedri" },
-  { slug: "cabo-verde", name: "Cabo Verde", flag: "🇨🇻", group: "H", confederation: "CAF", fifaRank: 70 },
-  { slug: "arabia-saudita", name: "Arabia Saudita", flag: "🇸🇦", group: "H", confederation: "AFC", fifaRank: 58 },
-  { slug: "uruguay", name: "Uruguay", flag: "🇺🇾", group: "H", confederation: "CONMEBOL", fifaRank: 15, keyPlayer: "Federico Valverde" },
+  { slug: "espana", name: "España", flag: "🇪🇸", isoCode: "es", group: "H", confederation: "UEFA", fifaRank: 2, keyPlayer: "Pedri" },
+  { slug: "cabo-verde", name: "Cabo Verde", flag: "🇨🇻", isoCode: "cv", group: "H", confederation: "CAF", fifaRank: 70 },
+  { slug: "arabia-saudita", name: "Arabia Saudita", flag: "🇸🇦", isoCode: "sa", group: "H", confederation: "AFC", fifaRank: 58 },
+  { slug: "uruguay", name: "Uruguay", flag: "🇺🇾", isoCode: "uy", group: "H", confederation: "CONMEBOL", fifaRank: 15, keyPlayer: "Federico Valverde" },
 
-  { slug: "francia", name: "Francia", flag: "🇫🇷", group: "I", confederation: "UEFA", fifaRank: 3, keyPlayer: "Kylian Mbappé" },
-  { slug: "senegal", name: "Senegal", flag: "🇸🇳", group: "I", confederation: "CAF", fifaRank: 17 },
-  { slug: "irak", name: "Irak", flag: "🇮🇶", group: "I", confederation: "AFC", fifaRank: 59 },
-  { slug: "noruega", name: "Noruega", flag: "🇳🇴", group: "I", confederation: "UEFA", fifaRank: 36, keyPlayer: "Erling Haaland" },
+  { slug: "francia", name: "Francia", flag: "🇫🇷", isoCode: "fr", group: "I", confederation: "UEFA", fifaRank: 3, keyPlayer: "Kylian Mbappé" },
+  { slug: "senegal", name: "Senegal", flag: "🇸🇳", isoCode: "sn", group: "I", confederation: "CAF", fifaRank: 17 },
+  { slug: "irak", name: "Irak", flag: "🇮🇶", isoCode: "iq", group: "I", confederation: "AFC", fifaRank: 59 },
+  { slug: "noruega", name: "Noruega", flag: "🇳🇴", isoCode: "no", group: "I", confederation: "UEFA", fifaRank: 36, keyPlayer: "Erling Haaland" },
 
-  { slug: "argentina", name: "Argentina", flag: "🇦🇷", group: "J", confederation: "CONMEBOL", fifaRank: 1, keyPlayer: "Lionel Messi" },
-  { slug: "argelia", name: "Argelia", flag: "🇩🇿", group: "J", confederation: "CAF", fifaRank: 38 },
-  { slug: "austria", name: "Austria", flag: "🇦🇹", group: "J", confederation: "UEFA", fifaRank: 22 },
-  { slug: "jordania", name: "Jordania", flag: "🇯🇴", group: "J", confederation: "AFC", fifaRank: 63 },
+  { slug: "argentina", name: "Argentina", flag: "🇦🇷", isoCode: "ar", group: "J", confederation: "CONMEBOL", fifaRank: 1, keyPlayer: "Lionel Messi" },
+  { slug: "argelia", name: "Argelia", flag: "🇩🇿", isoCode: "dz", group: "J", confederation: "CAF", fifaRank: 38 },
+  { slug: "austria", name: "Austria", flag: "🇦🇹", isoCode: "at", group: "J", confederation: "UEFA", fifaRank: 22 },
+  { slug: "jordania", name: "Jordania", flag: "🇯🇴", isoCode: "jo", group: "J", confederation: "AFC", fifaRank: 63 },
 
-  { slug: "portugal", name: "Portugal", flag: "🇵🇹", group: "K", confederation: "UEFA", fifaRank: 6, keyPlayer: "Bruno Fernandes" },
-  { slug: "rd-congo", name: "RD Congo", flag: "🇨🇩", group: "K", confederation: "CAF", fifaRank: 55 },
-  { slug: "uzbekistan", name: "Uzbekistán", flag: "🇺🇿", group: "K", confederation: "AFC", fifaRank: 54 },
-  { slug: "colombia", name: "Colombia", flag: "🇨🇴", group: "K", confederation: "CONMEBOL", fifaRank: 10, keyPlayer: "Luis Díaz" },
+  { slug: "portugal", name: "Portugal", flag: "🇵🇹", isoCode: "pt", group: "K", confederation: "UEFA", fifaRank: 6, keyPlayer: "Bruno Fernandes" },
+  { slug: "rd-congo", name: "RD Congo", flag: "🇨🇩", isoCode: "cd", group: "K", confederation: "CAF", fifaRank: 55 },
+  { slug: "uzbekistan", name: "Uzbekistán", flag: "🇺🇿", isoCode: "uz", group: "K", confederation: "AFC", fifaRank: 54 },
+  { slug: "colombia", name: "Colombia", flag: "🇨🇴", isoCode: "co", group: "K", confederation: "CONMEBOL", fifaRank: 10, keyPlayer: "Luis Díaz" },
 
-  { slug: "inglaterra", name: "Inglaterra", flag: "🇬🇧", group: "L", confederation: "UEFA", fifaRank: 4, keyPlayer: "Jude Bellingham" },
-  { slug: "croacia", name: "Croacia", flag: "🇭🇷", group: "L", confederation: "UEFA", fifaRank: 11, keyPlayer: "Luka Modrić" },
-  { slug: "ghana", name: "Ghana", flag: "🇬🇭", group: "L", confederation: "CAF", fifaRank: 47 },
-  { slug: "panama", name: "Panamá", flag: "🇵🇦", group: "L", confederation: "CONCACAF", fifaRank: 35 },
+  { slug: "inglaterra", name: "Inglaterra", flag: "🇬🇧", isoCode: "gb-eng", group: "L", confederation: "UEFA", fifaRank: 4, keyPlayer: "Jude Bellingham" },
+  { slug: "croacia", name: "Croacia", flag: "🇭🇷", isoCode: "hr", group: "L", confederation: "UEFA", fifaRank: 11, keyPlayer: "Luka Modrić" },
+  { slug: "ghana", name: "Ghana", flag: "🇬🇭", isoCode: "gh", group: "L", confederation: "CAF", fifaRank: 47 },
+  { slug: "panama", name: "Panamá", flag: "🇵🇦", isoCode: "pa", group: "L", confederation: "CONCACAF", fifaRank: 35 },
 ];
 
 function normalizedPower(fifaRank: number): number {
@@ -204,6 +205,7 @@ export const teams: Team[] = teamSeeds.map((seed, index) => {
     slug: seed.slug,
     name: seed.name,
     flag: seed.flag,
+    isoCode: seed.isoCode,
     group: seed.group,
     confederation: seed.confederation,
     fifaRank: seed.fifaRank,

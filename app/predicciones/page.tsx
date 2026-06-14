@@ -8,6 +8,7 @@ import PrediccionesClient from "./PrediccionesClient";
 import { predictionsRankedBy, getPrediction } from "@/data/predictions";
 import { getTeam } from "@/data/teams";
 import SeoJsonLd from "@/components/SeoJsonLd";
+import Flag from "@/components/Flag";
 import { collectionPageJsonLd, itemListJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -114,7 +115,9 @@ export default function PrediccionesPage() {
             <div className="card border-pitch/30 bg-pitch/[0.03] p-5 sm:col-span-2 lg:col-span-1">
               <p className="eyebrow">Ejemplo</p>
               <h3 className="mt-2 flex items-center gap-2 font-display text-lg font-bold text-navy dark:text-slate-100">
-                <span aria-hidden>{topTeam.flag}</span> {topTeam.name}
+                <span aria-hidden>
+                  <Flag isoCode={topTeam.isoCode} alt={topTeam.name} width={32} />
+                </span> {topTeam.name}
               </h3>
               <div className="mt-3 space-y-2.5">
                 <StatBar label="Forma reciente" value={factors.form} />

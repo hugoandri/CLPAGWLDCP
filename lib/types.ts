@@ -43,8 +43,9 @@ export interface FaqItem {
 export interface Team {
   slug: string;
   name: string;
-  /** Emoji de bandera — sin logos ni imágenes con copyright. */
   flag: string;
+  /** Código ISO 3166-1 alpha-2 para cargar la bandera desde flagcdn.com. */
+  isoCode: string;
   group: string; // "A" … "L"
   confederation: Confederation;
   fifaRank: number;
@@ -66,6 +67,57 @@ export interface Team {
   style: string;
   quickFacts: QuickFact[];
   faqs: FaqItem[];
+}
+
+export type GoalType = "goal" | "own_goal" | "penalty";
+export type CardType = "yellow" | "red" | "yellow_red";
+export type MatchSide = "home" | "away";
+export type LineupPosition = "GK" | "DEF" | "MID" | "FWD";
+
+export interface GoalEvent {
+  minute: number;
+  team: MatchSide;
+  scorer: string;
+  assist?: string;
+  type: GoalType;
+}
+
+export interface CardEvent {
+  minute: number;
+  team: MatchSide;
+  player: string;
+  type: CardType;
+}
+
+export interface SubEvent {
+  minute: number;
+  team: MatchSide;
+  playerOut: string;
+  playerIn: string;
+}
+
+export interface LineupPlayer {
+  name: string;
+  number?: number;
+  position?: LineupPosition;
+}
+
+export interface MatchStats {
+  possession?: { home: number; away: number };
+  shotsOnTarget?: { home: number; away: number };
+  corners?: { home: number; away: number };
+  passAccuracy?: { home: number; away: number };
+}
+
+export interface MatchDetail {
+  goals: GoalEvent[];
+  cards: CardEvent[];
+  substitutions: SubEvent[];
+  lineup: { home: LineupPlayer[]; away: LineupPlayer[] };
+  stats: MatchStats;
+  aiNotes?: string;
+  confidence: number;
+  evidenceUrl: string;
 }
 
 export interface Match {
@@ -90,6 +142,8 @@ export interface Match {
   /** Minuto actual si está en vivo. */
   minute?: number;
   whatToWatch: string[];
+  /** Ficha detallada del partido (disponible solo para partidos finalizados con datos de IA). */
+  detail?: MatchDetail;
 }
 
 export interface GroupStandingInput {

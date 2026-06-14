@@ -4,6 +4,7 @@ import { getTeam } from "@/data/teams";
 import { cn, formatDayMonth } from "@/lib/utils";
 import ProbBar from "@/components/ProbBar";
 import StatusBadge from "@/components/StatusBadge";
+import Flag from "@/components/Flag";
 
 interface MatchCardProps {
   match: Match;
@@ -20,9 +21,9 @@ function TeamSide({ team, align }: { team: Team; align: "left" | "right" }) {
     >
       <span
         aria-hidden
-        className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-slate-100 text-2xl dark:bg-white/10"
+        className="grid h-10 w-10 shrink-0 place-items-center rounded-lg"
       >
-        {team.flag}
+        <Flag isoCode={team.isoCode} alt={team.name} width={40} />
       </span>
       <div className="min-w-0">
         <p className="truncate font-semibold leading-tight text-navy dark:text-slate-100">

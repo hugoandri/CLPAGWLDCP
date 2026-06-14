@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { teams, getTeam, getTeamsByGroup } from "@/data/teams";
-import { getUpcomingMatchesByTeam } from "@/data/matches";
+import { matches, getUpcomingMatchesByTeam } from "@/data/matches";
+import { getTeamNote, type TeamPerformanceTrend } from "@/data/team-notes";
+import Flag from "@/components/Flag";
 import { getPrediction } from "@/data/predictions";
 import type { FormResult } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -67,11 +69,18 @@ const STAT_LABELS = [
   { key: "finishing", label: "Efectividad" },
 ] as const;
 
+function noteTone(trend: TeamPerformanceTrend): string {
+  if (trend === "positive") return "border-pitch/30 bg-pitch/[0.08] text-pitch-800 dark:text-pitch-200";
+  if (trend === "negative") return "border-red-200 bg-red-50 text-red-800 dark:border-red-400/20 dark:bg-red-400/10 dark:text-red-200";
+  return "border-slate-200 bg-slate-50 text-slate-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200";
+}
+
 export default function TeamPage({ params }: { params: { slug: string } }) {
   const team = getTeam(params.slug);
   if (!team) notFound();
 
   const prediction = getPrediction(team.slug);
+  const teamNote = getTeamNote(team.slug);
   const upcoming = getUpcomingMatchesByTeam(team.slug, 3);
   const rivals = getTeamsByGroup(team.group).filter((t) => t.slug !== team.slug);
 
@@ -124,7 +133,9 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
       {/* Cabecera */}
       <section className="mt-4 overflow-hidden rounded-2xl bg-field bg-navy-950 p-6 text-white sm:p-8">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-          <span aria-hidden className="text-7xl">{team.flag}</span>
+          <span aria-hidden className="flex shrink-0">
+            <Flag isoCode={team.isoCode} alt={team.name} width={96} />
+          </span>
           <div className="flex-1">
             <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
               {team.name}
@@ -149,6 +160,30 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
       <div className="my-6">
         <AdSlot slotName="seleccion-top-banner" format="leaderboard" />
       </div>
+
+      {teamNote && (
+        <section className={cn("mb-8 rounded-2xl border p-5", noteTone(teamNote.trend))}>
+          <p className="text-xs font-semibold uppercase tracking-wider opacity-70">
+            Nota actualizada por IA
+          </p>
+          <h2 className="mt-1 font-display text-xl font-extrabold">
+            {teamNote.headline}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed opacity-90">
+            {teamNote.body}
+          </p>
+          {teamNote.evidenceUrls[0] && (
+            <a
+              href={teamNote.evidenceUrls[0]}
+              className="mt-3 inline-block text-xs font-semibold underline underline-offset-4 opacity-80 hover:opacity-100"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Ver fuente
+            </a>
+          )}
+        </section>
+      )}
 
       {/* Datos rápidos */}
       <section className="mb-8">
@@ -331,7 +366,9 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
                     href={`/selecciones/${r.slug}`}
                     className="flex items-center gap-2 rounded-lg px-2 py-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-white/5"
                   >
-                    <span aria-hidden className="text-lg">{r.flag}</span>
+                    <span aria-hidden>
+                      <Flag isoCode={r.isoCode} alt={r.name} width={28} />
+                    </span>
                     <span className="text-navy dark:text-slate-100">{r.name}</span>
                     <span className="ml-auto text-xs text-slate-400">#{r.internalRank}</span>
                   </Link>

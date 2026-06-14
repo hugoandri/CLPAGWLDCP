@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ComputedStanding } from "@/lib/types";
 import { getTeam } from "@/data/teams";
 import { cn } from "@/lib/utils";
+import Flag from "@/components/Flag";
 
 interface GroupTableProps {
   standings: ComputedStanding[];
@@ -76,8 +77,8 @@ export default function GroupTable({
                       href={`/selecciones/${team.slug}`}
                       className="inline-flex items-center gap-2 font-semibold text-navy hover:text-pitch dark:text-slate-100 dark:hover:text-pitch-300"
                     >
-                      <span aria-hidden className="text-lg">
-                        {team.flag}
+                      <span aria-hidden className="inline-flex">
+                        <Flag isoCode={team.isoCode} alt={team.name} width={28} />
                       </span>
                       <span className="max-w-[7.5rem] truncate sm:max-w-none">
                         {team.name}

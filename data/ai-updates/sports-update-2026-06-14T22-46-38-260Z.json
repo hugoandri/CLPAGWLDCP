@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-06-14T22:46:38.260Z",
+  "apply": true,
+  "sources": [
+    "https://www.theguardian.com/football/world-cup-2026",
+    "https://www.bbc.co.uk/sport/football/world-cup",
+    "https://www.skysports.com/football/world-cup/2026",
+    "https://www.cbssports.com/soccer/world-cup/"
+  ],
+  "matchUpdates": [
+    {
+      "slug": "haiti-vs-escocia",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "evidenceUrl": "https://www.theguardian.com/football/world-cup-2026",
+      "confidence": 0.9
+    },
+    {
+      "slug": "australia-vs-turquia",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://www.theguardian.com/football/world-cup-2026",
+      "confidence": 0.9
+    },
+    {
+      "slug": "alemania-vs-curazao",
+      "status": "finished",
+      "homeScore": 7,
+      "awayScore": 1,
+      "evidenceUrl": "https://www.theguardian.com/football/world-cup-2026",
+      "confidence": 0.9
+    },
+    {
+      "slug": "paises-bajos-vs-japon",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "evidenceUrl": "https://www.theguardian.com/football/world-cup-2026",
+      "confidence": 0.9
+    }
+  ],
+  "teamNotes": [
+    {
+      "teamSlug": "escocia",
+      "headline": "Escocia gana su primer partido",
+      "body": "Escocia derrotó a Haití en su primer partido de la Copa Mundial 2026",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/world-cup-2026"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "teamSlug": "australia",
+      "headline": "Australia comienza con victoria",
+      "body": "Australia derrotó a Turquía en su primer partido de la Copa Mundial 2026",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/world-cup-2026"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "teamSlug": "alemania",
+      "headline": "Alemania golea a Curazao",
+      "body": "Alemania derrotó a Curazao con un marcador de 7-1 en su primer partido de la Copa Mundial 2026",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/world-cup-2026"
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

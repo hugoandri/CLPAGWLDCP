@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-06-14T23:09:41.553Z",
+  "apply": false,
+  "sources": [
+    "https://www.theguardian.com/football/world-cup-2026",
+    "https://www.bbc.co.uk/sport/football/world-cup",
+    "https://www.cbssports.com/soccer/world-cup/"
+  ],
+  "matchUpdates": [
+    {
+      "slug": "haiti-vs-escocia",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup",
+      "confidence": 0.9,
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Escocia gana su partido inaugural contra Haití en el Mundial 2026.",
+        "confidence": 0.9,
+        "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup"
+      }
+    },
+    {
+      "slug": "alemania-vs-curazao",
+      "status": "finished",
+      "homeScore": 7,
+      "awayScore": 1,
+      "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup",
+      "confidence": 0.9,
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Alemania golea a Curazao en su partido inaugural en el Mundial 2026.",
+        "confidence": 0.9,
+        "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup"
+      }
+    },
+    {
+      "slug": "australia-vs-turquia",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup",
+      "confidence": 0.9,
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Australia gana su partido inaugural contra Turquía en el Mundial 2026.",
+        "confidence": 0.9,
+        "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup"
+      }
+    },
+    {
+      "slug": "paises-bajos-vs-japon",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup",
+      "confidence": 0.9,
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Países Bajos y Japón empatan en su partido inaugural en el Mundial 2026.",
+        "confidence": 0.9,
+        "evidenceUrl": "https://www.bbc.co.uk/sport/football/world-cup"
+      }
+    }
+  ],
+  "teamNotes": [
+    {
+      "teamSlug": "escocia",
+      "headline": "Escocia gana su partido inaugural",
+      "body": "Escocia gana su partido inaugural contra Haití en el Mundial 2026.",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.bbc.co.uk/sport/football/world-cup"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "teamSlug": "alemania",
+      "headline": "Alemania golea a Curazao",
+      "body": "Alemania golea a Curazao en su partido inaugural en el Mundial 2026.",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.bbc.co.uk/sport/football/world-cup"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "teamSlug": "australia",
+      "headline": "Australia gana su partido inaugural",
+      "body": "Australia gana su partido inaugural contra Turquía en el Mundial 2026.",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.bbc.co.uk/sport/football/world-cup"
+      ],
+      "confidence": 0.9
+    }
+  ]
+}

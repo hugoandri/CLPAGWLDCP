@@ -1,5 +1,6 @@
 import { getTeam } from "@/data/teams";
-import type { Match } from "@/lib/types";
+import liveUpdatesSnapshot from "@/data/live-updates.json";
+import type { Match, MatchDetail } from "@/lib/types";
 
 // Fecha de referencia para el MVP. Los marcadores son el estado disponible en
 // el feed público consultado; los partidos sin marcador quedan como próximos.
@@ -8,6 +9,17 @@ export const TOURNAMENT_TODAY = "2026-06-14";
 type FixtureInput = Omit<Match, "probHome" | "probDraw" | "probAway" | "whatToWatch"> & {
   whatToWatch?: string[];
 };
+
+type LiveMatchUpdate = Partial<Pick<Match, "status" | "homeScore" | "awayScore" | "minute">> & {
+  slug: string;
+  evidenceUrl?: string;
+  confidence?: number;
+  detail?: MatchDetail;
+};
+
+const liveMatchUpdates = new Map(
+  (liveUpdatesSnapshot.matches as LiveMatchUpdate[]).map((update) => [update.slug, update]),
+);
 
 function probability(homeSlug: string, awaySlug: string) {
   const homeRank = getTeam(homeSlug)?.fifaRank ?? 48;
@@ -26,7 +38,7 @@ function probability(homeSlug: string, awaySlug: string) {
 }
 
 function fixture(input: FixtureInput): Match {
-  return {
+  const base: Match = {
     ...input,
     ...probability(input.homeSlug, input.awaySlug),
     whatToWatch: input.whatToWatch ?? [
@@ -34,6 +46,18 @@ function fixture(input: FixtureInput): Match {
       "Estado físico y gestión de ritmo tras el calendario de fase de grupos.",
       "Duelos individuales clave en transición y balón parado.",
     ],
+  };
+
+  const update = liveMatchUpdates.get(input.slug);
+  if (!update) return base;
+
+  return {
+    ...base,
+    status: update.status ?? base.status,
+    homeScore: update.homeScore ?? base.homeScore,
+    awayScore: update.awayScore ?? base.awayScore,
+    minute: update.minute ?? base.minute,
+    detail: update.detail ?? base.detail,
   };
 }
 

@@ -1,0 +1,11 @@
+{
+  "model": "llama-3.3-70b-versatile",
+  "minimumConfidence": 0.72,
+  "maxCharsPerSource": 2500,
+  "maxReports": 3,
+  "sources": [
+    "https://www.theguardian.com/football/world-cup-2026",
+    "https://www.bbc.co.uk/sport/football/world-cup",
+    "https://www.cbssports.com/soccer/world-cup/"
+  ]
+}

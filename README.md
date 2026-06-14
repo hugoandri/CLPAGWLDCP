@@ -127,6 +127,51 @@ Pasos clave:
 
 ---
 
+## 🤖 Agente Groq para resultados y notas
+
+El proyecto incluye un pipeline opcional para leer páginas deportivas públicas,
+normalizar resultados con Groq y generar notas breves de desempeño por equipo.
+
+Archivos clave:
+
+- `config/sports-agent.json`: URLs fuente, modelo y umbral de confianza.
+- `prompts/sports-update.md`: reglas editoriales y schema JSON exigido a Groq.
+- `scripts/sports-update.mjs`: scraper + llamada Groq + validación.
+- `data/live-updates.json`: overrides de resultados aplicados a `data/matches.ts`.
+- `data/team-notes.json`: notas mostradas en páginas de selección.
+- `data/ai-updates/`: borradores generados para auditoría.
+
+Uso:
+
+```bash
+# 1. Validar configuración local sin red ni API
+npm run sports:update:check
+
+# 2. Añadir URLs públicas en config/sports-agent.json
+# "sources": ["https://...", "https://..."]
+
+# 3. Configurar la clave sin commitearla
+export GROQ_API_KEY="gsk_..."
+
+# 4. Generar borrador, sin tocar datos usados por la app
+npm run sports:update
+
+# 5. Aplicar solo cambios validados por schema y confidence
+npm run sports:update:apply
+```
+
+Reglas de seguridad:
+
+- Groq no decide por sí solo qué publicar: el script filtra slugs, estados,
+  marcadores, minutos, URLs de evidencia y `minimumConfidence`.
+- La tabla se recalcula automáticamente desde partidos terminados; la IA solo
+  propone overrides en `data/live-updates.json`.
+- Las notas requieren evidencia y se muestran como “Nota actualizada por IA”.
+- Usa solo fuentes que permitan consulta automatizada y evita páginas con paywall
+  o bloqueo explícito de scraping.
+
+---
+
 ## 💰 Cómo insertar Google AdSense (cuando te aprueben)
 
 Los anuncios están representados por el componente **`components/AdSlot.tsx`**,

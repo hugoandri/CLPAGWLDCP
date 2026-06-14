@@ -7,7 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sports:update": "node --env-file=.env.local scripts/sports-update.mjs",
+    "sports:update:apply": "node --env-file=.env.local scripts/sports-update.mjs --apply",
+    "sports:update:check": "node --env-file=.env.local scripts/sports-update.mjs --check",
+    "fifa:fetch": "node --env-file=.env.local scripts/fifa-fetch.mjs",
+    "fifa:fetch:apply": "node --env-file=.env.local scripts/fifa-fetch.mjs --apply"
   },
   "dependencies": {
     "next": "^14.2.15",

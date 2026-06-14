@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Team } from "@/lib/types";
 import { cn, pctWidth } from "@/lib/utils";
+import Flag from "@/components/Flag";
 
 interface TeamCardProps {
   team: Team;
@@ -17,9 +18,9 @@ export default function TeamCard({ team, className }: TeamCardProps) {
       <div className="flex items-center gap-3">
         <span
           aria-hidden
-          className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-slate-100 text-3xl dark:bg-white/10"
+          className="grid h-12 w-12 shrink-0 place-items-center rounded-xl"
         >
-          {team.flag}
+          <Flag isoCode={team.isoCode} alt={team.name} width={48} />
         </span>
         <div className="min-w-0 flex-1">
           <p className="truncate font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">

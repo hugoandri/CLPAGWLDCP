@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-06-14T23:17:31.134Z",
+  "apply": false,
+  "sources": [
+    "https://www.theguardian.com/football/world-cup-2026",
+    "https://www.bbc.co.uk/sport/football/world-cup",
+    "https://www.cbssports.com/soccer/world-cup/"
+  ],
+  "matchUpdates": [
+    {
+      "slug": "paises-bajos-vs-japon",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "evidenceUrl": "https://www.theguardian.com/football/2026/jun/14/netherlands-japan-world-cup-match-report",
+      "confidence": 0.9,
+      "detail": {
+        "goals": [
+          {
+            "minute": 88,
+            "team": "away",
+            "scorer": "Daichi Kamada",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "El partido entre Países Bajos y Japón terminó en empate 2-2, con Daichi Kamada anotando el gol del empate en el minuto 88.",
+        "confidence": 0.9,
+        "evidenceUrl": "https://www.theguardian.com/football/2026/jun/14/netherlands-japan-world-cup-match-report"
+      }
+    },
+    {
+      "slug": "alemania-vs-curazao",
+      "status": "finished",
+      "homeScore": 7,
+      "awayScore": 1,
+      "evidenceUrl": "https://www.theguardian.com/football/2026/jun/14/germany-curacao-world-cup-match-report",
+      "confidence": 0.9,
+      "detail": {
+        "goals": [
+          {
+            "minute": 0,
+            "team": "home",
+            "scorer": "Felix Nmecha",
+            "type": "goal"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "scorer": "Livano Comenencia",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Alemania goleó a Curaçao 7-1, con Livano Comenencia anotando el gol de la visita.",
+        "confidence": 0.9,
+        "evidenceUrl": "https://www.theguardian.com/football/2026/jun/14/germany-curacao-world-cup-match-report"
+      }
+    }
+  ],
+  "teamNotes": [
+    {
+      "teamSlug": "inglaterra",
+      "headline": "Eberechi Eze confía en tomar penales",
+      "body": "Eberechi Eze dice que no tiene miedo de tomar penales para Inglaterra en la Copa del Mundo.",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/2026/jun/14/eberechi-eze-england-penalty-shootout-2026-world-cup"
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

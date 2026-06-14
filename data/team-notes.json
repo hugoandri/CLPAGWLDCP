@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-06-14T23:17:56.745Z",
+  "source": "groq-sports-agent",
+  "notes": [
+    {
+      "teamSlug": "escocia",
+      "headline": "Escocia gana su primer partido",
+      "body": "Escocia derrotó a Haití en su primer partido de la Copa Mundial 2026",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/world-cup-2026"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "teamSlug": "australia",
+      "headline": "Australia comienza con victoria",
+      "body": "Australia derrotó a Turquía en su primer partido de la Copa Mundial 2026",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/world-cup-2026"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "teamSlug": "alemania",
+      "headline": "Alemania golea a Curazao",
+      "body": "Alemania ganó su partido contra Curazao con un marcador de 7-0.",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.bbc.co.uk/sport/football/world-cup"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "teamSlug": "mexico",
+      "headline": "México gana su primer partido",
+      "body": "México ganó su primer partido contra Sudáfrica con un marcador de 2-0.",
+      "trend": "positive",
+      "evidenceUrls": [
+        "https://www.theguardian.com/football/world-cup-2026"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "teamSlug": "japon",
+      "headline": "Japón empata con Países Bajos",
+      "body": "Japón empató con Países Bajos con un marcador de 2-2.",
+      "trend": "neutral",
+      "evidenceUrls": [
+        "https://www.bbc.co.uk/sport/football/world-cup"
+      ],
+      "confidence": 0.9
+    }
+  ]
+}

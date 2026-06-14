@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { matches, getMatch } from "@/data/matches";
 import { getTeam } from "@/data/teams";
 import { getPrediction } from "@/data/predictions";
-import type { FormResult, Team } from "@/lib/types";
+import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent } from "@/lib/types";
 import { cn, formatDateLong, pctWidth } from "@/lib/utils";
 import { siteConfig, DISCLAIMER_BETTING } from "@/lib/site";
 import { absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
@@ -13,6 +13,7 @@ import ProbBar from "@/components/ProbBar";
 import StatusBadge from "@/components/StatusBadge";
 import DisclaimerBox from "@/components/DisclaimerBox";
 import SeoJsonLd from "@/components/SeoJsonLd";
+import Flag from "@/components/Flag";
 
 export function generateStaticParams() {
   return matches.map((m) => ({ slug: m.slug }));
@@ -132,8 +133,8 @@ function TeamColumn({ team, side }: { team: Team; side: "Local" | "Visitante" })
       href={`/selecciones/${team.slug}`}
       className="flex flex-1 flex-col items-center gap-2 text-center"
     >
-      <span aria-hidden className="text-5xl sm:text-6xl">
-        {team.flag}
+      <span aria-hidden>
+        <Flag isoCode={team.isoCode} alt={team.name} width={80} />
       </span>
       <span className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
         {team.name}
@@ -265,6 +266,71 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
       <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
         {/* Columna principal */}
         <div className="space-y-8">
+          {/* Detalle del partido (solo partidos finalizados con datos de IA) */}
+          {match.detail && (
+            <>
+              {match.detail.aiNotes && (
+                <section className="card border-l-4 border-pitch p-6">
+                  <h2 className="section-title mb-3 text-xl">Análisis del partido</h2>
+                  <p className="text-slate-600 dark:text-slate-300">{match.detail.aiNotes}</p>
+                  <p className="mt-3 text-xs text-slate-400">
+                    Fuente: FIFA · Confianza {Math.round(match.detail.confidence * 100)}%
+                  </p>
+                </section>
+              )}
+
+              {match.detail.goals.length > 0 && (
+                <section className="card p-6">
+                  <h2 className="section-title mb-4 text-xl">Goles</h2>
+                  <GoalsTimeline goals={match.detail.goals} homeName={home.name} awayName={away.name} />
+                </section>
+              )}
+
+              {(match.detail.stats.possession || match.detail.stats.shotsOnTarget ||
+                match.detail.stats.corners || match.detail.stats.passAccuracy) && (
+                <section className="card p-6">
+                  <h2 className="section-title mb-5 text-xl">Estadísticas del partido</h2>
+                  <div className="space-y-4">
+                    {match.detail.stats.possession && (
+                      <StatDualBar label="Posesión" home={match.detail.stats.possession.home} away={match.detail.stats.possession.away} unit="%" />
+                    )}
+                    {match.detail.stats.shotsOnTarget && (
+                      <StatDualBar label="Tiros al arco" home={match.detail.stats.shotsOnTarget.home} away={match.detail.stats.shotsOnTarget.away} />
+                    )}
+                    {match.detail.stats.corners && (
+                      <StatDualBar label="Corners" home={match.detail.stats.corners.home} away={match.detail.stats.corners.away} />
+                    )}
+                    {match.detail.stats.passAccuracy && (
+                      <StatDualBar label="% de pases" home={match.detail.stats.passAccuracy.home} away={match.detail.stats.passAccuracy.away} unit="%" />
+                    )}
+                  </div>
+                </section>
+              )}
+
+              {(match.detail.lineup.home.length > 0 || match.detail.lineup.away.length > 0) && (
+                <section className="card p-6">
+                  <h2 className="section-title mb-5 text-xl">Alineaciones</h2>
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    <LineupList players={match.detail.lineup.home} teamName={home.name} />
+                    <LineupList players={match.detail.lineup.away} teamName={away.name} />
+                  </div>
+                </section>
+              )}
+
+              {(match.detail.cards.length > 0 || match.detail.substitutions.length > 0) && (
+                <section className="card p-6">
+                  <h2 className="section-title mb-4 text-xl">Eventos del partido</h2>
+                  <EventsLog
+                    cards={match.detail.cards}
+                    substitutions={match.detail.substitutions}
+                    homeName={home.name}
+                    awayName={away.name}
+                  />
+                </section>
+              )}
+            </>
+          )}
+
           {/* Probabilidades */}
           <section className="card p-6">
             <h2 className="section-title mb-1 text-xl">Probabilidades estadísticas</h2>
@@ -304,7 +370,9 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
             {[home, away].map((t) => (
               <div key={t.slug} className="card p-6">
                 <div className="flex items-center gap-2">
-                  <span aria-hidden className="text-2xl">{t.flag}</span>
+                  <span aria-hidden>
+                    <Flag isoCode={t.isoCode} alt={t.name} width={32} />
+                  </span>
                   <h3 className="font-display text-lg font-bold text-navy dark:text-slate-100">
                     {t.name}
                   </h3>
@@ -360,8 +428,11 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
                   { t: away, p: awayPred },
                 ].map(({ t, p }) => (
                   <div key={t.slug}>
-                    <p className="mb-2 font-semibold text-navy dark:text-slate-100">
-                      {t.flag} {t.name}
+                    <p className="mb-2 flex items-center gap-1.5 font-semibold text-navy dark:text-slate-100">
+                      <span aria-hidden>
+                        <Flag isoCode={t.isoCode} alt={t.name} width={24} />
+                      </span>
+                      {t.name}
                     </p>
                     <dl className="space-y-1.5 text-sm">
                       <PredRow label="Pasar de grupo" value={p.passGroup} />
@@ -402,8 +473,18 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
                         href={`/partidos/${m.slug}`}
                         className="flex items-center justify-between gap-2 rounded-lg px-2 py-2 text-sm hover:bg-slate-50 dark:hover:bg-white/5"
                       >
-                        <span className="truncate">
-                          {h?.flag} {h?.name} - {a?.name} {a?.flag}
+                        <span className="flex items-center gap-1 truncate">
+                          {h && (
+                            <span aria-hidden>
+                              <Flag isoCode={h.isoCode} alt={h.name} width={20} />
+                            </span>
+                          )}
+                          {h?.name} - {a?.name}
+                          {a && (
+                            <span aria-hidden>
+                              <Flag isoCode={a.isoCode} alt={a.name} width={20} />
+                            </span>
+                          )}
                         </span>
                       </Link>
                     </li>
@@ -462,6 +543,126 @@ function PredRow({
       >
         {display}
       </dd>
+    </div>
+  );
+}
+
+function GoalsTimeline({ goals, homeName, awayName }: { goals: GoalEvent[]; homeName: string; awayName: string }) {
+  const ICONS: Record<string, string> = { goal: "⚽", own_goal: "⚽ (p.p.)", penalty: "⚽ (pen.)" };
+  return (
+    <ol className="space-y-2">
+      {goals.map((g, i) => (
+        <li key={i} className={cn("flex items-center gap-3 rounded-lg px-3 py-2", g.team === "home" ? "bg-pitch/5" : "bg-navy-700/5 flex-row-reverse text-right")}>
+          <span className="shrink-0 text-lg">{ICONS[g.type] ?? "⚽"}</span>
+          <div className="flex-1">
+            <span className="font-semibold text-navy dark:text-slate-100">{g.scorer}</span>
+            {g.assist && <span className="ml-1 text-sm text-slate-400">(asist. {g.assist})</span>}
+          </div>
+          <span className="shrink-0 rounded bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-600 dark:bg-white/10 dark:text-slate-300">
+            {g.minute}&apos;
+          </span>
+          <span className="hidden shrink-0 text-xs text-slate-400 sm:block">
+            {g.team === "home" ? homeName : awayName}
+          </span>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+function StatDualBar({ label, home, away, unit = "" }: { label: string; home: number; away: number; unit?: string }) {
+  const total = home + away || 1;
+  const homeW = Math.round((home / total) * 100);
+  const awayW = 100 - homeW;
+  return (
+    <div className="grid grid-cols-[2.5rem_1fr_2.5rem] items-center gap-3">
+      <span className={cn("text-right text-sm font-bold", home >= away ? "text-pitch-600 dark:text-pitch-300" : "text-slate-400")}>
+        {home}{unit}
+      </span>
+      <div>
+        <p className="mb-1 text-center text-xs font-medium text-slate-500 dark:text-slate-400">{label}</p>
+        <div className="flex h-2 overflow-hidden rounded-full">
+          <span className="h-full bg-pitch transition-all" style={{ width: `${homeW}%` }} />
+          <span className="h-full bg-navy-700 dark:bg-blue-500 transition-all" style={{ width: `${awayW}%` }} />
+        </div>
+      </div>
+      <span className={cn("text-sm font-bold", away > home ? "text-navy-700 dark:text-blue-300" : "text-slate-400")}>
+        {away}{unit}
+      </span>
+    </div>
+  );
+}
+
+function LineupList({ players, teamName }: { players: MatchDetail["lineup"]["home"]; teamName: string }) {
+  const POS_ORDER = { GK: 0, DEF: 1, MID: 2, FWD: 3 };
+  const sorted = [...players].sort((a, b) => (POS_ORDER[a.position ?? "FWD"] ?? 3) - (POS_ORDER[b.position ?? "FWD"] ?? 3));
+  return (
+    <div>
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-400">{teamName}</p>
+      <ol className="space-y-1">
+        {sorted.map((p, i) => (
+          <li key={i} className="flex items-center gap-2 text-sm">
+            {p.number != null && (
+              <span className="w-6 text-center text-xs font-bold text-slate-400">{p.number}</span>
+            )}
+            {p.position && (
+              <span className={cn(
+                "rounded px-1.5 py-0.5 text-[10px] font-bold",
+                p.position === "GK" ? "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400" :
+                p.position === "DEF" ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400" :
+                p.position === "MID" ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" :
+                "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400"
+              )}>{p.position}</span>
+            )}
+            <span className="text-navy dark:text-slate-200">{p.name}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
+function EventsLog({ cards, substitutions, homeName, awayName }: {
+  cards: CardEvent[];
+  substitutions: SubEvent[];
+  homeName: string;
+  awayName: string;
+}) {
+  type Event = { minute: number; el: React.ReactNode };
+  const events: Event[] = [
+    ...cards.map((c) => ({
+      minute: c.minute,
+      el: (
+        <div className="flex items-center gap-2 text-sm">
+          <span className={cn("h-4 w-3 rounded-sm shrink-0", c.type === "yellow" ? "bg-yellow-400" : "bg-red-600")} />
+          <span className="font-medium text-navy dark:text-slate-100">{c.player}</span>
+          <span className="text-slate-400">({c.team === "home" ? homeName : awayName})</span>
+          <span className="ml-auto text-xs font-bold text-slate-500">{c.minute}&apos;</span>
+        </div>
+      ),
+    })),
+    ...substitutions.map((s) => ({
+      minute: s.minute,
+      el: (
+        <div className="flex items-center gap-2 text-sm">
+          <span className="shrink-0 text-base">🔄</span>
+          <span className="text-slate-500 dark:text-slate-400 line-through">{s.playerOut}</span>
+          <span aria-hidden>→</span>
+          <span className="font-medium text-navy dark:text-slate-100">{s.playerIn}</span>
+          <span className="text-slate-400 text-xs">({s.team === "home" ? homeName : awayName})</span>
+          <span className="ml-auto text-xs font-bold text-slate-500">{s.minute}&apos;</span>
+        </div>
+      ),
+    })),
+  ].sort((a, b) => a.minute - b.minute);
+
+  return (
+    <div className="space-y-2">
+      {events.map((e, i) => (
+        <div key={i} className="rounded-lg bg-slate-50 px-3 py-2 dark:bg-white/[0.03]">
+          {e.el}
+        </div>
+      ))}
     </div>
   );
 }

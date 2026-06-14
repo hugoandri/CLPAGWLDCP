@@ -5,6 +5,7 @@ import { formatDayMonth, matchScoreLabel } from "@/lib/utils";
 import MatchCard from "@/components/MatchCard";
 import StatusBadge from "@/components/StatusBadge";
 import ProbBar from "@/components/ProbBar";
+import Flag from "@/components/Flag";
 
 /** Tabla de partidos (desktop) + lista de tarjetas (móvil). */
 export default function MatchTable({ matches }: { matches: Match[] }) {
@@ -63,7 +64,9 @@ export default function MatchTable({ matches }: { matches: Match[] }) {
                       href={`/partidos/${m.slug}`}
                       className="group inline-flex items-center gap-2 font-semibold text-navy hover:text-pitch dark:text-slate-100 dark:hover:text-pitch-300"
                     >
-                      <span aria-hidden>{home.flag}</span>
+                      <span aria-hidden className="flex">
+                        <Flag isoCode={home.isoCode} alt={home.name} width={28} />
+                      </span>
                       <span className="hidden lg:inline">{home.name}</span>
                       <span className="lg:hidden">{home.slug.slice(0, 3).toUpperCase()}</span>
                       <span className="stat-num mx-1 rounded bg-slate-100 px-1.5 py-0.5 text-xs dark:bg-white/10">
@@ -71,7 +74,9 @@ export default function MatchTable({ matches }: { matches: Match[] }) {
                       </span>
                       <span className="hidden lg:inline">{away.name}</span>
                       <span className="lg:hidden">{away.slug.slice(0, 3).toUpperCase()}</span>
-                      <span aria-hidden>{away.flag}</span>
+                      <span aria-hidden className="flex">
+                        <Flag isoCode={away.isoCode} alt={away.name} width={28} />
+                      </span>
                     </Link>
                   </td>
                   <td className="px-4 py-3 text-slate-500 dark:text-slate-400">

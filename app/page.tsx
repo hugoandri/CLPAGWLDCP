@@ -4,6 +4,7 @@ import AdSlot from "@/components/AdSlot";
 import MatchCard from "@/components/MatchCard";
 import ArticleCard from "@/components/ArticleCard";
 import SeoJsonLd from "@/components/SeoJsonLd";
+import Flag from "@/components/Flag";
 import { teams, getTeam } from "@/data/teams";
 import {
   getTodayMatches,
@@ -137,10 +138,14 @@ export default function HomePage() {
             <QuickStatCard eyebrow="⚽ Partido del día" href={`/partidos/${matchOfDay.slug}`}>
               {home && away && (
                 <div>
-                  <div className="flex items-center gap-2 text-2xl">
-                    <span aria-hidden>{home.flag}</span>
+                  <div className="flex items-center gap-2">
+                    <span aria-hidden>
+                      <Flag isoCode={home.isoCode} alt={home.name} width={32} />
+                    </span>
                     <span className="text-sm font-bold text-slate-400">vs</span>
-                    <span aria-hidden>{away.flag}</span>
+                    <span aria-hidden>
+                      <Flag isoCode={away.isoCode} alt={away.name} width={32} />
+                    </span>
                   </div>
                   <p className="mt-2 font-display font-bold leading-tight text-navy dark:text-slate-100">
                     {home.name} · {away.name}
@@ -154,8 +159,8 @@ export default function HomePage() {
 
             <QuickStatCard eyebrow="🚀 Más probable de avanzar" href={`/selecciones/${topAdvance.slug}`}>
               <div className="flex items-center gap-3">
-                <span aria-hidden className="text-4xl">
-                  {topAdvance.flag}
+                <span aria-hidden>
+                  <Flag isoCode={topAdvance.isoCode} alt={topAdvance.name} width={48} />
                 </span>
                 <div>
                   <p className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
@@ -170,8 +175,8 @@ export default function HomePage() {
 
             <QuickStatCard eyebrow="📈 Mayor sorpresa" href={`/selecciones/${biggestSurprise.slug}`}>
               <div className="flex items-center gap-3">
-                <span aria-hidden className="text-4xl">
-                  {biggestSurprise.flag}
+                <span aria-hidden>
+                  <Flag isoCode={biggestSurprise.isoCode} alt={biggestSurprise.name} width={48} />
                 </span>
                 <div>
                   <p className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
@@ -189,7 +194,9 @@ export default function HomePage() {
                 {topRanked.map((t, i) => (
                   <li key={t.slug} className="flex items-center gap-2 text-sm">
                     <span className="stat-num w-4 font-bold text-slate-400">{i + 1}</span>
-                    <span aria-hidden>{t.flag}</span>
+                    <span aria-hidden>
+                      <Flag isoCode={t.isoCode} alt={t.name} width={24} />
+                    </span>
                     <span className="font-semibold text-navy dark:text-slate-100">{t.name}</span>
                   </li>
                 ))}

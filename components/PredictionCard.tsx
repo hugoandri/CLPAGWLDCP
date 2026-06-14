@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Prediction, Team } from "@/lib/types";
 import { PREDICTION_METRICS } from "@/data/predictions";
 import { cn, pctWidth } from "@/lib/utils";
+import Flag from "@/components/Flag";
 
 interface PredictionCardProps {
   team: Team;
@@ -30,8 +31,8 @@ export default function PredictionCard({
             {rank}
           </span>
         )}
-        <span aria-hidden className="text-2xl">
-          {team.flag}
+        <span aria-hidden className="shrink-0">
+          <Flag isoCode={team.isoCode} alt={team.name} width={40} />
         </span>
         <Link
           href={`/selecciones/${team.slug}`}

@@ -5,6 +5,7 @@ import { getTeamsByGroup, GROUP_IDS } from "@/data/teams";
 import { computeStandings } from "@/lib/utils";
 import type { GroupStandingInput, Team } from "@/lib/types";
 import GroupTable from "@/components/GroupTable";
+import Flag from "@/components/Flag";
 
 // Emparejamientos round-robin de un grupo de 4 (índices de equipo).
 const FIXTURE_PAIRS: [number, number][] = [
@@ -194,7 +195,9 @@ export default function CalculadoraClient() {
               >
                 <span className="flex min-w-0 flex-1 items-center justify-end gap-1.5 text-right text-sm font-medium text-navy dark:text-slate-100">
                   <span className="truncate">{home.name}</span>
-                  <span aria-hidden className="text-lg">{home.flag}</span>
+                  <span aria-hidden>
+                    <Flag isoCode={home.isoCode} alt={home.name} width={28} />
+                  </span>
                 </span>
                 <div className="flex shrink-0 items-center gap-1.5">
                   <ScoreInput
@@ -210,7 +213,9 @@ export default function CalculadoraClient() {
                   />
                 </div>
                 <span className="flex min-w-0 flex-1 items-center gap-1.5 text-sm font-medium text-navy dark:text-slate-100">
-                  <span aria-hidden className="text-lg">{away.flag}</span>
+                  <span aria-hidden>
+                    <Flag isoCode={away.isoCode} alt={away.name} width={28} />
+                  </span>
                   <span className="truncate">{away.name}</span>
                 </span>
               </li>
@@ -234,7 +239,9 @@ export default function CalculadoraClient() {
                   key={s.teamSlug}
                   className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-sm font-semibold text-navy shadow-sm dark:bg-navy-900 dark:text-slate-100"
                 >
-                  <span aria-hidden className="text-lg">{team.flag}</span>
+                  <span aria-hidden>
+                    <Flag isoCode={team.isoCode} alt={team.name} width={28} />
+                  </span>
                   {team.name}
                   <span className="stat-num text-xs text-pitch-600 dark:text-pitch-300">
                     {s.points} pts
