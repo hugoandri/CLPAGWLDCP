@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T17:04:18.073Z",
+  "generatedAt": "2026-06-15T17:58:15.038Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3024,10 +3024,9 @@
     },
     {
       "slug": "espana-vs-cabo-verde",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 49,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482",
       "confidence": 0.97,
       "detail": {
@@ -3038,9 +3037,70 @@
             "team": "away",
             "player": "Sidny Lopes Cabral",
             "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "home",
+            "player": "Pedri",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "DAILON LIVRAMENTO",
+            "playerIn": "NUNO DA COSTA"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "JOVANE CABRAL",
+            "playerIn": "WILLY SEMEDO"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "LAROS DUARTE",
+            "playerIn": "DEROY DUARTE"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Fabian RUIZ",
+            "playerIn": "Mikel MERINO"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "GAVI",
+            "playerIn": "Lamine YAMAL"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "SIDNY LOPES CABRAL",
+            "playerIn": "JOAO PAULO"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "JAMIRO MONTEIRO",
+            "playerIn": "TELMO ARCANJO"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "Ferran TORRES",
+            "playerIn": "Dani OLMO"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "RODRI",
+            "playerIn": "Nico WILLIAMS"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -3159,15 +3219,15 @@
         },
         "stats": {
           "shots": {
-            "home": 13,
-            "away": 3
+            "home": 27,
+            "away": 6
           },
           "corners": {
-            "home": 4,
-            "away": 0
+            "home": 11,
+            "away": 1
           },
           "fouls": {
-            "home": 5,
+            "home": 9,
             "away": 0
           },
           "offsides": {
@@ -3175,13 +3235,13 @@
             "away": 3
           },
           "yellowCards": {
-            "home": 0,
+            "home": 1,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre España y Cabo Verde se encuentra empatado a cero goles, con ambos equipos buscando romper la igualdad en el marcador y ninguno ha logrado anotar hasta ahora. Con la tarjeta amarilla recibida por Sidny Lopes Cabral en el minuto 16, Cabo Verde debe tener cuidado para no recibir más tarjetas y así evitar quedar con un jugador menos en el campo, lo que podría cambiar el curso del partido en favor de España.",
+        "aiNotes": "En el partido entre España y Cabo Verde, el resultado final fue un empate sin goles, con Sidny Lopes Cabral y Pedri recibiendo tarjetas amarillas en los minutos 16 y 93, respectivamente. Este empate puede considerarse una sorpresa en el contexto del torneo, ya que España es considerada una de las selecciones más fuertes y Cabo Verde logró contener su ataque de manera efectiva.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021482"
       }
     },
     {
