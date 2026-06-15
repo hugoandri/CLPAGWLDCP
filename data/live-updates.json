@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T02:36:00.034Z",
+  "generatedAt": "2026-06-15T02:39:52.261Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2764,7 +2764,7 @@
       "status": "live",
       "homeScore": 2,
       "awayScore": 0,
-      "minute": 35,
+      "minute": 39,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
       "confidence": 0.97,
       "detail": {
@@ -2907,7 +2907,7 @@
             "away": 2
           },
           "corners": {
-            "home": 1,
+            "home": 2,
             "away": 0
           },
           "fouls": {
@@ -2919,6 +2919,7 @@
             "away": 2
           }
         },
+        "aiNotes": "En este momento, Suecia domina claramente el partido con un marcador de 2-0 sobre Túnez, gracias a los goles de Yasin Ayari en el minuto 7 y Alexander Isak en el minuto 30. La ventaja de dos goles puede permitir a Suecia administrar el ritmo del juego en la segunda mitad, aunque Túnez puede intentar presionar para intentar reducir la desventaja y cambiar el curso del partido.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474"
       }

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { matches, getMatch } from "@/data/matches";
+import { matches, getFreshMatches } from "@/data/matches";
+import { readLiveUpdates } from "@/lib/live";
 import { getTeam } from "@/data/teams";
 import { getPrediction } from "@/data/predictions";
 import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent } from "@/lib/types";
@@ -15,8 +16,11 @@ import DisclaimerBox from "@/components/DisclaimerBox";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 
-export function generateStaticParams() {
-  return matches.map((m) => ({ slug: m.slug }));
+export const dynamic = "force-dynamic";
+
+function getMatchDynamic(slug: string) {
+  const updates = readLiveUpdates();
+  return getFreshMatches(updates).find((m) => m.slug === slug);
 }
 
 export function generateMetadata({
@@ -24,7 +28,7 @@ export function generateMetadata({
 }: {
   params: { slug: string };
 }): Metadata {
-  const match = getMatch(params.slug);
+  const match = getMatchDynamic(params.slug);
   if (!match) return { title: "Partido no encontrado" };
   const home = getTeam(match.homeSlug);
   const away = getTeam(match.awaySlug);
@@ -147,7 +151,7 @@ function TeamColumn({ team, side }: { team: Team; side: "Local" | "Visitante" })
 }
 
 export default function MatchPage({ params }: { params: { slug: string } }) {
-  const match = getMatch(params.slug);
+  const match = getMatchDynamic(params.slug);
   if (!match) notFound();
 
   const home = getTeam(match.homeSlug);
