@@ -172,7 +172,7 @@ function EventRow({
             )}>
               {isSub ? (
                 <span className="flex items-center gap-1.5 text-sm flex-wrap">
-                  <span className="text-slate-500 dark:text-slate-400 line-through">{ev.primary}</span>
+                  <span className="text-slate-500 dark:text-slate-400">{ev.primary}</span>
                   {ev.secondary && (
                     <>
                       <span className="text-slate-400">→</span>
