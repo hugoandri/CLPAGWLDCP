@@ -35,5 +35,5 @@ jobs:
           if [ -n "$REAL_DIFF" ]; then
             git add data/live-updates.json
             git commit -m "data: update live match data"
-            git push origin HEAD:main
+            git push origin HEAD:main || echo "Push skipped — remote ahead, next run will retry"
           fi
