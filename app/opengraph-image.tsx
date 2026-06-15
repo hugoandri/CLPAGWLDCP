@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site";
 
-export const alt = "DataGoal 2026 — El Mundial 2026 en datos";
+export const alt = "DataGoal Lab — El Mundial 2026 en datos";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default function OpengraphImage() {
             DG
           </div>
           <div style={{ display: "flex", gap: 10, fontSize: 30, fontWeight: 700 }}>
-            <span>DataGoal</span>
+            <span>DataGoal Lab</span>
             <span style={{ color: "#F2B705" }}>2026</span>
           </div>
         </div>

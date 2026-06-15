@@ -20,7 +20,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Mundial 2026: partidos de hoy, tabla, resultados y predicciones",
   description:
-    "Consulta partidos de hoy del Mundial 2026, resultados, tabla por grupos, selecciones, predicciones estadísticas y calculadora de clasificación en DataGoal 2026.",
+    "Consulta partidos de hoy del Mundial 2026, resultados, tabla por grupos, selecciones, predicciones estadísticas y calculadora de clasificación en DataGoal Lab.",
   alternates: { canonical: "/" },
 };
 

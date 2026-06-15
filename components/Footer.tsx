@@ -22,7 +22,8 @@ export default function Footer() {
                 </svg>
               </span>
               <span className="font-brand text-lg tracking-tight text-[#0A0F14] dark:text-[#EAF1ED]">
-                Data<span className="text-[#1E9C49] dark:text-[#2FB85C]">Goal</span>
+                Data<span className="text-[#1E9C49] dark:text-[#2FB85C]">Goal</span>{" "}
+                <span className="text-gold">Lab</span>
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-slate-500 dark:text-slate-400">

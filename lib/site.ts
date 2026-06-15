@@ -2,8 +2,8 @@
 // antes de publicar (afecta a metadatos, sitemap, robots y Open Graph).
 
 export const siteConfig = {
-  name: "DataGoal 2026",
-  shortName: "DataGoal",
+  name: "DataGoal Lab",
+  shortName: "DataGoal Lab",
   // ⚠️ Reemplaza por tu dominio de producción.
   url: "https://www.datagoal2026.com",
   locale: "es_ES",
@@ -56,7 +56,7 @@ export const footerNav = [
 ] as const;
 
 export const DISCLAIMER_SHORT =
-  "DataGoal 2026 es un sitio independiente de análisis estadístico. No está afiliado a FIFA ni a ninguna federación.";
+  "DataGoal Lab es un sitio independiente de análisis estadístico. No está afiliado a FIFA ni a ninguna federación.";
 
 export const DISCLAIMER_BETTING =
   "Este análisis es informativo y estadístico. No constituye consejo de apuestas.";

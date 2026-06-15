@@ -22,7 +22,8 @@ function Logo() {
         </svg>
       </span>
       <span className="font-brand text-lg leading-none tracking-tight text-[#0A0F14] dark:text-[#EAF1ED]">
-        Data<span className="text-[#1E9C49] dark:text-[#2FB85C]">Goal</span>
+        Data<span className="text-[#1E9C49] dark:text-[#2FB85C]">Goal</span>{" "}
+        <span className="text-gold">Lab</span>
       </span>
     </Link>
   );

@@ -28,8 +28,8 @@ const body = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "DataGoal 2026 — El Mundial 2026 en datos",
-    template: "%s · DataGoal 2026",
+    default: "DataGoal Lab — El Mundial 2026 en datos",
+    template: "%s · DataGoal Lab",
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
@@ -50,21 +50,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: siteConfig.locale,
     url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: "DataGoal 2026 — El Mundial 2026 en datos",
+      siteName: siteConfig.name,
+      title: "DataGoal Lab — El Mundial 2026 en datos",
     description: siteConfig.description,
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "DataGoal 2026 — Mundial 2026 en datos",
+        alt: "DataGoal Lab — Mundial 2026 en datos",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DataGoal 2026 — El Mundial 2026 en datos",
+    title: "DataGoal Lab — El Mundial 2026 en datos",
     description: siteConfig.description,
     creator: siteConfig.twitter,
     images: ["/opengraph-image"],
