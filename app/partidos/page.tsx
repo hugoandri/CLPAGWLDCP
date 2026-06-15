@@ -5,9 +5,12 @@ import DisclaimerBox from "@/components/DisclaimerBox";
 import PartidosClient from "./PartidosClient";
 import { DISCLAIMER_BETTING } from "@/lib/site";
 import SeoJsonLd from "@/components/SeoJsonLd";
-import { matches } from "@/data/matches";
+import { matches, getFreshMatches } from "@/data/matches";
+import { readLiveUpdatesWithFIFA } from "@/lib/live";
 import { getTeam } from "@/data/teams";
 import { collectionPageJsonLd, itemListJsonLd } from "@/lib/seo";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Partidos del Mundial 2026: calendario, horarios y probabilidades",
@@ -16,7 +19,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/partidos" },
 };
 
-export default function PartidosPage() {
+export default async function PartidosPage() {
+  const updates = await readLiveUpdatesWithFIFA();
+  const liveMatches = getFreshMatches(updates);
   const jsonLd = [
     collectionPageJsonLd({
       name: "Partidos del Mundial 2026",
@@ -49,7 +54,7 @@ export default function PartidosPage() {
         <AdSlot slotName="partidos-top-banner" format="leaderboard" />
       </div>
 
-      <PartidosClient />
+      <PartidosClient matches={liveMatches} />
 
       <section className="card mt-10 p-6">
         <h2 className="section-title mb-3 text-xl">

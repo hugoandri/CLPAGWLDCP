@@ -1,9 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { matches } from "@/data/matches";
 import { getTeam, GROUP_IDS } from "@/data/teams";
-import type { MatchStatus } from "@/lib/types";
+import type { Match, MatchStatus } from "@/lib/types";
 import { formatDateShort } from "@/lib/utils";
 import FilterTabs, { type FilterOption } from "@/components/FilterTabs";
 import SearchInput from "@/components/SearchInput";
@@ -15,12 +14,15 @@ const STATUS_OPTIONS: FilterOption[] = [
   { value: "all", label: "Todos" },
   { value: "upcoming", label: "Próximos" },
   { value: "live", label: "En vivo" },
+  { value: "halftime", label: "Descanso" },
   { value: "finished", label: "Finalizados" },
 ];
 
-const uniqueDates = Array.from(new Set(matches.map((m) => m.date))).sort();
-
-export default function PartidosClient() {
+export default function PartidosClient({ matches }: { matches: Match[] }) {
+  const uniqueDates = useMemo(
+    () => Array.from(new Set(matches.map((m) => m.date))).sort(),
+    [matches],
+  );
   const [status, setStatus] = useState<StatusFilter>("all");
   const [group, setGroup] = useState<string>("all");
   const [date, setDate] = useState<string>("all");
