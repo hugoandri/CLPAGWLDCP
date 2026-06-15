@@ -141,8 +141,9 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
       playerName[pid] = toTitle(short || full || "");
     }
 
-    const homeScore = live.HomeTeamScore ?? fm.HomeTeamScore ?? 0;
-    const awayScore = live.AwayTeamScore ?? fm.AwayTeamScore ?? 0;
+    // live.HomeTeamScore is undefined in the live endpoint; score is under ht.Score
+    const homeScore = ht.Score ?? live.HomeTeamScore ?? fm.HomeTeamScore ?? 0;
+    const awayScore = at.Score ?? live.AwayTeamScore ?? fm.AwayTeamScore ?? 0;
 
     const events: CoverageEvent[] = [];
     let runH = 0;
