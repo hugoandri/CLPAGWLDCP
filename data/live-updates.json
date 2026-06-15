@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T20:58:03.321Z",
+  "generatedAt": "2026-06-15T21:14:00.025Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3246,10 +3246,9 @@
     },
     {
       "slug": "belgica-vs-egipto",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 1,
-      "minute": 95,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478",
       "confidence": 0.97,
       "detail": {
@@ -3494,9 +3493,9 @@
             "away": 2
           }
         },
-        "aiNotes": "En este momento, el partido entre Bélgica y Egipto se encuentra empatado a un gol por cada equipo, con E. Ashour anotando para Egipto en el minuto 19 y M. Hany igualando el marcador para Bélgica en el minuto 66 desde el punto penal. A medida que el partido se acerca a su fin, es probable que ambos equipos intensifiquen su presión ofensiva para intentar anotar el gol de la victoria, lo que podría generar oportunidades claras de contraataque y un final emocionante.",
+        "aiNotes": "En el partido entre Bélgica y Egipto, el equipo africano se adelantó en el marcador gracias a un gol de E. Ashour asistido por M. Salah en el minuto 19, pero Bélgica logró empatar con un penal convertido por M. Hany en el minuto 66. La táctica defensiva de Egipto funcionó bien durante gran parte del partido, lo que les permitió mantener el resultado hasta el final y obtener un valioso punto en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021478"
       }
     },
     {
