@@ -39,10 +39,21 @@ const finishedSorted = [...freshMatches]
   .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
 const lastFinished = finishedSorted[0];
 
-// Sorpresa: selección con mayor diferencia positiva entre ranking FIFA y ranking interno
-const biggestSurprise = [...teams]
-  .filter((t) => t.internalRank <= 30)
-  .sort((a, b) => b.fifaRank - b.internalRank - (a.fifaRank - a.internalRank))[0];
+// Sorpresa: el equipo que tenía menos probabilidades de ganar y ganó
+type Surprise = { team: typeof teams[0]; match: (typeof freshMatches)[0]; prob: number };
+const surprises: Surprise[] = [];
+for (const m of freshMatches) {
+  if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) continue;
+  if (m.homeScore > m.awayScore) {
+    const t = getTeam(m.homeSlug);
+    if (t) surprises.push({ team: t, match: m, prob: m.probHome });
+  } else if (m.awayScore > m.homeScore) {
+    const t = getTeam(m.awaySlug);
+    if (t) surprises.push({ team: t, match: m, prob: m.probAway });
+  }
+}
+surprises.sort((a, b) => a.prob - b.prob);
+const biggestSurprise = surprises[0];
 
 // Ranking general: computed standings de todos los grupos combinados y ordenados
 const allStandings = groups.flatMap((g) => computeStandings(g.rows));
@@ -88,7 +99,13 @@ export default function HomePage() {
     : lastFinished
       ? { match: lastFinished, home: getTeam(lastFinished.homeSlug), away: getTeam(lastFinished.awaySlug) }
       : null;
-  const surpriseTeam = biggestSurprise ? getTeam(biggestSurprise.slug) : null;
+  const surpriseTeam = biggestSurprise?.team ?? null;
+  const surpriseRival = biggestSurprise ? getTeam(
+    biggestSurprise.match.awaySlug === biggestSurprise.team.slug
+      ? biggestSurprise.match.homeSlug
+      : biggestSurprise.match.awaySlug
+  ) : null;
+  const surpriseProb = biggestSurprise?.prob;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -227,7 +244,7 @@ export default function HomePage() {
                       {surpriseTeam.name}
                     </p>
                     <p className="text-xs text-slate-400">
-                      FIFA #{surpriseTeam.fifaRank} → modelo #{surpriseTeam.internalRank}
+                      Solo {surpriseProb}% de ganar · Venció a {surpriseRival?.name ?? ""}
                     </p>
                   </div>
                 </div>
@@ -307,9 +324,9 @@ export default function HomePage() {
                 />
                 <TrendStat
                   emoji="🔥"
-                  value={biggestSurprise.name}
-                  label="La selección que más sube respecto a su ranking FIFA"
-                  href="/tendencias/cinco-selecciones-sorprenden-datos"
+                  value={biggestSurprise?.team.name ?? ""}
+                  label="La sorpresa del torneo: el equipo con la victoria más improbable"
+                  href={`/selecciones/${biggestSurprise?.team.slug ?? ""}`}
                 />
                 <TrendStat
                   emoji="📊"
