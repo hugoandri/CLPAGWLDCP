@@ -10,12 +10,15 @@ import { teams, getTeam } from "@/data/teams";
 import {
   getFreshMatches,
 } from "@/data/matches";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { readLiveUpdatesWithFIFA } from "@/lib/live";
 import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
 import { computeStandings, formatDayMonth } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
 import LiveAutoRefresh from "@/components/LiveAutoRefresh";
+import type { OpinionColumn } from "@/app/tendencias/TendenciasClient";
 
 export const dynamic = "force-dynamic";
 
@@ -383,6 +386,9 @@ export default async function HomePage() {
           </div>
         </section>
 
+        {/* ───────────────── Columna diaria ───────────────── */}
+        <LatestColumnSection />
+
         {/* ───────────────── Últimos análisis ───────────────── */}
         <section aria-labelledby="analisis" className="py-10">
           <div className="mb-5 flex items-end justify-between gap-4">
@@ -409,6 +415,53 @@ export default async function HomePage() {
         </div>
       </div>
     </>
+  );
+}
+
+function LatestColumnSection() {
+  let col: OpinionColumn | null = null;
+  try {
+    const raw = readFileSync(join(process.cwd(), "data/opinion-columns.json"), "utf8");
+    const columns: OpinionColumn[] = JSON.parse(raw).columns ?? [];
+    col = columns[0] ?? null; // columns are sorted newest first
+  } catch { /* file may not exist */ }
+
+  if (!col) return null;
+
+  // First two paragraphs as excerpt
+  const excerpt = col.body.split(/\n\n+/).slice(0, 2).join(" ").slice(0, 280);
+
+  return (
+    <section aria-labelledby="columna-diaria" className="py-10">
+      <div className="mb-5 flex items-end justify-between gap-4">
+        <div>
+          <p className="eyebrow">Columna de opinión · IA</p>
+          <h2 id="columna-diaria" className="section-title">
+            La columna del día
+          </h2>
+        </div>
+        <Link
+          href="/tendencias?tab=columna"
+          className="shrink-0 text-sm font-semibold text-pitch-600 hover:underline dark:text-pitch-300"
+        >
+          Ver todas →
+        </Link>
+      </div>
+      <Link
+        href="/tendencias?tab=columna"
+        className="card card-hover block p-6"
+      >
+        <p className="text-[11px] font-bold uppercase tracking-widest text-pitch-600 dark:text-pitch-400 mb-2">
+          {col.title}
+        </p>
+        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-4">
+          {excerpt}{excerpt.length >= 280 ? "…" : ""}
+        </p>
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-pitch-600 dark:text-pitch-300">
+          Leer columna completa →
+        </span>
+      </Link>
+    </section>
   );
 }
 

@@ -1,0 +1,58 @@
+name: Generate Daily Opinion Column
+
+on:
+  schedule:
+    # 1 AM Chile time = 5 AM UTC (Chile is UTC-4 in June/winter)
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Specific date YYYY-MM-DD (leave empty for yesterday Chile time)'
+        required: false
+        default: ''
+      seed:
+        description: 'Generate all past dates with no column'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate column
+        run: |
+          if [ "${{ github.event.inputs.seed }}" = "true" ]; then
+            node scripts/generate-opinion.mjs --seed
+          elif [ -n "${{ github.event.inputs.date }}" ]; then
+            node scripts/generate-opinion.mjs --date=${{ github.event.inputs.date }}
+          else
+            node scripts/generate-opinion.mjs
+          fi
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Commit if changed
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+          if git diff --quiet data/opinion-columns.json; then
+            echo "No changes — nothing to commit"
+          else
+            git add data/opinion-columns.json
+            git commit -m "data: add opinion column for $(date -u '+%d-%m-%Y')"
+            git push origin HEAD:main || echo "Push skipped — will retry next run"
+          fi
