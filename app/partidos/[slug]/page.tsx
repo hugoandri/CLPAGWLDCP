@@ -300,7 +300,7 @@ export default async function MatchPage({ params }: { params: { slug: string } }
           {/* Detalle del partido (solo partidos finalizados con datos de IA) */}
           {match.detail && (
             <>
-              {match.detail.aiNotes && (
+              {match.detail.aiNotes && !isActive && (
                 <section className="card border-l-4 border-pitch p-6">
                   <h2 className="section-title mb-3 text-xl">
                     {match.status === "upcoming"

@@ -159,13 +159,16 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
     // Substitutions
     for (const [side, team] of [["home", ht], ["away", at]] as const) {
       for (const s of team.Substitutions ?? []) {
+        // FIFA API uses different field names across versions; try all known variants
+        const offId = String(s.IdSubstitutedPlayer ?? s.IdPlayer ?? s.PlayerOff ?? "");
+        const onId = String(s.IdPlayerOn ?? s.IdSubstitute ?? s.PlayerOn ?? "");
         events.push({
           type: "sub",
           minuteRaw: s.Minute ?? "?'",
           minuteOrder: parseMin(s.Minute ?? "0"),
           team: side,
-          primary: playerName[String(s.IdSubstitutedPlayer ?? s.PlayerOff ?? "")] ?? "Desconocido",
-          secondary: playerName[String(s.IdPlayerOn ?? s.PlayerOn ?? "")] ?? "Desconocido",
+          primary: playerName[offId] ?? (s.PlayerOff ? toTitle(String(s.PlayerOff)) : "Desconocido"),
+          secondary: playerName[onId] ?? (s.PlayerOn ? toTitle(String(s.PlayerOn)) : "Desconocido"),
         });
       }
     }
