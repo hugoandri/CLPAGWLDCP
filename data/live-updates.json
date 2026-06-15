@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T17:58:15.038Z",
+  "generatedAt": "2026-06-15T19:22:39.931Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3246,18 +3246,173 @@
     },
     {
       "slug": "belgica-vs-egipto",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": 22,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
+        "goals": [
+          {
+            "minute": 19,
+            "team": "away",
+            "scorer": "E.ashour",
+            "assist": "M SALAH.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "away",
+            "player": "M.attia",
+            "type": "yellow"
+          },
+          {
+            "minute": 14,
+            "team": "home",
+            "player": "Castagne",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Thibaut COURTOIS",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Brandon MECHELE",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Thomas MEUNIER",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Timothy CASTAGNE",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathan NGOY",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Kevin DE BRUYNE",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Youri TIELEMANS",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Amadou ONANA",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Leandro TROSSARD",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Jeremy DOKU",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Charles DE KETELAERE",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "MOSTAFA SHOUBIR",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "YASSER IBRAHIM",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "MOHAMED HANY",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "AHMED FATOUH",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "EMAM ASHOUR",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "MOSTAFA ZICO",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "HAMDY FATHY",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "MOHANAD LASHIN",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "MARAWAN ATTIA",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "MOHAMED SALAH",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "OMAR MARMOUSH",
+              "number": 22,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica compte con una sólida defensa y un ataque liderado por el joven y talentoso Jérémy Doku, mientras que Egipto se apoya en la velocidad y habilidad de Mohamed Salah para generar oportunidades de gol. En este encuentro, espera que Bélgica tenga una ligera ventaja debido a su mayor experiencia y solidez en el conjunto, aunque la presencia de Salah en el equipo egipcio puede generar un equilibrio y hacer que el partido sea muy competitivo.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 2,
+            "away": 1
+          },
+          "fouls": {
+            "home": 5,
+            "away": 1
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido se inclina a favor de Egipto, que lleva la ventaja en el marcador gracias al gol de E. Ashour en el minuto 19, y aunque Bélgica está intentando igualar, los egipcios mantienen el control del juego. A medida que avanza el partido, es probable que Bélgica aumente la presión ofensiva para tratar de empatar, lo que podría dejar espacios en su defensa y permitir a Egipto contrarrestar y ampliar su ventaja.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478"
       }
     },

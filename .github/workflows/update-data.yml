@@ -22,14 +22,17 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
-      - name: Commit and push if data changed
+      - name: Commit and push if match data changed
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git diff --quiet data/live-updates.json || (
+
+          # Only commit if something beyond the generatedAt timestamp changed
+          REAL_DIFF=$(git diff data/live-updates.json | grep '^[+-]' | grep -v '^---' | grep -v '^+++' | grep -v '"generatedAt"')
+          if [ -n "$REAL_DIFF" ]; then
             git add data/live-updates.json &&
             git commit -m "data: update live match data" &&
             git pull --rebase origin main &&
             git push
-          )
+          fi
