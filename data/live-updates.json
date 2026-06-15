@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T02:45:39.367Z",
+  "generatedAt": "2026-06-15T03:52:28.618Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2762,9 +2762,9 @@
     {
       "slug": "suecia-vs-tunez",
       "status": "live",
-      "homeScore": 2,
+      "homeScore": 4,
       "awayScore": 1,
-      "minute": 45,
+      "minute": 92,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
       "confidence": 0.97,
       "detail": {
@@ -2788,10 +2788,91 @@
             "scorer": "Omar REKIK",
             "assist": "Hannibal MEJBRI.",
             "type": "goal"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "scorer": "Viktor GYOKERES",
+            "assist": "Alexander ISAK.",
+            "type": "goal"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "scorer": "Mattias SVANBERG",
+            "type": "goal"
           }
         ],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 54,
+            "team": "away",
+            "player": "Khedira",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Benjamin NYGREN",
+            "playerIn": "Lucas BERGVALL"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Gabriel GUDMUNDSSON",
+            "playerIn": "Elliot STROUD"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Ellyes SKHIRI",
+            "playerIn": "Elias ACHOURI"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Yan Valery",
+            "playerIn": "Mohamed HADJ MAHMOUD"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Elias SAAD",
+            "playerIn": "Sebastian TOUNEKTI"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Jesper KARLSTROM",
+            "playerIn": "Mattias SVANBERG"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Rani Khedira",
+            "playerIn": "Ismael GHARBI"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Anis SLIMANE",
+            "playerIn": "Firas CHAOUAT"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Alexander Isak",
+            "playerIn": "Anthony ELANGA"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Alexander BERNHARDSSON",
+            "playerIn": "Daniel SVENSSON"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -2910,23 +2991,27 @@
         },
         "stats": {
           "shots": {
-            "home": 5,
-            "away": 3
+            "home": 13,
+            "away": 5
           },
           "corners": {
-            "home": 2,
-            "away": 0
-          },
-          "fouls": {
             "home": 4,
             "away": 2
           },
+          "fouls": {
+            "home": 10,
+            "away": 7
+          },
           "offsides": {
+            "home": 3,
+            "away": 5
+          },
+          "yellowCards": {
             "home": 0,
-            "away": 2
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, Suecia lleva la delantera en el marcador con 2 goles a 1, gracias a los goles de Yasin Ayari y Alexander Isak, aunque Túnez logró descontar gracias a Omar Rekik justo antes del final del primer tiempo. Con la ventaja de Suecia, es probable que Túnez intente presionar más en el segundo tiempo para buscar el empate, lo que podría llevar a Suecia a adoptar una postura más defensiva y buscar oportunidades de contraataque.",
+        "aiNotes": "En este momento, el partido entre Suecia y Túnez se inclina claramente a favor de los suecos, quienes llevan una ventaja de 4-1 en el marcador, con goles clave de Yasin Ayari, Alexander Isak, Viktor Gyokeres y Mattias Svanberg, mientras que Omar Rekik anotó el único gol para los tunecinos. Con solo unos minutos restantes, es probable que Suecia mantenga su posición defensiva y controle el ritmo del juego para asegurar su victoria, mientras que Túnez puede intentar presionar en busca de un gol de consolación.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474"
       }
