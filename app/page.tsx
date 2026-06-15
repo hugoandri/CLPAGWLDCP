@@ -3,6 +3,7 @@ import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import MatchCard from "@/components/MatchCard";
 import ArticleCard from "@/components/ArticleCard";
+import LocalTime from "@/components/LocalTime";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 import { teams, getTeam } from "@/data/teams";
@@ -218,7 +219,7 @@ export default function HomePage() {
                     {next.home.name} · {next.away.name}
                   </p>
                   <p className="mt-1 text-xs text-slate-400">
-                    {formatDayMonth(nextMatch!.date)} · {nextMatch!.time} · Gr. {nextMatch!.group}
+                    {formatDayMonth(nextMatch!.date)} · <LocalTime date={nextMatch!.date} time={nextMatch!.time} /> · Gr. {nextMatch!.group}
                   </p>
                 </div>
               )}

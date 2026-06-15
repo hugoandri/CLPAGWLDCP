@@ -5,6 +5,7 @@ import { cn, formatDayMonth } from "@/lib/utils";
 import ProbBar from "@/components/ProbBar";
 import StatusBadge from "@/components/StatusBadge";
 import Flag from "@/components/Flag";
+import LocalTime from "@/components/LocalTime";
 
 interface MatchCardProps {
   match: Match;
@@ -66,9 +67,7 @@ export default function MatchCard({ match, className }: MatchCardProps) {
             </div>
           ) : (
             <div className="leading-tight">
-              <div className="stat-num text-lg font-bold text-navy dark:text-slate-100">
-                {match.time}
-              </div>
+              <LocalTime date={match.date} time={match.time} className="stat-num text-lg font-bold text-navy dark:text-slate-100" />
               <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                 vs
               </div>

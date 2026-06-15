@@ -13,6 +13,7 @@ import AdSlot from "@/components/AdSlot";
 import ProbBar from "@/components/ProbBar";
 import StatusBadge from "@/components/StatusBadge";
 import DisclaimerBox from "@/components/DisclaimerBox";
+import LocalTime from "@/components/LocalTime";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 
@@ -252,7 +253,7 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
                 {match.awayScore}
               </div>
             ) : (
-              <div className="stat-num text-3xl font-extrabold sm:text-4xl">{match.time}</div>
+              <LocalTime date={match.date} time={match.time} className="stat-num text-3xl font-extrabold sm:text-4xl" />
             )}
             <p className="mt-2 text-xs text-slate-400">{formatDateLong(match.date)}</p>
           </div>
