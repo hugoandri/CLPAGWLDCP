@@ -12,6 +12,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -28,11 +30,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-          # Only commit if something beyond the generatedAt timestamp changed
+          # Only commit if something beyond generatedAt changed
           REAL_DIFF=$(git diff data/live-updates.json | grep '^[+-]' | grep -v '^---' | grep -v '^+++' | grep -v '"generatedAt"')
           if [ -n "$REAL_DIFF" ]; then
-            git add data/live-updates.json &&
-            git commit -m "data: update live match data" &&
-            git pull --rebase origin main &&
-            git push
+            git add data/live-updates.json
+            git commit -m "data: update live match data"
+            git push origin HEAD:main
           fi
