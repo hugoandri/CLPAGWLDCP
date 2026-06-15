@@ -10,7 +10,7 @@ export type Confederation =
   | "AFC"
   | "OFC";
 
-export type MatchStatus = "upcoming" | "live" | "finished";
+export type MatchStatus = "upcoming" | "live" | "halftime" | "finished";
 
 export type FormResult = "W" | "D" | "L";
 

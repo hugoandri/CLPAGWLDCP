@@ -7,8 +7,16 @@ interface StatusBadgeProps {
   className?: string;
 }
 
-/** Etiqueta de estado del partido: en vivo (pulsante), finalizado o próximo. */
+/** Etiqueta de estado del partido: en vivo (pulsante), descanso, finalizado o próximo. */
 export default function StatusBadge({ status, minute, className }: StatusBadgeProps) {
+  if (status === "halftime") {
+    return (
+      <span className={cn("chip bg-amber-500/12 text-amber-600 dark:text-amber-400", className)}>
+        Descanso
+      </span>
+    );
+  }
+
   if (status === "live") {
     return (
       <span

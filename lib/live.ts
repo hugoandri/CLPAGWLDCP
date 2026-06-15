@@ -1,11 +1,11 @@
-import type { MatchDetail } from "@/lib/types";
+import type { MatchDetail, MatchStatus } from "@/lib/types";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { unstable_cache } from "next/cache";
 
 export interface LiveMatchUpdate {
   slug: string;
-  status?: "upcoming" | "live" | "finished";
+  status?: MatchStatus;
   homeScore?: number;
   awayScore?: number;
   minute?: number;
@@ -157,8 +157,11 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
       const homeScore = fm.HomeTeamScore ?? 0;
       const awayScore = fm.AwayTeamScore ?? 0;
 
+      // Half-time: FIFA sends MatchStatus=3 but MatchTime="" (empty string)
+      const isHalfTime = isLive && fm.MatchTime === "";
+
       let minute: number | undefined;
-      if (isLive) {
+      if (isLive && !isHalfTime) {
         // "45+2'" → 47, "90+5'" → 95, "30'" → 30
         const apiMinute = parseMatchTime(fm.MatchTime);
         if (apiMinute !== undefined) {
@@ -185,7 +188,7 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
 
       bySlug.set(slug, {
         ...existing,
-        status: isLive ? "live" : "finished",
+        status: isFinished ? "finished" : isHalfTime ? "halftime" : "live",
         homeScore,
         awayScore,
         ...(minute !== undefined ? { minute } : {}),

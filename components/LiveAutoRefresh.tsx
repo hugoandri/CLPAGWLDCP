@@ -2,8 +2,10 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+import type { MatchStatus } from "@/lib/types";
+
 type Props = {
-  status: "upcoming" | "live" | "finished";
+  status: MatchStatus;
   matchDateUTC: string;
 };
 
@@ -15,7 +17,7 @@ export default function LiveAutoRefresh({ status, matchDateUTC }: Props) {
 
     const matchTime = new Date(matchDateUTC).getTime();
     const msUntilMatch = matchTime - Date.now();
-    const isLive = status === "live";
+    const isLive = status === "live" || status === "halftime";
 
     // Refresh when: explicitly live, kickoff < 15 min away, or server shows "upcoming"
     // but match started < 120 min ago (stale deployment data)
