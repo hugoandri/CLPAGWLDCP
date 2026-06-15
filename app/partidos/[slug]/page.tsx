@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { matches, getFreshMatches } from "@/data/matches";
 import { readLiveUpdatesWithFIFA } from "@/lib/live";
+import { fetchFIFACoverage } from "@/lib/fifaLive";
 import { getTeam } from "@/data/teams";
 import { getPrediction } from "@/data/predictions";
 import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent } from "@/lib/types";
@@ -17,6 +18,8 @@ import LocalTime from "@/components/LocalTime";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 import LiveAutoRefresh from "@/components/LiveAutoRefresh";
+import MatchTabs from "@/components/MatchTabs";
+import CoverageFeed from "@/components/CoverageFeed";
 
 export const dynamic = "force-dynamic";
 
@@ -160,6 +163,9 @@ export default async function MatchPage({ params }: { params: { slug: string } }
   const away = getTeam(match.awaySlug);
   if (!home || !away) notFound();
 
+  const isActive = match.status === "live" || match.status === "halftime";
+  const coverage = isActive ? await fetchFIFACoverage(params.slug) : null;
+
   const homePred = getPrediction(home.slug);
   const awayPred = getPrediction(away.slug);
   const hasScore = match.status !== "upcoming";
@@ -276,6 +282,21 @@ export default async function MatchPage({ params }: { params: { slug: string } }
       <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
         {/* Columna principal */}
         <div className="space-y-8">
+          <MatchTabs
+            defaultTab={isActive ? "cobertura" : "estadisticas"}
+            isActive={isActive}
+            coverageSlot={
+              <CoverageFeed
+                events={coverage?.events ?? []}
+                homeName={home.name}
+                awayName={away.name}
+                aiNotes={match.detail?.aiNotes}
+                period={coverage?.period ?? null}
+                matchStatus={match.status}
+              />
+            }
+            statsSlot={
+              <div className="space-y-8">
           {/* Detalle del partido (solo partidos finalizados con datos de IA) */}
           {match.detail && (
             <>
@@ -365,6 +386,7 @@ export default async function MatchPage({ params }: { params: { slug: string } }
           {/* Probabilidades */}
           <section className="card p-6">
             <h2 className="section-title mb-1 text-xl">Probabilidades estadísticas</h2>
+
             <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
               Estimación del modelo para victoria local, empate y victoria visitante.
             </p>
@@ -482,6 +504,9 @@ export default async function MatchPage({ params }: { params: { slug: string } }
           )}
 
           <DisclaimerBox>{DISCLAIMER_BETTING}</DisclaimerBox>
+              </div>
+            }
+          />
         </div>
 
         {/* Sidebar */}
