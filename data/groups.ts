@@ -13,6 +13,8 @@ function buildRows(groupId: string): GroupStandingInput[] {
       lost: 0,
       gf: 0,
       ga: 0,
+      yellowCards: 0,
+      redCards: 0,
     });
   });
 
@@ -44,6 +46,14 @@ function buildRows(groupId: string): GroupStandingInput[] {
         home.drawn += 1;
         away.drawn += 1;
       }
+
+      const cards = match.detail?.cards ?? [];
+      const homeCards = cards.filter((c) => c.team === "home");
+      const awayCards = cards.filter((c) => c.team === "away");
+      home.yellowCards = (home.yellowCards ?? 0) + homeCards.filter((c) => c.type === "yellow").length;
+      away.yellowCards = (away.yellowCards ?? 0) + awayCards.filter((c) => c.type === "yellow").length;
+      home.redCards = (home.redCards ?? 0) + homeCards.filter((c) => c.type === "red" || c.type === "yellow_red").length;
+      away.redCards = (away.redCards ?? 0) + awayCards.filter((c) => c.type === "red" || c.type === "yellow_red").length;
     });
 
   return Array.from(rows.values());

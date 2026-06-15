@@ -13,7 +13,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tendencias" },
 };
 
-export default function TendenciasPage() {
+export default function TendenciasPage({
+  searchParams,
+}: {
+  searchParams: { tab?: string };
+}) {
   const articles = getArticlesWithDetail();
   const jsonLd = [
     collectionPageJsonLd({
@@ -43,7 +47,7 @@ export default function TendenciasPage() {
         <AdSlot slotName="tendencias-top-banner" format="leaderboard" />
       </div>
 
-      <TendenciasClient />
+      <TendenciasClient defaultTab={searchParams?.tab ?? "articulos"} />
 
       <section className="card mt-10 p-6">
         <h2 className="section-title mb-3 text-xl">

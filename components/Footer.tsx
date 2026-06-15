@@ -21,9 +21,8 @@ export default function Footer() {
                   <polygon points="18,40 23.5,44 21.5,50.5 14.5,50.5 12.5,44" fill="#0A0F14" />
                 </svg>
               </span>
-              <span className="font-display text-lg font-extrabold tracking-tight text-navy dark:text-white">
-                Data<span className="text-pitch">Goal</span>{" "}
-                <span className="text-gold">2026</span>
+              <span className="font-brand text-lg tracking-tight text-[#0A0F14] dark:text-[#EAF1ED]">
+                Data<span className="text-[#1E9C49] dark:text-[#2FB85C]">Goal</span>
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-slate-500 dark:text-slate-400">

@@ -102,6 +102,13 @@ matchUpdates:
 - evidenceUrl debe ser una URL valida de la fuente donde encontraste el dato.
 - confidence debe ser un numero entre 0.0 y 1.0.
 
+REGLAS PARA DIFERENCIAR "live" DE "finished":
+- Si el minuto del partido es >= 95, probablemente ya termino (el tiempo extra maximo es ~13 min).
+- Si ves un gol en el minuto 90+ y no hay actividad reciente, el partido esta "finished".
+- Si el texto de la fuente dice "full time", "final", "match ended" o similar, usa "finished".
+- Si la fuente dice "in play", "live", "minuto X" con X < 95, usa "live".
+- No dejes partidos como "live" si la evidencia muestra que terminaron.
+
 detail (solo para partidos "finished"):
 - Incluye el campo detail SOLO si el partido esta "finished".
 - Incluye en detail solo lo que encuentres en las fuentes. Omite campos que no puedas verificar.
@@ -110,8 +117,8 @@ detail (solo para partidos "finished"):
 - substitutions: solo cambios verificados con los dos nombres y minuto.
 - lineup: incluye solo si encontraste la alineacion en las fuentes. Los number son opcionales.
 - stats: incluye solo las estadisticas que aparezcan en las fuentes. Omite las que no encuentres.
-- aiNotes: 2-3 oraciones analiticas sobre el partido. Sin rumores, sin lenguaje de apuestas.
-- Si no encontraste ningun dato de detail, omite el campo detail completamente.
+- aiNotes: 2-3 oraciones analiticas sobre el partido con tu opinion sobre el resultado. Sin rumores, sin lenguaje de apuestas. Ej: "Analisis: El equipo local domino la posesion pero no logro concretar, mientras que la visita aprovecho su unica oportunidad clara. El resultado refleja la efectividad de la contra del equipo visitante."
+- Si no encontraste ningun detalle del partido pero esta "finished", igual incluye detail con aiNotes basado en el marcador y lo que observes.
 
 teamNotes:
 - teamSlug DEBE ser uno de los slugs de knownTeams.

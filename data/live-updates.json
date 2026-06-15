@@ -2523,7 +2523,7 @@
     },
     {
       "slug": "costa-de-marfil-vs-ecuador",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 0,
       "minute": 97,
@@ -2755,7 +2755,7 @@
             "away": 1
           }
         },
-        "aiNotes": "En este momento, Côte d'Ivoire domina el partido con una ventaja de un gol gracias al tanto de Amad DIALLO en el minuto 90, mientras que Ecuador intenta empatar en los minutos finales. Con las tarjetas amarillas repartidas entre ambos equipos, es probable que el partido se vuelva cada vez más intenso y físico en los minutos restantes, lo que podría llevar a oportunidades para ambos equipos de anotar.",
+        "aiNotes": "Análisis final: Costa de Marfil venció 1-0 a Ecuador con un gol agónico de Amad Diallo en el minuto 90. El equipo marfileño dominó la posesión y generó más ocasiones de gol (15 tiros vs 11), mientras que Ecuador no logró concretar sus aproximaciones. Fue un partido físico con varias tarjetas (3 amarillas para Costa de Marfil, 1 para Ecuador), donde la disciplina táctica del equipo local prevaleció.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467"
       }

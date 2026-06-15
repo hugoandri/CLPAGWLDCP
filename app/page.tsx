@@ -7,12 +7,13 @@ import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 import { teams, getTeam } from "@/data/teams";
 import {
+  matches,
   getTodayMatches,
-  getMatchOfTheDay,
   getLiveMatches,
 } from "@/data/matches";
+import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
-import { formatDayMonth } from "@/lib/utils";
+import { computeStandings, formatDayMonth } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -22,16 +23,39 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-// Métricas derivadas para las tarjetas rápidas.
-const topAdvance = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
-const topRanked = [...teams].sort((a, b) => a.internalRank - b.internalRank).slice(0, 3);
+// Próximo partido: el upcoming más cercano por fecha y hora.
+const upcomingSorted = [...matches]
+  .filter((m) => m.status === "upcoming")
+  .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
+const nextMatch = upcomingSorted[0];
+
+// Último partido finalizado o vivo
+const liveMatches = getLiveMatches();
+const liveMatch = liveMatches[0];
+const finishedSorted = [...matches]
+  .filter((m) => m.status === "finished")
+  .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
+const lastFinished = finishedSorted[0];
+
+// Sorpresa: selección con mayor diferencia positiva entre ranking FIFA y ranking interno
 const biggestSurprise = [...teams]
   .filter((t) => t.internalRank <= 30)
   .sort((a, b) => b.fifaRank - b.internalRank - (a.fifaRank - a.internalRank))[0];
-const matchOfDay = getMatchOfTheDay();
+
+// Ranking general: computed standings de todos los grupos combinados y ordenados
+const allStandings = groups.flatMap((g) => computeStandings(g.rows));
+allStandings.sort(
+  (a, b) =>
+    b.points - a.points ||
+    b.gd - a.gd ||
+    b.gf - a.gf ||
+    a.teamSlug.localeCompare(b.teamSlug),
+);
+const topRankedGlobal = allStandings.slice(0, 3);
+const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
 
 const todayMatches = getTodayMatches();
-const liveCount = getLiveMatches().length;
+const liveCount = liveMatches.length;
 const latestArticles = getLatestArticles(3);
 
 function QuickStatCard({
@@ -55,8 +79,13 @@ function QuickStatCard({
 }
 
 export default function HomePage() {
-  const home = getTeam(matchOfDay.homeSlug);
-  const away = getTeam(matchOfDay.awaySlug);
+  const next = nextMatch ? { home: getTeam(nextMatch.homeSlug), away: getTeam(nextMatch.awaySlug) } : { home: null, away: null };
+  const live = liveMatch
+    ? { match: liveMatch, home: getTeam(liveMatch.homeSlug), away: getTeam(liveMatch.awaySlug) }
+    : lastFinished
+      ? { match: lastFinished, home: getTeam(lastFinished.homeSlug), away: getTeam(lastFinished.awaySlug) }
+      : null;
+  const surpriseTeam = biggestSurprise ? getTeam(biggestSurprise.slug) : null;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -135,72 +164,91 @@ export default function HomePage() {
             Resumen rápido
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <QuickStatCard eyebrow="⚽ Partido del día" href={`/partidos/${matchOfDay.slug}`}>
-              {home && away && (
+            <QuickStatCard eyebrow="⚽ Próximo partido" href={nextMatch ? `/partidos/${nextMatch.slug}` : "/partidos"}>
+              {next.home && next.away && (
                 <div>
                   <div className="flex items-center gap-2">
                     <span aria-hidden>
-                      <Flag isoCode={home.isoCode} alt={home.name} width={32} />
+                      <Flag isoCode={next.home.isoCode} alt={next.home.name} width={32} />
                     </span>
                     <span className="text-sm font-bold text-slate-400">vs</span>
                     <span aria-hidden>
-                      <Flag isoCode={away.isoCode} alt={away.name} width={32} />
+                      <Flag isoCode={next.away.isoCode} alt={next.away.name} width={32} />
                     </span>
                   </div>
                   <p className="mt-2 font-display font-bold leading-tight text-navy dark:text-slate-100">
-                    {home.name} · {away.name}
+                    {next.home.name} · {next.away.name}
                   </p>
                   <p className="mt-1 text-xs text-slate-400">
-                    {formatDayMonth(matchOfDay.date)} · {matchOfDay.time} · Gr. {matchOfDay.group}
+                    {formatDayMonth(nextMatch!.date)} · {nextMatch!.time} · Gr. {nextMatch!.group}
                   </p>
                 </div>
               )}
             </QuickStatCard>
 
-            <QuickStatCard eyebrow="🚀 Más probable de avanzar" href={`/selecciones/${topAdvance.slug}`}>
-              <div className="flex items-center gap-3">
-                <span aria-hidden>
-                  <Flag isoCode={topAdvance.isoCode} alt={topAdvance.name} width={48} />
-                </span>
+            <QuickStatCard
+              eyebrow={liveMatch ? "🔴 En vivo" : "⚪ Último resultado"}
+              href={live ? `/partidos/${live.match.slug}` : "/partidos"}
+            >
+              {live && live.home && live.away && (
                 <div>
-                  <p className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
-                    {topAdvance.name}
-                  </p>
-                  <p className="stat-num text-2xl font-extrabold text-pitch-600 dark:text-pitch-300">
-                    {topAdvance.probAdvance}%
-                  </p>
-                </div>
-              </div>
-            </QuickStatCard>
-
-            <QuickStatCard eyebrow="📈 Mayor sorpresa" href={`/selecciones/${biggestSurprise.slug}`}>
-              <div className="flex items-center gap-3">
-                <span aria-hidden>
-                  <Flag isoCode={biggestSurprise.isoCode} alt={biggestSurprise.name} width={48} />
-                </span>
-                <div>
-                  <p className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
-                    {biggestSurprise.name}
-                  </p>
-                  <p className="text-xs text-slate-400">
-                    FIFA #{biggestSurprise.fifaRank} → modelo #{biggestSurprise.internalRank}
-                  </p>
-                </div>
-              </div>
-            </QuickStatCard>
-
-            <QuickStatCard eyebrow="🏆 Ranking por rendimiento" href="/predicciones">
-              <ol className="space-y-1.5">
-                {topRanked.map((t, i) => (
-                  <li key={t.slug} className="flex items-center gap-2 text-sm">
-                    <span className="stat-num w-4 font-bold text-slate-400">{i + 1}</span>
+                  <div className="flex items-center gap-2">
                     <span aria-hidden>
-                      <Flag isoCode={t.isoCode} alt={t.name} width={24} />
+                      <Flag isoCode={live.home.isoCode} alt={live.home.name} width={32} />
                     </span>
-                    <span className="font-semibold text-navy dark:text-slate-100">{t.name}</span>
-                  </li>
-                ))}
-              </ol>
+                    <span className="text-sm font-bold text-slate-400">
+                      {live.match.homeScore ?? ""}-{live.match.awayScore ?? ""}
+                    </span>
+                    <span aria-hidden>
+                      <Flag isoCode={live.away.isoCode} alt={live.away.name} width={32} />
+                    </span>
+                  </div>
+                  <p className="mt-2 font-display font-bold leading-tight text-navy dark:text-slate-100">
+                    {live.home.name} · {live.away.name}
+                  </p>
+                  <p className="mt-1 text-xs text-slate-400">
+                    {liveMatch ? `EN VIVO · ${liveMatch.minute ?? ""}'` : `${formatDayMonth(lastFinished!.date)} · Finalizado`}
+                  </p>
+                </div>
+              )}
+            </QuickStatCard>
+
+            <QuickStatCard eyebrow="📈 Sorpresa" href={surpriseTeam ? `/selecciones/${surpriseTeam.slug}` : "#"}>
+              {surpriseTeam && (
+                <div className="flex items-center gap-3">
+                  <span aria-hidden>
+                    <Flag isoCode={surpriseTeam.isoCode} alt={surpriseTeam.name} width={48} />
+                  </span>
+                  <div>
+                    <p className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
+                      {surpriseTeam.name}
+                    </p>
+                    <p className="text-xs text-slate-400">
+                      FIFA #{surpriseTeam.fifaRank} → modelo #{surpriseTeam.internalRank}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </QuickStatCard>
+
+            <QuickStatCard eyebrow="🏆 Ranking por rendimiento" href="/tendencias?tab=tabla">
+              <div className="space-y-1.5">
+                {topRankedGlobal.map((s, i) => {
+                  const t = getTeam(s.teamSlug);
+                  if (!t) return null;
+                  return (
+                    <div key={s.teamSlug} className="flex items-center gap-2 text-sm">
+                      <span className="stat-num w-4 font-bold text-slate-400">{i + 1}</span>
+                      <span aria-hidden>
+                        <Flag isoCode={t.isoCode} alt={t.name} width={24} />
+                      </span>
+                      <span className="flex-1 truncate font-semibold text-navy dark:text-slate-100">{t.name}</span>
+                      <span className="stat-num font-bold text-navy dark:text-slate-100">{s.points}</span>
+                      <span className="text-xs text-slate-400">pts</span>
+                    </div>
+                  );
+                })}
+              </div>
             </QuickStatCard>
           </div>
         </section>
@@ -262,8 +310,8 @@ export default function HomePage() {
                 />
                 <TrendStat
                   emoji="📊"
-                  value={`${topAdvance.probAdvance}%`}
-                  label={`${topAdvance.name} lidera la probabilidad de avanzar`}
+                  value={`${topAdvanceTeam.probAdvance}%`}
+                  label={`${topAdvanceTeam.name} lidera la probabilidad de avanzar`}
                   href="/predicciones"
                 />
               </div>

@@ -157,6 +157,8 @@ export interface GroupStandingInput {
   lost: number;
   gf: number;
   ga: number;
+  yellowCards?: number;
+  redCards?: number;
 }
 
 export interface Group {

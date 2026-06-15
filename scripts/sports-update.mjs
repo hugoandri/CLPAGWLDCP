@@ -40,6 +40,46 @@ function extractKnownState() {
   return { teams, matches };
 }
 
+function extractMatchSchedules() {
+  const matchesSource = fs.readFileSync(MATCHES_PATH, "utf8");
+  const re = /fixture\(\{ slug: "([^"]+)",[^}]+?date: "(\d{4}-\d{2}-\d{2})",[^}]+?time: "(\d{2}:\d{2})"/g;
+  const schedules = new Map();
+  let m;
+  while ((m = re.exec(matchesSource)) !== null) {
+    schedules.set(m[1], { date: m[2], time: m[3] });
+  }
+  return schedules;
+}
+
+function autoFinishStaleLive(matches, schedules) {
+  const now = new Date();
+  return matches.map((match) => {
+    if (match.status !== "live") return match;
+
+    const schedule = schedules.get(match.slug);
+    if (!schedule) return match;
+
+    const matchStart = new Date(`${schedule.date}T${schedule.time}:00Z`);
+    const elapsedHours = (now - matchStart) / 1000 / 60 / 60;
+
+    // Si pasaron mas de 3:30h desde el inicio, el partido ya termino
+    if (elapsedHours > 3.5) {
+      return {
+        ...match,
+        status: "finished",
+        minute: undefined,
+        detail: match.detail ?? {
+          aiNotes: `Análisis: El partido finalizó con marcador ${match.homeScore ?? "?"}-${match.awayScore ?? "?"}. Los datos se actualizarán en el próximo ciclo de actualización.`,
+          confidence: match.confidence ?? 0.72,
+          evidenceUrl: match.evidenceUrl ?? "",
+        },
+      };
+    }
+
+    return match;
+  });
+}
+
 function stripHtml(html) {
   return html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -360,11 +400,15 @@ function mergeByKey(existing, updates, key) {
 function applyUpdates(sanitized, generatedAt) {
   const currentLive = readJson(LIVE_UPDATES_PATH);
   const currentNotes = readJson(TEAM_NOTES_PATH);
+  const schedules = extractMatchSchedules();
+
+  const merged = mergeByKey(currentLive.matches, sanitized.matchUpdates, "slug");
+  const finished = autoFinishStaleLive(merged, schedules);
 
   writeJson(LIVE_UPDATES_PATH, {
     generatedAt,
     source: "groq-sports-agent",
-    matches: mergeByKey(currentLive.matches, sanitized.matchUpdates, "slug"),
+    matches: finished,
   });
 
   writeJson(TEAM_NOTES_PATH, {

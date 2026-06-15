@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Manrope } from "next/font/google";
+import { Poppins, Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import { siteConfig } from "@/lib/site";
+
+const brand = Poppins({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-brand",
+  display: "swap",
+});
 
 const display = Space_Grotesk({
   subsets: ["latin"],
@@ -102,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
+    <html lang="es" className={`${brand.variable} ${display.variable} ${body.variable}`} suppressHydrationWarning>
       <head>
         {/* Aplica el tema guardado antes de pintar para evitar parpadeo. */}
         <script
