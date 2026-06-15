@@ -4,8 +4,7 @@
 export const siteConfig = {
   name: "DataGoal Lab",
   shortName: "DataGoal Lab",
-  // ⚠️ Reemplaza por tu dominio de producción.
-  url: "https://www.datagoal2026.com",
+  url: "https://www.datagoallab.xyz",
   locale: "es_ES",
   description:
     "Análisis estadístico del Mundial 2026: partidos de hoy, tabla por grupos, predicciones, calculadora de clasificación y datos de selecciones. Sitio independiente, no es de apuestas.",
@@ -14,7 +13,7 @@ export const siteConfig = {
   twitter: "@datagoal2026",
   // ID de cliente de Google AdSense (ca-pub-XXXXXXXXXXXXXXXX).
   // Déjalo vacío hasta tener la cuenta aprobada (ver components/AdSlot.tsx).
-  adsenseClientId: "",
+  adsenseClientId: "ca-pub-6698900918719015",
 } as const;
 
 export const mainNav = [

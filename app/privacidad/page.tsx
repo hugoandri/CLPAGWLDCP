@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Política de privacidad",
   description:
-    "Política de privacidad de DataGoal 2026: cómo tratamos los datos, uso de cookies, publicidad de Google AdSense y herramientas de analítica.",
+    "Política de privacidad de DataGoal Lab: cómo tratamos los datos, uso de cookies, publicidad de Google AdSense y herramientas de analítica.",
   alternates: { canonical: "/privacidad" },
   robots: { index: true, follow: true },
 };
@@ -16,7 +16,7 @@ export default function PrivacidadPage() {
       <PageHeader
         eyebrow="Legal"
         title="Política de privacidad"
-        description="Última actualización: junio de 2026. Esta es una plantilla base; revísala y adáptala a tu jurisdicción antes de publicar."
+        description="Última actualización: junio de 2026."
       />
 
       <div className="prose-datagoal mx-auto max-w-3xl space-y-8 text-slate-600 dark:text-slate-300">
@@ -24,107 +24,160 @@ export default function PrivacidadPage() {
           <h2 className="section-title mb-3 text-2xl">1. Introducción</h2>
           <p>
             En {siteConfig.name} (&laquo;el Sitio&raquo;) respetamos tu
-            privacidad. Esta política explica qué información se recopila, cómo se
-            usa y qué opciones tienes. Al usar el Sitio aceptas las prácticas aquí
-            descritas.
+            privacidad. Esta política explica qué información se recopila, cómo
+            se usa y qué opciones tienes. Al usar el Sitio aceptas las prácticas
+            aquí descritas.
           </p>
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">2. Información que recopilamos</h2>
+          <h2 className="section-title mb-3 text-2xl">2. Responsable del tratamiento</h2>
           <p>
-            El Sitio es principalmente informativo y no requiere registro. Podemos
-            recopilar:
+            El responsable del tratamiento de los datos recogidos a través de
+            este Sitio es el titular de {siteConfig.name}, contactable a través
+            de la <a href="/contacto" className="data-link">página de contacto</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="section-title mb-3 text-2xl">3. Información que recopilamos</h2>
+          <p>
+            El Sitio es principalmente informativo y no requiere registro.
+            Podemos recopilar:
           </p>
           <ul className="mt-2 list-disc space-y-1.5 pl-5">
-            <li>Datos de uso anónimos (páginas visitadas, dispositivo, navegador).</li>
-            <li>Información que nos envíes voluntariamente a través del formulario de contacto.</li>
-            <li>Datos recogidos mediante cookies y tecnologías similares (ver más abajo).</li>
+            <li>
+              Datos de uso anónimos (páginas visitadas, dispositivo, navegador,
+              país de origen) mediante herramientas de analítica.
+            </li>
+            <li>
+              Información que nos envíes voluntariamente a través del formulario
+              de contacto (nombre, dirección de correo, mensaje).
+            </li>
+            <li>
+              Datos recogidos mediante cookies y tecnologías similares (ver
+              sección 4).
+            </li>
           </ul>
-          <p className="mt-2 rounded-lg bg-slate-100 p-3 text-sm dark:bg-white/[0.03]">
-            [Espacio para personalizar: detalla aquí los datos concretos que
-            recojas si añades formularios funcionales, newsletter, etc.]
-          </p>
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">3. Cookies</h2>
+          <h2 className="section-title mb-3 text-2xl">4. Cookies</h2>
           <p>
             Utilizamos cookies para recordar preferencias (como el modo claro u
-            oscuro) y para medir el uso del Sitio. Puedes configurar tu navegador
-            para rechazar las cookies, aunque algunas funciones podrían no
-            comportarse correctamente.
+            oscuro), para medir el uso del Sitio y para mostrar publicidad. Al
+            hacer clic en &laquo;Aceptar&raquo; en el banner de cookies consientes
+            el uso de todas las cookies descritas en esta sección.
           </p>
-          <p className="mt-2 rounded-lg bg-slate-100 p-3 text-sm dark:bg-white/[0.03]">
-            [Espacio para cookies: integra aquí tu banner de consentimiento de
-            cookies (CMP) y la lista detallada de cookies utilizadas.]
+          <div className="mt-4 overflow-x-auto rounded-xl border border-slate-200 dark:border-white/10">
+            <table className="w-full text-sm">
+              <thead className="bg-slate-100 dark:bg-white/[0.04]">
+                <tr>
+                  <th className="px-4 py-2 text-left font-semibold text-navy dark:text-slate-100">Cookie</th>
+                  <th className="px-4 py-2 text-left font-semibold text-navy dark:text-slate-100">Finalidad</th>
+                  <th className="px-4 py-2 text-left font-semibold text-navy dark:text-slate-100">Duración</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-white/10">
+                <tr>
+                  <td className="px-4 py-2 font-mono text-xs">theme</td>
+                  <td className="px-4 py-2">Preferencia de tema claro/oscuro</td>
+                  <td className="px-4 py-2">Permanente (localStorage)</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 font-mono text-xs">cookie_consent</td>
+                  <td className="px-4 py-2">Recuerda tu elección de cookies</td>
+                  <td className="px-4 py-2">Permanente (localStorage)</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 font-mono text-xs">__gads, __gpi</td>
+                  <td className="px-4 py-2">Publicidad de Google AdSense</td>
+                  <td className="px-4 py-2">Hasta 13 meses</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 text-sm">
+            Puedes gestionar o eliminar las cookies desde la configuración de tu
+            navegador. Ten en cuenta que rechazar las cookies puede afectar a
+            algunas funcionalidades del Sitio.
           </p>
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">4. Publicidad — Google AdSense</h2>
+          <h2 className="section-title mb-3 text-2xl">5. Publicidad — Google AdSense</h2>
           <p>
-            Este Sitio puede mostrar anuncios a través de Google AdSense. Google,
-            como proveedor externo, utiliza cookies para mostrar anuncios basados
-            en tus visitas a este y otros sitios web.
+            Este Sitio muestra anuncios a través de Google AdSense (editor:{" "}
+            <span className="font-mono text-sm">{siteConfig.adsenseClientId}</span>).
+            Google, como proveedor externo, utiliza cookies para mostrar anuncios
+            basados en tus visitas a este y otros sitios web.
           </p>
           <ul className="mt-2 list-disc space-y-1.5 pl-5">
             <li>
-              Google y sus socios pueden usar cookies (como la cookie de DoubleClick)
-              para publicar anuncios personalizados.
+              Google y sus socios pueden usar cookies para publicar anuncios
+              personalizados según tu historial de navegación.
             </li>
             <li>
-              Puedes desactivar la publicidad personalizada visitando la
-              Configuración de anuncios de Google
-              (<span className="break-all">google.com/settings/ads</span>).
+              Puedes desactivar la publicidad personalizada en{" "}
+              <a
+                href="https://adssettings.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="data-link"
+              >
+                adssettings.google.com
+              </a>
+              .
             </li>
             <li>
-              Más información sobre cómo Google usa los datos en
-              <span className="break-all"> policies.google.com/technologies/partner-sites</span>.
+              Más información:{" "}
+              <a
+                href="https://policies.google.com/technologies/partner-sites"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="data-link"
+              >
+                policies.google.com/technologies/partner-sites
+              </a>
+              .
             </li>
           </ul>
-          <p className="mt-2 rounded-lg bg-slate-100 p-3 text-sm dark:bg-white/[0.03]">
-            [Espacio para Google AdSense: cuando tu cuenta esté aprobada, añade
-            aquí tu identificador de editor (ca-pub-XXXX) y cualquier requisito
-            adicional de la cuenta.]
-          </p>
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">5. Analítica</h2>
+          <h2 className="section-title mb-3 text-2xl">6. Base legal del tratamiento</h2>
           <p>
-            Podemos utilizar herramientas de analítica web para entender de forma
-            agregada cómo se usa el Sitio y mejorar el contenido.
-          </p>
-          <p className="mt-2 rounded-lg bg-slate-100 p-3 text-sm dark:bg-white/[0.03]">
-            [Espacio para analytics: integra aquí tu proveedor (p. ej. Google
-            Analytics 4 o una alternativa que respete la privacidad) y describe
-            qué datos recoge.]
+            El tratamiento de los datos se basa en tu consentimiento (art. 6.1.a
+            RGPD), otorgado al aceptar las cookies, y en el interés legítimo
+            (art. 6.1.f RGPD) para el funcionamiento técnico del Sitio.
           </p>
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">6. Tus derechos</h2>
+          <h2 className="section-title mb-3 text-2xl">7. Tus derechos</h2>
           <p>
-            Según tu país, puedes tener derecho a acceder, rectificar o eliminar
-            tus datos personales, así como a oponerte a su tratamiento. Para
-            ejercerlos, contáctanos a través de la página de contacto.
+            Conforme al Reglamento General de Protección de Datos (RGPD) tienes
+            derecho a:
+          </p>
+          <ul className="mt-2 list-disc space-y-1 pl-5">
+            <li>Acceder a tus datos personales.</li>
+            <li>Rectificarlos si son inexactos.</li>
+            <li>Solicitar su supresión.</li>
+            <li>Oponerte al tratamiento o solicitar su limitación.</li>
+            <li>Presentar una reclamación ante la Agencia Española de Protección de Datos (aepd.es).</li>
+          </ul>
+          <p className="mt-2">
+            Para ejercer tus derechos, contáctanos a través de la{" "}
+            <a href="/contacto" className="data-link">página de contacto</a>.
           </p>
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">7. Cambios en esta política</h2>
+          <h2 className="section-title mb-3 text-2xl">8. Cambios en esta política</h2>
           <p>
             Podemos actualizar esta política ocasionalmente. Publicaremos la
             versión revisada en esta misma página con su fecha de actualización.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="section-title mb-3 text-2xl">8. Contacto</h2>
-          <p>
-            Para cualquier consulta sobre privacidad, escríbenos desde la{" "}
-            <a href="/contacto" className="data-link">página de contacto</a>.
+            Te recomendamos revisarla periódicamente.
           </p>
         </section>
       </div>

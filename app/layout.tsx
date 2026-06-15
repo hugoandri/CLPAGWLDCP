@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Poppins, Space_Grotesk, Manrope } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeoJsonLd from "@/components/SeoJsonLd";
+import CookieBanner from "@/components/CookieBanner";
 import { siteConfig } from "@/lib/site";
 
 const brand = Poppins({
@@ -119,6 +121,12 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen font-sans">
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseClientId}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <SeoJsonLd data={[websiteJsonLd, organizationJsonLd]} />
         <a
           href="#contenido"
@@ -129,6 +137,7 @@ export default function RootLayout({
         <Header />
         <main id="contenido">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
