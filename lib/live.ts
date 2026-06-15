@@ -40,6 +40,15 @@ const TEAM_SLUG: Record<string, string> = {
   Colombia: "colombia",
 };
 
+/** "45+2'" → 47, "90+5'" → 95, "30'" → 30, null/undefined → undefined */
+function parseMatchTime(raw: unknown): number | undefined {
+  if (typeof raw !== "string" || !raw) return undefined;
+  const s = raw.replace(/'/g, "").trim();
+  const [base, extra] = s.split("+");
+  const result = parseInt(base, 10) + (extra ? parseInt(extra, 10) : 0);
+  return isNaN(result) ? undefined : result;
+}
+
 function readFromFile(): LiveMatchUpdate[] {
   try {
     const filePath = join(process.cwd(), "data/live-updates.json");
@@ -150,9 +159,9 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
 
       let minute: number | undefined;
       if (isLive) {
-        const apiMinute =
-          typeof fm.MatchTime === "string" ? parseInt(fm.MatchTime, 10) : undefined;
-        if (apiMinute && !isNaN(apiMinute)) {
+        // "45+2'" → 47, "90+5'" → 95, "30'" → 30
+        const apiMinute = parseMatchTime(fm.MatchTime);
+        if (apiMinute !== undefined) {
           minute = apiMinute;
         } else if (fm.Date) {
           const elapsed = Math.floor((Date.now() - new Date(fm.Date).getTime()) / 60_000);
