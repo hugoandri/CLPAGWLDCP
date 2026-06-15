@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { matches, getFreshMatches } from "@/data/matches";
-import { readLiveUpdates } from "@/lib/live";
+import { readLiveUpdatesWithFIFA } from "@/lib/live";
 import { getTeam } from "@/data/teams";
 import { getPrediction } from "@/data/predictions";
 import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent } from "@/lib/types";
@@ -20,17 +20,17 @@ import LiveAutoRefresh from "@/components/LiveAutoRefresh";
 
 export const dynamic = "force-dynamic";
 
-function getMatchDynamic(slug: string) {
-  const updates = readLiveUpdates();
+async function getMatchDynamic(slug: string) {
+  const updates = await readLiveUpdatesWithFIFA();
   return getFreshMatches(updates).find((m) => m.slug === slug);
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
-}): Metadata {
-  const match = getMatchDynamic(params.slug);
+}): Promise<Metadata> {
+  const match = await getMatchDynamic(params.slug);
   if (!match) return { title: "Partido no encontrado" };
   const home = getTeam(match.homeSlug);
   const away = getTeam(match.awaySlug);
@@ -152,8 +152,8 @@ function TeamColumn({ team, side }: { team: Team; side: "Local" | "Visitante" })
   );
 }
 
-export default function MatchPage({ params }: { params: { slug: string } }) {
-  const match = getMatchDynamic(params.slug);
+export default async function MatchPage({ params }: { params: { slug: string } }) {
+  const match = await getMatchDynamic(params.slug);
   if (!match) notFound();
 
   const home = getTeam(match.homeSlug);

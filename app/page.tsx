@@ -10,7 +10,7 @@ import { teams, getTeam } from "@/data/teams";
 import {
   getFreshMatches,
 } from "@/data/matches";
-import { readLiveUpdates } from "@/lib/live";
+import { readLiveUpdatesWithFIFA } from "@/lib/live";
 import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
 import { computeStandings, formatDayMonth } from "@/lib/utils";
@@ -26,68 +26,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-// Datos frescos: lee live-updates.json desde disco en cada request
-const freshUpdates = readLiveUpdates();
-const freshMatches = getFreshMatches(freshUpdates);
-
-const upcomingSorted = [...freshMatches]
-  .filter((m) => m.status === "upcoming")
-  .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
-const nextMatch = upcomingSorted[0];
-
-const liveMatch = freshMatches.find((m) => m.status === "live");
-const finishedSorted = [...freshMatches]
-  .filter((m) => m.status === "finished")
-  .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
-const lastFinished = finishedSorted[0];
-
-// Sorpresa: equipo con menor probabilidad promedio de ganar en todas sus victorias
-type Surprise = { team: typeof teams[0]; wins: (typeof freshMatches)[0][]; avgProb: number };
-type TeamWinAcc = { team: typeof teams[0]; wins: (typeof freshMatches)[0][]; probs: number[] };
-const teamWins = new Map<string, TeamWinAcc>();
-for (const m of freshMatches) {
-  if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) continue;
-  if (m.homeScore > m.awayScore) {
-    const t = getTeam(m.homeSlug);
-    if (t) {
-      const key = t.slug;
-      if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
-      teamWins.get(key)!.wins.push(m);
-      teamWins.get(key)!.probs.push(m.probHome);
-    }
-  } else if (m.awayScore > m.homeScore) {
-    const t = getTeam(m.awaySlug);
-    if (t) {
-      const key = t.slug;
-      if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
-      teamWins.get(key)!.wins.push(m);
-      teamWins.get(key)!.probs.push(m.probAway);
-    }
-  }
-}
-const surprises: Surprise[] = Array.from(teamWins.values()).map((entry) => ({
-  team: entry.team,
-  wins: entry.wins,
-  avgProb: Math.round(entry.probs.reduce((a, b) => a + b, 0) / entry.probs.length),
-}));
-surprises.sort((a, b) => a.avgProb - b.avgProb);
-const biggestSurprise = surprises[0];
-
-// Ranking general: computed standings de todos los grupos combinados y ordenados
-const allStandings = groups.flatMap((g) => computeStandings(g.rows));
-allStandings.sort(
-  (a, b) =>
-    b.points - a.points ||
-    b.gd - a.gd ||
-    b.gf - a.gf ||
-    a.teamSlug.localeCompare(b.teamSlug),
-);
-const topRankedGlobal = allStandings.slice(0, 3);
-const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
-
-const todayStr = new Date().toISOString().slice(0, 10);
-const todayMatches = freshMatches.filter((m) => m.date === todayStr);
-const liveCount = freshMatches.filter((m) => m.status === "live").length;
+type Surprise = { team: typeof teams[0]; wins: ReturnType<typeof getFreshMatches>[0][]; avgProb: number };
+type TeamWinAcc = { team: typeof teams[0]; wins: ReturnType<typeof getFreshMatches>[0][]; probs: number[] };
 const latestArticles = getLatestArticles(3);
 
 function QuickStatCard({
@@ -110,7 +50,65 @@ function QuickStatCard({
   );
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  const freshUpdates = await readLiveUpdatesWithFIFA();
+  const freshMatches = getFreshMatches(freshUpdates);
+
+  const upcomingSorted = [...freshMatches]
+    .filter((m) => m.status === "upcoming")
+    .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
+  const nextMatch = upcomingSorted[0];
+
+  const liveMatch = freshMatches.find((m) => m.status === "live");
+  const finishedSorted = [...freshMatches]
+    .filter((m) => m.status === "finished")
+    .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
+  const lastFinished = finishedSorted[0];
+
+  const teamWins = new Map<string, TeamWinAcc>();
+  for (const m of freshMatches) {
+    if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) continue;
+    if (m.homeScore > m.awayScore) {
+      const t = getTeam(m.homeSlug);
+      if (t) {
+        const key = t.slug;
+        if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
+        teamWins.get(key)!.wins.push(m);
+        teamWins.get(key)!.probs.push(m.probHome);
+      }
+    } else if (m.awayScore > m.homeScore) {
+      const t = getTeam(m.awaySlug);
+      if (t) {
+        const key = t.slug;
+        if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
+        teamWins.get(key)!.wins.push(m);
+        teamWins.get(key)!.probs.push(m.probAway);
+      }
+    }
+  }
+  const surprises: Surprise[] = Array.from(teamWins.values()).map((entry) => ({
+    team: entry.team,
+    wins: entry.wins,
+    avgProb: Math.round(entry.probs.reduce((a, b) => a + b, 0) / entry.probs.length),
+  }));
+  surprises.sort((a, b) => a.avgProb - b.avgProb);
+  const biggestSurprise = surprises[0];
+
+  const allStandings = groups.flatMap((g) => computeStandings(g.rows));
+  allStandings.sort(
+    (a, b) =>
+      b.points - a.points ||
+      b.gd - a.gd ||
+      b.gf - a.gf ||
+      a.teamSlug.localeCompare(b.teamSlug),
+  );
+  const topRankedGlobal = allStandings.slice(0, 3);
+  const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
+
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const todayMatches = freshMatches.filter((m) => m.date === todayStr);
+  const liveCount = freshMatches.filter((m) => m.status === "live").length;
+
   const next = nextMatch ? { home: getTeam(nextMatch.homeSlug), away: getTeam(nextMatch.awaySlug) } : { home: null, away: null };
   const live = liveMatch
     ? { match: liveMatch, home: getTeam(liveMatch.homeSlug), away: getTeam(liveMatch.awaySlug) }
