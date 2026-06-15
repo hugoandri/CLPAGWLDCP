@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T03:57:39.191Z",
+  "generatedAt": "2026-06-15T16:24:25.473Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2857,14 +2857,14 @@
           {
             "minute": 84,
             "team": "away",
-            "playerOut": "Rani Khedira",
-            "playerIn": "Ismael GHARBI"
+            "playerOut": "Anis SLIMANE",
+            "playerIn": "Firas CHAOUAT"
           },
           {
             "minute": 84,
             "team": "away",
-            "playerOut": "Anis SLIMANE",
-            "playerIn": "Firas CHAOUAT"
+            "playerOut": "Rani Khedira",
+            "playerIn": "Ismael GHARBI"
           },
           {
             "minute": 90,
@@ -3024,18 +3024,163 @@
     },
     {
       "slug": "espana-vs-cabo-verde",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 23,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
-        "cards": [],
+        "cards": [
+          {
+            "minute": 16,
+            "team": "away",
+            "player": "Sidny Lopes Cabral",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Unai SIMON",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Marcos LLORENTE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Aymeric LAPORTE",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Pau CUBARSI",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Marc CUCURELLA",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Fabian RUIZ",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "GAVI",
+              "number": 9,
+              "position": "MID"
+            },
+            {
+              "name": "RODRI",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "PEDRI",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Ferran TORRES",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Mikel OYARZABAL",
+              "number": 21,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "VOZINHA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "DINEY BORGES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "PICO LOPES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "SIDNY LOPES CABRAL",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "STEVEN MOREIRA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "KEVIN PINA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "JOVANE CABRAL",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "JAMIRO MONTEIRO",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "LAROS DUARTE",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "DAILON LIVRAMENTO",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "RYAN MENDES",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con dinámicas diferentes, ya que España se encuentra en una buena forma reciente y cuenta con el talento de Pedri, mientras que Cabo Verde busca sorprender con la habilidad de Jovane Cabral. Espero que España tenga ventaja en este encuentro debido a su mayor experiencia y solidez defensiva, lo que podría permitirle controlar el ritmo del juego y aprovechar las oportunidades de ataque.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 2,
+            "away": 0
+          },
+          "corners": {
+            "home": 1,
+            "away": 0
+          },
+          "fouls": {
+            "home": 2,
+            "away": 0
+          },
+          "offsides": {
+            "home": 0,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento del partido, España y Cabo Verde se encuentran empatados a cero goles, con un ritmo de juego bastante equilibrado, aunque Cabo Verde ha mostrado cierta solidez defensiva, mientras que España busca encontrar espacios para crear oportunidades de ataque. A medida que avanza el partido, es probable que España intente aumentar la presión sobre la defensa de Cabo Verde, intentando encontrar el gol que les permita tomar la delantera, mientras que Cabo Verde podría buscar contrarrestar con rápidas transiciones ofensivas.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482"
       }
     },
