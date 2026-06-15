@@ -12,7 +12,8 @@
     "sports:update:apply": "node --env-file=.env.local scripts/sports-update.mjs --apply",
     "sports:update:check": "node --env-file=.env.local scripts/sports-update.mjs --check",
     "fifa:fetch": "node --env-file=.env.local scripts/fifa-fetch.mjs",
-    "fifa:fetch:apply": "node --env-file=.env.local scripts/fifa-fetch.mjs --apply"
+    "fifa:fetch:apply": "node --env-file=.env.local scripts/fifa-fetch.mjs --apply",
+    "fifa:update": "node --env-file=.env.local scripts/fifa-fetch.mjs --apply && kill $(lsof -t -i:3000) 2>/dev/null; npm run dev"
   },
   "dependencies": {
     "next": "^14.2.15",

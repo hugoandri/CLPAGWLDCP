@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T01:02:32.977Z",
+  "generatedAt": "2026-06-15T00:34:26.378Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -210,28 +210,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 15,
-            "away": 9
-          },
-          "corners": {
-            "home": 4,
-            "away": 3
-          },
-          "fouls": {
-            "home": 22,
-            "away": 18
-          },
-          "offsides": {
-            "home": 3,
-            "away": 1
-          },
-          "yellowCards": {
-            "home": 1,
-            "away": 3
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Haiti y Escocia, el equipo escocés se llevó la victoria por 1-0 gracias al gol de John McGinn en el minuto 28, lo que resultó ser el único gol del encuentro. Desde un punto de vista analítico, la victoria de Escocia se debió en gran medida a su solidez defensiva, que logró contener los intentos de ataque de Haiti a pesar de recibir varias tarjetas amarillas en diferentes momentos del partido.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021453"
@@ -446,28 +425,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 9,
-            "away": 30
-          },
-          "corners": {
-            "home": 5,
-            "away": 8
-          },
-          "fouls": {
-            "home": 12,
-            "away": 3
-          },
-          "offsides": {
-            "home": 1,
-            "away": 3
-          },
-          "yellowCards": {
-            "home": 0,
-            "away": 1
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Australia y Turquía, el equipo australiano se impuso con un marcador de 2-0 gracias a los goles de Nestory Irankunda en el minuto 27 y Connor Metcalfe en el minuto 75, mientras que el equipo turco solo logró una tarjeta amarilla para Yunus en el minuto 86. La victoria de Australia puede considerarse como un resultado sólido, ya que su rendimiento táctico les permitió controlar el partido y aprovechar las oportunidades para anotar, lo que les da una buena base para avanzar en el torneo.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021463"
@@ -704,24 +662,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 26,
-            "away": 8
-          },
-          "corners": {
-            "home": 8,
-            "away": 1
-          },
-          "fouls": {
-            "home": 18,
-            "away": 11
-          },
-          "offsides": {
-            "home": 0,
-            "away": 1
-          }
-        },
+        "stats": {},
         "aiNotes": "Alemania logró una contundente victoria de 7-1 sobre Curazao, con goles decisivos de Havertz, Musiala y otros jugadores clave que aprovecharon las oportunidades generadas por la efectiva labor de asistentes como Kimmich y Wirtz. La goleada refleja el dominio táctico y la superioridad en el campo de Alemania, lo que sugiere que el equipo está en buen estado de forma y listo para enfrentar desafíos más importantes en el torneo.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021464"
@@ -963,28 +904,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 10,
-            "away": 9
-          },
-          "corners": {
-            "home": 5,
-            "away": 4
-          },
-          "fouls": {
-            "home": 4,
-            "away": 7
-          },
-          "offsides": {
-            "home": 1,
-            "away": 0
-          },
-          "yellowCards": {
-            "home": 3,
-            "away": 0
-          }
-        },
+        "stats": {},
         "aiNotes": "El partido entre Paises Bajos y Japon terminó con un empate de 2-2, con goles clave de Virgil Van Dijk y Crysencio Summerville para los neerlandeses, y Nakamura y Kamada para los japoneses, en un encuentro que estuvo marcado por la intensidad y la igualdad entre ambos equipos. La estrategia táctica de ambos equipos fue efectiva en momentos clave, aunque el empate puede considerarse un resultado sorprendente dado el contexto del torneo y las expectativas previas sobre el desempeño de estos equipos.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021470"
@@ -1224,28 +1144,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 16,
-            "away": 3
-          },
-          "corners": {
-            "home": 3,
-            "away": 1
-          },
-          "fouls": {
-            "home": 10,
-            "away": 8
-          },
-          "offsides": {
-            "home": 1,
-            "away": 1
-          },
-          "yellowCards": {
-            "home": 1,
-            "away": 2
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre México y Sudáfrica, el equipo mexicano se impuso con un resultado de 2-0 gracias a los goles de Julian Quinones en el minuto 9 y Raúl en el minuto 67, mientras que el equipo sudafricano se vio debilitado por las expulsiones de Sithole, Zwane y las tarjetas amarillas que recibieron varios de sus jugadores. La victoria de México se debió en gran medida a su sólido rendimiento táctico y a la capacidad de aprovechar las oportunidades que se le presentaron, especialmente después de la expulsión de Sithole en el minuto 49, lo que les permitió controlar el ritmo",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021443"
@@ -1462,28 +1361,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 15,
-            "away": 7
-          },
-          "corners": {
-            "home": 4,
-            "away": 5
-          },
-          "fouls": {
-            "home": 8,
-            "away": 16
-          },
-          "offsides": {
-            "home": 2,
-            "away": 2
-          },
-          "yellowCards": {
-            "home": 1,
-            "away": 0
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Corea Del Sur y Chequia, los coreanos lograron una victoria por 2-1 gracias a los goles de Hwang Inbeom y H G Oh, después de que Ladislav Krejci abriera el marcador para los checos en el minuto 59. La victoria de Corea Del Sur se debió en gran medida a su capacidad para revertir el resultado después de ir en desventaja, lo que muestra una notable resiliencia y capacidad de reacción en el equipo.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021441"
@@ -1723,28 +1601,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 13,
-            "away": 8
-          },
-          "corners": {
-            "home": 9,
-            "away": 4
-          },
-          "fouls": {
-            "home": 8,
-            "away": 17
-          },
-          "offsides": {
-            "home": 1,
-            "away": 0
-          },
-          "yellowCards": {
-            "home": 2,
-            "away": 3
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Canadá y Bosnia Herzegovina, el equipo canadiense logró empatar 1-1 después de que Cyle Larin anotara en el minuto 78, igualando el gol inicial de Jovo Lukic para Bosnia Herzegovina en el minuto 21. La estrategia defensiva de ambos equipos funcionó bien durante gran parte del partido, aunque la habilidad ofensiva de ambos equipos fue desigual, lo que llevó a un resultado final ajustado y emocionante.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021449"
@@ -2004,28 +1861,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 16,
-            "away": 9
-          },
-          "corners": {
-            "home": 3,
-            "away": 1
-          },
-          "fouls": {
-            "home": 12,
-            "away": 12
-          },
-          "offsides": {
-            "home": 2,
-            "away": 1
-          },
-          "yellowCards": {
-            "home": 1,
-            "away": 5
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Estados Unidos y Paraguay, el equipo estadounidense se llevó una victoria contundente con un marcador de 4-1, gracias a los goles de Damian Bobadilla en propia puerta, dos tantos de Folarin Balogun y el gol final de Reyna, mientras que Paraguay solo pudo anotar a través de Mauricio. La estrategia ofensiva de Estados Unidos demostró ser efectiva, aprovechando las oportunidades y mostrando una mayor eficiencia en el ataque, lo que les permitió controlar el ritmo del partido y obtener una importante victoria en el torneo.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021458"
@@ -2251,28 +2087,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 6,
-            "away": 26
-          },
-          "corners": {
-            "home": 3,
-            "away": 10
-          },
-          "fouls": {
-            "home": 10,
-            "away": 10
-          },
-          "offsides": {
-            "home": 0,
-            "away": 1
-          },
-          "yellowCards": {
-            "home": 2,
-            "away": 1
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Catar y Suiza, el equipo suizo se puso en ventaja gracias a un penal convertido por Embolo en el minuto 17, pero Catar logró empatar en el tiempo añadido con un gol de Miro Muheim en el minuto 94. La igualdad en el marcador refleja un rendimiento táctico equilibrado de ambos equipos, aunque la expulsión no se produjo, las tarjetas amarillas distribuidas a lo largo del partido mostraron la intensidad y la lucha por cada balón en este encuentro del Mundial 2026.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021447"
@@ -2494,28 +2309,7 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 12,
-            "away": 14
-          },
-          "corners": {
-            "home": 6,
-            "away": 2
-          },
-          "fouls": {
-            "home": 14,
-            "away": 14
-          },
-          "offsides": {
-            "home": 0,
-            "away": 1
-          },
-          "yellowCards": {
-            "home": 2,
-            "away": 0
-          }
-        },
+        "stats": {},
         "aiNotes": "En el partido entre Brasil y Marruecos, el equipo brasileño logró empatar el encuentro 1-1 gracias al gol de Vini Jr. en el minuto 32, después de que Saibari abriera el marcador para Marruecos en el minuto 21. La estrategia de Brasil pareció funcionar en momentos puntuales, especialmente durante la primera mitad, aunque las tarjetas amarillas recibidas por Casemiro y Roger Ibanez podrían tener un impacto en la alineación para los próximos partidos.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021456"
@@ -2524,21 +2318,13 @@
     {
       "slug": "costa-de-marfil-vs-ecuador",
       "status": "live",
-      "homeScore": 1,
+      "homeScore": 0,
       "awayScore": 0,
-      "minute": 97,
+      "minute": 66,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467",
       "confidence": 0.97,
       "detail": {
-        "goals": [
-          {
-            "minute": 90,
-            "team": "home",
-            "scorer": "Amad DIALLO",
-            "assist": "Wilfried SINGO.",
-            "type": "goal"
-          }
-        ],
+        "goals": [],
         "cards": [
           {
             "minute": 28,
@@ -2556,12 +2342,6 @@
             "minute": 40,
             "team": "home",
             "player": "Guela DOUE",
-            "type": "yellow"
-          },
-          {
-            "minute": 73,
-            "team": "away",
-            "player": "Jackson POROZO",
             "type": "yellow"
           }
         ],
@@ -2595,30 +2375,6 @@
             "team": "away",
             "playerOut": "Alan FRANCO",
             "playerIn": "Jackson POROZO"
-          },
-          {
-            "minute": 77,
-            "team": "home",
-            "playerOut": "Seko Fofana",
-            "playerIn": "Ibrahim SANGARE"
-          },
-          {
-            "minute": 77,
-            "team": "home",
-            "playerOut": "Nicolas PEPE",
-            "playerIn": "Christ Inao OULAI"
-          },
-          {
-            "minute": 77,
-            "team": "away",
-            "playerOut": "Enner VALENCIA",
-            "playerIn": "Kevin RODRIGUEZ"
-          },
-          {
-            "minute": 89,
-            "team": "home",
-            "playerOut": "Guela DOUE",
-            "playerIn": "Odilon KOSSOUNOU"
           }
         ],
         "lineup": {
@@ -2737,25 +2493,8 @@
             }
           ]
         },
-        "stats": {
-          "shots": {
-            "home": 15,
-            "away": 11
-          },
-          "corners": {
-            "home": 3,
-            "away": 4
-          },
-          "fouls": {
-            "home": 7,
-            "away": 12
-          },
-          "yellowCards": {
-            "home": 3,
-            "away": 1
-          }
-        },
-        "aiNotes": "En este momento, Côte d'Ivoire domina el partido con una ventaja de un gol gracias al tanto de Amad DIALLO en el minuto 90, mientras que Ecuador intenta empatar en los minutos finales. Con las tarjetas amarillas repartidas entre ambos equipos, es probable que el partido se vuelva cada vez más intenso y físico en los minutos restantes, lo que podría llevar a oportunidades para ambos equipos de anotar.",
+        "stats": {},
+        "aiNotes": "En este momento, el partido entre Côte d'Ivoire y Ecuador se encuentra empatado 0-0, con Côte d'Ivoire recibiendo varias tarjetas amarillas que pueden afectar su estrategia en el resto del encuentro. La acumulación de tarjetas amarillas para Côte d'Ivoire puede llevar a una mayor precaución en su juego, lo que podría dar a Ecuador una oportunidad para tomar la iniciativa y buscar el gol que rompa el empate.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467"
       }
@@ -2772,7 +2511,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes fortalezas, ya que Suecia cuenta con una sólida defensa y un ataque liderado por Alexander Isak, mientras que Túnez se basa en la creatividad de Ellyes Skhiri en el medio campo y una gran disciplina táctica. Espero que Suecia tenga una ligera ventaja en el partido debido a su mayor experiencia en competiciones internacionales y la calidad de su delantero estrella, lo que podría ser demasiado para la defensa tunecina.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, Suecia cuenta con la habilidad goleadora de Alexander Isak y una forma reciente irregular, mientras que Túnez se apoya en la solidez defensiva y el liderazgo de Ellyes Skhiri en el mediocampo, quien ha demostrado ser fundamental en la creación de oportunidades de ataque. Espero que Suecia tenga una ligera ventaja en el partido debido a su mayor experiencia en competiciones internacionales y la calidad de su delantero estrella, aunque Túnez puede ofrecer una resistencia fuerte y hacer que el encuentro sea muy disputado.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474"
       }
@@ -2789,7 +2528,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con dinámicas diferentes, ya que España se encuentra en una buena forma reciente y cuenta con el talento de Pedri, mientras que Cabo Verde busca sorprender con la habilidad de Jovane Cabral. Espero que España tenga ventaja en este encuentro debido a su mayor experiencia y solidez defensiva, lo que podría permitirle controlar el ritmo del juego y aprovechar las oportunidades de ataque.",
+        "aiNotes": "Los equipos llegan al partido con contextos diferentes, ya que España se presenta con una sólida forma reciente y una plantilla llena de talento, destacando a Pedri como el jugador clave a seguir, mientras que Cabo Verde busca sorprender con la velocidad y habilidad de Jovane Cabral. En este encuentro, España tiene la ventaja debido a su experiencia y jerarquía en el fútbol internacional, lo que sugiere que debería imponerse en el partido, aunque Cabo Verde puede ofrecer resistencia y complicar el triunfo de los ibéricos.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482"
       }
@@ -2806,7 +2545,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica compte con una sólida defensa y un ataque liderado por el joven y talentoso Jérémy Doku, mientras que Egipto se apoya en la velocidad y habilidad de Mohamed Salah para generar oportunidades de gol. En este encuentro, espera que Bélgica tenga una ligera ventaja debido a su mayor experiencia y solidez en el conjunto, aunque la presencia de Salah en el equipo egipcio puede generar un equilibrio y hacer que el partido sea muy competitivo.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica cuenta con una sólida estructura defensiva y un ataque veloz liderado por Jérémy Doku, mientras que Egipto se apoya en la habilidad y velocidad de Mohamed Salah para generar oportunidades de gol. En este encuentro, Bélgica parece tener una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su cohesión como equipo, lo que podría permitirle controlar el ritmo del partido y neutralizar el impacto de Salah.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478"
       }
@@ -2823,7 +2562,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Uruguay se encuentra en una mejor posición en el ranking FIFA y cuenta con un jugador clave como Federico Valverde, mientras que Arabia Saudita busca sorprender con la habilidad de Salem Al-Dawsari. Uruguay tiene una ligera ventaja en este partido debido a su mayor experiencia y solidez en el juego colectivo, lo que podría ser demasiado para el equipo árabe, a pesar de su capacidad para generar sorpresas.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Arabia Saudita busca demostrar su progreso con jugadores como Salem Al-Dawsari, mientras que Uruguay cuenta con la experiencia y habilidad de Federico Valverde, quien puede ser clave en la creación de oportunidades para su equipo. Uruguay tiene una ligera ventaja en este partido debido a su mayor experiencia en torneos internacionales y su sólida defensa, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores de Arabia Saudita.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486"
       }
@@ -2840,7 +2579,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "IR Iran llega al partido con una buena forma reciente, gracias a la destacada labor de Mehdi Taremi, quien ha sido clave en la generación de oportunidades de gol y ha demostrado ser un jugador muy peligroso en el ataque, mientras que New Zealand busca sorprender con la experiencia y habilidad de Chris Wood, aunque su equipo ha mostrado ciertas debilidades en la defensa. En este encuentro, IR Iran parece tener la ventaja debido a su mejor posición en el ranking FIFA y su mayor experiencia en competiciones internacionales, lo que podría darles una cierta superioridad en el campo de juego.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Irán cuenta con una sólida forma reciente y un jugador clave como Mehdi Taremi, mientras que Nueva Zelanda busca sorprender con la habilidad goleadora de Chris Wood, aunque su posición en la clasificación FIFA sugiere una ventaja para los iraníes. En este encuentro, Irán parece tener la ventaja debido a su mayor experiencia y solidez en el juego, lo que podría permitirles controlar el ritmo del partido y aprovechar las oportunidades ofensivas para obtener una victoria.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476"
       }
@@ -2857,7 +2596,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Francia llega al partido con una forma sólida, gracias a la velocidad y habilidad de Kylian Mbappé, quien ha demostrado ser una pieza clave en el ataque del equipo, mientras que Senegal cuenta con la experiencia y el liderazgo de Sadio Mané, aunque su forma reciente ha sido irregular. Espero que Francia tenga ventaja en el partido debido a su mayor profundidad en el banquillo y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para el equipo senegalés.",
+        "aiNotes": "Francia llega al partido con una forma reciente impresionante, gracias a la velocidad y habilidad de su delantero estrella Kylian Mbappé, mientras que Senegal confía en la experiencia y habilidad de Sadio Mané, aunque su rendimiento ha sido un poco irregular en los últimos partidos. Espero que Francia tenga ventaja en este partido debido a su mayor profundidad en el banquillo y su cohesión como equipo, lo que les permitirá dominar el juego y crear oportunidades claras de gol contra un equipo senegalés que, aunque peligroso en contragolpe, puede tener dificultades para contener el ataque francés.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490"
       }
@@ -2874,7 +2613,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Both Iraq and Norway arrive at the match with different forms, Iraq has shown a solid defensive structure, while Norway has a strong attacking force led by Erling Haaland, who is the key player to watch in this match. Norway is expected to have an advantage in this match due to its higher ranking and the exceptional goal-scoring ability of Haaland, which could be too much for Iraq's defense to handle.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Noruega se encuentra en una buena forma reciente gracias a la destacada actuación de Erling Haaland, mientras que Iraq busca aprovechar su solidez defensiva y la habilidad de Ayman Hussein para generar peligro en el ataque. Considero que Noruega tiene una ligera ventaja en este partido debido a su mayor experiencia en competiciones internacionales y la capacidad goleadora de Haaland, lo que podría ser demasiado para la defensa iraquí.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488"
       }
@@ -2891,7 +2630,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Argentina llega al partido con una forma reciente imponente, liderada por la genialidad de Lionel Messi, quien sigue siendo el jugador clave a seguir en el equipo, mientras que Algeria busca sorprender con la velocidad y habilidad de Mohamed Amoura, aunque su forma reciente ha sido irregular. Mi expectativa es que Argentina tenga la ventaja en este partido debido a su mayor experiencia y calidad en el conjunto, lo que les permitirá controlar el ritmo del juego y crear oportunidades claras de gol.",
+        "aiNotes": "Argentina llega al partido con una sólida forma reciente, gracias a la experiencia y el liderazgo de Lionel Messi, quien es el jugador clave a seguir en este encuentro, mientras que Algeria busca sorprender con la velocidad y habilidad de Mohamed Amoura. En este partido, Argentina tiene una ventaja significativa debido a su posición en el ranking FIFA y su experiencia en competiciones de alto nivel, lo que sugiere que debería llevarse la victoria, aunque Algeria podría ofrecer una resistencia sorprendente si logra aprovechar sus oportunidades de contraataque.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021496"
       }
@@ -2908,7 +2647,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Austria llega al partido con una forma reciente irregular, pero cuenta con la experiencia y habilidad de Marcel Sabitzer, quien es clave para generar oportunidades de ataque, mientras que Jordania ha mostrado una defensa sólida en sus últimos partidos y confía en la velocidad y habilidad de Mousa Al-Taamari para sorprender a su oponente. Considero que Austria tiene una ligera ventaja debido a su mayor experiencia en competiciones internacionales y a la calidad de su plantel, lo que podría permitirle dominar el ritmo del partido y crear más oportunidades de gol.",
+        "aiNotes": "Austria llega al partido con una forma reciente irregular, pero cuenta con la experiencia y habilidad de Marcel Sabitzer, quien puede ser el factor clave para desequilibrar el partido, mientras que Jordania busca sorprender con la velocidad y habilidad de Mousa Al-Taamari. Considero que Austria tiene ventaja en este partido debido a su mayor experiencia y nivel de competición en torneos internacionales, lo que les permitirá dominar el juego y crear más oportunidades de gol que su rival.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498"
       }
@@ -2925,7 +2664,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Portugal se encuentra en una buena forma reciente gracias a la destacada actuación de Bruno Fernandes, mientras que Congo DR busca capitalizar la velocidad y habilidad de Yoane Wissa para sorprender a su oponente. La ventaja en este partido parece estar del lado de Portugal, debido a su mayor experiencia y sólida estructura defensiva, lo que podría limitar las oportunidades de ataque del Congo DR y permitirle controlar el ritmo del juego.",
+        "aiNotes": "Portugal llega al partido con una forma reciente sólida, gracias a la creatividad y habilidad de Bruno Fernandes, quien es el jugador clave a seguir en este encuentro, mientras que Congo DR busca sorprender con la velocidad y habilidad de Yoane Wissa. La ventaja parece estar del lado de Portugal debido a su mayor experiencia y jerarquía en el fútbol internacional, lo que podría darles una superioridad en el control del juego y la creación de oportunidades de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502"
       }
@@ -2942,7 +2681,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Inglaterra cuenta con un rendimiento estable en los últimos partidos y se apoya en la habilidad de Jude Bellingham para generar oportunidades de ataque, mientras que Croacia busca recuperar su nivel competitivo con la experiencia y el liderazgo de Luka Modrić. En este encuentro, Inglaterra parece tener una ligera ventaja debido a su consistencia en la forma reciente y la solidez de su defensa, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores de un equipo croata que busca encontrar su ritmo.",
+        "aiNotes": "Inglaterra llega al partido con una forma reciente sólida, gracias en parte a la destacada actuación de Jude Bellingham, quien ha demostrado ser un jugador clave en la creación de oportunidades de gol, mientras que Croacia cuenta con la experiencia y habilidad de Luka Modrić para controlar el ritmo del juego. Espero que Inglaterra tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su solidez defensiva, aunque la presencia de Modrić en el equipo croata puede generar problemas para la defensa inglesa y hacer que el partido sea muy competitivo.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507"
       }
@@ -2959,7 +2698,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Ghana cuenta con la ventaja de tener a Mohammed Kudus, un jugador clave que ha demostrado su capacidad para marcar goles decisivos, mientras que Panama se apoya en la experiencia y habilidad de Adalberto Carrasquilla para controlar el ritmo del juego. En este encuentro, Ghana podría tener una ligera ventaja debido a su capacidad para sorprender a sus oponentes con su velocidad y agresividad en el ataque, lo que podría poner en dificultades a la defensa panameña.",
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, Ghana se basa en la velocidad y habilidad de Mohammed Kudus, mientras que Panama confía en la solidez defensiva y la creatividad de Adalberto Carrasquilla, lo que les ha permitido mantener una forma estable en los últimos partidos. Espero que el partido sea intenso y competitivo, aunque Panama podría tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su capacidad para controlar el ritmo del juego, lo que podría neutralizar el ataque ghaneano.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510"
       }
@@ -2976,7 +2715,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Colombia presenta una sólida forma reciente y cuenta con el talento de Luis Díaz, mientras que Uzbekistan busca capitalizar la habilidad goleadora de Eldor Shomurodov para sorprender a su oponente. La ventaja parece estar del lado de Colombia debido a su mayor experiencia y solidez en el juego colectivo, lo que podría ser demasiado para la defensa uzbeka y permitirle controlar el ritmo del partido.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Colombia se presenta con una sólida forma reciente y la destacada habilidad de Luis Díaz, mientras que Uzbekistan busca capitalizar la velocidad y habilidad de Eldor Shomurodov para sorprender a su oponente. En este encuentro, Colombia parece tener la ventaja debido a su experiencia y solidez en el plano internacional, lo que podría permitirle controlar el ritmo del partido y aprovechar las oportunidades para anotar.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021504"
       }
@@ -2993,7 +2732,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de rendimiento, ya que República Checa ha demostrado una gran solidez defensiva en su forma reciente, gracias en parte al aporte goleador de Patrik Schick, mientras que Sudáfrica ha mostrado una inconsistencia en sus últimos partidos, aunque cuenta con la velocidad y habilidad de Percy Tau para generar oportunidades de ataque. En este encuentro, espero que República Checa tenga una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría permitirle controlar el ritmo del juego y aprovechar los errores de Sudáfrica para anotar goles decisivos.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Czechia muestra una forma sólida en defensa y un ataque liderado por Patrik Schick, mientras que South Africa busca sorprender con la velocidad y habilidad de Percy Tau, quien puede ser el factor clave para desestabilizar a la defensa rival. En este encuentro, Czechia parece tener una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su solidez defensiva, lo que podría permetirle controlar el ritmo del partido y encontrar oportunidades de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021440"
       }
@@ -3010,7 +2749,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Suiza se encuentra en una buena forma reciente y cuenta con la experiencia y habilidad de Granit Xhaka, mientras que Bosnia y Herzegovina busca sorprender con la velocidad y habilidad de Ermedin Demirović. Sin embargo, considero que Suiza tiene la ventaja en este partido debido a su mayor experiencia en competiciones internacionales y su sólida defensa, lo que podría limitar las opciones de ataque de Bosnia y Herzegovina.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Suiza se encuentra en una buena forma reciente con su jugador clave Granit Xhaka liderando el equipo, mientras que Bosnia y Herzegovina busca mejorar su rendimiento con Ermedin Demirović como su principal referencia ofensiva. Considero que Suiza tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que podría darle una mayor solidez defensiva y capacidad para controlar el ritmo del juego.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021446"
       }
@@ -3027,7 +2766,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Canada llega al partido con una buena forma reciente, gracias a la habilidad y velocidad de Alphonso Davies, quien ha sido clave en la generación de oportunidades de gol y ha demostrado ser un jugador muy difícil de marcar, mientras que Qatar busca explotar la creatividad de Akram Afif para sorprender a su oponente. Considero que Canada tiene ventaja en este partido debido a su mayor experiencia en competiciones internacionales y su sólida defensa, lo que podría limitar las oportunidades de ataque de Qatar y permitirle controlar el ritmo del juego.",
+        "aiNotes": "Canada llega al partido con una forma reciente irregular, pero cuenta con la velocidad y habilidad de Alphonso Davies, quien puede ser el factor clave para generar oportunidades de gol, mientras que Qatar se apoya en la creatividad y técnica de Akram Afif para dirigir su ataque. Considero que Canada tiene una ligera ventaja en este partido debido a su mayor experiencia en competiciones de alto nivel y su sólida defensa, lo que podría limitar las oportunidades de Qatar y permitirle llevar el control del juego.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021450"
       }
@@ -3044,7 +2783,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque México cuenta con la ventaja de tener a Raúl Jiménez en su mejor momento, mientras que Corea del Sur confía en la habilidad y velocidad de Son Heung-min para crear oportunidades de gol. Espero que México tenga una ligera ventaja en el partido debido a su mayor experiencia en torneos internacionales y su sólida defensa, lo que podría limitar el impacto de Son Heung-min y darles la victoria.",
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque México cuenta con la ventaja de tener a Raúl Jiménez en su mejor momento, mientras que Corea del Sur confía en la habilidad y velocidad de Son Heung-min para generar oportunidades de ataque. Espero un partido parejo, ya que aunque México tiene una ligera ventaja en el ranking FIFA, Corea del Sur ha demostrado ser un equipo sólido y bien organizado que puede aprovechar cualquier error de su oponente para generar peligro.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442"
       }
@@ -3061,7 +2800,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, siendo Estados Unidos un equipo sólido con una buena forma reciente y un jugador clave como Folarin Balogun, quien puede ser determinante en el ataque, mientras que Australia busca sorprender con su joven talento Nestory Irankunda, aunque su forma reciente ha sido irregular. Espero que Estados Unidos tenga ventaja en este partido debido a su mejor posición en el ranking FIFA y su mayor experiencia en competiciones internacionales, lo que podría ser clave para superar a un equipo australiano que, aunque peligroso, puede ser más inconsistente.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Estados Unidos muestra una forma reciente irregular, pero cuenta con el talento de Folarin Balogun, mientras que Australia ha demostrado solidez defensiva y velocidad en el ataque con Nestory Irankunda como figura clave. En este encuentro, Estados Unidos parece tener una ligera ventaja debido a su mayor experiencia en competiciones de alto nivel y su profundidad en el banquillo, lo que podría ser decisivo en un partido que se espera muy disputado y con pocas oportunidades claras de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021462"
       }
@@ -3078,7 +2817,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Escocia muestra una forma irregular en sus últimos encuentros, aunque cuenta con el talento de John McGinn, mientras que Marruecos presenta una sólida defensa y un ataque dinámico liderado por Achraf Hakimi, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol. En este encuentro, Marruecos parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darle la ventaja necesaria para superar a un equipo escocés que aún busca encontrar su ritmo y cohesión en el torneo.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Escocia busca mejorar su rendimiento con la guía de John McGinn, mientras que Marruecos se presenta con una forma sólida y la habilidad ofensiva de Achraf Hakimi como su principal carta de ventaja. En este encuentro, Marruecos tiene una ligera ventaja debido a su posición en el ranking FIFA y su consistencia en partidos recientes, lo que podría darles un margen de superioridad sobre un equipo escocés que busca encontrar su ritmo en el torneo.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454"
       }
@@ -3095,7 +2834,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Brazil llega al partido con una forma reciente destacada, gracias a la habilidad y velocidad de su jugador clave Vinícius Júnior, mientras que Haiti busca sorprender con la creatividad de Jean-Ricner Bellegarde, aunque su posición en el ranking de la FIFA sugiere una desventaja en términos de experiencia y nivel. En este encuentro, Brazil tiene la ventaja debido a su mayor experiencia y habilidad colectiva, lo que probablemente les permitirá dominar el partido y obtener una victoria convincente contra un equipo de Haiti que, a pesar de su determinación, carece de la solidez defensiva y el peso ofensivo para igualar a su oponente.",
+        "aiNotes": "Brazil llega al partido con una forma reciente destacada, gracias a la habilidad y velocidad de su jugador clave Vinícius Júnior, mientras que Haiti busca sorprender con la habilidad y técnica de Jean-Ricner Bellegarde, aunque su posición en el ranking de la FIFA sugiere una ventaja para el equipo sudamericano. En este encuentro, Brazil tiene la ventaja debido a su experiencia y nivel de juego, lo que le permite dominar el ritmo del partido y crear oportunidades de gol, por lo que es probable que salga victorioso en este partido del Grupo C del Mundial 2026.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021457"
       }
@@ -3112,7 +2851,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los dos equipos llegan al partido con diferentes dinámicas, ya que Turquía muestra una forma reciente consistente gracias a la habilidad de Arda Güler, mientras que Paraguay busca recuperar su ritmo con la ayuda de Julio Enciso. Espero que Turquía tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su forma más estable en los últimos partidos, lo que podría darles una ventaja psicológica y táctica sobre Paraguay.",
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Türkiye muestra una forma irregular en los últimos partidos, pero cuenta con el talento de Arda Güler, mientras que Paraguay ha demostrado solidez defensiva y velocidad en el contrataque con Julio Enciso como figura clave. Espero un partido intenso y parejo, aunque Türkiye podría tener una ligera ventaja debido a su experiencia en competiciones internacionales y la calidad de su plantel, lo que podría permitirle dominar el ritmo del juego y generar oportunidades claras de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021460"
       }
@@ -3129,7 +2868,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los Países Bajos llegan al partido con una sólida defensa liderada por Virgil van Dijk, quien es clave para su estrategia, mientras que Suecia confía en la velocidad y habilidad de Alexander Isak para generar oportunidades de ataque en un equipo que ha mostrado una forma irregular en los últimos partidos. En este encuentro, los Países Bajos parecen tener la ventaja debido a su mayor experiencia y cohesión como equipo, lo que les permite controlar el ritmo del juego y crear oportunidades claras de gol, lo que podría ser demasiado para la defensa sueca.",
+        "aiNotes": "Los Países Bajos llegan al partido con una sólida defensa liderada por Virgil van Dijk, mientras que Suecia confía en la velocidad y habilidad de Alexander Isak para generar oportunidades de ataque, aunque su forma reciente ha sido irregular. En este encuentro, espero que los Países Bajos tengan ventaja debido a su mayor experiencia y solidez en el conjunto, lo que les permitirá controlar el ritmo del partido y aprovechar los errores de un equipo sueco que puede ser peligroso en contraataques pero que carece de profundidad en su plantilla.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472"
       }
@@ -3146,7 +2885,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de confianza, ya que Alemania se encuentra en una buena forma reciente y cuenta con el talento de Jamal Musiala, mientras que Costa de Marfil busca sorprender con la habilidad y experiencia de Franck Kessié. En este encuentro, Alemania parece tener una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría limitar las oportunidades de ataque de Costa de Marfil.",
+        "aiNotes": "Alemania llega al partido con una forma reciente irregular, pero cuenta con la habilidad y creatividad de Jamal Musiala, quien ha sido clave en la generación de oportunidades de gol para su equipo, mientras que Côte d'Ivoire se presenta con una serie de partidos difíciles en su historial reciente, pero con la experiencia y talento de Franck Kessié, quien puede ser un factor determinante en el desempeño de su equipo. En este encuentro, Alemania parece tener una ligera ventaja debido a su mayor experiencia y solidez defensiva, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores de su rival para obtener una victoria ajustada.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469"
       }
@@ -3163,7 +2902,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ecuador llega al partido con una forma reciente irregular, pero cuenta con la habilidad y la creatividad de Moisés Caicedo, quien ha demostrado ser un jugador clave en la selección, mientras que Curaçao, con Leandro Bacuna como su referente, ha mostrado una defensa sólida, pero carece de profundidad en su ataque. Considero que Ecuador tiene ventaja en este partido debido a su mayor experiencia y habilidad en el campo, lo que les permitirá dominar el juego y crear oportunidades claras de gol, aunque Curaçao puede ofrecer resistencia con su defensa bien organizada.",
+        "aiNotes": "Ecuador llega al partido con una forma reciente irregular, pero cuenta con la habilidad y visión de juego de Moisés Caicedo, quien puede ser el factor clave para desequilibrar el partido, mientras que Curaçao busca sorprender con la experiencia y liderazgo de Leandro Bacuna. En general, se espera que Ecuador tenga ventaja en el partido debido a su mayor nivel de competitividad y experiencia en torneos internacionales, lo que podría permitirle dominar el ritmo del juego y crear oportunidades claras de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465"
       }
@@ -3180,7 +2919,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez muestra una forma irregular en sus últimos partidos, mientras que Japón ha demostrado una gran solidez defensiva y velocidad en el ataque, con Takefusa Kubo como figura clave, en contraste con Ellyes Skhiri, quien intentará liderar a Túnez con su experiencia y habilidad en el mediocampo. Considero que Japón tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que les permite tener un mayor control del ritmo del juego y aprovechar las oportunidades de contraataque.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez busca capitalizar su sólida defensa y el liderazgo en el campo de Ellyes Skhiri, mientras que Japón confía en su velocidad y habilidad ofensiva con Takefusa Kubo como figura clave. Espero que Japón tenga una ligera ventaja en este partido debido a su mayor experiencia en competiciones de alto nivel y su capacidad para generar oportunidades de gol a través de su rápido contraataque.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021475"
       }
@@ -3197,7 +2936,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que España se presenta con una sólida forma reciente y una gran cantidad de talento en su plantilla, liderada por el joven y destacado Pedri, mientras que Arabia Saudita busca sorprender con la velocidad y habilidad de Salem Al-Dawsari. En este encuentro, España tiene la ventaja debido a su mayor experiencia y calidad en el conjunto, lo que sugiere que debería dominar el partido y obtener una victoria cómoda contra un equipo saudita que, aunque peligroso en contraataques, puede tener dificultades para contener el ataque español.",
+        "aiNotes": "Los equipos llegan al partido con diferentes niveles de preparación, ya que España se presenta con una forma reciente sólida y un jugador clave como Pedri, quien ha demostrado ser fundamental en la creación de oportunidades de gol, mientras que Arabia Saudita busca aprovechar la velocidad y habilidad de Salem Al-Dawsari para sorprender a su oponente. En este encuentro, España tiene la ventaja debido a su experiencia y solidez defensiva, lo que le permitirá controlar el ritmo del juego y crear oportunidades claras de gol, aunque Arabia Saudita puede intentar aprovechar los espacios para contrarrestar con su velocidad y habilidad.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483"
       }
@@ -3214,7 +2953,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica busca recuperar su nivel de competencia con jugadores como Jérémy Doku, quien ha demostrado ser un factor clave en su ataque, mientras que Irán confía en la experiencia y habilidad de Mehdi Taremi para liderar su equipo. Espero que Bélgica tenga ventaja en el partido debido a su mayor experiencia en torneos internacionales y su sólido conjunto, lo que podría darles una ligera superioridad sobre un Irán que, aunque competitivo, puede encontrar dificultades para contrarrestar el ritmo y la precisión del ataque belga.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica cuenta con una sólida estructura defensiva y un ataque liderado por Jérémy Doku, quien ha demostrado ser un jugador clave en la creación de oportunidades, mientras que Irán se apoya en la experiencia y habilidad goleadora de Mehdi Taremi, quien ha sido fundamental en la clasificación de su equipo. En este encuentro, Bélgica parece tener una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida base táctica, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores del rival.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477"
       }
@@ -3231,7 +2970,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Uruguay llega al partido con una forma reciente irregular, pero cuenta con la experiencia y habilidad de jugadores como Federico Valverde, quien puede marcar la diferencia en el campo, mientras que Cabo Verde presenta un equipo joven y enérgico con Jovane Cabral como su principal amenaza ofensiva. En este encuentro, Uruguay parece tener ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores del equipo de Cabo Verde.",
+        "aiNotes": "Uruguay llega al partido con una buena forma reciente, gracias a la destacada actuación de su jugador clave Federico Valverde, quien ha demostrado ser fundamental en la creación de oportunidades de ataque y control del ritmo del juego, mientras que Cabo Verde busca sorprender con la velocidad y habilidad de Jovane Cabral. Espero que Uruguay tenga ventaja en el partido debido a su mayor experiencia y solidez defensiva, lo que podría permitirle dominar el juego y crear oportunidades claras de gol contra un equipo de Cabo Verde que, aunque ágil y peligroso en el contraataque, puede tener dificultades para contener al equipo sudamericano.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021487"
       }
@@ -3248,7 +2987,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Nueva Zelanda muestra una forma irregular en sus últimos partidos, apoyándose en la experiencia y habilidad goleadora de Chris Wood, mientras que Egipto se presenta con una racha de victorias y confianza en la velocidad y habilidad de Mohamed Salah. Considero que Egipto tiene ventaja en este partido debido a su mejor posición en el ranking FIFA y su reciente forma, lo que les da una mayor solidez y profundidad en su juego en comparación con Nueva Zelanda.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Nueva Zelanda se apoya en la experiencia y la efectividad de Chris Wood en el ataque, mientras que Egipto cuenta con la velocidad y la habilidad de Mohamed Salah, quien ha demostrado ser un jugador clave en la forma reciente del equipo. Considero que Egipto tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y la capacidad de Salah para generar oportunidades de gol, lo que podría ser demasiado para la defensa neozelandesa.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021480"
       }
@@ -3265,7 +3004,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Argentina llega al partido con una gran forma reciente, liderada por la experiencia y habilidad de Lionel Messi, quien sigue siendo el jugador clave a seguir en el equipo, mientras que Austria busca sorprender con la velocidad y habilidad de Marcel Sabitzer, aunque su nivel de juego ha sido irregular en los últimos partidos. En este encuentro, Argentina tiene una clara ventaja debido a su mayor experiencia y habilidad en el juego ofensivo, lo que podría ser demasiado para la defensa austríaca, lo que sugiere un resultado favorable para el equipo sudamericano.",
+        "aiNotes": "Argentina llega al partido con una gran forma reciente, liderada por la experiencia y habilidad de Lionel Messi, quien es el jugador clave a seguir en este encuentro, mientras que Austria busca sorprender con la velocidad y la técnica de Marcel Sabitzer, aunque su posición en la clasificación de la FIFA sugiere una desventaja en términos de fortaleza y profundidad de plantilla. En este partido, Argentina tiene la ventaja debido a su mayor experiencia en torneos internacionales y la calidad de su plantilla, lo que podría ser demasiado para Austria, a pesar de que los austriacos pueden ofrecer una resistencia firme con su estilo de juego rápido y directo.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021494"
       }
@@ -3282,7 +3021,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Francia llega al partido con una forma reciente destacada, gracias a la velocidad y habilidad de su jugador clave Kylian Mbappé, quien ha sido fundamental en la generación de oportunidades de gol y ha demostrado ser un elemento clave en el ataque del equipo, mientras que Iraq busca sorprender con la habilidad y la velocidad de Ayman Hussein, aunque su forma reciente ha sido irregular. En este partido, Francia tiene una clara ventaja debido a su mayor experiencia y nivel de juego en competiciones internacionales, lo que les permite tener un control más efectivo del ritmo del juego y crear oportunidades de gol de manera más constante.",
+        "aiNotes": "Francia llega al partido con una forma excelente, gracias a la velocidad y habilidad de su jugador clave Kylian Mbappé, quien ha demostrado ser fundamental en la creación de oportunidades de gol y ha mantenido un rendimiento consistente en los últimos partidos. En este encuentro, Francia tiene una clara ventaja debido a su posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que sugiere que probablemente domine el juego y logre una victoria contra Iraq.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492"
       }
@@ -3299,7 +3038,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Noruega llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la destacada figura de Erling Haaland, quien puede ser el factor decisivo en el ataque, mientras que Senegal se presenta con una sólida defensa y el talento de Sadio Mané, lo que les da una base sólida para contrarrestar al rival. En este encuentro, Senegal parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores del equipo noruego.",
+        "aiNotes": "Noruega llega al partido con una forma reciente irregular, pero cuenta con la habilidad goleadora de Erling Haaland, mientras que Senegal se presenta con una sólida defensa y la velocidad y habilidad de Sadio Mané, quien es clave para generar oportunidades de ataque. En este encuentro, Senegal parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que podría darles una mayor estabilidad y confianza en el campo.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491"
       }
@@ -3316,7 +3055,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, siendo Algeria el favorito debido a su posición en el ranking FIFA y su sólida forma reciente, con jugador clave como Mohamed Amoura, mientras que Jordania busca sorprender con su velocidad y habilidad en el ataque, liderados por Mousa Al-Taamari. Mi expectativa es que Algeria tenga ventaja en el partido debido a su experiencia y su mayor profundidad en el banquillo, lo que les permitirá controlar el ritmo del juego y generar oportunidades claras de gol.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Jordania busca consolidar su juego ofensivo con la presencia clave de Mousa Al-Taamari, mientras que Argelia confía en la habilidad y experiencia de Mohamed Amoura para liderar su ataque. Considero que Argelia tiene una ligera ventaja en este encuentro debido a su mejor posición en el ranking FIFA y su solidez defensiva, lo que podría limitar las oportunidades de ataque de Jordania.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021499"
       }
@@ -3333,7 +3072,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Portugal llega al partido con una forma reciente sólida, gracias a la creatividad y liderazgo de Bruno Fernandes en el campo, mientras que Uzbekistan busca sorprender con la velocidad y habilidad de Eldor Shomurodov, aunque su posición en la clasificación FIFA sugiere una ventaja para el equipo europeo. En este encuentro, Portugal tiene la ventaja debido a su mayor experiencia y nivel de competición en torneos internacionales, lo que podría permitirle controlar el ritmo del juego y aprovechar sus oportunidades para anotar.",
+        "aiNotes": "Los equipos llegan al partido con Portugal mostrando una forma sólida, gracias a la habilidad y liderazgo de Bruno Fernandes, mientras que Uzbekistan busca sorprender con la velocidad y habilidad de Eldor Shomurodov, aunque su forma reciente ha sido irregular. En este encuentro, Portugal tiene la ventaja debido a su mayor experiencia y nivel de juego, lo que probablemente le permitirá controlar el ritmo del partido y aprovechar las oportunidades para anotar.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503"
       }
@@ -3350,7 +3089,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "England llega al partido con una forma reciente sólida, gracias a la habilidad de su jugador clave Jude Bellingham, quien ha demostrado ser fundamental en la creación de oportunidades de ataque, mientras que Ghana busca sorprender con la velocidad y habilidad de Mohammed Kudus, quien puede ser el factor clave para desequilibrar el partido. En este encuentro, England parece tener la ventaja debido a su mayor experiencia y solidez defensiva, lo que podría limitar las oportunidades de ataque de Ghana y permitirle controlar el ritmo del partido.",
+        "aiNotes": "Inglaterra llega al partido con una forma reciente sólida, apoyada en la creatividad y habilidad de Jude Bellingham, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol, mientras que Ghana busca sorprender con la velocidad y habilidad de Mohammed Kudus, quien ha sido fundamental en la ofensiva de su equipo. En este encuentro, Inglaterra parece tener la ventaja debido a su experiencia y solidez defensiva, lo que podría limitar las oportunidades de Ghana y permitirle controlar el ritmo del partido.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021506"
       }
@@ -3367,7 +3106,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Panamá muestra una forma irregular en sus últimos encuentros, contando con la habilidad y liderazgo de Adalberto Carrasquilla, mientras que Croacia, liderada por la experiencia y talento de Luka Modrić, ha demostrado una solidez y cohesión en su juego reciente. Espero que Croacia tenga la ventaja en este partido debido a su superioridad en el ranking FIFA y su consistencia en el juego, lo que podría ser demasiado para el equipo panameño.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Panamá ha mostrado una forma irregular en sus últimos encuentros, aunque cuenta con la habilidad y experiencia de Adalberto Carrasquilla, mientras que Croacia se presenta con una solidez defensiva y un juego más maduro, liderado por la veteranía y talento de Luka Modrić. Considero que Croacia tiene ventaja en este partido debido a su mayor experiencia en torneos internacionales y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para la menos experimentada selección panameña.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511"
       }
@@ -3384,7 +3123,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Colombia llega al partido con una forma reciente sólida, gracias a la velocidad y habilidad de Luis Díaz, mientras que Congo DR busca sorprender con la habilidad goleadora de Yoane Wissa, aunque su posición en la clasificación FIFA sugiere una ventaja para los cafeteros. En este encuentro, Colombia tiene la ventaja debido a su mayor experiencia y cohesión como equipo, lo que podría ser demasiado para el Congo DR, a pesar de la capacidad de su delantero estrella para cambiar el curso del partido.",
+        "aiNotes": "Colombia llega al partido con una forma reciente sólida, gracias a la velocidad y habilidad de Luis Díaz, quien ha sido clave en la generación de oportunidades de gol, mientras que Congo DR busca aprovechar la potencia goleadora de Yoane Wissa para sorprender a su rival. Espero que Colombia tenga ventaja en el partido debido a su mayor experiencia y solidez defensiva, lo que les permitirá controlar el ritmo del juego y crear oportunidades claras de gol contra un equipo congoleño que puede tener dificultades para contener a su delantero estrella.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021501"
       }
@@ -3401,7 +3140,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, Bosnia y Herzegovina busca mejorar su rendimiento después de una serie de partidos irregulares, mientras que Qatar se presenta con una forma reciente más sólida y con Akram Afif como su jugador clave a seguir, quien ha demostrado ser un factor importante en el ataque de su equipo. En este encuentro, Qatar parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darles una pequeña ventaja sobre Bosnia y Herzegovina.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bosnia y Herzegovina ha mostrado una forma irregular en los últimos partidos, pero cuenta con el talento ofensivo de Ermedin Demirović, mientras que Qatar ha demostrado una mejora constante en su juego, liderado por la habilidad y creatividad de Akram Afif. Mi expectativa es que Qatar tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darle una pequeña superioridad en el enfrentamiento contra Bosnia y Herzegovina.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448"
       }
@@ -3418,7 +3157,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Suiza ha mostrado una forma estable en los últimos partidos con Granit Xhaka como jugador clave en el centro del campo, mientras que Canadá busca aprovechar la velocidad y habilidad de Alphonso Davies en el ataque. En este enfrentamiento, Suiza parece tener una ligera ventaja debido a su experiencia en competiciones internacionales y su solidez defensiva, lo que podría limitar las oportunidades de contraataque de Canadá.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de forma reciente, ya que Suiza ha mostrado una gran solidez defensiva en sus últimos partidos, gracias en gran medida a la dirección en el campo de Granit Xhaka, mientras que Canadá busca capitalizar la velocidad y habilidad de Alphonso Davies para generar oportunidades de gol. Espero que Suiza tenga una ligera ventaja en el partido debido a su mayor experiencia en competiciones internacionales y su capacidad para controlar el ritmo del juego, lo que podría limitar las oportunidades de contraataque de Canadá.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451"
       }
@@ -3435,7 +3174,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Marruecos cuenta con una sólida defensa y un ataque veloz liderado por Achraf Hakimi, mientras que Haití busca sorprender con la habilidad y la velocidad de Jean-Ricner Bellegarde, aunque su forma reciente ha sido irregular. Espero que Marruecos tenga ventaja en el partido debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que les dará una mayor solidez y confianza en el campo.",
+        "aiNotes": "Marruecos llega al partido con una sólida forma reciente, destacando la habilidad ofensiva de Achraf Hakimi, mientras que Haití busca sorprender con la velocidad y habilidad de Jean-Ricner Bellegarde, aunque su posición en la clasificación de la FIFA sugiere una ventaja para el equipo norteafricano. En este encuentro, Marruecos tiene la ventaja debido a su mayor experiencia en competiciones de alto nivel y su solidez defensiva, lo que podría dificultar la tarea de Haití para generar oportunidades de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452"
       }
@@ -3452,7 +3191,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Escocia llega al partido con una forma irregular en sus últimos encuentros, aunque cuenta con la experiencia y habilidad de John McGinn, mientras que Brasil se presenta con una sólida defensa y un ataque peligroso liderado por el velocista Vinícius Júnior. En este partido, Brasil tiene ventaja debido a su mayor profundidad en el banquillo y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para la defensa escocesa.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Escocia ha demostrado ser un equipo sólido en defensa con John McGinn como su figura clave en ataque, mientras que Brasil cuenta con un ataque explosivo liderado por Vinícius Júnior y una forma reciente que los coloca como uno de los favoritos del torneo. Considero que Brasil tiene una ligera ventaja en este partido debido a su mayor profundidad en el banquillo y su capacidad para generar oportunidades de gol a través de su velocidad y habilidad en el ataque, lo que podría ser demasiado para la defensa escocesa.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455"
       }
@@ -3469,7 +3208,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Sudáfrica muestra una forma irregular en sus encuentros recientes, pero cuenta con la velocidad y habilidad de Percy Tau, mientras que Corea del Sur se presenta con una solidez defensiva y la creatividad ofensiva de Son Heung-min. En este encuentro, Corea del Sur parece tener la ventaja debido a su mayor experiencia en competiciones internacionales y su mejor posición en el ranking FIFA, lo que podría darle una ventaja en términos de confianza y cohesión en el campo.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Corea del Sur se encuentra en una buena forma reciente y cuenta con el talento de Son Heung-min, mientras que Sudáfrica ha mostrado un desempeño irregular y busca encontrar su ritmo con Percy Tau como su principal figura. En este encuentro, Corea del Sur parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su solidez defensiva, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores de su oponente.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021445"
       }
@@ -3486,7 +3225,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que México se encuentra en una buena forma reciente y cuenta con la experiencia y habilidad de Raúl Jiménez, mientras que República Checa busca aprovechar la velocidad y habilidad de Patrik Schick para sorprender a su oponente. Considero que México tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su sólida estructura defensiva, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores de su oponente.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de forma, ya que México ha demostrado una gran solidez en su juego defensivo y ha contado con la efectividad goleadora de Raúl Jiménez, mientras que República Checa ha mostrado una irregularidad en su rendimiento, aunque cuenta con el talento ofensivo de Patrik Schick. En este enfrentamiento, México parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los partidos recientes, lo que podría permitirle controlar el ritmo del juego y aprovechar las oportunidades para anotar.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444"
       }
@@ -3503,7 +3242,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de rendimiento, ya que Côte d'Ivoire muestra una forma reciente más sólida gracias a la destacada actuación de Franck Kessié, mientras que Curaçao busca aprovechar la experiencia y habilidad de Leandro Bacuna para sorprender a su oponente. Considero que Côte d'Ivoire tiene una ligera ventaja en este partido debido a su mayor profundidad en el plantel y su posición en el ranking FIFA, lo que sugiere una superioridad en términos de habilidad y cohesión en el equipo.",
+        "aiNotes": "Curaçao llega al partido con una forma irregular, aunque cuenta con la experiencia y habilidad de Leandro Bacuna, mientras que Côte d'Ivoire se presenta con una sólida defensa y un ataque liderado por Franck Kessié, quien es el jugador clave a seguir en este encuentro. Espero que Côte d'Ivoire tenga ventaja en el partido debido a su mejor posición en el ranking FIFA y su mayor experiencia en competiciones internacionales, lo que les da una ligera ventaja sobre Curaçao.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468"
       }
@@ -3520,7 +3259,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ecuador llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la habilidad y creatividad de Moisés Caicedo en el centro del campo, mientras que Alemania se presenta con una sólida defensa y un ataque veloz liderado por el joven y talentoso Jamal Musiala. En este encuentro, Alemania tiene una ligera ventaja debido a su mayor experiencia y profundidad en el banquillo, lo que le permite hacer ajustes tácticos y contar con opciones de calidad para cambiar el rumbo del partido.",
+        "aiNotes": "Ecuador llega al partido con una forma reciente irregular, pero cuenta con la habilidad y la creatividad de Moisés Caicedo, mientras que Alemania, con su experiencia y solidez defensiva, se apoya en el talento ofensivo de Jamal Musiala, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol. En este encuentro, Alemania tiene una ligera ventaja debido a su mayor profundidad en el banquillo y su tradición de éxito en torneos internacionales, lo que podría permitirle dominar el ritmo del juego y aprovechar los errores de Ecuador.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466"
       }
@@ -3537,7 +3276,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez busca impulsar su juego ofensivo con la creatividad de Ellyes Skhiri, mientras que los Países Bajos confían en la solidez defensiva liderada por Virgil van Dijk y una forma reciente que los ha posicionado como uno de los equipos más fuertes del torneo. La ventaja parece estar del lado de los Países Bajos debido a su experiencia y habilidad para controlar el ritmo del partido, lo que podría ser demasiado para la selección tunecina.",
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Túnez busca mantener su solidez defensiva con jugadores como Ellyes Skhiri, mientras que Países Bajos cuenta con una destacada forma ofensiva liderada por figuras como Virgil van Dijk, quien aporta estabilidad y habilidad en el campo. En este encuentro, Países Bajos parece tener una ligera ventaja debido a su mayor experiencia en competiciones de alto nivel y su sólido plantel, lo que podría hacer la diferencia en un partido que se anticipa intenso y disputado.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021473"
       }
@@ -3554,7 +3293,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Japón cuenta con la ventaja de tener a Takefusa Kubo, un jugador clave que puede hacer la diferencia con su habilidad y velocidad, mientras que Suecia confía en la capacidad goleadora de Alexander Isak para generar oportunidades de ataque. En este partido, Japón tiene una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que puede permitirle dominar el ritmo del juego y aprovechar los errores defensivos de Suecia.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Japón muestra una forma sólida en los últimos partidos gracias a la habilidad de Takefusa Kubo, mientras que Suecia busca recuperar su ritmo con la incorporación clave de Alexander Isak. Considero que Japón tiene una ligera ventaja en este encuentro debido a su mayor experiencia en torneos internacionales y su consistencia en el juego de ataque, lo que podría ser demasiado para la defensa sueca.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021471"
       }
@@ -3571,7 +3310,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Paraguay busca mejorar su forma reciente apoyándose en la habilidad ofensiva de Julio Enciso, mientras que Australia se presenta con una racha más consistente y confía en la velocidad y habilidad de Nestory Irankunda para generar oportunidades de gol. Mi expectativa es que Australia tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su tendencia a mantener un ritmo constante en los encuentros internacionales, lo que podría permitirle dominar el juego y crear más oportunidades de ataque.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Paraguay ha mostrado una forma irregular en los últimos encuentros, pero cuenta con la habilidad y velocidad de Julio Enciso, mientras que Australia se presenta con una sólida defensa y un ataque renovado liderado por el joven Nestory Irankunda. En este encuentro, Australia parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su solidez defensiva, lo que podría permitirle controlar el ritmo del juego y crear oportunidades claras de gol.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021461"
       }
@@ -3588,7 +3327,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Türkiye muestra una forma irregular en los últimos encuentros, pero cuenta con el talento de Arda Güler, mientras que Estados Unidos presenta una solidez defensiva y una delantera peligrosa liderada por Folarin Balogun. Considero que el equipo de Estados Unidos tiene una ligera ventaja debido a su cohesión y consistencia en el juego, lo que podría ser determinante en un partido que se espera muy disputado y tácticamente intenso.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes fortalezas, ya que Türkiye cuenta con la habilidad y velocidad de Arda Güler, mientras que USA se apoya en la solidez defensiva y el ataque veloz de Folarin Balogun, quien ha demostrado una forma reciente impresionante. En este encuentro, USA parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su equipo más equilibrado, lo que podría permitirles controlar el ritmo del partido y aprovechar los errores de Türkiye.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021459"
       }
@@ -3605,7 +3344,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de confianza, ya que Senegal se encuentra en una buena forma reciente y cuenta con el talento de Sadio Mané, mientras que Iraq busca sorprender con la habilidad de Ayman Hussein, aunque su posición en el ranking de la FIFA sugiere una ventaja para el equipo africano. En este partido, Senegal parece tener la ventaja debido a su mejor posición en el ranking y su experiencia en competiciones internacionales, lo que podría darles una mayor solidez y cohesión en el campo, lo que les permitiría dominar el ritmo del juego.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de forma, ya que Senegal ha mostrado una gran solidez defensiva y velocidad en el ataque con Sadio Mané como su jugador clave, mientras que Iraq busca encontrar su ritmo con Ayman Hussein como su figura destacada. En este encuentro, Senegal parece tener la ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que podría darle la superioridad necesaria para llevarse el triunfo.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021493"
       }
@@ -3622,7 +3361,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Noruega llega al partido con una forma reciente irregular, pero cuenta con la gran amenaza goleadora de Erling Haaland, mientras que Francia se presenta con una solidez defensiva y una velocidad letal en el ataque gracias a la presencia de Kylian Mbappé. Francia tiene ventaja en este partido debido a su mayor experiencia y profundidad en el banquillo, lo que les permitirá controlar el ritmo del juego y aprovechar los errores del equipo noruego.",
+        "aiNotes": "Noruega y Francia llegan al partido con diferentes dinámicas, ya que los noruegos se apoyan en la fuerza goleadora de Erling Haaland, quien ha demostrado ser un jugador clave en la delantera, mientras que los franceses cuentan con una plantilla más equilibrada y una forma reciente destacada, liderados por la velocidad y habilidad de Kylian Mbappé. En este enfrentamiento, Francia parece tener una ligera ventaja debido a su mayor experiencia y solidez en el conjunto, lo que podría permitirles controlar el ritmo del partido y aprovechar las oportunidades que surjan para anotar.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021489"
       }
@@ -3639,7 +3378,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Uruguay llega al partido con una forma irregular, pero cuenta con la experiencia y la habilidad de jugadores como Federico Valverde, quien ha demostrado ser fundamental en la creación de oportunidades de ataque, mientras que España se presenta con una de las mejores formas del momento, gracias a la creatividad y el control de Pedri en el centro del campo. Considero que España tiene una ligera ventaja en este partido debido a su superioridad en el juego de posesión y la capacidad de crear oportunidades a través de la habilidad individual de sus jugadores, lo que podría ser demasiado para la defensa uruguaya.",
+        "aiNotes": "Uruguay llega al partido con una forma irregular en los últimos partidos, pero cuenta con la habilidad y experiencia de jugadores como Federico Valverde, quien puede ser el factor clave para desequilibrar el encuentro, mientras que España, liderada por el joven y talentoso Pedri, muestra una gran solidez defensiva y un ataque bien estructurado que les ha permitido mantener una racha de victorias. Considero que España tiene una ligera ventaja en este partido debido a su cohesión como equipo y la calidad de su juego, lo que podría permitirles controlar el ritmo del partido y aprovechar los errores de Uruguay.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021484"
       }
@@ -3656,7 +3395,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Cabo Verde cuenta con la habilidad ofensiva de Jovane Cabral, mientras que Saudi Arabia se apoya en la experiencia y el liderazgo de Salem Al-Dawsari, lo que les da una ventaja en términos de cohesión y estrategia en el campo. En este encuentro, Saudi Arabia parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su trayectoria reciente, lo que sugiere que podrían dominar el ritmo del partido y crear más oportunidades de gol.",
+        "aiNotes": "Ambos equipos llegan al partido con algunas fortalezas, siendo Cabo Verde un equipo sólido en defensa y Saudi Arabia un equipo con un ataque veloz y letal, con Jovane Cabral y Salem Al-Dawsari respectivamente como jugadores clave a seguir, mientras que en forma reciente, Saudi Arabia ha mostrado una mejora notable en su rendimiento. En este partido, Saudi Arabia tiene una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su capacidad para crear oportunidades de gol a través de la velocidad y habilidad de sus delanteros, lo que podría ser demasiado para la defensa de Cabo Verde.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021485"
       }
@@ -3673,7 +3412,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Bélgica se presenta con una sólida forma reciente y un plantel bien armado, destacando a Jérémy Doku como un jugador clave a seguir, mientras que Nueva Zelanda, con Chris Wood como su referente, busca sorprender a su rival con su determinación y espíritu de lucha. En este encuentro, Bélgica tiene la ventaja debido a su mayor experiencia y calidad en el conjunto, lo que podría ser demasiado para el equipo neozelandés, aunque la pasión y la entrega de Nueva Zelanda podrían hacer que el partido sea más competitivo de lo esperado.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Bélgica se encuentra en una buena forma reciente y cuenta con el talento de Jérémy Doku, mientras que Nueva Zelanda, con Chris Wood como su referente, busca sorprender a su rival con su sólida defensa y contrataques rápidos. En este encuentro, Bélgica tiene la ventaja debido a su mayor experiencia y calidad en el conjunto, lo que podría ser demasiado para la selección neozelandesa, aunque no se puede descartar una sorpresa si Nueva Zelanda logra aprovechar sus oportunidades y mantener una defensa sólida.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021481"
       }
@@ -3690,7 +3429,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Egipto cuenta con la ventaja de tener a Mohamed Salah, uno de los jugadores más destacados del mundo, quien puede ser el factor clave para decidir el partido, mientras que Irán se apoya en la solidez defensiva y el poder ofensivo de Mehdi Taremi. En cuanto a la expectativa del partido, Irán parece tener una ligera ventaja debido a su posición en el ranking FIFA y su capacidad para mantener un ritmo constante a lo largo de los partidos, lo que podría permitirle controlar el ritmo del juego y aprovechar los errores del equipo egipcio.",
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Egipto cuenta con la ventaja de tener a Mohamed Salah, uno de los jugadores más destacados del mundo, mientras que Irán se apoya en la solidez defensiva y el aporte goleador de Mehdi Taremi. En este encuentro, Irán parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su capacidad para controlar el ritmo del juego, lo que podría permitirle dominar el partido y aprovechar los errores defensivos de Egipto.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021479"
       }
@@ -3707,7 +3446,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Panamá busca aprovechar su solidez defensiva y la habilidad de Adalberto Carrasquilla en el centro del campo, mientras que Inglaterra confía en su poderío ofensivo y la creatividad de Jude Bellingham para hacer la diferencia. Inglaterra tiene ventaja en este partido debido a su superioridad en el ranking FIFA y su experiencia en competiciones internacionales, lo que les permite tener un mayor control del juego y aprovechar los errores de Panamá para generar oportunidades de gol.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Panamá busca explotar su sólida defensa y contrataques rápidos liderados por Adalberto Carrasquilla, mientras que Inglaterra confía en su poder ofensivo y la creatividad de Jude Bellingham para generar oportunidades de gol. En este encuentro, Inglaterra parece tener la ventaja debido a su mayor experiencia y profundidad en el banquillo, lo que le permitiría aprovechar los errores de Panamá y dominar el ritmo del juego.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021508"
       }
@@ -3724,7 +3463,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Croacia cuenta con una sólida forma reciente y un jugador clave como Luka Modrić, quien es capaz de controlar el ritmo del juego, mientras que Ghana busca aprovechar la velocidad y habilidad de Mohammed Kudus para sorprender a su oponente. En este encuentro, Croacia tiene ventaja debido a su mayor experiencia y cohesión como equipo, lo que les permitirá dominar el juego y crear oportunidades claras de gol, aunque Ghana puede intentar aprovechar los espacios y contraatacar con rapidez.",
+        "aiNotes": "Croacia llega al partido con una sólida forma reciente, gracias a la experiencia y liderazgo de Luka Modrić, quien es el jugador clave a seguir en este encuentro, mientras que Ghana busca sorprender con la velocidad y habilidad de Mohammed Kudus. Considero que Croacia tiene ventaja en este partido debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría limitar las oportunidades de ataque de Ghana.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021509"
       }
@@ -3741,7 +3480,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque el Congo DR cuenta con la velocidad y habilidad de Yoane Wissa, mientras que Uzbekistan se apoya en la experiencia y capacidad goleadora de Eldor Shomurodov, lo que podría ser un factor clave en el desarrollo del partido. En general, el partido se presenta como un encuentro muy parejo, ya que la diferencia en el ranking FIFA es mínima y ambos equipos tienen habilidades y debilidades similares, lo que podría llevar a un resultado muy ajustado y emocionante.",
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Uzbekistan muestra una mayor solidez defensiva y un ataque más efectivo gracias a la presencia de Eldor Shomurodov, mientras que Congo DR confía en la velocidad y habilidad de Yoane Wissa para generar oportunidades de gol. En este encuentro, Uzbekistan parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su capacidad para controlar el ritmo del partido, lo que podría permitirles dominar el medio campo y crear más oportunidades de ataque.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021500"
       }
@@ -3758,7 +3497,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Colombia llega al partido con una forma irregular en los últimos partidos, aunque cuenta con la velocidad y habilidad de Luis Díaz, quien puede ser el diferenciador en el ataque, mientras que Portugal se presenta con una solidez defensiva y la creatividad de Bruno Fernandes, quien es capaz de controlar el ritmo del juego. Considero que Portugal tiene una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su bien estructurada defensa, lo que podría limitar las opciones de ataque de Colombia y permitirle aprovechar los errores del equipo sudamericano.",
+        "aiNotes": "Colombia llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la velocidad y habilidad de Luis Díaz, quien puede ser el factor clave para desequilibrar el partido, mientras que Portugal presenta una solidez defensiva y un ataque bien armado con Bruno Fernandes como cerebro creativo. En este encuentro, Portugal parece tener una ligera ventaja debido a su mayor solidez defensiva y experiencia en competiciones de alto nivel, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores de Colombia.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021505"
       }
@@ -3775,7 +3514,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Al llegar a este partido, el equipo de Algeria se muestra con algunas debilidades en su defensa, pero cuenta con la habilidad ofensiva de Mohamed Amoura, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol, mientras que Austria se presenta con una forma reciente sólida y la experiencia de Marcel Sabitzer, que ha sido fundamental en la dirección del juego de su equipo. En este enfrentamiento, Austria parece tener una ligera ventaja debido a su posición en el ranking FIFA y su consistencia en los partidos recientes, lo que podría darles una pequeña superioridad en términos de estrategia y ejecución en el campo.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Argelia muestra una forma irregular en los últimos partidos, pero cuenta con el talento de Mohamed Amoura, mientras que Austria se presenta con una racha de victorias y Marcel Sabitzer como su figura clave. Considero que Austria tiene una ligera ventaja en este encuentro debido a su mejor posición en el ranking FIFA y su consistencia en los partidos recientes, lo que podría darles una优势 en términos de confianza y estrategia en el campo.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021497"
       }
@@ -3792,7 +3531,7 @@
           "away": []
         },
         "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Argentina se encuentra en una excelente forma reciente y cuenta con la experiencia y habilidad de Lionel Messi, mientras que Jordania busca sorprender con la velocidad y habilidad de Mousa Al-Taamari, aunque su nivel de competencia ha sido más irregular en los últimos partidos. En este encuentro, Argentina tiene una clara ventaja debido a su superioridad en términos de talento individual y colectivo, así como su experiencia en competiciones de alto nivel, lo que le permite tener un control más efectivo del juego y crear oportunidades de gol de manera constante.",
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Argentina se presenta con una sólida forma reciente y una gran cantidad de talento en su plantilla, destacando a Lionel Messi como su jugador clave, mientras que Jordania busca sorprender con la habilidad de Mousa Al-Taamari. En este encuentro, Argentina tiene una clara ventaja debido a su experiencia y profundidad en el banquillo, lo que podría ser demasiado para el equipo jordano, que enfrentará un desafío importante para contener el ataque argentina.",
         "confidence": 0.8,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021495"
       }

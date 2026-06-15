@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 64" role="img" aria-label="DataGoal">
+  
+  <g transform="translate(0,4) scale(0.875)">
+    <path d="M16 49 Q39 43 51 15" fill="none" stroke="#F5A623" stroke-width="3.6" stroke-linecap="round" stroke-dasharray="0.1 7.5"></path>
+    <circle cx="51" cy="14" r="4" fill="#F5A623"></circle>
+    <circle cx="18" cy="46" r="12" fill="#2FB85C"></circle>
+    <polygon points="18,40 23.5,44 21.5,50.5 14.5,50.5 12.5,44" fill="#FFFFFF"></polygon>
+  </g>
+  <text x="70" y="45" class="wm"><tspan fill="#0A0F14">Data</tspan><tspan fill="#1E9C49">Goal</tspan></text>
+</svg>

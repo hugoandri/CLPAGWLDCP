@@ -1,0 +1,2490 @@
+{
+  "generatedAt": "2026-06-15T00:26:45.356Z",
+  "source": "fifa-api",
+  "matches": [
+    {
+      "slug": "haiti-vs-escocia",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021453",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 28,
+            "team": "away",
+            "scorer": "John McGINN",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 39,
+            "team": "home",
+            "player": "Jean-Ricner BELLEGARDE",
+            "type": "yellow"
+          },
+          {
+            "minute": 46,
+            "team": "away",
+            "player": "Aaron HICKEY",
+            "type": "yellow"
+          },
+          {
+            "minute": 91,
+            "team": "away",
+            "player": "Findlay CURTIS",
+            "type": "yellow"
+          },
+          {
+            "minute": 95,
+            "team": "away",
+            "player": "Kenny McLEAN",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Louicius DEEDSON",
+            "playerIn": "Josue CASIMIR"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "playerOut": "Wilson Isidor",
+            "playerIn": "Lenny JOSEPH"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Che Adams",
+            "playerIn": "Lyndon DYKES"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Ben GANNON-DOAK",
+            "playerIn": "Ryan Christie"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Aaron HICKEY",
+            "playerIn": "Nathan PATTERSON"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "John McGinn",
+            "playerIn": "Findlay CURTIS"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Lawrence SHANKLAND",
+            "playerIn": "Kenny McLEAN"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Ruben PROVIDENCE",
+            "playerIn": "Yassin FORTUNE"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Johny Placide",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Carlens ARCUS",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo Ade",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannes DELCROIX",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Martin EXPERIENCE",
+              "number": 8,
+              "position": "DEF"
+            },
+            {
+              "name": "Jean-Ricner Bellegarde",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Danley JEAN JACQUES",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Louicius DEEDSON",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Ruben PROVIDENCE",
+              "number": 15,
+              "position": "FWD"
+            },
+            {
+              "name": "Wilson Isidor",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Frantzdy Pierrot",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Angus Gunn",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aaron HICKEY",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Andy ROBERTSON",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Grant Hanley",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Jack Hendry",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Scott McTominay",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "John McGinn",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Lewis FERGUSON",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Che Adams",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Ben GANNON-DOAK",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Lawrence SHANKLAND",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Haití y Escocia, el equipo escocés se llevó la victoria con un marcador de 0-1 gracias al gol de John McGinn en el minuto 28, lo que resultó ser el único gol del encuentro. Desde un punto de vista analítico, la victoria de Escocia se debió en gran medida a su solidez defensiva, ya que lograron contener los intentos de ataque de Haití a pesar de recibir varias tarjetas amarillas en diferentes momentos del partido.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021453"
+      }
+    },
+    {
+      "slug": "australia-vs-turquia",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021463",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 27,
+            "team": "home",
+            "scorer": "Nestory IRANKUNDA",
+            "assist": "Paul OKON-ENGSTLER.",
+            "type": "goal"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "scorer": "Connor METCALFE",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 86,
+            "team": "away",
+            "player": "Yunus",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Baris Alper YILMAZ",
+            "playerIn": "Kenan YILDIZ"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Nestory IRANKUNDA",
+            "playerIn": "Nishan VELUPILLAY"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "Orkun KOKCU",
+            "playerIn": "Yunus AKGUN"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Mohamed TOURE",
+            "playerIn": "Tete YENGI"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Jacob ITALIANO",
+            "playerIn": "Jason GERIA"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Ismail YUKSEK",
+            "playerIn": "Salih OZCAN"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Zeki CELIK",
+            "playerIn": "Mert MULDUR"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Paul OKON-ENGSTLER",
+            "playerIn": "Jackson IRVINE"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Jordan BOS",
+            "playerIn": "Aziz BEHICH"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Kerem AKTURKOGLU",
+            "playerIn": "Deniz GUL"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Patrick BEACH",
+              "number": 18,
+              "position": "GK"
+            },
+            {
+              "name": "Alessandro CIRCATI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Jacob ITALIANO",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jordan BOS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Harry SOUTTAR",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Cameron BURGESS",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Connor METCALFE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Aiden ONEILL",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Paul OKON-ENGSTLER",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Mohamed TOURE",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Nestory IRANKUNDA",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Ugurcan CAKIR",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Zeki CELIK",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Merih DEMIRAL",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulkerim BARDAKCI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Ferdi KADIOGLU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Orkun KOKCU",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Hakan CALHANOGLU",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Ismail YUKSEK",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Kerem AKTURKOGLU",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Arda GULER",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "Baris Alper YILMAZ",
+              "number": 21,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Australia y Turquía, Australia se llevó la victoria con un marcador de 2-0, gracias a los goles de Nestory Irankunda en el minuto 27 y Connor Metcalfe en el minuto 75. La victoria de Australia puede considerarse un resultado sólido, ya que demostró una buena ejecución táctica y aprovechó las oportunidades para anotar, lo que puede ser un buen indicio de su rendimiento en el resto del torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021463"
+      }
+    },
+    {
+      "slug": "alemania-vs-curazao",
+      "status": "finished",
+      "homeScore": 7,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021464",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 6,
+            "team": "home",
+            "scorer": "Nmecha",
+            "assist": "Florian WIRTZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 21,
+            "team": "away",
+            "scorer": "Livano COMENENCIA",
+            "type": "goal"
+          },
+          {
+            "minute": 38,
+            "team": "home",
+            "scorer": "Schlotterbeck",
+            "assist": "Nathaniel BROWN.",
+            "type": "goal"
+          },
+          {
+            "minute": 47,
+            "team": "home",
+            "scorer": "Musiala",
+            "assist": "KIMMICH.",
+            "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Havertz",
+            "type": "penalty"
+          },
+          {
+            "minute": 68,
+            "team": "home",
+            "scorer": "Nathaniel BROWN",
+            "assist": "Deniz UNDAV.",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "scorer": "Deniz UNDAV",
+            "assist": "KIMMICH.",
+            "type": "goal"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "scorer": "Havertz",
+            "assist": "Deniz UNDAV.",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Sontje HANSEN",
+            "playerIn": "Jeremy Antonisse"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Jamal MUSIALA",
+            "playerIn": "Deniz UNDAV"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "Juergen LOCADIA",
+            "playerIn": "Jearl MARGARITHA"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Felix NMECHA",
+            "playerIn": "Leon GORETZKA"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Jonathan TAH",
+            "playerIn": "Antonio RUEDIGER"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Nathaniel BROWN",
+            "playerIn": "David RAUM"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Tahith CHONG",
+            "playerIn": "Gervane KASTANEER"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Joshua KIMMICH",
+            "playerIn": "Waldemar ANTON"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Manuel NEUER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jonathan TAH",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Joshua KIMMICH",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Nico SCHLOTTERBECK",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathaniel BROWN",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Aleksandar PAVLOVIC",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Jamal MUSIALA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Florian WIRTZ",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Leroy SANE",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Felix NMECHA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Kai HAVERTZ",
+              "number": 7,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Eloy ROOM",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Sherel FLORANUS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Armando OBISPO",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Riechedly Bazoer",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Deveron FONVILLE",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Juninho BACUNA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Livano COMENENCIA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Leandro BACUNA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Tahith CHONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Juergen LOCADIA",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Sontje HANSEN",
+              "number": 12,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Alemania y Curazao, Alemania se impuso con un contundente 7-1, con goles clave de Havertz, que anotó dos veces, y destacadas actuaciones de jugadores como Kimmich y Nathaniel Brown, quienes proporcionaron asistencias decisivas. La victoria de Alemania refleja su superioridad táctica y su capacidad para dominar el partido, lo que les permite mantener una posición fuerte en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021464"
+      }
+    },
+    {
+      "slug": "paises-bajos-vs-japon",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021470",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Virgil VAN DIJK",
+            "assist": "Ryan GRAVENBERCH.",
+            "type": "goal"
+          },
+          {
+            "minute": 57,
+            "team": "away",
+            "scorer": "Nakamura",
+            "assist": "KUBO.",
+            "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "scorer": "Crysencio SUMMERVILLE",
+            "assist": "Ryan GRAVENBERCH.",
+            "type": "goal"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "scorer": "Kamada",
+            "assist": "OGAWA.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 61,
+            "team": "home",
+            "player": "Crysencio SUMMERVILLE",
+            "type": "yellow"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "player": "Memphis DEPAY",
+            "type": "yellow"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "player": "Van De Ven",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Daizen MAEDA",
+            "playerIn": "Junya ITO"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Donyell Malen",
+            "playerIn": "Memphis DEPAY"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Tijjani REIJNDERS",
+            "playerIn": "Quinten TIMBER"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Crysencio SUMMERVILLE",
+            "playerIn": "Teun KOOPMEINERS"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Tsuyoshi Watanabe",
+            "playerIn": "Takehiro TOMIYASU"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Takefusa KUBO",
+            "playerIn": "Koki OGAWA"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Ritsu DOAN",
+            "playerIn": "Yukinari Sugawara"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "Ryan GRAVENBERCH",
+            "playerIn": "Nathan AKE"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Cody GAKPO",
+            "playerIn": "Brian BROBBEY"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Ayase UEDA",
+            "playerIn": "Kento SHIOGAI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Bart Verbruggen",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Virgil VAN DIJK",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jan Paul VAN HECKE",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Micky VAN DE VEN",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Denzel DUMFRIES",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Ryan GRAVENBERCH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Tijjani REIJNDERS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Frenkie DE JONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Cody GAKPO",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Donyell Malen",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Crysencio SUMMERVILLE",
+              "number": 24,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Zion Suzuki",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Shogo TANIGUCHI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Tsuyoshi Watanabe",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Hiroki ITO",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Takefusa KUBO",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ritsu DOAN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Daizen MAEDA",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Keito Nakamura",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Daichi KAMADA",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Kaishu SANO",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Ayase UEDA",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "El partido entre Paises Bajos y Japón terminó con un emocionante empate 2-2, con goles decisivos de Virgil Van Dijk y Crysencio Summerville para los neerlandeses, mientras que Nakamura y Kamada anotaron para el equipo japonés. La estrategia táctica de ambos equipos se vio reflejada en el constante intercambio de goles y oportunidades, lo que sugiere que ambos conjuntos tienen un gran potencial ofensivo en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021470"
+      }
+    },
+    {
+      "slug": "mexico-vs-sudafrica",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021443",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 9,
+            "team": "home",
+            "scorer": "Julian QUINONES",
+            "assist": "Erik LIRA.",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "scorer": "Raúl",
+            "assist": "Roberto ALVARADO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 17,
+            "team": "away",
+            "player": "Mokoena",
+            "type": "yellow"
+          },
+          {
+            "minute": 23,
+            "team": "home",
+            "player": "Brian GUTIERREZ",
+            "type": "yellow"
+          },
+          {
+            "minute": 49,
+            "team": "away",
+            "player": "Sithole",
+            "type": "red"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "player": "Nkosinathi SIBISI",
+            "type": "yellow"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "player": "Zwane",
+            "type": "red"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "player": "Cesar MONTES",
+            "type": "red"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 56,
+            "team": "away",
+            "playerOut": "Lyle FOSTER",
+            "playerIn": "Thalente MBATHA"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Jayden ADAMS",
+            "playerIn": "Themba ZWANE"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Brian GUTIERREZ",
+            "playerIn": "Luis CHAVEZ"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Alvaro FIDALGO",
+            "playerIn": "Gilberto MORA"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Erik LIRA",
+            "playerIn": "Edson ALVAREZ"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Raul JIMENEZ",
+            "playerIn": "Armando GONZALEZ"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Iqraam RAYNERS",
+            "playerIn": "Evidence MAKGOPA"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Aubrey MODIBA",
+            "playerIn": "Oswin APPOLLIS"
+          },
+          {
+            "minute": 79,
+            "team": "home",
+            "playerOut": "Julian QUINONES",
+            "playerIn": "Alexis VEGA"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Raul RANGEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Cesar MONTES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Johan VASQUEZ",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Israel REYES",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Jesus GALLARDO",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Erik LIRA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Alvaro FIDALGO",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Brian GUTIERREZ",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Raul JIMENEZ",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Julian QUINONES",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Roberto ALVARADO",
+              "number": 25,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Ronwen WILLIAMS",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aubrey MODIBA",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Mbekezeli MBOKAZI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Nkosinathi SIBISI",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Khuliso MUDAU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Ime OKON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Teboho MOKOENA",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Sphephelo SITHOLE",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Jayden ADAMS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Lyle FOSTER",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Iqraam RAYNERS",
+              "number": 15,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre México y Sudáfrica, México se llevó la victoria con un marcador de 2-0, gracias a los goles de Julian Quinones en el minuto 9 y Raúl en el minuto 67, con asistencias clave de Erik Lira y Roberto Alvarado, respectivamente. La expulsión de Sithole en el minuto 49 y la posterior expulsión de Zwane en el minuto 84 debilitaron significativamente a Sudáfrica, lo que permitió a México controlar el ritmo del juego y obtener una victoria convincente.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021443"
+      }
+    },
+    {
+      "slug": "corea-del-sur-vs-chequia",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021441",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 59,
+            "team": "away",
+            "scorer": "Ladislav KREJCI",
+            "assist": "Vladimir COUFAL.",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "scorer": "HWANG Inbeom",
+            "assist": "LEE KANG IN.",
+            "type": "goal"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "scorer": "H G Oh",
+            "assist": "HWANG Inbeom.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 96,
+            "team": "home",
+            "player": "LEE Gihyuk",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 62,
+            "team": "home",
+            "playerOut": "LEE Jaesung",
+            "playerIn": "HWANG Heechan"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Pavel SULC",
+            "playerIn": "Adam HLOZEK"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Patrik Schick",
+            "playerIn": "Tomas CHORY"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Lukas PROVOD",
+            "playerIn": "Michal SADILEK"
+          },
+          {
+            "minute": 69,
+            "team": "home",
+            "playerOut": "SON Heungmin",
+            "playerIn": "OH Hyeongyu"
+          },
+          {
+            "minute": 69,
+            "team": "home",
+            "playerOut": "LEE Taeseok",
+            "playerIn": "EOM Jisung"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "HWANG Inbeom",
+            "playerIn": "KIM Jingyu"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "PAIK Seungho",
+            "playerIn": "PARK Jinseob"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Alexandr SOJKA",
+            "playerIn": "Mojmir CHYTIL"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "KIM Seunggyu",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "LEE Hanbeom",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "KIM Minjae",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Taeseok",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "SEOL Youngwoo",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Gihyuk",
+              "number": 3,
+              "position": "MID"
+            },
+            {
+              "name": "HWANG Inbeom",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "PAIK Seungho",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Jaesung",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Kangin",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "SON Heungmin",
+              "number": 7,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Matej KOVAR",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Robin HRANAC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Vladimir COUFAL",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Stepan CHALOUPEK",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Ladislav KREJCI",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Jaroslav ZELENY",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Lukas PROVOD",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Tomas SOUCEK",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Alexandr SOJKA",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Patrik Schick",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Pavel SULC",
+              "number": 15,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Corea Del Sur y Chequia, el equipo coreano logró una victoria por 2-1 gracias a los goles de Hwang Inbeom y H G Oh, quienes anotaron después del gol inicial de Ladislav Krejci para Chequia. La victoria de Corea Del Sur se debió en gran medida a su capacidad para capitalizar las oportunidades en la segunda mitad del partido, lo que refleja un rendimiento táctico efectivo y una buena adaptación al juego.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021441"
+      }
+    },
+    {
+      "slug": "canada-vs-bosnia-herzegovina",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021449",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 21,
+            "team": "away",
+            "scorer": "Jovo LUKIC",
+            "assist": "Sead KOLASINAC.",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "scorer": "Cyle LARIN",
+            "assist": "Promise DAVID.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 11,
+            "team": "home",
+            "player": "Alistair JOHNSTON",
+            "type": "yellow"
+          },
+          {
+            "minute": 44,
+            "team": "away",
+            "player": "Ermedin DEMIROVIC",
+            "type": "yellow"
+          },
+          {
+            "minute": 46,
+            "team": "away",
+            "player": "Jovo LUKIC",
+            "type": "yellow"
+          },
+          {
+            "minute": 53,
+            "team": "home",
+            "player": "Luc DE FOUGEROLLES",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Nikola KATIC",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Jonathan DAVID",
+            "playerIn": "Promise DAVID"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Tajon BUCHANAN",
+            "playerIn": "Ali AHMED"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Liam MILLAR",
+            "playerIn": "Jacob SHAFFELBURG"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Ivan BASIC",
+            "playerIn": "Armin GIGOVIC"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Jovo LUKIC",
+            "playerIn": "Samed BAZDAR"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Amar MEMIC",
+            "playerIn": "Kerim ALAJBEGOVIC"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Esmir BAJRAKTAREVIC",
+            "playerIn": "Ivan SUNJIC"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Tani OLUWASEYI",
+            "playerIn": "Cyle LARIN"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Sead KOLASINAC",
+            "playerIn": "Dzenis BURNIC"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "Stephen EUSTAQUIO",
+            "playerIn": "Jonathan OSORIO"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Maxime CREPEAU",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Alistair JOHNSTON",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Luc DE FOUGEROLLES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Derek CORNELIUS",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Richie LARYEA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Stephen EUSTAQUIO",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael KONE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Liam MILLAR",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Jonathan DAVID",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Tani OLUWASEYI",
+              "number": 12,
+              "position": "FWD"
+            },
+            {
+              "name": "Tajon BUCHANAN",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Nikola VASILJ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tarik MUHAREMOVIC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Sead KOLASINAC",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Amar DEDIC",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Nikola KATIC",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Benjamin TAHIROVIC",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Ivan BASIC",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Amar MEMIC",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Ermedin DEMIROVIC",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Esmir BAJRAKTAREVIC",
+              "number": 20,
+              "position": "FWD"
+            },
+            {
+              "name": "Jovo LUKIC",
+              "number": 25,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "El partido entre Canadá y Bosnia Herzegovina terminó con un empate de 1-1, con Jovo Lukic abriendo el marcador para Bosnia Herzegovina en el minuto 21 y Cyle Larin igualando el partido para Canadá en el minuto 78. La estrategia defensiva de ambos equipos fue clave en el resultado final, ya que lograron contener los ataques rivales durante la mayor parte del partido, aunque la tarjeta amarilla a varios jugadores de ambos equipos muestra la intensidad y el compromiso con el que se jugó el encuentro.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021449"
+      }
+    },
+    {
+      "slug": "estados-unidos-vs-paraguay",
+      "status": "finished",
+      "homeScore": 4,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021458",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 7,
+            "team": "home",
+            "scorer": "Damian BOBADILLA",
+            "type": "own_goal"
+          },
+          {
+            "minute": 31,
+            "team": "home",
+            "scorer": "Folarin BALOGUN",
+            "assist": "Christian PULISIC.",
+            "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Folarin BALOGUN",
+            "assist": "TILLMAN.",
+            "type": "goal"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "scorer": "Mauricio",
+            "assist": "Julio ENCISO.",
+            "type": "goal"
+          },
+          {
+            "minute": 98,
+            "team": "home",
+            "scorer": "Reyna",
+            "assist": "Alex FREEMAN.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 9,
+            "team": "away",
+            "player": "Juan Jose CACERES",
+            "type": "yellow"
+          },
+          {
+            "minute": 53,
+            "team": "away",
+            "player": "Miguel ALMIRON",
+            "type": "yellow"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "player": "Tyler ADAMS",
+            "type": "yellow"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "player": "Diego GOMEZ",
+            "type": "yellow"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "player": "Alex ARCE",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Junior ALONSO",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Christian PULISIC",
+            "playerIn": "Sebastian BERHALTER"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Damian BOBADILLA",
+            "playerIn": "MAURICIO"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "Antonio SANABRIA",
+            "playerIn": "Alex ARCE"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Sergino DEST",
+            "playerIn": "Timothy WEAH"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Folarin BALOGUN",
+            "playerIn": "Ricardo PEPI"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Miguel ALMIRON",
+            "playerIn": "Ramon SOSA"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Juan Jose CACERES",
+            "playerIn": "Gustavo VELAZQUEZ"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Diego GOMEZ",
+            "playerIn": "Alejandro ROMERO GAMARRA"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "playerOut": "Malik TILLMAN",
+            "playerIn": "Giovanni REYNA"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Matt FREESE",
+              "number": 24,
+              "position": "GK"
+            },
+            {
+              "name": "Sergino DEST",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Chris RICHARDS",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Antonee ROBINSON",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Tim REAM",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Alex FREEMAN",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Tyler ADAMS",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Weston McKENNIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Malik TILLMAN",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Christian PULISIC",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Folarin BALOGUN",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Orlando GILL",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Omar ALDERETE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Juan Jose CACERES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Junior ALONSO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Gustavo GOMEZ",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Diego GOMEZ",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Miguel ALMIRON",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Andres CUBAS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Damian BOBADILLA",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Antonio SANABRIA",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Julio ENCISO",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Estados Unidos y Paraguay, el equipo estadounidense se impuso con un contundente 4-1, gracias a los goles de Damian Bobadilla en propia puerta, dos tantos de Folarin Balogun y el gol final de Reyna, mientras que Paraguay solo pudo anotar a través de Mauricio. La victoria de Estados Unidos refleja un rendimiento táctico sólido y una efectividad en el ataque que les permitió controlar el partido y obtener una valiosa victoria en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021458"
+      }
+    },
+    {
+      "slug": "catar-vs-suiza",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021447",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 17,
+            "team": "away",
+            "scorer": "Embolo",
+            "type": "penalty"
+          },
+          {
+            "minute": 94,
+            "team": "home",
+            "scorer": "Miro MUHEIM",
+            "type": "own_goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "home",
+            "player": "Mahmoud Abunada",
+            "type": "yellow"
+          },
+          {
+            "minute": 23,
+            "team": "home",
+            "player": "Jassem Gaber",
+            "type": "yellow"
+          },
+          {
+            "minute": 42,
+            "team": "away",
+            "player": "Zakaria",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "AYOUB ALOUI",
+            "playerIn": "AHMED FATHY"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "JASSEM GABER",
+            "playerIn": "KARIM BOUDIAF"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "YUSUF ABDURISAG",
+            "playerIn": "AHMED ALAAELDIN"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "Dan NDOYE",
+            "playerIn": "Johan MANZAMBI"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "Michel AEBISCHER",
+            "playerIn": "Fabian RIEDER"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "playerOut": "ASSIM MADIBO",
+            "playerIn": "MOHAMED MANAI"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Ruben VARGAS",
+            "playerIn": "Zeki AMDOUNI"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "playerOut": "EDMILSON JUNIOR",
+            "playerIn": "HASSAN ALHAYDOS"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "playerOut": "Ricardo RODRIGUEZ",
+            "playerIn": "Miro MUHEIM"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "playerOut": "Remo FREULER",
+            "playerIn": "Ardon JASHARI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "MAHMOUD ABUNADA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "PEDRO MIGUEL",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "ISSA LAYE",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "JASSEM GABER",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "AYOUB ALOUI",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "HOMAM AHMED",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "BOUALEM KHOUKHI",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "ASSIM MADIBO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "EDMILSON JUNIOR",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "AKRAM AFIF",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "YUSUF ABDURISAG",
+              "number": 15,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Gregor KOBEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Nico ELVEDI",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Manuel AKANJI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo RODRIGUEZ",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Denis ZAKARIA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Remo FREULER",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Granit XHAKA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Michel AEBISCHER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Breel EMBOLO",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Dan NDOYE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Ruben VARGAS",
+              "number": 17,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Catar y Suiza, el equipo suizo se puso en ventaja desde el minuto 17 gracias a un penal convertido por Embolo, pero Catar logró empatar en el último minuto del partido con un gol de Miro Muheim en propia puerta. La igualdad en el marcador refleja el equilibrio táctico que mostraron ambos equipos durante el partido, aunque el empate puede considerarse una sorpresa dada la diferencia en el nivel de juego que se esperaba entre los dos equipos.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021447"
+      }
+    },
+    {
+      "slug": "brasil-vs-marruecos",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021456",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 21,
+            "team": "away",
+            "scorer": "Saibari",
+            "assist": "BRAHIM.",
+            "type": "goal"
+          },
+          {
+            "minute": 32,
+            "team": "home",
+            "scorer": "Vini Jr.",
+            "assist": "BRUNO GUIMARAES.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 37,
+            "team": "home",
+            "player": "Casemiro",
+            "type": "yellow"
+          },
+          {
+            "minute": 43,
+            "team": "home",
+            "player": "Roger Ibanez",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "CASEMIRO",
+            "playerIn": "FABINHO"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "ROGER IBANEZ",
+            "playerIn": "DANILO"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "LUCAS PAQUETA",
+            "playerIn": "MATHEUS CUNHA"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "IGOR THIAGO",
+            "playerIn": "LUIZ HENRIQUE"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Brahim DIAZ",
+            "playerIn": "Chemsdine TALBI"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Azzedine OUNAHI",
+            "playerIn": "Samir EL MOURABET"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "BRUNO GUIMARAES",
+            "playerIn": "DANILO SANTOS"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Noussair MAZRAOUI",
+            "playerIn": "Anass SALAH EDDINE"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Bilal EL KHANNOUSS",
+            "playerIn": "Ayoube AMAIMOUNI"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "playerOut": "Ismael SAIBARI",
+            "playerIn": "Soufiane RAHIMI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "ALISSON",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "GABRIEL MAGALHAES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "MARQUINHOS",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "DOUGLAS SANTOS",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "ROGER IBANEZ",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "CASEMIRO",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "BRUNO GUIMARAES",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LUCAS PAQUETA",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "VINICIUS JUNIOR",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "RAPHINHA",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "IGOR THIAGO",
+              "number": 25,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Yassine BOUNOU",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Achraf HAKIMI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Noussair MAZRAOUI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Issa Diop",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Chadi RIAD",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Ayyoub BOUADDI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Azzedine OUNAHI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael SAIBARI",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Bilal EL KHANNOUSS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Neil EL AYNAOUI",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Brahim DIAZ",
+              "number": 10,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "aiNotes": "En el partido entre Brasil y Marruecos, el resultado final fue un empate 1-1, con goles de Saibari para Marruecos en el minuto 21 y de Vini Jr. para Brasil en el minuto 32, asistidos por Brahim y Bruno Guimaraes respectivamente. La igualdad refleja un rendimiento táctico equilibrado entre ambos equipos, aunque las tarjetas amarillas para Casemiro y Roger Ibanez en el primer tiempo sugieren que Brasil tuvo algunos momentos de intensidad defensiva que podrían haber afectado su estrategia ofensiva.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021456"
+      }
+    },
+    {
+      "slug": "costa-de-marfil-vs-ecuador",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 61,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [],
+        "cards": [
+          {
+            "minute": 28,
+            "team": "home",
+            "player": "Seko FOFANA",
+            "type": "yellow"
+          },
+          {
+            "minute": 38,
+            "team": "home",
+            "player": "Kessie",
+            "type": "yellow"
+          },
+          {
+            "minute": 40,
+            "team": "home",
+            "player": "Guela DOUE",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 56,
+            "team": "home",
+            "playerOut": "Elye WAHI",
+            "playerIn": "Ange-Yoan BONNY"
+          },
+          {
+            "minute": 56,
+            "team": "home",
+            "playerOut": "Bazoumana TOURE",
+            "playerIn": "Amad DIALLO"
+          },
+          {
+            "minute": 56,
+            "team": "away",
+            "playerOut": "Alan MINDA",
+            "playerIn": "Nilson ANGULO"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Yahia Fofana",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ghislain KONAN",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Wilfried SINGO",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Guela DOUE",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Emmanuel AGBADOU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Seko Fofana",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Franck KESSIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Yan DIOMANDE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Elye WAHI",
+              "number": 12,
+              "position": "FWD"
+            },
+            {
+              "name": "Nicolas PEPE",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Bazoumana TOURE",
+              "number": 24,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Hernan GALINDEZ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Piero HINCAPIE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Joel ORDONEZ",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Willian PACHO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Alan MINDA",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Pedro VITE",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Alan FRANCO",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Moises CAICEDO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "John YEBOAH",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Enner VALENCIA",
+              "number": 13,
+              "position": "FWD"
+            },
+            {
+              "name": "Gonzalo PLATA",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {},
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467"
+      }
+    }
+  ]
+}
