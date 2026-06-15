@@ -562,7 +562,16 @@ async function main() {
       : [];
     const lineupHome = liveData ? extractLineup(liveData, "home") : [];
     const lineupAway = liveData ? extractLineup(liveData, "away") : [];
-    const currentMinute = isLive ? parseMinute(liveData?.MatchTime ?? "") : undefined;
+    // FIFA API sometimes returns empty MatchTime. Fallback: derive from kickoff + elapsed
+    let currentMinute = isLive ? parseMinute(liveData?.MatchTime ?? "") : undefined;
+    if (isLive && !currentMinute && fm.Date) {
+      const kickoffMs = new Date(fm.Date).getTime();
+      const elapsedMin = Math.floor((Date.now() - kickoffMs) / 60_000);
+      // Period 3/4 = second half; subtract ~15 min for half-time break
+      const period = liveData?.Period ?? 0;
+      const adjMin = period >= 4 ? Math.min(elapsedMin - 15, 90) : Math.min(elapsedMin, 45);
+      currentMinute = Math.max(1, adjMin);
+    }
 
     process.stdout.write(`goals=${goals.length} cards=${cards.length} stats=${Object.keys(stats).length}${isLive ? ` min=${currentMinute}` : ""} … `);
 

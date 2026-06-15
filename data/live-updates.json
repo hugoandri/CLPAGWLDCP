@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T16:24:25.473Z",
+  "generatedAt": "2026-06-15T17:04:18.073Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3027,7 +3027,7 @@
       "status": "live",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 23,
+      "minute": 49,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482",
       "confidence": 0.97,
       "detail": {
@@ -3159,27 +3159,27 @@
         },
         "stats": {
           "shots": {
-            "home": 2,
-            "away": 0
+            "home": 13,
+            "away": 3
           },
           "corners": {
-            "home": 1,
+            "home": 4,
             "away": 0
           },
           "fouls": {
-            "home": 2,
+            "home": 5,
             "away": 0
           },
           "offsides": {
-            "home": 0,
-            "away": 2
+            "home": 2,
+            "away": 3
           },
           "yellowCards": {
             "home": 0,
             "away": 1
           }
         },
-        "aiNotes": "En este momento del partido, España y Cabo Verde se encuentran empatados a cero goles, con un ritmo de juego bastante equilibrado, aunque Cabo Verde ha mostrado cierta solidez defensiva, mientras que España busca encontrar espacios para crear oportunidades de ataque. A medida que avanza el partido, es probable que España intente aumentar la presión sobre la defensa de Cabo Verde, intentando encontrar el gol que les permita tomar la delantera, mientras que Cabo Verde podría buscar contrarrestar con rápidas transiciones ofensivas.",
+        "aiNotes": "En este momento, el partido entre España y Cabo Verde se encuentra empatado a cero goles, con ambos equipos buscando romper la igualdad en el marcador y ninguno ha logrado anotar hasta ahora. Con la tarjeta amarilla recibida por Sidny Lopes Cabral en el minuto 16, Cabo Verde debe tener cuidado para no recibir más tarjetas y así evitar quedar con un jugador menos en el campo, lo que podría cambiar el curso del partido en favor de España.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482"
       }

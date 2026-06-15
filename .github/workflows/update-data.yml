@@ -30,5 +30,6 @@ jobs:
           git diff --quiet data/live-updates.json || (
             git add data/live-updates.json &&
             git commit -m "data: update live match data" &&
+            git pull --rebase origin main &&
             git push
           )
