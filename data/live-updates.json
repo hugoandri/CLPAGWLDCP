@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T02:13:40.103Z",
+  "generatedAt": "2026-06-15T02:36:00.034Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2762,9 +2762,9 @@
     {
       "slug": "suecia-vs-tunez",
       "status": "live",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
-      "minute": 13,
+      "minute": 35,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
       "confidence": 0.97,
       "detail": {
@@ -2773,6 +2773,13 @@
             "minute": 7,
             "team": "home",
             "scorer": "Yasin AYARI",
+            "type": "goal"
+          },
+          {
+            "minute": 30,
+            "team": "home",
+            "scorer": "Alexander ISAK",
+            "assist": "Viktor GYOKERES.",
             "type": "goal"
           }
         ],
@@ -2896,16 +2903,20 @@
         },
         "stats": {
           "shots": {
-            "home": 3,
-            "away": 1
+            "home": 5,
+            "away": 2
+          },
+          "corners": {
+            "home": 1,
+            "away": 0
           },
           "fouls": {
-            "home": 1,
+            "home": 3,
             "away": 2
           },
           "offsides": {
             "home": 0,
-            "away": 1
+            "away": 2
           }
         },
         "confidence": 0.97,
