@@ -39,20 +39,36 @@ const finishedSorted = [...freshMatches]
   .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
 const lastFinished = finishedSorted[0];
 
-// Sorpresa: el equipo que tenía menos probabilidades de ganar y ganó
-type Surprise = { team: typeof teams[0]; match: (typeof freshMatches)[0]; prob: number };
-const surprises: Surprise[] = [];
+// Sorpresa: equipo con menor probabilidad promedio de ganar en todas sus victorias
+type Surprise = { team: typeof teams[0]; wins: (typeof freshMatches)[0][]; avgProb: number };
+type TeamWinAcc = { team: typeof teams[0]; wins: (typeof freshMatches)[0][]; probs: number[] };
+const teamWins = new Map<string, TeamWinAcc>();
 for (const m of freshMatches) {
   if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) continue;
   if (m.homeScore > m.awayScore) {
     const t = getTeam(m.homeSlug);
-    if (t) surprises.push({ team: t, match: m, prob: m.probHome });
+    if (t) {
+      const key = t.slug;
+      if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
+      teamWins.get(key)!.wins.push(m);
+      teamWins.get(key)!.probs.push(m.probHome);
+    }
   } else if (m.awayScore > m.homeScore) {
     const t = getTeam(m.awaySlug);
-    if (t) surprises.push({ team: t, match: m, prob: m.probAway });
+    if (t) {
+      const key = t.slug;
+      if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
+      teamWins.get(key)!.wins.push(m);
+      teamWins.get(key)!.probs.push(m.probAway);
+    }
   }
 }
-surprises.sort((a, b) => a.prob - b.prob);
+const surprises: Surprise[] = Array.from(teamWins.values()).map((entry) => ({
+  team: entry.team,
+  wins: entry.wins,
+  avgProb: Math.round(entry.probs.reduce((a, b) => a + b, 0) / entry.probs.length),
+}));
+surprises.sort((a, b) => a.avgProb - b.avgProb);
 const biggestSurprise = surprises[0];
 
 // Ranking general: computed standings de todos los grupos combinados y ordenados
@@ -100,12 +116,14 @@ export default function HomePage() {
       ? { match: lastFinished, home: getTeam(lastFinished.homeSlug), away: getTeam(lastFinished.awaySlug) }
       : null;
   const surpriseTeam = biggestSurprise?.team ?? null;
-  const surpriseRival = biggestSurprise ? getTeam(
-    biggestSurprise.match.awaySlug === biggestSurprise.team.slug
-      ? biggestSurprise.match.homeSlug
-      : biggestSurprise.match.awaySlug
+  const lastSurpriseMatch = biggestSurprise?.wins[biggestSurprise.wins.length - 1];
+  const surpriseRival = lastSurpriseMatch ? getTeam(
+    lastSurpriseMatch.awaySlug === surpriseTeam!.slug
+      ? lastSurpriseMatch.homeSlug
+      : lastSurpriseMatch.awaySlug
   ) : null;
-  const surpriseProb = biggestSurprise?.prob;
+  const surpriseAvgProb = biggestSurprise?.avgProb;
+  const surpriseWins = biggestSurprise?.wins.length ?? 0;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -244,7 +262,7 @@ export default function HomePage() {
                       {surpriseTeam.name}
                     </p>
                     <p className="text-xs text-slate-400">
-                      Solo {surpriseProb}% de ganar · Venció a {surpriseRival?.name ?? ""}
+                      Promedio {surpriseAvgProb}% de ganar{surpriseWins > 1 ? ` · ${surpriseWins} victorias` : ""} · Venció a {surpriseRival?.name ?? ""}
                     </p>
                   </div>
                 </div>
