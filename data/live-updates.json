@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T01:02:32.977Z",
+  "generatedAt": "2026-06-15T02:13:40.103Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2526,7 +2526,6 @@
       "status": "finished",
       "homeScore": 1,
       "awayScore": 0,
-      "minute": 97,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467",
       "confidence": 0.97,
       "detail": {
@@ -2740,11 +2739,11 @@
         "stats": {
           "shots": {
             "home": 15,
-            "away": 11
+            "away": 12
           },
           "corners": {
             "home": 3,
-            "away": 4
+            "away": 5
           },
           "fouls": {
             "home": 7,
@@ -2757,23 +2756,159 @@
         },
         "aiNotes": "Análisis final: Costa de Marfil venció 1-0 a Ecuador con un gol agónico de Amad Diallo en el minuto 90. El equipo marfileño dominó la posesión y generó más ocasiones de gol (15 tiros vs 11), mientras que Ecuador no logró concretar sus aproximaciones. Fue un partido físico con varias tarjetas (3 amarillas para Costa de Marfil, 1 para Ecuador), donde la disciplina táctica del equipo local prevaleció.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021467"
       }
     },
     {
       "slug": "suecia-vs-tunez",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 13,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "home",
+            "scorer": "Yasin AYARI",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Kristoffer NORDFELDT",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Gustaf LAGERBIELKE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Victor LINDELOF",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Isak HIEN",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Gabriel GUDMUNDSSON",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Alexander BERNHARDSSON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Benjamin NYGREN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Jesper KARLSTROM",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Yasin AYARI",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Alexander Isak",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Viktor GYOKERES",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Mouhib CHAMAKH",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ali ABDI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Montassar TALBI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Omar Rekik",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Yan Valery",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Mohamed Amine BEN HMIDA",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannibal MEJBRI",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Rani Khedira",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Ellyes SKHIRI",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Anis SLIMANE",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Elias SAAD",
+              "number": 8,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes fortalezas, ya que Suecia cuenta con una sólida defensa y un ataque liderado por Alexander Isak, mientras que Túnez se basa en la creatividad de Ellyes Skhiri en el medio campo y una gran disciplina táctica. Espero que Suecia tenga una ligera ventaja en el partido debido a su mayor experiencia en competiciones internacionales y la calidad de su delantero estrella, lo que podría ser demasiado para la defensa tunecina.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 3,
+            "away": 1
+          },
+          "fouls": {
+            "home": 1,
+            "away": 2
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474"
       }
     },
