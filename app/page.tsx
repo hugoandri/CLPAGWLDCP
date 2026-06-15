@@ -59,7 +59,7 @@ export default async function HomePage() {
     .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
   const nextMatch = upcomingSorted[0];
 
-  const liveMatch = freshMatches.find((m) => m.status === "live");
+  const liveMatch = freshMatches.find((m) => m.status === "live" || m.status === "halftime");
   const finishedSorted = [...freshMatches]
     .filter((m) => m.status === "finished")
     .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
@@ -107,7 +107,7 @@ export default async function HomePage() {
 
   const todayStr = new Date().toISOString().slice(0, 10);
   const todayMatches = freshMatches.filter((m) => m.date === todayStr);
-  const liveCount = freshMatches.filter((m) => m.status === "live").length;
+  const liveCount = freshMatches.filter((m) => m.status === "live" || m.status === "halftime").length;
 
   const next = nextMatch ? { home: getTeam(nextMatch.homeSlug), away: getTeam(nextMatch.awaySlug) } : { home: null, away: null };
   const live = liveMatch
