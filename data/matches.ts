@@ -17,9 +17,10 @@ type LiveMatchUpdate = Partial<Pick<Match, "status" | "homeScore" | "awayScore" 
   detail?: MatchDetail;
 };
 
-const liveMatchUpdates = new Map(
-  (liveUpdatesSnapshot.matches as LiveMatchUpdate[]).map((update) => [update.slug, update]),
-);
+const staticUpdates = liveUpdatesSnapshot.matches as LiveMatchUpdate[];
+const liveMatchUpdates = new Map(staticUpdates.map((update) => [update.slug, update]));
+
+
 
 function probability(homeSlug: string, awaySlug: string) {
   const homeRank = getTeam(homeSlug)?.fifaRank ?? 48;
@@ -37,7 +38,7 @@ function probability(homeSlug: string, awaySlug: string) {
   };
 }
 
-function fixture(input: FixtureInput): Match {
+function fixture(input: FixtureInput, updates?: Map<string, LiveMatchUpdate>): Match {
   const base: Match = {
     ...input,
     ...probability(input.homeSlug, input.awaySlug),
@@ -48,7 +49,8 @@ function fixture(input: FixtureInput): Match {
     ],
   };
 
-  const update = liveMatchUpdates.get(input.slug);
+  const map = updates ?? liveMatchUpdates;
+  const update = map.get(input.slug);
   if (!update) return base;
 
   return {
@@ -154,6 +156,26 @@ export function getTodayMatches(): Match[] {
 
 export function getLiveMatches(): Match[] {
   return matches.filter((m) => m.status === "live");
+}
+
+/**
+ * Reconstruye los partidos con updates frescos (server-side).
+ * El caller (ej. page.tsx) lee el JSON con readLiveUpdatesFile() y lo pasa acá.
+ */
+export function getFreshMatches(updates: LiveMatchUpdate[] = []): Match[] {
+  const map = new Map(updates.map((u) => [u.slug, u]));
+  return matches.map((m) => {
+    const update = map.get(m.slug);
+    if (!update) return m;
+    return {
+      ...m,
+      status: update.status ?? m.status,
+      homeScore: update.homeScore ?? m.homeScore,
+      awayScore: update.awayScore ?? m.awayScore,
+      minute: update.minute ?? m.minute,
+      detail: update.detail ?? m.detail,
+    };
+  });
 }
 
 export function getUpcomingMatchesByTeam(teamSlug: string, limit = 3): Match[] {

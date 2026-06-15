@@ -7,14 +7,15 @@ import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 import { teams, getTeam } from "@/data/teams";
 import {
-  matches,
-  getTodayMatches,
-  getLiveMatches,
+  getFreshMatches,
 } from "@/data/matches";
+import { readLiveUpdates } from "@/lib/live";
 import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
 import { computeStandings, formatDayMonth } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Mundial 2026: partidos de hoy, tabla, resultados y predicciones",
@@ -23,16 +24,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-// Próximo partido: el upcoming más cercano por fecha y hora.
-const upcomingSorted = [...matches]
+// Datos frescos: lee live-updates.json desde disco en cada request
+const freshUpdates = readLiveUpdates();
+const freshMatches = getFreshMatches(freshUpdates);
+
+const upcomingSorted = [...freshMatches]
   .filter((m) => m.status === "upcoming")
   .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
 const nextMatch = upcomingSorted[0];
 
-// Último partido finalizado o vivo
-const liveMatches = getLiveMatches();
-const liveMatch = liveMatches[0];
-const finishedSorted = [...matches]
+const liveMatch = freshMatches.find((m) => m.status === "live");
+const finishedSorted = [...freshMatches]
   .filter((m) => m.status === "finished")
   .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
 const lastFinished = finishedSorted[0];
@@ -54,8 +56,9 @@ allStandings.sort(
 const topRankedGlobal = allStandings.slice(0, 3);
 const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
 
-const todayMatches = getTodayMatches();
-const liveCount = liveMatches.length;
+const todayStr = new Date().toISOString().slice(0, 10);
+const todayMatches = freshMatches.filter((m) => m.date === todayStr);
+const liveCount = freshMatches.filter((m) => m.status === "live").length;
 const latestArticles = getLatestArticles(3);
 
 function QuickStatCard({
