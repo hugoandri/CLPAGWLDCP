@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T03:52:28.618Z",
+  "generatedAt": "2026-06-15T03:57:39.191Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2761,10 +2761,9 @@
     },
     {
       "slug": "suecia-vs-tunez",
-      "status": "live",
-      "homeScore": 4,
+      "status": "finished",
+      "homeScore": 5,
       "awayScore": 1,
-      "minute": 92,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
       "confidence": 0.97,
       "detail": {
@@ -2800,6 +2799,13 @@
             "minute": 84,
             "team": "home",
             "scorer": "Mattias SVANBERG",
+            "type": "goal"
+          },
+          {
+            "minute": 96,
+            "team": "home",
+            "scorer": "Yasin AYARI",
+            "assist": "Lucas BERGVALL.",
             "type": "goal"
           }
         ],
@@ -2992,7 +2998,7 @@
         "stats": {
           "shots": {
             "home": 13,
-            "away": 5
+            "away": 6
           },
           "corners": {
             "home": 4,
@@ -3000,11 +3006,11 @@
           },
           "fouls": {
             "home": 10,
-            "away": 7
+            "away": 8
           },
           "offsides": {
             "home": 3,
-            "away": 5
+            "away": 6
           },
           "yellowCards": {
             "home": 0,
@@ -3013,7 +3019,7 @@
         },
         "aiNotes": "En este momento, el partido entre Suecia y Túnez se inclina claramente a favor de los suecos, quienes llevan una ventaja de 4-1 en el marcador, con goles clave de Yasin Ayari, Alexander Isak, Viktor Gyokeres y Mattias Svanberg, mientras que Omar Rekik anotó el único gol para los tunecinos. Con solo unos minutos restantes, es probable que Suecia mantenga su posición defensiva y controle el ritmo del juego para asegurar su victoria, mientras que Túnez puede intentar presionar en busca de un gol de consolación.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021474"
       }
     },
     {
