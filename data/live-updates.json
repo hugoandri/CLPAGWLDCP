@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T02:39:52.261Z",
+  "generatedAt": "2026-06-15T02:45:39.367Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2763,8 +2763,8 @@
       "slug": "suecia-vs-tunez",
       "status": "live",
       "homeScore": 2,
-      "awayScore": 0,
-      "minute": 39,
+      "awayScore": 1,
+      "minute": 45,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
       "confidence": 0.97,
       "detail": {
@@ -2780,6 +2780,13 @@
             "team": "home",
             "scorer": "Alexander ISAK",
             "assist": "Viktor GYOKERES.",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "away",
+            "scorer": "Omar REKIK",
+            "assist": "Hannibal MEJBRI.",
             "type": "goal"
           }
         ],
@@ -2904,14 +2911,14 @@
         "stats": {
           "shots": {
             "home": 5,
-            "away": 2
+            "away": 3
           },
           "corners": {
             "home": 2,
             "away": 0
           },
           "fouls": {
-            "home": 3,
+            "home": 4,
             "away": 2
           },
           "offsides": {
@@ -2919,7 +2926,7 @@
             "away": 2
           }
         },
-        "aiNotes": "En este momento, Suecia domina claramente el partido con un marcador de 2-0 sobre Túnez, gracias a los goles de Yasin Ayari en el minuto 7 y Alexander Isak en el minuto 30. La ventaja de dos goles puede permitir a Suecia administrar el ritmo del juego en la segunda mitad, aunque Túnez puede intentar presionar para intentar reducir la desventaja y cambiar el curso del partido.",
+        "aiNotes": "En este momento, Suecia lleva la delantera en el marcador con 2 goles a 1, gracias a los goles de Yasin Ayari y Alexander Isak, aunque Túnez logró descontar gracias a Omar Rekik justo antes del final del primer tiempo. Con la ventaja de Suecia, es probable que Túnez intente presionar más en el segundo tiempo para buscar el empate, lo que podría llevar a Suecia a adoptar una postura más defensiva y buscar oportunidades de contraataque.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474"
       }
