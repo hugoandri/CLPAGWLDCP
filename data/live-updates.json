@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T03:57:39.191Z",
+  "generatedAt": "2026-06-15T06:33:10.937Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -2857,14 +2857,14 @@
           {
             "minute": 84,
             "team": "away",
-            "playerOut": "Rani Khedira",
-            "playerIn": "Ismael GHARBI"
+            "playerOut": "Anis SLIMANE",
+            "playerIn": "Firas CHAOUAT"
           },
           {
             "minute": 84,
             "team": "away",
-            "playerOut": "Anis SLIMANE",
-            "playerIn": "Firas CHAOUAT"
+            "playerOut": "Rani Khedira",
+            "playerIn": "Ismael GHARBI"
           },
           {
             "minute": 90,
