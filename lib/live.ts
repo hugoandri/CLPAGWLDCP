@@ -68,12 +68,17 @@ async function _fetchGroqLiveComment(
   awayName: string,
   homeScore: number,
   awayScore: number,
-  // minuteBucket rounds to nearest 5 min so the cache key doesn't change every minute
+  // minuteBucket rounds to nearest 5 min so the cache key doesn't change every minute.
+  // Special value 45 with halftime=true means the match is at half-time.
   minuteBucket: number,
+  halftime: boolean,
 ): Promise<string | null> {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) return null;
   try {
+    const context = halftime
+      ? `DESCANSO (fin del primer tiempo): ${homeName} ${homeScore}-${awayScore} ${awayName}`
+      : `Partido EN DIRECTO (min.${minuteBucket}): ${homeName} ${homeScore}-${awayScore} ${awayName}`;
     const res = await fetch(GROQ_URL, {
       method: "POST",
       headers: {
@@ -94,10 +99,7 @@ async function _fetchGroqLiveComment(
               "y la otra da una lectura táctica breve o qué puede pasar en lo que resta. " +
               "Sin emojis. Sin lenguaje de apuestas. Sin inventar datos.",
           },
-          {
-            role: "user",
-            content: `Partido EN DIRECTO (min.${minuteBucket}): ${homeName} ${homeScore}-${awayScore} ${awayName}`,
-          },
+          { role: "user", content: context },
         ],
       }),
       cache: "no-store",
@@ -175,13 +177,14 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
 
       const existing = bySlug.get(slug)!;
 
-      // For live matches: generate Groq commentary inline.
+      // For live/halftime matches: generate Groq commentary inline.
       // Cache key includes score so it auto-refreshes on every goal.
+      // During half-time we use minuteBucket=45 as a stable key.
       let aiNotes = existing.detail?.aiNotes;
-      if (isLive && minute !== undefined) {
-        const minuteBucket = Math.floor(minute / 5) * 5;
+      if (isLive) {
+        const minuteBucket = isHalfTime ? 45 : Math.floor((minute ?? 45) / 5) * 5;
         const comment = await getGroqLiveComment(
-          homeName, awayName, homeScore, awayScore, minuteBucket,
+          homeName, awayName, homeScore, awayScore, minuteBucket, isHalfTime,
         );
         if (comment) aiNotes = comment;
       }
