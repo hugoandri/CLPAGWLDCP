@@ -1,0 +1,4190 @@
+{
+  "generatedAt": "2026-06-15T16:57:38.779Z",
+  "source": "fifa-api",
+  "matches": [
+    {
+      "slug": "haiti-vs-escocia",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021453",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 28,
+            "team": "away",
+            "scorer": "John McGINN",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 39,
+            "team": "home",
+            "player": "Jean-Ricner BELLEGARDE",
+            "type": "yellow"
+          },
+          {
+            "minute": 46,
+            "team": "away",
+            "player": "Aaron HICKEY",
+            "type": "yellow"
+          },
+          {
+            "minute": 91,
+            "team": "away",
+            "player": "Findlay CURTIS",
+            "type": "yellow"
+          },
+          {
+            "minute": 95,
+            "team": "away",
+            "player": "Kenny McLEAN",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Louicius DEEDSON",
+            "playerIn": "Josue CASIMIR"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "playerOut": "Wilson Isidor",
+            "playerIn": "Lenny JOSEPH"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Che Adams",
+            "playerIn": "Lyndon DYKES"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Ben GANNON-DOAK",
+            "playerIn": "Ryan Christie"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Aaron HICKEY",
+            "playerIn": "Nathan PATTERSON"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "John McGinn",
+            "playerIn": "Findlay CURTIS"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Lawrence SHANKLAND",
+            "playerIn": "Kenny McLEAN"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Ruben PROVIDENCE",
+            "playerIn": "Yassin FORTUNE"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Johny Placide",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Carlens ARCUS",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo Ade",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannes DELCROIX",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Martin EXPERIENCE",
+              "number": 8,
+              "position": "DEF"
+            },
+            {
+              "name": "Jean-Ricner Bellegarde",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Danley JEAN JACQUES",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Louicius DEEDSON",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Ruben PROVIDENCE",
+              "number": 15,
+              "position": "FWD"
+            },
+            {
+              "name": "Wilson Isidor",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Frantzdy Pierrot",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Angus Gunn",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aaron HICKEY",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Andy ROBERTSON",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Grant Hanley",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Jack Hendry",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Scott McTominay",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "John McGinn",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Lewis FERGUSON",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Che Adams",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Ben GANNON-DOAK",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Lawrence SHANKLAND",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 15,
+            "away": 9
+          },
+          "corners": {
+            "home": 4,
+            "away": 3
+          },
+          "fouls": {
+            "home": 22,
+            "away": 18
+          },
+          "offsides": {
+            "home": 3,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        "aiNotes": "En el partido entre Haiti y Escocia, el equipo escocés se llevó la victoria por 1-0 gracias al gol de John McGinn en el minuto 28, lo que resultó ser el único gol del encuentro. Desde un punto de vista analítico, la victoria de Escocia se debió en gran medida a su solidez defensiva, que logró contener los intentos de ataque de Haiti a pesar de recibir varias tarjetas amarillas en diferentes momentos del partido.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021453"
+      }
+    },
+    {
+      "slug": "australia-vs-turquia",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021463",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 27,
+            "team": "home",
+            "scorer": "Nestory IRANKUNDA",
+            "assist": "Paul OKON-ENGSTLER.",
+            "type": "goal"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "scorer": "Connor METCALFE",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 86,
+            "team": "away",
+            "player": "Yunus",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Baris Alper YILMAZ",
+            "playerIn": "Kenan YILDIZ"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Nestory IRANKUNDA",
+            "playerIn": "Nishan VELUPILLAY"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "Orkun KOKCU",
+            "playerIn": "Yunus AKGUN"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Mohamed TOURE",
+            "playerIn": "Tete YENGI"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Jacob ITALIANO",
+            "playerIn": "Jason GERIA"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Ismail YUKSEK",
+            "playerIn": "Salih OZCAN"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Zeki CELIK",
+            "playerIn": "Mert MULDUR"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Paul OKON-ENGSTLER",
+            "playerIn": "Jackson IRVINE"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Jordan BOS",
+            "playerIn": "Aziz BEHICH"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Kerem AKTURKOGLU",
+            "playerIn": "Deniz GUL"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Patrick BEACH",
+              "number": 18,
+              "position": "GK"
+            },
+            {
+              "name": "Alessandro CIRCATI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Jacob ITALIANO",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jordan BOS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Harry SOUTTAR",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Cameron BURGESS",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Connor METCALFE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Aiden ONEILL",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Paul OKON-ENGSTLER",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Mohamed TOURE",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Nestory IRANKUNDA",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Ugurcan CAKIR",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Zeki CELIK",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Merih DEMIRAL",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulkerim BARDAKCI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Ferdi KADIOGLU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Orkun KOKCU",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Hakan CALHANOGLU",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Ismail YUKSEK",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Kerem AKTURKOGLU",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Arda GULER",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "Baris Alper YILMAZ",
+              "number": 21,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 9,
+            "away": 30
+          },
+          "corners": {
+            "home": 5,
+            "away": 8
+          },
+          "fouls": {
+            "home": 12,
+            "away": 3
+          },
+          "offsides": {
+            "home": 1,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En el partido entre Australia y Turquía, el equipo australiano se impuso con un marcador de 2-0 gracias a los goles de Nestory Irankunda en el minuto 27 y Connor Metcalfe en el minuto 75, mientras que el equipo turco solo logró una tarjeta amarilla para Yunus en el minuto 86. La victoria de Australia puede considerarse como un resultado sólido, ya que su rendimiento táctico les permitió controlar el partido y aprovechar las oportunidades para anotar, lo que les da una buena base para avanzar en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021463"
+      }
+    },
+    {
+      "slug": "alemania-vs-curazao",
+      "status": "finished",
+      "homeScore": 7,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021464",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 6,
+            "team": "home",
+            "scorer": "Nmecha",
+            "assist": "Florian WIRTZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 21,
+            "team": "away",
+            "scorer": "Livano COMENENCIA",
+            "type": "goal"
+          },
+          {
+            "minute": 38,
+            "team": "home",
+            "scorer": "Schlotterbeck",
+            "assist": "Nathaniel BROWN.",
+            "type": "goal"
+          },
+          {
+            "minute": 47,
+            "team": "home",
+            "scorer": "Musiala",
+            "assist": "KIMMICH.",
+            "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Havertz",
+            "type": "penalty"
+          },
+          {
+            "minute": 68,
+            "team": "home",
+            "scorer": "Nathaniel BROWN",
+            "assist": "Deniz UNDAV.",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "scorer": "Deniz UNDAV",
+            "assist": "KIMMICH.",
+            "type": "goal"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "scorer": "Havertz",
+            "assist": "Deniz UNDAV.",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Sontje HANSEN",
+            "playerIn": "Jeremy Antonisse"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Jamal MUSIALA",
+            "playerIn": "Deniz UNDAV"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "Juergen LOCADIA",
+            "playerIn": "Jearl MARGARITHA"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Felix NMECHA",
+            "playerIn": "Leon GORETZKA"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Jonathan TAH",
+            "playerIn": "Antonio RUEDIGER"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Nathaniel BROWN",
+            "playerIn": "David RAUM"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Tahith CHONG",
+            "playerIn": "Gervane KASTANEER"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Joshua KIMMICH",
+            "playerIn": "Waldemar ANTON"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Manuel NEUER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jonathan TAH",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Joshua KIMMICH",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Nico SCHLOTTERBECK",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathaniel BROWN",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Aleksandar PAVLOVIC",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Jamal MUSIALA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Florian WIRTZ",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Leroy SANE",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Felix NMECHA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Kai HAVERTZ",
+              "number": 7,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Eloy ROOM",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Sherel FLORANUS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Armando OBISPO",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Riechedly Bazoer",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Deveron FONVILLE",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Juninho BACUNA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Livano COMENENCIA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Leandro BACUNA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Tahith CHONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Juergen LOCADIA",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Sontje HANSEN",
+              "number": 12,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 26,
+            "away": 8
+          },
+          "corners": {
+            "home": 8,
+            "away": 1
+          },
+          "fouls": {
+            "home": 18,
+            "away": 11
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "Alemania logró una contundente victoria de 7-1 sobre Curazao, con goles decisivos de Havertz, Musiala y otros jugadores clave que aprovecharon las oportunidades generadas por la efectiva labor de asistentes como Kimmich y Wirtz. La goleada refleja el dominio táctico y la superioridad en el campo de Alemania, lo que sugiere que el equipo está en buen estado de forma y listo para enfrentar desafíos más importantes en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021464"
+      }
+    },
+    {
+      "slug": "paises-bajos-vs-japon",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021470",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Virgil VAN DIJK",
+            "assist": "Ryan GRAVENBERCH.",
+            "type": "goal"
+          },
+          {
+            "minute": 57,
+            "team": "away",
+            "scorer": "Nakamura",
+            "assist": "KUBO.",
+            "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "scorer": "Crysencio SUMMERVILLE",
+            "assist": "Ryan GRAVENBERCH.",
+            "type": "goal"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "scorer": "Kamada",
+            "assist": "OGAWA.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 61,
+            "team": "home",
+            "player": "Crysencio SUMMERVILLE",
+            "type": "yellow"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "player": "Memphis DEPAY",
+            "type": "yellow"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "player": "Van De Ven",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Daizen MAEDA",
+            "playerIn": "Junya ITO"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Donyell Malen",
+            "playerIn": "Memphis DEPAY"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Tijjani REIJNDERS",
+            "playerIn": "Quinten TIMBER"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Crysencio SUMMERVILLE",
+            "playerIn": "Teun KOOPMEINERS"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Tsuyoshi Watanabe",
+            "playerIn": "Takehiro TOMIYASU"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Takefusa KUBO",
+            "playerIn": "Koki OGAWA"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Ritsu DOAN",
+            "playerIn": "Yukinari Sugawara"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "Ryan GRAVENBERCH",
+            "playerIn": "Nathan AKE"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Cody GAKPO",
+            "playerIn": "Brian BROBBEY"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Ayase UEDA",
+            "playerIn": "Kento SHIOGAI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Bart Verbruggen",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Virgil VAN DIJK",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jan Paul VAN HECKE",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Micky VAN DE VEN",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Denzel DUMFRIES",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Ryan GRAVENBERCH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Tijjani REIJNDERS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Frenkie DE JONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Cody GAKPO",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Donyell Malen",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Crysencio SUMMERVILLE",
+              "number": 24,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Zion Suzuki",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Shogo TANIGUCHI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Tsuyoshi Watanabe",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Hiroki ITO",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Takefusa KUBO",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ritsu DOAN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Daizen MAEDA",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Keito Nakamura",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Daichi KAMADA",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Kaishu SANO",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Ayase UEDA",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 10,
+            "away": 9
+          },
+          "corners": {
+            "home": 5,
+            "away": 4
+          },
+          "fouls": {
+            "home": 4,
+            "away": 7
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        "aiNotes": "El partido entre Paises Bajos y Japon terminó con un empate de 2-2, con goles clave de Virgil Van Dijk y Crysencio Summerville para los neerlandeses, y Nakamura y Kamada para los japoneses, en un encuentro que estuvo marcado por la intensidad y la igualdad entre ambos equipos. La estrategia táctica de ambos equipos fue efectiva en momentos clave, aunque el empate puede considerarse un resultado sorprendente dado el contexto del torneo y las expectativas previas sobre el desempeño de estos equipos.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021470"
+      }
+    },
+    {
+      "slug": "mexico-vs-sudafrica",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021443",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 9,
+            "team": "home",
+            "scorer": "Julian QUINONES",
+            "assist": "Erik LIRA.",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "scorer": "Raúl",
+            "assist": "Roberto ALVARADO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 17,
+            "team": "away",
+            "player": "Mokoena",
+            "type": "yellow"
+          },
+          {
+            "minute": 23,
+            "team": "home",
+            "player": "Brian GUTIERREZ",
+            "type": "yellow"
+          },
+          {
+            "minute": 49,
+            "team": "away",
+            "player": "Sithole",
+            "type": "red"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "player": "Nkosinathi SIBISI",
+            "type": "yellow"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "player": "Zwane",
+            "type": "red"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "player": "Cesar MONTES",
+            "type": "red"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 56,
+            "team": "away",
+            "playerOut": "Lyle FOSTER",
+            "playerIn": "Thalente MBATHA"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Jayden ADAMS",
+            "playerIn": "Themba ZWANE"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Brian GUTIERREZ",
+            "playerIn": "Luis CHAVEZ"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Alvaro FIDALGO",
+            "playerIn": "Gilberto MORA"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Erik LIRA",
+            "playerIn": "Edson ALVAREZ"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Raul JIMENEZ",
+            "playerIn": "Armando GONZALEZ"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Iqraam RAYNERS",
+            "playerIn": "Evidence MAKGOPA"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Aubrey MODIBA",
+            "playerIn": "Oswin APPOLLIS"
+          },
+          {
+            "minute": 79,
+            "team": "home",
+            "playerOut": "Julian QUINONES",
+            "playerIn": "Alexis VEGA"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Raul RANGEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Cesar MONTES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Johan VASQUEZ",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Israel REYES",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Jesus GALLARDO",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Erik LIRA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Alvaro FIDALGO",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Brian GUTIERREZ",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Raul JIMENEZ",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Julian QUINONES",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Roberto ALVARADO",
+              "number": 25,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Ronwen WILLIAMS",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aubrey MODIBA",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Mbekezeli MBOKAZI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Nkosinathi SIBISI",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Khuliso MUDAU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Ime OKON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Teboho MOKOENA",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Sphephelo SITHOLE",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Jayden ADAMS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Lyle FOSTER",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Iqraam RAYNERS",
+              "number": 15,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 16,
+            "away": 3
+          },
+          "corners": {
+            "home": 3,
+            "away": 1
+          },
+          "fouls": {
+            "home": 10,
+            "away": 8
+          },
+          "offsides": {
+            "home": 1,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        "aiNotes": "En el partido entre México y Sudáfrica, el equipo mexicano se impuso con un resultado de 2-0 gracias a los goles de Julian Quinones en el minuto 9 y Raúl en el minuto 67, mientras que el equipo sudafricano se vio debilitado por las expulsiones de Sithole, Zwane y las tarjetas amarillas que recibieron varios de sus jugadores. La victoria de México se debió en gran medida a su sólido rendimiento táctico y a la capacidad de aprovechar las oportunidades que se le presentaron, especialmente después de la expulsión de Sithole en el minuto 49, lo que les permitió controlar el ritmo",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021443"
+      }
+    },
+    {
+      "slug": "corea-del-sur-vs-chequia",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021441",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 59,
+            "team": "away",
+            "scorer": "Ladislav KREJCI",
+            "assist": "Vladimir COUFAL.",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "scorer": "HWANG Inbeom",
+            "assist": "LEE KANG IN.",
+            "type": "goal"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "scorer": "H G Oh",
+            "assist": "HWANG Inbeom.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 96,
+            "team": "home",
+            "player": "LEE Gihyuk",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 62,
+            "team": "home",
+            "playerOut": "LEE Jaesung",
+            "playerIn": "HWANG Heechan"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Pavel SULC",
+            "playerIn": "Adam HLOZEK"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Patrik Schick",
+            "playerIn": "Tomas CHORY"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Lukas PROVOD",
+            "playerIn": "Michal SADILEK"
+          },
+          {
+            "minute": 69,
+            "team": "home",
+            "playerOut": "SON Heungmin",
+            "playerIn": "OH Hyeongyu"
+          },
+          {
+            "minute": 69,
+            "team": "home",
+            "playerOut": "LEE Taeseok",
+            "playerIn": "EOM Jisung"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "HWANG Inbeom",
+            "playerIn": "KIM Jingyu"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "PAIK Seungho",
+            "playerIn": "PARK Jinseob"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Alexandr SOJKA",
+            "playerIn": "Mojmir CHYTIL"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "KIM Seunggyu",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "LEE Hanbeom",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "KIM Minjae",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Taeseok",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "SEOL Youngwoo",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Gihyuk",
+              "number": 3,
+              "position": "MID"
+            },
+            {
+              "name": "HWANG Inbeom",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "PAIK Seungho",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Jaesung",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Kangin",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "SON Heungmin",
+              "number": 7,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Matej KOVAR",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Robin HRANAC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Vladimir COUFAL",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Stepan CHALOUPEK",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Ladislav KREJCI",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Jaroslav ZELENY",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Lukas PROVOD",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Tomas SOUCEK",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Alexandr SOJKA",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Patrik Schick",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Pavel SULC",
+              "number": 15,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 15,
+            "away": 7
+          },
+          "corners": {
+            "home": 4,
+            "away": 5
+          },
+          "fouls": {
+            "home": 8,
+            "away": 16
+          },
+          "offsides": {
+            "home": 2,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        "aiNotes": "En el partido entre Corea Del Sur y Chequia, los coreanos lograron una victoria por 2-1 gracias a los goles de Hwang Inbeom y H G Oh, después de que Ladislav Krejci abriera el marcador para los checos en el minuto 59. La victoria de Corea Del Sur se debió en gran medida a su capacidad para revertir el resultado después de ir en desventaja, lo que muestra una notable resiliencia y capacidad de reacción en el equipo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021441"
+      }
+    },
+    {
+      "slug": "canada-vs-bosnia-herzegovina",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021449",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 21,
+            "team": "away",
+            "scorer": "Jovo LUKIC",
+            "assist": "Sead KOLASINAC.",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "scorer": "Cyle LARIN",
+            "assist": "Promise DAVID.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 11,
+            "team": "home",
+            "player": "Alistair JOHNSTON",
+            "type": "yellow"
+          },
+          {
+            "minute": 44,
+            "team": "away",
+            "player": "Ermedin DEMIROVIC",
+            "type": "yellow"
+          },
+          {
+            "minute": 46,
+            "team": "away",
+            "player": "Jovo LUKIC",
+            "type": "yellow"
+          },
+          {
+            "minute": 53,
+            "team": "home",
+            "player": "Luc DE FOUGEROLLES",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Nikola KATIC",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Jonathan DAVID",
+            "playerIn": "Promise DAVID"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Tajon BUCHANAN",
+            "playerIn": "Ali AHMED"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Liam MILLAR",
+            "playerIn": "Jacob SHAFFELBURG"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Ivan BASIC",
+            "playerIn": "Armin GIGOVIC"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Jovo LUKIC",
+            "playerIn": "Samed BAZDAR"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Amar MEMIC",
+            "playerIn": "Kerim ALAJBEGOVIC"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Esmir BAJRAKTAREVIC",
+            "playerIn": "Ivan SUNJIC"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Tani OLUWASEYI",
+            "playerIn": "Cyle LARIN"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Sead KOLASINAC",
+            "playerIn": "Dzenis BURNIC"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "Stephen EUSTAQUIO",
+            "playerIn": "Jonathan OSORIO"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Maxime CREPEAU",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Alistair JOHNSTON",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Luc DE FOUGEROLLES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Derek CORNELIUS",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Richie LARYEA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Stephen EUSTAQUIO",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael KONE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Liam MILLAR",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Jonathan DAVID",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Tani OLUWASEYI",
+              "number": 12,
+              "position": "FWD"
+            },
+            {
+              "name": "Tajon BUCHANAN",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Nikola VASILJ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tarik MUHAREMOVIC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Sead KOLASINAC",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Amar DEDIC",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Nikola KATIC",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Benjamin TAHIROVIC",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Ivan BASIC",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Amar MEMIC",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Ermedin DEMIROVIC",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Esmir BAJRAKTAREVIC",
+              "number": 20,
+              "position": "FWD"
+            },
+            {
+              "name": "Jovo LUKIC",
+              "number": 25,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 13,
+            "away": 8
+          },
+          "corners": {
+            "home": 9,
+            "away": 4
+          },
+          "fouls": {
+            "home": 8,
+            "away": 17
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 3
+          }
+        },
+        "aiNotes": "En el partido entre Canadá y Bosnia Herzegovina, el equipo canadiense logró empatar 1-1 después de que Cyle Larin anotara en el minuto 78, igualando el gol inicial de Jovo Lukic para Bosnia Herzegovina en el minuto 21. La estrategia defensiva de ambos equipos funcionó bien durante gran parte del partido, aunque la habilidad ofensiva de ambos equipos fue desigual, lo que llevó a un resultado final ajustado y emocionante.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021449"
+      }
+    },
+    {
+      "slug": "estados-unidos-vs-paraguay",
+      "status": "finished",
+      "homeScore": 4,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021458",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 7,
+            "team": "home",
+            "scorer": "Damian BOBADILLA",
+            "type": "own_goal"
+          },
+          {
+            "minute": 31,
+            "team": "home",
+            "scorer": "Folarin BALOGUN",
+            "assist": "Christian PULISIC.",
+            "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Folarin BALOGUN",
+            "assist": "TILLMAN.",
+            "type": "goal"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "scorer": "Mauricio",
+            "assist": "Julio ENCISO.",
+            "type": "goal"
+          },
+          {
+            "minute": 98,
+            "team": "home",
+            "scorer": "Reyna",
+            "assist": "Alex FREEMAN.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 9,
+            "team": "away",
+            "player": "Juan Jose CACERES",
+            "type": "yellow"
+          },
+          {
+            "minute": 53,
+            "team": "away",
+            "player": "Miguel ALMIRON",
+            "type": "yellow"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "player": "Tyler ADAMS",
+            "type": "yellow"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "player": "Diego GOMEZ",
+            "type": "yellow"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "player": "Alex ARCE",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Junior ALONSO",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Christian PULISIC",
+            "playerIn": "Sebastian BERHALTER"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Damian BOBADILLA",
+            "playerIn": "MAURICIO"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "Antonio SANABRIA",
+            "playerIn": "Alex ARCE"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Sergino DEST",
+            "playerIn": "Timothy WEAH"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Folarin BALOGUN",
+            "playerIn": "Ricardo PEPI"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Miguel ALMIRON",
+            "playerIn": "Ramon SOSA"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Juan Jose CACERES",
+            "playerIn": "Gustavo VELAZQUEZ"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Diego GOMEZ",
+            "playerIn": "Alejandro ROMERO GAMARRA"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "playerOut": "Malik TILLMAN",
+            "playerIn": "Giovanni REYNA"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Matt FREESE",
+              "number": 24,
+              "position": "GK"
+            },
+            {
+              "name": "Sergino DEST",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Chris RICHARDS",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Antonee ROBINSON",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Tim REAM",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Alex FREEMAN",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Tyler ADAMS",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Weston McKENNIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Malik TILLMAN",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Christian PULISIC",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Folarin BALOGUN",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Orlando GILL",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Omar ALDERETE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Juan Jose CACERES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Junior ALONSO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Gustavo GOMEZ",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Diego GOMEZ",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Miguel ALMIRON",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Andres CUBAS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Damian BOBADILLA",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Antonio SANABRIA",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Julio ENCISO",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 16,
+            "away": 9
+          },
+          "corners": {
+            "home": 3,
+            "away": 1
+          },
+          "fouls": {
+            "home": 12,
+            "away": 12
+          },
+          "offsides": {
+            "home": 2,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 5
+          }
+        },
+        "aiNotes": "En el partido entre Estados Unidos y Paraguay, el equipo estadounidense se llevó una victoria contundente con un marcador de 4-1, gracias a los goles de Damian Bobadilla en propia puerta, dos tantos de Folarin Balogun y el gol final de Reyna, mientras que Paraguay solo pudo anotar a través de Mauricio. La estrategia ofensiva de Estados Unidos demostró ser efectiva, aprovechando las oportunidades y mostrando una mayor eficiencia en el ataque, lo que les permitió controlar el ritmo del partido y obtener una importante victoria en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021458"
+      }
+    },
+    {
+      "slug": "catar-vs-suiza",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021447",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 17,
+            "team": "away",
+            "scorer": "Embolo",
+            "type": "penalty"
+          },
+          {
+            "minute": 94,
+            "team": "home",
+            "scorer": "Miro MUHEIM",
+            "type": "own_goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "home",
+            "player": "Mahmoud Abunada",
+            "type": "yellow"
+          },
+          {
+            "minute": 23,
+            "team": "home",
+            "player": "Jassem Gaber",
+            "type": "yellow"
+          },
+          {
+            "minute": 42,
+            "team": "away",
+            "player": "Zakaria",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "AYOUB ALOUI",
+            "playerIn": "AHMED FATHY"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "JASSEM GABER",
+            "playerIn": "KARIM BOUDIAF"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "YUSUF ABDURISAG",
+            "playerIn": "AHMED ALAAELDIN"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "Dan NDOYE",
+            "playerIn": "Johan MANZAMBI"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "Michel AEBISCHER",
+            "playerIn": "Fabian RIEDER"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "playerOut": "ASSIM MADIBO",
+            "playerIn": "MOHAMED MANAI"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Ruben VARGAS",
+            "playerIn": "Zeki AMDOUNI"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "playerOut": "EDMILSON JUNIOR",
+            "playerIn": "HASSAN ALHAYDOS"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "playerOut": "Ricardo RODRIGUEZ",
+            "playerIn": "Miro MUHEIM"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "playerOut": "Remo FREULER",
+            "playerIn": "Ardon JASHARI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "MAHMOUD ABUNADA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "PEDRO MIGUEL",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "ISSA LAYE",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "JASSEM GABER",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "AYOUB ALOUI",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "HOMAM AHMED",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "BOUALEM KHOUKHI",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "ASSIM MADIBO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "EDMILSON JUNIOR",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "AKRAM AFIF",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "YUSUF ABDURISAG",
+              "number": 15,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Gregor KOBEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Nico ELVEDI",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Manuel AKANJI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo RODRIGUEZ",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Denis ZAKARIA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Remo FREULER",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Granit XHAKA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Michel AEBISCHER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Breel EMBOLO",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Dan NDOYE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Ruben VARGAS",
+              "number": 17,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 6,
+            "away": 26
+          },
+          "corners": {
+            "home": 3,
+            "away": 10
+          },
+          "fouls": {
+            "home": 10,
+            "away": 10
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        "aiNotes": "En el partido entre Catar y Suiza, el equipo suizo se puso en ventaja gracias a un penal convertido por Embolo en el minuto 17, pero Catar logró empatar en el tiempo añadido con un gol de Miro Muheim en el minuto 94. La igualdad en el marcador refleja un rendimiento táctico equilibrado de ambos equipos, aunque la expulsión no se produjo, las tarjetas amarillas distribuidas a lo largo del partido mostraron la intensidad y la lucha por cada balón en este encuentro del Mundial 2026.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021447"
+      }
+    },
+    {
+      "slug": "brasil-vs-marruecos",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021456",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 21,
+            "team": "away",
+            "scorer": "Saibari",
+            "assist": "BRAHIM.",
+            "type": "goal"
+          },
+          {
+            "minute": 32,
+            "team": "home",
+            "scorer": "Vini Jr.",
+            "assist": "BRUNO GUIMARAES.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 37,
+            "team": "home",
+            "player": "Casemiro",
+            "type": "yellow"
+          },
+          {
+            "minute": 43,
+            "team": "home",
+            "player": "Roger Ibanez",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "CASEMIRO",
+            "playerIn": "FABINHO"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "ROGER IBANEZ",
+            "playerIn": "DANILO"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "LUCAS PAQUETA",
+            "playerIn": "MATHEUS CUNHA"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "IGOR THIAGO",
+            "playerIn": "LUIZ HENRIQUE"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Brahim DIAZ",
+            "playerIn": "Chemsdine TALBI"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Azzedine OUNAHI",
+            "playerIn": "Samir EL MOURABET"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "BRUNO GUIMARAES",
+            "playerIn": "DANILO SANTOS"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Noussair MAZRAOUI",
+            "playerIn": "Anass SALAH EDDINE"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Bilal EL KHANNOUSS",
+            "playerIn": "Ayoube AMAIMOUNI"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "playerOut": "Ismael SAIBARI",
+            "playerIn": "Soufiane RAHIMI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "ALISSON",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "GABRIEL MAGALHAES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "MARQUINHOS",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "DOUGLAS SANTOS",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "ROGER IBANEZ",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "CASEMIRO",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "BRUNO GUIMARAES",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LUCAS PAQUETA",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "VINICIUS JUNIOR",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "RAPHINHA",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "IGOR THIAGO",
+              "number": 25,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Yassine BOUNOU",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Achraf HAKIMI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Noussair MAZRAOUI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Issa Diop",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Chadi RIAD",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Ayyoub BOUADDI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Azzedine OUNAHI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael SAIBARI",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Bilal EL KHANNOUSS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Neil EL AYNAOUI",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Brahim DIAZ",
+              "number": 10,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 12,
+            "away": 14
+          },
+          "corners": {
+            "home": 6,
+            "away": 2
+          },
+          "fouls": {
+            "home": 14,
+            "away": 14
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        "aiNotes": "En el partido entre Brasil y Marruecos, el equipo brasileño logró empatar el encuentro 1-1 gracias al gol de Vini Jr. en el minuto 32, después de que Saibari abriera el marcador para Marruecos en el minuto 21. La estrategia de Brasil pareció funcionar en momentos puntuales, especialmente durante la primera mitad, aunque las tarjetas amarillas recibidas por Casemiro y Roger Ibanez podrían tener un impacto en la alineación para los próximos partidos.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021456"
+      }
+    },
+    {
+      "slug": "costa-de-marfil-vs-ecuador",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 90,
+            "team": "home",
+            "scorer": "Amad DIALLO",
+            "assist": "Wilfried SINGO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 28,
+            "team": "home",
+            "player": "Seko FOFANA",
+            "type": "yellow"
+          },
+          {
+            "minute": 38,
+            "team": "home",
+            "player": "Kessie",
+            "type": "yellow"
+          },
+          {
+            "minute": 40,
+            "team": "home",
+            "player": "Guela DOUE",
+            "type": "yellow"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "player": "Jackson POROZO",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 56,
+            "team": "home",
+            "playerOut": "Elye WAHI",
+            "playerIn": "Ange-Yoan BONNY"
+          },
+          {
+            "minute": 56,
+            "team": "home",
+            "playerOut": "Bazoumana TOURE",
+            "playerIn": "Amad DIALLO"
+          },
+          {
+            "minute": 56,
+            "team": "away",
+            "playerOut": "Alan MINDA",
+            "playerIn": "Nilson ANGULO"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "John YEBOAH",
+            "playerIn": "Angelo PRECIADO"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "Alan FRANCO",
+            "playerIn": "Jackson POROZO"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Seko Fofana",
+            "playerIn": "Ibrahim SANGARE"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Nicolas PEPE",
+            "playerIn": "Christ Inao OULAI"
+          },
+          {
+            "minute": 77,
+            "team": "away",
+            "playerOut": "Enner VALENCIA",
+            "playerIn": "Kevin RODRIGUEZ"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "playerOut": "Guela DOUE",
+            "playerIn": "Odilon KOSSOUNOU"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Yahia Fofana",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ghislain KONAN",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Wilfried SINGO",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Guela DOUE",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Emmanuel AGBADOU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Seko Fofana",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Franck KESSIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Yan DIOMANDE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Elye WAHI",
+              "number": 12,
+              "position": "FWD"
+            },
+            {
+              "name": "Nicolas PEPE",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Bazoumana TOURE",
+              "number": 24,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Hernan GALINDEZ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Piero HINCAPIE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Joel ORDONEZ",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Willian PACHO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Alan MINDA",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Pedro VITE",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Alan FRANCO",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Moises CAICEDO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "John YEBOAH",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Enner VALENCIA",
+              "number": 13,
+              "position": "FWD"
+            },
+            {
+              "name": "Gonzalo PLATA",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 15,
+            "away": 12
+          },
+          "corners": {
+            "home": 3,
+            "away": 5
+          },
+          "fouls": {
+            "home": 7,
+            "away": 12
+          },
+          "yellowCards": {
+            "home": 3,
+            "away": 1
+          }
+        },
+        "aiNotes": "Análisis final: Costa de Marfil venció 1-0 a Ecuador con un gol agónico de Amad Diallo en el minuto 90. El equipo marfileño dominó la posesión y generó más ocasiones de gol (15 tiros vs 11), mientras que Ecuador no logró concretar sus aproximaciones. Fue un partido físico con varias tarjetas (3 amarillas para Costa de Marfil, 1 para Ecuador), donde la disciplina táctica del equipo local prevaleció.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021467"
+      }
+    },
+    {
+      "slug": "suecia-vs-tunez",
+      "status": "finished",
+      "homeScore": 5,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 7,
+            "team": "home",
+            "scorer": "Yasin AYARI",
+            "type": "goal"
+          },
+          {
+            "minute": 30,
+            "team": "home",
+            "scorer": "Alexander ISAK",
+            "assist": "Viktor GYOKERES.",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "away",
+            "scorer": "Omar REKIK",
+            "assist": "Hannibal MEJBRI.",
+            "type": "goal"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "scorer": "Viktor GYOKERES",
+            "assist": "Alexander ISAK.",
+            "type": "goal"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "scorer": "Mattias SVANBERG",
+            "type": "goal"
+          },
+          {
+            "minute": 96,
+            "team": "home",
+            "scorer": "Yasin AYARI",
+            "assist": "Lucas BERGVALL.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 54,
+            "team": "away",
+            "player": "Khedira",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Benjamin NYGREN",
+            "playerIn": "Lucas BERGVALL"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Gabriel GUDMUNDSSON",
+            "playerIn": "Elliot STROUD"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Ellyes SKHIRI",
+            "playerIn": "Elias ACHOURI"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Yan Valery",
+            "playerIn": "Mohamed HADJ MAHMOUD"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Elias SAAD",
+            "playerIn": "Sebastian TOUNEKTI"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Jesper KARLSTROM",
+            "playerIn": "Mattias SVANBERG"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Anis SLIMANE",
+            "playerIn": "Firas CHAOUAT"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Rani Khedira",
+            "playerIn": "Ismael GHARBI"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Alexander Isak",
+            "playerIn": "Anthony ELANGA"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Alexander BERNHARDSSON",
+            "playerIn": "Daniel SVENSSON"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Kristoffer NORDFELDT",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Gustaf LAGERBIELKE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Victor LINDELOF",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Isak HIEN",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Gabriel GUDMUNDSSON",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Alexander BERNHARDSSON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Benjamin NYGREN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Jesper KARLSTROM",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Yasin AYARI",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Alexander Isak",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Viktor GYOKERES",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Mouhib CHAMAKH",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ali ABDI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Montassar TALBI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Omar Rekik",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Yan Valery",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Mohamed Amine BEN HMIDA",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannibal MEJBRI",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Rani Khedira",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Ellyes SKHIRI",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Anis SLIMANE",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Elias SAAD",
+              "number": 8,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 13,
+            "away": 6
+          },
+          "corners": {
+            "home": 4,
+            "away": 2
+          },
+          "fouls": {
+            "home": 10,
+            "away": 8
+          },
+          "offsides": {
+            "home": 3,
+            "away": 6
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En el partido entre Suecia y Túnez, Suecia se impuso con un contundente 5-1, con goles decisivos de Yasin Ayari en dos ocasiones, Alexander Isak, Viktor Gyokeres y Mattias Svanberg, mientras que Omar Rekik anotó el único gol para Túnez. La victoria de Suecia refleja un rendimiento táctico sólido y una efectividad en el ataque que les permitió dominar el encuentro y obtener una importante ventaja en el torneo.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021474"
+      }
+    },
+    {
+      "slug": "espana-vs-cabo-verde",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [],
+        "cards": [
+          {
+            "minute": 16,
+            "team": "away",
+            "player": "Sidny Lopes Cabral",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [],
+        "lineup": {
+          "home": [
+            {
+              "name": "Unai SIMON",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Marcos LLORENTE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Aymeric LAPORTE",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Pau CUBARSI",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Marc CUCURELLA",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Fabian RUIZ",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "GAVI",
+              "number": 9,
+              "position": "MID"
+            },
+            {
+              "name": "RODRI",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "PEDRI",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Ferran TORRES",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Mikel OYARZABAL",
+              "number": 21,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "VOZINHA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "DINEY BORGES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "PICO LOPES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "SIDNY LOPES CABRAL",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "STEVEN MOREIRA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "KEVIN PINA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "JOVANE CABRAL",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "JAMIRO MONTEIRO",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "LAROS DUARTE",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "DAILON LIVRAMENTO",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "RYAN MENDES",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 13,
+            "away": 3
+          },
+          "corners": {
+            "home": 4,
+            "away": 0
+          },
+          "fouls": {
+            "home": 5,
+            "away": 0
+          },
+          "offsides": {
+            "home": 2,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido entre España y Cabo Verde se encuentra empatado a cero goles, con ambos equipos buscando encontrar el ritmo y crear oportunidades de ataque, aunque Cabo Verde ha recibido una tarjeta amarilla en el minuto 16 que puede influir en su estrategia defensiva. A medida que el partido avance, España puede intentar aprovechar su mayor experiencia y habilidad técnica para crear espacios y generar oportunidades de gol, mientras que Cabo Verde buscará mantener su solidez defensiva y sorprender a su oponente con contragolpes rápidos.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482"
+      }
+    },
+    {
+      "slug": "belgica-vs-egipto",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica compte con una sólida defensa y un ataque liderado por el joven y talentoso Jérémy Doku, mientras que Egipto se apoya en la velocidad y habilidad de Mohamed Salah para generar oportunidades de gol. En este encuentro, espera que Bélgica tenga una ligera ventaja debido a su mayor experiencia y solidez en el conjunto, aunque la presencia de Salah en el equipo egipcio puede generar un equilibrio y hacer que el partido sea muy competitivo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478"
+      }
+    },
+    {
+      "slug": "arabia-saudita-vs-uruguay",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Uruguay se encuentra en una mejor posición en el ranking FIFA y cuenta con un jugador clave como Federico Valverde, mientras que Arabia Saudita busca sorprender con la habilidad de Salem Al-Dawsari. Uruguay tiene una ligera ventaja en este partido debido a su mayor experiencia y solidez en el juego colectivo, lo que podría ser demasiado para el equipo árabe, a pesar de su capacidad para generar sorpresas.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486"
+      }
+    },
+    {
+      "slug": "iran-vs-nueva-zelanda",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "IR Iran llega al partido con una buena forma reciente, gracias a la destacada labor de Mehdi Taremi, quien ha sido clave en la generación de oportunidades de gol y ha demostrado ser un jugador muy peligroso en el ataque, mientras que New Zealand busca sorprender con la experiencia y habilidad de Chris Wood, aunque su equipo ha mostrado ciertas debilidades en la defensa. En este encuentro, IR Iran parece tener la ventaja debido a su mejor posición en el ranking FIFA y su mayor experiencia en competiciones internacionales, lo que podría darles una cierta superioridad en el campo de juego.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476"
+      }
+    },
+    {
+      "slug": "francia-vs-senegal",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Francia llega al partido con una forma sólida, gracias a la velocidad y habilidad de Kylian Mbappé, quien ha demostrado ser una pieza clave en el ataque del equipo, mientras que Senegal cuenta con la experiencia y el liderazgo de Sadio Mané, aunque su forma reciente ha sido irregular. Espero que Francia tenga ventaja en el partido debido a su mayor profundidad en el banquillo y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para el equipo senegalés.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490"
+      }
+    },
+    {
+      "slug": "irak-vs-noruega",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Both Iraq and Norway arrive at the match with different forms, Iraq has shown a solid defensive structure, while Norway has a strong attacking force led by Erling Haaland, who is the key player to watch in this match. Norway is expected to have an advantage in this match due to its higher ranking and the exceptional goal-scoring ability of Haaland, which could be too much for Iraq's defense to handle.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488"
+      }
+    },
+    {
+      "slug": "argentina-vs-argelia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Argentina llega al partido con una forma reciente imponente, liderada por la genialidad de Lionel Messi, quien sigue siendo el jugador clave a seguir en el equipo, mientras que Algeria busca sorprender con la velocidad y habilidad de Mohamed Amoura, aunque su forma reciente ha sido irregular. Mi expectativa es que Argentina tenga la ventaja en este partido debido a su mayor experiencia y calidad en el conjunto, lo que les permitirá controlar el ritmo del juego y crear oportunidades claras de gol.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021496"
+      }
+    },
+    {
+      "slug": "austria-vs-jordania",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Austria llega al partido con una forma reciente irregular, pero cuenta con la experiencia y habilidad de Marcel Sabitzer, quien es clave para generar oportunidades de ataque, mientras que Jordania ha mostrado una defensa sólida en sus últimos partidos y confía en la velocidad y habilidad de Mousa Al-Taamari para sorprender a su oponente. Considero que Austria tiene una ligera ventaja debido a su mayor experiencia en competiciones internacionales y a la calidad de su plantel, lo que podría permitirle dominar el ritmo del partido y crear más oportunidades de gol.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498"
+      }
+    },
+    {
+      "slug": "portugal-vs-rd-congo",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Portugal se encuentra en una buena forma reciente gracias a la destacada actuación de Bruno Fernandes, mientras que Congo DR busca capitalizar la velocidad y habilidad de Yoane Wissa para sorprender a su oponente. La ventaja en este partido parece estar del lado de Portugal, debido a su mayor experiencia y sólida estructura defensiva, lo que podría limitar las oportunidades de ataque del Congo DR y permitirle controlar el ritmo del juego.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502"
+      }
+    },
+    {
+      "slug": "inglaterra-vs-croacia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Inglaterra cuenta con un rendimiento estable en los últimos partidos y se apoya en la habilidad de Jude Bellingham para generar oportunidades de ataque, mientras que Croacia busca recuperar su nivel competitivo con la experiencia y el liderazgo de Luka Modrić. En este encuentro, Inglaterra parece tener una ligera ventaja debido a su consistencia en la forma reciente y la solidez de su defensa, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores de un equipo croata que busca encontrar su ritmo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507"
+      }
+    },
+    {
+      "slug": "ghana-vs-panama",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Ghana cuenta con la ventaja de tener a Mohammed Kudus, un jugador clave que ha demostrado su capacidad para marcar goles decisivos, mientras que Panama se apoya en la experiencia y habilidad de Adalberto Carrasquilla para controlar el ritmo del juego. En este encuentro, Ghana podría tener una ligera ventaja debido a su capacidad para sorprender a sus oponentes con su velocidad y agresividad en el ataque, lo que podría poner en dificultades a la defensa panameña.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510"
+      }
+    },
+    {
+      "slug": "uzbekistan-vs-colombia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Colombia presenta una sólida forma reciente y cuenta con el talento de Luis Díaz, mientras que Uzbekistan busca capitalizar la habilidad goleadora de Eldor Shomurodov para sorprender a su oponente. La ventaja parece estar del lado de Colombia debido a su mayor experiencia y solidez en el juego colectivo, lo que podría ser demasiado para la defensa uzbeka y permitirle controlar el ritmo del partido.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021504"
+      }
+    },
+    {
+      "slug": "chequia-vs-sudafrica",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de rendimiento, ya que República Checa ha demostrado una gran solidez defensiva en su forma reciente, gracias en parte al aporte goleador de Patrik Schick, mientras que Sudáfrica ha mostrado una inconsistencia en sus últimos partidos, aunque cuenta con la velocidad y habilidad de Percy Tau para generar oportunidades de ataque. En este encuentro, espero que República Checa tenga una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría permitirle controlar el ritmo del juego y aprovechar los errores de Sudáfrica para anotar goles decisivos.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021440"
+      }
+    },
+    {
+      "slug": "suiza-vs-bosnia-herzegovina",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Suiza se encuentra en una buena forma reciente y cuenta con la experiencia y habilidad de Granit Xhaka, mientras que Bosnia y Herzegovina busca sorprender con la velocidad y habilidad de Ermedin Demirović. Sin embargo, considero que Suiza tiene la ventaja en este partido debido a su mayor experiencia en competiciones internacionales y su sólida defensa, lo que podría limitar las opciones de ataque de Bosnia y Herzegovina.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021446"
+      }
+    },
+    {
+      "slug": "canada-vs-catar",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Canada llega al partido con una buena forma reciente, gracias a la habilidad y velocidad de Alphonso Davies, quien ha sido clave en la generación de oportunidades de gol y ha demostrado ser un jugador muy difícil de marcar, mientras que Qatar busca explotar la creatividad de Akram Afif para sorprender a su oponente. Considero que Canada tiene ventaja en este partido debido a su mayor experiencia en competiciones internacionales y su sólida defensa, lo que podría limitar las oportunidades de ataque de Qatar y permitirle controlar el ritmo del juego.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021450"
+      }
+    },
+    {
+      "slug": "mexico-vs-corea-del-sur",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque México cuenta con la ventaja de tener a Raúl Jiménez en su mejor momento, mientras que Corea del Sur confía en la habilidad y velocidad de Son Heung-min para crear oportunidades de gol. Espero que México tenga una ligera ventaja en el partido debido a su mayor experiencia en torneos internacionales y su sólida defensa, lo que podría limitar el impacto de Son Heung-min y darles la victoria.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442"
+      }
+    },
+    {
+      "slug": "estados-unidos-vs-australia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, siendo Estados Unidos un equipo sólido con una buena forma reciente y un jugador clave como Folarin Balogun, quien puede ser determinante en el ataque, mientras que Australia busca sorprender con su joven talento Nestory Irankunda, aunque su forma reciente ha sido irregular. Espero que Estados Unidos tenga ventaja en este partido debido a su mejor posición en el ranking FIFA y su mayor experiencia en competiciones internacionales, lo que podría ser clave para superar a un equipo australiano que, aunque peligroso, puede ser más inconsistente.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021462"
+      }
+    },
+    {
+      "slug": "escocia-vs-marruecos",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Escocia muestra una forma irregular en sus últimos encuentros, aunque cuenta con el talento de John McGinn, mientras que Marruecos presenta una sólida defensa y un ataque dinámico liderado por Achraf Hakimi, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol. En este encuentro, Marruecos parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darle la ventaja necesaria para superar a un equipo escocés que aún busca encontrar su ritmo y cohesión en el torneo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454"
+      }
+    },
+    {
+      "slug": "brasil-vs-haiti",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Brazil llega al partido con una forma reciente destacada, gracias a la habilidad y velocidad de su jugador clave Vinícius Júnior, mientras que Haiti busca sorprender con la creatividad de Jean-Ricner Bellegarde, aunque su posición en el ranking de la FIFA sugiere una desventaja en términos de experiencia y nivel. En este encuentro, Brazil tiene la ventaja debido a su mayor experiencia y habilidad colectiva, lo que probablemente les permitirá dominar el partido y obtener una victoria convincente contra un equipo de Haiti que, a pesar de su determinación, carece de la solidez defensiva y el peso ofensivo para igualar a su oponente.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021457"
+      }
+    },
+    {
+      "slug": "turquia-vs-paraguay",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los dos equipos llegan al partido con diferentes dinámicas, ya que Turquía muestra una forma reciente consistente gracias a la habilidad de Arda Güler, mientras que Paraguay busca recuperar su ritmo con la ayuda de Julio Enciso. Espero que Turquía tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su forma más estable en los últimos partidos, lo que podría darles una ventaja psicológica y táctica sobre Paraguay.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021460"
+      }
+    },
+    {
+      "slug": "paises-bajos-vs-suecia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los Países Bajos llegan al partido con una sólida defensa liderada por Virgil van Dijk, quien es clave para su estrategia, mientras que Suecia confía en la velocidad y habilidad de Alexander Isak para generar oportunidades de ataque en un equipo que ha mostrado una forma irregular en los últimos partidos. En este encuentro, los Países Bajos parecen tener la ventaja debido a su mayor experiencia y cohesión como equipo, lo que les permite controlar el ritmo del juego y crear oportunidades claras de gol, lo que podría ser demasiado para la defensa sueca.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472"
+      }
+    },
+    {
+      "slug": "alemania-vs-costa-de-marfil",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de confianza, ya que Alemania se encuentra en una buena forma reciente y cuenta con el talento de Jamal Musiala, mientras que Costa de Marfil busca sorprender con la habilidad y experiencia de Franck Kessié. En este encuentro, Alemania parece tener una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría limitar las oportunidades de ataque de Costa de Marfil.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469"
+      }
+    },
+    {
+      "slug": "ecuador-vs-curazao",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ecuador llega al partido con una forma reciente irregular, pero cuenta con la habilidad y la creatividad de Moisés Caicedo, quien ha demostrado ser un jugador clave en la selección, mientras que Curaçao, con Leandro Bacuna como su referente, ha mostrado una defensa sólida, pero carece de profundidad en su ataque. Considero que Ecuador tiene ventaja en este partido debido a su mayor experiencia y habilidad en el campo, lo que les permitirá dominar el juego y crear oportunidades claras de gol, aunque Curaçao puede ofrecer resistencia con su defensa bien organizada.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465"
+      }
+    },
+    {
+      "slug": "tunez-vs-japon",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez muestra una forma irregular en sus últimos partidos, mientras que Japón ha demostrado una gran solidez defensiva y velocidad en el ataque, con Takefusa Kubo como figura clave, en contraste con Ellyes Skhiri, quien intentará liderar a Túnez con su experiencia y habilidad en el mediocampo. Considero que Japón tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que les permite tener un mayor control del ritmo del juego y aprovechar las oportunidades de contraataque.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021475"
+      }
+    },
+    {
+      "slug": "espana-vs-arabia-saudita",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que España se presenta con una sólida forma reciente y una gran cantidad de talento en su plantilla, liderada por el joven y destacado Pedri, mientras que Arabia Saudita busca sorprender con la velocidad y habilidad de Salem Al-Dawsari. En este encuentro, España tiene la ventaja debido a su mayor experiencia y calidad en el conjunto, lo que sugiere que debería dominar el partido y obtener una victoria cómoda contra un equipo saudita que, aunque peligroso en contraataques, puede tener dificultades para contener el ataque español.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483"
+      }
+    },
+    {
+      "slug": "belgica-vs-iran",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica busca recuperar su nivel de competencia con jugadores como Jérémy Doku, quien ha demostrado ser un factor clave en su ataque, mientras que Irán confía en la experiencia y habilidad de Mehdi Taremi para liderar su equipo. Espero que Bélgica tenga ventaja en el partido debido a su mayor experiencia en torneos internacionales y su sólido conjunto, lo que podría darles una ligera superioridad sobre un Irán que, aunque competitivo, puede encontrar dificultades para contrarrestar el ritmo y la precisión del ataque belga.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477"
+      }
+    },
+    {
+      "slug": "uruguay-vs-cabo-verde",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Uruguay llega al partido con una forma reciente irregular, pero cuenta con la experiencia y habilidad de jugadores como Federico Valverde, quien puede marcar la diferencia en el campo, mientras que Cabo Verde presenta un equipo joven y enérgico con Jovane Cabral como su principal amenaza ofensiva. En este encuentro, Uruguay parece tener ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores del equipo de Cabo Verde.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021487"
+      }
+    },
+    {
+      "slug": "nueva-zelanda-vs-egipto",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Nueva Zelanda muestra una forma irregular en sus últimos partidos, apoyándose en la experiencia y habilidad goleadora de Chris Wood, mientras que Egipto se presenta con una racha de victorias y confianza en la velocidad y habilidad de Mohamed Salah. Considero que Egipto tiene ventaja en este partido debido a su mejor posición en el ranking FIFA y su reciente forma, lo que les da una mayor solidez y profundidad en su juego en comparación con Nueva Zelanda.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021480"
+      }
+    },
+    {
+      "slug": "argentina-vs-austria",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Argentina llega al partido con una gran forma reciente, liderada por la experiencia y habilidad de Lionel Messi, quien sigue siendo el jugador clave a seguir en el equipo, mientras que Austria busca sorprender con la velocidad y habilidad de Marcel Sabitzer, aunque su nivel de juego ha sido irregular en los últimos partidos. En este encuentro, Argentina tiene una clara ventaja debido a su mayor experiencia y habilidad en el juego ofensivo, lo que podría ser demasiado para la defensa austríaca, lo que sugiere un resultado favorable para el equipo sudamericano.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021494"
+      }
+    },
+    {
+      "slug": "francia-vs-irak",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Francia llega al partido con una forma reciente destacada, gracias a la velocidad y habilidad de su jugador clave Kylian Mbappé, quien ha sido fundamental en la generación de oportunidades de gol y ha demostrado ser un elemento clave en el ataque del equipo, mientras que Iraq busca sorprender con la habilidad y la velocidad de Ayman Hussein, aunque su forma reciente ha sido irregular. En este partido, Francia tiene una clara ventaja debido a su mayor experiencia y nivel de juego en competiciones internacionales, lo que les permite tener un control más efectivo del ritmo del juego y crear oportunidades de gol de manera más constante.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492"
+      }
+    },
+    {
+      "slug": "noruega-vs-senegal",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Noruega llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la destacada figura de Erling Haaland, quien puede ser el factor decisivo en el ataque, mientras que Senegal se presenta con una sólida defensa y el talento de Sadio Mané, lo que les da una base sólida para contrarrestar al rival. En este encuentro, Senegal parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores del equipo noruego.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491"
+      }
+    },
+    {
+      "slug": "jordania-vs-argelia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, siendo Algeria el favorito debido a su posición en el ranking FIFA y su sólida forma reciente, con jugador clave como Mohamed Amoura, mientras que Jordania busca sorprender con su velocidad y habilidad en el ataque, liderados por Mousa Al-Taamari. Mi expectativa es que Algeria tenga ventaja en el partido debido a su experiencia y su mayor profundidad en el banquillo, lo que les permitirá controlar el ritmo del juego y generar oportunidades claras de gol.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021499"
+      }
+    },
+    {
+      "slug": "portugal-vs-uzbekistan",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Portugal llega al partido con una forma reciente sólida, gracias a la creatividad y liderazgo de Bruno Fernandes en el campo, mientras que Uzbekistan busca sorprender con la velocidad y habilidad de Eldor Shomurodov, aunque su posición en la clasificación FIFA sugiere una ventaja para el equipo europeo. En este encuentro, Portugal tiene la ventaja debido a su mayor experiencia y nivel de competición en torneos internacionales, lo que podría permitirle controlar el ritmo del juego y aprovechar sus oportunidades para anotar.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503"
+      }
+    },
+    {
+      "slug": "inglaterra-vs-ghana",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "England llega al partido con una forma reciente sólida, gracias a la habilidad de su jugador clave Jude Bellingham, quien ha demostrado ser fundamental en la creación de oportunidades de ataque, mientras que Ghana busca sorprender con la velocidad y habilidad de Mohammed Kudus, quien puede ser el factor clave para desequilibrar el partido. En este encuentro, England parece tener la ventaja debido a su mayor experiencia y solidez defensiva, lo que podría limitar las oportunidades de ataque de Ghana y permitirle controlar el ritmo del partido.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021506"
+      }
+    },
+    {
+      "slug": "panama-vs-croacia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Panamá muestra una forma irregular en sus últimos encuentros, contando con la habilidad y liderazgo de Adalberto Carrasquilla, mientras que Croacia, liderada por la experiencia y talento de Luka Modrić, ha demostrado una solidez y cohesión en su juego reciente. Espero que Croacia tenga la ventaja en este partido debido a su superioridad en el ranking FIFA y su consistencia en el juego, lo que podría ser demasiado para el equipo panameño.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511"
+      }
+    },
+    {
+      "slug": "colombia-vs-rd-congo",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Colombia llega al partido con una forma reciente sólida, gracias a la velocidad y habilidad de Luis Díaz, mientras que Congo DR busca sorprender con la habilidad goleadora de Yoane Wissa, aunque su posición en la clasificación FIFA sugiere una ventaja para los cafeteros. En este encuentro, Colombia tiene la ventaja debido a su mayor experiencia y cohesión como equipo, lo que podría ser demasiado para el Congo DR, a pesar de la capacidad de su delantero estrella para cambiar el curso del partido.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021501"
+      }
+    },
+    {
+      "slug": "bosnia-herzegovina-vs-catar",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, Bosnia y Herzegovina busca mejorar su rendimiento después de una serie de partidos irregulares, mientras que Qatar se presenta con una forma reciente más sólida y con Akram Afif como su jugador clave a seguir, quien ha demostrado ser un factor importante en el ataque de su equipo. En este encuentro, Qatar parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darles una pequeña ventaja sobre Bosnia y Herzegovina.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448"
+      }
+    },
+    {
+      "slug": "suiza-vs-canada",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Suiza ha mostrado una forma estable en los últimos partidos con Granit Xhaka como jugador clave en el centro del campo, mientras que Canadá busca aprovechar la velocidad y habilidad de Alphonso Davies en el ataque. En este enfrentamiento, Suiza parece tener una ligera ventaja debido a su experiencia en competiciones internacionales y su solidez defensiva, lo que podría limitar las oportunidades de contraataque de Canadá.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451"
+      }
+    },
+    {
+      "slug": "marruecos-vs-haiti",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Marruecos cuenta con una sólida defensa y un ataque veloz liderado por Achraf Hakimi, mientras que Haití busca sorprender con la habilidad y la velocidad de Jean-Ricner Bellegarde, aunque su forma reciente ha sido irregular. Espero que Marruecos tenga ventaja en el partido debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que les dará una mayor solidez y confianza en el campo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452"
+      }
+    },
+    {
+      "slug": "escocia-vs-brasil",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Escocia llega al partido con una forma irregular en sus últimos encuentros, aunque cuenta con la experiencia y habilidad de John McGinn, mientras que Brasil se presenta con una sólida defensa y un ataque peligroso liderado por el velocista Vinícius Júnior. En este partido, Brasil tiene ventaja debido a su mayor profundidad en el banquillo y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para la defensa escocesa.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455"
+      }
+    },
+    {
+      "slug": "sudafrica-vs-corea-del-sur",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Sudáfrica muestra una forma irregular en sus encuentros recientes, pero cuenta con la velocidad y habilidad de Percy Tau, mientras que Corea del Sur se presenta con una solidez defensiva y la creatividad ofensiva de Son Heung-min. En este encuentro, Corea del Sur parece tener la ventaja debido a su mayor experiencia en competiciones internacionales y su mejor posición en el ranking FIFA, lo que podría darle una ventaja en términos de confianza y cohesión en el campo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021445"
+      }
+    },
+    {
+      "slug": "chequia-vs-mexico",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que México se encuentra en una buena forma reciente y cuenta con la experiencia y habilidad de Raúl Jiménez, mientras que República Checa busca aprovechar la velocidad y habilidad de Patrik Schick para sorprender a su oponente. Considero que México tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su sólida estructura defensiva, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores de su oponente.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444"
+      }
+    },
+    {
+      "slug": "curazao-vs-costa-de-marfil",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de rendimiento, ya que Côte d'Ivoire muestra una forma reciente más sólida gracias a la destacada actuación de Franck Kessié, mientras que Curaçao busca aprovechar la experiencia y habilidad de Leandro Bacuna para sorprender a su oponente. Considero que Côte d'Ivoire tiene una ligera ventaja en este partido debido a su mayor profundidad en el plantel y su posición en el ranking FIFA, lo que sugiere una superioridad en términos de habilidad y cohesión en el equipo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468"
+      }
+    },
+    {
+      "slug": "ecuador-vs-alemania",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ecuador llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la habilidad y creatividad de Moisés Caicedo en el centro del campo, mientras que Alemania se presenta con una sólida defensa y un ataque veloz liderado por el joven y talentoso Jamal Musiala. En este encuentro, Alemania tiene una ligera ventaja debido a su mayor experiencia y profundidad en el banquillo, lo que le permite hacer ajustes tácticos y contar con opciones de calidad para cambiar el rumbo del partido.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466"
+      }
+    },
+    {
+      "slug": "tunez-vs-paises-bajos",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez busca impulsar su juego ofensivo con la creatividad de Ellyes Skhiri, mientras que los Países Bajos confían en la solidez defensiva liderada por Virgil van Dijk y una forma reciente que los ha posicionado como uno de los equipos más fuertes del torneo. La ventaja parece estar del lado de los Países Bajos debido a su experiencia y habilidad para controlar el ritmo del partido, lo que podría ser demasiado para la selección tunecina.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021473"
+      }
+    },
+    {
+      "slug": "japon-vs-suecia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Japón cuenta con la ventaja de tener a Takefusa Kubo, un jugador clave que puede hacer la diferencia con su habilidad y velocidad, mientras que Suecia confía en la capacidad goleadora de Alexander Isak para generar oportunidades de ataque. En este partido, Japón tiene una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que puede permitirle dominar el ritmo del juego y aprovechar los errores defensivos de Suecia.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021471"
+      }
+    },
+    {
+      "slug": "paraguay-vs-australia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Paraguay busca mejorar su forma reciente apoyándose en la habilidad ofensiva de Julio Enciso, mientras que Australia se presenta con una racha más consistente y confía en la velocidad y habilidad de Nestory Irankunda para generar oportunidades de gol. Mi expectativa es que Australia tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su tendencia a mantener un ritmo constante en los encuentros internacionales, lo que podría permitirle dominar el juego y crear más oportunidades de ataque.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021461"
+      }
+    },
+    {
+      "slug": "turquia-vs-estados-unidos",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Türkiye muestra una forma irregular en los últimos encuentros, pero cuenta con el talento de Arda Güler, mientras que Estados Unidos presenta una solidez defensiva y una delantera peligrosa liderada por Folarin Balogun. Considero que el equipo de Estados Unidos tiene una ligera ventaja debido a su cohesión y consistencia en el juego, lo que podría ser determinante en un partido que se espera muy disputado y tácticamente intenso.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021459"
+      }
+    },
+    {
+      "slug": "senegal-vs-irak",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de confianza, ya que Senegal se encuentra en una buena forma reciente y cuenta con el talento de Sadio Mané, mientras que Iraq busca sorprender con la habilidad de Ayman Hussein, aunque su posición en el ranking de la FIFA sugiere una ventaja para el equipo africano. En este partido, Senegal parece tener la ventaja debido a su mejor posición en el ranking y su experiencia en competiciones internacionales, lo que podría darles una mayor solidez y cohesión en el campo, lo que les permitiría dominar el ritmo del juego.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021493"
+      }
+    },
+    {
+      "slug": "noruega-vs-francia",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Noruega llega al partido con una forma reciente irregular, pero cuenta con la gran amenaza goleadora de Erling Haaland, mientras que Francia se presenta con una solidez defensiva y una velocidad letal en el ataque gracias a la presencia de Kylian Mbappé. Francia tiene ventaja en este partido debido a su mayor experiencia y profundidad en el banquillo, lo que les permitirá controlar el ritmo del juego y aprovechar los errores del equipo noruego.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021489"
+      }
+    },
+    {
+      "slug": "uruguay-vs-espana",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Uruguay llega al partido con una forma irregular, pero cuenta con la experiencia y la habilidad de jugadores como Federico Valverde, quien ha demostrado ser fundamental en la creación de oportunidades de ataque, mientras que España se presenta con una de las mejores formas del momento, gracias a la creatividad y el control de Pedri en el centro del campo. Considero que España tiene una ligera ventaja en este partido debido a su superioridad en el juego de posesión y la capacidad de crear oportunidades a través de la habilidad individual de sus jugadores, lo que podría ser demasiado para la defensa uruguaya.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021484"
+      }
+    },
+    {
+      "slug": "cabo-verde-vs-arabia-saudita",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Cabo Verde cuenta con la habilidad ofensiva de Jovane Cabral, mientras que Saudi Arabia se apoya en la experiencia y el liderazgo de Salem Al-Dawsari, lo que les da una ventaja en términos de cohesión y estrategia en el campo. En este encuentro, Saudi Arabia parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su trayectoria reciente, lo que sugiere que podrían dominar el ritmo del partido y crear más oportunidades de gol.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021485"
+      }
+    },
+    {
+      "slug": "nueva-zelanda-vs-belgica",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Bélgica se presenta con una sólida forma reciente y un plantel bien armado, destacando a Jérémy Doku como un jugador clave a seguir, mientras que Nueva Zelanda, con Chris Wood como su referente, busca sorprender a su rival con su determinación y espíritu de lucha. En este encuentro, Bélgica tiene la ventaja debido a su mayor experiencia y calidad en el conjunto, lo que podría ser demasiado para el equipo neozelandés, aunque la pasión y la entrega de Nueva Zelanda podrían hacer que el partido sea más competitivo de lo esperado.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021481"
+      }
+    },
+    {
+      "slug": "egipto-vs-iran",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Egipto cuenta con la ventaja de tener a Mohamed Salah, uno de los jugadores más destacados del mundo, quien puede ser el factor clave para decidir el partido, mientras que Irán se apoya en la solidez defensiva y el poder ofensivo de Mehdi Taremi. En cuanto a la expectativa del partido, Irán parece tener una ligera ventaja debido a su posición en el ranking FIFA y su capacidad para mantener un ritmo constante a lo largo de los partidos, lo que podría permitirle controlar el ritmo del juego y aprovechar los errores del equipo egipcio.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021479"
+      }
+    },
+    {
+      "slug": "panama-vs-inglaterra",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Panamá busca aprovechar su solidez defensiva y la habilidad de Adalberto Carrasquilla en el centro del campo, mientras que Inglaterra confía en su poderío ofensivo y la creatividad de Jude Bellingham para hacer la diferencia. Inglaterra tiene ventaja en este partido debido a su superioridad en el ranking FIFA y su experiencia en competiciones internacionales, lo que les permite tener un mayor control del juego y aprovechar los errores de Panamá para generar oportunidades de gol.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021508"
+      }
+    },
+    {
+      "slug": "croacia-vs-ghana",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Croacia cuenta con una sólida forma reciente y un jugador clave como Luka Modrić, quien es capaz de controlar el ritmo del juego, mientras que Ghana busca aprovechar la velocidad y habilidad de Mohammed Kudus para sorprender a su oponente. En este encuentro, Croacia tiene ventaja debido a su mayor experiencia y cohesión como equipo, lo que les permitirá dominar el juego y crear oportunidades claras de gol, aunque Ghana puede intentar aprovechar los espacios y contraatacar con rapidez.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021509"
+      }
+    },
+    {
+      "slug": "rd-congo-vs-uzbekistan",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque el Congo DR cuenta con la velocidad y habilidad de Yoane Wissa, mientras que Uzbekistan se apoya en la experiencia y capacidad goleadora de Eldor Shomurodov, lo que podría ser un factor clave en el desarrollo del partido. En general, el partido se presenta como un encuentro muy parejo, ya que la diferencia en el ranking FIFA es mínima y ambos equipos tienen habilidades y debilidades similares, lo que podría llevar a un resultado muy ajustado y emocionante.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021500"
+      }
+    },
+    {
+      "slug": "colombia-vs-portugal",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Colombia llega al partido con una forma irregular en los últimos partidos, aunque cuenta con la velocidad y habilidad de Luis Díaz, quien puede ser el diferenciador en el ataque, mientras que Portugal se presenta con una solidez defensiva y la creatividad de Bruno Fernandes, quien es capaz de controlar el ritmo del juego. Considero que Portugal tiene una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su bien estructurada defensa, lo que podría limitar las opciones de ataque de Colombia y permitirle aprovechar los errores del equipo sudamericano.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021505"
+      }
+    },
+    {
+      "slug": "argelia-vs-austria",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Al llegar a este partido, el equipo de Algeria se muestra con algunas debilidades en su defensa, pero cuenta con la habilidad ofensiva de Mohamed Amoura, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol, mientras que Austria se presenta con una forma reciente sólida y la experiencia de Marcel Sabitzer, que ha sido fundamental en la dirección del juego de su equipo. En este enfrentamiento, Austria parece tener una ligera ventaja debido a su posición en el ranking FIFA y su consistencia en los partidos recientes, lo que podría darles una pequeña superioridad en términos de estrategia y ejecución en el campo.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021497"
+      }
+    },
+    {
+      "slug": "jordania-vs-argentina",
+      "status": "upcoming",
+      "detail": {
+        "goals": [],
+        "cards": [],
+        "substitutions": [],
+        "lineup": {
+          "home": [],
+          "away": []
+        },
+        "stats": {},
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Argentina se encuentra en una excelente forma reciente y cuenta con la experiencia y habilidad de Lionel Messi, mientras que Jordania busca sorprender con la velocidad y habilidad de Mousa Al-Taamari, aunque su nivel de competencia ha sido más irregular en los últimos partidos. En este encuentro, Argentina tiene una clara ventaja debido a su superioridad en términos de talento individual y colectivo, así como su experiencia en competiciones de alto nivel, lo que le permite tener un control más efectivo del juego y crear oportunidades de gol de manera constante.",
+        "confidence": 0.8,
+        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021495"
+      }
+    }
+  ]
+}
