@@ -577,8 +577,11 @@ async function main() {
       console.log(aiNotes ? "✓ Groq live" : "no comment");
       await sleep(1500);
     } else {
-      // Finished: reuse cached aiNotes if present, otherwise generate
-      const cached = bySlug.get(pm.slug)?.detail?.aiNotes;
+      // Finished: reuse cached aiNotes only if it was already a finished-match analysis
+      // (not a live comment that was never refreshed after the match ended)
+      const prevEntry = bySlug.get(pm.slug);
+      const wasLive = prevEntry?.status === "live";
+      const cached = !wasLive ? prevEntry?.detail?.aiNotes : null;
       if (cached) {
         aiNotes = cached;
         console.log("✓ cached");
