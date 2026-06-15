@@ -192,19 +192,39 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
       }
     }
 
-    // Substitutions — try all known FIFA field name variants for player IDs and minute
+    // Substitutions
+    // FIFA live API uses IdPlayerOff / IdPlayerOn and PlayerOffName / PlayerOnName arrays.
+    // Minute is "" when the sub happens at half-time (Period=4).
     for (const [side, team] of [["home", ht], ["away", at]] as const) {
       for (const s of team.Substitutions ?? []) {
-        const rawMin = s.Minute ?? s.MatchMinute ?? s.GameTime ?? s.Time;
-        const offId = String(s.IdSubstitutedPlayer ?? s.IdPlayer ?? s.PlayerOff ?? "");
-        const onId = String(s.IdPlayerOn ?? s.IdSubstitute ?? s.PlayerOn ?? "");
+        const offId = String(s.IdPlayerOff ?? s.IdSubstitutedPlayer ?? s.IdPlayer ?? "");
+        const onId = String(s.IdPlayerOn ?? s.IdSubstitute ?? "");
+        // PlayerOffName / PlayerOnName can be an array [{Description}] or a plain string
+        const offNameFallback = toTitle(
+          s.PlayerOffName?.[0]?.Description ?? s.PlayerOffName ?? ""
+        );
+        const onNameFallback = toTitle(
+          s.PlayerOnName?.[0]?.Description ?? s.PlayerOnName ?? ""
+        );
+
+        // Empty Minute string at half-time (Period 4) → show "HT"
+        const rawMin = (s.Minute !== "" && s.Minute != null)
+          ? s.Minute
+          : (s.MatchMinute ?? s.GameTime ?? null);
+        const minuteRaw = rawMin ? formatMin(rawMin)
+          : s.Period === 4 ? "HT"
+          : "?'";
+        const minOrder = rawMin ? parseMin(rawMin)
+          : s.Period === 4 ? 45
+          : 0;
+
         events.push({
           type: "sub",
-          minuteRaw: formatMin(rawMin),
-          minuteOrder: parseMin(rawMin),
+          minuteRaw,
+          minuteOrder: minOrder,
           team: side,
-          primary: playerName[offId] || (s.PlayerOff ? toTitle(String(s.PlayerOff)) : "Desconocido"),
-          secondary: playerName[onId] || (s.PlayerOn ? toTitle(String(s.PlayerOn)) : undefined),
+          primary: playerName[offId] || offNameFallback || "Desconocido",
+          secondary: playerName[onId] || onNameFallback || undefined,
         });
       }
     }

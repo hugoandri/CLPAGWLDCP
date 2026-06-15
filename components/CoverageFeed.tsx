@@ -104,7 +104,7 @@ function EventRow({
         <span className={cn(
           "text-xs font-bold tabular-nums leading-none",
           isGoal ? "text-pitch-600 dark:text-pitch-300 text-sm" : "text-slate-500 dark:text-slate-400",
-          ev.minuteRaw === "?'" && "opacity-0",
+          (ev.minuteRaw === "?'" || ev.minuteRaw === "") && "opacity-0",
         )}>
           {ev.minuteRaw}
         </span>
