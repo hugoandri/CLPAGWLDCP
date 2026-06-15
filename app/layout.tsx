@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins, Space_Grotesk, Manrope } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -119,14 +118,14 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&m)){document.documentElement.classList.add('dark');}}catch(e){}})();`,
           }}
         />
-      </head>
-      <body className="min-h-screen font-sans">
-        <Script
+        {/* Google AdSense — debe estar en <head> para que el bot de verificación lo encuentre */}
+        <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseClientId}`}
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
+      </head>
+      <body className="min-h-screen font-sans">
         <SeoJsonLd data={[websiteJsonLd, organizationJsonLd]} />
         <a
           href="#contenido"
