@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T21:14:00.025Z",
+  "generatedAt": "2026-06-15T22:41:15.970Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3500,18 +3500,152 @@
     },
     {
       "slug": "arabia-saudita-vs-uruguay",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 36,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "MOHAMMED ALOWAIS",
+              "number": 21,
+              "position": "GK"
+            },
+            {
+              "name": "Abdulelah ALAMRI",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "HASSAN ALTAMBAKTI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "SAUD ABDULHAMID",
+              "number": 12,
+              "position": "DEF"
+            },
+            {
+              "name": "MOTEB ALHARBI",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "MOHAMMED ABU ALSHAMAT",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "MUSAB ALJUWAYR",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "ABDULLAH ALKHAIBARI",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "MOHAMED KANNO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "FERAS ALBRIKAN",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "SALEM ALDAWSARI",
+              "number": 10,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Fernando MUSLERA",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Sebastian CACERES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Guillermo VARELA",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Mathias OLIVERA",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Matias VINA",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Manuel UGARTE",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Rodrigo BENTANCUR",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Federico VALVERDE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Maxi ARAUJO",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Darwin NUNEZ",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Federico VINAS",
+              "number": 21,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Uruguay se encuentra en una mejor posición en el ranking FIFA y cuenta con un jugador clave como Federico Valverde, mientras que Arabia Saudita busca sorprender con la habilidad de Salem Al-Dawsari. Uruguay tiene una ligera ventaja en este partido debido a su mayor experiencia y solidez en el juego colectivo, lo que podría ser demasiado para el equipo árabe, a pesar de su capacidad para generar sorpresas.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 1,
+            "away": 3
+          },
+          "corners": {
+            "home": 1,
+            "away": 1
+          },
+          "fouls": {
+            "home": 4,
+            "away": 5
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Saudi Arabia y Uruguay se encuentra empatado a cero goles, con ambos equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado anotar, lo que refleja la igualdad y el respeto mutuo en el campo. A medida que el partido avanza, es probable que Uruguay intente aumentar la presión ofensiva para intentar romper la igualdad y marcar el primer gol, lo que podría obligar a Saudi Arabia a replantear su estrategia defensiva.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486"
       }
     },
