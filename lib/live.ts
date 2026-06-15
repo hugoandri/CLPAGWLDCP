@@ -86,11 +86,18 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
       const awayScore = fm.AwayTeamScore ?? 0;
 
       let minute: number | undefined;
-      if (isLive && fm.Date) {
-        const elapsed = Math.floor((Date.now() - new Date(fm.Date).getTime()) / 60_000);
-        // >60 min from kickoff → second half; subtract ~15 min for half-time break
-        const adj = elapsed > 60 ? Math.min(elapsed - 15, 90) : Math.min(elapsed, 45);
-        minute = Math.max(1, adj);
+      if (isLive) {
+        // Use FIFA's own match clock ("30'", "45+2'", etc.) when available
+        const apiMinute = typeof fm.MatchTime === "string"
+          ? parseInt(fm.MatchTime, 10)
+          : undefined;
+        if (apiMinute && !isNaN(apiMinute)) {
+          minute = apiMinute;
+        } else if (fm.Date) {
+          const elapsed = Math.floor((Date.now() - new Date(fm.Date).getTime()) / 60_000);
+          const adj = elapsed > 60 ? Math.min(elapsed - 15, 90) : Math.min(elapsed, 45);
+          minute = Math.max(1, adj);
+        }
       }
 
       const existing = bySlug.get(slug)!;
