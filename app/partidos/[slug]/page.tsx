@@ -271,10 +271,16 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
             <>
               {match.detail.aiNotes && (
                 <section className="card border-l-4 border-pitch p-6">
-                  <h2 className="section-title mb-3 text-xl">Análisis del partido</h2>
+                  <h2 className="section-title mb-3 text-xl">
+                    {match.status === "upcoming"
+                      ? "Previa del partido"
+                      : match.status === "live"
+                      ? "Análisis en directo"
+                      : "Análisis del partido"}
+                  </h2>
                   <p className="text-slate-600 dark:text-slate-300">{match.detail.aiNotes}</p>
                   <p className="mt-3 text-xs text-slate-400">
-                    Fuente: FIFA · Confianza {Math.round(match.detail.confidence * 100)}%
+                    {match.status === "upcoming" ? "Previa" : "Fuente"}: IA · Confianza {Math.round(match.detail.confidence * 100)}%
                   </p>
                 </section>
               )}
@@ -286,19 +292,34 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
                 </section>
               )}
 
-              {(match.detail.stats.possession || match.detail.stats.shotsOnTarget ||
-                match.detail.stats.corners || match.detail.stats.passAccuracy) && (
+              {(match.detail.stats.shots || match.detail.stats.corners ||
+                match.detail.stats.fouls || match.detail.stats.offsides ||
+                match.detail.stats.yellowCards || match.detail.stats.possession ||
+                match.detail.stats.shotsOnTarget || match.detail.stats.passAccuracy) && (
                 <section className="card p-6">
-                  <h2 className="section-title mb-5 text-xl">Estadísticas del partido</h2>
+                  <h2 className="section-title mb-1 text-xl">Estadísticas del partido</h2>
+                  <p className="mb-5 text-xs text-slate-400">Fuente: FIFA</p>
                   <div className="space-y-4">
                     {match.detail.stats.possession && (
                       <StatDualBar label="Posesión" home={match.detail.stats.possession.home} away={match.detail.stats.possession.away} unit="%" />
+                    )}
+                    {match.detail.stats.shots && (
+                      <StatDualBar label="Remates" home={match.detail.stats.shots.home} away={match.detail.stats.shots.away} />
                     )}
                     {match.detail.stats.shotsOnTarget && (
                       <StatDualBar label="Tiros al arco" home={match.detail.stats.shotsOnTarget.home} away={match.detail.stats.shotsOnTarget.away} />
                     )}
                     {match.detail.stats.corners && (
-                      <StatDualBar label="Corners" home={match.detail.stats.corners.home} away={match.detail.stats.corners.away} />
+                      <StatDualBar label="Córners" home={match.detail.stats.corners.home} away={match.detail.stats.corners.away} />
+                    )}
+                    {match.detail.stats.fouls && (
+                      <StatDualBar label="Faltas" home={match.detail.stats.fouls.home} away={match.detail.stats.fouls.away} />
+                    )}
+                    {match.detail.stats.offsides && (
+                      <StatDualBar label="Fueras de juego" home={match.detail.stats.offsides.home} away={match.detail.stats.offsides.away} />
+                    )}
+                    {match.detail.stats.yellowCards && (
+                      <StatDualBar label="Tarjetas amarillas" home={match.detail.stats.yellowCards.home} away={match.detail.stats.yellowCards.away} />
                     )}
                     {match.detail.stats.passAccuracy && (
                       <StatDualBar label="% de pases" home={match.detail.stats.passAccuracy.home} away={match.detail.stats.passAccuracy.away} unit="%" />

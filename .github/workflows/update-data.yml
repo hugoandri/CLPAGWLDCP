@@ -1,0 +1,31 @@
+name: Update FIFA Data
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch FIFA data
+        run: node scripts/fifa-fetch.mjs --apply
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git diff --quiet data/live-updates.json || (
+            git add data/live-updates.json &&
+            git commit -m "data: update live match data" &&
+            git push
+          )

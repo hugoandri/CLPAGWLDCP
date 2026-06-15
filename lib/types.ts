@@ -103,9 +103,13 @@ export interface LineupPlayer {
 }
 
 export interface MatchStats {
+  shots?: { home: number; away: number };
+  corners?: { home: number; away: number };
+  fouls?: { home: number; away: number };
+  offsides?: { home: number; away: number };
+  yellowCards?: { home: number; away: number };
   possession?: { home: number; away: number };
   shotsOnTarget?: { home: number; away: number };
-  corners?: { home: number; away: number };
   passAccuracy?: { home: number; away: number };
 }
 
