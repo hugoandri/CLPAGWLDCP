@@ -293,6 +293,7 @@ export default async function MatchPage({ params }: { params: { slug: string } }
                 aiNotes={match.detail?.aiNotes}
                 period={coverage?.period ?? null}
                 matchStatus={match.status}
+                stats={coverage?.stats}
               />
             }
             statsSlot={

@@ -31,12 +31,29 @@ export type CoverageEventType =
 
 export interface CoverageEvent {
   type: CoverageEventType;
-  minuteRaw: string;   // "41'" or "45+2'"
-  minuteOrder: number; // for sorting: parsed minute value
+  minuteRaw: string;
+  minuteOrder: number;
   team?: "home" | "away";
-  primary: string;     // scorer / player carded / player off
-  secondary?: string;  // assist / player on
-  score?: string;      // "1-0" — only on goal events
+  primary: string;
+  secondary?: string;
+  score?: string; // only on goal events
+}
+
+export interface LiveStats {
+  possession?: { home: number; away: number };
+  shots?: { home: number; away: number };
+  shotsOnTarget?: { home: number; away: number };
+  corners?: { home: number; away: number };
+  fouls?: { home: number; away: number };
+  offsides?: { home: number; away: number };
+}
+
+export interface FIFACoverage {
+  events: CoverageEvent[];
+  period: number | null;
+  homeScore: number;
+  awayScore: number;
+  stats: LiveStats;
 }
 
 function toTitle(name: string): string {
@@ -47,22 +64,44 @@ function toTitle(name: string): string {
     .join(" ");
 }
 
-function parseMin(raw: string): number {
+// Parses minute from string "45+2'" → 47, "30'" → 30, or number 30 → 30
+function parseMin(raw: unknown): number {
+  if (typeof raw === "number" && isFinite(raw)) return Math.round(raw);
+  if (typeof raw !== "string" || !raw.trim()) return 0;
   const s = raw.replace(/'/g, "").trim();
   const [base, extra] = s.split("+");
   return parseInt(base || "0", 10) + (extra ? parseInt(extra, 10) : 0);
 }
 
-export interface FIFACoverage {
-  events: CoverageEvent[];
-  period: number | null;   // 3=1H live, 4=HT, 5=2H live, 0=FT
-  homeScore: number;
-  awayScore: number;
+// Returns a display string like "45+2'" or "30'"
+function formatMin(raw: unknown): string {
+  if (typeof raw === "number" && isFinite(raw) && raw >= 0) return `${Math.round(raw)}'`;
+  if (typeof raw === "string" && raw.trim()) {
+    const s = raw.trim();
+    return s.endsWith("'") ? s : `${s}'`;
+  }
+  return "?'";
+}
+
+// Parse FIFA MatchStatistics array (numeric Type codes or string names)
+function parseMatchStats(statsArr: any[]): LiveStats {
+  const result: LiveStats = {};
+  for (const s of statsArr) {
+    const h = parseFloat(String(s.Home ?? s.HomeValue ?? "")) || 0;
+    const a = parseFloat(String(s.Away ?? s.AwayValue ?? "")) || 0;
+    const t = String(s.Type ?? s.TypeId ?? s.Name ?? "").toLowerCase();
+    if (t === "5" || t.includes("possession")) result.possession = { home: h, away: a };
+    else if (t === "1" || t.includes("total_attempt") || (t.includes("shot") && !t.includes("target"))) result.shots = { home: h, away: a };
+    else if (t === "2" || t.includes("on_target") || t.includes("ontarget")) result.shotsOnTarget = { home: h, away: a };
+    else if (t === "3" || t.includes("corner")) result.corners = { home: h, away: a };
+    else if (t === "4" || t.includes("foul")) result.fouls = { home: h, away: a };
+    else if (t === "6" || t.includes("offside")) result.offsides = { home: h, away: a };
+  }
+  return result;
 }
 
 export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | null> {
   try {
-    // Fetch calendar (Next.js deduplicates this with the same call in readLiveUpdatesWithFIFA)
     const calUrl =
       `${FIFA_API}/calendar/matches?idCompetition=${ID_COMPETITION}&idSeason=${ID_SEASON}` +
       `&language=en&count=200&from=2026-06-01T00:00:00Z&to=2026-07-31T00:00:00Z`;
@@ -72,7 +111,6 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
     const calData = await calRes.json();
     const fifaMatches: any[] = calData.Results ?? [];
 
-    // Find the match
     const fm = fifaMatches.find((m) => {
       const hs = TEAM_SLUG[m.Home?.TeamName?.[0]?.Description ?? ""];
       const as = TEAM_SLUG[m.Away?.TeamName?.[0]?.Description ?? ""];
@@ -83,7 +121,6 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
     const isActive = fm.MatchStatus === 3 || fm.MatchStatus === 0;
     if (!isActive) return null;
 
-    // Fetch live data
     const liveRes = await fetch(
       `${FIFA_API}/live/football/${fm.IdMatch}?language=en`,
       { next: { revalidate: 25 } },
@@ -94,31 +131,28 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
     const ht = live.HomeTeam ?? {};
     const at = live.AwayTeam ?? {};
 
-    // Build player name lookup
+    // Build player name lookup from both squads
     const playerName: Record<string, string> = {};
     for (const p of [...(ht.Players ?? []), ...(at.Players ?? [])]) {
       const pid = String(p.IdPlayer ?? "");
       if (!pid) continue;
       const short = p.ShortName?.[0]?.Description;
       const full = p.PlayerName?.[0]?.Description;
-      playerName[pid] = toTitle(short || full || "Desconocido");
+      playerName[pid] = toTitle(short || full || "");
     }
 
-    const homeId = String(ht.IdTeam ?? fm.Home?.IdTeam ?? "");
     const homeScore = live.HomeTeamScore ?? fm.HomeTeamScore ?? 0;
     const awayScore = live.AwayTeamScore ?? fm.AwayTeamScore ?? 0;
 
     const events: CoverageEvent[] = [];
-
-    // Running score tracker (to show score at moment of goal)
     let runH = 0;
     let runA = 0;
 
-    // Collect all goals first to build running score
+    // Goals — sorted chronologically first to compute running score
     const allGoals: any[] = [
       ...(ht.Goals ?? []).map((g: any) => ({ ...g, side: "home" })),
       ...(at.Goals ?? []).map((g: any) => ({ ...g, side: "away" })),
-    ].sort((a, b) => parseMin(a.Minute ?? "0") - parseMin(b.Minute ?? "0"));
+    ].sort((a, b) => parseMin(a.Minute ?? a.MatchMinute ?? 0) - parseMin(b.Minute ?? b.MatchMinute ?? 0));
 
     for (const g of allGoals) {
       const isOwnGoal = g.Type === 34;
@@ -130,13 +164,14 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
       if (scoringTeam === "home") runH++;
       else runA++;
 
+      const rawMin = g.Minute ?? g.MatchMinute;
       events.push({
         type: isOwnGoal ? "own_goal" : isPenalty ? "penalty" : "goal",
-        minuteRaw: g.Minute ?? "?'",
-        minuteOrder: parseMin(g.Minute ?? "0"),
+        minuteRaw: formatMin(rawMin),
+        minuteOrder: parseMin(rawMin),
         team: g.side as "home" | "away",
-        primary: playerName[String(g.IdPlayer ?? "")] ?? "Desconocido",
-        secondary: g.IdAssistPlayer ? playerName[String(g.IdAssistPlayer)] : undefined,
+        primary: playerName[String(g.IdPlayer ?? "")] || "Desconocido",
+        secondary: g.IdAssistPlayer ? (playerName[String(g.IdAssistPlayer)] || undefined) : undefined,
         score: `${runH}-${runA}`,
       });
     }
@@ -146,41 +181,47 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
       for (const b of team.Bookings ?? []) {
         const cardType: CoverageEventType =
           b.Card === 2 ? "red" : b.Card === 3 ? "yellow_red" : "yellow";
+        const rawMin = b.Minute ?? b.MatchMinute;
         events.push({
           type: cardType,
-          minuteRaw: b.Minute ?? "?'",
-          minuteOrder: parseMin(b.Minute ?? "0"),
+          minuteRaw: formatMin(rawMin),
+          minuteOrder: parseMin(rawMin),
           team: side,
-          primary: playerName[String(b.IdPlayer ?? "")] ?? "Desconocido",
+          primary: playerName[String(b.IdPlayer ?? "")] || "Desconocido",
         });
       }
     }
 
-    // Substitutions
+    // Substitutions — try all known FIFA field name variants for player IDs and minute
     for (const [side, team] of [["home", ht], ["away", at]] as const) {
       for (const s of team.Substitutions ?? []) {
-        // FIFA API uses different field names across versions; try all known variants
+        const rawMin = s.Minute ?? s.MatchMinute ?? s.GameTime ?? s.Time;
         const offId = String(s.IdSubstitutedPlayer ?? s.IdPlayer ?? s.PlayerOff ?? "");
         const onId = String(s.IdPlayerOn ?? s.IdSubstitute ?? s.PlayerOn ?? "");
         events.push({
           type: "sub",
-          minuteRaw: s.Minute ?? "?'",
-          minuteOrder: parseMin(s.Minute ?? "0"),
+          minuteRaw: formatMin(rawMin),
+          minuteOrder: parseMin(rawMin),
           team: side,
-          primary: playerName[offId] ?? (s.PlayerOff ? toTitle(String(s.PlayerOff)) : "Desconocido"),
-          secondary: playerName[onId] ?? (s.PlayerOn ? toTitle(String(s.PlayerOn)) : "Desconocido"),
+          primary: playerName[offId] || (s.PlayerOff ? toTitle(String(s.PlayerOff)) : "Desconocido"),
+          secondary: playerName[onId] || (s.PlayerOn ? toTitle(String(s.PlayerOn)) : undefined),
         });
       }
     }
 
-    // Sort by minute desc (newest first for the feed)
+    // Sort newest first
     events.sort((a, b) => b.minuteOrder - a.minuteOrder);
+
+    // Parse live stats
+    const statsArr: any[] = live.MatchStatistics ?? live.Statistics ?? [];
+    const stats = parseMatchStats(statsArr);
 
     return {
       events,
       period: live.Period ?? null,
       homeScore,
       awayScore,
+      stats,
     };
   } catch {
     return null;
