@@ -1,6 +1,7 @@
 import type { MatchDetail } from "@/lib/types";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { unstable_cache } from "next/cache";
 
 export interface LiveMatchUpdate {
   slug: string;
@@ -14,6 +15,9 @@ export interface LiveMatchUpdate {
 const FIFA_API = "https://api.fifa.com/api/v3";
 const ID_COMPETITION = "17";
 const ID_SEASON = "285023";
+
+const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_MODEL = "llama-3.3-70b-versatile";
 
 const TEAM_SLUG: Record<string, string> = {
   Germany: "alemania", "Curaçao": "curazao", Netherlands: "paises-bajos",
@@ -50,9 +54,66 @@ export function readLiveUpdates(): LiveMatchUpdate[] {
   return readFromFile();
 }
 
+async function _fetchGroqLiveComment(
+  homeName: string,
+  awayName: string,
+  homeScore: number,
+  awayScore: number,
+  // minuteBucket rounds to nearest 5 min so the cache key doesn't change every minute
+  minuteBucket: number,
+): Promise<string | null> {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) return null;
+  try {
+    const res = await fetch(GROQ_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: GROQ_MODEL,
+        max_tokens: 160,
+        temperature: 0.6,
+        messages: [
+          {
+            role: "system",
+            content:
+              "Eres analista deportivo del Mundial 2026 cubriendo un partido EN DIRECTO. " +
+              "Con los datos actuales del partido, escribe exactamente 2 oraciones en español: " +
+              "una describe cómo va el partido en este momento (marcador, quién domina, momento clave) " +
+              "y la otra da una lectura táctica breve o qué puede pasar en lo que resta. " +
+              "Sin emojis. Sin lenguaje de apuestas. Sin inventar datos.",
+          },
+          {
+            role: "user",
+            content: `Partido EN DIRECTO (min.${minuteBucket}): ${homeName} ${homeScore}-${awayScore} ${awayName}`,
+          },
+        ],
+      }),
+      cache: "no-store",
+    });
+    if (!res.ok) return null;
+    const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
+    return data.choices?.[0]?.message?.content?.trim() ?? null;
+  } catch {
+    return null;
+  }
+}
+
+// Cache keyed by (homeName, awayName, homeScore, awayScore, minuteBucket).
+// Refreshes automatically when a goal is scored (score changes → new cache key).
+// Also revalidates every 2 minutes for mid-match context updates.
+const getGroqLiveComment = unstable_cache(
+  _fetchGroqLiveComment,
+  ["groq-live-comment"],
+  { revalidate: 120 },
+);
+
 /**
  * Fetches FIFA calendar and overlays live/finished status + scores on top of
- * the file data. Cache is shared across concurrent requests (25 s revalidate).
+ * the file data. For live matches, also generates a Groq commentary inline.
+ * Cache is shared across concurrent requests (25 s revalidate for FIFA data).
  */
 export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
   const fromFile = readFromFile();
@@ -71,8 +132,10 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
     const bySlug = new Map(fromFile.map((m) => [m.slug, { ...m }]));
 
     for (const fm of fifaMatches) {
-      const homeSlug = TEAM_SLUG[fm.Home?.TeamName?.[0]?.Description ?? ""];
-      const awaySlug = TEAM_SLUG[fm.Away?.TeamName?.[0]?.Description ?? ""];
+      const homeName = fm.Home?.TeamName?.[0]?.Description ?? "";
+      const awayName = fm.Away?.TeamName?.[0]?.Description ?? "";
+      const homeSlug = TEAM_SLUG[homeName];
+      const awaySlug = TEAM_SLUG[awayName];
       if (!homeSlug || !awaySlug) continue;
 
       const slug = `${homeSlug}-vs-${awaySlug}`;
@@ -87,10 +150,8 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
 
       let minute: number | undefined;
       if (isLive) {
-        // Use FIFA's own match clock ("30'", "45+2'", etc.) when available
-        const apiMinute = typeof fm.MatchTime === "string"
-          ? parseInt(fm.MatchTime, 10)
-          : undefined;
+        const apiMinute =
+          typeof fm.MatchTime === "string" ? parseInt(fm.MatchTime, 10) : undefined;
         if (apiMinute && !isNaN(apiMinute)) {
           minute = apiMinute;
         } else if (fm.Date) {
@@ -101,12 +162,29 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
       }
 
       const existing = bySlug.get(slug)!;
+
+      // For live matches: generate Groq commentary inline.
+      // Cache key includes score so it auto-refreshes on every goal.
+      let aiNotes = existing.detail?.aiNotes;
+      if (isLive && minute !== undefined) {
+        const minuteBucket = Math.floor(minute / 5) * 5;
+        const comment = await getGroqLiveComment(
+          homeName, awayName, homeScore, awayScore, minuteBucket,
+        );
+        if (comment) aiNotes = comment;
+      }
+
       bySlug.set(slug, {
         ...existing,
         status: isLive ? "live" : "finished",
         homeScore,
         awayScore,
         ...(minute !== undefined ? { minute } : {}),
+        ...(aiNotes && existing.detail
+          ? { detail: { ...existing.detail, aiNotes } }
+          : aiNotes
+          ? { detail: { goals: [], cards: [], substitutions: [], lineup: { home: [], away: [] }, stats: {}, aiNotes, confidence: 0.9, evidenceUrl: "" } as unknown as MatchDetail }
+          : {}),
       });
     }
 
