@@ -15,6 +15,7 @@ import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
 import { computeStandings, formatDayMonth } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
+import LiveAutoRefresh from "@/components/LiveAutoRefresh";
 
 export const dynamic = "force-dynamic";
 
@@ -145,6 +146,19 @@ export default function HomePage() {
   return (
     <>
       <SeoJsonLd data={jsonLd} />
+      {/* Auto-refresh cuando hay partido en vivo o próximo a empezar */}
+      {liveMatch && (
+        <LiveAutoRefresh
+          status="live"
+          matchDateUTC={`${liveMatch.date}T${liveMatch.time}:00Z`}
+        />
+      )}
+      {!liveMatch && nextMatch && (
+        <LiveAutoRefresh
+          status="upcoming"
+          matchDateUTC={`${nextMatch.date}T${nextMatch.time}:00Z`}
+        />
+      )}
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative overflow-hidden bg-field bg-navy-950 text-white">
         <div className="container-page relative py-16 sm:py-20 lg:py-24">

@@ -16,6 +16,7 @@ import DisclaimerBox from "@/components/DisclaimerBox";
 import LocalTime from "@/components/LocalTime";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
+import LiveAutoRefresh from "@/components/LiveAutoRefresh";
 
 export const dynamic = "force-dynamic";
 
@@ -219,6 +220,10 @@ export default function MatchPage({ params }: { params: { slug: string } }) {
   return (
     <div className="container-page pb-12">
       <SeoJsonLd data={jsonLd} />
+      <LiveAutoRefresh
+        status={match.status}
+        matchDateUTC={`${match.date}T${match.time}:00Z`}
+      />
 
       {/* Breadcrumb */}
       <nav aria-label="Migas de pan" className="pt-6 text-sm text-slate-500 dark:text-slate-400">
