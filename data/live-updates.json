@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T19:22:39.931Z",
+  "generatedAt": "2026-06-15T19:41:35.339Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3249,7 +3249,7 @@
       "status": "live",
       "homeScore": 0,
       "awayScore": 1,
-      "minute": 22,
+      "minute": 41,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478",
       "confidence": 0.97,
       "detail": {
@@ -3273,6 +3273,12 @@
             "minute": 14,
             "team": "home",
             "player": "Castagne",
+            "type": "yellow"
+          },
+          {
+            "minute": 34,
+            "team": "away",
+            "player": "Ahmed Fatouh",
             "type": "yellow"
           }
         ],
@@ -3395,12 +3401,16 @@
         },
         "stats": {
           "shots": {
-            "home": 2,
+            "home": 5,
+            "away": 2
+          },
+          "corners": {
+            "home": 0,
             "away": 1
           },
           "fouls": {
-            "home": 5,
-            "away": 1
+            "home": 8,
+            "away": 2
           },
           "offsides": {
             "home": 0,
@@ -3408,10 +3418,10 @@
           },
           "yellowCards": {
             "home": 1,
-            "away": 1
+            "away": 2
           }
         },
-        "aiNotes": "En este momento, el partido se inclina a favor de Egipto, que lleva la ventaja en el marcador gracias al gol de E. Ashour en el minuto 19, y aunque Bélgica está intentando igualar, los egipcios mantienen el control del juego. A medida que avanza el partido, es probable que Bélgica aumente la presión ofensiva para tratar de empatar, lo que podría dejar espacios en su defensa y permitir a Egipto contrarrestar y ampliar su ventaja.",
+        "aiNotes": "En este momento, el partido se inclina a favor de Egipto, que lleva la ventaja de 1-0 gracias al gol de E.ashour en el minuto 19, y Belgium está intentando encontrar un hueco para empatar antes del final del primer tiempo. La segunda parte del partido puede ser decisiva, ya que Belgium necesitará cambiar su estrategia para intentar anotar, mientras que Egipto buscará mantener su ventaja y aprovechar los espacios para aumentar la diferencia.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478"
       }
