@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T07:39:42.296Z",
+  "generatedAt": "2026-06-16T20:32:31.090Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3979,18 +3979,160 @@
     },
     {
       "slug": "francia-vs-senegal",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 68,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 66,
+            "team": "home",
+            "scorer": "Mbappé",
+            "assist": "OLISE.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Mike MAIGNAN",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Dayot UPAMECANO",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jules KOUNDE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "William SALIBA",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Theo HERNANDEZ",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Aurelien TCHOUAMENI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Adrien RABIOT",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Ousmane DEMBELE",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Kylian MBAPPE",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Michael OLISE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Desire DOUE",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Edouard MENDY",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Kalidou KOULIBALY",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Krepin DIATTA",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Moussa Niakhate",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "El Hadji Malick DIOUF",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Idrissa Gana GUEYE",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Lamine CAMARA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Pape GUEYE",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Sadio MANE",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Nicolas JACKSON",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Ismaila SARR",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Francia llega al partido con una forma sólida, gracias a la velocidad y habilidad de Kylian Mbappé, quien ha demostrado ser una pieza clave en el ataque del equipo, mientras que Senegal cuenta con la experiencia y el liderazgo de Sadio Mané, aunque su forma reciente ha sido irregular. Espero que Francia tenga ventaja en el partido debido a su mayor profundidad en el banquillo y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para el equipo senegalés.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 6,
+            "away": 5
+          },
+          "corners": {
+            "home": 5,
+            "away": 2
+          },
+          "fouls": {
+            "home": 3,
+            "away": 6
+          },
+          "offsides": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        "aiNotes": "En este momento, Francia lidera el partido con un marcador de 1-0 sobre Senegal, gracias a un gol clave de Mbappé en el minuto 66, lo que ha dado un giro decisivo al encuentro y ha permitido a los franceses tomar el control del juego. A medida que el partido avanza, es probable que Senegal intente presionar en busca del empate, lo que podría generar espacios para contrataques rápidos por parte de Francia, que busca consolidar su ventaja y asegurar la victoria.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490"
       }
     },
