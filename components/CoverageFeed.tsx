@@ -49,7 +49,7 @@ function LiveStatsPanel({
   stats: LiveStats; homeName: string; awayName: string;
 }) {
   const hasAny = stats.possession || stats.shots || stats.shotsOnTarget ||
-    stats.corners || stats.fouls || stats.offsides;
+    stats.corners || stats.fouls || stats.offsides || stats.yellowCards || stats.redCards;
   if (!hasAny) return null;
 
   return (
@@ -80,6 +80,9 @@ function LiveStatsPanel({
         )}
         {stats.yellowCards && (
           <StatRow label="Amarillas" home={stats.yellowCards.home} away={stats.yellowCards.away} />
+        )}
+        {stats.redCards && (
+          <StatRow label="Rojas" home={stats.redCards.home} away={stats.redCards.away} />
         )}
       </div>
     </div>

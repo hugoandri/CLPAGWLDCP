@@ -47,6 +47,7 @@ export interface LiveStats {
   fouls?: { home: number; away: number };
   offsides?: { home: number; away: number };
   yellowCards?: { home: number; away: number };
+  redCards?: { home: number; away: number };
   passAccuracy?: { home: number; away: number };
 }
 
@@ -252,6 +253,7 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
         fouls:       { home: 0, away: 0 },
         offsides:    { home: 0, away: 0 },
         yellowCards: { home: 0, away: 0 },
+        redCards:    { home: 0, away: 0 },
       };
       for (const ev of tlEvents) {
         const sid = String(ev.IdTeam ?? "");
@@ -262,6 +264,7 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
         else if (ev.Type === 18) cnt.fouls[side]++;
         else if (ev.Type === 15) cnt.offsides[side]++;
         else if (ev.Type === 2)  cnt.yellowCards[side]++;
+        else if (ev.Type === 3)  cnt.redCards[side]++;
       }
       const nonZero = (o: {home:number;away:number}) => o.home + o.away > 0 ? o : undefined;
       stats = {
@@ -270,6 +273,7 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
         fouls:       nonZero(cnt.fouls),
         offsides:    nonZero(cnt.offsides),
         yellowCards: nonZero(cnt.yellowCards),
+        redCards:    nonZero(cnt.redCards),
       };
     } else {
       // Fallback: try MatchStatistics field in live endpoint
