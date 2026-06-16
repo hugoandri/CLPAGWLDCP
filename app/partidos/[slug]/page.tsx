@@ -6,7 +6,8 @@ import { readLiveUpdatesWithFIFA } from "@/lib/live";
 import { fetchFIFACoverage } from "@/lib/fifaLive";
 import { getTeam } from "@/data/teams";
 import { getPrediction } from "@/data/predictions";
-import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent } from "@/lib/types";
+import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent, GoalType, CardType } from "@/lib/types";
+import type { CoverageEvent } from "@/lib/fifaLive";
 import { cn, formatDateLong, pctWidth } from "@/lib/utils";
 import { siteConfig, DISCLAIMER_BETTING } from "@/lib/site";
 import { absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
@@ -164,7 +165,30 @@ export default async function MatchPage({ params }: { params: { slug: string } }
   if (!home || !away) notFound();
 
   const isActive = match.status === "live" || match.status === "halftime";
-  const coverage = isActive ? await fetchFIFACoverage(params.slug) : null;
+  // Fetch coverage for live, halftime AND finished matches so the feed persists after full-time
+  const coverage = match.status !== "upcoming" ? await fetchFIFACoverage(params.slug) : null;
+
+  // Map coverage events to typed stats for Estadísticas tab
+  function eventsAsGoals(evs: CoverageEvent[]): GoalEvent[] {
+    return evs
+      .filter((e) => e.type === "goal" || e.type === "own_goal" || e.type === "penalty")
+      .map((e) => ({ minute: e.minuteOrder, team: e.team ?? "home", scorer: e.primary, assist: e.secondary, type: e.type as GoalType }));
+  }
+  function eventsAsCards(evs: CoverageEvent[]): CardEvent[] {
+    return evs
+      .filter((e) => e.type === "yellow" || e.type === "red" || e.type === "yellow_red")
+      .map((e) => ({ minute: e.minuteOrder, team: e.team ?? "home", player: e.primary, type: e.type as CardType }));
+  }
+  function eventsAsSubs(evs: CoverageEvent[]): SubEvent[] {
+    return evs
+      .filter((e) => e.type === "sub")
+      .map((e) => ({ minute: e.minuteOrder, team: e.team ?? "home", playerOut: e.primary, playerIn: e.secondary ?? "" }));
+  }
+
+  const liveGoals  = coverage?.events ? eventsAsGoals(coverage.events)  : match.detail?.goals          ?? [];
+  const liveCards  = coverage?.events ? eventsAsCards(coverage.events)   : match.detail?.cards          ?? [];
+  const liveSubs   = coverage?.events ? eventsAsSubs(coverage.events)    : match.detail?.substitutions  ?? [];
+  const liveStats  = coverage?.stats ? { ...match.detail?.stats, ...coverage.stats } : match.detail?.stats ?? {};
 
   const homePred = getPrediction(home.slug);
   const awayPred = getPrediction(away.slug);
@@ -283,7 +307,7 @@ export default async function MatchPage({ params }: { params: { slug: string } }
         {/* Columna principal */}
         <div className="space-y-8">
           <MatchTabs
-            defaultTab={isActive ? "cobertura" : "estadisticas"}
+            defaultTab={(isActive || coverage) ? "cobertura" : "estadisticas"}
             isActive={isActive}
             coverageSlot={
               <CoverageFeed
@@ -301,60 +325,43 @@ export default async function MatchPage({ params }: { params: { slug: string } }
           {/* Detalle del partido (solo partidos finalizados con datos de IA) */}
           {match.detail && (
             <>
-              {match.detail.aiNotes && !isActive && (
-                <section className="card border-l-4 border-pitch p-6">
-                  <h2 className="section-title mb-3 text-xl">
-                    {match.status === "upcoming"
-                      ? "Previa del partido"
-                      : match.status === "live"
-                      ? "Análisis en directo"
-                      : "Análisis del partido"}
-                  </h2>
-                  <p className="text-slate-600 dark:text-slate-300">{match.detail.aiNotes}</p>
-                  <p className="mt-3 text-xs text-slate-400">
-                    {match.status === "upcoming" ? "Previa" : "Fuente"}: IA · Confianza {Math.round(match.detail.confidence * 100)}%
-                  </p>
-                </section>
-              )}
-
-              {match.detail.goals.length > 0 && (
+              {liveGoals.length > 0 && (
                 <section className="card p-6">
                   <h2 className="section-title mb-4 text-xl">Goles</h2>
-                  <GoalsTimeline goals={match.detail.goals} homeName={home.name} awayName={away.name} />
+                  <GoalsTimeline goals={liveGoals} homeName={home.name} awayName={away.name} />
                 </section>
               )}
 
-              {(match.detail.stats.shots || match.detail.stats.corners ||
-                match.detail.stats.fouls || match.detail.stats.offsides ||
-                match.detail.stats.yellowCards || match.detail.stats.possession ||
-                match.detail.stats.shotsOnTarget || match.detail.stats.passAccuracy) && (
+              {(liveStats.shots || liveStats.corners || liveStats.fouls ||
+                liveStats.offsides || liveStats.yellowCards || liveStats.possession ||
+                liveStats.shotsOnTarget || liveStats.passAccuracy) && (
                 <section className="card p-6">
                   <h2 className="section-title mb-1 text-xl">Estadísticas del partido</h2>
                   <p className="mb-5 text-xs text-slate-400">Fuente: FIFA</p>
                   <div className="space-y-4">
-                    {match.detail.stats.possession && (
-                      <StatDualBar label="Posesión" home={match.detail.stats.possession.home} away={match.detail.stats.possession.away} unit="%" />
+                    {liveStats.possession && (
+                      <StatDualBar label="Posesión" home={liveStats.possession.home} away={liveStats.possession.away} unit="%" />
                     )}
-                    {match.detail.stats.shots && (
-                      <StatDualBar label="Remates" home={match.detail.stats.shots.home} away={match.detail.stats.shots.away} />
+                    {liveStats.shots && (
+                      <StatDualBar label="Remates" home={liveStats.shots.home} away={liveStats.shots.away} />
                     )}
-                    {match.detail.stats.shotsOnTarget && (
-                      <StatDualBar label="Tiros al arco" home={match.detail.stats.shotsOnTarget.home} away={match.detail.stats.shotsOnTarget.away} />
+                    {liveStats.shotsOnTarget && (
+                      <StatDualBar label="Tiros al arco" home={liveStats.shotsOnTarget.home} away={liveStats.shotsOnTarget.away} />
                     )}
-                    {match.detail.stats.corners && (
-                      <StatDualBar label="Córners" home={match.detail.stats.corners.home} away={match.detail.stats.corners.away} />
+                    {liveStats.corners && (
+                      <StatDualBar label="Córners" home={liveStats.corners.home} away={liveStats.corners.away} />
                     )}
-                    {match.detail.stats.fouls && (
-                      <StatDualBar label="Faltas" home={match.detail.stats.fouls.home} away={match.detail.stats.fouls.away} />
+                    {liveStats.fouls && (
+                      <StatDualBar label="Faltas" home={liveStats.fouls.home} away={liveStats.fouls.away} />
                     )}
-                    {match.detail.stats.offsides && (
-                      <StatDualBar label="Fueras de juego" home={match.detail.stats.offsides.home} away={match.detail.stats.offsides.away} />
+                    {liveStats.offsides && (
+                      <StatDualBar label="Fueras de juego" home={liveStats.offsides.home} away={liveStats.offsides.away} />
                     )}
-                    {match.detail.stats.yellowCards && (
-                      <StatDualBar label="Tarjetas amarillas" home={match.detail.stats.yellowCards.home} away={match.detail.stats.yellowCards.away} />
+                    {liveStats.yellowCards && (
+                      <StatDualBar label="Tarjetas amarillas" home={liveStats.yellowCards.home} away={liveStats.yellowCards.away} />
                     )}
-                    {match.detail.stats.passAccuracy && (
-                      <StatDualBar label="% de pases" home={match.detail.stats.passAccuracy.home} away={match.detail.stats.passAccuracy.away} unit="%" />
+                    {liveStats.passAccuracy && (
+                      <StatDualBar label="% de pases" home={liveStats.passAccuracy.home} away={liveStats.passAccuracy.away} unit="%" />
                     )}
                   </div>
                 </section>
@@ -370,12 +377,12 @@ export default async function MatchPage({ params }: { params: { slug: string } }
                 </section>
               )}
 
-              {(match.detail.cards.length > 0 || match.detail.substitutions.length > 0) && (
+              {(liveCards.length > 0 || liveSubs.length > 0) && (
                 <section className="card p-6">
                   <h2 className="section-title mb-4 text-xl">Eventos del partido</h2>
                   <EventsLog
-                    cards={match.detail.cards}
-                    substitutions={match.detail.substitutions}
+                    cards={liveCards}
+                    substitutions={liveSubs}
                     homeName={home.name}
                     awayName={away.name}
                   />
@@ -703,7 +710,7 @@ function EventsLog({ cards, substitutions, homeName, awayName }: {
       el: (
         <div className="flex items-center gap-2 text-sm">
           <span className="shrink-0 text-base">🔄</span>
-          <span className="text-slate-500 dark:text-slate-400 line-through">{s.playerOut}</span>
+          <span className="text-slate-500 dark:text-slate-400">{s.playerOut}</span>
           <span aria-hidden>→</span>
           <span className="font-medium text-navy dark:text-slate-100">{s.playerIn}</span>
           <span className="text-slate-400 text-xs">({s.team === "home" ? homeName : awayName})</span>

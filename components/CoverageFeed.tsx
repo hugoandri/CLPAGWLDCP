@@ -245,9 +245,14 @@ export default function CoverageFeed({
   const isActive = matchStatus === "live" || matchStatus === "halftime";
 
   // Build rows inserting a kickoff at the bottom and a half-time divider between periods
-  type Row = CoverageEvent | { type: "__ht_divider__" };
+  type Row = CoverageEvent | { type: "__ht_divider__" } | { type: "__fulltime__" };
   const rows: Row[] = [];
   let htInserted = false;
+
+  // "Fin del partido" banner at the top (newest-first feed)
+  if (matchStatus === "finished" && events.length > 0) {
+    rows.push({ type: "__fulltime__" });
+  }
 
   for (const ev of events) {
     // When we move from 2H events (>45) into 1H events (≤45), insert HT divider
@@ -298,6 +303,25 @@ export default function CoverageFeed({
       {hasEvents && (
         <ol className="relative">
           {rows.map((row, i) => {
+            if ("type" in row && row.type === "__fulltime__") {
+              return (
+                <li key="ft" className="flex gap-0 items-center mb-2">
+                  <div className="w-14 shrink-0 flex items-center justify-end pr-3">
+                    <span className="text-[10px] font-bold text-slate-400">90&apos;</span>
+                  </div>
+                  <div className="w-5 shrink-0 flex flex-col items-center">
+                    <div className="h-3 w-3 rounded-full bg-navy-700 dark:bg-blue-500 border-2 border-white dark:border-navy-900" />
+                    <div className="w-px flex-1 bg-slate-200 dark:bg-white/10 min-h-[12px]" />
+                  </div>
+                  <div className="pl-3 flex-1">
+                    <span className="text-xs font-bold uppercase tracking-widest text-navy-700 dark:text-blue-300">
+                      Fin del partido
+                    </span>
+                  </div>
+                </li>
+              );
+            }
+
             if ("type" in row && row.type === "__ht_divider__") {
               return (
                 <li key={`ht-${i}`} className="flex gap-0 items-center">

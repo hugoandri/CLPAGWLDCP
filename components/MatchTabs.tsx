@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 type Tab = "cobertura" | "estadisticas";
@@ -13,14 +14,26 @@ interface Props {
 }
 
 export default function MatchTabs({ defaultTab, coverageSlot, statsSlot, isActive }: Props) {
-  const [active, setActive] = useState<Tab>(defaultTab);
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const urlTab = searchParams.get("tab") as Tab | null;
+  const [active, setActive] = useState<Tab>(urlTab ?? defaultTab);
+
+  function changeTab(t: Tab) {
+    setActive(t);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("tab", t);
+    router.replace(`${pathname}?${params}`, { scroll: false });
+  }
 
   return (
     <div>
       {/* Tab bar */}
       <div className="mb-5 flex gap-1 rounded-xl bg-slate-100 p-1 dark:bg-white/5">
         <button
-          onClick={() => setActive("cobertura")}
+          onClick={() => changeTab("cobertura")}
           className={cn(
             "flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all",
             active === "cobertura"
@@ -37,7 +50,7 @@ export default function MatchTabs({ defaultTab, coverageSlot, statsSlot, isActiv
           Cobertura
         </button>
         <button
-          onClick={() => setActive("estadisticas")}
+          onClick={() => changeTab("estadisticas")}
           className={cn(
             "flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all",
             active === "estadisticas"
