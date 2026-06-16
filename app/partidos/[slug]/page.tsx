@@ -335,7 +335,8 @@ export default async function MatchPage({ params }: { params: { slug: string } }
 
               {(liveStats.shots || liveStats.corners || liveStats.fouls ||
                 liveStats.offsides || liveStats.yellowCards || liveStats.redCards ||
-                liveStats.possession || liveStats.shotsOnTarget || liveStats.passAccuracy) && (
+                liveStats.penaltiesAwarded || liveStats.possession ||
+                liveStats.shotsOnTarget || liveStats.passAccuracy) && (
                 <section className="card p-6">
                   <h2 className="section-title mb-1 text-xl">Estadísticas del partido</h2>
                   <p className="mb-5 text-xs text-slate-400">Fuente: FIFA</p>
@@ -363,6 +364,9 @@ export default async function MatchPage({ params }: { params: { slug: string } }
                     )}
                     {liveStats.redCards && (
                       <StatDualBar label="Tarjetas rojas" home={liveStats.redCards.home} away={liveStats.redCards.away} />
+                    )}
+                    {liveStats.penaltiesAwarded && (
+                      <StatDualBar label="Penaltis" home={liveStats.penaltiesAwarded.home} away={liveStats.penaltiesAwarded.away} />
                     )}
                     {liveStats.passAccuracy && (
                       <StatDualBar label="% de pases" home={liveStats.passAccuracy.home} away={liveStats.passAccuracy.away} unit="%" />

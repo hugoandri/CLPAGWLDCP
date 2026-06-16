@@ -109,6 +109,7 @@ export interface MatchStats {
   offsides?: { home: number; away: number };
   yellowCards?: { home: number; away: number };
   redCards?: { home: number; away: number };
+  penaltiesAwarded?: { home: number; away: number };
   possession?: { home: number; away: number };
   shotsOnTarget?: { home: number; away: number };
   passAccuracy?: { home: number; away: number };

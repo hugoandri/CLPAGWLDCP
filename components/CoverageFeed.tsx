@@ -10,9 +10,11 @@ const CFG: Record<CoverageEventType, { icon: string; label: string; dot: string 
   yellow:     { icon: "🟨", label: "Amarilla",        dot: "bg-yellow-400 border-yellow-400" },
   red:        { icon: "🟥", label: "Roja",            dot: "bg-red-600 border-red-600" },
   yellow_red: { icon: "🟥", label: "2ª Amarilla",    dot: "bg-red-600 border-red-600" },
-  sub:        { icon: "↕",  label: "Cambio",          dot: "bg-slate-400 border-slate-400" },
-  halftime:   { icon: "⏸",  label: "Descanso",       dot: "bg-amber-400 border-amber-400" },
-  kickoff:    { icon: "●",  label: "Inicio",          dot: "bg-slate-300 border-slate-300" },
+  sub:             { icon: "↕",  label: "Cambio",    dot: "bg-slate-400 border-slate-400" },
+  penalty_awarded: { icon: "🎯", label: "Penalti",   dot: "bg-orange-500 border-orange-500" },
+  var:             { icon: "📺", label: "VAR",        dot: "bg-purple-500 border-purple-500" },
+  halftime:        { icon: "⏸",  label: "Descanso",  dot: "bg-amber-400 border-amber-400" },
+  kickoff:         { icon: "●",  label: "Inicio",     dot: "bg-slate-300 border-slate-300" },
 };
 
 // ─── Mini stats bar ──────────────────────────────────────────────────────────
@@ -49,7 +51,8 @@ function LiveStatsPanel({
   stats: LiveStats; homeName: string; awayName: string;
 }) {
   const hasAny = stats.possession || stats.shots || stats.shotsOnTarget ||
-    stats.corners || stats.fouls || stats.offsides || stats.yellowCards || stats.redCards;
+    stats.corners || stats.fouls || stats.offsides || stats.yellowCards || stats.redCards ||
+    stats.penaltiesAwarded;
   if (!hasAny) return null;
 
   return (
@@ -83,6 +86,9 @@ function LiveStatsPanel({
         )}
         {stats.redCards && (
           <StatRow label="Rojas" home={stats.redCards.home} away={stats.redCards.away} />
+        )}
+        {stats.penaltiesAwarded && (
+          <StatRow label="Penaltis" home={stats.penaltiesAwarded.home} away={stats.penaltiesAwarded.away} />
         )}
       </div>
     </div>

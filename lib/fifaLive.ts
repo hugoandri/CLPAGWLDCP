@@ -27,6 +27,7 @@ export type CoverageEventType =
   | "goal" | "own_goal" | "penalty"
   | "yellow" | "red" | "yellow_red"
   | "sub"
+  | "penalty_awarded" | "var"
   | "halftime" | "kickoff";
 
 export interface CoverageEvent {
@@ -48,6 +49,7 @@ export interface LiveStats {
   offsides?: { home: number; away: number };
   yellowCards?: { home: number; away: number };
   redCards?: { home: number; away: number };
+  penaltiesAwarded?: { home: number; away: number };
   passAccuracy?: { home: number; away: number };
 }
 
@@ -248,12 +250,13 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
       const tlData = await tlRes.json();
       const tlEvents: any[] = tlData.Event ?? [];
       const cnt = {
-        shots:       { home: 0, away: 0 },
-        corners:     { home: 0, away: 0 },
-        fouls:       { home: 0, away: 0 },
-        offsides:    { home: 0, away: 0 },
-        yellowCards: { home: 0, away: 0 },
-        redCards:    { home: 0, away: 0 },
+        shots:            { home: 0, away: 0 },
+        corners:          { home: 0, away: 0 },
+        fouls:            { home: 0, away: 0 },
+        offsides:         { home: 0, away: 0 },
+        yellowCards:      { home: 0, away: 0 },
+        redCards:         { home: 0, away: 0 },
+        penaltiesAwarded: { home: 0, away: 0 },
       };
       for (const ev of tlEvents) {
         const sid = String(ev.IdTeam ?? "");
@@ -265,16 +268,51 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
         else if (ev.Type === 15) cnt.offsides[side]++;
         else if (ev.Type === 2)  cnt.yellowCards[side]++;
         else if (ev.Type === 3)  cnt.redCards[side]++;
+        else if (ev.Type === 6)  cnt.penaltiesAwarded[side]++;
       }
       const nonZero = (o: {home:number;away:number}) => o.home + o.away > 0 ? o : undefined;
       stats = {
-        shots:       nonZero(cnt.shots),
-        corners:     nonZero(cnt.corners),
-        fouls:       nonZero(cnt.fouls),
-        offsides:    nonZero(cnt.offsides),
-        yellowCards: nonZero(cnt.yellowCards),
-        redCards:    nonZero(cnt.redCards),
+        shots:            nonZero(cnt.shots),
+        corners:          nonZero(cnt.corners),
+        fouls:            nonZero(cnt.fouls),
+        offsides:         nonZero(cnt.offsides),
+        yellowCards:      nonZero(cnt.yellowCards),
+        redCards:         nonZero(cnt.redCards),
+        penaltiesAwarded: nonZero(cnt.penaltiesAwarded),
       };
+
+      // Extract Penalty Awarded (6) and VAR (71) as coverage events
+      const varDescES: Record<string, string> = {
+        "Red card given":        "Tarjeta roja confirmada",
+        "Yellow card reassigned":"Tarjeta amarilla revisada",
+        "Goal awarded":          "Gol confirmado",
+        "Goal disallowed":       "Gol anulado",
+        "Penalty awarded":       "Penalti confirmado",
+        "No penalty":            "Sin penalti",
+        "No card":               "Sin tarjeta",
+      };
+      for (const ev of tlEvents) {
+        const minute = String(ev.MatchMinute ?? "");
+        if (ev.Type === 6) {
+          const sid = String(ev.IdTeam ?? "");
+          const side = sid === homeId ? "home" : sid === awayId ? "away" : undefined;
+          events.push({
+            type: "penalty_awarded",
+            minuteRaw: formatMin(minute),
+            minuteOrder: parseMin(minute),
+            team: side,
+            primary: playerName[String(ev.IdPlayer ?? "")] || "Penalti concedido",
+          });
+        } else if (ev.Type === 71) {
+          const rawDesc = String(ev.EventDescription ?? "");
+          events.push({
+            type: "var",
+            minuteRaw: formatMin(minute),
+            minuteOrder: parseMin(minute),
+            primary: varDescES[rawDesc] ?? rawDesc,
+          });
+        }
+      }
     } else {
       // Fallback: try MatchStatistics field in live endpoint
       const statsArr: any[] = live.MatchStatistics ?? live.Statistics ?? [];
