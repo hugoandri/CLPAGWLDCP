@@ -315,7 +315,7 @@ export default async function MatchPage({ params }: { params: { slug: string } }
                 events={coverage?.events ?? []}
                 homeName={home.name}
                 awayName={away.name}
-                aiNotes={match.detail?.aiNotes}
+                aiNotes={coverage?.aiNotes ?? undefined}
                 period={coverage?.period ?? null}
                 matchStatus={match.status}
                 stats={coverage?.stats}

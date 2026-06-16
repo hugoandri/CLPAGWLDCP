@@ -1,6 +1,10 @@
+import { unstable_cache } from "next/cache";
+
 const FIFA_API = "https://api.fifa.com/api/v3";
 const ID_COMPETITION = "17";
 const ID_SEASON = "285023";
+const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_MODEL = "llama-3.3-70b-versatile";
 
 const TEAM_SLUG: Record<string, string> = {
   Germany: "alemania", "Curaçao": "curazao", Netherlands: "paises-bajos",
@@ -59,7 +63,64 @@ export interface FIFACoverage {
   homeScore: number;
   awayScore: number;
   stats: LiveStats;
+  aiNotes: string | null;
 }
+
+async function _groqMatchComment(
+  homeName: string, awayName: string,
+  homeScore: number, awayScore: number,
+  // These args act as cache-busters: comment regenerates when any of them changes
+  isFinished: boolean, isHalfTime: boolean,
+  redCards: number, penalties: number,
+  eventSummary: string,
+): Promise<string | null> {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) return null;
+
+  let context: string;
+  let systemPrompt: string;
+
+  if (isFinished) {
+    context = `PARTIDO FINALIZADO: ${homeName} ${homeScore}-${awayScore} ${awayName}. ${eventSummary}`;
+    systemPrompt =
+      "Eres analista deportivo del Mundial 2026. El partido ha terminado. " +
+      "Escribe exactamente 2-3 oraciones en español resumiendo el resultado: " +
+      "qué equipo dominó, los momentos decisivos y una conclusión final. " +
+      "Sin emojis. Sin lenguaje de apuestas. Sin inventar datos.";
+  } else if (isHalfTime) {
+    context = `DESCANSO: ${homeName} ${homeScore}-${awayScore} ${awayName}. ${eventSummary}`;
+    systemPrompt =
+      "Eres analista deportivo del Mundial 2026. El partido está en el descanso. " +
+      "Escribe exactamente 2 oraciones en español: balance del primer tiempo y qué puede cambiar en la segunda parte. " +
+      "Sin emojis. Sin lenguaje de apuestas.";
+  } else {
+    context = `EN DIRECTO: ${homeName} ${homeScore}-${awayScore} ${awayName}. ${eventSummary}`;
+    systemPrompt =
+      "Eres analista deportivo del Mundial 2026 cubriendo un partido EN DIRECTO. " +
+      "Escribe exactamente 2 oraciones en español: una describe el momento del partido y la otra da una lectura táctica breve. " +
+      "Sin emojis. Sin lenguaje de apuestas. Sin inventar datos.";
+  }
+
+  try {
+    const res = await fetch(GROQ_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({
+        model: GROQ_MODEL, max_tokens: 220, temperature: 0.6,
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: context },
+        ],
+      }),
+      cache: "no-store",
+    });
+    if (!res.ok) return null;
+    const data = await res.json() as { choices?: { message?: { content?: string } }[] };
+    return data.choices?.[0]?.message?.content?.trim() ?? null;
+  } catch { return null; }
+}
+
+const groqMatchComment = unstable_cache(_groqMatchComment, ["fifa-match-comment"], { revalidate: 120 });
 
 function toTitle(name: string): string {
   return name
@@ -125,6 +186,8 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
     if (!fm) return null;
     const isActive = fm.MatchStatus === 3 || fm.MatchStatus === 0;
     if (!isActive) return null;
+    const homeName = fm.Home?.TeamName?.[0]?.Description ?? "";
+    const awayName = fm.Away?.TeamName?.[0]?.Description ?? "";
 
     const liveRes = await fetch(
       `${FIFA_API}/live/football/${fm.IdMatch}?language=en`,
@@ -319,12 +382,34 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
       if (statsArr.length) stats = parseMatchStats(statsArr);
     }
 
+    // Build event summary for Groq context
+    const goalEvs  = events.filter(e => e.type === "goal" || e.type === "own_goal" || e.type === "penalty");
+    const redEvs   = events.filter(e => e.type === "red");
+    const penEvs   = events.filter(e => e.type === "penalty_awarded");
+    let eventSummary = "";
+    if (goalEvs.length)
+      eventSummary += `Goles: ${goalEvs.map(e => `${e.primary} (${e.minuteRaw})`).join(", ")}. `;
+    if (redEvs.length)
+      eventSummary += `Tarjetas rojas: ${redEvs.map(e => `${e.primary} (${e.minuteRaw})`).join(", ")}. `;
+    if (penEvs.length)
+      eventSummary += `Penaltis: ${penEvs.length}. `;
+
+    const isFinished = fm.MatchStatus === 0;
+    const isHT      = !isFinished && (live.Period === 4 || fm.MatchTime === "");
+    const aiNotes = await groqMatchComment(
+      homeName, awayName, homeScore, awayScore,
+      isFinished, isHT,
+      redEvs.length, penEvs.length,
+      eventSummary,
+    );
+
     return {
       events,
       period: live.Period ?? null,
       homeScore,
       awayScore,
       stats,
+      aiNotes,
     };
   } catch {
     return null;

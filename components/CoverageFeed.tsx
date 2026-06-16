@@ -282,11 +282,11 @@ export default function CoverageFeed({
 
   return (
     <div className="space-y-5">
-      {/* AI commentary — only while match is live */}
-      {aiNotes && isActive && (
+      {/* AI commentary */}
+      {aiNotes && (
         <div className="card border-l-4 border-pitch p-4">
           <p className="mb-1 text-[11px] font-bold uppercase tracking-widest text-slate-400">
-            Análisis en directo · IA
+            {matchStatus === "finished" ? "Análisis Final · IA" : "Análisis en directo · IA"}
           </p>
           <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
             {aiNotes}
