@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T20:32:31.090Z",
+  "generatedAt": "2026-06-16T22:34:11.203Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3979,10 +3979,9 @@
     },
     {
       "slug": "francia-vs-senegal",
-      "status": "live",
-      "homeScore": 1,
-      "awayScore": 0,
-      "minute": 68,
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490",
       "confidence": 0.97,
       "detail": {
@@ -3993,10 +3992,73 @@
             "scorer": "Mbappé",
             "assist": "OLISE.",
             "type": "goal"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "scorer": "Barcola",
+            "assist": "Adrien RABIOT.",
+            "type": "goal"
+          },
+          {
+            "minute": 95,
+            "team": "away",
+            "scorer": "Mbaye",
+            "assist": "ILIMAN.",
+            "type": "goal"
+          },
+          {
+            "minute": 96,
+            "team": "home",
+            "scorer": "Mbappé",
+            "type": "goal"
           }
         ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Ismaila SARR",
+            "playerIn": "Ibrahim MBAYE"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Lamine CAMARA",
+            "playerIn": "Habib DIARRA"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Ousmane DEMBELE",
+            "playerIn": "Bradley BARCOLA"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Nicolas JACKSON",
+            "playerIn": "Bamba DIENG"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Pape GUEYE",
+            "playerIn": "Iliman NDIAYE"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "Desire DOUE",
+            "playerIn": "Rayan CHERKI"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "playerOut": "Idrissa Gana GUEYE",
+            "playerIn": "Pathe CISS"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -4115,41 +4177,179 @@
         },
         "stats": {
           "shots": {
-            "home": 6,
-            "away": 5
+            "home": 11,
+            "away": 6
           },
           "corners": {
-            "home": 5,
-            "away": 2
+            "home": 6,
+            "away": 4
           },
           "fouls": {
-            "home": 3,
-            "away": 6
+            "home": 5,
+            "away": 9
           },
           "offsides": {
             "home": 1,
-            "away": 2
+            "away": 3
           }
         },
-        "aiNotes": "En este momento, Francia lidera el partido con un marcador de 1-0 sobre Senegal, gracias a un gol clave de Mbappé en el minuto 66, lo que ha dado un giro decisivo al encuentro y ha permitido a los franceses tomar el control del juego. A medida que el partido avanza, es probable que Senegal intente presionar en busca del empate, lo que podría generar espacios para contrataques rápidos por parte de Francia, que busca consolidar su ventaja y asegurar la victoria.",
+        "aiNotes": "Francia se impuso sobre Senegal con un marcador de 3-1, gracias a los goles decisivos de Mbappé en los minutos 66 y 96, y el de Barcola en el minuto 82, mientras que Mbaye anotó para Senegal en el minuto 95. La victoria de Francia se debió en gran medida a su sólido rendimiento táctico y la efectividad de Mbappé en el ataque, lo que les permitió mantener la ventaja a lo largo del partido.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021490"
       }
     },
     {
       "slug": "irak-vs-noruega",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": 33,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 29,
+            "team": "away",
+            "scorer": "Haaland",
+            "assist": "David MOLLER WOLFE.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "JALAL HASSAN",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Hussein Ali",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "ZAID TAHSEEN",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "AKAM HASHIM",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "MERCHAS DOSKI",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "IBRAHIM BAYESH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "AMIR ALAMMARI",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "ZAID ISMAEL",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "ALI ALHAMADI",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "ALI JASIM",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "AYMEN HUSSEIN",
+              "number": 18,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Orjan NYLAND",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Kristoffer AJER",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "David MOLLER WOLFE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Torbjorn HEGGEM",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Sander BERGE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Martin ODEGAARD",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Fredrik AURSNES",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Alexander SORLOTH",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Erling HAALAND",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Antonio NUSA",
+              "number": 20,
+              "position": "FWD"
+            },
+            {
+              "name": "Julian RYERSON",
+              "number": 26,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Both Iraq and Norway arrive at the match with different forms, Iraq has shown a solid defensive structure, while Norway has a strong attacking force led by Erling Haaland, who is the key player to watch in this match. Norway is expected to have an advantage in this match due to its higher ranking and the exceptional goal-scoring ability of Haaland, which could be too much for Iraq's defense to handle.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 3,
+            "away": 4
+          },
+          "corners": {
+            "home": 0,
+            "away": 2
+          },
+          "fouls": {
+            "home": 3,
+            "away": 4
+          }
+        },
+        "aiNotes": "En este momento, Noruega lleva la ventaja en el marcador gracias al gol de Haaland en el minuto 29, y parece que están dominando el ritmo del partido. A medida que el partido avanza, es probable que Irak intente aumentar su presión ofensiva para empatar el partido, lo que podría generar espacios para que Noruega contraataque y busque ampliar su ventaja.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488"
       }
     },
