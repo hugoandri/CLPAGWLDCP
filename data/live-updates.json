@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T02:02:00.799Z",
+  "generatedAt": "2026-06-16T07:39:42.296Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3735,10 +3735,9 @@
     },
     {
       "slug": "iran-vs-nueva-zelanda",
-      "status": "live",
-      "homeScore": 1,
-      "awayScore": 1,
-      "minute": 46,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476",
       "confidence": 0.97,
       "detail": {
@@ -3755,10 +3754,86 @@
             "team": "home",
             "scorer": "Ramin",
             "type": "goal"
+          },
+          {
+            "minute": 54,
+            "team": "away",
+            "scorer": "Just",
+            "assist": "Chris WOOD.",
+            "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "scorer": "M.mohebbi",
+            "assist": "RAMIN.",
+            "type": "goal"
           }
         ],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 89,
+            "team": "home",
+            "player": "Ehsan HAJISAFI",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Arya YOUSEFI",
+            "playerIn": "Mehdi GHAYEDI"
+          },
+          {
+            "minute": 53,
+            "team": "home",
+            "playerOut": "Shahriyar MOGHANLOO",
+            "playerIn": "Ali Alipour"
+          },
+          {
+            "minute": 65,
+            "team": "home",
+            "playerOut": "Saman GHODDOS",
+            "playerIn": "Ehsan HAJISAFI"
+          },
+          {
+            "minute": 68,
+            "team": "away",
+            "playerOut": "Callum McCOWATT",
+            "playerIn": "Ryan THOMAS"
+          },
+          {
+            "minute": 68,
+            "team": "away",
+            "playerOut": "Liberato CACACE",
+            "playerIn": "Ben OLD"
+          },
+          {
+            "minute": 77,
+            "team": "away",
+            "playerOut": "Tim PAYNE",
+            "playerIn": "Callan ELLIOT"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Mehdi TAREMI",
+            "playerIn": "Amirhossein Hosseinzadeh"
+          },
+          {
+            "minute": 92,
+            "team": "away",
+            "playerOut": "Sarpreet SINGH",
+            "playerIn": "Jesse RANDALL"
+          },
+          {
+            "minute": 92,
+            "team": "away",
+            "playerOut": "Marko STAMENIC",
+            "playerIn": "Tyler BINDON"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -3877,25 +3952,29 @@
         },
         "stats": {
           "shots": {
-            "home": 7,
-            "away": 9
+            "home": 17,
+            "away": 14
           },
           "corners": {
-            "home": 0,
+            "home": 4,
             "away": 1
           },
           "fouls": {
-            "home": 2,
-            "away": 4
+            "home": 8,
+            "away": 8
           },
           "offsides": {
+            "home": 2,
+            "away": 0
+          },
+          "yellowCards": {
             "home": 1,
             "away": 0
           }
         },
-        "aiNotes": "En este momento, el partido entre Irán y Nueva Zelanda se encuentra empatado a un gol por lado, con un tanto de Just para los neozelandeses en el minuto 7 y la igualdad lograda por Ramin para los iraníes en el minuto 32, lo que indica un encuentro muy disputado. La segunda parte del partido puede ser decisiva, ya que ambos equipos buscarán aprovechar cualquier error del contrario para anotar el gol de la victoria, por lo que es probable que se intensifique la presión ofensiva y la lucha por el control del centro del campo.",
+        "aiNotes": "En el partido entre Irán y Nueva Zelanda, el equipo de Irán logró empatar 2-2 después de que Nueva Zelanda se adelantara en el marcador gracias a los goles de Just en los minutos 7 y 54, mientras que Ramin y M.mohebbi anotaron para Irán en los minutos 32 y 64 respectivamente. La capacidad de Irán para recuperarse de la desventaja y empatar el partido muestra un rendimiento táctico sólido y una buena resistencia, lo que puede ser un factor clave en su desempeño en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021476"
       }
     },
     {
