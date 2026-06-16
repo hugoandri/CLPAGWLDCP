@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T23:12:39.488Z",
+  "generatedAt": "2026-06-16T02:02:00.799Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -3500,10 +3500,9 @@
     },
     {
       "slug": "arabia-saudita-vs-uruguay",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
-      "awayScore": 0,
-      "minute": 46,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486",
       "confidence": 0.97,
       "detail": {
@@ -3512,6 +3511,12 @@
             "minute": 41,
             "team": "home",
             "scorer": "Alamri",
+            "type": "goal"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "scorer": "Maxi ARAUJO",
             "type": "goal"
           }
         ],
@@ -3535,6 +3540,54 @@
             "team": "away",
             "playerOut": "Matias VINA",
             "playerIn": "Juan Manuel SANABRIA"
+          },
+          {
+            "minute": 63,
+            "team": "home",
+            "playerOut": "MUSAB ALJUWAYR",
+            "playerIn": "NASSER ALDAWSARI"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Manuel UGARTE",
+            "playerIn": "Nicolas DE LA CRUZ"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "MOHAMMED ABU ALSHAMAT",
+            "playerIn": "NAWAF BU WASHL"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "Maxi ARAUJO",
+            "playerIn": "Brian RODRIGUEZ"
+          },
+          {
+            "minute": 90,
+            "team": "away",
+            "playerOut": "Federico VINAS",
+            "playerIn": "Rodrigo AGUIRRE"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "playerOut": "MOTEB ALHARBI",
+            "playerIn": "ABDULLAH ALHAMDDAN"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "playerOut": "FERAS ALBRIKAN",
+            "playerIn": "ALA ALHAJJI"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "playerOut": "SAUD ABDULHAMID",
+            "playerIn": "ALI LAJAMI"
           }
         ],
         "lineup": {
@@ -3655,45 +3708,193 @@
         },
         "stats": {
           "shots": {
-            "home": 5,
-            "away": 6
+            "home": 7,
+            "away": 27
           },
           "corners": {
             "home": 4,
-            "away": 2
+            "away": 14
           },
           "fouls": {
-            "home": 4,
-            "away": 5
+            "home": 10,
+            "away": 6
           },
           "offsides": {
             "home": 0,
-            "away": 3
+            "away": 6
           },
           "yellowCards": {
             "home": 1,
             "away": 0
           }
         },
-        "aiNotes": "En este momento, Saudi Arabia se encuentra en ventaja en el marcador con un gol de Alamri en el minuto 41, y aunque el partido ha sido bastante equilibrado, los sauditas han demostrado una gran determinación y han logrado contener los ataques uruguayos. A medida que el partido avanza, es probable que Uruguay intente presionar más arriba en el campo para buscar el empate, lo que podría dejar espacios en su defensa y permitir a Saudi Arabia contrarrestar con peligro.",
+        "aiNotes": "En el partido entre Arabia Saudita y Uruguay, el equipo saudita se adelantó en el marcador gracias a un gol de Alamri en el minuto 41, pero Maxi Araujo logró empatar el partido en el minuto 80. La igualdad en el resultado refleja un rendimiento táctico equilibrado entre ambos equipos, aunque la tarjeta amarilla para Alamri en el minuto 44 podría haber influido en la dinámica del juego.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021486"
       }
     },
     {
       "slug": "iran-vs-nueva-zelanda",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": 46,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "away",
+            "scorer": "Just",
+            "assist": "Chris WOOD.",
+            "type": "goal"
+          },
+          {
+            "minute": 32,
+            "team": "home",
+            "scorer": "Ramin",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Alireza BEIRANVAND",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Shoja KHALILZADEH",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Milad MOHAMMADI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Arya YOUSEFI",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Ali NEMATI",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Ramin REZAEIAN",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Saeid EZATOLAHI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Mohammad MOHEBBI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Saman GHODDOS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Mehdi TAREMI",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Shahriyar MOGHANLOO",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Max CROCOMBE",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tim PAYNE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Michael BOXALL",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Liberato CACACE",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Finn SURMAN",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Joe BELL",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Marko STAMENIC",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Sarpreet SINGH",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Elijah JUST",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Callum McCOWATT",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Chris WOOD",
+              "number": 9,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "IR Iran llega al partido con una buena forma reciente, gracias a la destacada labor de Mehdi Taremi, quien ha sido clave en la generación de oportunidades de gol y ha demostrado ser un jugador muy peligroso en el ataque, mientras que New Zealand busca sorprender con la experiencia y habilidad de Chris Wood, aunque su equipo ha mostrado ciertas debilidades en la defensa. En este encuentro, IR Iran parece tener la ventaja debido a su mejor posición en el ranking FIFA y su mayor experiencia en competiciones internacionales, lo que podría darles una cierta superioridad en el campo de juego.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 7,
+            "away": 9
+          },
+          "corners": {
+            "home": 0,
+            "away": 1
+          },
+          "fouls": {
+            "home": 2,
+            "away": 4
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Irán y Nueva Zelanda se encuentra empatado a un gol por lado, con un tanto de Just para los neozelandeses en el minuto 7 y la igualdad lograda por Ramin para los iraníes en el minuto 32, lo que indica un encuentro muy disputado. La segunda parte del partido puede ser decisiva, ya que ambos equipos buscarán aprovechar cualquier error del contrario para anotar el gol de la victoria, por lo que es probable que se intensifique la presión ofensiva y la lucha por el control del centro del campo.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476"
       }
     },
