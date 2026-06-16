@@ -188,7 +188,8 @@ export default async function MatchPage({ params }: { params: { slug: string } }
   const liveGoals  = coverage?.events ? eventsAsGoals(coverage.events)  : match.detail?.goals          ?? [];
   const liveCards  = coverage?.events ? eventsAsCards(coverage.events)   : match.detail?.cards          ?? [];
   const liveSubs   = coverage?.events ? eventsAsSubs(coverage.events)    : match.detail?.substitutions  ?? [];
-  const liveStats  = coverage?.stats ? { ...match.detail?.stats, ...coverage.stats } : match.detail?.stats ?? {};
+  // Only use stats from FIFA live API when coverage is available; never mix with stale file data
+  const liveStats  = coverage ? (coverage.stats ?? {}) : (match.detail?.stats ?? {});
 
   const homePred = getPrediction(home.slug);
   const awayPred = getPrediction(away.slug);

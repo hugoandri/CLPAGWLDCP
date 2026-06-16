@@ -78,6 +78,9 @@ function LiveStatsPanel({
         {stats.offsides && (
           <StatRow label="Fuera de juego" home={stats.offsides.home} away={stats.offsides.away} />
         )}
+        {stats.yellowCards && (
+          <StatRow label="Amarillas" home={stats.yellowCards.home} away={stats.yellowCards.away} />
+        )}
       </div>
     </div>
   );

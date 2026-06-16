@@ -46,6 +46,8 @@ export interface LiveStats {
   corners?: { home: number; away: number };
   fouls?: { home: number; away: number };
   offsides?: { home: number; away: number };
+  yellowCards?: { home: number; away: number };
+  passAccuracy?: { home: number; away: number };
 }
 
 export interface FIFACoverage {
@@ -233,9 +235,47 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
     // Sort newest first
     events.sort((a, b) => b.minuteOrder - a.minuteOrder);
 
-    // Parse live stats
-    const statsArr: any[] = live.MatchStatistics ?? live.Statistics ?? [];
-    const stats = parseMatchStats(statsArr);
+    // Fetch match statistics from timelines endpoint (Type codes: 12=shot, 16=corner, 18=foul, 15=offside, 2=yellow)
+    let stats: LiveStats = {};
+    const homeId = String(ht.IdTeam ?? "");
+    const awayId = String(at.IdTeam ?? "");
+    const tlRes = await fetch(
+      `${FIFA_API}/timelines/${fm.IdMatch}?language=en`,
+      { next: { revalidate: 25 } },
+    );
+    if (tlRes.ok) {
+      const tlData = await tlRes.json();
+      const tlEvents: any[] = tlData.Event ?? [];
+      const cnt = {
+        shots:       { home: 0, away: 0 },
+        corners:     { home: 0, away: 0 },
+        fouls:       { home: 0, away: 0 },
+        offsides:    { home: 0, away: 0 },
+        yellowCards: { home: 0, away: 0 },
+      };
+      for (const ev of tlEvents) {
+        const sid = String(ev.IdTeam ?? "");
+        const side: "home" | "away" | null = sid === homeId ? "home" : sid === awayId ? "away" : null;
+        if (!side) continue;
+        if (ev.Type === 12) cnt.shots[side]++;
+        else if (ev.Type === 16) cnt.corners[side]++;
+        else if (ev.Type === 18) cnt.fouls[side]++;
+        else if (ev.Type === 15) cnt.offsides[side]++;
+        else if (ev.Type === 2)  cnt.yellowCards[side]++;
+      }
+      const nonZero = (o: {home:number;away:number}) => o.home + o.away > 0 ? o : undefined;
+      stats = {
+        shots:       nonZero(cnt.shots),
+        corners:     nonZero(cnt.corners),
+        fouls:       nonZero(cnt.fouls),
+        offsides:    nonZero(cnt.offsides),
+        yellowCards: nonZero(cnt.yellowCards),
+      };
+    } else {
+      // Fallback: try MatchStatistics field in live endpoint
+      const statsArr: any[] = live.MatchStatistics ?? live.Statistics ?? [];
+      if (statsArr.length) stats = parseMatchStats(statsArr);
+    }
 
     return {
       events,
