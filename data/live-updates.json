@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T22:34:11.203Z",
+  "generatedAt": "2026-06-17T00:04:01.925Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -4200,10 +4200,9 @@
     },
     {
       "slug": "irak-vs-noruega",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 1,
-      "minute": 33,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 4,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488",
       "confidence": 0.97,
       "detail": {
@@ -4214,10 +4213,104 @@
             "scorer": "Haaland",
             "assist": "David MOLLER WOLFE.",
             "type": "goal"
+          },
+          {
+            "minute": 39,
+            "team": "home",
+            "scorer": "Hussein",
+            "assist": "AMIR ALAMMARI.",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "away",
+            "scorer": "Haaland",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "scorer": "Leo OSTIGARD",
+            "assist": "ODEGAARD.",
+            "type": "goal"
+          },
+          {
+            "minute": 96,
+            "team": "away",
+            "scorer": "Hussein",
+            "type": "own_goal"
           }
         ],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 86,
+            "team": "home",
+            "player": "Zaid Tahseen",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "ALI ALHAMADI",
+            "playerIn": "MARKO FARJI"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "ZAID ISMAEL",
+            "playerIn": "ZIDANE IQBAL"
+          },
+          {
+            "minute": 73,
+            "team": "home",
+            "playerOut": "Hussein Ali",
+            "playerIn": "MUSTAFA SAADOON"
+          },
+          {
+            "minute": 73,
+            "team": "home",
+            "playerOut": "ALI JASIM",
+            "playerIn": "AHMED QASEM"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "playerOut": "David MOLLER WOLFE",
+            "playerIn": "Leo OSTIGARD"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "playerOut": "Fredrik AURSNES",
+            "playerIn": "Kristian Thorstvedt"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "playerOut": "Antonio NUSA",
+            "playerIn": "Andreas SCHJELDERUP"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "playerOut": "Alexander SORLOTH",
+            "playerIn": "Oscar BOBB"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "playerOut": "IBRAHIM BAYESH",
+            "playerIn": "MOHANAD ALI"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "Martin ODEGAARD",
+            "playerIn": "Patrick BERG"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -4336,21 +4429,29 @@
         },
         "stats": {
           "shots": {
-            "home": 3,
-            "away": 4
+            "home": 11,
+            "away": 11
           },
           "corners": {
-            "home": 0,
-            "away": 2
+            "home": 2,
+            "away": 5
           },
           "fouls": {
-            "home": 3,
-            "away": 4
+            "home": 11,
+            "away": 13
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 0
           }
         },
-        "aiNotes": "En este momento, Noruega lleva la ventaja en el marcador gracias al gol de Haaland en el minuto 29, y parece que están dominando el ritmo del partido. A medida que el partido avanza, es probable que Irak intente aumentar su presión ofensiva para empatar el partido, lo que podría generar espacios para que Noruega contraataque y busque ampliar su ventaja.",
+        "aiNotes": "En el partido entre Irak y Noruega, el equipo noruego se impuso con un marcador de 4-1, gracias en gran parte a los dos goles tempranos de Haaland y a los esfuerzos de otros jugadores clave como Leo Ostigard y Odegaard. La victoria de Noruega refleja su superioridad táctica y su capacidad para aprovechar las oportunidades, lo que les permite avanzar con confianza en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021488"
       }
     },
     {
