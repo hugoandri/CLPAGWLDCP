@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T05:13:48.620Z",
+  "generatedAt": "2026-06-17T10:10:45.952Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -4688,10 +4688,9 @@
     },
     {
       "slug": "austria-vs-jordania",
-      "status": "live",
-      "homeScore": 1,
-      "awayScore": 0,
-      "minute": 49,
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498",
       "confidence": 0.97,
       "detail": {
@@ -4702,15 +4701,95 @@
             "scorer": "Romano SCHMID",
             "assist": "Xaver SCHLAGER.",
             "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "away",
+            "scorer": "Ali Olwan",
+            "assist": "NOOR ALRAWABDEH.",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "scorer": "Yazan Alarab",
+            "type": "own_goal"
+          },
+          {
+            "minute": 102,
+            "team": "home",
+            "scorer": "Arnautovic",
+            "type": "penalty"
           }
         ],
-        "cards": [],
+        "cards": [
+          {
+            "minute": 77,
+            "team": "home",
+            "player": "Sabitzer",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [
           {
             "minute": 0,
             "team": "home",
             "playerOut": "Sasa KALAJDZIC",
             "playerIn": "Marko ARNAUTOVIC"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "Xaver Schlager",
+            "playerIn": "Carney CHUKWUEMEKA"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "Phillip MWENE",
+            "playerIn": "Paul WANNER"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "David ALABA",
+            "playerIn": "Kevin Danso"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "MOHAMMAD ABUALNADI",
+            "playerIn": "SALEEM OBAID"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "ABDALLAH NASIB",
+            "playerIn": "SAED ALROSAN"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "EHSAN HADDAD",
+            "playerIn": "MAHMOUD ALMARDI"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Romano SCHMID",
+            "playerIn": "Patrick WIMMER"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "playerOut": "ODEH FAKHOURY",
+            "playerIn": "ALI AZAIZEH"
+          },
+          {
+            "minute": 88,
+            "team": "away",
+            "playerOut": "MOUSA ALTAMARI",
+            "playerIn": "MOHAMMAD ALDAOUD"
           }
         ],
         "lineup": {
@@ -4831,25 +4910,29 @@
         },
         "stats": {
           "shots": {
-            "home": 6,
-            "away": 8
+            "home": 11,
+            "away": 11
           },
           "corners": {
-            "home": 1,
+            "home": 4,
             "away": 3
           },
           "fouls": {
-            "home": 7,
-            "away": 3
+            "home": 12,
+            "away": 7
           },
           "offsides": {
-            "home": 2,
+            "home": 3,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
             "away": 0
           }
         },
-        "aiNotes": "En este momento, el partido entre Austria y Jordania se encuentra en el minuto 49, con Austria dominando el marcador 1-0 gracias al gol de Romano Schmid en el minuto 20, lo que les ha permitido mantener una ventaja constante desde entonces. En lo que resta del partido, es probable que Austria intente mantener su ventaja y buscar oportunidades de contraataque, mientras que Jordania puede intentar presionar más arriba en el campo para intentar empatar el partido.",
+        "aiNotes": "En el partido entre Austria y Jordania, el equipo austriaco se impuso con un marcador de 3-1, gracias a los goles de Romano Schmid, Yazan Alarab en propia puerta y un penal convertido por Arnautovic, mientras que Jordania solo pudo anotar a través de Ali Olwan. La victoria de Austria se debió en gran medida a su capacidad para aprovechar los errores defensivos de Jordania y mantener la presión constante a lo largo del partido, lo que les permitió obtener una ventaja significativa en el marcador.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021498"
       }
     },
     {
