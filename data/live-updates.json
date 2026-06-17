@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T00:04:01.925Z",
+  "generatedAt": "2026-06-17T05:13:48.620Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -4456,35 +4456,399 @@
     },
     {
       "slug": "argentina-vs-argelia",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021496",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 17,
+            "team": "home",
+            "scorer": "Messi",
+            "assist": "R. DE PAUL.",
+            "type": "goal"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "scorer": "Messi",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "scorer": "Messi",
+            "assist": "N. GONZALEZ.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Gonzalo MONTIEL",
+            "playerIn": "Nahuel MOLINA"
+          },
+          {
+            "minute": 55,
+            "team": "home",
+            "playerOut": "Lautaro MARTINEZ",
+            "playerIn": "Julian ALVAREZ"
+          },
+          {
+            "minute": 55,
+            "team": "home",
+            "playerOut": "Thiago ALMADA",
+            "playerIn": "Nico GONZALEZ"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Hicham BOUDAOUI",
+            "playerIn": "Houssem Aouar"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Anis HADJ MOUSSA",
+            "playerIn": "Riyad Mahrez"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Amine GOUIRI",
+            "playerIn": "Mohamed AMOURA"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Cristian ROMERO",
+            "playerIn": "Nicolas OTAMENDI"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Lionel MESSI",
+            "playerIn": "Nico PAZ"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Nabil Bentaleb",
+            "playerIn": "Ramiz ZERROUKI"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Ibrahim MAZA",
+            "playerIn": "Adil BOULBINA"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Emiliano MARTINEZ",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Gonzalo MONTIEL",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Lisandro MARTINEZ",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Cristian ROMERO",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Facundo MEDINA",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Rodrigo DE PAUL",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Alexis MAC ALLISTER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Enzo FERNANDEZ",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Lionel MESSI",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Thiago ALMADA",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Lautaro MARTINEZ",
+              "number": 22,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Luca ZIDANE",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Aissa MANDI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Rayan AIT-NOURI",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Rafik BELGHALI",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Ramy BENSEBAINI",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Fares CHAIBI",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Hicham BOUDAOUI",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Nabil Bentaleb",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Ibrahim MAZA",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Amine GOUIRI",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Anis HADJ MOUSSA",
+              "number": 11,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 10,
+            "away": 7
+          },
+          "corners": {
+            "home": 2,
+            "away": 2
+          },
+          "fouls": {
+            "home": 13,
+            "away": 8
+          },
+          "offsides": {
+            "home": 3,
+            "away": 1
+          }
+        },
         "aiNotes": "Argentina llega al partido con una forma reciente imponente, liderada por la genialidad de Lionel Messi, quien sigue siendo el jugador clave a seguir en el equipo, mientras que Algeria busca sorprender con la velocidad y habilidad de Mohamed Amoura, aunque su forma reciente ha sido irregular. Mi expectativa es que Argentina tenga la ventaja en este partido debido a su mayor experiencia y calidad en el conjunto, lo que les permitirá controlar el ritmo del juego y crear oportunidades claras de gol.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021496"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021496"
       }
     },
     {
       "slug": "austria-vs-jordania",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 49,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 20,
+            "team": "home",
+            "scorer": "Romano SCHMID",
+            "assist": "Xaver SCHLAGER.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Sasa KALAJDZIC",
+            "playerIn": "Marko ARNAUTOVIC"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Alexander SCHLAGER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Stefan POSCH",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "David ALABA",
+              "number": 8,
+              "position": "DEF"
+            },
+            {
+              "name": "Philipp Lienhart",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Phillip MWENE",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Xaver Schlager",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Nicolas SEIWALD",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Marcel SABITZER",
+              "number": 9,
+              "position": "MID"
+            },
+            {
+              "name": "Romano SCHMID",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Konrad LAIMER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Sasa KALAJDZIC",
+              "number": 14,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "YAZEED ABULAILA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "ABDALLAH NASIB",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "YAZAN ALARAB",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "MOHAMMAD ABUALNADI",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "EHSAN HADDAD",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "NOOR ALRAWABDEH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "MOHANNAD ABUTAHA",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "NIZAR ALRASHDAN",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "ALI OLWAN",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "MOUSA ALTAMARI",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "ODEH FAKHOURY",
+              "number": 11,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Austria llega al partido con una forma reciente irregular, pero cuenta con la experiencia y habilidad de Marcel Sabitzer, quien es clave para generar oportunidades de ataque, mientras que Jordania ha mostrado una defensa sólida en sus últimos partidos y confía en la velocidad y habilidad de Mousa Al-Taamari para sorprender a su oponente. Considero que Austria tiene una ligera ventaja debido a su mayor experiencia en competiciones internacionales y a la calidad de su plantel, lo que podría permitirle dominar el ritmo del partido y crear más oportunidades de gol.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 6,
+            "away": 8
+          },
+          "corners": {
+            "home": 1,
+            "away": 3
+          },
+          "fouls": {
+            "home": 7,
+            "away": 3
+          },
+          "offsides": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Austria y Jordania se encuentra en el minuto 49, con Austria dominando el marcador 1-0 gracias al gol de Romano Schmid en el minuto 20, lo que les ha permitido mantener una ventaja constante desde entonces. En lo que resta del partido, es probable que Austria intente mantener su ventaja y buscar oportunidades de contraataque, mientras que Jordania puede intentar presionar más arriba en el campo para intentar empatar el partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498"
       }
     },
