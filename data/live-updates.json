@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T10:10:45.952Z",
+  "generatedAt": "2026-06-17T17:22:31.977Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -4937,18 +4937,171 @@
     },
     {
       "slug": "portugal-vs-rd-congo",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 21,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
+        "goals": [
+          {
+            "minute": 6,
+            "team": "home",
+            "scorer": "João Neves",
+            "assist": "NETO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "home",
+            "player": "Bernardo",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "DIOGO COSTA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "TOMAS ARAUJO",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "RENATO VEIGA",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "JOAO CANCELO",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "NUNO MENDES",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "BRUNO FERNANDES",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "BERNARDO SILVA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "JOAO NEVES",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "VITINHA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "CRISTIANO RONALDO",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "PEDRO NETO",
+              "number": 18,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Lionel MPASI",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aaron WAN-BISSAKA",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Steve KAPUADI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Axel Tuanzebe",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Chancel MBEMBA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Arthur MASUAKU",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Ngalayel MUKAU",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Samuel Moutoussamy",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Edo Kayembe",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Cedric BAKAMBU",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Yoane WISSA",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Portugal se encuentra en una buena forma reciente gracias a la destacada actuación de Bruno Fernandes, mientras que Congo DR busca capitalizar la velocidad y habilidad de Yoane Wissa para sorprender a su oponente. La ventaja en este partido parece estar del lado de Portugal, debido a su mayor experiencia y sólida estructura defensiva, lo que podría limitar las oportunidades de ataque del Congo DR y permitirle controlar el ritmo del juego.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 2,
+            "away": 2
+          },
+          "corners": {
+            "home": 0,
+            "away": 1
+          },
+          "fouls": {
+            "home": 1,
+            "away": 0
+          },
+          "offsides": {
+            "home": 1,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, Portugal lleva la ventaja en el marcador con un gol de João Neves anotado en el minuto 6, y parece que están dominando el ritmo del partido, aunque la tarjeta amarilla para Bernardo en el minuto 13 les ha obligado a tener algo más de cautela. A medida que avanza el partido, es probable que Congo DR intente aumentar la presión para empatar, lo que podría abrir espacios para que Portugal aproveche sus oportunidades de contraataque y amplíe su ventaja.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502"
       }
     },
