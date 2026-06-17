@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T21:34:49.948Z",
+  "generatedAt": "2026-06-17T23:07:26.405Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -5186,10 +5186,9 @@
     },
     {
       "slug": "inglaterra-vs-croacia",
-      "status": "live",
-      "homeScore": 3,
+      "status": "finished",
+      "homeScore": 4,
       "awayScore": 2,
-      "minute": 69,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507",
       "confidence": 0.97,
       "detail": {
@@ -5218,6 +5217,7 @@
             "minute": 47,
             "team": "home",
             "scorer": "Bellingham",
+            "assist": "Elliot ANDERSON.",
             "type": "goal"
           },
           {
@@ -5225,6 +5225,13 @@
             "team": "away",
             "scorer": "Petar MUSA",
             "assist": "PERIŠIĆ.",
+            "type": "goal"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "scorer": "Rashford",
+            "assist": "SAKA.",
             "type": "goal"
           }
         ],
@@ -5247,6 +5254,48 @@
             "team": "away",
             "playerOut": "Luka VUSKOVIC",
             "playerIn": "Marco PASALIC"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Declan RICE",
+            "playerIn": "Morgan ROGERS"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Noni MADUEKE",
+            "playerIn": "Bukayo SAKA"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Anthony GORDON",
+            "playerIn": "Marcus RASHFORD"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Mario PASALIC",
+            "playerIn": "Andrej KRAMARIC"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Martin BATURINA",
+            "playerIn": "Nikola VLASIC"
+          },
+          {
+            "minute": 79,
+            "team": "home",
+            "playerOut": "Jude BELLINGHAM",
+            "playerIn": "Djed SPENCE"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "John STONES",
+            "playerIn": "Marc GUEHI"
           }
         ],
         "lineup": {
@@ -5367,37 +5416,167 @@
         },
         "stats": {
           "shots": {
-            "home": 19,
-            "away": 4
+            "home": 22,
+            "away": 10
           },
           "corners": {
             "home": 8,
-            "away": 1
+            "away": 2
           },
           "fouls": {
-            "home": 8,
-            "away": 8
+            "home": 10,
+            "away": 12
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Inglaterra y Croacia se encuentra muy disputado, con Inglaterra liderando el marcador 3-2 gracias a los goles de Kane en dos ocasiones y Bellingham, mientras que Croacia ha respondido con los goles de Martin Baturina y Petar Musa. A medida que el partido avanza, es probable que Croacia intente presionar en busca del empate, lo que podría obligar a Inglaterra a reforzar su defensa y buscar oportunidades de contraataque para sellar la victoria.",
+        "aiNotes": "En el partido entre Inglaterra y Croacia, Inglaterra se impuso con un marcador de 4-2, con goles clave de Kane en dos ocasiones y contribuciones importantes de Bellingham y Rashford. La victoria de Inglaterra se debió en gran medida a su sólido rendimiento táctico y su capacidad para capitalizar los errores defensivos de Croacia, lo que les permitió mantener el control del partido a lo largo de gran parte del encuentro.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021507"
       }
     },
     {
       "slug": "ghana-vs-panama",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 6,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Lawrence Ati ZIGI",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jonas ADJETEY",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Gideon MENSAH",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Jerome OPOKU",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Marvin SENAYA",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Caleb YIRENKYI",
+              "number": 3,
+              "position": "MID"
+            },
+            {
+              "name": "Antoine SEMENYO",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Elisha OWUSU",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Jordan AYEW",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Kamaldeen SULEMANA",
+              "number": 22,
+              "position": "FWD"
+            },
+            {
+              "name": "Ernest NUAMAH",
+              "number": 24,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Orlando MOSQUERA",
+              "number": 22,
+              "position": "GK"
+            },
+            {
+              "name": "Cesar BLACKMAN",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Jose CORDOBA",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Jiovany RAMOS",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Carlos HARVEY",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Andres ANDRADE",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Amir MURILLO",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Cristian MARTINEZ",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Jose Luis RODRIGUEZ",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Edgar Yoel BARCENAS",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Cecilio Waterman",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Ghana cuenta con la ventaja de tener a Mohammed Kudus, un jugador clave que ha demostrado su capacidad para marcar goles decisivos, mientras que Panama se apoya en la experiencia y habilidad de Adalberto Carrasquilla para controlar el ritmo del juego. En este encuentro, Ghana podría tener una ligera ventaja debido a su capacidad para sorprender a sus oponentes con su velocidad y agresividad en el ataque, lo que podría poner en dificultades a la defensa panameña.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 0,
+            "away": 2
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Ghana y Panamá se encuentra en un empate sin goles, con ambos equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado dominar claramente el juego. A medida que avanza el partido, es probable que uno de los equipos intente aumentar la presión para intentar anotar el primer gol, lo que podría cambiar el curso del juego y darle una ventaja significativa en el marcador.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510"
       }
     },
