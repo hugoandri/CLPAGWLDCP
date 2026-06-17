@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T17:22:31.977Z",
+  "generatedAt": "2026-06-17T19:35:56.521Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -4937,10 +4937,9 @@
     },
     {
       "slug": "portugal-vs-rd-congo",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
-      "awayScore": 0,
-      "minute": 21,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502",
       "confidence": 0.97,
       "detail": {
@@ -4951,6 +4950,13 @@
             "scorer": "João Neves",
             "assist": "NETO.",
             "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "away",
+            "scorer": "Yoane WISSA",
+            "assist": "Arthur MASUAKU.",
+            "type": "goal"
           }
         ],
         "cards": [
@@ -4959,9 +4965,82 @@
             "team": "home",
             "player": "Bernardo",
             "type": "yellow"
+          },
+          {
+            "minute": 32,
+            "team": "away",
+            "player": "Chancel MBEMBA",
+            "type": "yellow"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "player": "Semedo",
+            "type": "yellow"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "player": "Tomás A.",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "BERNARDO SILVA",
+            "playerIn": "FRANCISCO CONCEICAO"
+          },
+          {
+            "minute": 57,
+            "team": "away",
+            "playerOut": "Ngalayel MUKAU",
+            "playerIn": "Noah SADIKI"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "PEDRO NETO",
+            "playerIn": "RAFAEL LEAO"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "NUNO MENDES",
+            "playerIn": "NELSON SEMEDO"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Edo Kayembe",
+            "playerIn": "Charles PICKEL"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Arthur MASUAKU",
+            "playerIn": "Joris KAYEMBE"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "VITINHA",
+            "playerIn": "GONCALO RAMOS"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Aaron WAN-BISSAKA",
+            "playerIn": "Gedeon KALULU"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Cedric BAKAMBU",
+            "playerIn": "Simon BANZA"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -5080,29 +5159,29 @@
         },
         "stats": {
           "shots": {
-            "home": 2,
-            "away": 2
+            "home": 7,
+            "away": 8
           },
           "corners": {
-            "home": 0,
-            "away": 1
+            "home": 5,
+            "away": 4
           },
           "fouls": {
-            "home": 1,
-            "away": 0
+            "home": 6,
+            "away": 9
           },
           "offsides": {
-            "home": 1,
-            "away": 1
+            "home": 3,
+            "away": 2
           },
           "yellowCards": {
-            "home": 1,
-            "away": 0
+            "home": 3,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, Portugal lleva la ventaja en el marcador con un gol de João Neves anotado en el minuto 6, y parece que están dominando el ritmo del partido, aunque la tarjeta amarilla para Bernardo en el minuto 13 les ha obligado a tener algo más de cautela. A medida que avanza el partido, es probable que Congo DR intente aumentar la presión para empatar, lo que podría abrir espacios para que Portugal aproveche sus oportunidades de contraataque y amplíe su ventaja.",
+        "aiNotes": "En el partido entre Portugal y la República Democrática del Congo, el resultado final fue un empate 1-1, con goles de João Neves para Portugal en el minuto 6 y de Yoane Wissa para la República Democrática del Congo en el minuto 50. La igualdad en el marcador refleja un encuentro muy disputado y tácticamente bien equilibrado, donde ambas selecciones demostraron ser capaces de crear oportunidades de gol y defenderse con solidez.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021502"
       }
     },
     {
