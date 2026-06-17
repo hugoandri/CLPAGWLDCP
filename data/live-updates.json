@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T19:35:56.521Z",
+  "generatedAt": "2026-06-17T21:34:49.948Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -5186,18 +5186,201 @@
     },
     {
       "slug": "inglaterra-vs-croacia",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 3,
+      "awayScore": 2,
+      "minute": 69,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 12,
+            "team": "home",
+            "scorer": "Kane",
+            "type": "penalty"
+          },
+          {
+            "minute": 36,
+            "team": "away",
+            "scorer": "Martin BATURINA",
+            "assist": "Petar SUCIC.",
+            "type": "goal"
+          },
+          {
+            "minute": 42,
+            "team": "home",
+            "scorer": "Kane",
+            "assist": "Declan RICE.",
+            "type": "goal"
+          },
+          {
+            "minute": 47,
+            "team": "home",
+            "scorer": "Bellingham",
+            "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "away",
+            "scorer": "Petar MUSA",
+            "assist": "PERIŠIĆ.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "Luka MODRIC",
+            "playerIn": "Mateo KOVACIC"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Petar Musa",
+            "playerIn": "Igor MATANOVIC"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Luka VUSKOVIC",
+            "playerIn": "Marco PASALIC"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Jordan PICKFORD",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ezri KONSA",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Nico OREILLY",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "John STONES",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Reece JAMES",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Declan RICE",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Elliot ANDERSON",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Jude BELLINGHAM",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Harry KANE",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Anthony GORDON",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Noni MADUEKE",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Dominik LIVAKOVIC",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Josip STANISIC",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Josko GVARDIOL",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Josip SUTALO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Luka VUSKOVIC",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Luka MODRIC",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Mario PASALIC",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Martin BATURINA",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Petar SUCIC",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Ivan PERISIC",
+              "number": 14,
+              "position": "FWD"
+            },
+            {
+              "name": "Petar Musa",
+              "number": 26,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Inglaterra cuenta con un rendimiento estable en los últimos partidos y se apoya en la habilidad de Jude Bellingham para generar oportunidades de ataque, mientras que Croacia busca recuperar su nivel competitivo con la experiencia y el liderazgo de Luka Modrić. En este encuentro, Inglaterra parece tener una ligera ventaja debido a su consistencia en la forma reciente y la solidez de su defensa, lo que podría permitirle controlar el ritmo del partido y aprovechar los errores de un equipo croata que busca encontrar su ritmo.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 19,
+            "away": 4
+          },
+          "corners": {
+            "home": 8,
+            "away": 1
+          },
+          "fouls": {
+            "home": 8,
+            "away": 8
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Inglaterra y Croacia se encuentra muy disputado, con Inglaterra liderando el marcador 3-2 gracias a los goles de Kane en dos ocasiones y Bellingham, mientras que Croacia ha respondido con los goles de Martin Baturina y Petar Musa. A medida que el partido avanza, es probable que Croacia intente presionar en busca del empate, lo que podría obligar a Inglaterra a reforzar su defensa y buscar oportunidades de contraataque para sellar la victoria.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507"
       }
     },
