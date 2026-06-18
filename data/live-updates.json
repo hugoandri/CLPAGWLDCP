@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T06:31:54.608Z",
+  "generatedAt": "2026-06-18T17:40:13.984Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -5930,18 +5930,226 @@
     },
     {
       "slug": "chequia-vs-sudafrica",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 79,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021440",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 6,
+            "team": "home",
+            "scorer": "Michal SADILEK",
+            "assist": "Alexandr SOJKA.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 33,
+            "team": "away",
+            "player": "Mokoena",
+            "type": "yellow"
+          },
+          {
+            "minute": 40,
+            "team": "away",
+            "player": "Thalente MBATHA",
+            "type": "yellow"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "player": "Ladislav KREJCI",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Jayden ADAMS",
+            "playerIn": "Relebohile MOFOKENG"
+          },
+          {
+            "minute": 55,
+            "team": "home",
+            "playerOut": "Vladimir DARIDA",
+            "playerIn": "Pavel SULC"
+          },
+          {
+            "minute": 55,
+            "team": "home",
+            "playerOut": "Alexandr SOJKA",
+            "playerIn": "Jaroslav ZELENY"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Iqraam RAYNERS",
+            "playerIn": "Evidence MAKGOPA"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "playerOut": "Adam HLOZEK",
+            "playerIn": "Lukas PROVOD"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "playerOut": "Michal SADILEK",
+            "playerIn": "Tomas SOUCEK"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "playerOut": "Lukas CERV",
+            "playerIn": "David Zima"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Matej KOVAR",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tomas HOLES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Robin HRANAC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Vladimir COUFAL",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Ladislav KREJCI",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Vladimir DARIDA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Lukas CERV",
+              "number": 12,
+              "position": "MID"
+            },
+            {
+              "name": "Michal SADILEK",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Alexandr SOJKA",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Adam HLOZEK",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Patrik Schick",
+              "number": 10,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Ronwen WILLIAMS",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aubrey MODIBA",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Mbekezeli MBOKAZI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Khuliso MUDAU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Ime OKON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Teboho MOKOENA",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Thalente MBATHA",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Jayden ADAMS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Oswin APPOLLIS",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Thapelo MASEKO",
+              "number": 12,
+              "position": "FWD"
+            },
+            {
+              "name": "Iqraam RAYNERS",
+              "number": 15,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de rendimiento, ya que República Checa ha demostrado una gran solidez defensiva en su forma reciente, gracias en parte al aporte goleador de Patrik Schick, mientras que Sudáfrica ha mostrado una inconsistencia en sus últimos partidos, aunque cuenta con la velocidad y habilidad de Percy Tau para generar oportunidades de ataque. En este encuentro, espero que República Checa tenga una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría permitirle controlar el ritmo del juego y aprovechar los errores de Sudáfrica para anotar goles decisivos.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 11,
+            "away": 10
+          },
+          "corners": {
+            "home": 4,
+            "away": 4
+          },
+          "fouls": {
+            "home": 10,
+            "away": 8
+          },
+          "offsides": {
+            "home": 1,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Czechia y Sudáfrica se encuentra con un marcador de 1-0 a favor de Czechia, gracias al gol de Michal Sadilek en el minuto 6, y el equipo checo parece mantener el control del juego, aunque Sudáfrica ha intentado igualar con algunos intentos. Con el tiempo que resta, es probable que Sudáfrica intente presionar más arriba en busca del empate, lo que podría dejar espacios para que Czechia contrataque y amplíe su ventaja.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021440"
       }
     },
