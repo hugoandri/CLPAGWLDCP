@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T01:42:40.667Z",
+  "generatedAt": "2026-06-18T06:31:54.608Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -5674,19 +5674,258 @@
     },
     {
       "slug": "uzbekistan-vs-colombia",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 3,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021504",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 40,
+            "team": "away",
+            "scorer": "Daniel MUNOZ",
+            "assist": "Luis DIAZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "scorer": "Abbosbek FAYZULLAEV",
+            "type": "goal"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "scorer": "Luis DIAZ",
+            "assist": "Gustavo PUERTA.",
+            "type": "goal"
+          },
+          {
+            "minute": 99,
+            "team": "away",
+            "scorer": "Jaminton CAMPAZ",
+            "assist": "Cucho HERNANDEZ.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 7,
+            "team": "away",
+            "player": "J. Mojica",
+            "type": "yellow"
+          },
+          {
+            "minute": 34,
+            "team": "home",
+            "player": "Khusanov",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Sherzod NASRULLAEV",
+            "playerIn": "Farrukh SAYFIEV"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Oston URUNOV",
+            "playerIn": "Dostonbek Khamdamov"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "James RODRIGUEZ",
+            "playerIn": "Jaminton CAMPAZ"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Rustam ASHURMATOV",
+            "playerIn": "Jakhongir UROZOV"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Abbosbek FAYZULLAEV",
+            "playerIn": "Azizbek AMONOV"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Luis SUAREZ",
+            "playerIn": "Cucho HERNANDEZ"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Gustavo PUERTA",
+            "playerIn": "Richard RIOS"
+          },
+          {
+            "minute": 93,
+            "team": "home",
+            "playerOut": "Eldor SHOMURODOV",
+            "playerIn": "Igor Sergeev"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "playerOut": "Luis DIAZ",
+            "playerIn": "Andres GOMEZ"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "playerOut": "Jhon ARIAS",
+            "playerIn": "Kevin CASTANO"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Utkir YUSUPOV",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Abdukodir KHUSANOV",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Rustam ASHURMATOV",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Sherzod NASRULLAEV",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulla ABDULLAEV",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Behruzjon KARIMOV",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Akmal MOZGOVOY",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Otabek Shukurov",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Oston URUNOV",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Abbosbek FAYZULLAEV",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Eldor SHOMURODOV",
+              "number": 14,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Camilo VARGAS",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Daniel MUNOZ",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Jhon LUCUMI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Gustavo PUERTA",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Johan MOJICA",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Davinson SANCHEZ",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "James RODRIGUEZ",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Jhon ARIAS",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Jefferson LERMA",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Luis DIAZ",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Luis SUAREZ",
+              "number": 25,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 8,
+            "away": 15
+          },
+          "corners": {
+            "home": 3,
+            "away": 4
+          },
+          "fouls": {
+            "home": 13,
+            "away": 10
+          },
+          "offsides": {
+            "home": 0,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
+          }
+        },
         "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Colombia presenta una sólida forma reciente y cuenta con el talento de Luis Díaz, mientras que Uzbekistan busca capitalizar la habilidad goleadora de Eldor Shomurodov para sorprender a su oponente. La ventaja parece estar del lado de Colombia debido a su mayor experiencia y solidez en el juego colectivo, lo que podría ser demasiado para la defensa uzbeka y permitirle controlar el ritmo del partido.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021504"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021504"
       }
     },
     {
