@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T17:40:13.984Z",
+  "generatedAt": "2026-06-18T19:57:43.983Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -5930,10 +5930,9 @@
     },
     {
       "slug": "chequia-vs-sudafrica",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
-      "awayScore": 0,
-      "minute": 79,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021440",
       "confidence": 0.97,
       "detail": {
@@ -5944,6 +5943,12 @@
             "scorer": "Michal SADILEK",
             "assist": "Alexandr SOJKA.",
             "type": "goal"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "scorer": "Mokoena",
+            "type": "penalty"
           }
         ],
         "cards": [
@@ -6008,6 +6013,12 @@
             "team": "home",
             "playerOut": "Lukas CERV",
             "playerIn": "David Zima"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Thapelo MASEKO",
+            "playerIn": "Kamogelo SEBELEBELE"
           }
         ],
         "lineup": {
@@ -6128,19 +6139,19 @@
         },
         "stats": {
           "shots": {
-            "home": 11,
-            "away": 10
+            "home": 14,
+            "away": 17
           },
           "corners": {
-            "home": 4,
-            "away": 4
+            "home": 5,
+            "away": 5
           },
           "fouls": {
-            "home": 10,
-            "away": 8
+            "home": 11,
+            "away": 9
           },
           "offsides": {
-            "home": 1,
+            "home": 2,
             "away": 3
           },
           "yellowCards": {
@@ -6148,25 +6159,159 @@
             "away": 2
           }
         },
-        "aiNotes": "En este momento, el partido entre Czechia y Sudáfrica se encuentra con un marcador de 1-0 a favor de Czechia, gracias al gol de Michal Sadilek en el minuto 6, y el equipo checo parece mantener el control del juego, aunque Sudáfrica ha intentado igualar con algunos intentos. Con el tiempo que resta, es probable que Sudáfrica intente presionar más arriba en busca del empate, lo que podría dejar espacios para que Czechia contrataque y amplíe su ventaja.",
+        "aiNotes": "El partido entre Chequia y Sudafrica terminó con un empate de 1-1, con Michal Sadilek anotando para Chequia en el minuto 6 y Mokoena igualando para Sudafrica con un penal en el minuto 83. El empate puede considerarse un resultado sorprendente, ya que Chequia comenzó con fuerza pero no pudo mantener su ventaja ante un Sudafrica que luchó hasta el final y logró igualar gracias a la oportunidad del penal.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021440"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021440"
       }
     },
     {
       "slug": "suiza-vs-bosnia-herzegovina",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 42,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021446",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Gregor KOBEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Silvan WIDMER",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Nico ELVEDI",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Manuel AKANJI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo RODRIGUEZ",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Remo FREULER",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Granit XHAKA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Michel AEBISCHER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Fabian RIEDER",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Breel EMBOLO",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Dan NDOYE",
+              "number": 11,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Nikola VASILJ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tarik MUHAREMOVIC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Sead KOLASINAC",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Amar DEDIC",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Nikola KATIC",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Benjamin TAHIROVIC",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Ivan SUNJIC",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Amar MEMIC",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Ermedin DEMIROVIC",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Edin DZEKO",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Kerim ALAJBEGOVIC",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Suiza se encuentra en una buena forma reciente y cuenta con la experiencia y habilidad de Granit Xhaka, mientras que Bosnia y Herzegovina busca sorprender con la velocidad y habilidad de Ermedin Demirović. Sin embargo, considero que Suiza tiene la ventaja en este partido debido a su mayor experiencia en competiciones internacionales y su sólida defensa, lo que podría limitar las opciones de ataque de Bosnia y Herzegovina.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 4,
+            "away": 3
+          },
+          "corners": {
+            "home": 4,
+            "away": 2
+          },
+          "fouls": {
+            "home": 3,
+            "away": 8
+          },
+          "offsides": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Suiza y Bosnia y Herzegovina se encuentra empatado a cero goles, con ambos equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado anotar, lo que refleja un encuentro muy equilibrado hasta ahora. A medida que el partido avanza, es probable que ambos equipos intenten aumentar la intensidad en su ataque para romper el empate y tomar la iniciativa en el marcador.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021446"
       }
     },
