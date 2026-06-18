@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T23:07:26.405Z",
+  "generatedAt": "2026-06-18T01:42:40.667Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -5439,16 +5439,96 @@
     },
     {
       "slug": "ghana-vs-panama",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 1,
       "awayScore": 0,
-      "minute": 6,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 95,
+            "team": "home",
+            "scorer": "Caleb YIRENKYI",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 16,
+            "team": "home",
+            "player": "Caleb YIRENKYI",
+            "type": "yellow"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "player": "Cesar BLACKMAN",
+            "type": "yellow"
+          },
+          {
+            "minute": 99,
+            "team": "away",
+            "player": "Carlos HARVEY",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Lawrence Ati ZIGI",
+            "playerIn": "Benjamin ASARE"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "Kamaldeen SULEMANA",
+            "playerIn": "Brandon THOMAS-ASANTE"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "Ernest NUAMAH",
+            "playerIn": "Abdul FATAWU"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Cecilio Waterman",
+            "playerIn": "Jose FAJARDO"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Cristian MARTINEZ",
+            "playerIn": "Azarias LONDONO"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Jose Luis RODRIGUEZ",
+            "playerIn": "Ismael DIAZ"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "playerOut": "Elisha OWUSU",
+            "playerIn": "Kwasi SIBO"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "Jordan AYEW",
+            "playerIn": "Prince ADU"
+          },
+          {
+            "minute": 90,
+            "team": "away",
+            "playerOut": "Cesar BLACKMAN",
+            "playerIn": "Anibal GODOY"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -5567,17 +5647,29 @@
         },
         "stats": {
           "shots": {
-            "home": 0,
+            "home": 8,
+            "away": 11
+          },
+          "corners": {
+            "home": 2,
             "away": 2
           },
+          "fouls": {
+            "home": 8,
+            "away": 9
+          },
           "offsides": {
+            "home": 4,
+            "away": 1
+          },
+          "yellowCards": {
             "home": 1,
-            "away": 0
+            "away": 2
           }
         },
-        "aiNotes": "En este momento, el partido entre Ghana y Panamá se encuentra en un empate sin goles, con ambos equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado dominar claramente el juego. A medida que avanza el partido, es probable que uno de los equipos intente aumentar la presión para intentar anotar el primer gol, lo que podría cambiar el curso del juego y darle una ventaja significativa en el marcador.",
+        "aiNotes": "En el partido entre Ghana y Panamá, Caleb Yirenkyi anotó el gol de la victoria en el minuto 95, después de que había recibido una tarjeta amarilla en el minuto 16, lo que hizo que el encuentro terminara 1-0 a favor de Ghana. La victoria de Ghana se debió en gran medida a su capacidad para mantener la posesión y crear oportunidades claras de gol, lo que les permitió aprovechar el momento decisivo en el tiempo extra para obtener los tres puntos.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021510"
       }
     },
     {
