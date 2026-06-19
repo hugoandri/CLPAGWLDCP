@@ -102,6 +102,17 @@ export interface LineupPlayer {
   position?: LineupPosition;
 }
 
+/** Jugador de la nómina completa de una selección (titulares + suplentes). */
+export interface SquadPlayer {
+  id: string;
+  name: string;
+  number?: number;
+  position?: LineupPosition;
+  starter: boolean;
+  captain: boolean;
+  photoUrl?: string;
+}
+
 export interface MatchStats {
   shots?: { home: number; away: number };
   corners?: { home: number; away: number };

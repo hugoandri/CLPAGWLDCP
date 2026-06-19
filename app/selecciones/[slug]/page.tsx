@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { teams, getTeam, getTeamsByGroup } from "@/data/teams";
 import { matches, getUpcomingMatchesByTeam } from "@/data/matches";
 import { getTeamNote, type TeamPerformanceTrend } from "@/data/team-notes";
+import { getSquad } from "@/data/squads";
 import Flag from "@/components/Flag";
+import SquadList from "@/components/SquadList";
 import { getPrediction } from "@/data/predictions";
 import type { FormResult } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -81,6 +83,7 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
 
   const prediction = getPrediction(team.slug);
   const teamNote = getTeamNote(team.slug);
+  const squad = getSquad(team.slug);
   const upcoming = getUpcomingMatchesByTeam(team.slug, 3);
   const rivals = getTeamsByGroup(team.group).filter((t) => t.slug !== team.slug);
 
@@ -243,6 +246,26 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
                 </p>
               </article>
             </div>
+          </section>
+
+          {/* Nómina */}
+          <section className="card p-6">
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="section-title text-xl">Nómina</h2>
+              {squad && (
+                <span className="chip bg-slate-100 text-slate-600 dark:bg-white/10 dark:text-slate-300">
+                  {squad.length} jugadores
+                </span>
+              )}
+            </div>
+            {squad ? (
+              <SquadList players={squad} />
+            ) : (
+              <p className="text-sm text-slate-500 dark:text-slate-400">
+                La nómina se publica en cuanto {team.name} dispute su primer partido del
+                torneo.
+              </p>
+            )}
           </section>
 
           {/* Fortalezas (gráfico) */}

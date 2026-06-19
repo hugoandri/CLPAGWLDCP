@@ -31,9 +31,9 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
           # Only commit if something beyond generatedAt changed
-          REAL_DIFF=$(git diff data/live-updates.json | grep '^[+-]' | grep -v '^---' | grep -v '^+++' | grep -v '"generatedAt"')
+          REAL_DIFF=$( { git diff data/live-updates.json; git diff data/squads.json; } | grep '^[+-]' | grep -v '^---' | grep -v '^+++' | grep -v '"generatedAt"')
           if [ -n "$REAL_DIFF" ]; then
-            git add data/live-updates.json
+            git add data/live-updates.json data/squads.json
             git commit -m "data: update live match data"
             git push origin HEAD:main || echo "Push skipped — remote ahead, next run will retry"
           fi

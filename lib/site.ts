@@ -19,7 +19,7 @@ export const siteConfig = {
 export const mainNav = [
   { href: "/", label: "Inicio" },
   { href: "/partidos", label: "Partidos" },
-  { href: "/tabla", label: "Tabla" },
+  { href: "/tabla", label: "Tablas" },
   { href: "/predicciones", label: "Predicciones" },
   { href: "/selecciones", label: "Selecciones" },
   { href: "/tendencias", label: "Tendencias" },

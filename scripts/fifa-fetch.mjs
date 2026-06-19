@@ -241,6 +241,22 @@ function extractLineup(liveMatch, side) {
     }));
 }
 
+/** Nómina completa del equipo (titulares Status=1 + suplentes Status=2), no solo el 11 inicial. */
+function extractSquad(liveMatch, side) {
+  const team = side === "home" ? liveMatch.HomeTeam : liveMatch.AwayTeam;
+  if (!team?.Players?.length) return [];
+
+  return team.Players.map((p) => ({
+    id: String(p.IdPlayer ?? ""),
+    name: p.PlayerName?.[0]?.Description ?? p.ShortName?.[0]?.Description ?? "Desconocido",
+    ...(p.ShirtNumber != null ? { number: p.ShirtNumber } : {}),
+    ...(POS[p.Position] ? { position: POS[p.Position] } : {}),
+    starter: p.Status === 1,
+    captain: Boolean(p.Captain),
+    ...(p.PlayerPicture?.PictureUrl ? { photoUrl: p.PlayerPicture.PictureUrl } : {}),
+  }));
+}
+
 function extractSubs(liveMatch, side) {
   const team = side === "home" ? liveMatch.HomeTeam : liveMatch.AwayTeam;
   if (!team?.Substitutions) return [];
@@ -474,6 +490,15 @@ async function main() {
   const existing = JSON.parse(readFileSync(livePath, "utf-8"));
   const projectMatches = loadProjectMatches();
 
+  const squadsPath = join(ROOT, "data/squads.json");
+  let existingSquads = {};
+  try {
+    existingSquads = JSON.parse(readFileSync(squadsPath, "utf-8")).squads ?? {};
+  } catch {
+    // sin snapshot previo, arranca vacío
+  }
+  const squadsBySlug = new Map(Object.entries(existingSquads));
+
   console.log("→ Fetching all matches from FIFA API…");
   const allFifaMatches = await getAllMatches();
   const liveCount     = allFifaMatches.filter((m) => m.MatchStatus === 3).length;
@@ -562,6 +587,15 @@ async function main() {
       : [];
     const lineupHome = liveData ? extractLineup(liveData, "home") : [];
     const lineupAway = liveData ? extractLineup(liveData, "away") : [];
+
+    // Nómina completa (titulares + suplentes) — independiente del flujo de aiNotes/--apply
+    if (liveData) {
+      const evidenceUrl = `https://api.fifa.com/api/v3/live/football/${matchId}`;
+      const homeSquad = extractSquad(liveData, "home");
+      const awaySquad = extractSquad(liveData, "away");
+      if (homeSquad.length) squadsBySlug.set(homeSlug, { evidenceUrl, players: homeSquad });
+      if (awaySquad.length) squadsBySlug.set(awaySlug, { evidenceUrl, players: awaySquad });
+    }
     // FIFA API sometimes returns empty MatchTime. Fallback: derive from kickoff + elapsed
     let currentMinute = isLive ? parseMinute(liveData?.MatchTime ?? "") : undefined;
     if (isLive && !currentMinute && fm.Date) {
@@ -650,6 +684,14 @@ async function main() {
     console.log(`\nPreview → ${previewPath}`);
     console.log("Run with --apply to write live-updates.json");
   }
+
+  // squads.json no depende de Groq ni de --apply: es seguro escribirlo siempre.
+  const squadsOutput = {
+    generatedAt: new Date().toISOString(),
+    squads: Object.fromEntries(squadsBySlug),
+  };
+  writeFileSync(squadsPath, JSON.stringify(squadsOutput, null, 2));
+  console.log(`✓ squads.json updated (${squadsBySlug.size} selecciones)`);
 }
 
 main().catch((err) => {
