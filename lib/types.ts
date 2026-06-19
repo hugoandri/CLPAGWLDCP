@@ -111,6 +111,8 @@ export interface SquadPlayer {
   starter: boolean;
   captain: boolean;
   photoUrl?: string;
+  /** Club profesional actual (no viene de la API de FIFA, ver scripts/fetch-squad-clubs.py). */
+  club?: string;
 }
 
 export interface MatchStats {

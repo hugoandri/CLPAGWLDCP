@@ -588,13 +588,23 @@ async function main() {
     const lineupHome = liveData ? extractLineup(liveData, "home") : [];
     const lineupAway = liveData ? extractLineup(liveData, "away") : [];
 
-    // Nómina completa (titulares + suplentes) — independiente del flujo de aiNotes/--apply
+    // Nómina completa (titulares + suplentes) — independiente del flujo de aiNotes/--apply.
+    // El club profesional no viene de la API de FIFA (se carga aparte, ver
+    // scripts/fetch-squad-clubs.py), así que se preserva por IdPlayer en cada corrida.
     if (liveData) {
       const evidenceUrl = `https://api.fifa.com/api/v3/live/football/${matchId}`;
+      const withPreservedClub = (slug, freshPlayers) => {
+        const prevClubById = new Map(
+          (squadsBySlug.get(slug)?.players ?? []).map((p) => [p.id, p.club]),
+        );
+        return freshPlayers.map((p) =>
+          prevClubById.get(p.id) ? { ...p, club: prevClubById.get(p.id) } : p,
+        );
+      };
       const homeSquad = extractSquad(liveData, "home");
       const awaySquad = extractSquad(liveData, "away");
-      if (homeSquad.length) squadsBySlug.set(homeSlug, { evidenceUrl, players: homeSquad });
-      if (awaySquad.length) squadsBySlug.set(awaySlug, { evidenceUrl, players: awaySquad });
+      if (homeSquad.length) squadsBySlug.set(homeSlug, { evidenceUrl, players: withPreservedClub(homeSlug, homeSquad) });
+      if (awaySquad.length) squadsBySlug.set(awaySlug, { evidenceUrl, players: withPreservedClub(awaySlug, awaySquad) });
     }
     // FIFA API sometimes returns empty MatchTime. Fallback: derive from kickoff + elapsed
     let currentMinute = isLive ? parseMinute(liveData?.MatchTime ?? "") : undefined;

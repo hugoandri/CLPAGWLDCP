@@ -80,9 +80,10 @@ export default function SquadList({ players }: SquadListProps) {
                       </span>
                     )}
                   </p>
-                  <p className="text-xs text-slate-400">
+                  <p className="truncate text-xs text-slate-400">
                     {p.number != null ? `#${p.number} · ` : ""}
                     {p.starter ? "Titular" : "Suplente"}
+                    {p.club ? ` · ${p.club}` : ""}
                   </p>
                 </div>
               </li>
@@ -107,9 +108,10 @@ export default function SquadList({ players }: SquadListProps) {
                   <p className="truncate text-sm font-semibold text-navy dark:text-slate-100">
                     {p.name}
                   </p>
-                  <p className="text-xs text-slate-400">
+                  <p className="truncate text-xs text-slate-400">
                     {p.number != null ? `#${p.number} · ` : ""}
                     {p.starter ? "Titular" : "Suplente"}
+                    {p.club ? ` · ${p.club}` : ""}
                   </p>
                 </div>
               </li>
