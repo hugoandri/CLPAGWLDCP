@@ -8,7 +8,7 @@ import { getTeam } from "@/data/teams";
 import { getPrediction } from "@/data/predictions";
 import type { FormResult, Team, MatchDetail, GoalEvent, CardEvent, SubEvent, GoalType, CardType } from "@/lib/types";
 import type { CoverageEvent } from "@/lib/fifaLive";
-import { cn, formatDateLong, pctWidth } from "@/lib/utils";
+import { cn, pctWidth } from "@/lib/utils";
 import { siteConfig, DISCLAIMER_BETTING } from "@/lib/site";
 import { absoluteUrl, breadcrumbJsonLd } from "@/lib/seo";
 import AdSlot from "@/components/AdSlot";
@@ -16,6 +16,7 @@ import ProbBar from "@/components/ProbBar";
 import StatusBadge from "@/components/StatusBadge";
 import DisclaimerBox from "@/components/DisclaimerBox";
 import LocalTime from "@/components/LocalTime";
+import LocalDate from "@/components/LocalDate";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 import LiveAutoRefresh from "@/components/LiveAutoRefresh";
@@ -291,7 +292,9 @@ export default async function MatchPage({ params }: { params: { slug: string } }
             ) : (
               <LocalTime date={match.date} time={match.time} className="stat-num text-3xl font-extrabold sm:text-4xl" />
             )}
-            <p className="mt-2 text-xs text-slate-400">{formatDateLong(match.date)}</p>
+            <p className="mt-2 text-xs text-slate-400">
+              <LocalDate date={match.date} time={match.time} format="long" />
+            </p>
           </div>
           <TeamColumn team={away} side="Visitante" />
         </div>

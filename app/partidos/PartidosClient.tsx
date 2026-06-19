@@ -1,9 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { getTeam, GROUP_IDS } from "@/data/teams";
 import type { Match, MatchStatus } from "@/lib/types";
-import { formatDateShort } from "@/lib/utils";
+import { formatDateShort, matchLocalDateKey } from "@/lib/utils";
 import FilterTabs, { type FilterOption } from "@/components/FilterTabs";
 import SearchInput from "@/components/SearchInput";
 import MatchTable from "@/components/MatchTable";
@@ -19,9 +19,19 @@ const STATUS_OPTIONS: FilterOption[] = [
 ];
 
 export default function PartidosClient({ matches }: { matches: Match[] }) {
+  // `date`/`time` están en UTC. Antes de montar (SSR) usamos el día UTC crudo
+  // para no desincronizar con el render del servidor; tras montar, se corrige
+  // al día calendario de la zona horaria del navegador (igual que LocalTime).
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const dateKeyOf = useCallback(
+    (m: Match) => (mounted ? matchLocalDateKey(m.date, m.time) : m.date),
+    [mounted],
+  );
+
   const uniqueDates = useMemo(
-    () => Array.from(new Set(matches.map((m) => m.date))).sort(),
-    [matches],
+    () => Array.from(new Set(matches.map(dateKeyOf))).sort(),
+    [matches, dateKeyOf],
   );
   const [status, setStatus] = useState<StatusFilter>("all");
   const [group, setGroup] = useState<string>("all");
@@ -41,7 +51,7 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
     return matches.filter((m) => {
       if (status !== "all" && m.status !== status) return false;
       if (group !== "all" && m.group !== group) return false;
-      if (date !== "all" && m.date !== date) return false;
+      if (date !== "all" && dateKeyOf(m) !== date) return false;
       if (q) {
         const home = getTeam(m.homeSlug)?.name.toLowerCase() ?? "";
         const away = getTeam(m.awaySlug)?.name.toLowerCase() ?? "";
@@ -49,7 +59,7 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
       }
       return true;
     });
-  }, [matches, status, group, date, query]);
+  }, [matches, status, group, date, query, dateKeyOf]);
 
   return (
     <div className="space-y-5">

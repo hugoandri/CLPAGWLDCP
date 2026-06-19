@@ -1,12 +1,13 @@
 import Link from "next/link";
 import type { Match } from "@/lib/types";
 import { getTeam } from "@/data/teams";
-import { formatDayMonth, matchScoreLabel } from "@/lib/utils";
+import { matchScoreLabel } from "@/lib/utils";
 import MatchCard from "@/components/MatchCard";
 import StatusBadge from "@/components/StatusBadge";
 import ProbBar from "@/components/ProbBar";
 import Flag from "@/components/Flag";
 import LocalTime from "@/components/LocalTime";
+import LocalDate from "@/components/LocalDate";
 
 /** Tabla de partidos (desktop) + lista de tarjetas (móvil). */
 export default function MatchTable({ matches }: { matches: Match[] }) {
@@ -54,7 +55,7 @@ export default function MatchTable({ matches }: { matches: Match[] }) {
                     <StatusBadge status={m.status} minute={m.minute} />
                   </td>
                   <td className="whitespace-nowrap px-4 py-3 text-slate-500 dark:text-slate-400">
-                    <span className="stat-num">{formatDayMonth(m.date)}</span>
+                    <LocalDate date={m.date} time={m.time} format="dayMonth" className="stat-num" />
                     <LocalTime date={m.date} time={m.time} className="ml-1 text-slate-400" />
                   </td>
                   <td className="px-4 py-3 font-semibold text-slate-500 dark:text-slate-400">

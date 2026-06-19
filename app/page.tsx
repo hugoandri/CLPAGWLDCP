@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
-import MatchCard from "@/components/MatchCard";
 import ArticleCard from "@/components/ArticleCard";
 import LocalTime from "@/components/LocalTime";
+import LocalDate from "@/components/LocalDate";
+import TodayMatches from "@/components/TodayMatches";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
 import { teams, getTeam } from "@/data/teams";
@@ -15,7 +16,7 @@ import { join } from "node:path";
 import { readLiveUpdatesWithFIFA } from "@/lib/live";
 import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
-import { computeStandings, formatDayMonth } from "@/lib/utils";
+import { computeStandings } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
 import LiveAutoRefresh from "@/components/LiveAutoRefresh";
 import type { OpinionColumn } from "@/app/tendencias/TendenciasClient";
@@ -109,7 +110,6 @@ export default async function HomePage() {
   const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
 
   const todayStr = new Date().toISOString().slice(0, 10);
-  const todayMatches = freshMatches.filter((m) => m.date === todayStr);
   const liveCount = freshMatches.filter((m) => m.status === "live" || m.status === "halftime").length;
 
   const next = nextMatch ? { home: getTeam(nextMatch.homeSlug), away: getTeam(nextMatch.awaySlug) } : { home: null, away: null };
@@ -234,7 +234,7 @@ export default async function HomePage() {
                     {next.home.name} · {next.away.name}
                   </p>
                   <p className="mt-1 text-xs text-slate-400">
-                    {formatDayMonth(nextMatch!.date)} · <LocalTime date={nextMatch!.date} time={nextMatch!.time} /> · Gr. {nextMatch!.group}
+                    <LocalDate date={nextMatch!.date} time={nextMatch!.time} format="dayMonth" /> · <LocalTime date={nextMatch!.date} time={nextMatch!.time} /> · Gr. {nextMatch!.group}
                   </p>
                 </div>
               )}
@@ -261,7 +261,13 @@ export default async function HomePage() {
                     {live.home.name} · {live.away.name}
                   </p>
                   <p className="mt-1 text-xs text-slate-400">
-                    {liveMatch ? `EN VIVO · ${liveMatch.minute ?? ""}'` : `${formatDayMonth(lastFinished!.date)} · Finalizado`}
+                    {liveMatch ? (
+                      `EN VIVO · ${liveMatch.minute ?? ""}'`
+                    ) : (
+                      <>
+                        <LocalDate date={lastFinished!.date} time={lastFinished!.time} format="dayMonth" /> · Finalizado
+                      </>
+                    )}
                   </p>
                 </div>
               )}
@@ -321,22 +327,7 @@ export default async function HomePage() {
             </Link>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {todayMatches.slice(0, 2).map((m) => (
-              <MatchCard key={m.slug} match={m} />
-            ))}
-
-            {/* Anuncio in-feed entre tarjetas */}
-            <AdSlot
-              slotName="home-infeed"
-              format="in-feed"
-              className="sm:col-span-2 lg:col-span-1"
-            />
-
-            {todayMatches.slice(2).map((m) => (
-              <MatchCard key={m.slug} match={m} />
-            ))}
-          </div>
+          <TodayMatches matches={freshMatches} initialTodayKey={todayStr} />
         </section>
 
         {/* ───────── Tendencias + anuncio lateral (desktop) ───────── */}

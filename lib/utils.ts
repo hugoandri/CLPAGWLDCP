@@ -40,6 +40,20 @@ function parseISODate(iso: string): Date {
   return new Date(y, (m ?? 1) - 1, d ?? 1);
 }
 
+/**
+ * `date`/`time` de un partido están en UTC. Esta función devuelve el día
+ * calendario "YYYY-MM-DD" en la zona horaria del navegador (la misma que usa
+ * LocalTime para la hora), para no mostrar partidos con la fecha del día
+ * UTC cuando localmente caen en el día anterior o siguiente.
+ */
+export function matchLocalDateKey(date: string, time: string): string {
+  const instant = new Date(`${date}T${time}:00Z`);
+  const y = instant.getFullYear();
+  const m = String(instant.getMonth() + 1).padStart(2, "0");
+  const d = String(instant.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
 /** "jueves, 11 de junio de 2026" */
 export function formatDateLong(iso: string): string {
   const date = parseISODate(iso);

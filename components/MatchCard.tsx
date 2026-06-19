@@ -1,11 +1,12 @@
 import Link from "next/link";
 import type { Match, Team } from "@/lib/types";
 import { getTeam } from "@/data/teams";
-import { cn, formatDayMonth } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import ProbBar from "@/components/ProbBar";
 import StatusBadge from "@/components/StatusBadge";
 import Flag from "@/components/Flag";
 import LocalTime from "@/components/LocalTime";
+import LocalDate from "@/components/LocalDate";
 
 interface MatchCardProps {
   match: Match;
@@ -51,7 +52,7 @@ export default function MatchCard({ match, className }: MatchCardProps) {
       <div className="flex items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
         <StatusBadge status={match.status} minute={match.minute} />
         <span className="truncate font-medium">
-          Grupo {match.group} · {formatDayMonth(match.date)}
+          Grupo {match.group} · <LocalDate date={match.date} time={match.time} format="dayMonth" />
         </span>
       </div>
 
