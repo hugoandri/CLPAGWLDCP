@@ -109,14 +109,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${brand.variable} ${display.variable} ${body.variable}`} suppressHydrationWarning>
+    <html lang="es" className={`dark ${brand.variable} ${display.variable} ${body.variable}`}>
       <head>
-        {/* Aplica el tema guardado antes de pintar para evitar parpadeo. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&m)){document.documentElement.classList.add('dark');}}catch(e){}})();`,
-          }}
-        />
         {/* Google AdSense — debe estar en <head> para que el bot de verificación lo encuentre */}
         <script
           async

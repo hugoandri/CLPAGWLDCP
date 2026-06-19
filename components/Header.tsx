@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { mainNav, siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "@/components/ThemeToggle";
 
 function Logo() {
   return (
@@ -66,7 +65,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
