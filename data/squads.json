@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T05:27:17.262Z",
+  "generatedAt": "2026-06-19T20:12:42.383Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -1542,7 +1542,7 @@
       ]
     },
     "estados-unidos": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021458",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021462",
       "players": [
         {
           "id": "499913",
@@ -1635,14 +1635,14 @@
           "club": "Bayer Leverkusen"
         },
         {
-          "id": "390267",
-          "name": "Christian PULISIC",
-          "number": 10,
+          "id": "419082",
+          "name": "Ricardo PEPI",
+          "number": 9,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/34d1c247-2a09-4fd6-87bc-71ec687a54aa/PULISIC-Christian_390267",
-          "club": "Milan"
+          "photoUrl": "https://digitalhub.fifa.com/transform/2a7c4d85-fa83-40ec-a953-d4cebbd63480/PEPI-Ricardo_419082",
+          "club": "PSV Eindhoven"
         },
         {
           "id": "466624",
@@ -1753,16 +1753,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/8b0d52a9-62d1-4e23-9a23-e786cfde39dd/ROLDAN-Cristian_385994",
           "club": "Seattle Sounders FC"
-        },
-        {
-          "id": "419082",
-          "name": "Ricardo PEPI",
-          "number": 9,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2a7c4d85-fa83-40ec-a953-d4cebbd63480/PEPI-Ricardo_419082",
-          "club": "PSV Eindhoven"
         },
         {
           "id": "419055",
@@ -3633,7 +3623,7 @@
       ]
     },
     "australia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021463",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021462",
       "players": [
         {
           "id": "494557",
@@ -3696,16 +3686,6 @@
           "club": "Swansea City"
         },
         {
-          "id": "430452",
-          "name": "Connor METCALFE",
-          "number": 8,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a539f793-3d95-46b8-805e-67156152ac8b/METCALFE-Connor_430452",
-          "club": "FC St. Pauli"
-        },
-        {
           "id": "430440",
           "name": "Aiden ONEILL",
           "number": 13,
@@ -3726,6 +3706,16 @@
           "club": "Sydney FC"
         },
         {
+          "id": "321697",
+          "name": "Mathew LECKIE",
+          "number": 7,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/bc1b0683-9839-4c4e-acf1-2256bc2e58a3/LECKIE-Mathew_321697",
+          "club": "Melbourne City"
+        },
+        {
           "id": "498806",
           "name": "Mohamed TOURE",
           "number": 9,
@@ -3736,14 +3726,14 @@
           "club": "Norwich City"
         },
         {
-          "id": "486306",
-          "name": "Nestory IRANKUNDA",
-          "number": 17,
+          "id": "491166",
+          "name": "Nishan VELUPILLAY",
+          "number": 23,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ebc599f9-d929-4c6c-a60e-7f081cfb7bd6/IRANKUNDA-Nestory_486306",
-          "club": "Watford"
+          "photoUrl": "https://digitalhub.fifa.com/transform/27f30c93-f04b-4195-b105-4504c81abf6e/VELUPILLAY-Nishan_491166",
+          "club": "Melbourne Victory"
         },
         {
           "id": "339117",
@@ -3816,6 +3806,16 @@
           "club": "Colorado Rapids"
         },
         {
+          "id": "430452",
+          "name": "Connor METCALFE",
+          "number": 8,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/a539f793-3d95-46b8-805e-67156152ac8b/METCALFE-Connor_430452",
+          "club": "FC St. Pauli"
+        },
+        {
           "id": "430437",
           "name": "Cameron DEVLIN",
           "number": 14,
@@ -3834,16 +3834,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/7726492b-0996-47a2-aafd-bd362844d9df/IRVINE-Jackson_355775",
           "club": "FC St. Pauli"
-        },
-        {
-          "id": "321697",
-          "name": "Mathew LECKIE",
-          "number": 7,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/bc1b0683-9839-4c4e-acf1-2256bc2e58a3/LECKIE-Mathew_321697",
-          "club": "Melbourne City"
         },
         {
           "id": "404319",
@@ -3866,6 +3856,16 @@
           "club": "Castellón"
         },
         {
+          "id": "486306",
+          "name": "Nestory IRANKUNDA",
+          "number": 17,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/ebc599f9-d929-4c6c-a60e-7f081cfb7bd6/IRANKUNDA-Nestory_486306",
+          "club": "Watford"
+        },
+        {
           "id": "448015",
           "name": "Cristian VOLPATO",
           "number": 20,
@@ -3874,16 +3874,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e455ae41-95f0-454b-bd12-abdaffa68b7d/VOLPATO-Cristian_448015",
           "club": "Sassuolo"
-        },
-        {
-          "id": "491166",
-          "name": "Nishan VELUPILLAY",
-          "number": 23,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/27f30c93-f04b-4195-b105-4504c81abf6e/VELUPILLAY-Nishan_491166",
-          "club": "Melbourne Victory"
         },
         {
           "id": "518200",
