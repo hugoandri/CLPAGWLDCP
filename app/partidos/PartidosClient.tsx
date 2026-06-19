@@ -49,7 +49,7 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
       }
       return true;
     });
-  }, [status, group, date, query]);
+  }, [matches, status, group, date, query]);
 
   return (
     <div className="space-y-5">

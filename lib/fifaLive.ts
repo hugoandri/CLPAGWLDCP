@@ -367,15 +367,19 @@ export async function fetchFIFACoverage(slug: string): Promise<FIFACoverage | nu
             primary: playerName[String(ev.IdPlayer ?? "")] || "Penalti concedido",
           });
         } else if (ev.Type === 71) {
-          const rawDesc = String(ev.EventDescription ?? "");
+          const rawDesc = ev.EventDescription?.[0]?.Description ?? "";
           events.push({
             type: "var",
             minuteRaw: formatMin(minute),
             minuteOrder: parseMin(minute),
-            primary: varDescES[rawDesc] ?? rawDesc,
+            primary: varDescES[rawDesc] ?? rawDesc ?? "Revisión VAR",
           });
         }
       }
+
+      // Re-sort: penalty_awarded/var events above were appended after the
+      // initial sort, so the feed must be re-ordered to stay newest-first.
+      events.sort((a, b) => b.minuteOrder - a.minuteOrder);
     } else {
       // Fallback: try MatchStatistics field in live endpoint
       const statsArr: any[] = live.MatchStatistics ?? live.Statistics ?? [];
