@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T20:12:42.380Z",
+  "generatedAt": "2026-06-19T21:37:52.975Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -6952,10 +6952,9 @@
     },
     {
       "slug": "estados-unidos-vs-australia",
-      "status": "live",
+      "status": "finished",
       "homeScore": 2,
       "awayScore": 0,
-      "minute": 47,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021462",
       "confidence": 0.97,
       "detail": {
@@ -6985,6 +6984,36 @@
             "team": "away",
             "player": "Alessandro CIRCATI",
             "type": "yellow"
+          },
+          {
+            "minute": 56,
+            "team": "home",
+            "player": "Antonee ROBINSON",
+            "type": "yellow"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "player": "Folarin BALOGUN",
+            "type": "yellow"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "player": "Jacob ITALIANO",
+            "type": "yellow"
+          },
+          {
+            "minute": 89,
+            "team": "away",
+            "player": "Harry SOUTTAR",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "home",
+            "player": "Chris RICHARDS",
+            "type": "yellow"
           }
         ],
         "substitutions": [
@@ -7005,6 +7034,48 @@
             "team": "away",
             "playerOut": "Mohamed TOURE",
             "playerIn": "Nestory IRANKUNDA"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "playerOut": "Mathew LECKIE",
+            "playerIn": "Cristian VOLPATO"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Ricardo PEPI",
+            "playerIn": "Sebastian BERHALTER"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Paul OKON-ENGSTLER",
+            "playerIn": "Jackson IRVINE"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Sergino DEST",
+            "playerIn": "Joe SCALLY"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Antonee ROBINSON",
+            "playerIn": "Auston TRUSTY"
+          },
+          {
+            "minute": 96,
+            "team": "home",
+            "playerOut": "Folarin BALOGUN",
+            "playerIn": "Haji WRIGHT"
+          },
+          {
+            "minute": 96,
+            "team": "home",
+            "playerOut": "Weston McKENNIE",
+            "playerIn": "Giovanni REYNA"
           }
         ],
         "lineup": {
@@ -7125,25 +7196,29 @@
         },
         "stats": {
           "shots": {
-            "home": 9,
-            "away": 2
+            "home": 10,
+            "away": 5
           },
           "corners": {
-            "home": 3,
-            "away": 2
+            "home": 7,
+            "away": 4
           },
           "fouls": {
-            "home": 8,
-            "away": 6
+            "home": 11,
+            "away": 14
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
           },
           "yellowCards": {
-            "home": 0,
-            "away": 2
+            "home": 3,
+            "away": 4
           }
         },
-        "aiNotes": "En este momento del partido, Estados Unidos se encuentra en ventaja con un marcador de 2-0 sobre Australia, gracias a los goles de Cameron Burgess en el minuto 11 y Alex Freeman en el 43, lo que refleja el dominio estadounidense en el encuentro. Con la ventaja a su favor, Estados Unidos puede buscar mantener el control del partido y explotar los espacios dejados por la defensa australiana, que ya ha recibido dos tarjetas amarillas, lo que podría generar más oportunidades de ataque en lo que resta del partido.",
+        "aiNotes": "En el partido entre Estados Unidos y Australia, el equipo estadounidense se impuso con un marcador de 2-0 gracias a los goles de Cameron Burgess en el minuto 11 y Alex Freeman en el 43, mientras que el equipo australiano recibió varias tarjetas amarillas que afectaron su juego. La victoria de Estados Unidos se debió en gran medida a su sólido rendimiento táctico y a la eficiencia en la conversión de oportunidades de gol, lo que les permite avanzar con confianza en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021462"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021462"
       }
     },
     {
