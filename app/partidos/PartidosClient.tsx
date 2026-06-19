@@ -41,24 +41,26 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
   const groupOptions: FilterOption[] = useMemo(
     () => [
       { value: "all", label: "Todos los grupos" },
-      ...GROUP_IDS.map((g) => ({ value: g, label: `Grupo ${g}` })),
+      ...GROUP_IDS.map((g) => ({ value: g, label: g })),
     ],
     [],
   );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return matches.filter((m) => {
-      if (status !== "all" && m.status !== status) return false;
-      if (group !== "all" && m.group !== group) return false;
-      if (date !== "all" && dateKeyOf(m) !== date) return false;
-      if (q) {
-        const home = getTeam(m.homeSlug)?.name.toLowerCase() ?? "";
-        const away = getTeam(m.awaySlug)?.name.toLowerCase() ?? "";
-        if (!home.includes(q) && !away.includes(q)) return false;
-      }
-      return true;
-    });
+    return matches
+      .filter((m) => {
+        if (status !== "all" && m.status !== status) return false;
+        if (group !== "all" && m.group !== group) return false;
+        if (date !== "all" && dateKeyOf(m) !== date) return false;
+        if (q) {
+          const home = getTeam(m.homeSlug)?.name.toLowerCase() ?? "";
+          const away = getTeam(m.awaySlug)?.name.toLowerCase() ?? "";
+          if (!home.includes(q) && !away.includes(q)) return false;
+        }
+        return true;
+      })
+      .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
   }, [matches, status, group, date, query, dateKeyOf]);
 
   return (
