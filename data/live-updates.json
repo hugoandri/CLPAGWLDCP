@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T00:09:48.011Z",
+  "generatedAt": "2026-06-19T05:27:17.259Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -6717,19 +6717,237 @@
     },
     {
       "slug": "mexico-vs-corea-del-sur",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 50,
+            "team": "home",
+            "scorer": "Luis ROMO",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 4,
+            "team": "away",
+            "player": "Lee Kang In",
+            "type": "yellow"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "player": "PAIK Seungho",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 57,
+            "team": "away",
+            "playerOut": "LEE Jaesung",
+            "playerIn": "HWANG Heechan"
+          },
+          {
+            "minute": 57,
+            "team": "away",
+            "playerOut": "SON Heungmin",
+            "playerIn": "OH Hyeongyu"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Luis ROMO",
+            "playerIn": "Obed VARGAS"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Brian GUTIERREZ",
+            "playerIn": "Orbelin PINEDA"
+          },
+          {
+            "minute": 71,
+            "team": "away",
+            "playerOut": "KIM Moonhwan ",
+            "playerIn": "EOM Jisung"
+          },
+          {
+            "minute": 71,
+            "team": "away",
+            "playerOut": "SEOL Youngwoo",
+            "playerIn": "YANG Hyunjun "
+          },
+          {
+            "minute": 77,
+            "team": "away",
+            "playerOut": "PAIK Seungho",
+            "playerIn": "CHO Guesung"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Raul JIMENEZ",
+            "playerIn": "Santiago GIMENEZ"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Roberto ALVARADO",
+            "playerIn": "Israel REYES"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Julian QUINONES",
+            "playerIn": "Cesar HUERTA"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Raul RANGEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jorge SANCHEZ",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Edson ALVAREZ",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Johan VASQUEZ",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Jesus GALLARDO",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Erik LIRA",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Luis ROMO",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Brian GUTIERREZ",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Raul JIMENEZ",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Julian QUINONES",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Roberto ALVARADO",
+              "number": 25,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "KIM Seunggyu",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "LEE Hanbeom",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "KIM Minjae",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "KIM Moonhwan ",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "SEOL Youngwoo",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Gihyuk",
+              "number": 3,
+              "position": "MID"
+            },
+            {
+              "name": "HWANG Inbeom",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "PAIK Seungho",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Jaesung",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Kangin",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "SON Heungmin",
+              "number": 7,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 8,
+            "away": 9
+          },
+          "corners": {
+            "home": 0,
+            "away": 2
+          },
+          "fouls": {
+            "home": 9,
+            "away": 5
+          },
+          "offsides": {
+            "home": 3,
+            "away": 6
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 2
+          }
+        },
         "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque México cuenta con la ventaja de tener a Raúl Jiménez en su mejor momento, mientras que Corea del Sur confía en la habilidad y velocidad de Son Heung-min para crear oportunidades de gol. Espero que México tenga una ligera ventaja en el partido debido a su mayor experiencia en torneos internacionales y su sólida defensa, lo que podría limitar el impacto de Son Heung-min y darles la victoria.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021442"
       }
     },
     {
