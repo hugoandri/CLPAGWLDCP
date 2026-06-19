@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T22:38:28.821Z",
+  "generatedAt": "2026-06-19T23:49:29.703Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -7226,7 +7226,7 @@
       "status": "live",
       "homeScore": 0,
       "awayScore": 1,
-      "minute": 38,
+      "minute": 86,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454",
       "confidence": 0.97,
       "detail": {
@@ -7245,9 +7245,52 @@
             "team": "away",
             "player": "Issa DIOP",
             "type": "yellow"
+          },
+          {
+            "minute": 65,
+            "team": "home",
+            "player": "Andy ROBERTSON",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "Kieran Tierney",
+            "playerIn": "Ben GANNON-DOAK"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Che Adams",
+            "playerIn": "Lyndon DYKES"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Ryan Christie",
+            "playerIn": "Kenny McLEAN"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Ismael SAIBARI",
+            "playerIn": "Soufiane RAHIMI"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Bilal EL KHANNOUSS",
+            "playerIn": "Chemsdine TALBI"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Brahim DIAZ",
+            "playerIn": "Ayoube AMAIMOUNI"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -7366,23 +7409,27 @@
         },
         "stats": {
           "shots": {
-            "home": 0,
-            "away": 4
+            "home": 5,
+            "away": 9
           },
           "corners": {
-            "home": 0,
-            "away": 3
+            "home": 1,
+            "away": 5
           },
           "fouls": {
-            "home": 4,
-            "away": 2
+            "home": 9,
+            "away": 7
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
           },
           "yellowCards": {
-            "home": 0,
+            "home": 1,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, Marruecos lleva la ventaja en el marcador con un gol de Ismael Saibari en el minuto 2, y parece dominar el partido, aunque Escocia intenta igualar antes de que termine el primer tiempo. Con la ventaja en su favor, Marruecos puede intentar mantener su estrategia defensiva y buscar oportunidades de contragolpe en lo que resta del partido.",
+        "aiNotes": "En este momento, el partido entre Scotland y Morocco se encuentra con un marcador de 0-1 a favor de los marroquíes, quienes dominan el encuentro gracias al gol tempranero de Ismael Saibari en el minuto 2 y han mantenido su ventaja a pesar de las ocasiones de igualar para los escoceses. Con solo unos minutos restantes, es probable que Morocco busque mantener su ventaja y cerrar el partido, mientras que Scotland intentará presionar en busca de un empate, lo que podría llevar a un final emocionante y lleno de oportunidades para ambos equipos.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454"
       }
