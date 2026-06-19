@@ -28,7 +28,9 @@ export default function TodayMatches({ matches, initialTodayKey }: TodayMatchesP
     setTodayKey(`${y}-${m}-${d}`);
   }, []);
 
-  const todayMatches = matches.filter((m) => matchLocalDateKey(m.date, m.time) === todayKey);
+  const todayMatches = matches
+    .filter((m) => matchLocalDateKey(m.date, m.time) === todayKey)
+    .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
 
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -10,7 +10,10 @@ import Flag from "@/components/Flag";
 import { teams, getTeam } from "@/data/teams";
 import {
   getFreshMatches,
+  matches,
 } from "@/data/matches";
+import { computeTopScorers, computeTopAssists } from "@/lib/stats";
+import PlayerStatTable from "@/components/PlayerStatTable";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { readLiveUpdatesWithFIFA } from "@/lib/live";
@@ -108,6 +111,9 @@ export default async function HomePage() {
   );
   const topRankedGlobal = allStandings.slice(0, 3);
   const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
+
+  const topScorers = computeTopScorers(matches);
+  const topAssists = computeTopAssists(matches);
 
   const todayStr = new Date().toISOString().slice(0, 10);
   const liveCount = freshMatches.filter((m) => m.status === "live" || m.status === "halftime").length;
@@ -328,6 +334,38 @@ export default async function HomePage() {
           </div>
 
           <TodayMatches matches={freshMatches} initialTodayKey={todayStr} />
+        </section>
+
+        {/* ───────────────── Destacados ───────────────── */}
+        <section aria-labelledby="destacados" className="py-10">
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Estadísticas</p>
+              <h2 id="destacados" className="section-title">
+                Destacados
+              </h2>
+            </div>
+            <Link href="/tabla" className="shrink-0 text-sm font-semibold text-pitch-600 hover:underline dark:text-pitch-300">
+              Tablas completas →
+            </Link>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <PlayerStatTable
+              title="Goleadores"
+              rows={topScorers}
+              valueLabel="Goles"
+              emptyLabel="Aún no hay goles registrados."
+              limit={5}
+            />
+            <PlayerStatTable
+              title="Asistencias"
+              rows={topAssists}
+              valueLabel="Asist."
+              emptyLabel="Aún no hay asistencias registradas."
+              limit={5}
+            />
+          </div>
         </section>
 
         {/* ───────── Tendencias + anuncio lateral (desktop) ───────── */}
