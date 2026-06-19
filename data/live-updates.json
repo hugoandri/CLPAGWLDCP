@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T21:37:52.975Z",
+  "generatedAt": "2026-06-19T22:38:28.821Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -7223,18 +7223,167 @@
     },
     {
       "slug": "escocia-vs-marruecos",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": 38,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
+        "goals": [
+          {
+            "minute": 2,
+            "team": "away",
+            "scorer": "Ismael SAIBARI",
+            "assist": "Brahim DIAZ.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 22,
+            "team": "away",
+            "player": "Issa DIOP",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Angus Gunn",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Andy ROBERTSON",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Grant Hanley",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Kieran Tierney",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Jack Hendry",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathan PATTERSON",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Scott McTominay",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "John McGinn",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Ryan Christie",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Lewis FERGUSON",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Che Adams",
+              "number": 10,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Yassine BOUNOU",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Achraf HAKIMI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Noussair MAZRAOUI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Issa Diop",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Chadi RIAD",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Ayyoub BOUADDI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Azzedine OUNAHI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael SAIBARI",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Bilal EL KHANNOUSS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Neil EL AYNAOUI",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Brahim DIAZ",
+              "number": 10,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Escocia muestra una forma irregular en sus últimos encuentros, aunque cuenta con el talento de John McGinn, mientras que Marruecos presenta una sólida defensa y un ataque dinámico liderado por Achraf Hakimi, quien ha demostrado ser un jugador clave en la generación de oportunidades de gol. En este encuentro, Marruecos parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darle la ventaja necesaria para superar a un equipo escocés que aún busca encontrar su ritmo y cohesión en el torneo.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 0,
+            "away": 4
+          },
+          "corners": {
+            "home": 0,
+            "away": 3
+          },
+          "fouls": {
+            "home": 4,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, Marruecos lleva la ventaja en el marcador con un gol de Ismael Saibari en el minuto 2, y parece dominar el partido, aunque Escocia intenta igualar antes de que termine el primer tiempo. Con la ventaja en su favor, Marruecos puede intentar mantener su estrategia defensiva y buscar oportunidades de contragolpe en lo que resta del partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454"
       }
     },

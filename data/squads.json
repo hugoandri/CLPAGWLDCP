@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T21:37:52.977Z",
+  "generatedAt": "2026-06-19T22:38:28.824Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -2831,7 +2831,7 @@
       ]
     },
     "marruecos": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021456",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454",
       "players": [
         {
           "id": "356956",
@@ -3358,7 +3358,7 @@
       ]
     },
     "escocia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021453",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454",
       "players": [
         {
           "id": "411301",
@@ -3369,16 +3369,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/c13202b1-f3b1-4fe1-bc72-0ee5b3135bbc/GUNN-Angus_411301",
           "club": "Nottingham Forest"
-        },
-        {
-          "id": "442428",
-          "name": "Aaron HICKEY",
-          "number": 2,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/36ab73b9-b07c-48d7-a2c2-da34b149b0d2/HICKEY-Aaron_442428",
-          "club": "Brentford"
         },
         {
           "id": "401339",
@@ -3401,6 +3391,16 @@
           "club": "Hibernian"
         },
         {
+          "id": "401712",
+          "name": "Kieran Tierney",
+          "number": 6,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/d2b1d878-bbcc-4e16-bb77-7a90a01d0e37/TIERNEY-Kieran_401712",
+          "club": "Celtic"
+        },
+        {
           "id": "430147",
           "name": "Jack Hendry",
           "number": 13,
@@ -3409,6 +3409,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/4c09cb0f-5174-41b5-a47e-dcfb5506b282/HENDRY-Jack_430147",
           "club": "Al-Ettifaq"
+        },
+        {
+          "id": "433694",
+          "name": "Nathan PATTERSON",
+          "number": 22,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/3fc20068-ff61-482e-ae76-b63e24985f42/PATTERSON-Nathan_433694",
+          "club": "Everton"
         },
         {
           "id": "433787",
@@ -3431,6 +3441,16 @@
           "club": "Aston Villa"
         },
         {
+          "id": "430097",
+          "name": "Ryan Christie",
+          "number": 11,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/fce70106-25b4-4b34-b12b-10e4c6e90c18/CHRISTIE-Ryan_430097",
+          "club": "Bournemouth"
+        },
+        {
           "id": "442434",
           "name": "Lewis FERGUSON",
           "number": 19,
@@ -3449,26 +3469,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/1a70c52f-9a4b-4dc1-813b-991877aa4758/ADAMS-Che_433191",
           "club": "Torino"
-        },
-        {
-          "id": "485131",
-          "name": "Ben GANNON-DOAK",
-          "number": 17,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7cf469cc-72f7-4c4b-9312-817920757af3/GANNON-DOAK-Ben_485131",
-          "club": "Bournemouth"
-        },
-        {
-          "id": "484045",
-          "name": "Lawrence SHANKLAND",
-          "number": 20,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/6a373a65-ca0e-4c4b-a61b-b98c73fdefdd/SHANKLAND-Lawrence_484045",
-          "club": "Heart of Midlothian"
         },
         {
           "id": "442429",
@@ -3491,14 +3491,14 @@
           "club": "Heart of Midlothian"
         },
         {
-          "id": "401712",
-          "name": "Kieran Tierney",
-          "number": 6,
+          "id": "442428",
+          "name": "Aaron HICKEY",
+          "number": 2,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d2b1d878-bbcc-4e16-bb77-7a90a01d0e37/TIERNEY-Kieran_401712",
-          "club": "Celtic"
+          "photoUrl": "https://digitalhub.fifa.com/transform/36ab73b9-b07c-48d7-a2c2-da34b149b0d2/HICKEY-Aaron_442428",
+          "club": "Brentford"
         },
         {
           "id": "442430",
@@ -3519,16 +3519,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ab423ff9-7286-4242-8898-6d24bf8f1749/HYAM-Dominic_484073",
           "club": "Wrexham"
-        },
-        {
-          "id": "433694",
-          "name": "Nathan PATTERSON",
-          "number": 22,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/3fc20068-ff61-482e-ae76-b63e24985f42/PATTERSON-Nathan_433694",
-          "club": "Everton"
         },
         {
           "id": "337389",
@@ -3561,16 +3551,6 @@
           "club": "Manchester United"
         },
         {
-          "id": "430097",
-          "name": "Ryan Christie",
-          "number": 11,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/fce70106-25b4-4b34-b12b-10e4c6e90c18/CHRISTIE-Ryan_430097",
-          "club": "Bournemouth"
-        },
-        {
           "id": "484051",
           "name": "Kenny McLEAN",
           "number": 23,
@@ -3601,6 +3581,16 @@
           "club": "Southampton"
         },
         {
+          "id": "485131",
+          "name": "Ben GANNON-DOAK",
+          "number": 17,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/7cf469cc-72f7-4c4b-9312-817920757af3/GANNON-DOAK-Ben_485131",
+          "club": "Bournemouth"
+        },
+        {
           "id": "495431",
           "name": "George HIRST",
           "number": 18,
@@ -3609,6 +3599,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/1c9c7ecc-b678-43e6-b8a3-8155776dd003/HIRST-George_495431",
           "club": "Ipswich Town"
+        },
+        {
+          "id": "484045",
+          "name": "Lawrence SHANKLAND",
+          "number": 20,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/6a373a65-ca0e-4c4b-a61b-b98c73fdefdd/SHANKLAND-Lawrence_484045",
+          "club": "Heart of Midlothian"
         },
         {
           "id": "520217",
