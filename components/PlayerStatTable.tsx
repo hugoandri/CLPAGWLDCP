@@ -64,7 +64,7 @@ export default function PlayerStatTable({
                           className="inline-flex items-center gap-2 text-slate-600 hover:text-pitch dark:text-slate-300"
                         >
                           <span aria-hidden className="inline-flex">
-                            <Flag isoCode={team.isoCode} alt={team.name} width={22} />
+                            <Flag isoCode={team.isoCode} alt={team.name} width={20} />
                           </span>
                           <span className="max-w-[6rem] truncate sm:max-w-none">
                             {team.name}
