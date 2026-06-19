@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T22:23:04.072Z",
+  "generatedAt": "2026-06-19T00:09:48.011Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -6439,10 +6439,9 @@
     },
     {
       "slug": "canada-vs-catar",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 6,
       "awayScore": 0,
-      "minute": 22,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021450",
       "confidence": 0.97,
       "detail": {
@@ -6452,6 +6451,37 @@
             "team": "home",
             "scorer": "Cyle LARIN",
             "type": "goal"
+          },
+          {
+            "minute": 29,
+            "team": "home",
+            "scorer": "Jonathan DAVID",
+            "type": "goal"
+          },
+          {
+            "minute": 48,
+            "team": "home",
+            "scorer": "Jonathan DAVID",
+            "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "scorer": "Nathan SALIBA",
+            "type": "goal"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "scorer": "Mohamed Manai",
+            "type": "own_goal"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "scorer": "Jonathan DAVID",
+            "assist": "Nathan SALIBA.",
+            "type": "goal"
           }
         ],
         "cards": [
@@ -6460,9 +6490,88 @@
             "team": "home",
             "player": "Derek CORNELIUS",
             "type": "yellow"
+          },
+          {
+            "minute": 33,
+            "team": "away",
+            "player": "Homam Ahmed",
+            "type": "red"
+          },
+          {
+            "minute": 51,
+            "team": "away",
+            "player": "A. Madibo",
+            "type": "red"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "player": "Ahmed Fathy",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Derek CORNELIUS",
+            "playerIn": "Moise BOMBITO"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "EDMILSON JUNIOR",
+            "playerIn": "AHMED FATHY"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "JASSEM GABER",
+            "playerIn": "MOHAMED MANAI"
+          },
+          {
+            "minute": 40,
+            "team": "away",
+            "playerOut": "YUSUF ABDURISAG",
+            "playerIn": "SULTAN ALBRAKE"
+          },
+          {
+            "minute": 56,
+            "team": "home",
+            "playerOut": "Ismael KONE",
+            "playerIn": "Nathan SALIBA"
+          },
+          {
+            "minute": 59,
+            "team": "away",
+            "playerOut": "AKRAM AFIF",
+            "playerIn": "ALHASHMI ALHUSSEIN"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Ali AHMED",
+            "playerIn": "Tani OLUWASEYI"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Luc DE FOUGEROLLES",
+            "playerIn": "Jacob SHAFFELBURG"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Tajon BUCHANAN",
+            "playerIn": "Niko SIGUR"
+          },
+          {
+            "minute": 87,
+            "team": "away",
+            "playerOut": "AHMED FATHY",
+            "playerIn": "LUCAS MENDES"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -6581,25 +6690,29 @@
         },
         "stats": {
           "shots": {
-            "home": 5,
+            "home": 33,
             "away": 2
           },
           "corners": {
-            "home": 3,
+            "home": 19,
             "away": 1
           },
           "fouls": {
-            "home": 0,
-            "away": 3
+            "home": 8,
+            "away": 8
+          },
+          "offsides": {
+            "home": 1,
+            "away": 1
           },
           "yellowCards": {
             "home": 1,
-            "away": 0
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido se desarrolla con una ligera ventaja para Canadá, que lidera el marcador 1-0 gracias al gol de Cyle Larin en el minuto 16, y parece controlar el ritmo del juego. A medida que avanza el encuentro, es probable que Qatar intente presionar más arriba en busca del empate, lo que podría generar espacios en su defensa y permitir a Canadá intentar aumentar su ventaja.",
+        "aiNotes": "En el partido entre Canadá y Catar, el equipo canadiense logró una victoria abrumadora de 6-0, con Jonathan David destacándose al anotar tres goles, mientras que Cyle Larin, Nathan Saliba y Mohamed Manai también contribuyeron a la goleada. La expulsión de dos jugadores de Catar, Homam Ahmed y A. Madibo, marcó un punto de inflexión decisivo en el partido, permitiendo a Canadá dominar y aumentar su ventaja en el marcador.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021450"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021450"
       }
     },
     {
