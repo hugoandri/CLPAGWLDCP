@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T17:44:44.361Z",
+  "generatedAt": "2026-06-20T19:02:55.908Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -7968,10 +7968,9 @@
     },
     {
       "slug": "paises-bajos-vs-suecia",
-      "status": "live",
-      "homeScore": 2,
+      "status": "finished",
+      "homeScore": 5,
       "awayScore": 1,
-      "minute": 45,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472",
       "confidence": 0.97,
       "detail": {
@@ -7989,10 +7988,118 @@
             "scorer": "Brian BROBBEY",
             "assist": "Denzel DUMFRIES.",
             "type": "goal"
+          },
+          {
+            "minute": 47,
+            "team": "home",
+            "scorer": "Cody GAKPO",
+            "assist": "Denzel DUMFRIES.",
+            "type": "goal"
+          },
+          {
+            "minute": 54,
+            "team": "home",
+            "scorer": "Cody GAKPO",
+            "assist": "Crysencio SUMMERVILLE.",
+            "type": "goal"
+          },
+          {
+            "minute": 59,
+            "team": "away",
+            "scorer": "Anthony ELANGA",
+            "assist": "Alexander ISAK.",
+            "type": "goal"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "scorer": "Crysencio SUMMERVILLE",
+            "assist": "Memphis DEPAY.",
+            "type": "goal"
           }
         ],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 53,
+            "team": "away",
+            "player": "Gabriel GUDMUNDSSON",
+            "type": "yellow"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "player": "Yasin AYARI",
+            "type": "yellow"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "player": "Lucas BERGVALL",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Donyell Malen",
+            "playerIn": "Crysencio SUMMERVILLE"
+          },
+          {
+            "minute": 55,
+            "team": "away",
+            "playerOut": "Alexander BERNHARDSSON",
+            "playerIn": "Anthony ELANGA"
+          },
+          {
+            "minute": 55,
+            "team": "away",
+            "playerOut": "Jesper KARLSTROM",
+            "playerIn": "Besfort ZENELI"
+          },
+          {
+            "minute": 55,
+            "team": "away",
+            "playerOut": "Benjamin NYGREN",
+            "playerIn": "Lucas BERGVALL"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "Frenkie DE JONG",
+            "playerIn": "Teun KOOPMEINERS"
+          },
+          {
+            "minute": 59,
+            "team": "home",
+            "playerOut": "Tijjani REIJNDERS",
+            "playerIn": "Guus TIL"
+          },
+          {
+            "minute": 72,
+            "team": "home",
+            "playerOut": "Brian BROBBEY",
+            "playerIn": "Memphis DEPAY"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Yasin AYARI",
+            "playerIn": "Taha ALI"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Cody GAKPO",
+            "playerIn": "Noa LANG"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "playerOut": "Gabriel GUDMUNDSSON",
+            "playerIn": "Elliot STROUD"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -8111,25 +8218,29 @@
         },
         "stats": {
           "shots": {
-            "home": 5,
-            "away": 6
+            "home": 10,
+            "away": 16
           },
           "corners": {
-            "home": 1,
-            "away": 1
+            "home": 2,
+            "away": 5
           },
           "fouls": {
-            "home": 3,
-            "away": 4
+            "home": 9,
+            "away": 9
           },
           "offsides": {
-            "home": 1,
-            "away": 2
+            "home": 3,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 3
           }
         },
-        "aiNotes": "En este momento, el partido entre Netherlands y Sweden se encuentra con un marcador de 2-1 a favor de los neerlandeses, con dos goles clave de Brian Brobbey en los minutos 5 y 17, lo que les ha permitido tomar una ventaja temprana en el encuentro. La segunda parte del partido puede ser decisiva, ya que Sweden necesitará intentar igualar el marcador, lo que podría llevar a un cambio en la estrategia y a un posible aumento en la intensidad del juego.",
+        "aiNotes": "En el partido, Paises Bajos se impuso a Suecia con un contundente 5-1, gracias a los goles de Brian Brobbey en dos ocasiones, Cody Gakpo en dos ocasiones y Crysencio Summerville en una, mientras que Anthony Elanga anotó el único gol para Suecia. La victoria de Paises Bajos muestra un rendimiento táctico sólido y una buena conexión entre sus jugadores, lo que les permitió dominar el partido desde el principio y mantener su ventaja durante todo el encuentro.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021472"
       }
     },
     {
