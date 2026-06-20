@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T02:37:58.020Z",
+  "generatedAt": "2026-06-20T06:48:50.302Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -1797,7 +1797,7 @@
       ]
     },
     "paraguay": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021458",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021460",
       "players": [
         {
           "id": "494531",
@@ -1880,24 +1880,14 @@
           "club": "Vancouver Whitecaps FC"
         },
         {
-          "id": "476348",
-          "name": "Damian BOBADILLA",
-          "number": 16,
+          "id": "424422",
+          "name": "Matias GALARZA",
+          "number": 23,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/720524b9-bfc5-4139-a873-cba0a35bfa95/BOBADILLA-Damian_476348",
-          "club": "São Paulo"
-        },
-        {
-          "id": "369768",
-          "name": "Antonio SANABRIA",
-          "number": 9,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/97bc175a-1e5c-417f-ab23-492237ddb3ab/SANABRIA-Antonio_369768",
-          "club": "Cremonese"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ce774da7-eea7-475e-8526-8227b5068dc3/GALARZA-Matias_424422",
+          "club": "Atlanta United FC"
         },
         {
           "id": "441234",
@@ -1908,6 +1898,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/aa8ef158-6636-46a9-a6fb-185a2f92ad95/ENCISO-Julio_441234",
           "club": "Strasbourg"
+        },
+        {
+          "id": "489417",
+          "name": "Isidro PITTA",
+          "number": 25,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/9b776bee-7e1b-47b0-b4ef-526ff72ac93f/PITTA-Isidro_489417",
+          "club": "Red Bull Bragantino"
         },
         {
           "id": "318647",
@@ -1990,6 +1990,16 @@
           "club": "Palmeiras"
         },
         {
+          "id": "476348",
+          "name": "Damian BOBADILLA",
+          "number": 16,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/720524b9-bfc5-4139-a873-cba0a35bfa95/BOBADILLA-Damian_476348",
+          "club": "São Paulo"
+        },
+        {
           "id": "406205",
           "name": "Braian OJEDA",
           "number": 20,
@@ -2000,16 +2010,6 @@
           "club": "Orlando City SC"
         },
         {
-          "id": "424422",
-          "name": "Matias GALARZA",
-          "number": 23,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ce774da7-eea7-475e-8526-8227b5068dc3/GALARZA-Matias_424422",
-          "club": "Atlanta United FC"
-        },
-        {
           "id": "485804",
           "name": "Gustavo CABALLERO",
           "number": 24,
@@ -2018,6 +2018,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ccf6784f-8528-4d47-ba72-500d47ac51af/CABALLERO-Gustavo_485804",
           "club": "Portsmouth"
+        },
+        {
+          "id": "369768",
+          "name": "Antonio SANABRIA",
+          "number": 9,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/97bc175a-1e5c-417f-ab23-492237ddb3ab/SANABRIA-Antonio_369768",
+          "club": "Cremonese"
         },
         {
           "id": "386458",
@@ -2047,16 +2057,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/58eb53dc-567a-489a-b2f9-3a905f5841b7/AVALOS-Gabriel_463127",
           "club": "Independiente"
-        },
-        {
-          "id": "489417",
-          "name": "Isidro PITTA",
-          "number": 25,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/9b776bee-7e1b-47b0-b4ef-526ff72ac93f/PITTA-Isidro_489417",
-          "club": "Red Bull Bragantino"
         }
       ]
     },
@@ -3888,7 +3888,7 @@
       ]
     },
     "turquia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021463",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021460",
       "players": [
         {
           "id": "441181",
@@ -3899,16 +3899,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/6cedaf47-2a99-4e31-bb0d-46ce78df26a6/CAKIR-Ugurcan_441181",
           "club": "Galatasaray"
-        },
-        {
-          "id": "433072",
-          "name": "Zeki CELIK",
-          "number": 2,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/903b63c2-ab06-47b8-911c-bf4f026601fd/CELIK-Zeki_433072",
-          "club": "Roma"
         },
         {
           "id": "441179",
@@ -3931,6 +3921,16 @@
           "club": "Galatasaray"
         },
         {
+          "id": "430120",
+          "name": "Mert MULDUR",
+          "number": 18,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/61f43913-2824-4711-9838-0d620f393353/MULDUR-Mert_430120",
+          "club": "Fenerbahçe"
+        },
+        {
           "id": "484113",
           "name": "Ferdi KADIOGLU",
           "number": 20,
@@ -3939,16 +3939,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/c69621e7-9ba5-438d-89dc-7871b6e0f611/KADIOGLU-Ferdi_484113",
           "club": "Brighton & Hove Albion"
-        },
-        {
-          "id": "433118",
-          "name": "Orkun KOKCU",
-          "number": 6,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/90a510ff-865f-4293-a59b-8a92e12a89b0/KOKCU-Orkun_433118",
-          "club": "Beşiktaş"
         },
         {
           "id": "369304",
@@ -3991,13 +3981,23 @@
           "club": "Real Madrid"
         },
         {
-          "id": "484139",
-          "name": "Baris Alper YILMAZ",
-          "number": 21,
+          "id": "484112",
+          "name": "Kenan YILDIZ",
+          "number": 11,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/49e46d17-bf69-41b1-a8df-5aeabf137c7d/YILMAZ-Baris-Alper_484139",
+          "photoUrl": "https://digitalhub.fifa.com/transform/7dff809e-a965-4b36-a7b5-8da772fc96a5/YILDIZ-Kenan_484112",
+          "club": "Juventus"
+        },
+        {
+          "id": "406231",
+          "name": "Yunus AKGUN",
+          "number": 19,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/32587fe7-0e67-4aa1-8b07-3a1618183e80/AKGUN-Yunus_406231",
           "club": "Galatasaray"
         },
         {
@@ -4019,6 +4019,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/f8c86015-cce5-4965-9d7c-183ef908079a/BAYINDIR-Altay_441180",
           "club": "Manchester United"
+        },
+        {
+          "id": "433072",
+          "name": "Zeki CELIK",
+          "number": 2,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/903b63c2-ab06-47b8-911c-bf4f026601fd/CELIK-Zeki_433072",
+          "club": "Roma"
         },
         {
           "id": "401167",
@@ -4051,16 +4061,6 @@
           "club": "TSG Hoffenheim"
         },
         {
-          "id": "430120",
-          "name": "Mert MULDUR",
-          "number": 18,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/61f43913-2824-4711-9838-0d620f393353/MULDUR-Mert_430120",
-          "club": "Fenerbahçe"
-        },
-        {
           "id": "484072",
           "name": "Samet AKAYDIN",
           "number": 25,
@@ -4079,6 +4079,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/1e968b8d-1b4c-4bce-86b7-8a4ad87eef3a/OZCAN-Salih_389907",
           "club": "Borussia Dortmund"
+        },
+        {
+          "id": "433118",
+          "name": "Orkun KOKCU",
+          "number": 6,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/90a510ff-865f-4293-a59b-8a92e12a89b0/KOKCU-Orkun_433118",
+          "club": "Beşiktaş"
         },
         {
           "id": "336170",
@@ -4101,16 +4111,6 @@
           "club": "Porto"
         },
         {
-          "id": "484112",
-          "name": "Kenan YILDIZ",
-          "number": 11,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7dff809e-a965-4b36-a7b5-8da772fc96a5/YILDIZ-Kenan_484112",
-          "club": "Juventus"
-        },
-        {
           "id": "472877",
           "name": "Irfan Can KAHVECI",
           "number": 17,
@@ -4121,13 +4121,13 @@
           "club": "Kasımpaşa"
         },
         {
-          "id": "406231",
-          "name": "Yunus AKGUN",
-          "number": 19,
+          "id": "484139",
+          "name": "Baris Alper YILMAZ",
+          "number": 21,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/32587fe7-0e67-4aa1-8b07-3a1618183e80/AKGUN-Yunus_406231",
+          "photoUrl": "https://digitalhub.fifa.com/transform/49e46d17-bf69-41b1-a8df-5aeabf137c7d/YILMAZ-Baris-Alper_484139",
           "club": "Galatasaray"
         },
         {

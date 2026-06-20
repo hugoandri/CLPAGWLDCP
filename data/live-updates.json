@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T02:37:58.017Z",
+  "generatedAt": "2026-06-20T06:48:50.300Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -264,7 +264,7 @@
           {
             "minute": 86,
             "team": "away",
-            "player": "Yunus",
+            "player": "Yunus AKGUN",
             "type": "yellow"
           }
         ],
@@ -485,7 +485,7 @@
           {
             "minute": 6,
             "team": "home",
-            "scorer": "Nmecha",
+            "scorer": "Felix NMECHA",
             "assist": "Florian WIRTZ.",
             "type": "goal"
           },
@@ -498,21 +498,21 @@
           {
             "minute": 38,
             "team": "home",
-            "scorer": "Schlotterbeck",
+            "scorer": "Nico SCHLOTTERBECK",
             "assist": "Nathaniel BROWN.",
             "type": "goal"
           },
           {
             "minute": 47,
             "team": "home",
-            "scorer": "Musiala",
-            "assist": "KIMMICH.",
+            "scorer": "Jamal MUSIALA",
+            "assist": "Joshua KIMMICH.",
             "type": "goal"
           },
           {
             "minute": 50,
             "team": "home",
-            "scorer": "Havertz",
+            "scorer": "Kai HAVERTZ",
             "type": "penalty"
           },
           {
@@ -526,13 +526,13 @@
             "minute": 78,
             "team": "home",
             "scorer": "Deniz UNDAV",
-            "assist": "KIMMICH.",
+            "assist": "Joshua KIMMICH.",
             "type": "goal"
           },
           {
             "minute": 88,
             "team": "home",
-            "scorer": "Havertz",
+            "scorer": "Kai HAVERTZ",
             "assist": "Deniz UNDAV.",
             "type": "goal"
           }
@@ -746,8 +746,8 @@
           {
             "minute": 57,
             "team": "away",
-            "scorer": "Nakamura",
-            "assist": "KUBO.",
+            "scorer": "Keito NAKAMURA",
+            "assist": "Takefusa KUBO.",
             "type": "goal"
           },
           {
@@ -760,8 +760,8 @@
           {
             "minute": 88,
             "team": "away",
-            "scorer": "Kamada",
-            "assist": "OGAWA.",
+            "scorer": "Daichi KAMADA",
+            "assist": "Koki OGAWA.",
             "type": "goal"
           }
         ],
@@ -781,7 +781,7 @@
           {
             "minute": 91,
             "team": "home",
-            "player": "Van De Ven",
+            "player": "Micky VAN DE VEN",
             "type": "yellow"
           }
         ],
@@ -1009,7 +1009,7 @@
           {
             "minute": 67,
             "team": "home",
-            "scorer": "Raúl",
+            "scorer": "Raul JIMENEZ",
             "assist": "Roberto ALVARADO.",
             "type": "goal"
           }
@@ -1018,7 +1018,7 @@
           {
             "minute": 17,
             "team": "away",
-            "player": "Mokoena",
+            "player": "Teboho MOKOENA",
             "type": "yellow"
           },
           {
@@ -1030,7 +1030,7 @@
           {
             "minute": 49,
             "team": "away",
-            "player": "Sithole",
+            "player": "Sphephelo SITHOLE",
             "type": "red"
           },
           {
@@ -1042,7 +1042,7 @@
           {
             "minute": 84,
             "team": "away",
-            "player": "Zwane",
+            "player": "Themba ZWANE",
             "type": "red"
           },
           {
@@ -1271,13 +1271,13 @@
             "minute": 67,
             "team": "home",
             "scorer": "HWANG Inbeom",
-            "assist": "LEE KANG IN.",
+            "assist": "LEE Kangin.",
             "type": "goal"
           },
           {
             "minute": 80,
             "team": "home",
-            "scorer": "H G Oh",
+            "scorer": "OH Hyeongyu",
             "assist": "HWANG Inbeom.",
             "type": "goal"
           }
@@ -1776,7 +1776,7 @@
             "minute": 50,
             "team": "home",
             "scorer": "Folarin BALOGUN",
-            "assist": "TILLMAN.",
+            "assist": "Malik TILLMAN.",
             "type": "goal"
           },
           {
@@ -1789,7 +1789,7 @@
           {
             "minute": 98,
             "team": "home",
-            "scorer": "Reyna",
+            "scorer": "Giovanni REYNA",
             "assist": "Alex FREEMAN.",
             "type": "goal"
           }
@@ -2043,7 +2043,7 @@
           {
             "minute": 17,
             "team": "away",
-            "scorer": "Embolo",
+            "scorer": "Breel EMBOLO",
             "type": "penalty"
           },
           {
@@ -2069,7 +2069,7 @@
           {
             "minute": 42,
             "team": "away",
-            "player": "Zakaria",
+            "player": "Denis ZAKARIA",
             "type": "yellow"
           }
         ],
@@ -2290,14 +2290,14 @@
           {
             "minute": 21,
             "team": "away",
-            "scorer": "Saibari",
-            "assist": "BRAHIM.",
+            "scorer": "Ismael SAIBARI",
+            "assist": "Brahim DIAZ.",
             "type": "goal"
           },
           {
             "minute": 32,
             "team": "home",
-            "scorer": "Vini Jr.",
+            "scorer": "Vinicius Junior",
             "assist": "BRUNO GUIMARAES.",
             "type": "goal"
           }
@@ -2548,7 +2548,7 @@
           {
             "minute": 38,
             "team": "home",
-            "player": "Kessie",
+            "player": "Franck KESSIE",
             "type": "yellow"
           },
           {
@@ -2813,7 +2813,7 @@
           {
             "minute": 54,
             "team": "away",
-            "player": "Khedira",
+            "player": "Rani KHEDIRA",
             "type": "yellow"
           }
         ],
@@ -3256,14 +3256,14 @@
           {
             "minute": 19,
             "team": "away",
-            "scorer": "E.ashour",
-            "assist": "M SALAH.",
+            "scorer": "Emam Ashour",
+            "assist": "MOHAMED SALAH.",
             "type": "goal"
           },
           {
             "minute": 66,
             "team": "home",
-            "scorer": "M.hany",
+            "scorer": "Mohamed Hany",
             "type": "own_goal"
           }
         ],
@@ -3271,13 +3271,13 @@
           {
             "minute": 13,
             "team": "away",
-            "player": "M.attia",
+            "player": "Marawan Attia",
             "type": "yellow"
           },
           {
             "minute": 14,
             "team": "home",
-            "player": "Castagne",
+            "player": "Timothy CASTAGNE",
             "type": "yellow"
           },
           {
@@ -3289,7 +3289,7 @@
           {
             "minute": 75,
             "team": "home",
-            "player": "De Cuyper",
+            "player": "Maxim DE CUYPER",
             "type": "yellow"
           }
         ],
@@ -3510,7 +3510,7 @@
           {
             "minute": 41,
             "team": "home",
-            "scorer": "Alamri",
+            "scorer": "Abdulelah Alamri",
             "type": "goal"
           },
           {
@@ -3524,7 +3524,7 @@
           {
             "minute": 44,
             "team": "home",
-            "player": "Alamri",
+            "player": "Abdulelah Alamri",
             "type": "yellow"
           }
         ],
@@ -3745,28 +3745,28 @@
           {
             "minute": 7,
             "team": "away",
-            "scorer": "Just",
+            "scorer": "Elijah JUST",
             "assist": "Chris WOOD.",
             "type": "goal"
           },
           {
             "minute": 32,
             "team": "home",
-            "scorer": "Ramin",
+            "scorer": "Ramin REZAEIAN",
             "type": "goal"
           },
           {
             "minute": 54,
             "team": "away",
-            "scorer": "Just",
+            "scorer": "Elijah JUST",
             "assist": "Chris WOOD.",
             "type": "goal"
           },
           {
             "minute": 64,
             "team": "home",
-            "scorer": "M.mohebbi",
-            "assist": "RAMIN.",
+            "scorer": "Mohammad MOHEBBI",
+            "assist": "Ramin REZAEIAN.",
             "type": "goal"
           }
         ],
@@ -3989,28 +3989,28 @@
           {
             "minute": 66,
             "team": "home",
-            "scorer": "Mbappé",
-            "assist": "OLISE.",
+            "scorer": "Kylian MBAPPE",
+            "assist": "Michael OLISE.",
             "type": "goal"
           },
           {
             "minute": 82,
             "team": "home",
-            "scorer": "Barcola",
+            "scorer": "Bradley BARCOLA",
             "assist": "Adrien RABIOT.",
             "type": "goal"
           },
           {
             "minute": 95,
             "team": "away",
-            "scorer": "Mbaye",
-            "assist": "ILIMAN.",
+            "scorer": "Ibrahim MBAYE",
+            "assist": "Iliman NDIAYE.",
             "type": "goal"
           },
           {
             "minute": 96,
             "team": "home",
-            "scorer": "Mbappé",
+            "scorer": "Kylian MBAPPE",
             "type": "goal"
           }
         ],
@@ -4210,34 +4210,34 @@
           {
             "minute": 29,
             "team": "away",
-            "scorer": "Haaland",
+            "scorer": "Erling HAALAND",
             "assist": "David MOLLER WOLFE.",
             "type": "goal"
           },
           {
             "minute": 39,
             "team": "home",
-            "scorer": "Hussein",
+            "scorer": "Aymen Hussein",
             "assist": "AMIR ALAMMARI.",
             "type": "goal"
           },
           {
             "minute": 43,
             "team": "away",
-            "scorer": "Haaland",
+            "scorer": "Erling HAALAND",
             "type": "goal"
           },
           {
             "minute": 76,
             "team": "away",
             "scorer": "Leo OSTIGARD",
-            "assist": "ODEGAARD.",
+            "assist": "Martin ODEGAARD.",
             "type": "goal"
           },
           {
             "minute": 96,
             "team": "away",
-            "scorer": "Hussein",
+            "scorer": "Aymen Hussein",
             "type": "own_goal"
           }
         ],
@@ -4466,21 +4466,21 @@
           {
             "minute": 17,
             "team": "home",
-            "scorer": "Messi",
-            "assist": "R. DE PAUL.",
+            "scorer": "Lionel MESSI",
+            "assist": "Rodrigo DE PAUL.",
             "type": "goal"
           },
           {
             "minute": 60,
             "team": "home",
-            "scorer": "Messi",
+            "scorer": "Lionel MESSI",
             "type": "goal"
           },
           {
             "minute": 76,
             "team": "home",
-            "scorer": "Messi",
-            "assist": "N. GONZALEZ.",
+            "scorer": "Lionel MESSI",
+            "assist": "Nico GONZALEZ.",
             "type": "goal"
           }
         ],
@@ -4718,7 +4718,7 @@
           {
             "minute": 102,
             "team": "home",
-            "scorer": "Arnautovic",
+            "scorer": "Marko ARNAUTOVIC",
             "type": "penalty"
           }
         ],
@@ -4726,7 +4726,7 @@
           {
             "minute": 77,
             "team": "home",
-            "player": "Sabitzer",
+            "player": "Marcel SABITZER",
             "type": "yellow"
           }
         ],
@@ -4947,8 +4947,8 @@
           {
             "minute": 6,
             "team": "home",
-            "scorer": "João Neves",
-            "assist": "NETO.",
+            "scorer": "Joao Neves",
+            "assist": "PEDRO NETO.",
             "type": "goal"
           },
           {
@@ -4963,7 +4963,7 @@
           {
             "minute": 13,
             "team": "home",
-            "player": "Bernardo",
+            "player": "Bernardo Silva",
             "type": "yellow"
           },
           {
@@ -4975,13 +4975,13 @@
           {
             "minute": 88,
             "team": "home",
-            "player": "Semedo",
+            "player": "Nelson Semedo",
             "type": "yellow"
           },
           {
             "minute": 92,
             "team": "home",
-            "player": "Tomás A.",
+            "player": "Tomas Araujo",
             "type": "yellow"
           }
         ],
@@ -5196,7 +5196,7 @@
           {
             "minute": 12,
             "team": "home",
-            "scorer": "Kane",
+            "scorer": "Harry KANE",
             "type": "penalty"
           },
           {
@@ -5209,14 +5209,14 @@
           {
             "minute": 42,
             "team": "home",
-            "scorer": "Kane",
+            "scorer": "Harry KANE",
             "assist": "Declan RICE.",
             "type": "goal"
           },
           {
             "minute": 47,
             "team": "home",
-            "scorer": "Bellingham",
+            "scorer": "Jude BELLINGHAM",
             "assist": "Elliot ANDERSON.",
             "type": "goal"
           },
@@ -5224,14 +5224,14 @@
             "minute": 50,
             "team": "away",
             "scorer": "Petar MUSA",
-            "assist": "PERIŠIĆ.",
+            "assist": "Ivan PERISIC.",
             "type": "goal"
           },
           {
             "minute": 85,
             "team": "home",
-            "scorer": "Rashford",
-            "assist": "SAKA.",
+            "scorer": "Marcus RASHFORD",
+            "assist": "Bukayo SAKA.",
             "type": "goal"
           }
         ],
@@ -5713,13 +5713,13 @@
           {
             "minute": 7,
             "team": "away",
-            "player": "J. Mojica",
+            "player": "Johan MOJICA",
             "type": "yellow"
           },
           {
             "minute": 34,
             "team": "home",
-            "player": "Khusanov",
+            "player": "Abdukodir KHUSANOV",
             "type": "yellow"
           }
         ],
@@ -5947,7 +5947,7 @@
           {
             "minute": 83,
             "team": "away",
-            "scorer": "Mokoena",
+            "scorer": "Teboho MOKOENA",
             "type": "penalty"
           }
         ],
@@ -5955,7 +5955,7 @@
           {
             "minute": 33,
             "team": "away",
-            "player": "Mokoena",
+            "player": "Teboho MOKOENA",
             "type": "yellow"
           },
           {
@@ -6182,15 +6182,15 @@
           {
             "minute": 84,
             "team": "home",
-            "scorer": "Vargas",
-            "assist": "EMBOLO.",
+            "scorer": "Ruben VARGAS",
+            "assist": "Breel EMBOLO.",
             "type": "goal"
           },
           {
             "minute": 90,
             "team": "home",
             "scorer": "Johan MANZAMBI",
-            "assist": "VARGAS.",
+            "assist": "Ruben VARGAS.",
             "type": "goal"
           },
           {
@@ -6202,7 +6202,7 @@
           {
             "minute": 97,
             "team": "home",
-            "scorer": "Xhaka",
+            "scorer": "Granit XHAKA",
             "type": "penalty"
           }
         ],
@@ -6222,7 +6222,7 @@
           {
             "minute": 65,
             "team": "home",
-            "player": "Elvedi",
+            "player": "Nico ELVEDI",
             "type": "yellow"
           },
           {
@@ -6500,7 +6500,7 @@
           {
             "minute": 51,
             "team": "away",
-            "player": "A. Madibo",
+            "player": "Assim Madibo",
             "type": "red"
           },
           {
@@ -6735,7 +6735,7 @@
           {
             "minute": 4,
             "team": "away",
-            "player": "Lee Kang In",
+            "player": "LEE Kangin",
             "type": "yellow"
           },
           {
@@ -7695,7 +7695,7 @@
             "away": 4
           },
           "fouls": {
-            "home": 13,
+            "home": 12,
             "away": 11
           },
           "offsides": {
@@ -7714,19 +7714,256 @@
     },
     {
       "slug": "turquia-vs-paraguay",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021460",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 2,
+            "team": "away",
+            "scorer": "Matias GALARZA",
+            "assist": "Julio ENCISO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 4,
+            "team": "away",
+            "player": "Matias GALARZA",
+            "type": "yellow"
+          },
+          {
+            "minute": 37,
+            "team": "away",
+            "player": "Carlos GONZALEZ",
+            "type": "yellow"
+          },
+          {
+            "minute": 48,
+            "team": "away",
+            "player": "Miguel ALMIRON",
+            "type": "red"
+          },
+          {
+            "minute": 63,
+            "team": "home",
+            "player": "Vincenzo MONTELLA",
+            "type": "yellow"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "player": "Eren ELMALI",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Kerem AKTURKOGLU",
+            "playerIn": "Baris Alper YILMAZ"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Isidro PITTA",
+            "playerIn": "Damian BOBADILLA"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "Ismail YUKSEK",
+            "playerIn": "Can UZUN"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "playerOut": "Yunus AKGUN",
+            "playerIn": "Deniz GUL"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Diego GOMEZ",
+            "playerIn": "Gustavo VELAZQUEZ"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Ferdi KADIOGLU",
+            "playerIn": "Eren ELMALI"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "Juan Jose CACERES",
+            "playerIn": "Alexandro MAIDANA"
+          },
+          {
+            "minute": 86,
+            "team": "home",
+            "playerOut": "Abdulkerim BARDAKCI",
+            "playerIn": "Orkun KOKCU"
+          },
+          {
+            "minute": 91,
+            "team": "away",
+            "playerOut": "Julio ENCISO",
+            "playerIn": "Gabriel AVALOS"
+          },
+          {
+            "minute": 91,
+            "team": "away",
+            "playerOut": "Matias GALARZA",
+            "playerIn": "Jose CANALE"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Ugurcan CAKIR",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Merih DEMIRAL",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulkerim BARDAKCI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Mert MULDUR",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Ferdi KADIOGLU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Hakan CALHANOGLU",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Ismail YUKSEK",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Kerem AKTURKOGLU",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Arda GULER",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "Kenan YILDIZ",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Yunus AKGUN",
+              "number": 19,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Orlando GILL",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Omar ALDERETE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Juan Jose CACERES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Junior ALONSO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Gustavo GOMEZ",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Diego GOMEZ",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Miguel ALMIRON",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Andres CUBAS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Matias GALARZA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Julio ENCISO",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Isidro PITTA",
+              "number": 25,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 32,
+            "away": 7
+          },
+          "corners": {
+            "home": 12,
+            "away": 0
+          },
+          "fouls": {
+            "home": 13,
+            "away": 14
+          },
+          "offsides": {
+            "home": 2,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 2
+          }
+        },
         "aiNotes": "Los dos equipos llegan al partido con diferentes dinámicas, ya que Turquía muestra una forma reciente consistente gracias a la habilidad de Arda Güler, mientras que Paraguay busca recuperar su ritmo con la ayuda de Julio Enciso. Espero que Turquía tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su forma más estable en los últimos partidos, lo que podría darles una ventaja psicológica y táctica sobre Paraguay.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021460"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021460"
       }
     },
     {
