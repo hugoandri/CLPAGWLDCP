@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T21:55:35.045Z",
+  "generatedAt": "2026-06-20T23:18:59.204Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -8245,10 +8245,9 @@
     },
     {
       "slug": "alemania-vs-costa-de-marfil",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 1,
-      "minute": 93,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469",
       "confidence": 0.97,
       "detail": {
@@ -8264,6 +8263,13 @@
             "team": "home",
             "scorer": "Deniz UNDAV",
             "assist": "Nadiem AMIRI.",
+            "type": "goal"
+          },
+          {
+            "minute": 94,
+            "team": "home",
+            "scorer": "Deniz UNDAV",
+            "assist": "Felix NMECHA.",
             "type": "goal"
           }
         ],
@@ -8448,7 +8454,7 @@
         },
         "stats": {
           "shots": {
-            "home": 15,
+            "home": 16,
             "away": 9
           },
           "corners": {
@@ -8464,9 +8470,9 @@
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Alemania y Costa de Marfil se encuentra empatado a un gol por lado, con Franck Kessie anotando para los marfileños en el minuto 30 y Deniz Undav igualando el marcador para los alemanes en el minuto 68. A medida que el partido se acerca a su fin, es probable que ambos equipos busquen aprovechar cualquier oportunidad para anotar el gol de la victoria, lo que podría llevar a un final emocionante y lleno de acción.",
+        "aiNotes": "En el partido entre Alemania y Costa De Marfil, el equipo alemán logró remontar el marcador después de que Franck Kessie abriera el marcador para los marfileños en el minuto 30, gracias a los dos goles de Deniz Undav en los minutos 68 y 94. La victoria de Alemania se debió en gran parte a su capacidad para adaptarse tácticamente en el transcurso del partido y encontrar espacios para crear oportunidades de gol, lo que les permitió sacar provecho de sus jugadores clave en los momentos decisivos.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021469"
       }
     },
     {
