@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T06:48:50.302Z",
+  "generatedAt": "2026-06-20T17:44:44.363Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -4682,7 +4682,7 @@
       ]
     },
     "paises-bajos": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021470",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472",
       "players": [
         {
           "id": "424081",
@@ -4785,14 +4785,14 @@
           "club": "Roma"
         },
         {
-          "id": "489518",
-          "name": "Crysencio SUMMERVILLE",
-          "number": 24,
+          "id": "424051",
+          "name": "Brian BROBBEY",
+          "number": 19,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/86e9f724-fc5f-4969-92e3-ac658dafacdd/SUMMERVILLE-Crysencio_489518",
-          "club": "West Ham United"
+          "photoUrl": "https://digitalhub.fifa.com/transform/15246275-ff97-404c-bac3-ce793d98c744/BROBBEY-Brian_424051",
+          "club": "Sunderland"
         },
         {
           "id": "506028",
@@ -4895,16 +4895,6 @@
           "club": "Juventus"
         },
         {
-          "id": "484859",
-          "name": "Quinten TIMBER",
-          "number": 26,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ac98da17-3346-4d88-b52f-4ce34c82f587/TIMBER-Quinten_484859",
-          "club": "Marseille"
-        },
-        {
           "id": "448159",
           "name": "Wout WEGHORST",
           "number": 9,
@@ -4935,14 +4925,14 @@
           "club": "Galatasaray"
         },
         {
-          "id": "424051",
-          "name": "Brian BROBBEY",
-          "number": 19,
+          "id": "489518",
+          "name": "Crysencio SUMMERVILLE",
+          "number": 24,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/15246275-ff97-404c-bac3-ce793d98c744/BROBBEY-Brian_424051",
-          "club": "Sunderland"
+          "photoUrl": "https://digitalhub.fifa.com/transform/86e9f724-fc5f-4969-92e3-ac658dafacdd/SUMMERVILLE-Crysencio_489518",
+          "club": "West Ham United"
         }
       ]
     },
@@ -5742,7 +5732,7 @@
       ]
     },
     "suecia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472",
       "players": [
         {
           "id": "360496",

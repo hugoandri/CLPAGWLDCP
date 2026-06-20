@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T06:48:50.300Z",
+  "generatedAt": "2026-06-20T17:44:44.361Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -7968,18 +7968,167 @@
     },
     {
       "slug": "paises-bajos-vs-suecia",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 2,
+      "awayScore": 1,
+      "minute": 45,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 5,
+            "team": "home",
+            "scorer": "Brian BROBBEY",
+            "assist": "Cody GAKPO.",
+            "type": "goal"
+          },
+          {
+            "minute": 17,
+            "team": "home",
+            "scorer": "Brian BROBBEY",
+            "assist": "Denzel DUMFRIES.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Bart Verbruggen",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Virgil VAN DIJK",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jan Paul VAN HECKE",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Micky VAN DE VEN",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Denzel DUMFRIES",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Ryan GRAVENBERCH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Tijjani REIJNDERS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Frenkie DE JONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Cody GAKPO",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Donyell Malen",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Brian BROBBEY",
+              "number": 19,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Kristoffer NORDFELDT",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Gustaf LAGERBIELKE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Victor LINDELOF",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Isak HIEN",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Gabriel GUDMUNDSSON",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Alexander BERNHARDSSON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Benjamin NYGREN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Jesper KARLSTROM",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Yasin AYARI",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Alexander Isak",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Viktor GYOKERES",
+              "number": 17,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Los Países Bajos llegan al partido con una sólida defensa liderada por Virgil van Dijk, quien es clave para su estrategia, mientras que Suecia confía en la velocidad y habilidad de Alexander Isak para generar oportunidades de ataque en un equipo que ha mostrado una forma irregular en los últimos partidos. En este encuentro, los Países Bajos parecen tener la ventaja debido a su mayor experiencia y cohesión como equipo, lo que les permite controlar el ritmo del juego y crear oportunidades claras de gol, lo que podría ser demasiado para la defensa sueca.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 5,
+            "away": 6
+          },
+          "corners": {
+            "home": 1,
+            "away": 1
+          },
+          "fouls": {
+            "home": 3,
+            "away": 4
+          },
+          "offsides": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Netherlands y Sweden se encuentra con un marcador de 2-1 a favor de los neerlandeses, con dos goles clave de Brian Brobbey en los minutos 5 y 17, lo que les ha permitido tomar una ventaja temprana en el encuentro. La segunda parte del partido puede ser decisiva, ya que Sweden necesitará intentar igualar el marcador, lo que podría llevar a un cambio en la estrategia y a un posible aumento en la intensidad del juego.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021472"
       }
     },
