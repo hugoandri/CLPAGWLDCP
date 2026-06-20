@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T23:49:29.705Z",
+  "generatedAt": "2026-06-20T02:37:58.020Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -2578,7 +2578,7 @@
       ]
     },
     "brasil": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021456",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021457",
       "players": [
         {
           "id": "308370",
@@ -2611,6 +2611,15 @@
           "club": "Paris Saint-Germain"
         },
         {
+          "id": "335656",
+          "name": "DANILO",
+          "number": 13,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/364f443f-83df-4e8e-803c-765feae146a3/DANILO_335656"
+        },
+        {
           "id": "367981",
           "name": "DOUGLAS SANTOS",
           "number": 16,
@@ -2619,16 +2628,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/7cef9b58-da05-42ba-afe9-aebcd4d40a0e/DOUGLAS-SANTOS_367981",
           "club": "Zenit Saint Petersburg"
-        },
-        {
-          "id": "430594",
-          "name": "ROGER IBANEZ",
-          "number": 24,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/0b88bb57-5b4b-448f-9af1-44869f36172a/ROGER-IBANEZ_430594",
-          "club": "Al-Ahli"
         },
         {
           "id": "308386",
@@ -2671,6 +2670,16 @@
           "club": "Real Madrid"
         },
         {
+          "id": "430609",
+          "name": "MATHEUS CUNHA",
+          "number": 9,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/9189da72-e1b5-4e7b-800d-7eeca119f08c/MATHEUS-CUNHA_430609",
+          "club": "Manchester United"
+        },
+        {
           "id": "433872",
           "name": "RAPHINHA",
           "number": 11,
@@ -2679,16 +2688,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/b4def0b2-7d6f-4f3a-bcde-600b292096d6/RAPHINHA_433872",
           "club": "Barcelona"
-        },
-        {
-          "id": "519836",
-          "name": "IGOR THIAGO",
-          "number": 25,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d547cc13-69d0-4204-91bf-baf63bbb7328/IGOR-THIAGO_519836",
-          "club": "Brentford"
         },
         {
           "id": "396315",
@@ -2720,15 +2719,6 @@
           "club": "Flamengo"
         },
         {
-          "id": "335656",
-          "name": "DANILO",
-          "number": 13,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/364f443f-83df-4e8e-803c-765feae146a3/DANILO_335656"
-        },
-        {
           "id": "431889",
           "name": "BREMER",
           "number": 14,
@@ -2747,6 +2737,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/9f0ecbc1-e1f8-4c5a-a39b-34902fd3cfe7/LEO-PEREIRA_371956",
           "club": "Flamengo"
+        },
+        {
+          "id": "430594",
+          "name": "ROGER IBANEZ",
+          "number": 24,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/0b88bb57-5b4b-448f-9af1-44869f36172a/ROGER-IBANEZ_430594",
+          "club": "Al-Ahli"
         },
         {
           "id": "485069",
@@ -2779,16 +2779,6 @@
           "club": "Zenit Saint Petersburg"
         },
         {
-          "id": "430609",
-          "name": "MATHEUS CUNHA",
-          "number": 9,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/9189da72-e1b5-4e7b-800d-7eeca119f08c/MATHEUS-CUNHA_430609",
-          "club": "Manchester United"
-        },
-        {
           "id": "463746",
           "name": "ENDRICK",
           "number": 19,
@@ -2817,6 +2807,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/4ef5dbd2-50dc-4def-8ae5-5c9f6fee72c2/GABRIEL-MARTINELLI_430597",
           "club": "Arsenal"
+        },
+        {
+          "id": "519836",
+          "name": "IGOR THIAGO",
+          "number": 25,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/d547cc13-69d0-4204-91bf-baf63bbb7328/IGOR-THIAGO_519836",
+          "club": "Brentford"
         },
         {
           "id": "475036",
@@ -3094,7 +3094,7 @@
       ]
     },
     "haiti": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021453",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021457",
       "players": [
         {
           "id": "295922",
@@ -3147,6 +3147,16 @@
           "club": "Nancy"
         },
         {
+          "id": "431781",
+          "name": "Jean-Kevin DUVERNE",
+          "number": 22,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/00dad9f5-0949-43df-a856-1ce364adf673/DUVERNE-Jean-Kevin_431781",
+          "club": "Gent"
+        },
+        {
           "id": "430697",
           "name": "Jean-Ricner Bellegarde",
           "number": 10,
@@ -3167,16 +3177,6 @@
           "club": "Philadelphia Union"
         },
         {
-          "id": "481027",
-          "name": "Louicius DEEDSON",
-          "number": 11,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/3838199f-c956-4b7c-a728-eef76a086a78/DEEDSON-Louicius_481027",
-          "club": "FC Dallas"
-        },
-        {
           "id": "485664",
           "name": "Ruben PROVIDENCE",
           "number": 15,
@@ -3187,16 +3187,6 @@
           "club": "Almere City"
         },
         {
-          "id": "405879",
-          "name": "Wilson Isidor",
-          "number": 18,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/226c4315-372a-4dcf-8a1c-d4f8dc646419/ISIDOR-Wilson_405879",
-          "club": "Sunderland"
-        },
-        {
           "id": "431693",
           "name": "Frantzdy Pierrot",
           "number": 20,
@@ -3205,6 +3195,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/0faa5cdb-4727-42be-b2b8-cedf04a37dd6/PIERROT-Frantzdy_431693",
           "club": "Çaykur Rizespor"
+        },
+        {
+          "id": "510757",
+          "name": "Josue CASIMIR",
+          "number": 21,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/4a02cdae-6685-4a04-a779-8472e1b0ee39/CASIMIR-Josue_510757",
+          "club": "Auxerre"
         },
         {
           "id": "466835",
@@ -3254,16 +3254,6 @@
           "starter": false,
           "captain": false,
           "club": "Colorado Springs Switchbacks FC"
-        },
-        {
-          "id": "431781",
-          "name": "Jean-Kevin DUVERNE",
-          "number": 22,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/00dad9f5-0949-43df-a856-1ce364adf673/DUVERNE-Jean-Kevin_431781",
-          "club": "Gent"
         },
         {
           "id": "498439",
@@ -3326,6 +3316,16 @@
           "club": "Esteghlal"
         },
         {
+          "id": "481027",
+          "name": "Louicius DEEDSON",
+          "number": 11,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/3838199f-c956-4b7c-a728-eef76a086a78/DEEDSON-Louicius_481027",
+          "club": "FC Dallas"
+        },
+        {
           "id": "485676",
           "name": "Lenny JOSEPH",
           "number": 16,
@@ -3336,6 +3336,16 @@
           "club": "Ferencváros"
         },
         {
+          "id": "405879",
+          "name": "Wilson Isidor",
+          "number": 18,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/226c4315-372a-4dcf-8a1c-d4f8dc646419/ISIDOR-Wilson_405879",
+          "club": "Sunderland"
+        },
+        {
           "id": "506483",
           "name": "Yassin FORTUNE",
           "number": 19,
@@ -3344,16 +3354,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/8c508739-1d44-49e5-8395-dbba0ff45072/FORTUNE-Yassin_506483",
           "club": "Vizela"
-        },
-        {
-          "id": "510757",
-          "name": "Josue CASIMIR",
-          "number": 21,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/4a02cdae-6685-4a04-a779-8472e1b0ee39/CASIMIR-Josue_510757",
-          "club": "Auxerre"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T23:49:29.703Z",
+  "generatedAt": "2026-06-20T02:37:58.017Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -7223,10 +7223,9 @@
     },
     {
       "slug": "escocia-vs-marruecos",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 1,
-      "minute": 86,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454",
       "confidence": 0.97,
       "detail": {
@@ -7289,6 +7288,24 @@
             "team": "away",
             "playerOut": "Brahim DIAZ",
             "playerIn": "Ayoube AMAIMOUNI"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "playerOut": "Nathan PATTERSON",
+            "playerIn": "Anthony RALSTON"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "playerOut": "John McGinn",
+            "playerIn": "Ross STEWART"
+          },
+          {
+            "minute": 90,
+            "team": "away",
+            "playerOut": "Azzedine OUNAHI",
+            "playerIn": "Samir EL MOURABET"
           }
         ],
         "lineup": {
@@ -7409,15 +7426,15 @@
         },
         "stats": {
           "shots": {
-            "home": 5,
-            "away": 9
+            "home": 6,
+            "away": 12
           },
           "corners": {
-            "home": 1,
+            "home": 2,
             "away": 5
           },
           "fouls": {
-            "home": 9,
+            "home": 10,
             "away": 7
           },
           "offsides": {
@@ -7429,26 +7446,270 @@
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Scotland y Morocco se encuentra con un marcador de 0-1 a favor de los marroquíes, quienes dominan el encuentro gracias al gol tempranero de Ismael Saibari en el minuto 2 y han mantenido su ventaja a pesar de las ocasiones de igualar para los escoceses. Con solo unos minutos restantes, es probable que Morocco busque mantener su ventaja y cerrar el partido, mientras que Scotland intentará presionar en busca de un empate, lo que podría llevar a un final emocionante y lleno de oportunidades para ambos equipos.",
+        "aiNotes": "En el partido entre Escocia y Marruecos, el equipo africano se llevó la victoria con un marcador de 0-1, gracias al gol tempranero de Ismael Saibari en el minuto 2, asistido por Brahim Diaz, lo que resultó ser el único gol del encuentro. La victoria de Marruecos puede considerarse un resultado sorprendente, ya que Escocia era considerada una de las selecciones más fuertes de su grupo, pero la efectividad y la estrategia defensiva de Marruecos les permitió mantener el resultado a su favor durante todo el partido.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021454"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021454"
       }
     },
     {
       "slug": "brasil-vs-haiti",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021457",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 23,
+            "team": "home",
+            "scorer": "Matheus Cunha",
+            "type": "goal"
+          },
+          {
+            "minute": 36,
+            "team": "home",
+            "scorer": "Matheus Cunha",
+            "assist": "VINICIUS JUNIOR.",
+            "type": "goal"
+          },
+          {
+            "minute": 48,
+            "team": "home",
+            "scorer": "Vinicius Junior",
+            "assist": "LUCAS PAQUETA.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 4,
+            "team": "away",
+            "player": "Carlens ARCUS",
+            "type": "yellow"
+          },
+          {
+            "minute": 49,
+            "team": "away",
+            "player": "Frantzdy PIERROT",
+            "type": "yellow"
+          },
+          {
+            "minute": 65,
+            "team": "home",
+            "player": "Douglas Santos",
+            "type": "yellow"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "player": "Danley JEAN JACQUES",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Carlens ARCUS",
+            "playerIn": "Dominique SIMON"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Frantzdy Pierrot",
+            "playerIn": "Wilson Isidor"
+          },
+          {
+            "minute": 40,
+            "team": "home",
+            "playerOut": "RAPHINHA",
+            "playerIn": "RAYAN"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "playerOut": "Josue CASIMIR",
+            "playerIn": "Louicius DEEDSON"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "MATHEUS CUNHA",
+            "playerIn": "ENDRICK"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "LUCAS PAQUETA",
+            "playerIn": "GABRIEL MARTINELLI"
+          },
+          {
+            "minute": 71,
+            "team": "away",
+            "playerOut": "Ruben PROVIDENCE",
+            "playerIn": "Lenny JOSEPH"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "VINICIUS JUNIOR",
+            "playerIn": "DANILO SANTOS"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "BRUNO GUIMARAES",
+            "playerIn": "EDERSON SILVA"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "Jean-Ricner Bellegarde",
+            "playerIn": "Derrick ETIENNE"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "ALISSON",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "GABRIEL MAGALHAES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "MARQUINHOS",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "DANILO",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "DOUGLAS SANTOS",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "CASEMIRO",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "BRUNO GUIMARAES",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LUCAS PAQUETA",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "VINICIUS JUNIOR",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "MATHEUS CUNHA",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "RAPHINHA",
+              "number": 11,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Johny Placide",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Carlens ARCUS",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo Ade",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannes DELCROIX",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Martin EXPERIENCE",
+              "number": 8,
+              "position": "DEF"
+            },
+            {
+              "name": "Jean-Kevin DUVERNE",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Jean-Ricner Bellegarde",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Danley JEAN JACQUES",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Ruben PROVIDENCE",
+              "number": 15,
+              "position": "FWD"
+            },
+            {
+              "name": "Frantzdy Pierrot",
+              "number": 20,
+              "position": "FWD"
+            },
+            {
+              "name": "Josue CASIMIR",
+              "number": 21,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 7,
+            "away": 7
+          },
+          "corners": {
+            "home": 4,
+            "away": 4
+          },
+          "fouls": {
+            "home": 13,
+            "away": 11
+          },
+          "offsides": {
+            "home": 8,
+            "away": 4
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 3
+          }
+        },
         "aiNotes": "Brazil llega al partido con una forma reciente destacada, gracias a la habilidad y velocidad de su jugador clave Vinícius Júnior, mientras que Haiti busca sorprender con la creatividad de Jean-Ricner Bellegarde, aunque su posición en el ranking de la FIFA sugiere una desventaja en términos de experiencia y nivel. En este encuentro, Brazil tiene la ventaja debido a su mayor experiencia y habilidad colectiva, lo que probablemente les permitirá dominar el partido y obtener una victoria convincente contra un equipo de Haiti que, a pesar de su determinación, carece de la solidez defensiva y el peso ofensivo para igualar a su oponente.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021457"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021457"
       }
     },
     {
