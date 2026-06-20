@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T19:02:55.908Z",
+  "generatedAt": "2026-06-20T20:39:35.490Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -8245,18 +8245,159 @@
     },
     {
       "slug": "alemania-vs-costa-de-marfil",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": 39,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 30,
+            "team": "away",
+            "scorer": "Franck KESSIE",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Manuel NEUER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jonathan TAH",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Joshua KIMMICH",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Nico SCHLOTTERBECK",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathaniel BROWN",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Aleksandar PAVLOVIC",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Jamal MUSIALA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Florian WIRTZ",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Leroy SANE",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Felix NMECHA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Kai HAVERTZ",
+              "number": 7,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Yahia Fofana",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ghislain KONAN",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Wilfried SINGO",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Odilon KOSSOUNOU",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Emmanuel AGBADOU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Franck KESSIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ibrahim SANGARE",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Christ Inao OULAI",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Ange-Yoan BONNY",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Yan DIOMANDE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Amad DIALLO",
+              "number": 15,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de confianza, ya que Alemania se encuentra en una buena forma reciente y cuenta con el talento de Jamal Musiala, mientras que Costa de Marfil busca sorprender con la habilidad y experiencia de Franck Kessié. En este encuentro, Alemania parece tener una ligera ventaja debido a su mayor experiencia en competiciones internacionales y su sólida estructura defensiva, lo que podría limitar las oportunidades de ataque de Costa de Marfil.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 4,
+            "away": 4
+          },
+          "corners": {
+            "home": 1,
+            "away": 0
+          },
+          "fouls": {
+            "home": 2,
+            "away": 2
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, Côte d'Ivoire lleva la ventaja en el marcador gracias al gol de Franck Kessie en el minuto 30, lo que ha permitido a su equipo dominar el ritmo del partido. En lo que resta del encuentro, es probable que Alemania intente cambiar su estrategia para intentar igualar el marcador, lo que podría llevar a un aumento en la intensidad y el ritmo del juego.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469"
       }
     },

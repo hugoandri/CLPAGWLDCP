@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T19:02:55.911Z",
+  "generatedAt": "2026-06-20T20:39:35.493Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -4153,7 +4153,7 @@
       ]
     },
     "alemania": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021464",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469",
       "players": [
         {
           "id": "228912",
@@ -5202,7 +5202,7 @@
       ]
     },
     "costa-de-marfil": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469",
       "players": [
         {
           "id": "405873",
@@ -5235,14 +5235,14 @@
           "club": "Galatasaray"
         },
         {
-          "id": "486317",
-          "name": "Guela DOUE",
-          "number": 17,
+          "id": "477825",
+          "name": "Odilon KOSSOUNOU",
+          "number": 7,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/9c597f58-ad63-4248-ac8b-b36e71f7b811/DOUE-Guela_486317",
-          "club": "Strasbourg"
+          "photoUrl": "https://digitalhub.fifa.com/transform/c3d01f63-7112-4a0d-a50b-0d85927676e9/KOSSOUNOU-Odilon_477825",
+          "club": "Atalanta"
         },
         {
           "id": "486268",
@@ -5255,16 +5255,6 @@
           "club": "Beşiktaş"
         },
         {
-          "id": "405175",
-          "name": "Seko Fofana",
-          "number": 6,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/08197d78-88b8-458f-9ad9-de192f25313c/FOFANA-Seko_405175",
-          "club": "Porto"
-        },
-        {
           "id": "371609",
           "name": "Franck KESSIE",
           "number": 8,
@@ -5273,6 +5263,36 @@
           "captain": true,
           "photoUrl": "https://digitalhub.fifa.com/transform/2e649ed1-5e23-4de2-aafc-79fac130f5f0/KESSIE-Franck_371609",
           "club": "Al-Ahli"
+        },
+        {
+          "id": "430831",
+          "name": "Ibrahim SANGARE",
+          "number": 18,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/daeaedd3-2c74-4fef-a968-2247f5ac962e/SANGARE-Ibrahim_430831",
+          "club": "Nottingham Forest"
+        },
+        {
+          "id": "514208",
+          "name": "Christ Inao OULAI",
+          "number": 26,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/a1bae10b-b280-4234-81c1-063fa931cd02/OULAI-Christ-Inao_514208",
+          "club": "Trabzonspor"
+        },
+        {
+          "id": "464103",
+          "name": "Ange-Yoan BONNY",
+          "number": 9,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/c2bd7f75-2634-437d-9b8e-45d23380a755/BONNY-Ange-Yoan_464103",
+          "club": "Inter Milan"
         },
         {
           "id": "510922",
@@ -5285,34 +5305,14 @@
           "club": "RB Leipzig"
         },
         {
-          "id": "464133",
-          "name": "Elye WAHI",
-          "number": 12,
+          "id": "430822",
+          "name": "Amad DIALLO",
+          "number": 15,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/088ceea5-0bdc-4615-9fc2-a99fe888fe44/WAHI-Elye_464133",
-          "club": "Nice"
-        },
-        {
-          "id": "402261",
-          "name": "Nicolas PEPE",
-          "number": 19,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1c7519d2-960c-4d19-83e7-40a155f1a8eb/PEPE-Nicolas_402261",
-          "club": "Villarreal"
-        },
-        {
-          "id": "506202",
-          "name": "Bazoumana TOURE",
-          "number": 24,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/fa213cf7-928a-49ab-acc9-b6f5059b188c/TOURE-Bazoumana_506202",
-          "club": "TSG Hoffenheim"
+          "photoUrl": "https://digitalhub.fifa.com/transform/92354f59-681a-4409-b1eb-0e0744a78da8/DIALLO-Amad_430822",
+          "club": "Manchester United"
         },
         {
           "id": "486259",
@@ -5345,16 +5345,6 @@
           "club": "Sporting CP"
         },
         {
-          "id": "477825",
-          "name": "Odilon KOSSOUNOU",
-          "number": 7,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c3d01f63-7112-4a0d-a50b-0d85927676e9/KOSSOUNOU-Odilon_477825",
-          "club": "Atalanta"
-        },
-        {
           "id": "486260",
           "name": "Christopher OPERI",
           "number": 13,
@@ -5363,6 +5353,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/7ed2ec22-290b-40bb-a4a9-4c3374aa3e91/OPERI-Christopher_486260",
           "club": "İstanbul Başakşehir"
+        },
+        {
+          "id": "486317",
+          "name": "Guela DOUE",
+          "number": 17,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/9c597f58-ad63-4248-ac8b-b36e71f7b811/DOUE-Guela_486317",
+          "club": "Strasbourg"
         },
         {
           "id": "419172",
@@ -5385,14 +5385,14 @@
           "club": "Maribor"
         },
         {
-          "id": "430831",
-          "name": "Ibrahim SANGARE",
-          "number": 18,
+          "id": "405175",
+          "name": "Seko Fofana",
+          "number": 6,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/daeaedd3-2c74-4fef-a968-2247f5ac962e/SANGARE-Ibrahim_430831",
-          "club": "Nottingham Forest"
+          "photoUrl": "https://digitalhub.fifa.com/transform/08197d78-88b8-458f-9ad9-de192f25313c/FOFANA-Seko_405175",
+          "club": "Porto"
         },
         {
           "id": "430834",
@@ -5405,26 +5405,6 @@
           "club": "Charleroi"
         },
         {
-          "id": "514208",
-          "name": "Christ Inao OULAI",
-          "number": 26,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a1bae10b-b280-4234-81c1-063fa931cd02/OULAI-Christ-Inao_514208",
-          "club": "Trabzonspor"
-        },
-        {
-          "id": "464103",
-          "name": "Ange-Yoan BONNY",
-          "number": 9,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c2bd7f75-2634-437d-9b8e-45d23380a755/BONNY-Ange-Yoan_464103",
-          "club": "Inter Milan"
-        },
-        {
           "id": "477778",
           "name": "Simon ADINGRA",
           "number": 10,
@@ -5433,6 +5413,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ba7341af-8a89-4260-9711-37bec1618ff2/ADINGRA-Simon_477778",
           "club": "Monaco"
+        },
+        {
+          "id": "464133",
+          "name": "Elye WAHI",
+          "number": 12,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/088ceea5-0bdc-4615-9fc2-a99fe888fe44/WAHI-Elye_464133",
+          "club": "Nice"
         },
         {
           "id": "477777",
@@ -5445,14 +5435,14 @@
           "club": "Cercle Brugge"
         },
         {
-          "id": "430822",
-          "name": "Amad DIALLO",
-          "number": 15,
+          "id": "402261",
+          "name": "Nicolas PEPE",
+          "number": 19,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/92354f59-681a-4409-b1eb-0e0744a78da8/DIALLO-Amad_430822",
-          "club": "Manchester United"
+          "photoUrl": "https://digitalhub.fifa.com/transform/1c7519d2-960c-4d19-83e7-40a155f1a8eb/PEPE-Nicolas_402261",
+          "club": "Villarreal"
         },
         {
           "id": "485675",
@@ -5463,6 +5453,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/a5543d71-798f-42a0-aef9-201b86bc75c1/GUESSAND-Evann_485675",
           "club": "Crystal Palace"
+        },
+        {
+          "id": "506202",
+          "name": "Bazoumana TOURE",
+          "number": 24,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/fa213cf7-928a-49ab-acc9-b6f5059b188c/TOURE-Bazoumana_506202",
+          "club": "TSG Hoffenheim"
         }
       ]
     },
