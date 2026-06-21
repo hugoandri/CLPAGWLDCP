@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T23:18:59.206Z",
+  "generatedAt": "2026-06-21T01:45:29.557Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -4417,7 +4417,7 @@
       ]
     },
     "curazao": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021464",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465",
       "players": [
         {
           "id": "390650",
@@ -4428,6 +4428,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/5bd9ff87-6801-46d2-8f10-ca9eb3ea2ea4/ROOM-Eloy_390650",
           "club": "Miami FC"
+        },
+        {
+          "id": "431698",
+          "name": "Jurien GAARI",
+          "number": 3,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/4744d27b-6a5c-48be-a849-48facb6f6d6e/GAARI-Jurien_431698",
+          "club": "Abha"
         },
         {
           "id": "466350",
@@ -4450,14 +4460,14 @@
           "club": "PSV Eindhoven"
         },
         {
-          "id": "398569",
-          "name": "Riechedly Bazoer",
-          "number": 23,
+          "id": "401023",
+          "name": "Joshua BRENET",
+          "number": 20,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/93fcbe0f-13ca-41f6-b453-447b45aea6ef/BAZOER-Riechedly_398569",
-          "club": "Konyaspor"
+          "photoUrl": "https://digitalhub.fifa.com/transform/2069bb09-aaf0-41dc-81e4-a8f4df33b4e5/BRENET-Joshua_401023",
+          "club": "Kayserispor"
         },
         {
           "id": "506471",
@@ -4520,16 +4530,6 @@
           "club": "Miami FC"
         },
         {
-          "id": "424056",
-          "name": "Sontje HANSEN",
-          "number": 12,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/35e4773d-8580-4100-a87a-239c2e03e179/HANSEN-Sontje_424056",
-          "club": "Middlesbrough"
-        },
-        {
           "id": "466370",
           "name": "Tyrick BODAK",
           "number": 25,
@@ -4560,16 +4560,6 @@
           "club": "Sparta Rotterdam"
         },
         {
-          "id": "431698",
-          "name": "Jurien GAARI",
-          "number": 3,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/4744d27b-6a5c-48be-a849-48facb6f6d6e/GAARI-Jurien_431698",
-          "club": "Abha"
-        },
-        {
           "id": "466361",
           "name": "Roshon VAN EIJMA",
           "number": 4,
@@ -4580,14 +4570,14 @@
           "club": "RKC Waalwijk"
         },
         {
-          "id": "401023",
-          "name": "Joshua BRENET",
-          "number": 20,
+          "id": "398569",
+          "name": "Riechedly Bazoer",
+          "number": 23,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2069bb09-aaf0-41dc-81e4-a8f4df33b4e5/BRENET-Joshua_401023",
-          "club": "Kayserispor"
+          "photoUrl": "https://digitalhub.fifa.com/transform/93fcbe0f-13ca-41f6-b453-447b45aea6ef/BAZOER-Riechedly_398569",
+          "club": "Konyaspor"
         },
         {
           "id": "466359",
@@ -4628,6 +4618,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/cd0b7ee9-50b8-4043-a957-44df5860e935/ANTONISSE-Jeremy_424047",
           "club": "Kifisia"
+        },
+        {
+          "id": "424056",
+          "name": "Sontje HANSEN",
+          "number": 12,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/35e4773d-8580-4100-a87a-239c2e03e179/HANSEN-Sontje_424056",
+          "club": "Middlesbrough"
         },
         {
           "id": "506473",
@@ -5467,7 +5467,7 @@
       ]
     },
     "ecuador": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021467",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465",
       "players": [
         {
           "id": "441236",
@@ -5490,16 +5490,6 @@
           "club": "Arsenal"
         },
         {
-          "id": "463465",
-          "name": "Joel ORDONEZ",
-          "number": 4,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/54a42d16-279a-4566-8c46-ac75d8ea095a/ORDONEZ-Joel_463465",
-          "club": "Club Brugge"
-        },
-        {
           "id": "448290",
           "name": "Willian PACHO",
           "number": 6,
@@ -5510,14 +5500,24 @@
           "club": "Paris Saint-Germain"
         },
         {
-          "id": "463468",
-          "name": "Alan MINDA",
-          "number": 14,
+          "id": "389782",
+          "name": "Pervis ESTUPINAN",
+          "number": 7,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/85df33e2-083f-4cef-9fa2-3a8fc7d29466/ESTUPINAN-Pervis_389782",
+          "club": "Milan"
+        },
+        {
+          "id": "419005",
+          "name": "Jordy ALCIVAR",
+          "number": 5,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b43c46a0-9e62-4202-b9e4-c625b36afc16/MINDA-Alan_463468",
-          "club": "Atlético Mineiro"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7f7492dc-4cdc-41c2-8acc-91ccad4d9664/ALCIVAR-Jordy_419005",
+          "club": "Independiente del Valle"
         },
         {
           "id": "424036",
@@ -5610,14 +5610,14 @@
           "club": "Internacional"
         },
         {
-          "id": "389782",
-          "name": "Pervis ESTUPINAN",
-          "number": 7,
+          "id": "463465",
+          "name": "Joel ORDONEZ",
+          "number": 4,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/85df33e2-083f-4cef-9fa2-3a8fc7d29466/ESTUPINAN-Pervis_389782",
-          "club": "Milan"
+          "photoUrl": "https://digitalhub.fifa.com/transform/54a42d16-279a-4566-8c46-ac75d8ea095a/ORDONEZ-Joel_463465",
+          "club": "Club Brugge"
         },
         {
           "id": "402974",
@@ -5650,16 +5650,6 @@
           "club": "Genk"
         },
         {
-          "id": "419005",
-          "name": "Jordy ALCIVAR",
-          "number": 5,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7f7492dc-4cdc-41c2-8acc-91ccad4d9664/ALCIVAR-Jordy_419005",
-          "club": "Independiente del Valle"
-        },
-        {
           "id": "448299",
           "name": "Anthony VALENCIA",
           "number": 8,
@@ -5678,6 +5668,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ee18ba2f-5e31-4e33-8739-f0d59033c409/PAEZ-Kendry_463495",
           "club": "River Plate"
+        },
+        {
+          "id": "463468",
+          "name": "Alan MINDA",
+          "number": 14,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b43c46a0-9e62-4202-b9e4-c625b36afc16/MINDA-Alan_463468",
+          "club": "Atlético Mineiro"
         },
         {
           "id": "463476",

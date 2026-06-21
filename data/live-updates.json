@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T23:18:59.204Z",
+  "generatedAt": "2026-06-21T01:45:29.555Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -8477,18 +8477,236 @@
     },
     {
       "slug": "ecuador-vs-curazao",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 85,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 38,
+            "team": "home",
+            "player": "Jordy ALCIVAR",
+            "type": "yellow"
+          },
+          {
+            "minute": 39,
+            "team": "away",
+            "player": "Leandro BACUNA",
+            "type": "yellow"
+          },
+          {
+            "minute": 53,
+            "team": "away",
+            "player": "Juninho BACUNA",
+            "type": "yellow"
+          },
+          {
+            "minute": 56,
+            "team": "away",
+            "player": "Livano COMENENCIA",
+            "type": "yellow"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "player": "Jurien GAARI",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Jordy ALCIVAR",
+            "playerIn": "Kevin RODRIGUEZ"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Pervis ESTUPINAN",
+            "playerIn": "Nilson ANGULO"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Deveron FONVILLE",
+            "playerIn": "Roshon VAN EIJMA"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Tahith CHONG",
+            "playerIn": "Jearl MARGARITHA"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Juninho BACUNA",
+            "playerIn": "Kenji GORRE"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Alan FRANCO",
+            "playerIn": "Angelo PRECIADO"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Livano COMENENCIA",
+            "playerIn": "Godfried ROEMERATOE"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Juergen LOCADIA",
+            "playerIn": "Gervane KASTANEER"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Hernan GALINDEZ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Piero HINCAPIE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Willian PACHO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Pervis ESTUPINAN",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Jordy ALCIVAR",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Pedro VITE",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Alan FRANCO",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Moises CAICEDO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "John YEBOAH",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Enner VALENCIA",
+              "number": 13,
+              "position": "FWD"
+            },
+            {
+              "name": "Gonzalo PLATA",
+              "number": 19,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Eloy ROOM",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jurien GAARI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Sherel FLORANUS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Armando OBISPO",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Joshua BRENET",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Deveron FONVILLE",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Juninho BACUNA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Livano COMENENCIA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Leandro BACUNA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Tahith CHONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Juergen LOCADIA",
+              "number": 9,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ecuador llega al partido con una forma reciente irregular, pero cuenta con la habilidad y la creatividad de Moisés Caicedo, quien ha demostrado ser un jugador clave en la selección, mientras que Curaçao, con Leandro Bacuna como su referente, ha mostrado una defensa sólida, pero carece de profundidad en su ataque. Considero que Ecuador tiene ventaja en este partido debido a su mayor experiencia y habilidad en el campo, lo que les permitirá dominar el juego y crear oportunidades claras de gol, aunque Curaçao puede ofrecer resistencia con su defensa bien organizada.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 27,
+            "away": 10
+          },
+          "corners": {
+            "home": 7,
+            "away": 0
+          },
+          "fouls": {
+            "home": 6,
+            "away": 5
+          },
+          "offsides": {
+            "home": 1,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 4
+          }
+        },
+        "aiNotes": "En este momento del partido, Ecuador y Curaçao se encuentran empatados a cero goles, con Ecuador mostrando una ligera ventaja en el dominio del juego, aunque ninguno de los equipos ha logrado anotar debido a la solidez defensiva de ambos. A medida que el partido se acerca a su fin, es probable que Ecuador intente aumentar la presión ofensiva para intentar romper el empate, mientras que Curaçao podría buscar aprovechar cualquier oportunidad de contraataque para sorprender a su oponente.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465"
       }
     },
