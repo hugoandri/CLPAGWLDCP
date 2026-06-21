@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T20:11:09.951Z",
+  "generatedAt": "2026-06-21T21:44:36.208Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -9219,10 +9219,9 @@
     },
     {
       "slug": "belgica-vs-iran",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 46,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477",
       "confidence": 0.97,
       "detail": {
@@ -9239,6 +9238,12 @@
             "team": "away",
             "player": "Saeid EZATOLAHI",
             "type": "yellow"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "player": "Nathan NGOY",
+            "type": "red"
           }
         ],
         "substitutions": [
@@ -9247,6 +9252,60 @@
             "team": "away",
             "playerOut": "Saleh HARDANI",
             "playerIn": "Alireza JAHANBAKHSH"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "Thomas MEUNIER",
+            "playerIn": "Timothy CASTAGNE"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "Nicolas RASKIN",
+            "playerIn": "Hans VANAKEN"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "Alexis SAELEMAEKERS",
+            "playerIn": "Dodi LUKEBAKIO"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Mohammad MOHEBBI",
+            "playerIn": "Mehdi TORABI"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Ehsan HAJISAFI",
+            "playerIn": "Milad MOHAMMADI"
+          },
+          {
+            "minute": 73,
+            "team": "home",
+            "playerOut": "Romelu LUKAKU",
+            "playerIn": "Arthur THEATE"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "Saman GHODDOS",
+            "playerIn": "Shahriyar MOGHANLOO"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Saeid EZATOLAHI",
+            "playerIn": "Amirhossein Hosseinzadeh"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "Kevin DE BRUYNE",
+            "playerIn": "Matias FERNANDEZ-PARDO"
           }
         ],
         "lineup": {
@@ -9367,29 +9426,29 @@
         },
         "stats": {
           "shots": {
-            "home": 11,
-            "away": 3
+            "home": 23,
+            "away": 7
           },
           "corners": {
-            "home": 2,
-            "away": 1
+            "home": 4,
+            "away": 2
           },
           "fouls": {
-            "home": 4,
-            "away": 4
+            "home": 5,
+            "away": 8
           },
           "offsides": {
-            "home": 2,
-            "away": 2
+            "home": 3,
+            "away": 4
           },
           "yellowCards": {
             "home": 1,
             "away": 1
           }
         },
-        "aiNotes": "El partido entre Bélgica y Irán se encuentra empatado sin goles en el minuto 46, con ambas selecciones mostrando un juego cauteloso y sin demasiadas oportunidades claras de gol, aunque Romelu Lukaku y Saeid Ezatolahi han recibido tarjetas amarillas. En lo que resta del partido, es probable que Bélgica intente aumentar la presión ofensiva para intentar romper el empate, mientras que Irán podría buscar aprovechar los espacios en contraataque para sorprender a su rival.",
+        "aiNotes": "El partido entre Bélgica e Irán terminó con un empate sin goles, con Romelu Lukaku y Saeid Ezatolahi recibiendo tarjetas amarillas y Nathan Ngoy siendo expulsado en el minuto 66. La táctica defensiva de Irán funcionó a la perfección, ya que lograron contener a la ofensiva belga y mantener el empate a pesar de la superioridad numérica de Bélgica durante gran parte del partido.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021477"
       }
     },
     {
