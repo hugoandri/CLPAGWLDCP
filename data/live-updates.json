@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:20:04.393Z",
+  "generatedAt": "2026-06-21T20:11:09.951Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -9219,18 +9219,176 @@
     },
     {
       "slug": "belgica-vs-iran",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 46,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 3,
+            "team": "home",
+            "player": "Romelu LUKAKU",
+            "type": "yellow"
+          },
+          {
+            "minute": 33,
+            "team": "away",
+            "player": "Saeid EZATOLAHI",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Saleh HARDANI",
+            "playerIn": "Alireza JAHANBAKHSH"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Thibaut COURTOIS",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Brandon MECHELE",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Maxim DE CUYPER",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Thomas MEUNIER",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathan NGOY",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Kevin DE BRUYNE",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Youri TIELEMANS",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Alexis SAELEMAEKERS",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Nicolas RASKIN",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Romelu LUKAKU",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Leandro TROSSARD",
+              "number": 10,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Alireza BEIRANVAND",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Saleh HARDANI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Ehsan HAJISAFI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Shoja KHALILZADEH",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Hossein KANANI",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Ali NEMATI",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Ramin REZAEIAN",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Saeid EZATOLAHI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Mohammad MOHEBBI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Saman GHODDOS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Mehdi TAREMI",
+              "number": 9,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Bélgica busca recuperar su nivel de competencia con jugadores como Jérémy Doku, quien ha demostrado ser un factor clave en su ataque, mientras que Irán confía en la experiencia y habilidad de Mehdi Taremi para liderar su equipo. Espero que Bélgica tenga ventaja en el partido debido a su mayor experiencia en torneos internacionales y su sólido conjunto, lo que podría darles una ligera superioridad sobre un Irán que, aunque competitivo, puede encontrar dificultades para contrarrestar el ritmo y la precisión del ataque belga.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 11,
+            "away": 3
+          },
+          "corners": {
+            "home": 2,
+            "away": 1
+          },
+          "fouls": {
+            "home": 4,
+            "away": 4
+          },
+          "offsides": {
+            "home": 2,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        "aiNotes": "El partido entre Bélgica y Irán se encuentra empatado sin goles en el minuto 46, con ambas selecciones mostrando un juego cauteloso y sin demasiadas oportunidades claras de gol, aunque Romelu Lukaku y Saeid Ezatolahi han recibido tarjetas amarillas. En lo que resta del partido, es probable que Bélgica intente aumentar la presión ofensiva para intentar romper el empate, mientras que Irán podría buscar aprovechar los espacios en contraataque para sorprender a su rival.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477"
       }
     },

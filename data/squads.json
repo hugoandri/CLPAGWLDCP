@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:20:04.396Z",
+  "generatedAt": "2026-06-21T20:11:09.954Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -6771,7 +6771,7 @@
       ]
     },
     "belgica": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477",
       "players": [
         {
           "id": "358106",
@@ -6794,6 +6794,16 @@
           "club": "Club Brugge"
         },
         {
+          "id": "448373",
+          "name": "Maxim DE CUYPER",
+          "number": 5,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/1c22dfc4-3eb2-4778-b310-ef4b62aef0c6/DE-CUYPER-Maxim_448373",
+          "club": "Brighton & Hove Albion"
+        },
+        {
           "id": "358122",
           "name": "Thomas MEUNIER",
           "number": 15,
@@ -6802,16 +6812,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/13d6695b-4220-48cb-91b1-16a60dff2aa6/MEUNIER-Thomas_358122",
           "club": "Lille"
-        },
-        {
-          "id": "411443",
-          "name": "Timothy CASTAGNE",
-          "number": 21,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/58f1cc7c-04f4-43ba-bc82-85c1226fb7a2/CASTAGNE-Timothy_411443",
-          "club": "Fulham"
         },
         {
           "id": "514166",
@@ -6844,14 +6844,34 @@
           "club": "Aston Villa"
         },
         {
-          "id": "448364",
-          "name": "Amadou ONANA",
-          "number": 24,
+          "id": "433092",
+          "name": "Alexis SAELEMAEKERS",
+          "number": 22,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/697ee4f8-3df1-4ce5-a8b9-c9dae1ed6aba/ONANA-Amadou_448364",
-          "club": "Aston Villa"
+          "photoUrl": "https://digitalhub.fifa.com/transform/f4764c32-f702-4695-9658-28479916fa99/SAELEMAEKERS-Alexis_433092",
+          "club": "Milan"
+        },
+        {
+          "id": "495349",
+          "name": "Nicolas RASKIN",
+          "number": 23,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/2a366682-88f4-4d6f-ae54-e474030615cc/RASKIN-Nicolas_495349",
+          "club": "Rangers"
+        },
+        {
+          "id": "358112",
+          "name": "Romelu LUKAKU",
+          "number": 9,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/302b7fb7-6964-4a52-8db4-9c12778b80fa/LUKAKU-Romelu_358112",
+          "club": "Napoli"
         },
         {
           "id": "448355",
@@ -6862,26 +6882,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/78476568-5abb-4047-b6c0-fd9651e0f39d/TROSSARD-Leandro_448355",
           "club": "Arsenal"
-        },
-        {
-          "id": "448341",
-          "name": "Jeremy DOKU",
-          "number": 11,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/df41be47-900d-41fe-90eb-b493f7609869/DOKU-Jeremy_448341",
-          "club": "Manchester City"
-        },
-        {
-          "id": "448362",
-          "name": "Charles DE KETELAERE",
-          "number": 17,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2ce231c2-05f7-4353-921c-242c863a8d54/DE-KETELAERE-Charles_448362",
-          "club": "Atalanta"
         },
         {
           "id": "495348",
@@ -6914,16 +6914,6 @@
           "club": "Eintracht Frankfurt"
         },
         {
-          "id": "448373",
-          "name": "Maxim DE CUYPER",
-          "number": 5,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1c22dfc4-3eb2-4778-b310-ef4b62aef0c6/DE-CUYPER-Maxim_448373",
-          "club": "Brighton & Hove Albion"
-        },
-        {
           "id": "448366",
           "name": "Koni DE WINTER",
           "number": 16,
@@ -6942,6 +6932,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/33c2b9de-5ae7-4fa1-8db8-6cff8e2b02f0/SEYS-Joaquin_506088",
           "club": "Club Brugge"
+        },
+        {
+          "id": "411443",
+          "name": "Timothy CASTAGNE",
+          "number": 21,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/58f1cc7c-04f4-43ba-bc82-85c1226fb7a2/CASTAGNE-Timothy_411443",
+          "club": "Fulham"
         },
         {
           "id": "290821",
@@ -6974,34 +6974,14 @@
           "club": "Club Brugge"
         },
         {
-          "id": "433092",
-          "name": "Alexis SAELEMAEKERS",
-          "number": 22,
+          "id": "448364",
+          "name": "Amadou ONANA",
+          "number": 24,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/f4764c32-f702-4695-9658-28479916fa99/SAELEMAEKERS-Alexis_433092",
-          "club": "Milan"
-        },
-        {
-          "id": "495349",
-          "name": "Nicolas RASKIN",
-          "number": 23,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2a366682-88f4-4d6f-ae54-e474030615cc/RASKIN-Nicolas_495349",
-          "club": "Rangers"
-        },
-        {
-          "id": "358112",
-          "name": "Romelu LUKAKU",
-          "number": 9,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/302b7fb7-6964-4a52-8db4-9c12778b80fa/LUKAKU-Romelu_358112",
-          "club": "Napoli"
+          "photoUrl": "https://digitalhub.fifa.com/transform/697ee4f8-3df1-4ce5-a8b9-c9dae1ed6aba/ONANA-Amadou_448364",
+          "club": "Aston Villa"
         },
         {
           "id": "448377",
@@ -7012,6 +6992,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/5672576a-616d-45a3-8f06-95aa772bb821/LUKEBAKIO-Dodi_448377",
           "club": "Benfica"
+        },
+        {
+          "id": "448362",
+          "name": "Charles DE KETELAERE",
+          "number": 17,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/2ce231c2-05f7-4353-921c-242c863a8d54/DE-KETELAERE-Charles_448362",
+          "club": "Atalanta"
         },
         {
           "id": "494025",
@@ -7789,7 +7779,7 @@
       ]
     },
     "iran": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021477",
       "players": [
         {
           "id": "380007",
@@ -7802,6 +7792,25 @@
           "club": "Tractor"
         },
         {
+          "id": "448505",
+          "name": "Saleh HARDANI",
+          "number": 2,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/0357126d-f784-46a7-901d-33d54b66598b/HARDANI-Saleh_448505",
+          "club": "Esteghlal"
+        },
+        {
+          "id": "288961",
+          "name": "Ehsan HAJISAFI",
+          "number": 3,
+          "position": "DEF",
+          "starter": true,
+          "captain": true,
+          "photoUrl": "https://digitalhub.fifa.com/transform/6567ec6b-b63d-4163-8729-6e9ad25e32f7/HAJISAFI-Ehsan_288961"
+        },
+        {
           "id": "346743",
           "name": "Shoja KHALILZADEH",
           "number": 4,
@@ -7812,24 +7821,13 @@
           "club": "Tractor"
         },
         {
-          "id": "390537",
-          "name": "Milad MOHAMMADI",
-          "number": 5,
+          "id": "390534",
+          "name": "Hossein KANANI",
+          "number": 13,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ed36d5fa-f6ab-4e3c-8bdd-1c5cf555f225/MOHAMMADI-Milad_390537",
-          "club": "Persepolis"
-        },
-        {
-          "id": "481181",
-          "name": "Arya YOUSEFI",
-          "number": 17,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b648ca0d-4664-422c-af5f-da86c97e22b0/YOUSEFI-Arya_481181",
-          "club": "Sepahan"
+          "photoUrl": "https://digitalhub.fifa.com/transform/20ec6667-ff1b-4fb3-8128-ecf2eb1c6e18/KANANI-Hossein_390534"
         },
         {
           "id": "489603",
@@ -7886,18 +7884,9 @@
           "number": 9,
           "position": "FWD",
           "starter": true,
-          "captain": true,
+          "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/0d942331-39fb-421e-8a8d-d1f875958559/TAREMI-Mehdi_388475",
           "club": "Olympiacos"
-        },
-        {
-          "id": "481180",
-          "name": "Shahriyar MOGHANLOO",
-          "number": 20,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b0036654-fcd0-4f2c-b924-468f7f63828e/MOGHANLOO-Shahriyar_481180"
         },
         {
           "id": "448507",
@@ -7920,32 +7909,24 @@
           "club": "Sepahan"
         },
         {
-          "id": "448505",
-          "name": "Saleh HARDANI",
-          "number": 2,
+          "id": "390537",
+          "name": "Milad MOHAMMADI",
+          "number": 5,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/0357126d-f784-46a7-901d-33d54b66598b/HARDANI-Saleh_448505",
-          "club": "Esteghlal"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ed36d5fa-f6ab-4e3c-8bdd-1c5cf555f225/MOHAMMADI-Milad_390537",
+          "club": "Persepolis"
         },
         {
-          "id": "288961",
-          "name": "Ehsan HAJISAFI",
-          "number": 3,
+          "id": "481181",
+          "name": "Arya YOUSEFI",
+          "number": 17,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/6567ec6b-b63d-4163-8729-6e9ad25e32f7/HAJISAFI-Ehsan_288961"
-        },
-        {
-          "id": "390534",
-          "name": "Hossein KANANI",
-          "number": 13,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/20ec6667-ff1b-4fb3-8128-ecf2eb1c6e18/KANANI-Hossein_390534"
+          "photoUrl": "https://digitalhub.fifa.com/transform/b648ca0d-4664-422c-af5f-da86c97e22b0/YOUSEFI-Arya_481181",
+          "club": "Sepahan"
         },
         {
           "id": "494429",
@@ -8035,6 +8016,15 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/94c4de69-a055-4127-b21e-2071a84a4526/HOSSEINZADEH-Amirhossein_405639",
           "club": "Tractor"
+        },
+        {
+          "id": "481180",
+          "name": "Shahriyar MOGHANLOO",
+          "number": 20,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b0036654-fcd0-4f2c-b924-468f7f63828e/MOGHANLOO-Shahriyar_481180"
         },
         {
           "id": "519837",
