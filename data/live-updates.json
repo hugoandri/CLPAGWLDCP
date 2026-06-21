@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T06:39:22.504Z",
+  "generatedAt": "2026-06-21T16:52:24.104Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -8963,18 +8963,185 @@
     },
     {
       "slug": "espana-vs-arabia-saudita",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 3,
+      "awayScore": 0,
+      "minute": 37,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
+        "goals": [
+          {
+            "minute": 10,
+            "team": "home",
+            "scorer": "Lamine YAMAL",
+            "assist": "Mikel OYARZABAL.",
+            "type": "goal"
+          },
+          {
+            "minute": 21,
+            "team": "home",
+            "scorer": "Mikel OYARZABAL",
+            "assist": "Aymeric LAPORTE.",
+            "type": "goal"
+          },
+          {
+            "minute": 24,
+            "team": "home",
+            "scorer": "Mikel OYARZABAL",
+            "assist": "Dani OLMO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 30,
+            "team": "away",
+            "player": "Salem Aldawsari",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Unai SIMON",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Pedro PORRO",
+              "number": 12,
+              "position": "DEF"
+            },
+            {
+              "name": "Aymeric LAPORTE",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Pau CUBARSI",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Marc CUCURELLA",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Alex BAENA",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "RODRI",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "PEDRI",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Dani OLMO",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Lamine YAMAL",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Mikel OYARZABAL",
+              "number": 21,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "MOHAMMED ALOWAIS",
+              "number": 21,
+              "position": "GK"
+            },
+            {
+              "name": "ALI LAJAMI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulelah ALAMRI",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "HASSAN ALTAMBAKTI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "SAUD ABDULHAMID",
+              "number": 12,
+              "position": "DEF"
+            },
+            {
+              "name": "MOTEB ALHARBI",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "NASSER ALDAWSARI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "MUSAB ALJUWAYR",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "ABDULLAH ALKHAIBARI",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "FERAS ALBRIKAN",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "SALEM ALDAWSARI",
+              "number": 10,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que España se presenta con una sólida forma reciente y una gran cantidad de talento en su plantilla, liderada por el joven y destacado Pedri, mientras que Arabia Saudita busca sorprender con la velocidad y habilidad de Salem Al-Dawsari. En este encuentro, España tiene la ventaja debido a su mayor experiencia y calidad en el conjunto, lo que sugiere que debería dominar el partido y obtener una victoria cómoda contra un equipo saudita que, aunque peligroso en contraataques, puede tener dificultades para contener el ataque español.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 17,
+            "away": 2
+          },
+          "corners": {
+            "home": 4,
+            "away": 1
+          },
+          "fouls": {
+            "home": 3,
+            "away": 1
+          },
+          "offsides": {
+            "home": 0,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, España domina claramente el partido con un marcador de 3-0 sobre Arabia Saudita, gracias a los goles de Lamine Yamal y el doblete de Mikel Oyarzabal, lo que refleja la superioridad de los españoles en el campo. En lo que resta del partido, es probable que España siga presionando para aumentar su ventaja, mientras que Arabia Saudita podría intentar cambiar su estrategia para tratar de reducir la desventaja y evitar una derrota más abultada.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483"
       }
     },

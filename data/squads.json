@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T06:39:22.507Z",
+  "generatedAt": "2026-06-21T16:52:24.107Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -6241,7 +6241,7 @@
       ]
     },
     "espana": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483",
       "players": [
         {
           "id": "430753",
@@ -6254,14 +6254,14 @@
           "club": "Athletic Bilbao"
         },
         {
-          "id": "382739",
-          "name": "Marcos LLORENTE",
-          "number": 5,
+          "id": "430144",
+          "name": "Pedro PORRO",
+          "number": 12,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ab948683-40c0-4af1-9038-b7f24da3ffc2/LLORENTE-Marcos_382739",
-          "club": "Atlético Madrid"
+          "photoUrl": "https://digitalhub.fifa.com/transform/2c33b0c7-c399-4eac-98b2-66f35e77886a/PORRO-Pedro_430144",
+          "club": "Tottenham Hotspur"
         },
         {
           "id": "335999",
@@ -6294,24 +6294,14 @@
           "club": "Chelsea"
         },
         {
-          "id": "430718",
-          "name": "Fabian RUIZ",
-          "number": 8,
+          "id": "447860",
+          "name": "Alex BAENA",
+          "number": 15,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c40ded96-190d-41c8-90f2-6a253a63b33d/RUIZ-Fabian_430718",
-          "club": "Paris Saint-Germain"
-        },
-        {
-          "id": "447866",
-          "name": "GAVI",
-          "number": 9,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/4a8278cb-43c6-4a1a-8aa8-896c67daf977/GAVI_447866",
-          "club": "Barcelona"
+          "photoUrl": "https://digitalhub.fifa.com/transform/19c2a085-e986-4c5b-8af7-aa98f7adc36e/BAENA-Alex_447860",
+          "club": "Atlético Madrid"
         },
         {
           "id": "411375",
@@ -6334,13 +6324,23 @@
           "club": "Barcelona"
         },
         {
-          "id": "405545",
-          "name": "Ferran TORRES",
-          "number": 7,
+          "id": "430750",
+          "name": "Dani OLMO",
+          "number": 10,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/aa65d133-f0fb-4379-9b1b-6c9dc2f40195/TORRES-Ferran_405545",
+          "photoUrl": "https://digitalhub.fifa.com/transform/c3f3e67a-90c1-469a-a4e1-263a470db989/OLMO-Dani_430750",
+          "club": "Barcelona"
+        },
+        {
+          "id": "484320",
+          "name": "Lamine YAMAL",
+          "number": 19,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/37b631d3-c340-4590-91a8-bb00bd5f1e89/YAMAL-Lamine_484320",
           "club": "Barcelona"
         },
         {
@@ -6404,14 +6404,14 @@
           "club": "Barcelona"
         },
         {
-          "id": "430144",
-          "name": "Pedro PORRO",
-          "number": 12,
+          "id": "382739",
+          "name": "Marcos LLORENTE",
+          "number": 5,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2c33b0c7-c399-4eac-98b2-66f35e77886a/PORRO-Pedro_430144",
-          "club": "Tottenham Hotspur"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ab948683-40c0-4af1-9038-b7f24da3ffc2/LLORENTE-Marcos_382739",
+          "club": "Atlético Madrid"
         },
         {
           "id": "430733",
@@ -6424,14 +6424,24 @@
           "club": "Arsenal"
         },
         {
-          "id": "447860",
-          "name": "Alex BAENA",
-          "number": 15,
+          "id": "430718",
+          "name": "Fabian RUIZ",
+          "number": 8,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/19c2a085-e986-4c5b-8af7-aa98f7adc36e/BAENA-Alex_447860",
-          "club": "Atlético Madrid"
+          "photoUrl": "https://digitalhub.fifa.com/transform/c40ded96-190d-41c8-90f2-6a253a63b33d/RUIZ-Fabian_430718",
+          "club": "Paris Saint-Germain"
+        },
+        {
+          "id": "447866",
+          "name": "GAVI",
+          "number": 9,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/4a8278cb-43c6-4a1a-8aa8-896c67daf977/GAVI_447866",
+          "club": "Barcelona"
         },
         {
           "id": "430754",
@@ -6444,13 +6454,13 @@
           "club": "Arsenal"
         },
         {
-          "id": "430750",
-          "name": "Dani OLMO",
-          "number": 10,
+          "id": "405545",
+          "name": "Ferran TORRES",
+          "number": 7,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c3f3e67a-90c1-469a-a4e1-263a470db989/OLMO-Dani_430750",
+          "photoUrl": "https://digitalhub.fifa.com/transform/aa65d133-f0fb-4379-9b1b-6c9dc2f40195/TORRES-Ferran_405545",
           "club": "Barcelona"
         },
         {
@@ -6472,16 +6482,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/1792665e-37cb-421d-969b-e6a3edbd8d76/WILLIAMS-Nico_447855",
           "club": "Athletic Bilbao"
-        },
-        {
-          "id": "484320",
-          "name": "Lamine YAMAL",
-          "number": 19,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/37b631d3-c340-4590-91a8-bb00bd5f1e89/YAMAL-Lamine_484320",
-          "club": "Barcelona"
         },
         {
           "id": "492859",
@@ -7286,7 +7286,7 @@
       ]
     },
     "arabia-saudita": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483",
       "players": [
         {
           "id": "396885",
@@ -7297,6 +7297,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/be2d88f0-e368-49ef-9a33-c7585955c495/MOHAMMED-ALOWAIS_396885",
           "club": "Al-Ula"
+        },
+        {
+          "id": "433439",
+          "name": "ALI LAJAMI",
+          "number": 3,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/27fa9b34-d37d-4416-a35f-fb6d234e9e8c/ALI-LAJAMI_433439",
+          "club": "Al-Hilal"
         },
         {
           "id": "403312",
@@ -7339,13 +7349,14 @@
           "club": "Al-Hilal"
         },
         {
-          "id": "512183",
-          "name": "MOHAMMED ABU ALSHAMAT",
-          "number": 26,
-          "position": "DEF",
+          "id": "403319",
+          "name": "NASSER ALDAWSARI",
+          "number": 6,
+          "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/8aee29b9-06b4-4b46-b529-3bb6adf5f9a6/MOHAMMED-ABU-ALSHAMAT_512183"
+          "photoUrl": "https://digitalhub.fifa.com/transform/81e654c7-8273-4e1f-b909-62613fbf14ea/NASSER-ALDAWSARI_403319",
+          "club": "Al-Hilal"
         },
         {
           "id": "436537",
@@ -7366,16 +7377,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/16fa6436-2787-4e0c-b661-8fc766d029d6/ABDULLAH-ALKHAIBARI_411624",
           "club": "Al-Nassr"
-        },
-        {
-          "id": "407993",
-          "name": "MOHAMED KANNO",
-          "number": 23,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c3eb4162-fd6d-41f1-aad4-1b632b266f19/MOHAMED-KANNO_407993",
-          "club": "Al-Hilal"
         },
         {
           "id": "419291",
@@ -7427,16 +7428,6 @@
           "club": "Al-Ahli"
         },
         {
-          "id": "433439",
-          "name": "ALI LAJAMI",
-          "number": 3,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/27fa9b34-d37d-4416-a35f-fb6d234e9e8c/ALI-LAJAMI_433439",
-          "club": "Al-Hilal"
-        },
-        {
           "id": "430518",
           "name": "NAWAF BU WASHL",
           "number": 13,
@@ -7464,14 +7455,13 @@
           "photoUrl": "https://digitalhub.fifa.com/transform/0e99f4e8-6619-4e4c-8970-0443d31b83a0/JEHAD-THIKRI_494506"
         },
         {
-          "id": "403319",
-          "name": "NASSER ALDAWSARI",
-          "number": 6,
-          "position": "MID",
+          "id": "512183",
+          "name": "MOHAMMED ABU ALSHAMAT",
+          "number": 26,
+          "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/81e654c7-8273-4e1f-b909-62613fbf14ea/NASSER-ALDAWSARI_403319",
-          "club": "Al-Hilal"
+          "photoUrl": "https://digitalhub.fifa.com/transform/8aee29b9-06b4-4b46-b529-3bb6adf5f9a6/MOHAMMED-ABU-ALSHAMAT_512183"
         },
         {
           "id": "436538",
@@ -7491,6 +7481,16 @@
           "starter": false,
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/2fb42f50-394b-46d4-9038-9d9b09564b98/ALA-ALHAJJI_523333"
+        },
+        {
+          "id": "407993",
+          "name": "MOHAMED KANNO",
+          "number": 23,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/c3eb4162-fd6d-41f1-aad4-1b632b266f19/MOHAMED-KANNO_407993",
+          "club": "Al-Hilal"
         },
         {
           "id": "430512",
