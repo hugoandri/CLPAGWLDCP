@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T16:52:24.104Z",
+  "generatedAt": "2026-06-21T18:20:04.393Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -8963,10 +8963,9 @@
     },
     {
       "slug": "espana-vs-arabia-saudita",
-      "status": "live",
-      "homeScore": 3,
+      "status": "finished",
+      "homeScore": 4,
       "awayScore": 0,
-      "minute": 37,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483",
       "confidence": 0.97,
       "detail": {
@@ -8991,6 +8990,12 @@
             "scorer": "Mikel OYARZABAL",
             "assist": "Dani OLMO.",
             "type": "goal"
+          },
+          {
+            "minute": 49,
+            "team": "home",
+            "scorer": "Hassan Altambakti",
+            "type": "own_goal"
           }
         ],
         "cards": [
@@ -8999,9 +9004,76 @@
             "team": "away",
             "player": "Salem Aldawsari",
             "type": "yellow"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "player": "Mohamed Kanno",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Lamine YAMAL",
+            "playerIn": "Yeremy PINO"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Mikel OYARZABAL",
+            "playerIn": "Ferran TORRES"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "MUSAB ALJUWAYR",
+            "playerIn": "ABDULLAH ALHAMDDAN"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "ABDULLAH ALKHAIBARI",
+            "playerIn": "MOHAMED KANNO"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "playerOut": "FERAS ALBRIKAN",
+            "playerIn": "MOHAMMED ABU ALSHAMAT"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "playerOut": "Abdulelah ALAMRI",
+            "playerIn": "ALA ALHAJJI"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Dani OLMO",
+            "playerIn": "Mikel MERINO"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Alex BAENA",
+            "playerIn": "Nico WILLIAMS"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "PEDRI",
+            "playerIn": "Fabian RUIZ"
+          },
+          {
+            "minute": 90,
+            "team": "away",
+            "playerOut": "NASSER ALDAWSARI",
+            "playerIn": "KHALID ALGHANNAM"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -9120,29 +9192,29 @@
         },
         "stats": {
           "shots": {
-            "home": 17,
-            "away": 2
+            "home": 22,
+            "away": 3
           },
           "corners": {
-            "home": 4,
+            "home": 6,
             "away": 1
           },
           "fouls": {
-            "home": 3,
+            "home": 10,
             "away": 1
           },
           "offsides": {
-            "home": 0,
-            "away": 2
+            "home": 2,
+            "away": 3
           },
           "yellowCards": {
             "home": 0,
-            "away": 1
+            "away": 2
           }
         },
-        "aiNotes": "En este momento, España domina claramente el partido con un marcador de 3-0 sobre Arabia Saudita, gracias a los goles de Lamine Yamal y el doblete de Mikel Oyarzabal, lo que refleja la superioridad de los españoles en el campo. En lo que resta del partido, es probable que España siga presionando para aumentar su ventaja, mientras que Arabia Saudita podría intentar cambiar su estrategia para tratar de reducir la desventaja y evitar una derrota más abultada.",
+        "aiNotes": "En el partido entre España y Arabia Saudita, España logró una victoria contundente por 4-0, gracias a los goles de Lamine Yamal, Mikel Oyarzabal en dos ocasiones y un autogol de Hassan Altambakti, lo que mostró una clara superioridad en el campo. La estrategia táctica de España pareció funcionar a la perfección, aprovechando las oportunidades y demostrando una gran eficacia en el ataque, lo que podría ser un factor clave en su progreso en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021483"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021483"
       }
     },
     {
