@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T21:44:36.210Z",
+  "generatedAt": "2026-06-21T22:54:11.522Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -6506,7 +6506,7 @@
       ]
     },
     "cabo-verde": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021482",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021487",
       "players": [
         {
           "id": "364752",
@@ -6569,16 +6569,6 @@
           "club": "Krasnodar"
         },
         {
-          "id": "477856",
-          "name": "JOVANE CABRAL",
-          "number": 7,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/4bc8360c-8ddd-4449-9e5f-a100502763b7/JOVANE-CABRAL_477856",
-          "club": "Estrela Amadora"
-        },
-        {
           "id": "401894",
           "name": "JAMIRO MONTEIRO",
           "number": 10,
@@ -6589,24 +6579,34 @@
           "club": "PEC Zwolle"
         },
         {
-          "id": "480966",
-          "name": "LAROS DUARTE",
-          "number": 15,
+          "id": "373344",
+          "name": "GARRY RODRIGUES",
+          "number": 11,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2650fbd7-f8a2-409e-8b2d-85042a719c52/LAROS-DUARTE_480966",
-          "club": "Ludogorets Razgrad"
+          "photoUrl": "https://digitalhub.fifa.com/transform/c8ad756c-e6dc-4458-ad13-d34d2b668c63/GARRY-RODRIGUES_373344",
+          "club": "Apollon Limassol"
         },
         {
-          "id": "482782",
-          "name": "DAILON LIVRAMENTO",
-          "number": 19,
+          "id": "494314",
+          "name": "TELMO ARCANJO",
+          "number": 18,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/16e60922-64b4-40df-ae20-f53a44891fe9/TELMO-ARCANJO_494314",
+          "club": "Vitória de Guimarães"
+        },
+        {
+          "id": "477862",
+          "name": "GILSON BENCHIMOL",
+          "number": 9,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/cded048a-5237-4aac-83d6-cbdbc3fec36f/DAILON-LIVRAMENTO_482782",
-          "club": "Casa Pia"
+          "photoUrl": "https://digitalhub.fifa.com/transform/11269eaf-5399-423a-9e27-934a7058a71d/GILSON-BENCHIMOL_477862",
+          "club": "Akron Tolyatti"
         },
         {
           "id": "355642",
@@ -6679,6 +6679,16 @@
           "club": "SJK"
         },
         {
+          "id": "477856",
+          "name": "JOVANE CABRAL",
+          "number": 7,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/4bc8360c-8ddd-4449-9e5f-a100502763b7/JOVANE-CABRAL_477856",
+          "club": "Estrela Amadora"
+        },
+        {
           "id": "477855",
           "name": "JOAO PAULO",
           "number": 8,
@@ -6689,16 +6699,6 @@
           "club": "FCSB"
         },
         {
-          "id": "373344",
-          "name": "GARRY RODRIGUES",
-          "number": 11,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c8ad756c-e6dc-4458-ad13-d34d2b668c63/GARRY-RODRIGUES_373344",
-          "club": "Apollon Limassol"
-        },
-        {
           "id": "477827",
           "name": "DEROY DUARTE",
           "number": 14,
@@ -6706,6 +6706,16 @@
           "starter": false,
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/c2a1dda5-24bd-4ef1-8ef4-cde9f3f3b644/DEROY-DUARTE_477827",
+          "club": "Ludogorets Razgrad"
+        },
+        {
+          "id": "480966",
+          "name": "LAROS DUARTE",
+          "number": 15,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/2650fbd7-f8a2-409e-8b2d-85042a719c52/LAROS-DUARTE_480966",
           "club": "Ludogorets Razgrad"
         },
         {
@@ -6729,16 +6739,6 @@
           "club": "Farense"
         },
         {
-          "id": "494314",
-          "name": "TELMO ARCANJO",
-          "number": 18,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/16e60922-64b4-40df-ae20-f53a44891fe9/TELMO-ARCANJO_494314",
-          "club": "Vitória de Guimarães"
-        },
-        {
           "id": "401893",
           "name": "NUNO DA COSTA",
           "number": 21,
@@ -6759,14 +6759,14 @@
           "club": "Maccabi Tel Aviv"
         },
         {
-          "id": "477862",
-          "name": "GILSON BENCHIMOL",
-          "number": 9,
+          "id": "482782",
+          "name": "DAILON LIVRAMENTO",
+          "number": 19,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/11269eaf-5399-423a-9e27-934a7058a71d/GILSON-BENCHIMOL_477862",
-          "club": "Akron Tolyatti"
+          "photoUrl": "https://digitalhub.fifa.com/transform/cded048a-5237-4aac-83d6-cbdbc3fec36f/DAILON-LIVRAMENTO_482782",
+          "club": "Casa Pia"
         }
       ]
     },
@@ -7534,7 +7534,7 @@
       ]
     },
     "uruguay": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021486",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021487",
       "players": [
         {
           "id": "229498",
@@ -7577,16 +7577,6 @@
           "club": "Napoli"
         },
         {
-          "id": "402895",
-          "name": "Matias VINA",
-          "number": 17,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b8714c68-0892-4c4f-8a51-deabf1e13879/VINA-Matias_402895",
-          "club": "River Plate"
-        },
-        {
           "id": "441623",
           "name": "Manuel UGARTE",
           "number": 5,
@@ -7617,6 +7607,16 @@
           "club": "Real Madrid"
         },
         {
+          "id": "402876",
+          "name": "Agustin CANOBBIO",
+          "number": 14,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/5985fa52-e467-4c1c-95f2-355bd1cb3925/CANOBBIO-Agustin_402876",
+          "club": "Fluminense"
+        },
+        {
           "id": "419100",
           "name": "Maxi ARAUJO",
           "number": 20,
@@ -7627,14 +7627,14 @@
           "club": "Sporting CP"
         },
         {
-          "id": "419126",
-          "name": "Darwin NUNEZ",
-          "number": 9,
-          "position": "FWD",
+          "id": "419134",
+          "name": "Juan Manuel SANABRIA",
+          "number": 25,
+          "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/078805a6-5fbe-44f3-a58c-ed3837ca5665/NUNEZ-Darwin_419126",
-          "club": "Al-Hilal"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ad89e83d-ec32-4c30-a78f-1255d03ac0ed/SANABRIA-Juan-Manuel_419134",
+          "club": "Real Salt Lake"
         },
         {
           "id": "477536",
@@ -7677,6 +7677,16 @@
           "club": "Atlético Madrid"
         },
         {
+          "id": "402895",
+          "name": "Matias VINA",
+          "number": 17,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b8714c68-0892-4c4f-8a51-deabf1e13879/VINA-Matias_402895",
+          "club": "River Plate"
+        },
+        {
           "id": "402904",
           "name": "Santiago BUENO",
           "number": 24,
@@ -7695,16 +7705,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/7694c9e6-d4f9-4f60-8173-5a3a79bcaaa2/DE-LA-CRUZ-Nicolas_402898",
           "club": "Flamengo"
-        },
-        {
-          "id": "402876",
-          "name": "Agustin CANOBBIO",
-          "number": 14,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/5985fa52-e467-4c1c-95f2-355bd1cb3925/CANOBBIO-Agustin_402876",
-          "club": "Fluminense"
         },
         {
           "id": "473062",
@@ -7727,16 +7727,6 @@
           "club": "Palmeiras"
         },
         {
-          "id": "419134",
-          "name": "Juan Manuel SANABRIA",
-          "number": 25,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ad89e83d-ec32-4c30-a78f-1255d03ac0ed/SANABRIA-Juan-Manuel_419134",
-          "club": "Real Salt Lake"
-        },
-        {
           "id": "419142",
           "name": "Rodrigo ZALAZAR",
           "number": 26,
@@ -7745,6 +7735,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/4b33d4cb-ddc9-4183-abbb-1f848e8c14a8/ZALAZAR-Rodrigo_419142",
           "club": "Braga"
+        },
+        {
+          "id": "419126",
+          "name": "Darwin NUNEZ",
+          "number": 9,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/078805a6-5fbe-44f3-a58c-ed3837ca5665/NUNEZ-Darwin_419126",
+          "club": "Al-Hilal"
         },
         {
           "id": "439956",
