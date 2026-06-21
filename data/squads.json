@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T01:45:29.557Z",
+  "generatedAt": "2026-06-21T06:39:22.507Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -4937,7 +4937,7 @@
       ]
     },
     "japon": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021470",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021475",
       "players": [
         {
           "id": "405530",
@@ -4950,24 +4950,14 @@
           "club": "Parma"
         },
         {
-          "id": "390541",
-          "name": "Shogo TANIGUCHI",
-          "number": 3,
+          "id": "400511",
+          "name": "Kou ITAKURA",
+          "number": 4,
           "position": "DEF",
           "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/339c7ce2-356d-4b5f-8aed-58e4040a6f62/TANIGUCHI-Shogo_390541",
-          "club": "Sint-Truiden"
-        },
-        {
-          "id": "430401",
-          "name": "Tsuyoshi Watanabe",
-          "number": 16,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c7ca3373-d0e0-451d-963a-9e68025385e7/WATANABE-Tsuyoshi_430401",
-          "club": "Feyenoord"
+          "captain": true,
+          "photoUrl": "https://digitalhub.fifa.com/transform/5797a9db-f271-4f10-a480-1a0fdde80b7b/ITAKURA-Kou_400511",
+          "club": "Ajax"
         },
         {
           "id": "403274",
@@ -4980,14 +4970,24 @@
           "club": "Bayern Munich"
         },
         {
-          "id": "403304",
-          "name": "Takefusa KUBO",
-          "number": 8,
+          "id": "403289",
+          "name": "Takehiro TOMIYASU",
+          "number": 22,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/959b632f-531d-420a-85af-5d0fc3c83d5f/TOMIYASU-Takehiro_403289",
+          "club": "Ajax"
+        },
+        {
+          "id": "400514",
+          "name": "Ao TANAKA",
+          "number": 7,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7391febf-1e97-4ce1-89c8-0e3ae529ae81/KUBO-Takefusa_403304",
-          "club": "Real Sociedad"
+          "photoUrl": "https://digitalhub.fifa.com/transform/c041ee70-6920-4696-afe9-5a9982dc9a2b/TANAKA-Ao_400514",
+          "club": "Leeds United"
         },
         {
           "id": "391646",
@@ -4995,19 +4995,9 @@
           "number": 10,
           "position": "MID",
           "starter": true,
-          "captain": true,
+          "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e69df72a-0135-4989-802c-e2c85556cd00/DOAN-Ritsu_391646",
           "club": "Eintracht Frankfurt"
-        },
-        {
-          "id": "430407",
-          "name": "Daizen MAEDA",
-          "number": 11,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/42bcfad9-f62c-4238-a0e6-2f38b3757e2a/MAEDA-Daizen_430407",
-          "club": "Celtic"
         },
         {
           "id": "405522",
@@ -5018,6 +5008,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/fa77e0e6-716b-463e-b210-252bbd18e2d9/NAKAMURA-Keito_405522",
           "club": "Reims"
+        },
+        {
+          "id": "395321",
+          "name": "Junya ITO",
+          "number": 14,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/87ce677a-e78d-474c-bfd7-b7dc77e89e62/ITO-Junya_395321",
+          "club": "Genk"
         },
         {
           "id": "448557",
@@ -5080,14 +5080,14 @@
           "club": "Werder Bremen"
         },
         {
-          "id": "400511",
-          "name": "Kou ITAKURA",
-          "number": 4,
+          "id": "390541",
+          "name": "Shogo TANIGUCHI",
+          "number": 3,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/5797a9db-f271-4f10-a480-1a0fdde80b7b/ITAKURA-Kou_400511",
-          "club": "Ajax"
+          "photoUrl": "https://digitalhub.fifa.com/transform/339c7ce2-356d-4b5f-8aed-58e4040a6f62/TANIGUCHI-Shogo_390541",
+          "club": "Sint-Truiden"
         },
         {
           "id": "291372",
@@ -5100,6 +5100,16 @@
           "club": "FC Tokyo"
         },
         {
+          "id": "430401",
+          "name": "Tsuyoshi Watanabe",
+          "number": 16,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/c7ca3373-d0e0-451d-963a-9e68025385e7/WATANABE-Tsuyoshi_430401",
+          "club": "Feyenoord"
+        },
+        {
           "id": "405527",
           "name": "Ayumu SEKO",
           "number": 20,
@@ -5108,16 +5118,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/2c33d7cc-d75e-427f-9aa9-2dac0872e561/SEKO-Ayumu_405527",
           "club": "Le Havre"
-        },
-        {
-          "id": "403289",
-          "name": "Takehiro TOMIYASU",
-          "number": 22,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/959b632f-531d-420a-85af-5d0fc3c83d5f/TOMIYASU-Takehiro_403289",
-          "club": "Ajax"
         },
         {
           "id": "498455",
@@ -5130,24 +5130,14 @@
           "club": "Copenhagen"
         },
         {
-          "id": "400514",
-          "name": "Ao TANAKA",
-          "number": 7,
+          "id": "430407",
+          "name": "Daizen MAEDA",
+          "number": 11,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c041ee70-6920-4696-afe9-5a9982dc9a2b/TANAKA-Ao_400514",
-          "club": "Leeds United"
-        },
-        {
-          "id": "395321",
-          "name": "Junya ITO",
-          "number": 14,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/87ce677a-e78d-474c-bfd7-b7dc77e89e62/ITO-Junya_395321",
-          "club": "Genk"
+          "photoUrl": "https://digitalhub.fifa.com/transform/42bcfad9-f62c-4238-a0e6-2f38b3757e2a/MAEDA-Daizen_430407",
+          "club": "Celtic"
         },
         {
           "id": "485503",
@@ -5158,16 +5148,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/820d40f4-df00-46d9-a36f-3f7eb523d099/SUZUKI-Yuito_485503",
           "club": "SC Freiburg"
-        },
-        {
-          "id": "448569",
-          "name": "Shuto MACHINO",
-          "number": 6,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/8d060ae7-d04d-4bc3-9b76-d4ad6b52a0c3/MACHINO-Shuto_448569",
-          "club": "Borussia Mönchengladbach"
         },
         {
           "id": "464339",
@@ -5997,17 +5977,17 @@
       ]
     },
     "tunez": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021474",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021475",
       "players": [
         {
-          "id": "520245",
-          "name": "Mouhib CHAMAKH",
-          "number": 1,
+          "id": "433365",
+          "name": "Aymen DAHMEN",
+          "number": 16,
           "position": "GK",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7047e775-2f2c-4ea2-9ca6-6fc23363c591/CHAMAKH-Mouhib_520245",
-          "club": "Club Africain"
+          "photoUrl": "https://digitalhub.fifa.com/transform/90030173-815d-4411-8eac-20fb42834f9d/DAHMEN-Aymen_433365",
+          "club": "CS Sfaxien"
         },
         {
           "id": "433362",
@@ -6040,6 +6020,16 @@
           "club": "Maribor"
         },
         {
+          "id": "411653",
+          "name": "Dylan BRONN",
+          "number": 6,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/9a7aa138-5845-4890-aa20-43f4021160ed/BRONN-Dylan_411653",
+          "club": "Servette"
+        },
+        {
           "id": "419189",
           "name": "Yan Valery",
           "number": 20,
@@ -6050,15 +6040,6 @@
           "club": "Young Boys"
         },
         {
-          "id": "425607",
-          "name": "Mohamed Amine BEN HMIDA",
-          "number": 21,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/cb5fcd59-cbd1-4e4f-b5e7-f9adc81441e5/BEN-HMIDA-Mohamed-Amine_425607"
-        },
-        {
           "id": "433378",
           "name": "Hannibal MEJBRI",
           "number": 10,
@@ -6067,16 +6048,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/856f0cc0-6dcc-48bc-a8db-f4fe26d8ae06/MEJBRI-Hannibal_433378",
           "club": "Burnley"
-        },
-        {
-          "id": "336459",
-          "name": "Rani Khedira",
-          "number": 13,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/21f404b3-b430-489b-819c-c0460a2c3590/KHEDIRA-Rani_336459",
-          "club": "Union Berlin"
         },
         {
           "id": "411658",
@@ -6099,6 +6070,16 @@
           "club": "Norwich City"
         },
         {
+          "id": "504502",
+          "name": "Sebastian TOUNEKTI",
+          "number": 26,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/29d9d0d2-28ec-4c0c-9861-a9d8062d5f9d/TOUNEKTI-Sebastian_504502",
+          "club": "Celtic"
+        },
+        {
           "id": "482885",
           "name": "Elias SAAD",
           "number": 8,
@@ -6109,14 +6090,14 @@
           "club": "Hannover 96"
         },
         {
-          "id": "433365",
-          "name": "Aymen DAHMEN",
-          "number": 16,
+          "id": "520245",
+          "name": "Mouhib CHAMAKH",
+          "number": 1,
           "position": "GK",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/90030173-815d-4411-8eac-20fb42834f9d/DAHMEN-Aymen_433365",
-          "club": "CS Sfaxien"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7047e775-2f2c-4ea2-9ca6-6fc23363c591/CHAMAKH-Mouhib_520245",
+          "club": "Club Africain"
         },
         {
           "id": "372294",
@@ -6139,16 +6120,6 @@
           "club": "Kasımpaşa"
         },
         {
-          "id": "411653",
-          "name": "Dylan BRONN",
-          "number": 6,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/9a7aa138-5845-4890-aa20-43f4021160ed/BRONN-Dylan_411653",
-          "club": "Servette"
-        },
-        {
           "id": "441362",
           "name": "Mortadha BEN OUANES",
           "number": 12,
@@ -6157,6 +6128,15 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/b9afdecd-b04d-4224-be9b-50643fc77299/BEN-OUANES-Mortadha_441362",
           "club": "Kasımpaşa"
+        },
+        {
+          "id": "425607",
+          "name": "Mohamed Amine BEN HMIDA",
+          "number": 21,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/cb5fcd59-cbd1-4e4f-b5e7-f9adc81441e5/BEN-HMIDA-Mohamed-Amine_425607"
         },
         {
           "id": "506335",
@@ -6189,6 +6169,16 @@
           "club": "FC Augsburg"
         },
         {
+          "id": "336459",
+          "name": "Rani Khedira",
+          "number": 13,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/21f404b3-b430-489b-819c-c0460a2c3590/KHEDIRA-Rani_336459",
+          "club": "Union Berlin"
+        },
+        {
           "id": "512039",
           "name": "Khalil AYARI",
           "number": 14,
@@ -6207,16 +6197,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/bcdeb1a5-6411-40c5-bac8-576703796438/HADJ-MAHMOUD-Mohamed_479781",
           "club": "Lugano"
-        },
-        {
-          "id": "504502",
-          "name": "Sebastian TOUNEKTI",
-          "number": 26,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/29d9d0d2-28ec-4c0c-9861-a9d8062d5f9d/TOUNEKTI-Sebastian_504502",
-          "club": "Celtic"
         },
         {
           "id": "448662",

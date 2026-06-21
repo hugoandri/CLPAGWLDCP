@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T01:45:29.555Z",
+  "generatedAt": "2026-06-21T06:39:22.504Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -8477,10 +8477,9 @@
     },
     {
       "slug": "ecuador-vs-curazao",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 85,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465",
       "confidence": 0.97,
       "detail": {
@@ -8514,6 +8513,12 @@
             "minute": 75,
             "team": "away",
             "player": "Jurien GAARI",
+            "type": "yellow"
+          },
+          {
+            "minute": 91,
+            "team": "away",
+            "player": "Gervane KASTANEER",
             "type": "yellow"
           }
         ],
@@ -8565,6 +8570,12 @@
             "team": "away",
             "playerOut": "Juergen LOCADIA",
             "playerIn": "Gervane KASTANEER"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "playerOut": "John YEBOAH",
+            "playerIn": "Jordy CAICEDO"
           }
         ],
         "lineup": {
@@ -8689,7 +8700,7 @@
             "away": 10
           },
           "corners": {
-            "home": 7,
+            "home": 9,
             "away": 0
           },
           "fouls": {
@@ -8702,29 +8713,252 @@
           },
           "yellowCards": {
             "home": 1,
-            "away": 4
+            "away": 5
           }
         },
-        "aiNotes": "En este momento del partido, Ecuador y Curaçao se encuentran empatados a cero goles, con Ecuador mostrando una ligera ventaja en el dominio del juego, aunque ninguno de los equipos ha logrado anotar debido a la solidez defensiva de ambos. A medida que el partido se acerca a su fin, es probable que Ecuador intente aumentar la presión ofensiva para intentar romper el empate, mientras que Curaçao podría buscar aprovechar cualquier oportunidad de contraataque para sorprender a su oponente.",
+        "aiNotes": "En el partido entre Ecuador y Curazao, el resultado final fue un empate sin goles, con varias tarjetas amarillas repartidas entre los jugadores de ambos equipos, lo que refleja la intensidad y el compromiso defensivo de ambas escuadras. La estrategia defensiva de Curazao funcionó efectivamente para frenar a Ecuador, lo que resulta en una sorpresa en el contexto del torneo, ya que lograron contener a su rival y obtener un valioso punto.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021465"
       }
     },
     {
       "slug": "tunez-vs-japon",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 4,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021475",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 4,
+            "team": "away",
+            "scorer": "Daichi KAMADA",
+            "assist": "Keito NAKAMURA.",
+            "type": "goal"
+          },
+          {
+            "minute": 31,
+            "team": "away",
+            "scorer": "Ayase UEDA",
+            "assist": "Kou ITAKURA.",
+            "type": "goal"
+          },
+          {
+            "minute": 69,
+            "team": "away",
+            "scorer": "Junya ITO",
+            "assist": "Ayase UEDA.",
+            "type": "goal"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "scorer": "Ayase UEDA",
+            "assist": "Kaishu SANO.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Dylan BRONN",
+            "playerIn": "Mohamed Amine BEN HMIDA"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Elias SAAD",
+            "playerIn": "Ismael GHARBI"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Sebastian TOUNEKTI",
+            "playerIn": "Firas CHAOUAT"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Ritsu DOAN",
+            "playerIn": "Yukinari Sugawara"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Daichi KAMADA",
+            "playerIn": "Junnosuke SUZUKI"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Keito Nakamura",
+            "playerIn": "Yuito SUZUKI"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Takehiro TOMIYASU",
+            "playerIn": "Ayumu SEKO"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Ayase UEDA",
+            "playerIn": "Keisuke GOTO"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Ali ABDI",
+            "playerIn": "Elias ACHOURI"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Ellyes SKHIRI",
+            "playerIn": "Rani Khedira"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Aymen DAHMEN",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Ali ABDI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Montassar TALBI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Omar Rekik",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Dylan BRONN",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Yan Valery",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannibal MEJBRI",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Ellyes SKHIRI",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Anis SLIMANE",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Sebastian TOUNEKTI",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Elias SAAD",
+              "number": 8,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Zion Suzuki",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Kou ITAKURA",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Hiroki ITO",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Takehiro TOMIYASU",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Ao TANAKA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Ritsu DOAN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Keito Nakamura",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Junya ITO",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Daichi KAMADA",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Kaishu SANO",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Ayase UEDA",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 2,
+            "away": 11
+          },
+          "corners": {
+            "home": 3,
+            "away": 5
+          },
+          "fouls": {
+            "home": 8,
+            "away": 15
+          },
+          "offsides": {
+            "home": 1,
+            "away": 1
+          }
+        },
         "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez muestra una forma irregular en sus últimos partidos, mientras que Japón ha demostrado una gran solidez defensiva y velocidad en el ataque, con Takefusa Kubo como figura clave, en contraste con Ellyes Skhiri, quien intentará liderar a Túnez con su experiencia y habilidad en el mediocampo. Considero que Japón tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que les permite tener un mayor control del ritmo del juego y aprovechar las oportunidades de contraataque.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021475"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021475"
       }
     },
     {
