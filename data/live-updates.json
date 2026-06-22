@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T22:54:11.518Z",
+  "generatedAt": "2026-06-22T00:16:51.611Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -9453,10 +9453,9 @@
     },
     {
       "slug": "uruguay-vs-cabo-verde",
-      "status": "live",
+      "status": "finished",
       "homeScore": 2,
-      "awayScore": 1,
-      "minute": 53,
+      "awayScore": 2,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021487",
       "confidence": 0.97,
       "detail": {
@@ -9479,6 +9478,12 @@
             "scorer": "Agustin CANOBBIO",
             "assist": "Maxi ARAUJO.",
             "type": "goal"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "scorer": "Helio Varela",
+            "type": "goal"
           }
         ],
         "cards": [
@@ -9493,9 +9498,70 @@
             "team": "home",
             "player": "Rodrigo BENTANCUR",
             "type": "yellow"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "player": "Mathias OLIVERA",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Diney Borges",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "TELMO ARCANJO",
+            "playerIn": "DEROY DUARTE"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "GILSON BENCHIMOL",
+            "playerIn": "NUNO DA COSTA"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "GARRY RODRIGUES",
+            "playerIn": "HELIO VARELA"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Manuel UGARTE",
+            "playerIn": "Nicolas DE LA CRUZ"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Federico VINAS",
+            "playerIn": "Darwin NUNEZ"
+          },
+          {
+            "minute": 70,
+            "team": "away",
+            "playerOut": "KEVIN PINA",
+            "playerIn": "LAROS DUARTE"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "JAMIRO MONTEIRO",
+            "playerIn": "YANNICK SEMEDO"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "Maxi ARAUJO",
+            "playerIn": "Brian RODRIGUEZ"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -9614,29 +9680,29 @@
         },
         "stats": {
           "shots": {
-            "home": 11,
-            "away": 2
+            "home": 17,
+            "away": 12
           },
           "corners": {
-            "home": 4,
-            "away": 1
+            "home": 11,
+            "away": 4
           },
           "fouls": {
-            "home": 5,
-            "away": 1
+            "home": 9,
+            "away": 3
           },
           "offsides": {
-            "home": 2,
+            "home": 3,
             "away": 0
           },
           "yellowCards": {
-            "home": 1,
-            "away": 1
+            "home": 2,
+            "away": 2
           }
         },
-        "aiNotes": "Uruguay se encuentra liderando el partido con un marcador de 2-1 sobre Cabo Verde en el minuto 53, después de que Maxi Araujo y Agustin Canobbio anotaran los goles para los uruguayos, mientras que Kevin Pina había abierto el marcador para Cabo Verde. En lo que resta del partido, es probable que Cabo Verde intente emparejar el marcador, lo que podría llevar a Uruguay a adoptar una estrategia más defensiva para proteger su ventaja.",
+        "aiNotes": "El partido entre Uruguay y Cabo Verde terminó con un empate 2-2, con goles clave de Maxi Araujo y Agustin Canobbio para Uruguay, mientras que Kevin Pina y Helio Varela anotaron para Cabo Verde, destacando un momento decisivo en el minuto 51 cuando Canobbio anotó el segundo gol de Uruguay. Desde un punto de vista analítico, el rendimiento táctico de ambos equipos fue notable, especialmente la capacidad de Cabo Verde para igualar el marcador después de que Uruguay tomó la delantera, lo que sugiere que Cabo Verde puede ser un equipo sorpresa en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021487"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021487"
       }
     },
     {
