@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T11:21:37.635Z",
+  "generatedAt": "2026-06-22T19:49:07.163Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -9360,7 +9360,7 @@
       ]
     },
     "argentina": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021496",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021494",
       "players": [
         {
           "id": "308300",
@@ -9371,16 +9371,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/f5f477fe-a519-4c69-bb68-f6f5b97c1399/MARTINEZ_Emiliano_308300",
           "club": "Aston Villa"
-        },
-        {
-          "id": "402926",
-          "name": "Gonzalo MONTIEL",
-          "number": 4,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b8cd278f-c843-4b99-9fb3-c8f081fbb2a8/MONTIEL-Gonzalo_402926",
-          "club": "River Plate"
         },
         {
           "id": "402921",
@@ -9411,6 +9401,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/6d4b9a27-2cd5-4372-8426-51876990ba1b/MEDINA-Facundo_418963",
           "club": "Marseille"
+        },
+        {
+          "id": "402925",
+          "name": "Nahuel MOLINA",
+          "number": 26,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/7aef8344-2a5b-42f0-b1a0-565d5220aa76/MOLINA-Nahuel_402925",
+          "club": "Atlético Madrid"
         },
         {
           "id": "428882",
@@ -9493,6 +9493,16 @@
           "club": "Marseille"
         },
         {
+          "id": "402934",
+          "name": "Marcos SENESI",
+          "number": 2,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/6e675b37-0a1a-4b1e-8ec8-34425ac08d86/MARCOS-SENESI_402934",
+          "club": "Bournemouth"
+        },
+        {
           "id": "308322",
           "name": "Nicolas TAGLIAFICO",
           "number": 3,
@@ -9503,6 +9513,16 @@
           "club": "Lyon"
         },
         {
+          "id": "402926",
+          "name": "Gonzalo MONTIEL",
+          "number": 4,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b8cd278f-c843-4b99-9fb3-c8f081fbb2a8/MONTIEL-Gonzalo_402926",
+          "club": "River Plate"
+        },
+        {
           "id": "310116",
           "name": "Nicolas OTAMENDI",
           "number": 19,
@@ -9511,26 +9531,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/4aedbffa-a35c-4aa5-a7ce-8a29c2af3e72/OTAMENDI-Nicolas_310116",
           "club": "Benfica"
-        },
-        {
-          "id": "402925",
-          "name": "Nahuel MOLINA",
-          "number": 26,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7aef8344-2a5b-42f0-b1a0-565d5220aa76/MOLINA-Nahuel_402925",
-          "club": "Atlético Madrid"
-        },
-        {
-          "id": "402934",
-          "name": "Marcos SENESI",
-          "number": 2,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/6e675b37-0a1a-4b1e-8ec8-34425ac08d86/MARCOS-SENESI_402934",
-          "club": "Bournemouth"
         },
         {
           "id": "332847",
@@ -9890,7 +9890,7 @@
       ]
     },
     "austria": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021494",
       "players": [
         {
           "id": "371739",
@@ -9901,6 +9901,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/9612130f-7351-47d4-b346-dcd331a62cbe/SCHLAGER-Alexander_371739",
           "club": "Red Bull Salzburg"
+        },
+        {
+          "id": "405263",
+          "name": "Kevin Danso",
+          "number": 3,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/ff76ce8c-bd4a-436b-87d8-f62532d898b7/DANSO-Kevin_405263",
+          "club": "Tottenham Hotspur"
         },
         {
           "id": "441067",
@@ -9921,26 +9931,6 @@
           "captain": true,
           "photoUrl": "https://digitalhub.fifa.com/transform/3ef36338-4967-43c2-8698-1fb504ce30fd/ALABA-David_316002",
           "club": "Real Madrid"
-        },
-        {
-          "id": "372243",
-          "name": "Philipp Lienhart",
-          "number": 15,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b2217b87-df88-4228-8235-a7ec752aef31/LIENHART-Philipp_372243",
-          "club": "SC Freiburg"
-        },
-        {
-          "id": "463288",
-          "name": "Phillip MWENE",
-          "number": 16,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c7b91eab-9cfc-4f0f-be61-71d31d1c4db8/MWENE-Phillip_463288",
-          "club": "Mainz 05"
         },
         {
           "id": "385531",
@@ -9993,14 +9983,24 @@
           "club": "Bayern Munich"
         },
         {
-          "id": "430100",
-          "name": "Sasa KALAJDZIC",
-          "number": 14,
+          "id": "520036",
+          "name": "Paul WANNER",
+          "number": 24,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b0954793-5e15-4708-9ed0-ea59e3501b8c/WANNER-Paul_520036",
+          "club": "PSV Eindhoven"
+        },
+        {
+          "id": "401131",
+          "name": "Michael Gregoritsch",
+          "number": 11,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/5d061c8b-6223-45c9-b1fa-c02624542eee/KALAJDZIC-Sasa_430100",
-          "club": "LASK"
+          "photoUrl": "https://digitalhub.fifa.com/transform/d33de7b2-c69b-4669-aaac-155c5657be16/GREGORITSCH-Michael_401131",
+          "club": "FC Augsburg"
         },
         {
           "id": "520034",
@@ -10033,14 +10033,24 @@
           "club": "Elche"
         },
         {
-          "id": "405263",
-          "name": "Kevin Danso",
-          "number": 3,
+          "id": "372243",
+          "name": "Philipp Lienhart",
+          "number": 15,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ff76ce8c-bd4a-436b-87d8-f62532d898b7/DANSO-Kevin_405263",
-          "club": "Tottenham Hotspur"
+          "photoUrl": "https://digitalhub.fifa.com/transform/b2217b87-df88-4228-8235-a7ec752aef31/LIENHART-Philipp_372243",
+          "club": "SC Freiburg"
+        },
+        {
+          "id": "463288",
+          "name": "Phillip MWENE",
+          "number": 16,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/c7b91eab-9cfc-4f0f-be61-71d31d1c4db8/MWENE-Phillip_463288",
+          "club": "Mainz 05"
         },
         {
           "id": "463287",
@@ -10103,16 +10113,6 @@
           "club": "TSG Hoffenheim"
         },
         {
-          "id": "520036",
-          "name": "Paul WANNER",
-          "number": 24,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b0954793-5e15-4708-9ed0-ea59e3501b8c/WANNER-Paul_520036",
-          "club": "PSV Eindhoven"
-        },
-        {
           "id": "375600",
           "name": "Alessandro SCHOEPF",
           "number": 26,
@@ -10132,14 +10132,14 @@
           "club": "Red Star Belgrade"
         },
         {
-          "id": "401131",
-          "name": "Michael Gregoritsch",
-          "number": 11,
+          "id": "430100",
+          "name": "Sasa KALAJDZIC",
+          "number": 14,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d33de7b2-c69b-4669-aaac-155c5657be16/GREGORITSCH-Michael_401131",
-          "club": "FC Augsburg"
+          "photoUrl": "https://digitalhub.fifa.com/transform/5d061c8b-6223-45c9-b1fa-c02624542eee/KALAJDZIC-Sasa_430100",
+          "club": "LASK"
         },
         {
           "id": "463286",

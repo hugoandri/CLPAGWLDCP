@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T11:21:37.632Z",
+  "generatedAt": "2026-06-22T19:49:07.161Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -9976,19 +9976,256 @@
     },
     {
       "slug": "argentina-vs-austria",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021494",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 38,
+            "team": "home",
+            "scorer": "Lionel MESSI",
+            "assist": "Facundo MEDINA.",
+            "type": "goal"
+          },
+          {
+            "minute": 95,
+            "team": "home",
+            "scorer": "Lionel MESSI",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 40,
+            "team": "away",
+            "player": "Stefan POSCH",
+            "type": "yellow"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "player": "Konrad LAIMER",
+            "type": "yellow"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "player": "Facundo MEDINA",
+            "type": "yellow"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "player": "Leandro PAREDES",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 57,
+            "team": "home",
+            "playerOut": "Cristian ROMERO",
+            "playerIn": "Nicolas OTAMENDI"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Thiago ALMADA",
+            "playerIn": "Julian ALVAREZ"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Lautaro MARTINEZ",
+            "playerIn": "Nico GONZALEZ"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "David ALABA",
+            "playerIn": "Marco FRIEDL"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Paul WANNER",
+            "playerIn": "Marko ARNAUTOVIC"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Stefan POSCH",
+            "playerIn": "Alexander PRASS"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Romano SCHMID",
+            "playerIn": "Patrick WIMMER"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "playerOut": "Rodrigo DE PAUL",
+            "playerIn": "Leandro PAREDES"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "playerOut": "Facundo MEDINA",
+            "playerIn": "Nicolas TAGLIAFICO"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Michael Gregoritsch",
+            "playerIn": "Carney CHUKWUEMEKA"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Emiliano MARTINEZ",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Lisandro MARTINEZ",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Cristian ROMERO",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Facundo MEDINA",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Nahuel MOLINA",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Rodrigo DE PAUL",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Alexis MAC ALLISTER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Enzo FERNANDEZ",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Lionel MESSI",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Thiago ALMADA",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Lautaro MARTINEZ",
+              "number": 22,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Alexander SCHLAGER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Kevin Danso",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Stefan POSCH",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "David ALABA",
+              "number": 8,
+              "position": "DEF"
+            },
+            {
+              "name": "Xaver Schlager",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Nicolas SEIWALD",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Marcel SABITZER",
+              "number": 9,
+              "position": "MID"
+            },
+            {
+              "name": "Romano SCHMID",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Konrad LAIMER",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Paul WANNER",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Michael Gregoritsch",
+              "number": 11,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 12,
+            "away": 6
+          },
+          "corners": {
+            "home": 1,
+            "away": 3
+          },
+          "fouls": {
+            "home": 12,
+            "away": 12
+          },
+          "offsides": {
+            "home": 2,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 2
+          }
+        },
         "aiNotes": "Argentina llega al partido con una gran forma reciente, liderada por la experiencia y habilidad de Lionel Messi, quien sigue siendo el jugador clave a seguir en el equipo, mientras que Austria busca sorprender con la velocidad y habilidad de Marcel Sabitzer, aunque su nivel de juego ha sido irregular en los últimos partidos. En este encuentro, Argentina tiene una clara ventaja debido a su mayor experiencia y habilidad en el juego ofensivo, lo que podría ser demasiado para la defensa austríaca, lo que sugiere un resultado favorable para el equipo sudamericano.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021494"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021494"
       }
     },
     {
