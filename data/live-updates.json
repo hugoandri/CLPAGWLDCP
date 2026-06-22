@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T00:16:51.611Z",
+  "generatedAt": "2026-06-22T05:36:43.822Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -9707,19 +9707,271 @@
     },
     {
       "slug": "nueva-zelanda-vs-egipto",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 3,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021480",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 15,
+            "team": "home",
+            "scorer": "Finn SURMAN",
+            "assist": "Tim PAYNE.",
+            "type": "goal"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "scorer": "Mostafa Zico",
+            "assist": "MOHAMED HANY.",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "scorer": "Mohamed Salah",
+            "assist": "MOSTAFA ZICO.",
+            "type": "goal"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "scorer": "Trezeguet",
+            "assist": "MOHAMED SALAH.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 17,
+            "team": "away",
+            "player": "Mohanad Lashin",
+            "type": "yellow"
+          },
+          {
+            "minute": 20,
+            "team": "home",
+            "player": "Sarpreet SINGH",
+            "type": "yellow"
+          },
+          {
+            "minute": 34,
+            "team": "home",
+            "player": "Callum McCOWATT",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 41,
+            "team": "away",
+            "playerOut": "HAMDY FATHY",
+            "playerIn": "RAMY RABIA"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Callum McCOWATT",
+            "playerIn": "Ben OLD"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Liberato CACACE",
+            "playerIn": "Jesse RANDALL"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "Sarpreet SINGH",
+            "playerIn": "Ryan THOMAS"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "OMAR MARMOUSH",
+            "playerIn": "TREZEGUET"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "MOSTAFA ZICO",
+            "playerIn": "HAMZA ABDELKARIM"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "MOHAMED SALAH",
+            "playerIn": "HOSSAM ABDELMAGUID"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "EMAM ASHOUR",
+            "playerIn": "ZIZO"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Elijah JUST",
+            "playerIn": "Francis DE VRIES"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Tim PAYNE",
+            "playerIn": "Tyler BINDON"
+          },
+          {
+            "minute": 99,
+            "team": "away",
+            "playerOut": "HOSSAM ABDELMAGUID",
+            "playerIn": "MOHAMED ABDELMONEIM"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Max CROCOMBE",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tim PAYNE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Michael BOXALL",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Liberato CACACE",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Finn SURMAN",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Joe BELL",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Marko STAMENIC",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Sarpreet SINGH",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Elijah JUST",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Callum McCOWATT",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "Chris WOOD",
+              "number": 9,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "MOSTAFA SHOUBIR",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "YASSER IBRAHIM",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "MOHAMED HANY",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "AHMED FATOUH",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "EMAM ASHOUR",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "MOSTAFA ZICO",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "HAMDY FATHY",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "MOHANAD LASHIN",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "MARAWAN ATTIA",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "MOHAMED SALAH",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "OMAR MARMOUSH",
+              "number": 22,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 11,
+            "away": 19
+          },
+          "corners": {
+            "home": 4,
+            "away": 3
+          },
+          "fouls": {
+            "home": 12,
+            "away": 7
+          },
+          "offsides": {
+            "home": 3,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 1
+          }
+        },
         "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Nueva Zelanda muestra una forma irregular en sus últimos partidos, apoyándose en la experiencia y habilidad goleadora de Chris Wood, mientras que Egipto se presenta con una racha de victorias y confianza en la velocidad y habilidad de Mohamed Salah. Considero que Egipto tiene ventaja en este partido debido a su mejor posición en el ranking FIFA y su reciente forma, lo que les da una mayor solidez y profundidad en su juego en comparación con Nueva Zelanda.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021480"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021480"
       }
     },
     {

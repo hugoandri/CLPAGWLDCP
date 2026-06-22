@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T00:16:51.615Z",
+  "generatedAt": "2026-06-22T05:36:43.824Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -7016,7 +7016,7 @@
       ]
     },
     "egipto": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021478",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021480",
       "players": [
         {
           "id": "416906",
@@ -8038,7 +8038,7 @@
       ]
     },
     "nueva-zelanda": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021476",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021480",
       "players": [
         {
           "id": "368535",
@@ -8259,6 +8259,15 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/d63e6762-f433-47f1-82b3-be3627b12941/BAYLISS-Lachlan_484817",
           "club": "Newcastle Jets"
+        },
+        {
+          "id": "390205",
+          "name": "Logan ROGERSON",
+          "number": 7,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/009066e3-bc4c-48e9-af6c-1a7065946bd5/LOGAN-ROGERSON_390205"
         },
         {
           "id": "269592",
