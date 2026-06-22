@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T21:56:06.100Z",
+  "generatedAt": "2026-06-22T23:39:14.197Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -10230,10 +10230,9 @@
     },
     {
       "slug": "francia-vs-irak",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 0,
-      "minute": 41,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492",
       "confidence": 0.97,
       "detail": {
@@ -10396,9 +10395,9 @@
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido se inclina a favor de Francia, que lleva la ventaja de 1-0 gracias al gol de Kylian Mbappe en el minuto 14, y parece controlar el ritmo del juego. En lo que resta del partido, es probable que Iraq intente presionar más arriba para buscar el empate, lo que podría generar espacios para que Francia aproveche sus habilidades contratacando.",
+        "aiNotes": "En el partido entre Francia e Irak, el equipo galo se impuso por un estrecho margen de 1-0 gracias al gol de Kylian Mbappe en el minuto 14, asistido por Michael Olise. La victoria de Francia se debió en gran medida a su sólido rendimiento táctico, que les permitió controlar el ritmo del partido y aprovechar las oportunidades que se presentaron, como el gol temprano de Mbappe que resultó ser decisivo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021492"
       }
     },
     {
