@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T19:49:07.163Z",
+  "generatedAt": "2026-06-22T21:56:06.104Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -8303,7 +8303,7 @@
       ]
     },
     "francia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492",
       "players": [
         {
           "id": "448332",
@@ -8314,6 +8314,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/3f92a933-a22d-4f58-8f4f-b51370aeacf4/MAIGNAN-Mike_448332",
           "club": "Milan"
+        },
+        {
+          "id": "368860",
+          "name": "Lucas Digne",
+          "number": 3,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/70e09388-6736-4f6c-85cf-0aa2017a6b18/DIGNE-Lucas_368860",
+          "club": "Aston Villa"
         },
         {
           "id": "389876",
@@ -8346,24 +8356,14 @@
           "club": "Arsenal"
         },
         {
-          "id": "408042",
-          "name": "Theo HERNANDEZ",
-          "number": 19,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/6f76533f-feca-4811-a010-e6e296b29db8/HERNANDEZ-Theo_408042",
-          "club": "Al-Hilal"
-        },
-        {
-          "id": "405893",
-          "name": "Aurelien TCHOUAMENI",
-          "number": 8,
+          "id": "485677",
+          "name": "Manu KONE",
+          "number": 6,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/8575fee6-68ae-4be0-9529-7e5c392e06e6/TCHOUAMENI-Aurelien_405893",
-          "club": "Real Madrid"
+          "photoUrl": "https://digitalhub.fifa.com/transform/fab8dcfa-7c16-4c88-adeb-51cf932e3abc/KONE-Manu_485677",
+          "club": "Roma"
         },
         {
           "id": "402047",
@@ -8406,13 +8406,13 @@
           "club": "Bayern Munich"
         },
         {
-          "id": "464114",
-          "name": "Desire DOUE",
-          "number": 20,
+          "id": "484860",
+          "name": "Bradley BARCOLA",
+          "number": 12,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ca4e60df-4c45-48e9-89e4-70ce6ac3b3b1/DOUE-Desire_464114",
+          "photoUrl": "https://digitalhub.fifa.com/transform/10e80ef7-3aa9-4c07-9639-e8bc04828d31/BARCOLA-Bradley_484860",
           "club": "Paris Saint-Germain"
         },
         {
@@ -8446,16 +8446,6 @@
           "club": "Chelsea"
         },
         {
-          "id": "368860",
-          "name": "Lucas Digne",
-          "number": 3,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/70e09388-6736-4f6c-85cf-0aa2017a6b18/DIGNE-Lucas_368860",
-          "club": "Aston Villa"
-        },
-        {
           "id": "419166",
           "name": "Ibrahima KONATE",
           "number": 15,
@@ -8464,6 +8454,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/de7e635e-41b2-4383-9fbf-d38e6c737d51/KONATE-Ibrahima_419166",
           "club": "Liverpool"
+        },
+        {
+          "id": "408042",
+          "name": "Theo HERNANDEZ",
+          "number": 19,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/6f76533f-feca-4811-a010-e6e296b29db8/HERNANDEZ-Theo_408042",
+          "club": "Al-Hilal"
         },
         {
           "id": "411470",
@@ -8486,14 +8486,14 @@
           "club": "Crystal Palace"
         },
         {
-          "id": "485677",
-          "name": "Manu KONE",
-          "number": 6,
+          "id": "405893",
+          "name": "Aurelien TCHOUAMENI",
+          "number": 8,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/fab8dcfa-7c16-4c88-adeb-51cf932e3abc/KONE-Manu_485677",
-          "club": "Roma"
+          "photoUrl": "https://digitalhub.fifa.com/transform/8575fee6-68ae-4be0-9529-7e5c392e06e6/TCHOUAMENI-Aurelien_405893",
+          "club": "Real Madrid"
         },
         {
           "id": "398681",
@@ -8546,13 +8546,13 @@
           "club": "Inter Milan"
         },
         {
-          "id": "484860",
-          "name": "Bradley BARCOLA",
-          "number": 12,
+          "id": "464114",
+          "name": "Desire DOUE",
+          "number": 20,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/10e80ef7-3aa9-4c07-9639-e8bc04828d31/BARCOLA-Bradley_484860",
+          "photoUrl": "https://digitalhub.fifa.com/transform/ca4e60df-4c45-48e9-89e4-70ce6ac3b3b1/DOUE-Desire_464114",
           "club": "Paris Saint-Germain"
         },
         {
@@ -8833,17 +8833,17 @@
       ]
     },
     "irak": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492",
       "players": [
         {
-          "id": "347085",
-          "name": "JALAL HASSAN",
-          "number": 12,
+          "id": "433571",
+          "name": "AHMED BASIL",
+          "number": 22,
           "position": "GK",
           "starter": true,
-          "captain": true,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a7f7a32a-4968-462b-9c34-e8a0d0530b99/JALAL-HASSAN_347085",
-          "club": "Al-Zawraa"
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/a9d30885-9966-457c-9a44-07e5cf8eee93/AHMED-BASIL_433571",
+          "club": "Al-Shorta"
         },
         {
           "id": "479553",
@@ -8896,6 +8896,16 @@
           "club": "Al Dhafra"
         },
         {
+          "id": "434026",
+          "name": "ZIDANE IQBAL",
+          "number": 14,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/d76ebe64-2228-4d03-9c39-fa6332d4d40a/ZIDANE-IQBAL_434026",
+          "club": "Utrecht"
+        },
+        {
           "id": "433074",
           "name": "AMIR ALAMMARI",
           "number": 16,
@@ -8915,24 +8925,14 @@
           "photoUrl": "https://digitalhub.fifa.com/transform/062e505a-0067-4b87-963d-a0e7ad53decb/ZAID-ISMAEL_484270"
         },
         {
-          "id": "436628",
-          "name": "ALI ALHAMADI",
-          "number": 9,
+          "id": "523236",
+          "name": "AHMED QASEM",
+          "number": 11,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/00b5271a-9033-43ab-9073-7b2ec9e4426e/ALI-ALHAMADI_436628",
-          "club": "Pogoń Szczecin"
-        },
-        {
-          "id": "464457",
-          "name": "ALI JASIM",
-          "number": 17,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/75d61654-11c8-4646-8e47-7c4c977b29b6/ALI-JASIM_464457",
-          "club": "Pogoń Szczecin"
+          "photoUrl": "https://digitalhub.fifa.com/transform/66155853-6cb6-47af-84e6-f8c492fd1b6a/AHMED-QASIM_523236",
+          "club": "Nashville SC"
         },
         {
           "id": "395186",
@@ -8940,7 +8940,7 @@
           "number": 18,
           "position": "FWD",
           "starter": true,
-          "captain": false,
+          "captain": true,
           "photoUrl": "https://digitalhub.fifa.com/transform/388e5207-980c-407a-828c-270fbd4fdff6/AYMEN-HUSSEIN_395186",
           "club": "Al-Karma"
         },
@@ -8955,14 +8955,14 @@
           "club": "Al-Talaba"
         },
         {
-          "id": "433571",
-          "name": "AHMED BASIL",
-          "number": 22,
+          "id": "347085",
+          "name": "JALAL HASSAN",
+          "number": 12,
           "position": "GK",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a9d30885-9966-457c-9a44-07e5cf8eee93/AHMED-BASIL_433571",
-          "club": "Al-Shorta"
+          "photoUrl": "https://digitalhub.fifa.com/transform/a7f7a32a-4968-462b-9c34-e8a0d0530b99/JALAL-HASSAN_347085",
+          "club": "Al-Zawraa"
         },
         {
           "id": "396158",
@@ -9023,16 +9023,6 @@
           "club": "AEK Larnaca"
         },
         {
-          "id": "434026",
-          "name": "ZIDANE IQBAL",
-          "number": 14,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d76ebe64-2228-4d03-9c39-fa6332d4d40a/ZIDANE-IQBAL_434026",
-          "club": "Utrecht"
-        },
-        {
           "id": "506069",
           "name": "KEVIN YAKOB",
           "number": 19,
@@ -9053,6 +9043,16 @@
           "club": "Sarpsborg 08"
         },
         {
+          "id": "436628",
+          "name": "ALI ALHAMADI",
+          "number": 9,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/00b5271a-9033-43ab-9073-7b2ec9e4426e/ALI-ALHAMADI_436628",
+          "club": "Pogoń Szczecin"
+        },
+        {
           "id": "422968",
           "name": "MOHANAD ALI",
           "number": 10,
@@ -9063,16 +9063,6 @@
           "club": "Pogoń Szczecin"
         },
         {
-          "id": "523236",
-          "name": "AHMED QASEM",
-          "number": 11,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/66155853-6cb6-47af-84e6-f8c492fd1b6a/AHMED-QASIM_523236",
-          "club": "Nashville SC"
-        },
-        {
           "id": "434029",
           "name": "ALI YOUSIF",
           "number": 13,
@@ -9080,6 +9070,16 @@
           "starter": false,
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e9b9b7b4-162e-40c5-91a3-f573cd6a5d39/ALI-YOUSIF_434029",
+          "club": "Pogoń Szczecin"
+        },
+        {
+          "id": "464457",
+          "name": "ALI JASIM",
+          "number": 17,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/75d61654-11c8-4646-8e47-7c4c977b29b6/ALI-JASIM_464457",
           "club": "Pogoń Szczecin"
         },
         {
