@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T05:36:43.824Z",
+  "generatedAt": "2026-06-22T11:21:37.635Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -3253,6 +3253,7 @@
           "position": "DEF",
           "starter": false,
           "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/264fbdf9-369e-4794-b7b4-461fb346a6ab/GARVEN-METUSALA_466862",
           "club": "Colorado Springs Switchbacks FC"
         },
         {
