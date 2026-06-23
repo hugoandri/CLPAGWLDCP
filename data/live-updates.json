@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T23:39:14.197Z",
+  "generatedAt": "2026-06-23T01:48:11.473Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -10231,7 +10231,7 @@
     {
       "slug": "francia-vs-irak",
       "status": "finished",
-      "homeScore": 1,
+      "homeScore": 3,
       "awayScore": 0,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021492",
       "confidence": 0.97,
@@ -10241,6 +10241,20 @@
             "minute": 14,
             "team": "home",
             "scorer": "Kylian MBAPPE",
+            "assist": "Michael OLISE.",
+            "type": "goal"
+          },
+          {
+            "minute": 54,
+            "team": "home",
+            "scorer": "Kylian MBAPPE",
+            "assist": "Ousmane DEMBELE.",
+            "type": "goal"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "scorer": "Ousmane DEMBELE",
             "assist": "Michael OLISE.",
             "type": "goal"
           }
@@ -10259,6 +10273,60 @@
             "team": "away",
             "playerOut": "AYMEN HUSSEIN",
             "playerIn": "ALI ALHAMADI"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "playerOut": "ZAID TAHSEEN",
+            "playerIn": "REBIN SULAKA"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "playerOut": "ZAID ISMAEL",
+            "playerIn": "YOUSSEF AMYN"
+          },
+          {
+            "minute": 68,
+            "team": "home",
+            "playerOut": "Ousmane DEMBELE",
+            "playerIn": "Desire DOUE"
+          },
+          {
+            "minute": 68,
+            "team": "home",
+            "playerOut": "Michael OLISE",
+            "playerIn": "Rayan CHERKI"
+          },
+          {
+            "minute": 68,
+            "team": "away",
+            "playerOut": "IBRAHIM BAYESH",
+            "playerIn": "MARKO FARJI"
+          },
+          {
+            "minute": 68,
+            "team": "away",
+            "playerOut": "AMIR ALAMMARI",
+            "playerIn": "AIMAR SHER"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Bradley BARCOLA",
+            "playerIn": "Maghnes AKLIOUCHE"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Jules KOUNDE",
+            "playerIn": "Malo GUSTO"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "Kylian MBAPPE",
+            "playerIn": "Marcus THURAM"
           }
         ],
         "lineup": {
@@ -10379,16 +10447,20 @@
         },
         "stats": {
           "shots": {
-            "home": 7,
-            "away": 2
+            "home": 19,
+            "away": 4
           },
           "corners": {
-            "home": 1,
-            "away": 1
+            "home": 4,
+            "away": 2
           },
           "fouls": {
-            "home": 5,
-            "away": 1
+            "home": 8,
+            "away": 3
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
           },
           "yellowCards": {
             "home": 0,
@@ -10402,18 +10474,241 @@
     },
     {
       "slug": "noruega-vs-senegal",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 3,
+      "awayScore": 1,
+      "minute": 88,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 43,
+            "team": "home",
+            "scorer": "Marcus HOLMGREN PEDERSEN",
+            "type": "goal"
+          },
+          {
+            "minute": 48,
+            "team": "home",
+            "scorer": "Erling HAALAND",
+            "assist": "Martin ODEGAARD.",
+            "type": "goal"
+          },
+          {
+            "minute": 53,
+            "team": "away",
+            "scorer": "Ismaila SARR",
+            "assist": "Sadio MANE.",
+            "type": "goal"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "scorer": "Erling HAALAND",
+            "assist": "Patrick BERG.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Fredrik AURSNES",
+            "playerIn": "Patrick BERG"
+          },
+          {
+            "minute": 13,
+            "team": "home",
+            "playerOut": "Julian RYERSON",
+            "playerIn": "Marcus HOLMGREN PEDERSEN"
+          },
+          {
+            "minute": 54,
+            "team": "away",
+            "playerOut": "Pape GUEYE",
+            "playerIn": "Ibrahim MBAYE"
+          },
+          {
+            "minute": 54,
+            "team": "away",
+            "playerOut": "El Hadji Malick DIOUF",
+            "playerIn": "Ismail JAKOBS"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Edouard MENDY",
+            "playerIn": "Mory DIAW"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Lamine CAMARA",
+            "playerIn": "Pathe CISS"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Antonio NUSA",
+            "playerIn": "Andreas SCHJELDERUP"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Kalidou KOULIBALY",
+            "playerIn": "Pape Matar SARR"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Torbjorn HEGGEM",
+            "playerIn": "Leo OSTIGARD"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Alexander SORLOTH",
+            "playerIn": "Oscar BOBB"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Orjan NYLAND",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Kristoffer AJER",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "David MOLLER WOLFE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Torbjorn HEGGEM",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Sander BERGE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Martin ODEGAARD",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Fredrik AURSNES",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Alexander SORLOTH",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Erling HAALAND",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Antonio NUSA",
+              "number": 20,
+              "position": "FWD"
+            },
+            {
+              "name": "Julian RYERSON",
+              "number": 26,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Edouard MENDY",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Kalidou KOULIBALY",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Krepin DIATTA",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Moussa Niakhate",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "El Hadji Malick DIOUF",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Idrissa Gana GUEYE",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Lamine CAMARA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Pape GUEYE",
+              "number": 26,
+              "position": "MID"
+            },
+            {
+              "name": "Sadio MANE",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Nicolas JACKSON",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Ismaila SARR",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Noruega llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la destacada figura de Erling Haaland, quien puede ser el factor decisivo en el ataque, mientras que Senegal se presenta con una sólida defensa y el talento de Sadio Mané, lo que les da una base sólida para contrarrestar al rival. En este encuentro, Senegal parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores del equipo noruego.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 12,
+            "away": 12
+          },
+          "corners": {
+            "home": 4,
+            "away": 2
+          },
+          "fouls": {
+            "home": 10,
+            "away": 4
+          },
+          "offsides": {
+            "home": 0,
+            "away": 4
+          }
+        },
+        "aiNotes": "En este momento, el partido está siendo dominado por Noruega, que lleva una ventaja de dos goles en el marcador con un resultado de 3-1, gracias a los goles de Marcus Holmgren Pedersen y el doblete de Erling Haaland, mientras que Senegal solo ha logrado anotar a través de Ismaila Sarr. En lo que resta del partido, es probable que Senegal intente aumentar su presión ofensiva para tratar de reducir la desventaja, lo que podría dejar espacios para que Noruega aproveche con contraataques y consolide su ventaja.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491"
       }
     },

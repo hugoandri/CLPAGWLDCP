@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T23:39:14.200Z",
+  "generatedAt": "2026-06-23T01:48:11.476Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -8568,7 +8568,7 @@
       ]
     },
     "senegal": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021490",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491",
       "players": [
         {
           "id": "433806",
@@ -9095,7 +9095,7 @@
       ]
     },
     "noruega": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021488",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491",
       "players": [
         {
           "id": "373235",
