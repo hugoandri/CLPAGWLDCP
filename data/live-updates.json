@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T22:46:51.889Z",
+  "generatedAt": "2026-06-23T23:44:18.603Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11452,18 +11452,144 @@
     },
     {
       "slug": "panama-vs-croacia",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 44,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Orlando MOSQUERA",
+              "number": 22,
+              "position": "GK"
+            },
+            {
+              "name": "Cesar BLACKMAN",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Jose CORDOBA",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Jiovany RAMOS",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Carlos HARVEY",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Andres ANDRADE",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Amir MURILLO",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Cristian MARTINEZ",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Jose Luis RODRIGUEZ",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Edgar Yoel BARCENAS",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Jose FAJARDO",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Dominik LIVAKOVIC",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Josip STANISIC",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Marin PONGRACIC",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Josko GVARDIOL",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Josip SUTALO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Mateo KOVACIC",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Luka MODRIC",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Martin BATURINA",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Ivan PERISIC",
+              "number": 14,
+              "position": "FWD"
+            },
+            {
+              "name": "Marco PASALIC",
+              "number": 24,
+              "position": "FWD"
+            },
+            {
+              "name": "Petar Musa",
+              "number": 26,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Panamá muestra una forma irregular en sus últimos encuentros, contando con la habilidad y liderazgo de Adalberto Carrasquilla, mientras que Croacia, liderada por la experiencia y talento de Luka Modrić, ha demostrado una solidez y cohesión en su juego reciente. Espero que Croacia tenga la ventaja en este partido debido a su superioridad en el ranking FIFA y su consistencia en el juego, lo que podría ser demasiado para el equipo panameño.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 1,
+            "away": 1
+          },
+          "fouls": {
+            "home": 8,
+            "away": 5
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Panamá y Croacia se encuentra empatado a cero goles, con ambos equipos mostrando un fútbol cauteloso y sin que ninguno haya logrado anotar, lo que refleja la igualdad en el marcador. A medida que se acerca el final del primer tiempo, es probable que ambos equipos busquen aumentar la intensidad y la presión para tratar de romper el empate y anotar el primer gol del partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511"
       }
     },

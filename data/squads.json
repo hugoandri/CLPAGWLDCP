@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T22:46:51.892Z",
+  "generatedAt": "2026-06-23T23:44:18.607Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -11194,7 +11194,7 @@
       ]
     },
     "croacia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511",
       "players": [
         {
           "id": "369029",
@@ -11217,6 +11217,16 @@
           "club": "Bayern Munich"
         },
         {
+          "id": "448174",
+          "name": "Marin PONGRACIC",
+          "number": 3,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/002f5150-852a-45f5-9a9b-46cd3dcaface/PONGRACIC-Marin_448174",
+          "club": "Fiorentina"
+        },
+        {
           "id": "448180",
           "name": "Josko GVARDIOL",
           "number": 4,
@@ -11237,14 +11247,14 @@
           "club": "Ajax"
         },
         {
-          "id": "499290",
-          "name": "Luka VUSKOVIC",
-          "number": 22,
-          "position": "DEF",
+          "id": "339987",
+          "name": "Mateo KOVACIC",
+          "number": 8,
+          "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c905e324-dc60-4e79-a2a1-c06412f27aed/VUSKOVIC-Luka_499290",
-          "club": "Hamburger SV"
+          "photoUrl": "https://digitalhub.fifa.com/transform/5d230f74-1e00-4b42-a880-844fe2aee964/KOVACIC-Mateo_339987",
+          "club": "Manchester City"
         },
         {
           "id": "241559",
@@ -11257,16 +11267,6 @@
           "club": "Milan"
         },
         {
-          "id": "380005",
-          "name": "Mario PASALIC",
-          "number": 15,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/f3c0fd5e-6814-4acc-822a-2152e1cf79de/PASALIC-Mario_380005",
-          "club": "Atalanta"
-        },
-        {
           "id": "482774",
           "name": "Martin BATURINA",
           "number": 16,
@@ -11277,16 +11277,6 @@
           "club": "Como"
         },
         {
-          "id": "485066",
-          "name": "Petar SUCIC",
-          "number": 17,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/89c383c2-39ba-413d-b945-e42dd2d47c6d/SUCIC-Petar_485066",
-          "club": "Inter Milan"
-        },
-        {
           "id": "359381",
           "name": "Ivan PERISIC",
           "number": 14,
@@ -11295,6 +11285,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ba7ea3ab-0ef6-4cdd-834c-79a94739fe26/PERISIC-Ivan_359381",
           "club": "PSV Eindhoven"
+        },
+        {
+          "id": "482931",
+          "name": "Marco PASALIC",
+          "number": 24,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/ea070001-3892-4086-89c9-fe982a729f5d/PASALIC-Marco_482931",
+          "club": "Orlando City SC"
         },
         {
           "id": "389754",
@@ -11327,16 +11327,6 @@
           "club": "Copenhagen"
         },
         {
-          "id": "448174",
-          "name": "Marin PONGRACIC",
-          "number": 3,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/002f5150-852a-45f5-9a9b-46cd3dcaface/PONGRACIC-Marin_448174",
-          "club": "Fiorentina"
-        },
-        {
           "id": "372424",
           "name": "Duje CALETA-CAR",
           "number": 5,
@@ -11355,6 +11345,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/8fdebc61-0e5a-4d33-bf9f-3dcb4b413f21/JAKIC-Kristijan_448164",
           "club": "FC Augsburg"
+        },
+        {
+          "id": "499290",
+          "name": "Luka VUSKOVIC",
+          "number": 22,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/c905e324-dc60-4e79-a2a1-c06412f27aed/VUSKOVIC-Luka_499290",
+          "club": "Hamburger SV"
         },
         {
           "id": "389740",
@@ -11377,16 +11377,6 @@
           "club": "Bologna"
         },
         {
-          "id": "339987",
-          "name": "Mateo KOVACIC",
-          "number": 8,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/5d230f74-1e00-4b42-a880-844fe2aee964/KOVACIC-Mateo_339987",
-          "club": "Manchester City"
-        },
-        {
           "id": "409191",
           "name": "Nikola VLASIC",
           "number": 13,
@@ -11395,6 +11385,26 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/59a64db7-c267-432d-9172-cf012b37c0b5/VLASIC-Nikola_409191",
           "club": "Torino"
+        },
+        {
+          "id": "380005",
+          "name": "Mario PASALIC",
+          "number": 15,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/f3c0fd5e-6814-4acc-822a-2152e1cf79de/PASALIC-Mario_380005",
+          "club": "Atalanta"
+        },
+        {
+          "id": "485066",
+          "name": "Petar SUCIC",
+          "number": 17,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/89c383c2-39ba-413d-b945-e42dd2d47c6d/SUCIC-Petar_485066",
+          "club": "Inter Milan"
         },
         {
           "id": "485065",
@@ -11445,16 +11455,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/72c82c16-da76-4f5a-a849-5b84343228eb/MATANOVIC-Igor_485068",
           "club": "SC Freiburg"
-        },
-        {
-          "id": "482931",
-          "name": "Marco PASALIC",
-          "number": 24,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ea070001-3892-4086-89c9-fe982a729f5d/PASALIC-Marco_482931",
-          "club": "Orlando City SC"
         }
       ]
     },
@@ -11723,7 +11723,7 @@
       ]
     },
     "panama": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511",
       "players": [
         {
           "id": "441241",
@@ -11826,14 +11826,14 @@
           "club": "Mazatlán"
         },
         {
-          "id": "337251",
-          "name": "Cecilio Waterman",
-          "number": 18,
+          "id": "411174",
+          "name": "Jose FAJARDO",
+          "number": 17,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/88587975-f375-48cb-bd3d-662e2095c8ca/WATERMAN-Cecilio_337251",
-          "club": "Universidad de Concepción"
+          "photoUrl": "https://digitalhub.fifa.com/transform/b120b6ef-1340-49c3-9400-dbe883606d5e/FAJARDO-Jose_411174",
+          "club": "Universidad Católica"
         },
         {
           "id": "267702",
@@ -11966,14 +11966,14 @@
           "club": "Saprissa"
         },
         {
-          "id": "411174",
-          "name": "Jose FAJARDO",
-          "number": 17,
+          "id": "337251",
+          "name": "Cecilio Waterman",
+          "number": 18,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b120b6ef-1340-49c3-9400-dbe883606d5e/FAJARDO-Jose_411174",
-          "club": "Universidad Católica"
+          "photoUrl": "https://digitalhub.fifa.com/transform/88587975-f375-48cb-bd3d-662e2095c8ca/WATERMAN-Cecilio_337251",
+          "club": "Universidad de Concepción"
         },
         {
           "id": "466669",
