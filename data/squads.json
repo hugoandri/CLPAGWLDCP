@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T01:48:11.476Z",
+  "generatedAt": "2026-06-23T05:57:56.597Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -9625,7 +9625,7 @@
       ]
     },
     "argelia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021496",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021499",
       "players": [
         {
           "id": "389879",
@@ -9643,7 +9643,7 @@
           "number": 2,
           "position": "DEF",
           "starter": true,
-          "captain": true,
+          "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/dc4250ac-0a37-44da-9ae0-c858225ad8a1/MANDI-Aissa_376285",
           "club": "Lille"
         },
@@ -9678,6 +9678,16 @@
           "club": "Borussia Dortmund"
         },
         {
+          "id": "433679",
+          "name": "Ramiz ZERROUKI",
+          "number": 6,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/48a3b28e-cee7-4c5b-87b9-6344b3977983/ZERROUKI-Ramiz_433679",
+          "club": "Twente"
+        },
+        {
           "id": "477795",
           "name": "Fares CHAIBI",
           "number": 10,
@@ -9698,16 +9708,6 @@
           "club": "Nice"
         },
         {
-          "id": "379939",
-          "name": "Nabil Bentaleb",
-          "number": 19,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/02fbf423-afa1-4863-8ddc-af2136fb5685/BENTALEB-Nabil_379939",
-          "club": "Lille"
-        },
-        {
           "id": "494291",
           "name": "Ibrahim MAZA",
           "number": 22,
@@ -9718,6 +9718,16 @@
           "club": "Bayer Leverkusen"
         },
         {
+          "id": "379942",
+          "name": "Riyad Mahrez",
+          "number": 7,
+          "position": "FWD",
+          "starter": true,
+          "captain": true,
+          "photoUrl": "https://digitalhub.fifa.com/transform/172fb59c-24f2-4bc0-82a2-cdc869badf53/MAHREZ-Riyad_379942",
+          "club": "Al-Ahli"
+        },
+        {
           "id": "405877",
           "name": "Amine GOUIRI",
           "number": 9,
@@ -9726,16 +9736,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/4818d176-036a-4494-b53e-ada08bba749c/GOUIRI-Amine_405877",
           "club": "Marseille"
-        },
-        {
-          "id": "482874",
-          "name": "Anis HADJ MOUSSA",
-          "number": 11,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7446a4bb-0884-461c-8fd7-7ce4c93a0a46/HADJ-MOUSSA-Anis_482874",
-          "club": "Feyenoord"
         },
         {
           "id": "520070",
@@ -9808,16 +9808,6 @@
           "club": "Paris FC"
         },
         {
-          "id": "433679",
-          "name": "Ramiz ZERROUKI",
-          "number": 6,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/48a3b28e-cee7-4c5b-87b9-6344b3977983/ZERROUKI-Ramiz_433679",
-          "club": "Twente"
-        },
-        {
           "id": "430698",
           "name": "Houssem Aouar",
           "number": 8,
@@ -9826,6 +9816,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ac743888-d671-4971-9df9-594b591f2425/AOUAR-Houssem_430698",
           "club": "Al-Ittihad"
+        },
+        {
+          "id": "379939",
+          "name": "Nabil Bentaleb",
+          "number": 19,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/02fbf423-afa1-4863-8ddc-af2136fb5685/BENTALEB-Nabil_379939",
+          "club": "Lille"
         },
         {
           "id": "433631",
@@ -9838,14 +9838,14 @@
           "club": "Charleroi"
         },
         {
-          "id": "379942",
-          "name": "Riyad Mahrez",
-          "number": 7,
+          "id": "482874",
+          "name": "Anis HADJ MOUSSA",
+          "number": 11,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/172fb59c-24f2-4bc0-82a2-cdc869badf53/MAHREZ-Riyad_379942",
-          "club": "Al-Ahli"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7446a4bb-0884-461c-8fd7-7ce4c93a0a46/HADJ-MOUSSA-Anis_482874",
+          "club": "Feyenoord"
         },
         {
           "id": "520071",
@@ -9856,16 +9856,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/9e9811da-2a8a-48cd-9088-1a45b6f90e0a/BENBOUALI-Nadhir_520071",
           "club": "Győri ETO"
-        },
-        {
-          "id": "477790",
-          "name": "Mohamed AMOURA",
-          "number": 18,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/5aa32614-1ae5-49be-aed3-f9636a556385/AMOURA-Mohamed_477790",
-          "club": "VfL Wolfsburg"
         },
         {
           "id": "512132",
@@ -10154,7 +10144,7 @@
       ]
     },
     "jordania": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021498",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021499",
       "players": [
         {
           "id": "397894",
@@ -10177,6 +10167,15 @@
           "club": "Al-Zawraa"
         },
         {
+          "id": "489550",
+          "name": "HUSAM ABUDAHAB",
+          "number": 4,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/90bde687-8728-4d4d-aa72-524b2b251caa/HUSAM-ABUDAHAB_489550"
+        },
+        {
           "id": "431225",
           "name": "YAZAN ALARAB",
           "number": 5,
@@ -10185,16 +10184,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/f69b7b80-4362-431e-9e25-32c7d0a92c88/YAZAN-ALARAB_431225",
           "club": "FC Seoul"
-        },
-        {
-          "id": "489551",
-          "name": "MOHAMMAD ABUALNADI",
-          "number": 16,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/e4e0ffbc-e1af-44f4-8c2e-50bd2dffc4c4/MOHAMMAD-ABUALNADI_489551",
-          "club": "Selangor"
         },
         {
           "id": "389437",
@@ -10256,13 +10245,14 @@
           "photoUrl": "https://digitalhub.fifa.com/transform/e999f9d2-7ca2-4d4d-b7ba-33c1ee96b375/MOUSA-ALTAMARI_431211"
         },
         {
-          "id": "511875",
-          "name": "ODEH FAKHOURY",
-          "number": 11,
+          "id": "396950",
+          "name": "MAHMOUD ALMARDI",
+          "number": 13,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/07e6d74d-1e09-4278-97e4-4b0bfcba2de8/ODEH-FAKHOURY_511875"
+          "photoUrl": "https://digitalhub.fifa.com/transform/1e7a3a2d-fca9-400e-8a5a-244eadc0fb92/MAHMOUD-ALMARDI_396950",
+          "club": "Al-Hussein"
         },
         {
           "id": "483127",
@@ -10292,13 +10282,14 @@
           "photoUrl": "https://digitalhub.fifa.com/transform/8eb95381-e0eb-4965-8602-af3d79e14e66/MOHAMMAD-ABUHASHEESH_433526"
         },
         {
-          "id": "489550",
-          "name": "HUSAM ABUDAHAB",
-          "number": 4,
+          "id": "489551",
+          "name": "MOHAMMAD ABUALNADI",
+          "number": 16,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/90bde687-8728-4d4d-aa72-524b2b251caa/HUSAM-ABUDAHAB_489550"
+          "photoUrl": "https://digitalhub.fifa.com/transform/e4e0ffbc-e1af-44f4-8c2e-50bd2dffc4c4/MOHAMMAD-ABUALNADI_489551",
+          "club": "Selangor"
         },
         {
           "id": "499102",
@@ -10388,14 +10379,13 @@
           "photoUrl": "https://digitalhub.fifa.com/transform/14c04e8c-82ca-4feb-83ff-f89fa146d91f/MOHAMMAD-ABUZRAIQ_431208"
         },
         {
-          "id": "396950",
-          "name": "MAHMOUD ALMARDI",
-          "number": 13,
+          "id": "511875",
+          "name": "ODEH FAKHOURY",
+          "number": 11,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1e7a3a2d-fca9-400e-8a5a-244eadc0fb92/MAHMOUD-ALMARDI_396950",
-          "club": "Al-Hussein"
+          "photoUrl": "https://digitalhub.fifa.com/transform/07e6d74d-1e09-4278-97e4-4b0bfcba2de8/ODEH-FAKHOURY_511875"
         },
         {
           "id": "498514",

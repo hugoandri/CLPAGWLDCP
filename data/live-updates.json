@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T01:48:11.473Z",
+  "generatedAt": "2026-06-23T05:57:56.592Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -10474,10 +10474,9 @@
     },
     {
       "slug": "noruega-vs-senegal",
-      "status": "live",
+      "status": "finished",
       "homeScore": 3,
-      "awayScore": 1,
-      "minute": 88,
+      "awayScore": 2,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491",
       "confidence": 0.97,
       "detail": {
@@ -10507,6 +10506,13 @@
             "team": "home",
             "scorer": "Erling HAALAND",
             "assist": "Patrick BERG.",
+            "type": "goal"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "scorer": "Ismaila SARR",
+            "assist": "Nicolas JACKSON.",
             "type": "goal"
           }
         ],
@@ -10691,42 +10697,274 @@
         },
         "stats": {
           "shots": {
-            "home": 12,
-            "away": 12
+            "home": 13,
+            "away": 16
           },
           "corners": {
-            "home": 4,
-            "away": 2
+            "home": 5,
+            "away": 4
           },
           "fouls": {
-            "home": 10,
-            "away": 4
+            "home": 13,
+            "away": 5
           },
           "offsides": {
             "home": 0,
             "away": 4
           }
         },
-        "aiNotes": "En este momento, el partido está siendo dominado por Noruega, que lleva una ventaja de dos goles en el marcador con un resultado de 3-1, gracias a los goles de Marcus Holmgren Pedersen y el doblete de Erling Haaland, mientras que Senegal solo ha logrado anotar a través de Ismaila Sarr. En lo que resta del partido, es probable que Senegal intente aumentar su presión ofensiva para tratar de reducir la desventaja, lo que podría dejar espacios para que Noruega aproveche con contraataques y consolide su ventaja.",
+        "aiNotes": "En el partido entre Noruega y Senegal, el equipo noruego logró imponerse con un resultado de 3-2, gracias a los goles de Marcus Holmgren Pedersen y los dos tantos de Erling Haaland, quien resultó clave en el encuentro. La victoria de Noruega se debió en gran medida al rendimiento táctico y a la efectividad en la creación de oportunidades de gol, especialmente en la primera mitad del partido, lo que les permitió hacer frente al empuje ofensivo de Senegal en el tramo final del encuentro.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021491"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021491"
       }
     },
     {
       "slug": "jordania-vs-argelia",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 2,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021499",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 36,
+            "team": "home",
+            "scorer": "Nizar Alrashdan",
+            "assist": "MOUSA ALTAMARI.",
+            "type": "goal"
+          },
+          {
+            "minute": 69,
+            "team": "away",
+            "scorer": "Nadhir BENBOUALI",
+            "assist": "Riyad MAHREZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "scorer": "Amine GOUIRI",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 44,
+            "team": "away",
+            "player": "Ramiz ZERROUKI",
+            "type": "yellow"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "player": "Husam Abudahab",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Hicham BOUDAOUI",
+            "playerIn": "Nadhir BENBOUALI"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Ramiz ZERROUKI",
+            "playerIn": "Nabil Bentaleb"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "MAHMOUD ALMARDI",
+            "playerIn": "ODEH FAKHOURY"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Riyad Mahrez",
+            "playerIn": "Anis HADJ MOUSSA"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "MOUSA ALTAMARI",
+            "playerIn": "ALI AZAIZEH"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "MOHANNAD ABUTAHA",
+            "playerIn": "MOHAMMAD ABUHASHEESH"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Amine GOUIRI",
+            "playerIn": "Zineddine BELAID"
+          },
+          {
+            "minute": 85,
+            "team": "away",
+            "playerOut": "Rayan AIT-NOURI",
+            "playerIn": "Jaouen HADJAM"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "ALI OLWAN",
+            "playerIn": "MOHAMMAD ABUZRAIQ"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "HUSAM ABUDAHAB",
+            "playerIn": "SALEEM OBAID"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "YAZEED ABULAILA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "ABDALLAH NASIB",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "HUSAM ABUDAHAB",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "YAZAN ALARAB",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "EHSAN HADDAD",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "NOOR ALRAWABDEH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "MOHANNAD ABUTAHA",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "NIZAR ALRASHDAN",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "ALI OLWAN",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "MOUSA ALTAMARI",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "MAHMOUD ALMARDI",
+              "number": 13,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Luca ZIDANE",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Aissa MANDI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Rayan AIT-NOURI",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Rafik BELGHALI",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Ramy BENSEBAINI",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Ramiz ZERROUKI",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Fares CHAIBI",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Hicham BOUDAOUI",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Ibrahim MAZA",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Riyad Mahrez",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Amine GOUIRI",
+              "number": 9,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 8,
+            "away": 17
+          },
+          "corners": {
+            "home": 1,
+            "away": 10
+          },
+          "fouls": {
+            "home": 10,
+            "away": 5
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
+          }
+        },
         "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, siendo Algeria el favorito debido a su posición en el ranking FIFA y su sólida forma reciente, con jugador clave como Mohamed Amoura, mientras que Jordania busca sorprender con su velocidad y habilidad en el ataque, liderados por Mousa Al-Taamari. Mi expectativa es que Algeria tenga ventaja en el partido debido a su experiencia y su mayor profundidad en el banquillo, lo que les permitirá controlar el ritmo del juego y generar oportunidades claras de gol.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021499"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021499"
       }
     },
     {
