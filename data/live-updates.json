@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T05:57:56.592Z",
+  "generatedAt": "2026-06-23T17:31:39.635Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -10969,18 +10969,173 @@
     },
     {
       "slug": "portugal-vs-uzbekistan",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 2,
+      "awayScore": 0,
+      "minute": 31,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
+        "goals": [
+          {
+            "minute": 6,
+            "team": "home",
+            "scorer": "Cristiano Ronaldo",
+            "assist": "JOAO CANCELO.",
+            "type": "goal"
+          },
+          {
+            "minute": 17,
+            "team": "home",
+            "scorer": "Nuno Mendes",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 14,
+            "team": "away",
+            "player": "Odiljon XAMROBEKOV",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "DIOGO COSTA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "RUBEN DIAS",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "RENATO VEIGA",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "JOAO CANCELO",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "NUNO MENDES",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "BRUNO FERNANDES",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "JOAO NEVES",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "VITINHA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "CRISTIANO RONALDO",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "JOAO FELIX",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "PEDRO NETO",
+              "number": 18,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Abduvohid NEMATOV",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Abdukodir KHUSANOV",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Rustam ASHURMATOV",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Sherzod NASRULLAEV",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulla ABDULLAEV",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Behruzjon KARIMOV",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Otabek Shukurov",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Odiljon XAMROBEKOV",
+              "number": 9,
+              "position": "MID"
+            },
+            {
+              "name": "Azizjon GANIEV",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Abbosbek FAYZULLAEV",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Eldor SHOMURODOV",
+              "number": 14,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Portugal llega al partido con una forma reciente sólida, gracias a la creatividad y liderazgo de Bruno Fernandes en el campo, mientras que Uzbekistan busca sorprender con la velocidad y habilidad de Eldor Shomurodov, aunque su posición en la clasificación FIFA sugiere una ventaja para el equipo europeo. En este encuentro, Portugal tiene la ventaja debido a su mayor experiencia y nivel de competición en torneos internacionales, lo que podría permitirle controlar el ritmo del juego y aprovechar sus oportunidades para anotar.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 6,
+            "away": 1
+          },
+          "corners": {
+            "home": 1,
+            "away": 0
+          },
+          "fouls": {
+            "home": 3,
+            "away": 5
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, Portugal domina claramente el partido con un marcador de 2-0 sobre Uzbekistan, gracias a los goles de Cristiano Ronaldo en el minuto 6 y Nuno Mendes en el minuto 17, mientras que Uzbekistan intenta recuperarse después de la tarjeta amarilla recibida por Odiljon Xamrobekov en el minuto 14. La estrategia de Portugal parece funcionar, presionando constantemente al equipo uzbeko, y es probable que intenten mantener este ritmo para evitar que Uzbekistan pueda generar oportunidades de ataque en lo que resta del partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503"
       }
     },

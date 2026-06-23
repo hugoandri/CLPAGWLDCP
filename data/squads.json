@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T05:57:56.597Z",
+  "generatedAt": "2026-06-23T17:31:39.640Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -10400,7 +10400,7 @@
       ]
     },
     "portugal": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503",
       "players": [
         {
           "id": "403001",
@@ -10413,14 +10413,14 @@
           "club": "Porto"
         },
         {
-          "id": "492358",
-          "name": "TOMAS ARAUJO",
-          "number": 4,
+          "id": "384752",
+          "name": "RUBEN DIAS",
+          "number": 3,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/e8840a7f-2bc5-44fb-a7bc-15d7a605691c/TOMAS-ARAUJO_492358",
-          "club": "Benfica"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7eab2fa3-e7d1-4876-aaaa-a44a9e923750/RUBEN-DIAS_384752",
+          "club": "Manchester City"
         },
         {
           "id": "489704",
@@ -10463,16 +10463,6 @@
           "club": "Manchester United"
         },
         {
-          "id": "395205",
-          "name": "BERNARDO SILVA",
-          "number": 10,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/97535989-5b6f-414b-a582-54a0c48df12a/BERNARDO-SILVA_395205",
-          "club": "Manchester City"
-        },
-        {
           "id": "484141",
           "name": "JOAO NEVES",
           "number": 15,
@@ -10500,6 +10490,16 @@
           "starter": true,
           "captain": true,
           "photoUrl": "https://digitalhub.fifa.com/transform/7b63f223-fda2-4d56-b218-f143f0abd2d8/CRISTIANO-RONALDO_201200",
+          "club": "Al-Nassr"
+        },
+        {
+          "id": "418535",
+          "name": "JOAO FELIX",
+          "number": 11,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/e1fd310b-cac5-47ef-95e9-9d0b8b41ba2f/JOAO-FELIX_418535",
           "club": "Al-Nassr"
         },
         {
@@ -10543,14 +10543,14 @@
           "club": "Fenerbahçe"
         },
         {
-          "id": "384752",
-          "name": "RUBEN DIAS",
-          "number": 3,
+          "id": "492358",
+          "name": "TOMAS ARAUJO",
+          "number": 4,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7eab2fa3-e7d1-4876-aaaa-a44a9e923750/RUBEN-DIAS_384752",
-          "club": "Manchester City"
+          "photoUrl": "https://digitalhub.fifa.com/transform/e8840a7f-2bc5-44fb-a7bc-15d7a605691c/TOMAS-ARAUJO_492358",
+          "club": "Benfica"
         },
         {
           "id": "403002",
@@ -10593,6 +10593,16 @@
           "club": "Manchester City"
         },
         {
+          "id": "395205",
+          "name": "BERNARDO SILVA",
+          "number": 10,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/97535989-5b6f-414b-a582-54a0c48df12a/BERNARDO-SILVA_395205",
+          "club": "Manchester City"
+        },
+        {
           "id": "395216",
           "name": "RUBEN NEVES",
           "number": 21,
@@ -10611,16 +10621,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/040f6a55-0f54-430e-a03b-bb994ee40921/GONCALO-RAMOS_448081",
           "club": "Paris Saint-Germain"
-        },
-        {
-          "id": "418535",
-          "name": "JOAO FELIX",
-          "number": 11,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/e1fd310b-cac5-47ef-95e9-9d0b8b41ba2f/JOAO-FELIX_418535",
-          "club": "Al-Nassr"
         },
         {
           "id": "418561",
@@ -11970,17 +11970,17 @@
       ]
     },
     "uzbekistan": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021504",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503",
       "players": [
         {
-          "id": "479077",
-          "name": "Utkir YUSUPOV",
-          "number": 1,
+          "id": "479110",
+          "name": "Abduvohid NEMATOV",
+          "number": 12,
           "position": "GK",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c3025d34-eb01-4b77-85bd-127f692514c8/YUSUPOV-Utkir_479077",
-          "club": "Navbahor Namangan"
+          "photoUrl": "https://digitalhub.fifa.com/transform/1f1bfea3-5228-4270-ad8d-c1c8f08ef522/NEMATOV-Abduvohid_479110",
+          "club": "Nasaf"
         },
         {
           "id": "464924",
@@ -12032,16 +12032,6 @@
           "club": "Surkhon Termiz"
         },
         {
-          "id": "479106",
-          "name": "Akmal MOZGOVOY",
-          "number": 6,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/acea76c2-8e6c-4335-90da-062b53054ec0/MOZGOVOY-Akmal_479106",
-          "club": "Pakhtakor"
-        },
-        {
           "id": "371348",
           "name": "Otabek Shukurov",
           "number": 7,
@@ -12052,14 +12042,23 @@
           "club": "Baniyas"
         },
         {
-          "id": "479080",
-          "name": "Oston URUNOV",
-          "number": 11,
+          "id": "371345",
+          "name": "Odiljon XAMROBEKOV",
+          "number": 9,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d7b6d477-eacd-4954-8662-07a51b5f29fa/URUNOV-Oston_479080",
-          "club": "Persepolis"
+          "photoUrl": "https://digitalhub.fifa.com/transform/3653b567-3520-45f9-b757-4f13a939ef39/XAMROBEKOV-Odiljon_371345"
+        },
+        {
+          "id": "479086",
+          "name": "Azizjon GANIEV",
+          "number": 19,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/8ab4a549-fd61-4a4c-810a-c04ebd897062/GANIEV-Azizjon_479086",
+          "club": "Al Bataeh"
         },
         {
           "id": "464933",
@@ -12082,14 +12081,14 @@
           "club": "İstanbul Başakşehir"
         },
         {
-          "id": "479110",
-          "name": "Abduvohid NEMATOV",
-          "number": 12,
+          "id": "479077",
+          "name": "Utkir YUSUPOV",
+          "number": 1,
           "position": "GK",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1f1bfea3-5228-4270-ad8d-c1c8f08ef522/NEMATOV-Abduvohid_479110",
-          "club": "Nasaf"
+          "photoUrl": "https://digitalhub.fifa.com/transform/c3025d34-eb01-4b77-85bd-127f692514c8/YUSUPOV-Utkir_479077",
+          "club": "Navbahor Namangan"
         },
         {
           "id": "385472",
@@ -12151,6 +12150,16 @@
           "club": "Dinamo Samarqand"
         },
         {
+          "id": "479106",
+          "name": "Akmal MOZGOVOY",
+          "number": 6,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/acea76c2-8e6c-4335-90da-062b53054ec0/MOZGOVOY-Akmal_479106",
+          "club": "Pakhtakor"
+        },
+        {
           "id": "368545",
           "name": "Jamshid ISKANDEROV",
           "number": 8,
@@ -12159,15 +12168,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/457a0153-becf-4cf5-ab9c-9c3be220327a/ISKANDEROV-Jamshid_368545",
           "club": "Neftchi Fergana"
-        },
-        {
-          "id": "371345",
-          "name": "Odiljon XAMROBEKOV",
-          "number": 9,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/3653b567-3520-45f9-b757-4f13a939ef39/XAMROBEKOV-Odiljon_371345"
         },
         {
           "id": "484303",
@@ -12180,6 +12180,16 @@
           "club": "Navbahor Namangan"
         },
         {
+          "id": "479080",
+          "name": "Oston URUNOV",
+          "number": 11,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/d7b6d477-eacd-4954-8662-07a51b5f29fa/URUNOV-Oston_479080",
+          "club": "Persepolis"
+        },
+        {
           "id": "371393",
           "name": "Dostonbek Khamdamov",
           "number": 17,
@@ -12188,16 +12198,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e49aa204-3009-462c-920b-c9dfcd8b9c03/KHAMDAMOV-Dostonbek_371393",
           "club": "Pakhtakor"
-        },
-        {
-          "id": "479086",
-          "name": "Azizjon GANIEV",
-          "number": 19,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/8ab4a549-fd61-4a4c-810a-c04ebd897062/GANIEV-Azizjon_479086",
-          "club": "Al Bataeh"
         },
         {
           "id": "464897",
