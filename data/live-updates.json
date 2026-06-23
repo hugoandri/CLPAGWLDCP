@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T21:18:26.928Z",
+  "generatedAt": "2026-06-23T22:46:51.889Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11230,10 +11230,9 @@
     },
     {
       "slug": "inglaterra-vs-ghana",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 54,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021506",
       "confidence": 0.97,
       "detail": {
@@ -11244,9 +11243,70 @@
             "team": "home",
             "player": "Declan RICE",
             "type": "yellow"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "player": "Inaki WILLIAMS",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 65,
+            "team": "home",
+            "playerOut": "Anthony GORDON",
+            "playerIn": "Bukayo SAKA"
+          },
+          {
+            "minute": 65,
+            "team": "home",
+            "playerOut": "Djed SPENCE",
+            "playerIn": "Nico OREILLY"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Inaki WILLIAMS",
+            "playerIn": "Abdul FATAWU"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "Jordan AYEW",
+            "playerIn": "Prince ADU"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Jude BELLINGHAM",
+            "playerIn": "Morgan ROGERS"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Elliot ANDERSON",
+            "playerIn": "Eberechi EZE"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Noni MADUEKE",
+            "playerIn": "Marcus RASHFORD"
+          },
+          {
+            "minute": 87,
+            "team": "away",
+            "playerOut": "Marvin SENAYA",
+            "playerIn": "Kojo Peprah OPPONG"
+          },
+          {
+            "minute": 95,
+            "team": "away",
+            "playerOut": "Prince ADU",
+            "playerIn": "Baba RAHMAN"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -11365,29 +11425,29 @@
         },
         "stats": {
           "shots": {
-            "home": 6,
-            "away": 1
+            "home": 19,
+            "away": 2
           },
           "corners": {
-            "home": 3,
+            "home": 9,
             "away": 2
           },
           "fouls": {
-            "home": 8,
-            "away": 12
+            "home": 13,
+            "away": 23
           },
           "offsides": {
-            "home": 1,
+            "home": 2,
             "away": 2
           },
           "yellowCards": {
             "home": 1,
-            "away": 0
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Inglaterra y Ghana se encuentra empatado a cero goles, con ambos equipos mostrando un rendimiento equilibrado, aunque Inglaterra ha tenido algunas oportunidades claras de anotar, y el mediocampista Declan Rice de Inglaterra recibió una tarjeta amarilla en el minuto 41. A medida que el partido avanza, es probable que Inglaterra intente presionar más arriba en busca de un gol, mientras que Ghana puede buscar aprovechar los espacios detrás de la defensa inglesa para contrarrestar con velocidad.",
+        "aiNotes": "En el partido entre Inglaterra y Ghana, el resultado final fue un empate sin goles, con ambas selecciones teniendo oportunidades pero sin poder materializarlas en el marcador, mientras que los jugadores Declan Rice e Inaki Williams recibieron tarjetas amarillas en los minutos 41 y 60 respectivamente. La táctica defensiva de ambos equipos fue efectiva, lo que llevó a un partido muy equilibrado y sin muchas ocasiones claras de gol, reflejando la solidez y la precaución con la que se enfrentaron estas dos selecciones en el Mundial 2026.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021506"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021506"
       }
     },
     {
