@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T17:31:39.635Z",
+  "generatedAt": "2026-06-23T19:30:40.944Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -10969,10 +10969,9 @@
     },
     {
       "slug": "portugal-vs-uzbekistan",
-      "status": "live",
-      "homeScore": 2,
+      "status": "finished",
+      "homeScore": 5,
       "awayScore": 0,
-      "minute": 31,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503",
       "confidence": 0.97,
       "detail": {
@@ -10989,6 +10988,25 @@
             "team": "home",
             "scorer": "Nuno Mendes",
             "type": "goal"
+          },
+          {
+            "minute": 39,
+            "team": "home",
+            "scorer": "Cristiano Ronaldo",
+            "assist": "BRUNO FERNANDES.",
+            "type": "goal"
+          },
+          {
+            "minute": 60,
+            "team": "home",
+            "scorer": "Abduvohid NEMATOV",
+            "type": "own_goal"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "scorer": "Rafael Leao",
+            "type": "goal"
           }
         ],
         "cards": [
@@ -10997,9 +11015,76 @@
             "team": "away",
             "player": "Odiljon XAMROBEKOV",
             "type": "yellow"
+          },
+          {
+            "minute": 68,
+            "team": "home",
+            "player": "Renato Veiga",
+            "type": "yellow"
           }
         ],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "JOAO CANCELO",
+            "playerIn": "NELSON SEMEDO"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "PEDRO NETO",
+            "playerIn": "FRANCISCO CONCEICAO"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Sherzod NASRULLAEV",
+            "playerIn": "Khojiakbar ALIJONOV"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Odiljon XAMROBEKOV",
+            "playerIn": "Akmal MOZGOVOY"
+          },
+          {
+            "minute": 63,
+            "team": "home",
+            "playerOut": "JOAO FELIX",
+            "playerIn": "FRANCISCO TRINCAO"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "playerOut": "Abbosbek FAYZULLAEV",
+            "playerIn": "Igor Sergeev"
+          },
+          {
+            "minute": 76,
+            "team": "home",
+            "playerOut": "JOAO NEVES",
+            "playerIn": "BERNARDO SILVA"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "VITINHA",
+            "playerIn": "RAFAEL LEAO"
+          },
+          {
+            "minute": 92,
+            "team": "away",
+            "playerOut": "Behruzjon KARIMOV",
+            "playerIn": "Ruslanbek JIYANOV"
+          },
+          {
+            "minute": 92,
+            "team": "away",
+            "playerOut": "Otabek Shukurov",
+            "playerIn": "Sherzod ESANOV"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -11118,25 +11203,29 @@
         },
         "stats": {
           "shots": {
-            "home": 6,
-            "away": 1
+            "home": 17,
+            "away": 7
           },
           "corners": {
-            "home": 1,
-            "away": 0
+            "home": 3,
+            "away": 2
           },
           "fouls": {
-            "home": 3,
-            "away": 5
+            "home": 13,
+            "away": 14
+          },
+          "offsides": {
+            "home": 2,
+            "away": 2
           },
           "yellowCards": {
-            "home": 0,
+            "home": 1,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, Portugal domina claramente el partido con un marcador de 2-0 sobre Uzbekistan, gracias a los goles de Cristiano Ronaldo en el minuto 6 y Nuno Mendes en el minuto 17, mientras que Uzbekistan intenta recuperarse después de la tarjeta amarilla recibida por Odiljon Xamrobekov en el minuto 14. La estrategia de Portugal parece funcionar, presionando constantemente al equipo uzbeko, y es probable que intenten mantener este ritmo para evitar que Uzbekistan pueda generar oportunidades de ataque en lo que resta del partido.",
+        "aiNotes": "En el partido entre Portugal y Uzbekistan, Cristiano Ronaldo se destacó con dos goles y Portugal logró una victoria contundente de 5-0, con goles adicionales de Nuno Mendes, un autogol de Abduvohid Nematov y otro de Rafael Leao. La táctica de Portugal pareció funcionar a la perfección, aprovechando bien las oportunidades y mostrando un rendimiento sólido que les permitió dominar el encuentro desde el comienzo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021503"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021503"
       }
     },
     {
