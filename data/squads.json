@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T19:30:40.947Z",
+  "generatedAt": "2026-06-23T21:18:26.932Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -10930,7 +10930,7 @@
       ]
     },
     "inglaterra": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021507",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021506",
       "players": [
         {
           "id": "336022",
@@ -10953,23 +10953,13 @@
           "club": "Aston Villa"
         },
         {
-          "id": "463780",
-          "name": "Nico OREILLY",
-          "number": 3,
+          "id": "405841",
+          "name": "Marc GUEHI",
+          "number": 6,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/6a6be1c6-3496-49ba-81ca-354bdb2f404c/OREILLY-Nico_390761",
-          "club": "Manchester City"
-        },
-        {
-          "id": "369434",
-          "name": "John STONES",
-          "number": 5,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/bb455f6a-d793-44ef-92b8-bd1aff6d14d6/STONES-John_369434",
+          "photoUrl": "https://digitalhub.fifa.com/transform/c9686f87-8abd-45fb-a1e0-321ee8470dd6/GUEHI-Marc_405841",
           "club": "Manchester City"
         },
         {
@@ -10981,6 +10971,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/1ffcc3c3-fdf3-4b61-9ac5-299213771a62/JAMES-Reece_439641",
           "club": "Chelsea"
+        },
+        {
+          "id": "506329",
+          "name": "Djed SPENCE",
+          "number": 25,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/03356baa-b368-4192-bf86-ad3033e57ad2/SPENCE-Djed_506329",
+          "club": "Tottenham Hotspur"
         },
         {
           "id": "433097",
@@ -11063,14 +11063,33 @@
           "club": "Manchester City"
         },
         {
-          "id": "405841",
-          "name": "Marc GUEHI",
-          "number": 6,
+          "id": "463780",
+          "name": "Nico OREILLY",
+          "number": 3,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c9686f87-8abd-45fb-a1e0-321ee8470dd6/GUEHI-Marc_405841",
+          "photoUrl": "https://digitalhub.fifa.com/transform/6a6be1c6-3496-49ba-81ca-354bdb2f404c/OREILLY-Nico_390761",
           "club": "Manchester City"
+        },
+        {
+          "id": "369434",
+          "name": "John STONES",
+          "number": 5,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/bb455f6a-d793-44ef-92b8-bd1aff6d14d6/STONES-John_369434",
+          "club": "Manchester City"
+        },
+        {
+          "id": "439691",
+          "name": "Trevoh CHALOBAH",
+          "number": 12,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/7fa89d9b-c648-4789-ab66-f00a2fbf56df/CHALOBAH-Trevoh_439691"
         },
         {
           "id": "494345",
@@ -11081,16 +11100,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ac44e40e-162d-4459-94b6-8971a032e371/BURN-Dan_494345",
           "club": "Newcastle United"
-        },
-        {
-          "id": "506329",
-          "name": "Djed SPENCE",
-          "number": 25,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/03356baa-b368-4192-bf86-ad3033e57ad2/SPENCE-Djed_506329",
-          "club": "Tottenham Hotspur"
         },
         {
           "id": "463809",
@@ -11450,17 +11459,17 @@
       ]
     },
     "ghana": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021510",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021506",
       "players": [
         {
-          "id": "386473",
-          "name": "Lawrence Ati ZIGI",
-          "number": 1,
+          "id": "494349",
+          "name": "Benjamin ASARE",
+          "number": 16,
           "position": "GK",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ff31f89d-7f19-4a3e-b213-6c943ec77fb4/ZIGI-Lawrence-Ati_386473",
-          "club": "St. Gallen"
+          "photoUrl": "https://digitalhub.fifa.com/transform/59f40ed7-650e-48ef-8f42-8a8a326b0504/ASARE-Benjamin_494349",
+          "club": "Hearts of Oak"
         },
         {
           "id": "494351",
@@ -11513,6 +11522,25 @@
           "club": "Nordsjælland"
         },
         {
+          "id": "369089",
+          "name": "Thomas PARTEY",
+          "number": 5,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/4973b241-e78b-4c13-b699-66c8c16f882a/PARTEY-Thomas_369089"
+        },
+        {
+          "id": "507253",
+          "name": "Kwasi SIBO",
+          "number": 8,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/a61e2a7d-38de-46d5-888b-1ad713a329c4/SIBO-Kwasi_507253",
+          "club": "Oviedo"
+        },
+        {
           "id": "448531",
           "name": "Antoine SEMENYO",
           "number": 11,
@@ -11521,16 +11549,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/c0b6a316-ecf6-4944-b8fc-ccdd60b15a5a/SEMENYO-Antoine_448531",
           "club": "Manchester City"
-        },
-        {
-          "id": "441341",
-          "name": "Elisha OWUSU",
-          "number": 15,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7b2e13d2-e407-4c8a-8e7d-e465d933bef5/OWUSU-Elisha_441341",
-          "club": "Auxerre"
         },
         {
           "id": "353235",
@@ -11543,24 +11561,24 @@
           "club": "Leicester City"
         },
         {
-          "id": "448523",
-          "name": "Kamaldeen SULEMANA",
-          "number": 22,
+          "id": "411376",
+          "name": "Inaki WILLIAMS",
+          "number": 19,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ba6f9998-366d-4e8f-b7ca-e387f1aabdcd/SULEMANA-Kamaldeen_448523",
-          "club": "Atalanta"
+          "photoUrl": "https://digitalhub.fifa.com/transform/2335d9cb-66fa-4e9a-a167-834ac3541e00/WILLIAMS-Inaki_411376",
+          "club": "Athletic Bilbao"
         },
         {
-          "id": "448525",
-          "name": "Ernest NUAMAH",
-          "number": 24,
-          "position": "FWD",
-          "starter": true,
+          "id": "386473",
+          "name": "Lawrence Ati ZIGI",
+          "number": 1,
+          "position": "GK",
+          "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1561f6b3-4537-41a1-8803-367ec4c80519/NUAMAH-Ernest_448525",
-          "club": "Lyon"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ff31f89d-7f19-4a3e-b213-6c943ec77fb4/ZIGI-Lawrence-Ati_386473",
+          "club": "St. Gallen"
         },
         {
           "id": "506277",
@@ -11571,16 +11589,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ddb39257-eec9-4097-bc08-6f1dbe034dec/ANANG-Joseph_506277",
           "club": "St Patrick's Athletic"
-        },
-        {
-          "id": "494349",
-          "name": "Benjamin ASARE",
-          "number": 16,
-          "position": "GK",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/59f40ed7-650e-48ef-8f42-8a8a326b0504/ASARE-Benjamin_494349",
-          "club": "Hearts of Oak"
         },
         {
           "id": "448522",
@@ -11633,14 +11641,14 @@
           "club": "Pafos"
         },
         {
-          "id": "507253",
-          "name": "Kwasi SIBO",
-          "number": 8,
+          "id": "441341",
+          "name": "Elisha OWUSU",
+          "number": 15,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a61e2a7d-38de-46d5-888b-1ad713a329c4/SIBO-Kwasi_507253",
-          "club": "Oviedo"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7b2e13d2-e407-4c8a-8e7d-e465d933bef5/OWUSU-Elisha_441341",
+          "club": "Auxerre"
         },
         {
           "id": "523173",
@@ -11683,14 +11691,24 @@
           "club": "Al-Qadsiah"
         },
         {
-          "id": "411376",
-          "name": "Inaki WILLIAMS",
-          "number": 19,
+          "id": "448523",
+          "name": "Kamaldeen SULEMANA",
+          "number": 22,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2335d9cb-66fa-4e9a-a167-834ac3541e00/WILLIAMS-Inaki_411376",
-          "club": "Athletic Bilbao"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ba6f9998-366d-4e8f-b7ca-e387f1aabdcd/SULEMANA-Kamaldeen_448523",
+          "club": "Atalanta"
+        },
+        {
+          "id": "448525",
+          "name": "Ernest NUAMAH",
+          "number": 24,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/1561f6b3-4537-41a1-8803-367ec4c80519/NUAMAH-Ernest_448525",
+          "club": "Lyon"
         },
         {
           "id": "514401",
