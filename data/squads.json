@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T01:48:56.716Z",
+  "generatedAt": "2026-06-24T05:59:23.841Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -10665,7 +10665,7 @@
       ]
     },
     "rd-congo": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021502",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021501",
       "players": [
         {
           "id": "441313",
@@ -12250,7 +12250,7 @@
       ]
     },
     "colombia": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021504",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021501",
       "players": [
         {
           "id": "360642",

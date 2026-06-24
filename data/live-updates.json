@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T01:48:56.713Z",
+  "generatedAt": "2026-06-24T05:59:23.838Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11682,19 +11682,232 @@
     },
     {
       "slug": "colombia-vs-rd-congo",
-      "status": "upcoming",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021501",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 76,
+            "team": "home",
+            "scorer": "Daniel MUNOZ",
+            "assist": "Juan QUINTERO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 56,
+            "team": "home",
+            "player": "Jhon LUCUMI",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Charles PICKEL",
+            "type": "yellow"
+          },
+          {
+            "minute": 94,
+            "team": "home",
+            "player": "Jefferson LERMA",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Ngalayel MUKAU",
+            "playerIn": "Noah SADIKI"
+          },
+          {
+            "minute": 57,
+            "team": "away",
+            "playerOut": "Cedric BAKAMBU",
+            "playerIn": "Simon BANZA"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "James RODRIGUEZ",
+            "playerIn": "Juan QUINTERO"
+          },
+          {
+            "minute": 58,
+            "team": "home",
+            "playerOut": "Luis SUAREZ",
+            "playerIn": "Jhon CORDOBA"
+          },
+          {
+            "minute": 71,
+            "team": "away",
+            "playerOut": "Arthur MASUAKU",
+            "playerIn": "Joris KAYEMBE"
+          },
+          {
+            "minute": 71,
+            "team": "away",
+            "playerOut": "Edo Kayembe",
+            "playerIn": "Charles PICKEL"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Jhon ARIAS",
+            "playerIn": "Richard RIOS"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "Samuel Moutoussamy",
+            "playerIn": "Nathanael MBUKU"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Camilo VARGAS",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Daniel MUNOZ",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Jhon LUCUMI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Gustavo PUERTA",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Johan MOJICA",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Davinson SANCHEZ",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "James RODRIGUEZ",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Jhon ARIAS",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Jefferson LERMA",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "Luis DIAZ",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Luis SUAREZ",
+              "number": 25,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Lionel MPASI",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aaron WAN-BISSAKA",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Steve KAPUADI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Axel Tuanzebe",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Chancel MBEMBA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Arthur MASUAKU",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Ngalayel MUKAU",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Samuel Moutoussamy",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Edo Kayembe",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Cedric BAKAMBU",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Yoane WISSA",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
+        "stats": {
+          "shots": {
+            "home": 20,
+            "away": 7
+          },
+          "corners": {
+            "home": 5,
+            "away": 4
+          },
+          "fouls": {
+            "home": 10,
+            "away": 15
+          },
+          "offsides": {
+            "home": 7,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 1
+          }
+        },
         "aiNotes": "Colombia llega al partido con una forma reciente sólida, gracias a la velocidad y habilidad de Luis Díaz, mientras que Congo DR busca sorprender con la habilidad goleadora de Yoane Wissa, aunque su posición en la clasificación FIFA sugiere una ventaja para los cafeteros. En este encuentro, Colombia tiene la ventaja debido a su mayor experiencia y cohesión como equipo, lo que podría ser demasiado para el Congo DR, a pesar de la capacidad de su delantero estrella para cambiar el curso del partido.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021501"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021501"
       }
     },
     {
