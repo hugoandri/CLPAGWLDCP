@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T23:44:18.603Z",
+  "generatedAt": "2026-06-24T01:48:56.713Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11452,16 +11452,91 @@
     },
     {
       "slug": "panama-vs-croacia",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 0,
-      "minute": 44,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 54,
+            "team": "away",
+            "scorer": "Ante BUDIMIR",
+            "assist": "Josip STANISIC.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 61,
+            "team": "home",
+            "player": "Edgar Yoel BARCENAS",
+            "type": "yellow"
+          },
+          {
+            "minute": 92,
+            "team": "away",
+            "player": "Petar SUCIC",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Petar Musa",
+            "playerIn": "Ante BUDIMIR"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Josko GVARDIOL",
+            "playerIn": "Andrej KRAMARIC"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Mateo KOVACIC",
+            "playerIn": "Petar SUCIC"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Marco PASALIC",
+            "playerIn": "Luka SUCIC"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Jiovany RAMOS",
+            "playerIn": "Cecilio Waterman"
+          },
+          {
+            "minute": 81,
+            "team": "away",
+            "playerOut": "Luka MODRIC",
+            "playerIn": "Mario PASALIC"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Jose FAJARDO",
+            "playerIn": "Azarias LONDONO"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Cesar BLACKMAN",
+            "playerIn": "Eric DAVIS"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Edgar Yoel BARCENAS",
+            "playerIn": "Tomas RODRIGUEZ"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -11580,17 +11655,29 @@
         },
         "stats": {
           "shots": {
-            "home": 1,
-            "away": 1
+            "home": 8,
+            "away": 6
+          },
+          "corners": {
+            "home": 7,
+            "away": 2
           },
           "fouls": {
-            "home": 8,
-            "away": 5
+            "home": 18,
+            "away": 11
+          },
+          "offsides": {
+            "home": 1,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Panamá y Croacia se encuentra empatado a cero goles, con ambos equipos mostrando un fútbol cauteloso y sin que ninguno haya logrado anotar, lo que refleja la igualdad en el marcador. A medida que se acerca el final del primer tiempo, es probable que ambos equipos busquen aumentar la intensidad y la presión para tratar de romper el empate y anotar el primer gol del partido.",
+        "aiNotes": "En el partido entre Panamá y Croacia, el equipo croata se llevó la victoria con un marcador de 0-1 gracias al gol de Ante Budimir en el minuto 54, asistido por Josip Stanisic. La táctica defensiva de Croacia fue clave para mantener el resultado a su favor, ya que logró contener los intentos ofensivos de Panamá y aseguró su ventaja en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021511"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021511"
       }
     },
     {
