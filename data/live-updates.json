@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T22:25:37.857Z",
+  "generatedAt": "2026-06-24T23:45:38.916Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -12425,9 +12425,9 @@
     {
       "slug": "marruecos-vs-haiti",
       "status": "live",
-      "homeScore": 0,
-      "awayScore": 1,
-      "minute": 23,
+      "homeScore": 3,
+      "awayScore": 2,
+      "minute": 83,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452",
       "confidence": 0.97,
       "detail": {
@@ -12435,13 +12435,101 @@
           {
             "minute": 10,
             "team": "away",
-            "scorer": "Lenny JOSEPH",
+            "scorer": "Yassine BOUNOU",
+            "type": "own_goal"
+          },
+          {
+            "minute": 39,
+            "team": "home",
+            "scorer": "Achraf HAKIMI",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "away",
+            "scorer": "Wilson ISIDOR",
             "assist": "Jean-Kevin DUVERNE.",
+            "type": "goal"
+          },
+          {
+            "minute": 46,
+            "team": "home",
+            "scorer": "Ismael SAIBARI",
+            "assist": "Achraf HAKIMI.",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "home",
+            "scorer": "Soufiane RAHIMI",
+            "assist": "Chadi RIAD.",
             "type": "goal"
           }
         ],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 79,
+            "team": "away",
+            "player": "Duckens NAZON",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Ruben PROVIDENCE",
+            "playerIn": "Duckens NAZON"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Wilson Isidor",
+            "playerIn": "Louicius DEEDSON"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Ayoub El Kaabi",
+            "playerIn": "Gessime YASSINE"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Ismael SAIBARI",
+            "playerIn": "Soufiane RAHIMI"
+          },
+          {
+            "minute": 70,
+            "team": "home",
+            "playerOut": "Brahim DIAZ",
+            "playerIn": "Azzedine OUNAHI"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Jean-Kevin DUVERNE",
+            "playerIn": "Carlens ARCUS"
+          },
+          {
+            "minute": 80,
+            "team": "away",
+            "playerOut": "Danley JEAN JACQUES",
+            "playerIn": "Dominique SIMON"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Neil EL AYNAOUI",
+            "playerIn": "Samir EL MOURABET"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "playerOut": "Anass SALAH EDDINE",
+            "playerIn": "Noussair MAZRAOUI"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -12560,23 +12648,27 @@
         },
         "stats": {
           "shots": {
-            "home": 4,
-            "away": 2
+            "home": 18,
+            "away": 5
           },
           "corners": {
-            "home": 2,
+            "home": 8,
             "away": 0
           },
           "fouls": {
-            "home": 2,
-            "away": 2
+            "home": 7,
+            "away": 15
           },
           "offsides": {
-            "home": 2,
+            "home": 5,
             "away": 0
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, Haiti se encuentra en ventaja en el marcador con un gol de Lenny Joseph anotado en el minuto 10, y parece que están dominando el ritmo del partido. A medida que el partido avanza, es probable que Marruecos intente presionar más arriba en busca del empate, lo que podría abrir espacios para que Haiti contrataque y busque ampliar su ventaja.",
+        "aiNotes": "En este momento, Marruecos lidera el partido con un marcador de 3-2 contra Haití, con goles clave de Achraf Hakimi, Ismael Saibari y Soufiane Rahimi que han permitido a su equipo tomar la delantera. A medida que el partido se acerca a su fin, es probable que Marruecos intente mantener su ventaja y gestionar el ritmo del juego, mientras que Haití puede intentar presionar en busca de un empate, aunque la tarjeta amarilla reciente para Duckens Nazon puede limitar su capacidad para arriesgar.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452"
       }
@@ -12585,8 +12677,8 @@
       "slug": "escocia-vs-brasil",
       "status": "live",
       "homeScore": 0,
-      "awayScore": 2,
-      "minute": 24,
+      "awayScore": 3,
+      "minute": 80,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455",
       "confidence": 0.97,
       "detail": {
@@ -12597,10 +12689,56 @@
             "scorer": "Vinicius Junior",
             "assist": "RAYAN.",
             "type": "goal"
+          },
+          {
+            "minute": 48,
+            "team": "away",
+            "scorer": "Vinicius Junior",
+            "assist": "BRUNO GUIMARAES.",
+            "type": "goal"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "scorer": "Matheus Cunha",
+            "assist": "BRUNO GUIMARAES.",
+            "type": "goal"
           }
         ],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 62,
+            "team": "away",
+            "player": "Danilo",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Andy ROBERTSON",
+            "playerIn": "Kieran Tierney"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "CASEMIRO",
+            "playerIn": "FABINHO"
+          },
+          {
+            "minute": 66,
+            "team": "away",
+            "playerOut": "LUCAS PAQUETA",
+            "playerIn": "GABRIEL MARTINELLI"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "MATHEUS CUNHA",
+            "playerIn": "NEYMAR JR"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -12719,15 +12857,27 @@
         },
         "stats": {
           "shots": {
-            "home": 0,
-            "away": 6
+            "home": 10,
+            "away": 17
           },
           "corners": {
+            "home": 6,
+            "away": 4
+          },
+          "fouls": {
+            "home": 7,
+            "away": 5
+          },
+          "offsides": {
+            "home": 0,
+            "away": 2
+          },
+          "yellowCards": {
             "home": 0,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, Brasil domina claramente el partido con un marcador de 0-2 a favor, gracias al gol tempranero de Vinicius Junior en el minuto 7, lo que ha permitido a su equipo mantener el control del juego. La estrategia de Brasil parece estar funcionando, pero es probable que Escocia intente cambiar su enfoque para intentar recortar la ventaja y presionar a la defensa brasileña en la segunda parte del partido.",
+        "aiNotes": "En este momento, el partido entre Escocia y Brasil está muy inclinado a favor de los brasileños, quienes dominan claramente con un marcador de 0-3 gracias a los goles de Vinicius Junior en los minutos 7 y 48, y el gol de Matheus Cunha en el minuto 60. En lo que resta del partido, es probable que Brasil continúe controlando el ritmo del juego, aunque Escocia podría intentar presionar en busca de un consuelo, lo que podría generar oportunidades de contraataque para el equipo brasileño.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455"
       }
