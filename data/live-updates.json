@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T20:58:42.317Z",
+  "generatedAt": "2026-06-24T22:25:37.857Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11912,10 +11912,9 @@
     },
     {
       "slug": "bosnia-herzegovina-vs-catar",
-      "status": "live",
+      "status": "finished",
       "homeScore": 3,
       "awayScore": 1,
-      "minute": 96,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448",
       "confidence": 0.97,
       "detail": {
@@ -12162,9 +12161,9 @@
             "away": 1
           }
         },
-        "aiNotes": "En este momento, Bosnia y Herzegovina lleva la delantera con un marcador de 3-1 sobre Qatar, gracias a los goles de Kerim Alajbegovic, Mahmoud Abunada en propia puerta y Ermin Mahmic, mientras que Hassan Alhaydos anotó para el equipo qatarí. Con el partido en sus últimos minutos, es probable que Bosnia y Herzegovina intente mantener su ventaja y administrar el tiempo restante, mientras que Qatar podría intentar presionar en busca de un gol que les permita mantener viva su esperanza de empatar.",
+        "aiNotes": "En el partido entre Bosnia Herzegovina y Catar, el equipo bosnio se llevó la victoria con un marcador de 3-1, gracias a los goles de Kerim Alajbegovic, Mahmoud Abunada en propia puerta y Ermin Mahmic, mientras que Hassan Alhaydos anotó para Catar. La victoria de Bosnia Herzegovina se debió en gran medida a su sólido rendimiento táctico, que les permitió controlar el ritmo del juego y aprovechar los errores defensivos de Catar para anotar sus goles.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021448"
       }
     },
     {
@@ -12425,35 +12424,311 @@
     },
     {
       "slug": "marruecos-vs-haiti",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": 23,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 10,
+            "team": "away",
+            "scorer": "Lenny JOSEPH",
+            "assist": "Jean-Kevin DUVERNE.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Yassine BOUNOU",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Achraf HAKIMI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Chadi RIAD",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Redouane HALHAL",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Anass SALAH EDDINE",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Sofyan AMRABAT",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael SAIBARI",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Bilal EL KHANNOUSS",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Neil EL AYNAOUI",
+              "number": 24,
+              "position": "MID"
+            },
+            {
+              "name": "Brahim DIAZ",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Ayoub El Kaabi",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Johny Placide",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ricardo Ade",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannes DELCROIX",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Martin EXPERIENCE",
+              "number": 8,
+              "position": "DEF"
+            },
+            {
+              "name": "Jean-Kevin DUVERNE",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Jean-Ricner Bellegarde",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Danley JEAN JACQUES",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Ruben PROVIDENCE",
+              "number": 15,
+              "position": "FWD"
+            },
+            {
+              "name": "Lenny JOSEPH",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Wilson Isidor",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Josue CASIMIR",
+              "number": 21,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de preparación, ya que Marruecos cuenta con una sólida defensa y un ataque veloz liderado por Achraf Hakimi, mientras que Haití busca sorprender con la habilidad y la velocidad de Jean-Ricner Bellegarde, aunque su forma reciente ha sido irregular. Espero que Marruecos tenga ventaja en el partido debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que les dará una mayor solidez y confianza en el campo.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 4,
+            "away": 2
+          },
+          "corners": {
+            "home": 2,
+            "away": 0
+          },
+          "fouls": {
+            "home": 2,
+            "away": 2
+          },
+          "offsides": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, Haiti se encuentra en ventaja en el marcador con un gol de Lenny Joseph anotado en el minuto 10, y parece que están dominando el ritmo del partido. A medida que el partido avanza, es probable que Marruecos intente presionar más arriba en busca del empate, lo que podría abrir espacios para que Haiti contrataque y busque ampliar su ventaja.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452"
       }
     },
     {
       "slug": "escocia-vs-brasil",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 2,
+      "minute": 24,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "away",
+            "scorer": "Vinicius Junior",
+            "assist": "RAYAN.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Angus Gunn",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Andy ROBERTSON",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Jack Hendry",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathan PATTERSON",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Scott MCKENNA",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Scott McTominay",
+              "number": 4,
+              "position": "MID"
+            },
+            {
+              "name": "John McGinn",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Lewis FERGUSON",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Kenny McLEAN",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Ben GANNON-DOAK",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Lawrence SHANKLAND",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "ALISSON",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "GABRIEL MAGALHAES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "MARQUINHOS",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "DANILO",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "DOUGLAS SANTOS",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "CASEMIRO",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "BRUNO GUIMARAES",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "LUCAS PAQUETA",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "VINICIUS JUNIOR",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "MATHEUS CUNHA",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "RAYAN",
+              "number": 26,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Escocia llega al partido con una forma irregular en sus últimos encuentros, aunque cuenta con la experiencia y habilidad de John McGinn, mientras que Brasil se presenta con una sólida defensa y un ataque peligroso liderado por el velocista Vinícius Júnior. En este partido, Brasil tiene ventaja debido a su mayor profundidad en el banquillo y su capacidad para controlar el ritmo del juego, lo que podría ser demasiado para la defensa escocesa.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 0,
+            "away": 6
+          },
+          "corners": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, Brasil domina claramente el partido con un marcador de 0-2 a favor, gracias al gol tempranero de Vinicius Junior en el minuto 7, lo que ha permitido a su equipo mantener el control del juego. La estrategia de Brasil parece estar funcionando, pero es probable que Escocia intente cambiar su enfoque para intentar recortar la ventaja y presionar a la defensa brasileña en la segunda parte del partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455"
       }
     },
