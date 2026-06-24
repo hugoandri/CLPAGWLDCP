@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T05:59:23.841Z",
+  "generatedAt": "2026-06-24T19:10:03.875Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021442",
@@ -1022,7 +1022,7 @@
       ]
     },
     "canada": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021450",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451",
       "players": [
         {
           "id": "331732",
@@ -1075,24 +1075,24 @@
           "club": "Toronto FC"
         },
         {
-          "id": "433635",
-          "name": "Stephen EUSTAQUIO",
-          "number": 7,
-          "position": "MID",
-          "starter": true,
-          "captain": true,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1c0650a1-bba7-4998-b6b6-ebddeed58058/EUSTAQUIO-Stephen_433635",
-          "club": "Los Angeles FC"
-        },
-        {
-          "id": "441258",
-          "name": "Ismael KONE",
-          "number": 8,
+          "id": "448390",
+          "name": "Mathieu CHOINIERE",
+          "number": 6,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/51344b42-77de-4109-a167-7723dc1d4dd2/KONE-Ismael_441258",
-          "club": "Sassuolo"
+          "photoUrl": "https://digitalhub.fifa.com/transform/d74aed0f-7268-4a91-8dc2-13a76e2cdf28/CHOINIERE-Mathieu_448390",
+          "club": "Los Angeles FC"
+        },
+        {
+          "id": "423941",
+          "name": "Nathan SALIBA",
+          "number": 25,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/1da64224-0271-489f-bea3-2aaa2e4cdf14/SALIBA-Nathan_423941",
+          "club": "Anderlecht"
         },
         {
           "id": "390670",
@@ -1110,7 +1110,7 @@
           "number": 10,
           "position": "FWD",
           "starter": true,
-          "captain": false,
+          "captain": true,
           "photoUrl": "https://digitalhub.fifa.com/transform/97ad628a-b97d-4657-ac41-f2a667c534e6/DAVID-Jonathan_441257",
           "club": "Juventus"
         },
@@ -1195,13 +1195,13 @@
           "club": "Hajduk Split"
         },
         {
-          "id": "448390",
-          "name": "Mathieu CHOINIERE",
-          "number": 6,
+          "id": "433635",
+          "name": "Stephen EUSTAQUIO",
+          "number": 7,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d74aed0f-7268-4a91-8dc2-13a76e2cdf28/CHOINIERE-Mathieu_448390",
+          "photoUrl": "https://digitalhub.fifa.com/transform/1c0650a1-bba7-4998-b6b6-ebddeed58058/EUSTAQUIO-Stephen_433635",
           "club": "Los Angeles FC"
         },
         {
@@ -1233,16 +1233,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/982a5ed2-0878-4733-b071-cd7cc532ee37/OSORIO-Jonathan_370986",
           "club": "Toronto FC"
-        },
-        {
-          "id": "423941",
-          "name": "Nathan SALIBA",
-          "number": 25,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1da64224-0271-489f-bea3-2aaa2e4cdf14/SALIBA-Nathan_423941",
-          "club": "Anderlecht"
         },
         {
           "id": "486929",
@@ -1277,7 +1267,7 @@
       ]
     },
     "bosnia-herzegovina": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021446",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448",
       "players": [
         {
           "id": "482978",
@@ -1290,16 +1280,6 @@
           "club": "FC St. Pauli"
         },
         {
-          "id": "484022",
-          "name": "Tarik MUHAREMOVIC",
-          "number": 4,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a230cb00-997c-4a8c-9983-b03fa2dbe2ad/MUHAREMOVIC-Tarik_484022",
-          "club": "Sassuolo"
-        },
-        {
           "id": "376230",
           "name": "Sead KOLASINAC",
           "number": 5,
@@ -1308,16 +1288,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/bed62578-6b40-402e-8c63-94159988fe95/KOLASINAC-Sead_376230",
           "club": "Atalanta"
-        },
-        {
-          "id": "482976",
-          "name": "Amar DEDIC",
-          "number": 7,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/87dcec5a-fbf4-45d7-8f1e-26e00140cce7/DEDIC-Amar_482976",
-          "club": "Benfica"
         },
         {
           "id": "489520",
@@ -1330,14 +1300,34 @@
           "club": "Schalke 04"
         },
         {
-          "id": "483966",
-          "name": "Benjamin TAHIROVIC",
-          "number": 6,
+          "id": "489521",
+          "name": "Stjepan RADELJIC",
+          "number": 21,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/d1b9ca91-fc68-44ee-8548-8f2fb4d10a46/RADELJIC-Stjepan_489521",
+          "club": "Rijeka"
+        },
+        {
+          "id": "494639",
+          "name": "Arjan MALIC",
+          "number": 24,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/8b907cf5-e659-4584-acc5-5b0db0f85594/MALIC-Arjan_494639",
+          "club": "Sturm Graz"
+        },
+        {
+          "id": "482974",
+          "name": "Ivan BASIC",
+          "number": 13,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/998f85b6-06db-4822-99de-68010b6cdc61/TAHIROVIC-Benjamin_483966",
-          "club": "Brøndby"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7ab9c56e-39f0-4d4a-b5c4-e0583fd57319/BASIC-Ivan_482974",
+          "club": "Astana"
         },
         {
           "id": "372436",
@@ -1348,16 +1338,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/ddc91c53-fc37-453c-b16e-50ef5e2dd2da/SUNJIC-Ivan_372436",
           "club": "Pafos"
-        },
-        {
-          "id": "494640",
-          "name": "Amar MEMIC",
-          "number": 15,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/c57e2c22-f510-4109-b3e7-72b5a6b862a9/MEMIC-Amar_494640",
-          "club": "Viktoria Plzeň"
         },
         {
           "id": "436743",
@@ -1388,6 +1368,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/9587bf1f-6c8f-4b8d-80c7-799edc4a7036/ALAJBEGOVIC-Kerim_504990",
           "club": "Red Bull Salzburg"
+        },
+        {
+          "id": "464566",
+          "name": "Esmir BAJRAKTAREVIC",
+          "number": 20,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/6a74409c-c030-405e-a042-1c01f408eeff/BAJRAKTAREVIC-Esmir_464566",
+          "club": "PSV Eindhoven"
         },
         {
           "id": "522842",
@@ -1430,24 +1420,24 @@
           "club": "Sampdoria"
         },
         {
-          "id": "489521",
-          "name": "Stjepan RADELJIC",
-          "number": 21,
+          "id": "482976",
+          "name": "Amar DEDIC",
+          "number": 7,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d1b9ca91-fc68-44ee-8548-8f2fb4d10a46/RADELJIC-Stjepan_489521",
-          "club": "Rijeka"
+          "photoUrl": "https://digitalhub.fifa.com/transform/87dcec5a-fbf4-45d7-8f1e-26e00140cce7/DEDIC-Amar_482976",
+          "club": "Benfica"
         },
         {
-          "id": "494639",
-          "name": "Arjan MALIC",
-          "number": 24,
-          "position": "DEF",
+          "id": "483966",
+          "name": "Benjamin TAHIROVIC",
+          "number": 6,
+          "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/8b907cf5-e659-4584-acc5-5b0db0f85594/MALIC-Arjan_494639",
-          "club": "Sturm Graz"
+          "photoUrl": "https://digitalhub.fifa.com/transform/998f85b6-06db-4822-99de-68010b6cdc61/TAHIROVIC-Benjamin_483966",
+          "club": "Brøndby"
         },
         {
           "id": "489523",
@@ -1460,14 +1450,14 @@
           "club": "Young Boys"
         },
         {
-          "id": "482974",
-          "name": "Ivan BASIC",
-          "number": 13,
+          "id": "494640",
+          "name": "Amar MEMIC",
+          "number": 15,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7ab9c56e-39f0-4d4a-b5c4-e0583fd57319/BASIC-Ivan_482974",
-          "club": "Astana"
+          "photoUrl": "https://digitalhub.fifa.com/transform/c57e2c22-f510-4109-b3e7-72b5a6b862a9/MEMIC-Amar_494640",
+          "club": "Viktoria Plzeň"
         },
         {
           "id": "430196",
@@ -1508,16 +1498,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/5bd9c46f-fb55-4097-ae91-9c7e4f6bb308/BAZDAR-Samed_485063",
           "club": "Jagiellonia Białystok"
-        },
-        {
-          "id": "464566",
-          "name": "Esmir BAJRAKTAREVIC",
-          "number": 20,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/6a74409c-c030-405e-a042-1c01f408eeff/BAJRAKTAREVIC-Esmir_464566",
-          "club": "PSV Eindhoven"
         },
         {
           "id": "482984",
@@ -2061,7 +2041,7 @@
       ]
     },
     "catar": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021450",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448",
       "players": [
         {
           "id": "419459",
@@ -2104,44 +2084,44 @@
           "club": "Al-Rayyan"
         },
         {
-          "id": "510991",
-          "name": "AYOUB ALOUI",
-          "number": 13,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/bdeaddf2-602f-47d1-a3f0-a85abc80c3ff/AYOUB-ALOUI_510991",
-          "club": "Al-Gharafa"
-        },
-        {
-          "id": "419441",
-          "name": "HOMAM AHMED",
-          "number": 14,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/5a182a95-d4c3-4618-838e-d374bbc576ba/HOMAM-AHMED_419441",
-          "club": "Cultural Leonesa"
-        },
-        {
           "id": "385067",
           "name": "BOUALEM KHOUKHI",
           "number": 16,
           "position": "DEF",
           "starter": true,
-          "captain": true,
+          "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/c3e4cf4b-06b4-4c6b-9370-a64d8a4c8bfb/BOUALEM-KHOUKHI_385067",
           "club": "Al-Sadd"
         },
         {
-          "id": "386348",
-          "name": "ASSIM MADIBO",
-          "number": 23,
+          "id": "386387",
+          "name": "SULTAN ALBRAKE",
+          "number": 18,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/333bc183-dd03-4b3a-8ee6-410a32c12e57/SULTAN-ALBRAKE_386387",
+          "club": "Al-Duhail"
+        },
+        {
+          "id": "354861",
+          "name": "KARIM BOUDIAF",
+          "number": 12,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2b2c6d70-e76e-41d8-baff-36ba0965fca3/ASSIM-MADIBO_386348",
-          "club": "Al-Wakrah"
+          "photoUrl": "https://digitalhub.fifa.com/transform/d73feeea-8ce1-447c-a008-c9b71e1e6295/KARIM-BOUDIAF_354861",
+          "club": "Al-Duhail"
+        },
+        {
+          "id": "433394",
+          "name": "AHMED FATHY",
+          "number": 20,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/f465c1f2-aa85-4bc7-bf8d-4d5805b19cd9/AHMED-FATHY_433394",
+          "club": "Cultural Leonesa"
         },
         {
           "id": "429063",
@@ -2154,6 +2134,16 @@
           "club": "Al-Duhail"
         },
         {
+          "id": "284190",
+          "name": "HASSAN ALHAYDOS",
+          "number": 10,
+          "position": "FWD",
+          "starter": true,
+          "captain": true,
+          "photoUrl": "https://digitalhub.fifa.com/transform/521889b3-16a2-48ef-92d4-6978a9e05cc6/HASSAN-ALHAYDOS_284190",
+          "club": "Al-Sadd"
+        },
+        {
           "id": "386347",
           "name": "AKRAM AFIF",
           "number": 11,
@@ -2162,16 +2152,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/b5995ed9-3969-48a1-abc7-abd8df77abda/AKRAM-AFIF_386347",
           "club": "Al-Sadd"
-        },
-        {
-          "id": "419463",
-          "name": "YUSUF ABDURISAG",
-          "number": 15,
-          "position": "FWD",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a114c943-718b-4345-b9da-54f1b8eb923c/YUSUF-ABDURISAG_419463",
-          "club": "Al-Wakrah"
         },
         {
           "id": "419461",
@@ -2204,14 +2184,14 @@
           "club": "Al-Wakrah"
         },
         {
-          "id": "386387",
-          "name": "SULTAN ALBRAKE",
-          "number": 18,
+          "id": "510991",
+          "name": "AYOUB ALOUI",
+          "number": 13,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/333bc183-dd03-4b3a-8ee6-410a32c12e57/SULTAN-ALBRAKE_386387",
-          "club": "Al-Duhail"
+          "photoUrl": "https://digitalhub.fifa.com/transform/bdeaddf2-602f-47d1-a3f0-a85abc80c3ff/AYOUB-ALOUI_510991",
+          "club": "Al-Gharafa"
         },
         {
           "id": "486614",
@@ -2233,16 +2213,6 @@
           "club": "Al-Rayyan"
         },
         {
-          "id": "354861",
-          "name": "KARIM BOUDIAF",
-          "number": 12,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d73feeea-8ce1-447c-a008-c9b71e1e6295/KARIM-BOUDIAF_354861",
-          "club": "Al-Duhail"
-        },
-        {
           "id": "419436",
           "name": "AHMED ALGANEHI",
           "number": 17,
@@ -2250,16 +2220,6 @@
           "starter": false,
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e46c2cdd-7a8e-45c1-ab4f-9e09cb686245/AHMED-ALGANEHI_419436",
-          "club": "Cultural Leonesa"
-        },
-        {
-          "id": "433394",
-          "name": "AHMED FATHY",
-          "number": 20,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/f465c1f2-aa85-4bc7-bf8d-4d5805b19cd9/AHMED-FATHY_433394",
           "club": "Cultural Leonesa"
         },
         {
@@ -2283,14 +2243,14 @@
           "club": "Al-Gharafa"
         },
         {
-          "id": "284190",
-          "name": "HASSAN ALHAYDOS",
-          "number": 10,
+          "id": "419463",
+          "name": "YUSUF ABDURISAG",
+          "number": 15,
           "position": "FWD",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/521889b3-16a2-48ef-92d4-6978a9e05cc6/HASSAN-ALHAYDOS_284190",
-          "club": "Al-Sadd"
+          "photoUrl": "https://digitalhub.fifa.com/transform/a114c943-718b-4345-b9da-54f1b8eb923c/YUSUF-ABDURISAG_419463",
+          "club": "Al-Wakrah"
         },
         {
           "id": "386366",
@@ -2324,7 +2284,7 @@
       ]
     },
     "suiza": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021446",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451",
       "players": [
         {
           "id": "448107",
@@ -2335,16 +2295,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/8c199208-00cd-46ca-877b-f0fd4fb08e31/KOBEL-Gregor_448107",
           "club": "Borussia Dortmund"
-        },
-        {
-          "id": "356412",
-          "name": "Silvan WIDMER",
-          "number": 3,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/41a8791f-677e-4106-b2e4-9d71011c561d/WIDMER-Silvan_356412",
-          "club": "Mainz 05"
         },
         {
           "id": "398509",
@@ -2377,6 +2327,16 @@
           "club": "Real Betis"
         },
         {
+          "id": "510908",
+          "name": "Luca JAQUEZ",
+          "number": 25,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/2f3d611d-71c6-40ac-bc76-fdad78fe3c5e/JAQUEZ-Luca_510908",
+          "club": "VfB Stuttgart"
+        },
+        {
           "id": "402021",
           "name": "Remo FREULER",
           "number": 8,
@@ -2385,6 +2345,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/821a56dc-683d-4326-a784-21e25428a18f/FREULER-Remo_402021",
           "club": "Bologna"
+        },
+        {
+          "id": "502727",
+          "name": "Johan MANZAMBI",
+          "number": 9,
+          "position": "MID",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/a0cb9413-32ea-4b8f-9801-55474cb12b77/MANZAMBI-Johan_502727",
+          "club": "SC Freiburg"
         },
         {
           "id": "311558",
@@ -2397,24 +2367,14 @@
           "club": "Sunderland"
         },
         {
-          "id": "433147",
-          "name": "Michel AEBISCHER",
-          "number": 20,
+          "id": "411226",
+          "name": "Djibril SOW",
+          "number": 15,
           "position": "MID",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/33ced9ed-c3fd-4933-bc83-4a7a1465a94f/AEBISCHER-Michel_433147",
-          "club": "Pisa"
-        },
-        {
-          "id": "448103",
-          "name": "Fabian RIEDER",
-          "number": 22,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7e5b9fb5-dfcf-47e7-b185-ebd6d915e0be/RIEDER-Fabian_448103",
-          "club": "FC Augsburg"
+          "photoUrl": "https://digitalhub.fifa.com/transform/64b86b6f-824e-4ef9-aa1e-43cfff2a7df1/SOW-Djibril_411226",
+          "club": "Sevilla"
         },
         {
           "id": "393480",
@@ -2427,14 +2387,14 @@
           "club": "Rennes"
         },
         {
-          "id": "448114",
-          "name": "Dan NDOYE",
-          "number": 11,
+          "id": "448131",
+          "name": "Ruben VARGAS",
+          "number": 17,
           "position": "FWD",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b536dbbe-88a2-4caf-97c0-6baac25c43fe/NDOYE-Dan_448114",
-          "club": "Nottingham Forest"
+          "photoUrl": "https://digitalhub.fifa.com/transform/625f7ce0-81a9-4bab-9b18-c9ec395b5096/VARGAS-Ruben_448131",
+          "club": "Sevilla"
         },
         {
           "id": "402022",
@@ -2457,6 +2417,16 @@
           "club": "Young Boys"
         },
         {
+          "id": "356412",
+          "name": "Silvan WIDMER",
+          "number": 3,
+          "position": "DEF",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/41a8791f-677e-4106-b2e4-9d71011c561d/WIDMER-Silvan_356412",
+          "club": "Mainz 05"
+        },
+        {
           "id": "448136",
           "name": "Eray COEMERT",
           "number": 18,
@@ -2476,16 +2446,6 @@
           "club": "Eintracht Frankfurt"
         },
         {
-          "id": "510908",
-          "name": "Luca JAQUEZ",
-          "number": 25,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/2f3d611d-71c6-40ac-bc76-fdad78fe3c5e/JAQUEZ-Luca_510908",
-          "club": "VfB Stuttgart"
-        },
-        {
           "id": "401448",
           "name": "Denis ZAKARIA",
           "number": 6,
@@ -2494,16 +2454,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e47d229b-d092-4759-82e0-0e5f88b2c894/ZAKARIA-Denis_401448",
           "club": "Monaco"
-        },
-        {
-          "id": "502727",
-          "name": "Johan MANZAMBI",
-          "number": 9,
-          "position": "MID",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a0cb9413-32ea-4b8f-9801-55474cb12b77/MANZAMBI-Johan_502727",
-          "club": "SC Freiburg"
         },
         {
           "id": "448120",
@@ -2516,14 +2466,34 @@
           "club": "Milan"
         },
         {
-          "id": "411226",
-          "name": "Djibril SOW",
-          "number": 15,
+          "id": "433147",
+          "name": "Michel AEBISCHER",
+          "number": 20,
           "position": "MID",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/64b86b6f-824e-4ef9-aa1e-43cfff2a7df1/SOW-Djibril_411226",
-          "club": "Sevilla"
+          "photoUrl": "https://digitalhub.fifa.com/transform/33ced9ed-c3fd-4933-bc83-4a7a1465a94f/AEBISCHER-Michel_433147",
+          "club": "Pisa"
+        },
+        {
+          "id": "448103",
+          "name": "Fabian RIEDER",
+          "number": 22,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/7e5b9fb5-dfcf-47e7-b185-ebd6d915e0be/RIEDER-Fabian_448103",
+          "club": "FC Augsburg"
+        },
+        {
+          "id": "448114",
+          "name": "Dan NDOYE",
+          "number": 11,
+          "position": "FWD",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b536dbbe-88a2-4caf-97c0-6baac25c43fe/NDOYE-Dan_448114",
+          "club": "Nottingham Forest"
         },
         {
           "id": "448124",
@@ -2534,16 +2504,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/7ece88c1-0971-4298-a4f1-00547bf2c889/FASSNACHT-Christian_448124",
           "club": "Young Boys"
-        },
-        {
-          "id": "448131",
-          "name": "Ruben VARGAS",
-          "number": 17,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/625f7ce0-81a9-4bab-9b18-c9ec395b5096/VARGAS-Ruben_448131",
-          "club": "Sevilla"
         },
         {
           "id": "448127",

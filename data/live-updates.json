@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T05:59:23.838Z",
+  "generatedAt": "2026-06-24T19:10:03.871Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11912,35 +11912,291 @@
     },
     {
       "slug": "bosnia-herzegovina-vs-catar",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 10,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Nikola VASILJ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Sead KOLASINAC",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Nikola KATIC",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Stjepan RADELJIC",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Arjan MALIC",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Ivan BASIC",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Ivan SUNJIC",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Ermedin DEMIROVIC",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Edin DZEKO",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Kerim ALAJBEGOVIC",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Esmir BAJRAKTAREVIC",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "MAHMOUD ABUNADA",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "PEDRO MIGUEL",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "ISSA LAYE",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "JASSEM GABER",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "BOUALEM KHOUKHI",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "SULTAN ALBRAKE",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "KARIM BOUDIAF",
+              "number": 12,
+              "position": "MID"
+            },
+            {
+              "name": "AHMED FATHY",
+              "number": 20,
+              "position": "MID"
+            },
+            {
+              "name": "EDMILSON JUNIOR",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "HASSAN ALHAYDOS",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "AKRAM AFIF",
+              "number": 11,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, Bosnia y Herzegovina busca mejorar su rendimiento después de una serie de partidos irregulares, mientras que Qatar se presenta con una forma reciente más sólida y con Akram Afif como su jugador clave a seguir, quien ha demostrado ser un factor importante en el ataque de su equipo. En este encuentro, Qatar parece tener una ligera ventaja debido a su mejor posición en el ranking FIFA y su consistencia en los últimos partidos, lo que podría darles una pequeña ventaja sobre Bosnia y Herzegovina.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 2,
+            "away": 0
+          },
+          "corners": {
+            "home": 1,
+            "away": 1
+          },
+          "fouls": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Bosnia y Herzegovina y Qatar se encuentra en un empate sin goles, con ambas equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado dominar claramente el juego. A medida que el partido avanza, es probable que uno de los equipos intente aumentar la presión ofensiva para romper el empate, lo que podría llevar a una apertura en la defensa del contrario y a oportunidades claras de gol.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448"
       }
     },
     {
       "slug": "suiza-vs-canada",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 10,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Gregor KOBEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Nico ELVEDI",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Manuel AKANJI",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Ricardo RODRIGUEZ",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Luca JAQUEZ",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Remo FREULER",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Johan MANZAMBI",
+              "number": 9,
+              "position": "MID"
+            },
+            {
+              "name": "Granit XHAKA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Djibril SOW",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Breel EMBOLO",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Ruben VARGAS",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Maxime CREPEAU",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Alistair JOHNSTON",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Luc DE FOUGEROLLES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Derek CORNELIUS",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Richie LARYEA",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Mathieu CHOINIERE",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Nathan SALIBA",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Cyle LARIN",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Jonathan DAVID",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Tajon BUCHANAN",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Ali AHMED",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Suiza ha mostrado una forma estable en los últimos partidos con Granit Xhaka como jugador clave en el centro del campo, mientras que Canadá busca aprovechar la velocidad y habilidad de Alphonso Davies en el ataque. En este enfrentamiento, Suiza parece tener una ligera ventaja debido a su experiencia en competiciones internacionales y su solidez defensiva, lo que podría limitar las oportunidades de contraataque de Canadá.",
-        "confidence": 0.8,
+        "stats": {
+          "corners": {
+            "home": 1,
+            "away": 0
+          },
+          "fouls": {
+            "home": 2,
+            "away": 3
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Suiza y Canadá se encuentra empatado a cero goles, con ambos equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado anotar, lo que refleja una igualdad en el dominio del juego. A medida que el partido avanza, es probable que los equipos comiencen a arriesgar más en busca del primer gol, lo que podría abrir oportunidades tácticas para contraataques y posibles cambios en la estrategia defensiva de ambos equipos.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451"
       }
     },
