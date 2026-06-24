@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T19:10:03.871Z",
+  "generatedAt": "2026-06-24T20:58:42.317Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -11913,15 +11913,117 @@
     {
       "slug": "bosnia-herzegovina-vs-catar",
       "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minute": 10,
+      "homeScore": 3,
+      "awayScore": 1,
+      "minute": 96,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 29,
+            "team": "home",
+            "scorer": "Kerim ALAJBEGOVIC",
+            "assist": "Ivan BASIC.",
+            "type": "goal"
+          },
+          {
+            "minute": 34,
+            "team": "home",
+            "scorer": "Mahmoud Abunada",
+            "type": "own_goal"
+          },
+          {
+            "minute": 42,
+            "team": "away",
+            "scorer": "Hassan Alhaydos",
+            "assist": "EDMILSON JUNIOR.",
+            "type": "goal"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "scorer": "Ermin MAHMIC",
+            "assist": "Dennis HADZIKADUNIC.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 78,
+            "team": "away",
+            "player": "Ahmed Fathy",
+            "type": "yellow"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "player": "Ermin MAHMIC",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Arjan MALIC",
+            "playerIn": "Amar MEMIC"
+          },
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Ivan SUNJIC",
+            "playerIn": "Benjamin TAHIROVIC"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "JASSEM GABER",
+            "playerIn": "ABDULAZIZ HATEM"
+          },
+          {
+            "minute": 55,
+            "team": "away",
+            "playerOut": "HASSAN ALHAYDOS",
+            "playerIn": "AHMED ALGANEHI"
+          },
+          {
+            "minute": 63,
+            "team": "home",
+            "playerOut": "Nikola KATIC",
+            "playerIn": "Dennis HADZIKADUNIC"
+          },
+          {
+            "minute": 63,
+            "team": "home",
+            "playerOut": "Edin DZEKO",
+            "playerIn": "Ermin MAHMIC"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "KARIM BOUDIAF",
+            "playerIn": "ALMOEZ ALI"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "AHMED FATHY",
+            "playerIn": "MOHAMED MANAI"
+          },
+          {
+            "minute": 79,
+            "team": "away",
+            "playerOut": "EDMILSON JUNIOR",
+            "playerIn": "AHMED ALAAELDIN"
+          },
+          {
+            "minute": 82,
+            "team": "home",
+            "playerOut": "Kerim ALAJBEGOVIC",
+            "playerIn": "Dzenis BURNIC"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -12040,35 +12142,144 @@
         },
         "stats": {
           "shots": {
-            "home": 2,
-            "away": 0
+            "home": 14,
+            "away": 9
           },
           "corners": {
-            "home": 1,
-            "away": 1
+            "home": 5,
+            "away": 5
           },
           "fouls": {
-            "home": 2,
-            "away": 0
+            "home": 9,
+            "away": 13
+          },
+          "offsides": {
+            "home": 1,
+            "away": 3
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Bosnia y Herzegovina y Qatar se encuentra en un empate sin goles, con ambas equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado dominar claramente el juego. A medida que el partido avanza, es probable que uno de los equipos intente aumentar la presión ofensiva para romper el empate, lo que podría llevar a una apertura en la defensa del contrario y a oportunidades claras de gol.",
+        "aiNotes": "En este momento, Bosnia y Herzegovina lleva la delantera con un marcador de 3-1 sobre Qatar, gracias a los goles de Kerim Alajbegovic, Mahmoud Abunada en propia puerta y Ermin Mahmic, mientras que Hassan Alhaydos anotó para el equipo qatarí. Con el partido en sus últimos minutos, es probable que Bosnia y Herzegovina intente mantener su ventaja y administrar el tiempo restante, mientras que Qatar podría intentar presionar en busca de un gol que les permita mantener viva su esperanza de empatar.",
         "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021448"
       }
     },
     {
       "slug": "suiza-vs-canada",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minute": 10,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 46,
+            "team": "home",
+            "scorer": "Ruben VARGAS",
+            "assist": "Johan MANZAMBI.",
+            "type": "goal"
+          },
+          {
+            "minute": 57,
+            "team": "home",
+            "scorer": "Johan MANZAMBI",
+            "assist": "Breel EMBOLO.",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "scorer": "Promise DAVID",
+            "assist": "Nathan SALIBA.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 32,
+            "team": "away",
+            "player": "Cyle LARIN",
+            "type": "yellow"
+          },
+          {
+            "minute": 32,
+            "team": "home",
+            "player": "Granit XHAKA",
+            "type": "yellow"
+          },
+          {
+            "minute": 87,
+            "team": "away",
+            "player": "Liam MILLAR",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "Cyle LARIN",
+            "playerIn": "Tani OLUWASEYI"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "Mathieu CHOINIERE",
+            "playerIn": "Stephen EUSTAQUIO"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "Ali AHMED",
+            "playerIn": "Liam MILLAR"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Luca JAQUEZ",
+            "playerIn": "Silvan WIDMER"
+          },
+          {
+            "minute": 74,
+            "team": "home",
+            "playerOut": "Djibril SOW",
+            "playerIn": "Michel AEBISCHER"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "Tajon BUCHANAN",
+            "playerIn": "Promise DAVID"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Ruben VARGAS",
+            "playerIn": "Dan NDOYE"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Richie LARYEA",
+            "playerIn": "Jacob SHAFFELBURG"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Breel EMBOLO",
+            "playerIn": "Cedric ITTEN"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Johan MANZAMBI",
+            "playerIn": "Christian FASSNACHT"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -12186,18 +12397,30 @@
           ]
         },
         "stats": {
+          "shots": {
+            "home": 6,
+            "away": 13
+          },
           "corners": {
-            "home": 1,
-            "away": 0
+            "home": 2,
+            "away": 7
           },
           "fouls": {
-            "home": 2,
+            "home": 19,
+            "away": 12
+          },
+          "offsides": {
+            "home": 1,
             "away": 3
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 2
           }
         },
-        "aiNotes": "En este momento, el partido entre Suiza y Canadá se encuentra empatado a cero goles, con ambos equipos mostrando un ritmo cauteloso y sin que ninguno haya logrado anotar, lo que refleja una igualdad en el dominio del juego. A medida que el partido avanza, es probable que los equipos comiencen a arriesgar más en busca del primer gol, lo que podría abrir oportunidades tácticas para contraataques y posibles cambios en la estrategia defensiva de ambos equipos.",
+        "aiNotes": "En el partido entre Suiza y Canadá, el equipo suizo se llevó la victoria con un marcador de 2-1, gracias a los goles de Ruben Vargas y Johan Manzambi, mientras que Promise David anotó para Canadá. La victoria de Suiza se debió en gran medida a su efectivo rendimiento táctico en la segunda mitad, donde lograron capitalizar sus oportunidades y mantener la ventaja hasta el final del partido.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021451"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021451"
       }
     },
     {
