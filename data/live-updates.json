@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T21:16:06.620Z",
+  "generatedAt": "2026-06-25T22:53:13.577Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -13423,10 +13423,9 @@
     },
     {
       "slug": "curazao-vs-costa-de-marfil",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 1,
-      "minute": 54,
+      "awayScore": 2,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468",
       "confidence": 0.97,
       "detail": {
@@ -13437,6 +13436,13 @@
             "scorer": "Nicolas PEPE",
             "assist": "Yan DIOMANDE.",
             "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "scorer": "Nicolas PEPE",
+            "assist": "Ibrahim SANGARE.",
+            "type": "goal"
           }
         ],
         "cards": [
@@ -13444,6 +13450,18 @@
             "minute": 34,
             "team": "away",
             "player": "Nicolas PEPE",
+            "type": "yellow"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "player": "Juninho BACUNA",
+            "type": "yellow"
+          },
+          {
+            "minute": 83,
+            "team": "home",
+            "player": "Gervane KASTANEER",
             "type": "yellow"
           }
         ],
@@ -13453,6 +13471,60 @@
             "team": "away",
             "playerOut": "Amad DIALLO",
             "playerIn": "Christ Inao OULAI"
+          },
+          {
+            "minute": 61,
+            "team": "home",
+            "playerOut": "Livano COMENENCIA",
+            "playerIn": "Jeremy Antonisse"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Nicolas PEPE",
+            "playerIn": "Elye WAHI"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Yan DIOMANDE",
+            "playerIn": "Bazoumana TOURE"
+          },
+          {
+            "minute": 67,
+            "team": "away",
+            "playerOut": "Ange-Yoan BONNY",
+            "playerIn": "Oumar DIAKITE"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Jurien GAARI",
+            "playerIn": "Gervane KASTANEER"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "playerOut": "Deveron FONVILLE",
+            "playerIn": "Tyrese NOSLIN"
+          },
+          {
+            "minute": 77,
+            "team": "away",
+            "playerOut": "Franck KESSIE",
+            "playerIn": "Jean Michael SERI"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Joshua BRENET",
+            "playerIn": "Shurandy SAMBO"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Juergen LOCADIA",
+            "playerIn": "Brandley KUWAS"
           }
         ],
         "lineup": {
@@ -13573,37 +13645,36 @@
         },
         "stats": {
           "shots": {
-            "home": 7,
-            "away": 6
+            "home": 11,
+            "away": 7
           },
           "corners": {
-            "home": 3,
-            "away": 3
+            "home": 4,
+            "away": 6
           },
           "fouls": {
-            "home": 9,
-            "away": 3
+            "home": 10,
+            "away": 5
           },
           "offsides": {
-            "home": 0,
+            "home": 2,
             "away": 1
           },
           "yellowCards": {
-            "home": 0,
+            "home": 2,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, Côte d'Ivoire lleva la ventaja en el marcador con un gol de Nicolas Pepe anotado en el minuto 7, y aunque Curaçao ha intentado igualar, el equipo africano mantiene el control del partido. La estrategia de Curaçao podría cambiar en los minutos restantes, intentando presionar más arriba para crear oportunidades claras de gol y tratar de empatar el partido, mientras que Côte d'Ivoire buscará mantener su ventaja y aprovechar los espacios para aumentar su diferencia en el marcador.",
+        "aiNotes": "El partido entre Curazao y Costa De Marfil terminó con una victoria de 2-0 para Costa De Marfil, gracias a los dos goles de Nicolas Pepe en los minutos 7 y 64, asistidos por Yan Diomande e Ibrahim Sangare respectivamente. La victoria de Costa De Marfil se debió en gran parte a su sólido rendimiento táctico, que les permitió controlar el ritmo del juego y aprovechar las oportunidades que se presentaron, mientras que Curazao no pudo generar suficientes ocasiones claras de gol para cambiar el resultado.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021468"
       }
     },
     {
       "slug": "ecuador-vs-alemania",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 1,
-      "minute": 55,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466",
       "confidence": 0.97,
       "detail": {
@@ -13620,6 +13691,13 @@
             "team": "home",
             "scorer": "Nilson ANGULO",
             "assist": "Pedro VITE.",
+            "type": "goal"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "scorer": "Gonzalo PLATA",
+            "assist": "Kevin RODRIGUEZ.",
             "type": "goal"
           }
         ],
@@ -13641,6 +13719,12 @@
             "team": "home",
             "player": "Alan FRANCO",
             "type": "yellow"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "player": "Gonzalo PLATA",
+            "type": "yellow"
           }
         ],
         "substitutions": [
@@ -13649,6 +13733,60 @@
             "team": "away",
             "playerOut": "Aleksandar PAVLOVIC",
             "playerIn": "Angelo Stiller"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "playerOut": "Kai HAVERTZ",
+            "playerIn": "Deniz UNDAV"
+          },
+          {
+            "minute": 60,
+            "team": "away",
+            "playerOut": "Joshua KIMMICH",
+            "playerIn": "Malick THIAW"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Alan FRANCO",
+            "playerIn": "Angelo PRECIADO"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Enner VALENCIA",
+            "playerIn": "Kevin RODRIGUEZ"
+          },
+          {
+            "minute": 64,
+            "team": "away",
+            "playerOut": "Felix NMECHA",
+            "playerIn": "Maximilian BEIER"
+          },
+          {
+            "minute": 71,
+            "team": "home",
+            "playerOut": "Piero HINCAPIE",
+            "playerIn": "Pervis ESTUPINAN"
+          },
+          {
+            "minute": 73,
+            "team": "away",
+            "playerOut": "Florian WIRTZ",
+            "playerIn": "Pascal GROSS"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "Nilson ANGULO",
+            "playerIn": "Jordy CAICEDO"
+          },
+          {
+            "minute": 85,
+            "team": "home",
+            "playerOut": "John YEBOAH",
+            "playerIn": "Felix TORRES"
           }
         ],
         "lineup": {
@@ -13769,25 +13907,25 @@
         },
         "stats": {
           "shots": {
-            "home": 4,
-            "away": 7
+            "home": 7,
+            "away": 11
           },
           "corners": {
-            "home": 2,
-            "away": 1
+            "home": 3,
+            "away": 2
           },
           "fouls": {
-            "home": 8,
-            "away": 4
+            "home": 13,
+            "away": 9
           },
           "yellowCards": {
-            "home": 2,
+            "home": 3,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Ecuador y Alemania se encuentra empatado a un gol por lado, con goles tempraneros de Leroy Sane para Alemania y Nilson Angulo para Ecuador, y Ecuador parece estar igualando en intensidad a su rival a pesar de las tarjetas amarillas recibidas. En lo que resta del partido, es probable que ambos equipos busquen aprovechar los espacios en el campo para intentar anotar el gol de la victoria, y la estrategia de Ecuador podría centrarse en mantener la posesión del balón y evitar que Alemania aproveche su velocidad en los contragolpes.",
+        "aiNotes": "En el partido entre Ecuador y Alemania, Ecuador se llevó la victoria con un resultado de 2-1, gracias a los goles de Nilson Angulo y Gonzalo Plata, quien anotó el gol de la victoria en el minuto 77, después de que Leroy Sane abriera el marcador para Alemania. La victoria de Ecuador puede considerarse una sorpresa en el contexto del torneo, ya que Alemania es considerada una de las selecciones más fuertes, y este resultado puede tener un impacto significativo en la clasificación del grupo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021466"
       }
     },
     {
