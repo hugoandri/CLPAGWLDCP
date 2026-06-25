@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T01:53:11.063Z",
+  "generatedAt": "2026-06-25T06:09:47.363Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -12955,16 +12955,85 @@
     },
     {
       "slug": "sudafrica-vs-corea-del-sur",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 1,
       "awayScore": 0,
-      "minute": 38,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021445",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 63,
+            "team": "home",
+            "scorer": "Thapelo MASEKO",
+            "assist": "Tshepang MOREMI.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 72,
+            "team": "home",
+            "player": "Aubrey MODIBA",
+            "type": "yellow"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "player": "CHO Guesung",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "HWANG Heechan",
+            "playerIn": "SON Heungmin"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "PAIK Seungho",
+            "playerIn": "KIM Jingyu"
+          },
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "LEE Taeseok",
+            "playerIn": "CASTROP Jens"
+          },
+          {
+            "minute": 62,
+            "team": "home",
+            "playerOut": "Oswin APPOLLIS",
+            "playerIn": "Tshepang MOREMI"
+          },
+          {
+            "minute": 65,
+            "team": "away",
+            "playerOut": "KIM Minjae",
+            "playerIn": "PARK Jinseob"
+          },
+          {
+            "minute": 74,
+            "team": "away",
+            "playerOut": "OH Hyeongyu",
+            "playerIn": "CHO Guesung"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "playerOut": "Thapelo MASEKO",
+            "playerIn": "Iqraam RAYNERS"
+          },
+          {
+            "minute": 80,
+            "team": "home",
+            "playerOut": "Relebohile MOFOKENG",
+            "playerIn": "Jayden ADAMS"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -13083,39 +13152,132 @@
         },
         "stats": {
           "shots": {
-            "home": 10,
-            "away": 4
+            "home": 13,
+            "away": 8
           },
           "corners": {
             "home": 4,
-            "away": 2
+            "away": 6
           },
           "fouls": {
-            "home": 2,
-            "away": 4
+            "home": 6,
+            "away": 8
           },
           "offsides": {
             "home": 3,
             "away": 0
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento del partido, el marcador se mantiene en empate a cero goles entre Sudáfrica y Corea del Sur, con ambos equipos mostrando un juego cauteloso y sin lograr anotar. A medida que el partido avanza, es probable que alguno de los equipos intente aumentar la presión ofensiva en busca de abrir el marcador, lo que podría generar oportunidades claras de gol en la segunda mitad.",
+        "aiNotes": "En el partido entre Sudafrica y Corea del Sur, Sudafrica se llevó la victoria por 1-0 gracias al gol de Thapelo Maseko en el minuto 63, asistido por Tshepang Moremi. La táctica defensiva de Sudafrica resultó efectiva, ya que lograron contener los ataques de Corea del Sur y mantener su ventaja hasta el final del partido.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021445"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021445"
       }
     },
     {
       "slug": "chequia-vs-mexico",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 0,
-      "minute": 38,
+      "awayScore": 3,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 55,
+            "team": "away",
+            "scorer": "Mateo CHAVEZ",
+            "assist": "Luis ROMO.",
+            "type": "goal"
+          },
+          {
+            "minute": 61,
+            "team": "away",
+            "scorer": "Julian QUINONES",
+            "assist": "Jorge SANCHEZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 94,
+            "team": "away",
+            "scorer": "Alvaro FIDALGO",
+            "assist": "Roberto ALVARADO.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 63,
+            "team": "away",
+            "player": "Edson ALVAREZ",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 56,
+            "team": "home",
+            "playerOut": "Denis VISINSKY",
+            "playerIn": "Lukas PROVOD"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Guillermo MARTINEZ",
+            "playerIn": "Santiago GIMENEZ"
+          },
+          {
+            "minute": 63,
+            "team": "away",
+            "playerOut": "Luis ROMO",
+            "playerIn": "Obed VARGAS"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Tomas HOLES",
+            "playerIn": "Tomas SOUCEK"
+          },
+          {
+            "minute": 64,
+            "team": "home",
+            "playerOut": "Adam HLOZEK",
+            "playerIn": "Patrik Schick"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Gilberto MORA",
+            "playerIn": "Alvaro FIDALGO"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Raul RANGEL",
+            "playerIn": "Guillermo OCHOA"
+          },
+          {
+            "minute": 78,
+            "team": "away",
+            "playerOut": "Mateo CHAVEZ",
+            "playerIn": "Jesus GALLARDO"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "Lukas CERV",
+            "playerIn": "Tomas CHORY"
+          },
+          {
+            "minute": 87,
+            "team": "home",
+            "playerOut": "Tomas SOUCEK",
+            "playerIn": "Alexandr SOJKA"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -13234,17 +13396,29 @@
         },
         "stats": {
           "shots": {
-            "home": 6,
-            "away": 5
+            "home": 13,
+            "away": 11
+          },
+          "corners": {
+            "home": 5,
+            "away": 1
           },
           "fouls": {
-            "home": 5,
-            "away": 7
+            "home": 9,
+            "away": 12
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre República Checa y México se encuentra empatado a cero goles, con ambos equipos mostrando un juego cauteloso y defensivo, sin que ninguno haya logrado anotar un gol clave que pueda inclinar la balanza a su favor. A medida que el partido avanza, es probable que ambos equipos intenten aumentar la presión ofensiva en la segunda mitad, lo que podría llevar a una apertura en la defensa y crear oportunidades de gol.",
+        "aiNotes": "El partido entre Chequia y México terminó con una victoria contundente de 3-0 para el equipo mexicano, gracias a los goles de Mateo Chávez, Julian Quinones y Alvaro Fidalgo, quienes aprovecharon las oportunidades que se les presentaron en la segunda mitad del encuentro. La estrategia ofensiva de México demostró ser efectiva, ya que lograron sorprender a la defensa checa con rápidas contraofensivas y pases precisos que permitieron a sus delanteros anotar con facilidad.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021444"
       }
     },
     {
