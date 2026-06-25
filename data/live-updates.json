@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T23:45:38.916Z",
+  "generatedAt": "2026-06-25T01:53:11.063Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -12424,10 +12424,9 @@
     },
     {
       "slug": "marruecos-vs-haiti",
-      "status": "live",
-      "homeScore": 3,
+      "status": "finished",
+      "homeScore": 4,
       "awayScore": 2,
-      "minute": 83,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452",
       "confidence": 0.97,
       "detail": {
@@ -12464,13 +12463,32 @@
             "scorer": "Soufiane RAHIMI",
             "assist": "Chadi RIAD.",
             "type": "goal"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "scorer": "Gessime YASSINE",
+            "assist": "Soufiane RAHIMI.",
+            "type": "goal"
           }
         ],
         "cards": [
           {
             "minute": 79,
             "team": "away",
+            "player": "Johny PLACIDE",
+            "type": "yellow"
+          },
+          {
+            "minute": 79,
+            "team": "away",
             "player": "Duckens NAZON",
+            "type": "yellow"
+          },
+          {
+            "minute": 93,
+            "team": "away",
+            "player": "Josue CASIMIR",
             "type": "yellow"
           }
         ],
@@ -12528,6 +12546,12 @@
             "team": "home",
             "playerOut": "Anass SALAH EDDINE",
             "playerIn": "Noussair MAZRAOUI"
+          },
+          {
+            "minute": 83,
+            "team": "away",
+            "playerOut": "Lenny JOSEPH",
+            "playerIn": "Frantzdy Pierrot"
           }
         ],
         "lineup": {
@@ -12648,16 +12672,16 @@
         },
         "stats": {
           "shots": {
-            "home": 18,
-            "away": 5
+            "home": 22,
+            "away": 9
           },
           "corners": {
-            "home": 8,
-            "away": 0
+            "home": 9,
+            "away": 1
           },
           "fouls": {
-            "home": 7,
-            "away": 15
+            "home": 10,
+            "away": 17
           },
           "offsides": {
             "home": 5,
@@ -12665,20 +12689,19 @@
           },
           "yellowCards": {
             "home": 0,
-            "away": 1
+            "away": 3
           }
         },
-        "aiNotes": "En este momento, Marruecos lidera el partido con un marcador de 3-2 contra Haití, con goles clave de Achraf Hakimi, Ismael Saibari y Soufiane Rahimi que han permitido a su equipo tomar la delantera. A medida que el partido se acerca a su fin, es probable que Marruecos intente mantener su ventaja y gestionar el ritmo del juego, mientras que Haití puede intentar presionar en busca de un empate, aunque la tarjeta amarilla reciente para Duckens Nazon puede limitar su capacidad para arriesgar.",
+        "aiNotes": "En el partido entre Marruecos y Haití, Marruecos se llevó la victoria con un marcador de 4-2, gracias a los goles clave de Achraf Hakimi, Ismael Saibari, Soufiane Rahimi y Gessime Yassine, quienes anotaron en diferentes momentos del encuentro. La estrategia táctica de Marruecos demostró ser efectiva, ya que lograron recuperarse de un inicial 1-0 en contra y mantener el ritmo ofensivo durante todo el partido, lo que les permitió obtener una ventaja decisiva en el marcador.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021452"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021452"
       }
     },
     {
       "slug": "escocia-vs-brasil",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 3,
-      "minute": 80,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455",
       "confidence": 0.97,
       "detail": {
@@ -12711,6 +12734,18 @@
             "team": "away",
             "player": "Danilo",
             "type": "yellow"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "player": "Fabinho",
+            "type": "yellow"
+          },
+          {
+            "minute": 89,
+            "team": "home",
+            "player": "Ryan CHRISTIE",
+            "type": "yellow"
           }
         ],
         "substitutions": [
@@ -12737,6 +12772,42 @@
             "team": "away",
             "playerOut": "MATHEUS CUNHA",
             "playerIn": "NEYMAR JR"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "Nathan PATTERSON",
+            "playerIn": "Anthony RALSTON"
+          },
+          {
+            "minute": 81,
+            "team": "home",
+            "playerOut": "Ben GANNON-DOAK",
+            "playerIn": "Ryan Christie"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "RAYAN",
+            "playerIn": "ENDRICK"
+          },
+          {
+            "minute": 82,
+            "team": "away",
+            "playerOut": "DOUGLAS SANTOS",
+            "playerIn": "ALEX SANDRO"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "John McGinn",
+            "playerIn": "Findlay CURTIS"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "Lawrence SHANKLAND",
+            "playerIn": "Che Adams"
           }
         ],
         "lineup": {
@@ -12857,62 +12928,322 @@
         },
         "stats": {
           "shots": {
-            "home": 10,
-            "away": 17
+            "home": 14,
+            "away": 21
           },
           "corners": {
-            "home": 6,
-            "away": 4
+            "home": 7,
+            "away": 6
           },
           "fouls": {
-            "home": 7,
-            "away": 5
+            "home": 9,
+            "away": 9
           },
           "offsides": {
             "home": 0,
-            "away": 2
+            "away": 1
           },
           "yellowCards": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 2
           }
         },
-        "aiNotes": "En este momento, el partido entre Escocia y Brasil está muy inclinado a favor de los brasileños, quienes dominan claramente con un marcador de 0-3 gracias a los goles de Vinicius Junior en los minutos 7 y 48, y el gol de Matheus Cunha en el minuto 60. En lo que resta del partido, es probable que Brasil continúe controlando el ritmo del juego, aunque Escocia podría intentar presionar en busca de un consuelo, lo que podría generar oportunidades de contraataque para el equipo brasileño.",
+        "aiNotes": "En el partido entre Escocia y Brasil, el equipo brasileño se impuso con un contundente marcador de 0-3, gracias a los goles de Vinicius Junior en los minutos 7 y 48, y de Matheus Cunha en el minuto 60, con Bruno Guimaraes destacándose por sus asistencias clave. La victoria de Brasil refleja su dominio táctico y su capacidad para crear oportunidades de gol a través de su juego ofensivo bien coordinado, lo que los coloca en una posición favorable en el torneo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021455"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021455"
       }
     },
     {
       "slug": "sudafrica-vs-corea-del-sur",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 38,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021445",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Ronwen WILLIAMS",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Aubrey MODIBA",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Mbekezeli MBOKAZI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Khuliso MUDAU",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Ime OKON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Thalente MBATHA",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Sphephelo SITHOLE",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Oswin APPOLLIS",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Relebohile MOFOKENG",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Thapelo MASEKO",
+              "number": 12,
+              "position": "FWD"
+            },
+            {
+              "name": "Evidence MAKGOPA",
+              "number": 17,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "KIM Seunggyu",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "LEE Hanbeom",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "KIM Minjae",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Taeseok",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "SEOL Youngwoo",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "LEE Gihyuk",
+              "number": 3,
+              "position": "MID"
+            },
+            {
+              "name": "HWANG Inbeom",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "PAIK Seungho",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "HWANG Heechan",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "LEE Kangin",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "OH Hyeongyu",
+              "number": 18,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Sudáfrica muestra una forma irregular en sus encuentros recientes, pero cuenta con la velocidad y habilidad de Percy Tau, mientras que Corea del Sur se presenta con una solidez defensiva y la creatividad ofensiva de Son Heung-min. En este encuentro, Corea del Sur parece tener la ventaja debido a su mayor experiencia en competiciones internacionales y su mejor posición en el ranking FIFA, lo que podría darle una ventaja en términos de confianza y cohesión en el campo.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 10,
+            "away": 4
+          },
+          "corners": {
+            "home": 4,
+            "away": 2
+          },
+          "fouls": {
+            "home": 2,
+            "away": 4
+          },
+          "offsides": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento del partido, el marcador se mantiene en empate a cero goles entre Sudáfrica y Corea del Sur, con ambos equipos mostrando un juego cauteloso y sin lograr anotar. A medida que el partido avanza, es probable que alguno de los equipos intente aumentar la presión ofensiva en busca de abrir el marcador, lo que podría generar oportunidades claras de gol en la segunda mitad.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021445"
       }
     },
     {
       "slug": "chequia-vs-mexico",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 38,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Matej KOVAR",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Tomas HOLES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Robin HRANAC",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Vladimir COUFAL",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Ladislav KREJCI",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "David DOUDERA",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Lukas CERV",
+              "number": 12,
+              "position": "MID"
+            },
+            {
+              "name": "Michal SADILEK",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Adam HLOZEK",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Pavel SULC",
+              "number": 15,
+              "position": "FWD"
+            },
+            {
+              "name": "Denis VISINSKY",
+              "number": 26,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Raul RANGEL",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jorge SANCHEZ",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Cesar MONTES",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Edson ALVAREZ",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Israel REYES",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Mateo CHAVEZ",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Luis ROMO",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Gilberto MORA",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Julian QUINONES",
+              "number": 16,
+              "position": "FWD"
+            },
+            {
+              "name": "Guillermo MARTINEZ",
+              "number": 22,
+              "position": "FWD"
+            },
+            {
+              "name": "Roberto ALVARADO",
+              "number": 25,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que México se encuentra en una buena forma reciente y cuenta con la experiencia y habilidad de Raúl Jiménez, mientras que República Checa busca aprovechar la velocidad y habilidad de Patrik Schick para sorprender a su oponente. Considero que México tiene una ligera ventaja en este partido debido a su mejor posición en el ranking FIFA y su sólida estructura defensiva, lo que podría permitirles controlar el ritmo del juego y aprovechar los errores de su oponente.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 6,
+            "away": 5
+          },
+          "fouls": {
+            "home": 5,
+            "away": 7
+          }
+        },
+        "aiNotes": "En este momento, el partido entre República Checa y México se encuentra empatado a cero goles, con ambos equipos mostrando un juego cauteloso y defensivo, sin que ninguno haya logrado anotar un gol clave que pueda inclinar la balanza a su favor. A medida que el partido avanza, es probable que ambos equipos intenten aumentar la presión ofensiva en la segunda mitad, lo que podría llevar a una apertura en la defensa y crear oportunidades de gol.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444"
       }
     },
