@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T06:09:47.366Z",
+  "generatedAt": "2026-06-25T21:16:06.624Z",
   "squads": {
     "mexico": {
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021444",
@@ -4121,7 +4121,7 @@
       ]
     },
     "alemania": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466",
       "players": [
         {
           "id": "228912",
@@ -4132,6 +4132,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/e3701d06-66b5-4728-8bad-fea05319b6b8/NEUER-Manuel_228912",
           "club": "Bayern Munich"
+        },
+        {
+          "id": "379955",
+          "name": "Antonio RUEDIGER",
+          "number": 2,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/88c43fe2-0c78-437c-a2bf-388c3673c58c/RUEDIGER-Antonio_379955",
+          "club": "Borussia Dortmund"
         },
         {
           "id": "401378",
@@ -4154,24 +4164,14 @@
           "club": "Bayern Munich"
         },
         {
-          "id": "430667",
-          "name": "Nico SCHLOTTERBECK",
-          "number": 15,
+          "id": "430657",
+          "name": "David RAUM",
+          "number": 22,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/3ece206c-50ae-4b63-ac21-a174f2fbb35a/SCHLOTTERBECK-Nico_430667",
-          "club": "Borussia Dortmund"
-        },
-        {
-          "id": "511015",
-          "name": "Nathaniel BROWN",
-          "number": 18,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/68e13808-182e-46b6-a6ec-a54136a57c1b/BROWN-Nathaniel_511015",
-          "club": "Eintracht Frankfurt"
+          "photoUrl": "https://digitalhub.fifa.com/transform/ce3509c6-13ad-441a-8d05-9d42f8a4578c/RAUM-David_430657",
+          "club": "RB Leipzig"
         },
         {
           "id": "484849",
@@ -4253,16 +4253,6 @@
           "photoUrl": "https://digitalhub.fifa.com/transform/9d30bb13-c082-4759-90e7-e0bde4305d1f/NUEBEL-Alexander_429639"
         },
         {
-          "id": "379955",
-          "name": "Antonio RUEDIGER",
-          "number": 2,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/88c43fe2-0c78-437c-a2bf-388c3673c58c/RUEDIGER-Antonio_379955",
-          "club": "Borussia Dortmund"
-        },
-        {
           "id": "430658",
           "name": "Waldemar ANTON",
           "number": 3,
@@ -4271,16 +4261,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/2bdd66d9-f9dc-44ab-8c6e-ededdb004f77/ANTON-Waldemar_430658",
           "club": "Borussia Dortmund"
-        },
-        {
-          "id": "430657",
-          "name": "David RAUM",
-          "number": 22,
-          "position": "DEF",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/ce3509c6-13ad-441a-8d05-9d42f8a4578c/RAUM-David_430657",
-          "club": "RB Leipzig"
         },
         {
           "id": "514188",
@@ -4385,7 +4365,7 @@
       ]
     },
     "curazao": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468",
       "players": [
         {
           "id": "390650",
@@ -5150,7 +5130,7 @@
       ]
     },
     "costa-de-marfil": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021469",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468",
       "players": [
         {
           "id": "405873",
@@ -5163,24 +5143,14 @@
           "club": "Çaykur Rizespor"
         },
         {
-          "id": "407343",
-          "name": "Ghislain KONAN",
-          "number": 3,
+          "id": "477802",
+          "name": "Ousmane DIOMANDE",
+          "number": 2,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/8b0c92b7-4756-42a3-8cc8-b997693ff4aa/KONAN-Ghislain_407343",
-          "club": "Gil Vicente"
-        },
-        {
-          "id": "430854",
-          "name": "Wilfried SINGO",
-          "number": 5,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/3b02f719-a68a-46ae-a249-e7b6538a5714/SINGO-Wilfried_430854",
-          "club": "Galatasaray"
+          "photoUrl": "https://digitalhub.fifa.com/transform/45b55597-6503-4470-a778-af125afb698a/DIOMANDE-Ousmane_477802",
+          "club": "Sporting CP"
         },
         {
           "id": "477825",
@@ -5193,14 +5163,24 @@
           "club": "Atalanta"
         },
         {
-          "id": "486268",
-          "name": "Emmanuel AGBADOU",
-          "number": 20,
+          "id": "486260",
+          "name": "Christopher OPERI",
+          "number": 13,
           "position": "DEF",
           "starter": true,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/d092f8c9-f80e-40e0-ad73-bfa861784408/AGBADOU-Emmanuel_486268",
-          "club": "Beşiktaş"
+          "photoUrl": "https://digitalhub.fifa.com/transform/7ed2ec22-290b-40bb-a4a9-4c3374aa3e91/OPERI-Christopher_486260",
+          "club": "İstanbul Başakşehir"
+        },
+        {
+          "id": "486317",
+          "name": "Guela DOUE",
+          "number": 17,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/9c597f58-ad63-4248-ac8b-b36e71f7b811/DOUE-Guela_486317",
+          "club": "Strasbourg"
         },
         {
           "id": "371609",
@@ -5221,16 +5201,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/daeaedd3-2c74-4fef-a968-2247f5ac962e/SANGARE-Ibrahim_430831",
           "club": "Nottingham Forest"
-        },
-        {
-          "id": "514208",
-          "name": "Christ Inao OULAI",
-          "number": 26,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/a1bae10b-b280-4234-81c1-063fa931cd02/OULAI-Christ-Inao_514208",
-          "club": "Trabzonspor"
         },
         {
           "id": "464103",
@@ -5263,6 +5233,16 @@
           "club": "Manchester United"
         },
         {
+          "id": "402261",
+          "name": "Nicolas PEPE",
+          "number": 19,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/1c7519d2-960c-4d19-83e7-40a155f1a8eb/PEPE-Nicolas_402261",
+          "club": "Villarreal"
+        },
+        {
           "id": "486259",
           "name": "Mohamed KONE",
           "number": 16,
@@ -5283,34 +5263,34 @@
           "club": "Panathinaikos"
         },
         {
-          "id": "477802",
-          "name": "Ousmane DIOMANDE",
-          "number": 2,
+          "id": "407343",
+          "name": "Ghislain KONAN",
+          "number": 3,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/45b55597-6503-4470-a778-af125afb698a/DIOMANDE-Ousmane_477802",
-          "club": "Sporting CP"
+          "photoUrl": "https://digitalhub.fifa.com/transform/8b0c92b7-4756-42a3-8cc8-b997693ff4aa/KONAN-Ghislain_407343",
+          "club": "Gil Vicente"
         },
         {
-          "id": "486260",
-          "name": "Christopher OPERI",
-          "number": 13,
+          "id": "430854",
+          "name": "Wilfried SINGO",
+          "number": 5,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7ed2ec22-290b-40bb-a4a9-4c3374aa3e91/OPERI-Christopher_486260",
-          "club": "İstanbul Başakşehir"
+          "photoUrl": "https://digitalhub.fifa.com/transform/3b02f719-a68a-46ae-a249-e7b6538a5714/SINGO-Wilfried_430854",
+          "club": "Galatasaray"
         },
         {
-          "id": "486317",
-          "name": "Guela DOUE",
-          "number": 17,
+          "id": "486268",
+          "name": "Emmanuel AGBADOU",
+          "number": 20,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/9c597f58-ad63-4248-ac8b-b36e71f7b811/DOUE-Guela_486317",
-          "club": "Strasbourg"
+          "photoUrl": "https://digitalhub.fifa.com/transform/d092f8c9-f80e-40e0-ad73-bfa861784408/AGBADOU-Emmanuel_486268",
+          "club": "Beşiktaş"
         },
         {
           "id": "419172",
@@ -5353,6 +5333,16 @@
           "club": "Charleroi"
         },
         {
+          "id": "514208",
+          "name": "Christ Inao OULAI",
+          "number": 26,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/a1bae10b-b280-4234-81c1-063fa931cd02/OULAI-Christ-Inao_514208",
+          "club": "Trabzonspor"
+        },
+        {
           "id": "477778",
           "name": "Simon ADINGRA",
           "number": 10,
@@ -5383,16 +5373,6 @@
           "club": "Cercle Brugge"
         },
         {
-          "id": "402261",
-          "name": "Nicolas PEPE",
-          "number": 19,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/1c7519d2-960c-4d19-83e7-40a155f1a8eb/PEPE-Nicolas_402261",
-          "club": "Villarreal"
-        },
-        {
           "id": "485675",
           "name": "Evann GUESSAND",
           "number": 22,
@@ -5415,7 +5395,7 @@
       ]
     },
     "ecuador": {
-      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021465",
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466",
       "players": [
         {
           "id": "441236",
@@ -5438,6 +5418,16 @@
           "club": "Arsenal"
         },
         {
+          "id": "463465",
+          "name": "Joel ORDONEZ",
+          "number": 4,
+          "position": "DEF",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/54a42d16-279a-4566-8c46-ac75d8ea095a/ORDONEZ-Joel_463465",
+          "club": "Club Brugge"
+        },
+        {
           "id": "448290",
           "name": "Willian PACHO",
           "number": 6,
@@ -5446,26 +5436,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/cda5e4c5-69a6-46ee-b6d1-230be57c4847/PACHO-Willian_448290",
           "club": "Paris Saint-Germain"
-        },
-        {
-          "id": "389782",
-          "name": "Pervis ESTUPINAN",
-          "number": 7,
-          "position": "DEF",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/85df33e2-083f-4cef-9fa2-3a8fc7d29466/ESTUPINAN-Pervis_389782",
-          "club": "Milan"
-        },
-        {
-          "id": "419005",
-          "name": "Jordy ALCIVAR",
-          "number": 5,
-          "position": "MID",
-          "starter": true,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/7f7492dc-4cdc-41c2-8acc-91ccad4d9664/ALCIVAR-Jordy_419005",
-          "club": "Independiente del Valle"
         },
         {
           "id": "424036",
@@ -5493,7 +5463,7 @@
           "number": 23,
           "position": "MID",
           "starter": true,
-          "captain": false,
+          "captain": true,
           "photoUrl": "https://digitalhub.fifa.com/transform/ae32bbc5-09f0-4743-ae0a-5b80461bdc79/CAICEDO-Moises_428885",
           "club": "Chelsea"
         },
@@ -5513,7 +5483,7 @@
           "number": 13,
           "position": "FWD",
           "starter": true,
-          "captain": true,
+          "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/4688cb2a-6446-4439-ba5f-e4db7b5a18c5/VALENCIA-Enner_373400",
           "club": "Pachuca"
         },
@@ -5526,6 +5496,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/743cc231-ab9e-45b7-8d59-ce8655280ae1/PLATA-Gonzalo_419020",
           "club": "Flamengo"
+        },
+        {
+          "id": "448312",
+          "name": "Nilson ANGULO",
+          "number": 20,
+          "position": "FWD",
+          "starter": true,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/b90df9f2-8054-4d40-b375-f7728a31a069/ANGULO-Nilson_448312",
+          "club": "Sunderland"
         },
         {
           "id": "419002",
@@ -5558,14 +5538,14 @@
           "club": "Internacional"
         },
         {
-          "id": "463465",
-          "name": "Joel ORDONEZ",
-          "number": 4,
+          "id": "389782",
+          "name": "Pervis ESTUPINAN",
+          "number": 7,
           "position": "DEF",
           "starter": false,
           "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/54a42d16-279a-4566-8c46-ac75d8ea095a/ORDONEZ-Joel_463465",
-          "club": "Club Brugge"
+          "photoUrl": "https://digitalhub.fifa.com/transform/85df33e2-083f-4cef-9fa2-3a8fc7d29466/ESTUPINAN-Pervis_389782",
+          "club": "Milan"
         },
         {
           "id": "402974",
@@ -5596,6 +5576,16 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/84400276-88b5-4054-b0fb-f8206f384291/MEDINA-Yaimar_463489",
           "club": "Genk"
+        },
+        {
+          "id": "419005",
+          "name": "Jordy ALCIVAR",
+          "number": 5,
+          "position": "MID",
+          "starter": false,
+          "captain": false,
+          "photoUrl": "https://digitalhub.fifa.com/transform/7f7492dc-4cdc-41c2-8acc-91ccad4d9664/ALCIVAR-Jordy_419005",
+          "club": "Independiente del Valle"
         },
         {
           "id": "448299",
@@ -5656,16 +5646,6 @@
           "captain": false,
           "photoUrl": "https://digitalhub.fifa.com/transform/d4d93e2b-74aa-4bbf-89b2-22ebff655348/CAICEDO-Jordy_402985",
           "club": "Huracán"
-        },
-        {
-          "id": "448312",
-          "name": "Nilson ANGULO",
-          "number": 20,
-          "position": "FWD",
-          "starter": false,
-          "captain": false,
-          "photoUrl": "https://digitalhub.fifa.com/transform/b90df9f2-8054-4d40-b375-f7728a31a069/ANGULO-Nilson_448312",
-          "club": "Sunderland"
         },
         {
           "id": "514326",

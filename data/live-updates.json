@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T06:09:47.363Z",
+  "generatedAt": "2026-06-25T21:16:06.620Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -13423,35 +13423,370 @@
     },
     {
       "slug": "curazao-vs-costa-de-marfil",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": 54,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "away",
+            "scorer": "Nicolas PEPE",
+            "assist": "Yan DIOMANDE.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 34,
+            "team": "away",
+            "player": "Nicolas PEPE",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Amad DIALLO",
+            "playerIn": "Christ Inao OULAI"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Eloy ROOM",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Jurien GAARI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Sherel FLORANUS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Armando OBISPO",
+              "number": 18,
+              "position": "DEF"
+            },
+            {
+              "name": "Joshua BRENET",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Deveron FONVILLE",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Juninho BACUNA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Livano COMENENCIA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Leandro BACUNA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Tahith CHONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Juergen LOCADIA",
+              "number": 9,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Yahia Fofana",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Ousmane DIOMANDE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Odilon KOSSOUNOU",
+              "number": 7,
+              "position": "DEF"
+            },
+            {
+              "name": "Christopher OPERI",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Guela DOUE",
+              "number": 17,
+              "position": "DEF"
+            },
+            {
+              "name": "Franck KESSIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ibrahim SANGARE",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Ange-Yoan BONNY",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Yan DIOMANDE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Amad DIALLO",
+              "number": 15,
+              "position": "FWD"
+            },
+            {
+              "name": "Nicolas PEPE",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de rendimiento, ya que Côte d'Ivoire muestra una forma reciente más sólida gracias a la destacada actuación de Franck Kessié, mientras que Curaçao busca aprovechar la experiencia y habilidad de Leandro Bacuna para sorprender a su oponente. Considero que Côte d'Ivoire tiene una ligera ventaja en este partido debido a su mayor profundidad en el plantel y su posición en el ranking FIFA, lo que sugiere una superioridad en términos de habilidad y cohesión en el equipo.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 7,
+            "away": 6
+          },
+          "corners": {
+            "home": 3,
+            "away": 3
+          },
+          "fouls": {
+            "home": 9,
+            "away": 3
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, Côte d'Ivoire lleva la ventaja en el marcador con un gol de Nicolas Pepe anotado en el minuto 7, y aunque Curaçao ha intentado igualar, el equipo africano mantiene el control del partido. La estrategia de Curaçao podría cambiar en los minutos restantes, intentando presionar más arriba para crear oportunidades claras de gol y tratar de empatar el partido, mientras que Côte d'Ivoire buscará mantener su ventaja y aprovechar los espacios para aumentar su diferencia en el marcador.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021468"
       }
     },
     {
       "slug": "ecuador-vs-alemania",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": 55,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 2,
+            "team": "away",
+            "scorer": "Leroy SANE",
+            "assist": "Florian WIRTZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 9,
+            "team": "home",
+            "scorer": "Nilson ANGULO",
+            "assist": "Pedro VITE.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 43,
+            "team": "home",
+            "player": "Piero HINCAPIE",
+            "type": "yellow"
+          },
+          {
+            "minute": 44,
+            "team": "away",
+            "player": "Aleksandar PAVLOVIC",
+            "type": "yellow"
+          },
+          {
+            "minute": 50,
+            "team": "home",
+            "player": "Alan FRANCO",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "away",
+            "playerOut": "Aleksandar PAVLOVIC",
+            "playerIn": "Angelo Stiller"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Hernan GALINDEZ",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Piero HINCAPIE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Joel ORDONEZ",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Willian PACHO",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Pedro VITE",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Alan FRANCO",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Moises CAICEDO",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "John YEBOAH",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Enner VALENCIA",
+              "number": 13,
+              "position": "FWD"
+            },
+            {
+              "name": "Gonzalo PLATA",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Nilson ANGULO",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Manuel NEUER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Antonio RUEDIGER",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Jonathan TAH",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Joshua KIMMICH",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "David RAUM",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Aleksandar PAVLOVIC",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Jamal MUSIALA",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Florian WIRTZ",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Leroy SANE",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Felix NMECHA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Kai HAVERTZ",
+              "number": 7,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ecuador llega al partido con una forma irregular en los últimos encuentros, pero cuenta con la habilidad y creatividad de Moisés Caicedo en el centro del campo, mientras que Alemania se presenta con una sólida defensa y un ataque veloz liderado por el joven y talentoso Jamal Musiala. En este encuentro, Alemania tiene una ligera ventaja debido a su mayor experiencia y profundidad en el banquillo, lo que le permite hacer ajustes tácticos y contar con opciones de calidad para cambiar el rumbo del partido.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 4,
+            "away": 7
+          },
+          "corners": {
+            "home": 2,
+            "away": 1
+          },
+          "fouls": {
+            "home": 8,
+            "away": 4
+          },
+          "yellowCards": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Ecuador y Alemania se encuentra empatado a un gol por lado, con goles tempraneros de Leroy Sane para Alemania y Nilson Angulo para Ecuador, y Ecuador parece estar igualando en intensidad a su rival a pesar de las tarjetas amarillas recibidas. En lo que resta del partido, es probable que ambos equipos busquen aprovechar los espacios en el campo para intentar anotar el gol de la victoria, y la estrategia de Ecuador podría centrarse en mantener la posesión del balón y evitar que Alemania aproveche su velocidad en los contragolpes.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021466"
       }
     },
