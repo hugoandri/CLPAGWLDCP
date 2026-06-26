@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T22:53:13.577Z",
+  "generatedAt": "2026-06-26T00:12:12.155Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -13930,35 +13930,341 @@
     },
     {
       "slug": "tunez-vs-paises-bajos",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 2,
+      "minute": 53,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021473",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 3,
+            "team": "away",
+            "scorer": "Ellyes SKHIRI",
+            "type": "own_goal"
+          },
+          {
+            "minute": 7,
+            "team": "away",
+            "scorer": "Brian BROBBEY",
+            "assist": "Virgil VAN DIJK.",
+            "type": "goal"
+          }
+        ],
         "cards": [],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Aymen DAHMEN",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Ali ABDI",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Montassar TALBI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Yan Valery",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Mohamed Amine BEN HMIDA",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Hannibal MEJBRI",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Ismael GHARBI",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Rani Khedira",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Ellyes SKHIRI",
+              "number": 17,
+              "position": "MID"
+            },
+            {
+              "name": "Anis SLIMANE",
+              "number": 25,
+              "position": "MID"
+            },
+            {
+              "name": "Hazem MASTOURI",
+              "number": 9,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Bart Verbruggen",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Virgil VAN DIJK",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Nathan AKE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Jan Paul VAN HECKE",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Denzel DUMFRIES",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Ryan GRAVENBERCH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Tijjani REIJNDERS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Frenkie DE JONG",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Cody GAKPO",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Donyell Malen",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Brian BROBBEY",
+              "number": 19,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Túnez busca impulsar su juego ofensivo con la creatividad de Ellyes Skhiri, mientras que los Países Bajos confían en la solidez defensiva liderada por Virgil van Dijk y una forma reciente que los ha posicionado como uno de los equipos más fuertes del torneo. La ventaja parece estar del lado de los Países Bajos debido a su experiencia y habilidad para controlar el ritmo del partido, lo que podría ser demasiado para la selección tunecina.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 4,
+            "away": 13
+          },
+          "corners": {
+            "home": 1,
+            "away": 3
+          },
+          "fouls": {
+            "home": 5,
+            "away": 6
+          },
+          "offsides": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Túnez y Países Bajos se inclina claramente a favor de los neerlandeses, quienes llevan una ventaja de 2-0 gracias a los goles de Ellyes Skhiri en propia puerta y Brian Brobbey, ambos ocurridos en los primeros minutos del encuentro. Con esta ventaja, es probable que Países Bajos intente mantener el control del juego y administrar su ventaja, mientras que Túnez necesitará intentar cambiar el curso del partido con algún ajuste táctico o un gol que les permita acercarse en el marcador.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021473"
       }
     },
     {
       "slug": "japon-vs-suecia",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": 51,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021471",
+      "confidence": 0.97,
       "detail": {
         "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "cards": [
+          {
+            "minute": 32,
+            "team": "away",
+            "player": "Isak HIEN",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 37,
+            "team": "away",
+            "playerOut": "Isak HIEN",
+            "playerIn": "Lucas BERGVALL"
+          },
+          {
+            "minute": 39,
+            "team": "home",
+            "playerOut": "Kou ITAKURA",
+            "playerIn": "Shogo TANIGUCHI"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Zion Suzuki",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Yukinari Sugawara",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Kou ITAKURA",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Ayumu SEKO",
+              "number": 20,
+              "position": "DEF"
+            },
+            {
+              "name": "Hiroki ITO",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Ao TANAKA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Ritsu DOAN",
+              "number": 10,
+              "position": "MID"
+            },
+            {
+              "name": "Daizen MAEDA",
+              "number": 11,
+              "position": "MID"
+            },
+            {
+              "name": "Keito Nakamura",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Daichi KAMADA",
+              "number": 15,
+              "position": "MID"
+            },
+            {
+              "name": "Ayase UEDA",
+              "number": 18,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Jacob WIDELL ZETTERSTROM",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Gustaf LAGERBIELKE",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Victor LINDELOF",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Isak HIEN",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Gabriel GUDMUNDSSON",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Alexander BERNHARDSSON",
+              "number": 21,
+              "position": "DEF"
+            },
+            {
+              "name": "Elliot STROUD",
+              "number": 24,
+              "position": "DEF"
+            },
+            {
+              "name": "Yasin AYARI",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Alexander Isak",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Anthony ELANGA",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Viktor GYOKERES",
+              "number": 17,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con una forma reciente irregular, aunque Japón cuenta con la ventaja de tener a Takefusa Kubo, un jugador clave que puede hacer la diferencia con su habilidad y velocidad, mientras que Suecia confía en la capacidad goleadora de Alexander Isak para generar oportunidades de ataque. En este partido, Japón tiene una ligera ventaja debido a su mejor posición en el ranking FIFA y su experiencia en competiciones internacionales, lo que puede permitirle dominar el ritmo del juego y aprovechar los errores defensivos de Suecia.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 5,
+            "away": 3
+          },
+          "corners": {
+            "home": 1,
+            "away": 5
+          },
+          "fouls": {
+            "home": 11,
+            "away": 6
+          },
+          "offsides": {
+            "home": 2,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Japón y Suecia se encuentra empatado a cero goles, con ambos equipos mostrando un juego intenso y defensivo, aunque Suecia ha tenido algunas oportunidades claras de anotar, destacando la tarjeta amarilla recibida por Isak Hien en el minuto 32. A medida que el partido avanza, es probable que Japón intente aumentar su presión ofensiva para tratar de anotar el primer gol, lo que podría obligar a Suecia a reajustar su estrategia defensiva y crear oportunidades de contraataque.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021471"
       }
     },
