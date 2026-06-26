@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/metodologia",
     "/privacidad",
     "/contacto",
+    "/sobre-nosotros",
+    "/eliminatorias",
   ].map((path) => ({
     url: `${base}${path}`,
     lastModified: now,

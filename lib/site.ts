@@ -18,9 +18,10 @@ export const siteConfig = {
 export const mainNav = [
   { href: "/", label: "Inicio" },
   { href: "/partidos", label: "Partidos" },
-  { href: "/tabla", label: "Tablas" },
+  { href: "/tabla", label: "Tabla" },
   { href: "/predicciones", label: "Predicciones" },
   { href: "/selecciones", label: "Selecciones" },
+  { href: "/eliminatorias", label: "Eliminatorias" },
   { href: "/tendencias", label: "Tendencias" },
   { href: "/calculadora", label: "Calculadora" },
 ] as const;
@@ -39,6 +40,7 @@ export const footerNav = [
     title: "Herramientas",
     links: [
       { href: "/calculadora", label: "Calculadora de clasificación" },
+      { href: "/eliminatorias", label: "Eliminatorias" },
       { href: "/tendencias", label: "Tendencias del Mundial" },
       { href: "/metodologia", label: "Metodología" },
     ],
