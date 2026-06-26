@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T08:22:47.091Z",
+  "generatedAt": "2026-06-26T20:05:33.021Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -14886,35 +14886,375 @@
     },
     {
       "slug": "senegal-vs-irak",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 50,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021493",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
+        "goals": [
+          {
+            "minute": 4,
+            "team": "home",
+            "scorer": "Habib DIARRA",
+            "assist": "Abdoulaye SECK.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "away",
+            "player": "Rebin Sulaka",
+            "type": "red"
+          },
+          {
+            "minute": 18,
+            "team": "home",
+            "player": "Abdoulaye SECK",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 16,
+            "team": "away",
+            "playerOut": "AHMED QASEM",
+            "playerIn": "MUNAF YOUNUS"
+          }
+        ],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Mory DIAW",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Abdoulaye Seck",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Ismail JAKOBS",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Krepin DIATTA",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Moussa Niakhate",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Idrissa Gana GUEYE",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Lamine CAMARA",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Habib DIARRA",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Sadio MANE",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Ismaila SARR",
+              "number": 18,
+              "position": "FWD"
+            },
+            {
+              "name": "Ibrahim MBAYE",
+              "number": 20,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "AHMED BASIL",
+              "number": 22,
+              "position": "GK"
+            },
+            {
+              "name": "REBIN SULAKA",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "AKAM HASHIM",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "MERCHAS DOSKI",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "FRANS PUTROS",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "IBRAHIM BAYESH",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "ZIDANE IQBAL",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "AMIR ALAMMARI",
+              "number": 16,
+              "position": "MID"
+            },
+            {
+              "name": "ALI ALHAMADI",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "AHMED QASEM",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "ALI JASIM",
+              "number": 17,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes niveles de confianza, ya que Senegal se encuentra en una buena forma reciente y cuenta con el talento de Sadio Mané, mientras que Iraq busca sorprender con la habilidad de Ayman Hussein, aunque su posición en el ranking de la FIFA sugiere una ventaja para el equipo africano. En este partido, Senegal parece tener la ventaja debido a su mejor posición en el ranking y su experiencia en competiciones internacionales, lo que podría darles una mayor solidez y cohesión en el campo, lo que les permitiría dominar el ritmo del juego.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 11,
+            "away": 4
+          },
+          "corners": {
+            "home": 6,
+            "away": 3
+          },
+          "fouls": {
+            "home": 4,
+            "away": 4
+          },
+          "offsides": {
+            "home": 1,
+            "away": 0
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, Senegal domina el partido con un marcador de 1-0 gracias al gol tempranero de Habib Diarra en el minuto 4, y la expulsión de Rebin Sulaka en el minuto 13 ha dejado a Iraq con un jugador menos en el campo. Con la ventaja numérica, Senegal puede intentar presionar más en busca de ampliar su ventaja, mientras que Iraq deberá reorganizarse y buscar oportunidades de contragolpe para empatar el partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021493"
       }
     },
     {
       "slug": "noruega-vs-francia",
-      "status": "upcoming",
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 3,
+      "minute": 50,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021489",
+      "confidence": 0.97,
       "detail": {
-        "goals": [],
-        "cards": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "away",
+            "scorer": "Ousmane DEMBELE",
+            "assist": "Kylian MBAPPE.",
+            "type": "goal"
+          },
+          {
+            "minute": 20,
+            "team": "away",
+            "scorer": "Ousmane DEMBELE",
+            "assist": "Kylian MBAPPE.",
+            "type": "goal"
+          },
+          {
+            "minute": 21,
+            "team": "home",
+            "scorer": "Thelo AASGAARD",
+            "assist": "Andreas SCHJELDERUP.",
+            "type": "goal"
+          },
+          {
+            "minute": 32,
+            "team": "away",
+            "scorer": "Ousmane DEMBELE",
+            "assist": "Aurelien TCHOUAMENI.",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 10,
+            "team": "home",
+            "player": "Patrick BERG",
+            "type": "yellow"
+          }
+        ],
         "substitutions": [],
         "lineup": {
-          "home": [],
-          "away": []
+          "home": [
+            {
+              "name": "Egil SELVIK",
+              "number": 13,
+              "position": "GK"
+            },
+            {
+              "name": "Leo OSTIGARD",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Fredrik Andre BJORKAN",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Henrik FALCHENER",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Patrick BERG",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Fredrik AURSNES",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Kristian Thorstvedt",
+              "number": 18,
+              "position": "MID"
+            },
+            {
+              "name": "Thelo AASGAARD",
+              "number": 19,
+              "position": "MID"
+            },
+            {
+              "name": "Andreas SCHJELDERUP",
+              "number": 21,
+              "position": "MID"
+            },
+            {
+              "name": "Oscar BOBB",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Jorgen STRAND LARSEN",
+              "number": 11,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Mike MAIGNAN",
+              "number": 16,
+              "position": "GK"
+            },
+            {
+              "name": "Dayot UPAMECANO",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Jules KOUNDE",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Theo HERNANDEZ",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Maxence Lacroix",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Manu KONE",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Aurelien TCHOUAMENI",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Ousmane DEMBELE",
+              "number": 7,
+              "position": "FWD"
+            },
+            {
+              "name": "Kylian MBAPPE",
+              "number": 10,
+              "position": "FWD"
+            },
+            {
+              "name": "Michael OLISE",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Desire DOUE",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
         },
-        "stats": {},
-        "aiNotes": "Noruega llega al partido con una forma reciente irregular, pero cuenta con la gran amenaza goleadora de Erling Haaland, mientras que Francia se presenta con una solidez defensiva y una velocidad letal en el ataque gracias a la presencia de Kylian Mbappé. Francia tiene ventaja en este partido debido a su mayor experiencia y profundidad en el banquillo, lo que les permitirá controlar el ritmo del juego y aprovechar los errores del equipo noruego.",
-        "confidence": 0.8,
+        "stats": {
+          "shots": {
+            "home": 4,
+            "away": 14
+          },
+          "corners": {
+            "home": 1,
+            "away": 3
+          },
+          "fouls": {
+            "home": 4,
+            "away": 6
+          },
+          "offsides": {
+            "home": 0,
+            "away": 1
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        "aiNotes": "En este momento, el partido entre Noruega y Francia se inclina claramente a favor de los franceses, quienes llevan una ventaja de 3-1 gracias a los tres goles de Ousmane Dembélé, mientras que Thelo Aasgaard logró descontar para Noruega. Con esta ventaja, es probable que Francia continúe dominando el juego y busque ampliar su ventaja, mientras que Noruega deberá intentar reorganizarse y encontrar una forma de contener el ataque francés para intentar remontar el partido.",
+        "confidence": 0.97,
         "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021489"
       }
     },
