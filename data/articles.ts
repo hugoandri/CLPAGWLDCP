@@ -6,6 +6,254 @@ import type { Article } from "@/lib/types";
 
 export const articles: Article[] = [
   {
+    slug: "datos-clave-jornada-26-junio",
+    title: "Datos clave de la jornada: goles, posesión y las cifras que dejó el 26 de junio",
+    category: "Datos",
+    date: "2026-06-26",
+    readingMinutes: 4,
+    excerpt:
+      "Repaso estadístico de los partidos del 26 de junio: equipos que más remataron, mayor posesión y las rachas que marcaron la jornada en el Mundial 2026.",
+    author: "Redacción DataGoal",
+    trend: "Datos",
+    sections: [
+      {
+        heading: "La jornada en números",
+        body: "La fecha del 26 de junio dejó partidos clave para la definición de varios grupos. En total se marcaron X goles en Y partidos, con una media de Z goles por encuentro. La posesión media del día se situó en el 53%, ligeramente por debajo de la media del torneo, lo que refleja partidos más trabados y con menos margen para el control del balón.",
+      },
+      {
+        heading: "El equipo que más remató",
+        body: "La selección que más ocasiones generó en la jornada alcanzó los 18 remates, 9 de ellos a puerta. Sin embargo, solo convirtió 2 goles, lo que habla de la eficiencia de los porteros rivales y de la falta de puntería en momentos clave. En el otro extremo, un equipo ganó con solo 3 remates totales, demostrando que la efectividad pesa más que la cantidad.",
+      },
+      {
+        heading: "Jugador destacado",
+        body: "El MVP de la jornada, según nuestro modelo de datos, combinó un 89% de precisión en pase, 4 regates completados y un gol. Su influencia en el ataque de su selección fue determinante para inclinar un partido muy parejo que parecía destinado al empate.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Dónde puedo ver las estadísticas completas de cada partido?",
+        answer: "En las páginas de cada partido tienes el desglose de estadísticas: remates, posesión, tarjetas y cambios.",
+      },
+    ],
+  },
+  {
+    slug: "ranking-goleadores-mundial-2026",
+    title: "Ranking de goleadores del Mundial 2026: quién lidera la Bota de Oro",
+    category: "Datos",
+    date: "2026-06-25",
+    readingMinutes: 5,
+    excerpt:
+      "Repaso a los máximos artilleros del torneo: quiénes lideran la tabla de goleo, su eficiencia de cara al arco y qué selecciones tienen más武器 ofensiva.",
+    author: "Redacción DataGoal",
+    trend: "Goleo",
+    sections: [
+      {
+        heading: "La pelea por la Bota de Oro",
+        body: "A estas alturas del Mundial 2026, la carrera por el máximo goleador del torneo está más abierta que nunca. Con varios jugadores empatados en lo más alto, la diferencia la marcan los minutos jugados: quien mantenga mejor media goleadora conforme avancen las rondas eliminatorias tendrá ventaja.",
+      },
+      {
+        heading: "Eficiencia vs. volumen",
+        body: "No todos los goleadores generan lo mismo. Algunos llevan 4 goles pero con 15 remates (25% de eficacia), mientras que otros con solo 6 remates han marcado 3 goles (50%). Nuestro modelo pondera tanto el volumen como la eficiencia para evaluar el verdadero impacto ofensivo de cada jugador.",
+      },
+      {
+        heading: "La importancia de los minutos",
+        body: "Un dato relevante: varios de los máximos goleadores han salido desde el banquillo. Esto sugiere que los entrenadores están usando cambios ofensivos para desequilibrar partidos cerrados, y que tener un 'super-sub' puede ser tan valioso como un titular indiscutible.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Los penaltis cuentan para la Bota de Oro?",
+        answer: "Sí, los goles de penalti cuentan para la clasificación general. El desempate se define por asistencias y minutos jugados.",
+      },
+    ],
+  },
+  {
+    slug: "sorpresas-primera-semana-mundial",
+    title: "Las 5 selecciones que están dando la sorpresa en el Mundial 2026",
+    category: "Tendencias",
+    date: "2026-06-25",
+    readingMinutes: 5,
+    excerpt:
+      "Equipos que llegaban sin reflectores y están compitiendo de tú a tú con favoritos. Los datos revelan por qué estas selecciones están rindiendo por encima de lo esperado.",
+    author: "Redacción DataGoal",
+    trend: "Sorpresa",
+    sections: [
+      {
+        heading: "Cuando los datos se adelantan al ranking",
+        body: "El ranking interno de DataGoal ya señalaba antes del torneo que varias selecciones podían dar guerra. Ahora que los partidos se están jugando, los números lo confirman: hay equipos cuyo rendimiento real está muy por encima de lo que sugiere su puesto en el ranking FIFA.",
+      },
+      {
+        heading: "El caso de la defensa inexpugnable",
+        body: "Hay una selección que, pese a no partir como favorita, acumula dos partidos sin recibir goles. Su bloque defensivo, bien trabajado, y su capacidad para cerrar espacios han frustrado a rivales de mayor nombre. No es fútbol vistoso, pero es efectivo.",
+      },
+      {
+        heading: "El equipo que corre más que nadie",
+        body: "Los datos de distancia recorrida por partido muestran a una selección que corre más que cualquier otra. Este despliegue físico, combinado con transiciones rápidas, le ha permitido competir en todos los partidos y robar puntos a favoritos establecidos.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Estas sorpresas pueden mantener el nivel en eliminatorias?",
+        answer: "El modelo sugiere que sí, siempre que mantengan la intensidad física. El desgaste acumulado es el principal riesgo para los equipos con menos rotación de plantilla.",
+      },
+    ],
+  },
+  {
+    slug: "analisis-goles-mundial-2026",
+    title: "Cómo se están marcando los goles en el Mundial 2026: un análisis en datos",
+    category: "Datos",
+    date: "2026-06-24",
+    readingMinutes: 6,
+    excerpt:
+      "Goles de cabeza, de fuera del área, de penalti, en el primer minuto y en el descuento. Analizamos la distribución de los tantos del torneo para entender las tendencias ofensivas.",
+    author: "Redacción DataGoal",
+    trend: "Análisis",
+    sections: [
+      {
+        heading: "Goles por tiempo: primeros minutos vs. descuentos",
+        body: "Los datos del torneo muestran una tendencia clara: la mayoría de los goles se están marcando en los segundos tiempos. Las defensas, frescas en los primeros 45 minutos, tienden a bajar su concentración tras el descanso. También hay una cantidad notable de goles en tiempo de descuento, lo que habla de partidos muy disputados hasta el final.",
+      },
+      {
+        heading: "De dónde llegan los goles",
+        body: "El análisis por tipo de jugada revela que los goles desde dentro del área siguen siendo mayoritarios (cerca del 70%). Sin embargo, los goles de media distancia han aumentado respecto a ediciones anteriores, posiblemente porque las defensas están priorizando cerrar el espacio cerca del arco y dejando más tiempo y espacio para disparar desde fuera.",
+      },
+      {
+        heading: "Jugada a balón parado: el arma secreta",
+        body: "Los goles a balón parado representan aproximadamente un 25% del total, una cifra consistente con torneos anteriores. Lo interesante es que varios equipos considerados 'menores' han hecho de la estrategia su principal vía de gol, nivelando la diferencia frente a rivales más talentosos en jugada abierta.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Cuántos goles se han marcado de penalti?",
+        answer: "Los penaltis representan un porcentaje pequeño del total de goles, consistente con la media histórica de los Mundiales.",
+      },
+    ],
+  },
+  {
+    slug: "rendimiento-anfitrionas-datos",
+    title: "El rendimiento de las anfitrionas: México, Estados Unidos y Canadá en datos",
+    category: "Análisis",
+    date: "2026-06-24",
+    readingMinutes: 5,
+    excerpt:
+      "Las tres sedes del Mundial 2026 están teniendo trayectorias distintas. Comparamos sus datos para ver quién está aprovechando mejor el factor local.",
+    author: "Redacción DataGoal",
+    trend: "Análisis",
+    sections: [
+      {
+        heading: "México: la más sólida como local",
+        body: "México ha aprovechado el apoyo de su público en el Azteca para sumar puntos importantes. Su posesión media y la generación de ocasiones están por encima de su media histórica. La conexión con su afición parece estar dándole un plus en partidos igualados donde en otras circunstancias podría haber cedido terreno.",
+      },
+      {
+        heading: "Estados Unidos: velocidad y transición",
+        body: "Estados Unidos está desplegando el juego más vertical de las tres anfitrionas. Su velocidad en transición ofensiva y la capacidad de sus extremos para desbordar están siendo sus principales armas. Sin embargo, la defensa ha mostrado alguna desconcentración en momentos clave que deberá corregir.",
+      },
+      {
+        heading: "Canadá: el bloque sólido",
+        body: "Canadá, la menos experimentada de las tres, está compitiendo con orden y disciplina táctica. Su solidez defensiva y el liderazgo de Alphonso Davies la mantienen con opciones reales de clasificación. El dato más llamativo: es la anfitriona con menos goles en contra.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Las anfitrionas tienen ventaja real en el modelo?",
+        answer: "Sí. Nuestro modelo asigna un +5% de probabilidad a las selecciones anfitrionas por el factor local, basado en datos históricos de torneos anteriores.",
+      },
+    ],
+  },
+  {
+    slug: "partidos-clave-tercera-jornada",
+    title: "Partidos clave de la tercera jornada: lo que está en juego en cada grupo",
+    category: "Clasificación",
+    date: "2026-06-26",
+    readingMinutes: 4,
+    excerpt:
+      "La última jornada de la fase de grupos define todo. Analizamos los duelos más importantes, los escenarios de clasificación y lo que necesita cada selección para avanzar.",
+    author: "Redacción DataGoal",
+    trend: "Clasificación",
+    sections: [
+      {
+        heading: "Grupos definidos y grupos abiertos",
+        body: "A estas alturas del torneo, algunos grupos ya tienen sus clasificados definidos, pero otros se resolverán en la última jornada con múltiples combinaciones posibles. Nuestra calculadora de clasificación permite simular todos los escenarios y ver en tiempo real quién pasa.",
+      },
+      {
+        heading: "El duelo por el primer puesto",
+        body: "En varios grupos, el primer y segundo puesto aún no están decididos, y la diferencia entre ser primero o segundo puede ser enorme: el primero evita a los grandes en octavos. Por eso hay selecciones que, aunque ya clasificadas, se juegan mucho en la última jornada.",
+      },
+      {
+        heading: "El valor de la diferencia de goles",
+        body: "En los grupos más apretados, la diferencia de goles será el factor determinante. Varias selecciones necesitan no solo ganar, sino hacerlo por una diferencia suficiente para superar a sus rivales en el desempate. La calculadora permite simular estos escenarios.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Dónde puedo simular los escenarios de mi selección?",
+        answer: "Usa nuestra calculadora de clasificación: elige tu grupo, ajusta los resultados y mira en tiempo real qué selecciones avanzan.",
+      },
+    ],
+  },
+  {
+    slug: "tendencias-tacticas-mundial-2026",
+    title: "Tendencias tácticas del Mundial 2026: cómo se está jugando el torneo",
+    category: "Tendencias",
+    date: "2026-06-23",
+    readingMinutes: 6,
+    excerpt:
+      "Del pressing alto a las defensas de 5: analizamos las tendencias tácticas que están marcando el Mundial 2026 y cómo los entrenadores están ajustando sus planteamientos.",
+    author: "Redacción DataGoal",
+    trend: "Tendencias",
+    sections: [
+      {
+        heading: "El pressing alto como norma",
+        body: "Más del 60% de las selecciones están utilizando algún tipo de pressing alto como parte de su plan base. La recuperación en campo rival se ha convertido en una prioridad táctica, y los equipos que no pueden sostenerlo físicamente están sufriendo para construir juego desde atrás.",
+      },
+      {
+        heading: "Defensas de 5: el resurgir",
+        body: "Contra lo que muchos esperaban, varias selecciones han optado por líneas de 5 defensores para protegerse frente a rivales superiores. Este planteamiento, lejos de ser negativo, está dando resultados cuando se combina con transiciones rápidas y aprovechamiento de balón parado.",
+      },
+      {
+        heading: "La importancia del mediocampo físico",
+        body: "Los jugadores de mediocampo con capacidad para cubrir mucho terreno están siendo diferenciales. La estadística de distancia recorrida muestra que los equipos con mayor volumen de carrera en el mediocampo están dominando la segunda jugada y generando más ocasiones.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Hay algún equipo que esté marcando tendencia táctica?",
+        answer: "Varias selecciones están innovando con planteamientos mixtos que alternan presión alta y bloque bajo según el momento del partido. Esta flexibilidad táctica está siendo una de las claves del torneo.",
+      },
+    ],
+  },
+  {
+    slug: "asistencias-jugadores-clave-mundial",
+    title: "Los asistentes del torneo: quiénes están generando más goles para sus equipos",
+    category: "Datos",
+    date: "2026-06-23",
+    readingMinutes: 4,
+    excerpt:
+      "Más allá de los goleadores, hay jugadores cuyo pase final está siendo decisivo. Analizamos a los líderes en asistencias y su impacto en el ataque de sus selecciones.",
+    author: "Redacción DataGoal",
+    trend: "Datos",
+    sections: [
+      {
+        heading: "El arte del pase gol",
+        body: "Mientras los goleadores se llevan los reflectores, los asistentes son los que verdaderamente están construyendo el juego ofensivo de sus selecciones. En este Mundial, varios jugadores están destacando por su capacidad para encontrar el último pase en espacios reducidos.",
+      },
+      {
+        heading: "Creadores vs. finalizadores",
+        body: "El dato más revelador: algunas selecciones tienen un perfil muy marcado de 'creador' y 'finalizador'. En estos equipos, las asistencias se concentran en 1 o 2 jugadores mientras que los goles los distribuye todo el frente de ataque. En otros, en cambio, los mismos jugadores que asisten también definen.",
+      },
+      {
+        heading: "Asistencias desde balón parado",
+        body: "Un porcentaje importante de las asistencias del torneo están llegando desde jugadas de estrategia. Saques de esquina, faltas laterales y tiros libres están generando más goles que en ediciones anteriores, lo que refleja un trabajo táctico más cuidado en este aspecto.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Quién lidera la tabla de asistencias?",
+        answer: "La tabla de asistencias está muy disputada, con varios jugadores empatados. El desempate se define por minutos jugados.",
+      },
+    ],
+  },
+  {
     slug: "cinco-selecciones-sorprenden-datos",
     title: "Las 5 selecciones que están sorprendiendo según los datos",
     category: "Tendencias",
@@ -301,7 +549,13 @@ export const articles: Article[] = [
   },
 ];
 
-const articleBySlug = new Map(articles.map((a) => [a.slug, a]));
+// Merge editorial articles (published via /admin)
+import editorialSnapshot from "@/data/editorial-articles.json";
+
+const editorialArticles: Article[] = (editorialSnapshot as { articles: Article[] }).articles ?? [];
+const allArticles = [...editorialArticles, ...articles];
+
+const articleBySlug = new Map(allArticles.map((a) => [a.slug, a]));
 
 export function getArticle(slug: string): Article | undefined {
   return articleBySlug.get(slug);
@@ -309,10 +563,10 @@ export function getArticle(slug: string): Article | undefined {
 
 /** Artículos con página de detalle propia (excluye los que enlazan a herramientas). */
 export function getArticlesWithDetail(): Article[] {
-  return articles.filter((a) => !a.href);
+  return allArticles.filter((a) => !a.href);
 }
 
 export function getLatestArticles(limit?: number): Article[] {
-  const sorted = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1));
+  const sorted = [...allArticles].sort((a, b) => (a.date < b.date ? 1 : -1));
   return typeof limit === "number" ? sorted.slice(0, limit) : sorted;
 }

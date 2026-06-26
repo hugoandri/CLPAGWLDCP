@@ -1,0 +1,117 @@
+import { NextResponse } from "next/server";
+import { promises as fs } from "node:fs";
+import { join } from "node:path";
+
+interface Section { heading: string; body: string }
+interface Faq { question: string; answer: string }
+
+interface ArticleInput {
+  title: string;
+  category: string;
+  date: string;
+  excerpt: string;
+  sections: Section[];
+  faqs: Faq[];
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
+export async function POST(request: Request) {
+  const auth = request.headers.get("Authorization");
+  const adminPassword = process.env.ADMIN_PASSWORD;
+
+  if (adminPassword && auth !== adminPassword) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  let body: ArticleInput;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+  }
+
+  if (!body.title || !body.excerpt || body.sections.length === 0) {
+    return NextResponse.json({ error: "Title, excerpt and at least one section required" }, { status: 400 });
+  }
+
+  const article = {
+    slug: slugify(body.title),
+    title: body.title,
+    category: body.category,
+    date: body.date,
+    readingMinutes: Math.max(1, Math.ceil(
+      body.sections.filter((s) => s.body).reduce((a, s) => a + s.body.split(" ").length, 0) / 200
+    )),
+    excerpt: body.excerpt,
+    author: "Redacción DataGoal",
+    trend: body.category,
+    sections: body.sections.filter((s) => s.heading && s.body),
+    faqs: body.faqs.filter((f) => f.question && f.answer),
+  };
+
+  // Guardar en data/editorial-articles.json
+  try {
+    const filePath = join(process.cwd(), "data", "editorial-articles.json");
+    const existing = JSON.parse(await fs.readFile(filePath, "utf-8"));
+    existing.articles.push(article);
+    await fs.writeFile(filePath, JSON.stringify(existing, null, 2), "utf-8");
+  } catch (err) {
+    console.error("Failed to write editorial file:", err);
+    return NextResponse.json({
+      error: "No se pudo guardar en el archivo. Copia el código manualmente.",
+      article,
+    });
+  }
+
+  // Intentar commit via GitHub API (falla silenciosamente si no hay token)
+  const githubToken = process.env.GITHUB_TOKEN_ADMIN;
+  if (githubToken) {
+    try {
+      const owner = process.env.GITHUB_OWNER || "hugoandri";
+      const repo = process.env.GITHUB_REPO || "CLPAGWLDCP";
+      const filePath = "data/editorial-articles.json";
+
+      // Obtener el archivo actual del repo para obtener el sha
+      const getRes = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
+        { headers: { Authorization: `Bearer ${githubToken}` } }
+      );
+      const existingFile = await getRes.json();
+      const sha = existingFile.sha;
+
+      // Leer el archivo local actualizado
+      const localPath = join(process.cwd(), "data", "editorial-articles.json");
+      const content = await fs.readFile(localPath, "base64");
+
+      // Hacer commit
+      await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${githubToken}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: `feat: add editorial article "${article.title}"`,
+          content,
+          sha,
+        }),
+      });
+    } catch (err) {
+      console.error("GitHub commit failed (non-fatal):", err);
+    }
+  }
+
+  return NextResponse.json({
+    ok: true,
+    article,
+    message: "Artículo guardado. Se desplegará automáticamente en la próxima build.",
+  });
+}
