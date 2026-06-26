@@ -34,8 +34,9 @@ interface TendenciasClientProps {
   columns?: OpinionColumn[];
 }
 
+// ColumnCard is preserved for future editorial content but not currently active
+
 const TAB_OPTIONS: FilterOption[] = [
-  { value: "columna", label: "Columna diaria" },
   { value: "articulos", label: "Artículos" },
   { value: "tabla", label: "Tabla general" },
   { value: "eliminatorias", label: "Eliminatorias" },
@@ -107,7 +108,7 @@ function ColumnCard({ col }: { col: OpinionColumn }) {
   );
 }
 
-export default function TendenciasClient({ defaultTab = "columna", columns = [] }: TendenciasClientProps) {
+export default function TendenciasClient({ defaultTab = "articulos", columns = [] }: TendenciasClientProps) {
   const [tab, setTab] = useState(defaultTab);
   const [category, setCategory] = useState("all");
 
@@ -132,17 +133,6 @@ export default function TendenciasClient({ defaultTab = "columna", columns = [] 
         onChange={(v) => { setTab(v); setCategory("all"); }}
         aria-label="Sección de tendencias"
       />
-
-      {tab === "columna" && (
-        <div className="space-y-6">
-          {columns.length === 0 ? (
-            <p className="text-sm text-slate-400">La primera columna se publica a la 1 AM hora Chile.</p>
-          ) : (
-            columns.map(col => <ColumnCard key={col.date} col={col} />)
-          )}
-          <AdSlot slotName="tendencias-columna-banner" format="leaderboard" />
-        </div>
-      )}
 
       {tab === "articulos" && (
         <>

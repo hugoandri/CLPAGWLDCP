@@ -111,12 +111,13 @@ export default function RootLayout({
   return (
     <html lang="es" className={`dark ${brand.variable} ${display.variable} ${body.variable}`}>
       <head>
-        {/* Google AdSense — debe estar en <head> para que el bot de verificación lo encuentre */}
+        {/* Aplica el tema guardado antes de pintar para evitar parpadeo. */}
         <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseClientId}`}
-          crossOrigin="anonymous"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&m)){document.documentElement.classList.add('dark');}}catch(e){}})();`,
+          }}
         />
+        {/* AdSense desactivado mientras se revisa el contenido editorialmente */}
       </head>
       <body className="min-h-screen font-sans">
         <SeoJsonLd data={[websiteJsonLd, organizationJsonLd]} />

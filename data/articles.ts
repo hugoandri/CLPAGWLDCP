@@ -183,7 +183,7 @@ export const articles: Article[] = [
     title: "La selección con el camino más difícil del Mundial 2026",
     category: "Análisis",
     date: "2026-06-12",
-    readingMinutes: 5,
+    readingMinutes: 6,
     excerpt:
       "No todos los grupos pesan igual. Analizamos qué selección afronta el recorrido más complicado según el índice de dificultad del modelo.",
     author: "Redacción DataGoal",
@@ -191,15 +191,19 @@ export const articles: Article[] = [
     sections: [
       {
         heading: "Qué es el índice de dificultad",
-        body: "Para cada selección calculamos la fuerza media de sus rivales de grupo a partir del ranking interno. Cuanto más alta es esa media, más difícil es el camino inicial.",
+        body: "Para cada selección calculamos la fuerza media de sus rivales de grupo a partir del ranking interno. Cuanto más alta es esa media, más difícil es el camino inicial. No es lo mismo enfrentarse a tres rivales de top 20 mundial que compartir grupo con selecciones de ranking más bajo: la probabilidad de avanzar cambia de forma significativa incluso si el nivel propio es el mismo.",
       },
       {
         heading: "El 'grupo de la muerte'",
-        body: "El Grupo C reúne a Brasil, Marruecos, Escocia y Haití, con un favorito histórico y dos rivales capaces de disputar la clasificación. Pasar de ahí tiene un mérito estadístico superior al de otros grupos más asequibles.",
+        body: "El Grupo C reúne a Brasil, Marruecos, Escocia y Haití, con un favorito histórico y dos rivales capaces de disputar la clasificación. Pasar de ahí tiene un mérito estadístico superior al de otros grupos más asequibles. El modelo refleja esta asimetría: Brasil sigue siendo favorita, pero su probabilidad de avanzar es menor que la de otras selecciones de su mismo nivel que enfrentan grupos más accesibles.",
       },
       {
         heading: "Favoritos con examen exigente",
-        body: "Entre los grandes, quienes comparten grupo con rivales de ranking alto ven reducida su probabilidad de avanzar pese a su calidad. El modelo lo refleja: mismo nivel, distinto contexto, distinta probabilidad.",
+        body: "Entre los grandes, quienes comparten grupo con rivales de ranking alto ven reducida su probabilidad de avanzar pese a su calidad. El modelo lo refleja: mismo nivel, distinto contexto, distinta probabilidad. Es el caso de Francia en el Grupo I con Senegal y Noruega, o de Argentina en el Grupo J con Austria. Ambas son favoritas al título, pero su camino de grupo es más exigente que el de otros cabezas de serie.",
+      },
+      {
+        heading: "Las tapadas con grupo accesible",
+        body: "En el otro extremo, selecciones que parten con menos nombre pueden ver aumentadas sus opciones si el grupo es asequible. El modelo premia a quienes, sin ser favoritas, tienen un calendario que les permite soñar con la clasificación. La diferencia entre un grupo equilibrado y uno desnivelado puede ser de hasta 20 puntos porcentuales en la probabilidad de avanzar.",
       },
     ],
     faqs: [
@@ -212,6 +216,49 @@ export const articles: Article[] = [
         question: "¿Dónde puedo ver la dificultad de cada selección?",
         answer:
           "En la página de Predicciones mostramos el desglose de variables, incluida la dificultad del grupo, para cada selección.",
+      },
+    ],
+  },
+  {
+    slug: "introduccion-analisis-estadistico-futbol",
+    title: "Introducción al análisis estadístico en el fútbol: métricas clave para entender el juego",
+    category: "Análisis",
+    date: "2026-06-10",
+    readingMinutes: 6,
+    excerpt:
+      "Del xG a la presión tras pérdida: guía básica de las métricas que usamos en DataGoal Lab para analizar el rendimiento futbolístico sin depender del marcador.",
+    author: "Redacción DataGoal",
+    trend: "Análisis",
+    sections: [
+      {
+        heading: "Más allá del marcador",
+        body: "El fútbol ha cambiado: donde antes solo importaban los goles, hoy existen decenas de métricas que permiten evaluar el rendimiento de un equipo con más profundidad. En DataGoal Lab creemos que entender estos números ayuda a ver el juego de forma más completa, tanto para seguir a tu selección como para disfrutar de un partido cualquiera.",
+      },
+      {
+        heading: "Los goles esperados (xG)",
+        body: "El xG mide la calidad de las ocasiones de gol. No todas las oportunidades son iguales: un remate desde el punto de penalti tiene más probabilidad de acabar en gol que un disparo lejano. El xG asigna un valor entre 0 y 1 a cada remate según su posición, el tipo de pase recibido y la presión del defensor. Si un equipo acumula 2.5 xG pero solo marca un gol, puede tener un problema de puntería o simplemente mala suerte. Al revés, ganar 1-0 con 0.4 xG en contra sugiere que el resultado no refleja lo que ocurrió en el campo.",
+      },
+      {
+        "heading": "Posesión y presión: dos caras de la misma moneda",
+        "body": "La posesión sola no gana partidos, pero combinada con una presión efectiva tras pérdida sí es un indicador potente. Los equipos que recuperan rápido el balón en campo rival generan más ocasiones y conceden menos contraataques. Por eso nuestro modelo incluye tanto la posesión como la intensidad de presión como variables separadas: una posesión estéril en campo propio no vale lo mismo que una posesión avanzada y agresiva.",
+      },
+      {
+        "heading": "El contexto del rival y el grupo",
+        "body": "Una de las claves del análisis estadístico que no siempre se menciona es el contexto. Enfrentarse a un equipo defensivo no es lo mismo que enfrentarse a uno abierto. Por eso en DataGoal no evaluamos a las selecciones solo por sus números absolutos: también miramos la dificultad del grupo y la calidad de los rivales. Una defensa sólida contra Francia no vale lo mismo que una defensa sólida ante un equipo de menor ranking, y nuestro modelo lo refleja.",
+      },
+      {
+        "heading": "Lo que los números no cuentan",
+        "body": "Ninguna métrica captura la lesión de un jugador clave en el calentamiento, el error arbitral que cambia un partido o la motivación extra de una selección anfitriona. Por eso en DataGoal insistimos en que las probabilidades son estimaciones, no predicciones. El valor del análisis estadístico está en generar contexto, no en reemplazar la emoción del fútbol.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Qué métrica es la más fiable para predecir resultados?",
+        answer: "Ninguna métrica aislada es fiable al 100%. La combinación de varias variables (forma reciente, goles esperados, contexto del rival) ofrece una imagen más completa que cualquier número por separado.",
+      },
+      {
+        question: "¿El xG predice quién ganará un partido?",
+        answer: "El xG correlaciona bien con los resultados a largo plazo, pero en un solo partido el margen de azar es demasiado alto. Por eso nuestros análisis siempre hablan de tendencias y probabilidades, no de certezas.",
       },
     ],
   },

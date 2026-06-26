@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import PageHeader from "@/components/PageHeader";
-import AdSlot from "@/components/AdSlot";
 import TendenciasClient from "./TendenciasClient";
-import type { OpinionColumn } from "./TendenciasClient";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import { getArticlesWithDetail } from "@/data/articles";
 import { collectionPageJsonLd, itemListJsonLd } from "@/lib/seo";
-
-function readOpinionColumns(): OpinionColumn[] {
-  try {
-    const raw = readFileSync(join(process.cwd(), "data/opinion-columns.json"), "utf8");
-    return JSON.parse(raw).columns ?? [];
-  } catch { return []; }
-}
 
 export const metadata: Metadata = {
   title: "Tendencias del Mundial 2026: análisis y datos virales",
@@ -29,7 +18,6 @@ export default function TendenciasPage({
   searchParams: { tab?: string };
 }) {
   const articles = getArticlesWithDetail();
-  const columns = readOpinionColumns();
 
   const jsonLd = [
     collectionPageJsonLd({
@@ -55,14 +43,7 @@ export default function TendenciasPage({
         description="Lo que cuentan los números: sorpresas, escenarios de clasificación y herramientas para entender el torneo."
       />
 
-      <div className="mb-6">
-        <AdSlot slotName="tendencias-top-banner" format="leaderboard" />
-      </div>
-
-      <TendenciasClient
-        defaultTab={searchParams?.tab ?? "columna"}
-        columns={columns}
-      />
+      <TendenciasClient defaultTab={searchParams?.tab ?? "articulos"} />
 
       <section className="card mt-10 p-6">
         <h2 className="section-title mb-3 text-xl">

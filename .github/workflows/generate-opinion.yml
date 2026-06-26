@@ -1,20 +1,8 @@
 name: Generate Daily Opinion Column
 
 on:
-  schedule:
-    # 1 AM Chile time = 5 AM UTC (Chile is UTC-4 in June/winter)
-    - cron: '0 5 * * *'
+  # Desactivado — el contenido ahora se escribe y revisa de forma editorial
   workflow_dispatch:
-    inputs:
-      date:
-        description: 'Specific date YYYY-MM-DD (leave empty for yesterday Chile time)'
-        required: false
-        default: ''
-      seed:
-        description: 'Generate all past dates with no column'
-        required: false
-        type: boolean
-        default: false
 
 jobs:
   generate:

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { teams, getTeam, getTeamsByGroup } from "@/data/teams";
 import { matches, getUpcomingMatchesByTeam } from "@/data/matches";
-import { getTeamNote, type TeamPerformanceTrend } from "@/data/team-notes";
 import { getSquad } from "@/data/squads";
 import Flag from "@/components/Flag";
 import SquadList from "@/components/SquadList";
@@ -71,18 +70,11 @@ const STAT_LABELS = [
   { key: "finishing", label: "Efectividad" },
 ] as const;
 
-function noteTone(trend: TeamPerformanceTrend): string {
-  if (trend === "positive") return "border-pitch/30 bg-pitch/[0.08] text-pitch-800 dark:text-pitch-200";
-  if (trend === "negative") return "border-red-200 bg-red-50 text-red-800 dark:border-red-400/20 dark:bg-red-400/10 dark:text-red-200";
-  return "border-slate-200 bg-slate-50 text-slate-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200";
-}
-
 export default function TeamPage({ params }: { params: { slug: string } }) {
   const team = getTeam(params.slug);
   if (!team) notFound();
 
   const prediction = getPrediction(team.slug);
-  const teamNote = getTeamNote(team.slug);
   const squad = getSquad(team.slug);
   const upcoming = getUpcomingMatchesByTeam(team.slug, 3);
   const rivals = getTeamsByGroup(team.group).filter((t) => t.slug !== team.slug);
@@ -159,34 +151,6 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
-
-      <div className="my-6">
-        <AdSlot slotName="seleccion-top-banner" format="leaderboard" />
-      </div>
-
-      {teamNote && (
-        <section className={cn("mb-8 rounded-2xl border p-5", noteTone(teamNote.trend))}>
-          <p className="text-xs font-semibold uppercase tracking-wider opacity-70">
-            Nota actualizada por IA
-          </p>
-          <h2 className="mt-1 font-display text-xl font-extrabold">
-            {teamNote.headline}
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed opacity-90">
-            {teamNote.body}
-          </p>
-          {teamNote.evidenceUrls[0] && (
-            <a
-              href={teamNote.evidenceUrls[0]}
-              className="mt-3 inline-block text-xs font-semibold underline underline-offset-4 opacity-80 hover:opacity-100"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Ver fuente
-            </a>
-          )}
-        </section>
-      )}
 
       {/* Datos rápidos */}
       <section className="mb-8">
@@ -326,8 +290,6 @@ export default function TeamPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
           </section>
-
-          <AdSlot slotName="seleccion-mid-rectangle" format="rectangle" />
 
           {/* Próximos partidos */}
           <section>

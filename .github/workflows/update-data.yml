@@ -1,8 +1,7 @@
 name: Update FIFA Data
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  # Desactivado — las actualizaciones ahora se revisan editorialmente
   workflow_dispatch:
 
 jobs:

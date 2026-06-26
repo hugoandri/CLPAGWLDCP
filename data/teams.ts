@@ -114,42 +114,78 @@ function groupContext(seed: TeamSeed): string {
 }
 
 function buildStrengths(seed: TeamSeed): string[] {
-  const strengths = ["Calendario y grupo ya confirmados"];
+  const strengths: string[] = [];
 
   if (seed.fifaRank <= 10) {
-    strengths.push("Perfil de candidata: ranking alto y margen para dominar partidos");
+    strengths.push("Jerarquía contrastada: pertenece a la élite del ranking FIFA y parte como favorita en su grupo");
   } else if (seed.fifaRank <= 25) {
-    strengths.push("Nivel competitivo probado contra rivales de alta exigencia");
+    strengths.push("Nivel competitivo para disputar la clasificación ante cualquier rival del grupo");
   } else if (seed.fifaRank <= 50) {
-    strengths.push("Capacidad para competir en partidos cerrados y robar puntos");
+    strengths.push("Capacidad para competir en partidos cerrados y aprovechar errores rivales");
   } else {
-    strengths.push("Menor presión externa y margen para sorprender desde un plan simple");
+    strengths.push("Margen para sorprender desde un perfil bajo y sin presión externa");
   }
 
   if (seed.condition === "Anfitrión") {
-    strengths.push("Factor local: viaje, ambiente y adaptación juegan a favor");
-  } else if (seed.keyPlayer) {
-    strengths.push(`Cuenta con ${seed.keyPlayer} como referencia diferencial`);
-  } else {
-    strengths.push("Puede crecer si encuentra una estructura colectiva estable");
+    strengths.push("Juega como local: estadios conocidos, menor desgaste de viaje y apoyo masivo");
   }
 
-  return strengths;
+  if (seed.keyPlayer && seed.fifaRank <= 30) {
+    strengths.push(`Cuenta con ${seed.keyPlayer} como generador de desequilibrio en ataque`);
+  }
+
+  strengths.push(generateRegionalStrength(seed));
+
+  return strengths.filter(Boolean);
+}
+
+function generateRegionalStrength(seed: TeamSeed): string {
+  const map: Record<string, string> = {
+    "CONMEBOL": "La exigencia de las eliminatorias sudamericanas la ha preparado para partidos de alta intensidad",
+    "UEFA": "La densidad competitiva de las clasificatorias europeas garantiza un piso táctico alto",
+    "CAF": "El ritmo competitivo del fútbol africano la ha curtido en partidos físicos y de transición rápida",
+    "AFC": "La velocidad y disciplina táctica del fútbol asiático son su sello distintivo",
+    "CONCACAF": "Acostumbrada a eliminatorias con desplazamientos largos y estilos de juego diversos",
+    "OFC": "Llega con menos exposición internacional pero con un bloque consolidado tras años de trabajo",
+  };
+  return map[seed.confederation] ?? "Trayectoria competitiva en su confederación";
 }
 
 function buildWeaknesses(seed: TeamSeed): string[] {
   const position = groupSeedPosition(seed);
-  const weaknesses = ["Plantilla final y roles titulares todavía por confirmar"];
+  const weaknesses: string[] = [];
 
   if (position >= 3) {
-    weaknesses.push("Parte por detrás de al menos dos rivales en ranking dentro del grupo");
+    weaknesses.push("Parte por detrás de al menos dos selecciones del grupo en el ranking FIFA");
   } else if (seed.fifaRank <= 10) {
-    weaknesses.push("La obligación de dominar puede castigar cualquier partido trabado");
+    weaknesses.push("Soportar el rol de favorita en un torneo corto donde cualquier tropiezo penaliza")
   } else {
-    weaknesses.push("Necesita transformar competitividad en puntos desde la primera jornada");
+    weaknesses.push("Necesita convertir su competitividad en resultados desde la primera jornada");
   }
 
-  return weaknesses;
+  if (seed.fifaRank > 50) {
+    weaknesses.push("Plantilla con menos experiencia en torneos de la FIFA frente a rivales del grupo");
+  }
+
+  if (seed.fifaRank > 70) {
+    weaknesses.push("Diferencia de recursos y profundidad de banquillo respecto a las cabezas de serie");
+  }
+
+  weaknesses.push(generateRegionalWeakness(seed));
+
+  return weaknesses.filter(Boolean);
+}
+
+function generateRegionalWeakness(seed: TeamSeed): string {
+  const map: Record<string, string> = {
+    "CONMEBOL": "El desgaste físico de las eliminatorias largas puede pesar en un torneo concentrado",
+    "UEFA": "La alta exigencia táctica en Europa no siempre se traduce en torneos cortos contra estilos diversos",
+    "CAF": "La irregularidad competitiva entre partidos de clasificación y torneos FIFA es un factor a vigilar",
+    "AFC": "La exposición limitada a rivales de primer nivel europeo y sudamericano en partidos oficiales",
+    "CONCACAF": "La diferencia de ritmo competitivo respecto a selecciones UEFA y CONMEBOL en torneos FIFA",
+    "OFC": "La falta de partidos oficiales contra selecciones del top 30 FIFA reduce la preparación",
+  };
+  return map[seed.confederation] ?? "Exposición limitada a ciertos estilos de juego";
 }
 
 function buildAnalysis(seed: TeamSeed) {
@@ -163,31 +199,42 @@ function buildAnalysis(seed: TeamSeed) {
           ? "aspirante incómoda"
           : "tapada del grupo";
 
+  const confederationNote: Record<string, string> = {
+    "CONMEBOL": "viene de unas eliminatorias que exigen el máximo nivel en cada jornada",
+    "UEFA": "llega tras una fase de clasificación exigente contra rivales de alto nivel táctico",
+    "CAF": "ha demostrado solidez en el fútbol africano, donde el físico y la transición son clave",
+    "AFC": "se ha labrado un estilo basado en la disciplina táctica y la velocidad colectiva",
+    "CONCACAF": "llega con experiencia en eliminatorias marcadas por la diversidad de estilos y viajes",
+    "OFC": "completó su clasificación con autoridad y llega con un bloque bien trabajado",
+  };
+
   const goodThings =
     seed.condition === "Anfitrión"
-      ? `${seed.name} tiene a favor el contexto de sede: menor desgaste, estadios conocidos y una presión ambiental que puede pesar en partidos equilibrados.`
+      ? `${seed.name} disfruta del factor local en un Mundial con varias sedes. El apoyo masivo, el conocimiento de los estadios y la menor exposición a viajes largos le dan un colchón extra en partidos igualados.`
       : seed.fifaRank <= 10
-        ? `${seed.name} llega con jerarquía para llevar la iniciativa, atacar con muchos jugadores y resolver incluso cuando el partido no fluye.`
+        ? `${seed.name} está en el grupo de selecciones que pueden aspirar a todo. Su jerarquía le permite imponer su plan de partido incluso cuando el rival se cierra, y su experiencia en torneos grandes es un activo difícil de igualar. ${confederationNote[seed.confederation] ?? ""}`
         : seed.fifaRank <= 25
-          ? `${seed.name} combina experiencia internacional con recursos para competir contra favoritos sin necesitar posesiones largas.`
-          : `${seed.name} puede hacerse peligrosa si mantiene el bloque compacto, cuida las pérdidas y maximiza las acciones de balón parado.`;
+          ? `${seed.name} tiene argumentos para pelear por la clasificación. Su experiencia internacional y el bloque de jugadores que compite en las mejores ligas del mundo le dan un piso competitivo alto. ${confederationNote[seed.confederation] ?? ""}`
+          : `${seed.name} parte con menos reflectores pero con la posibilidad de crecer a medida que avance el torneo. Su fortaleza colectiva y la capacidad de adaptarse a distintos planteamientos serán sus mejores armas.`;
 
   const expectation =
     position === 1
-      ? `Se espera que pelee el primer puesto del Grupo ${seed.group}. Si gana su primer partido, el camino a octavos debería abrirse rápido.`
+      ? `Pelea por el primer puesto del Grupo ${seed.group} con la obligación de sumar de a tres desde el inicio.`
       : position === 2
-        ? `Se espera que dispute una de las dos plazas directas. Su torneo dependerá de sumar contra los rivales directos y no dejar puntos ante el equipo de menor ranking.`
+        ? `Disputa una de las dos plazas de clasificación. Su torneo depende de ganar los partidos contra los rivales directos y no ceder puntos inesperados.`
         : position === 3
-          ? `Se espera un torneo de resistencia: mantenerse viva hasta la última jornada, reducir diferencias de gol y aprovechar cualquier tropiezo de los favoritos.`
-          : `Se espera que compita desde el orden y busque una sorpresa. Para avanzar necesita puntuar pronto y evitar derrotas amplias.`;
+          ? `Su objetivo es mantenerse viva hasta la última jornada. Aprovechar cualquier tropiezo de los favoritos será su mejor baza.`
+          : `Necesita puntuar pronto para no quedar descolgada. Una victoria inicial cambiaría por completo su panorama en el grupo.`;
 
   const watchPoint =
-    seed.keyPlayer && seed.keyPlayer !== "Por confirmar"
-      ? `El termómetro será ${seed.keyPlayer}: si recibe cómodo, ${seed.name} tendrá más salida y más amenaza en campo rival.`
-      : `La clave será identificar rápido un líder ofensivo y sostener la concentración en los tramos finales.`;
+    seed.keyPlayer && seed.fifaRank <= 20
+      ? `El rendimiento de ${seed.keyPlayer} marcará el techo del equipo. Si recibe bien, el ataque de ${seed.name} gana profundidad y capacidad de desequilibrio.`
+      : seed.keyPlayer
+        ? `${seed.keyPlayer} es la referencia ofensiva: su forma determinará en buena medida las aspiraciones del equipo en cada partido.`
+        : `La evolución del bloque colectivo será la clave: si encuentra un once tipo sólido pronto, puede competir en todos los partidos.`;
 
   return {
-    headline: `${seed.name} llega como ${role} del Grupo ${seed.group}`,
+    headline: `${seed.name}: análisis y perfil para el Mundial 2026`,
     goodThings,
     expectation,
     watchPoint,

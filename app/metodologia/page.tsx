@@ -12,18 +12,18 @@ export const metadata: Metadata = {
 };
 
 const VARIABLES = [
-  ["Forma reciente", "Resultados de los últimos partidos para captar el momento de cada selección."],
-  ["Ranking relativo", "Posición frente al resto, combinando histórico y nivel actual."],
-  ["Goles esperados (xG)", "Aproximación a la calidad de las ocasiones, más allá del marcador."],
-  ["Fortaleza defensiva", "Solidez atrás y capacidad de conceder pocas ocasiones."],
-  ["Dificultad del grupo", "Fuerza media de los rivales: el contexto cambia la probabilidad."],
+  ["Forma reciente", "Resultados de los últimos partidos para captar el momento de cada selección dentro del torneo."],
+  ["Ranking relativo", "Posición de cada selección frente al resto, combinando su historial y el contexto del grupo."],
+  ["Goles esperados (xG)", "Aproximación a la calidad de las ocasiones generadas y recibidas, más allá del marcador."],
+  ["Fortaleza defensiva", "Capacidad para limitar las ocasiones del rival y mantener la solidez en partidos cerrados."],
+  ["Dificultad del grupo", "Fuerza media de los rivales: el contexto del grupo cambia la probabilidad de forma significativa."],
 ];
 
 const SOURCES = [
-  ["API de fútbol", "Resultados, calendarios y datos de equipos en tiempo real."],
-  ["Datos oficiales del torneo", "Sedes, horarios y estado de los partidos."],
-  ["Ratings públicos", "Índices de fuerza de selecciones de acceso abierto."],
-  ["Resultados históricos", "Series largas para calibrar y validar el modelo."],
+  ["Calendario oficial FIFA", "Grupos, sedes, horarios y estado de cada partido del Mundial 2026."],
+  ["Datos históricos", "Resultados y estadísticas de torneos anteriores para calibrar el modelo."],
+  ["Ranking FIFA", "Posición oficial de cada selección como referencia externa."],
+  ["Estadísticas del torneo", "Goles, tarjetas, alineaciones y posesión registrados durante la competición."],
 ];
 
 export default function MetodologiaPage() {
@@ -53,10 +53,11 @@ export default function MetodologiaPage() {
             también puede quedar fuera.
           </p>
           <p className="mt-3 rounded-xl bg-slate-100 p-4 text-sm text-slate-600 dark:bg-white/[0.03] dark:text-slate-300">
-            <strong className="text-navy dark:text-slate-100">Nota del MVP:</strong>{" "}
-            en esta versión los grupos, calendario y resultados se cargan desde
-            snapshots locales de fuentes públicas. Las probabilidades siguen siendo
-            estimaciones del modelo y pueden sustituirse por una API sin cambiar la interfaz.
+            <strong className="text-navy dark:text-slate-100">Nota sobre los datos:</strong>{" "}
+            los grupos, el calendario y los resultados se cargan desde fuentes
+            públicas oficiales. Las probabilidades son estimaciones del modelo
+            y se actualizan a medida que avanza el torneo. Este sitio no utiliza
+            contenido generado automáticamente sin revisión editorial.
           </p>
         </section>
 
@@ -86,9 +87,9 @@ export default function MetodologiaPage() {
         </section>
 
         <section>
-          <h2 className="section-title mb-3 text-2xl">Fuentes que podrían conectarse</h2>
+          <h2 className="section-title mb-3 text-2xl">Fuentes de datos</h2>
           <p className="mb-4 text-slate-600 dark:text-slate-300">
-            La arquitectura está pensada para integrar datos en tiempo real en el futuro:
+            Los datos utilizados en DataGoal Lab provienen de las siguientes fuentes:
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {SOURCES.map(([title, desc]) => (

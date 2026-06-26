@@ -11,9 +11,8 @@ export const siteConfig = {
   slogan: "El Mundial 2026, explicado con datos.",
   author: "Redacción DataGoal",
   twitter: "@datagoal2026",
-  // ID de cliente de Google AdSense (ca-pub-XXXXXXXXXXXXXXXX).
-  // Déjalo vacío hasta tener la cuenta aprobada (ver components/AdSlot.tsx).
-  adsenseClientId: "ca-pub-6698900918719015",
+  // AdSense desactivado mientras se revisa el contenido editorialmente.
+  adsenseClientId: "",
 } as const;
 
 export const mainNav = [
@@ -47,6 +46,7 @@ export const footerNav = [
   {
     title: "Información",
     links: [
+      { href: "/sobre-nosotros", label: "Sobre nosotros" },
       { href: "/contacto", label: "Contacto" },
       { href: "/privacidad", label: "Política de privacidad" },
       { href: "/metodologia", label: "Sobre los datos" },
