@@ -1,1 +1,21 @@
-{"articles":[]}
+{
+  "articles": [
+    {
+      "slug": "bienvenidos-al-mundial-2026",
+      "title": "¡Bienvenidos al Mundial 2026!",
+      "category": "Tendencias",
+      "date": "2026-06-26",
+      "readingMinutes": 1,
+      "excerpt": "Artículo de bienvenida para probar el admin.",
+      "author": "Redacción DataGoal",
+      "trend": "Tendencias",
+      "sections": [
+        {
+          "heading": "Primera prueba",
+          "body": "Este artículo fue publicado directamente desde el panel de administración de DataGoal Lab. El sistema de publicación automática funciona correctamente."
+        }
+      ],
+      "faqs": []
+    }
+  ]
+}
