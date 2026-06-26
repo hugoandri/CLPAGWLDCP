@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T00:12:12.155Z",
+  "generatedAt": "2026-06-26T04:43:30.943Z",
   "source": "fifa-api",
   "matches": [
     {
@@ -13930,10 +13930,9 @@
     },
     {
       "slug": "tunez-vs-paises-bajos",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 2,
-      "minute": 53,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 3,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021473",
       "confidence": 0.97,
       "detail": {
@@ -13950,10 +13949,85 @@
             "scorer": "Brian BROBBEY",
             "assist": "Virgil VAN DIJK.",
             "type": "goal"
+          },
+          {
+            "minute": 54,
+            "team": "home",
+            "scorer": "Hazem MASTOURI",
+            "assist": "Hannibal MEJBRI.",
+            "type": "goal"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "scorer": "Jan Paul VAN HECKE",
+            "assist": "Tijjani REIJNDERS.",
+            "type": "goal"
           }
         ],
         "cards": [],
-        "substitutions": [],
+        "substitutions": [
+          {
+            "minute": 67,
+            "team": "home",
+            "playerOut": "Rani Khedira",
+            "playerIn": "Mohamed HADJ MAHMOUD"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "playerOut": "Anis SLIMANE",
+            "playerIn": "Elias ACHOURI"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "playerOut": "Mohamed Amine BEN HMIDA",
+            "playerIn": "Mortadha BEN OUANES"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Frenkie DE JONG",
+            "playerIn": "Teun KOOPMEINERS"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Tijjani REIJNDERS",
+            "playerIn": "Justin KLUIVERT"
+          },
+          {
+            "minute": 72,
+            "team": "away",
+            "playerOut": "Donyell Malen",
+            "playerIn": "Crysencio SUMMERVILLE"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "playerOut": "Ismael GHARBI",
+            "playerIn": "Firas CHAOUAT"
+          },
+          {
+            "minute": 77,
+            "team": "away",
+            "playerOut": "Brian BROBBEY",
+            "playerIn": "Memphis DEPAY"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Cody GAKPO",
+            "playerIn": "Noa LANG"
+          },
+          {
+            "minute": 90,
+            "team": "home",
+            "playerOut": "Hazem MASTOURI",
+            "playerIn": "Sebastian TOUNEKTI"
+          }
+        ],
         "lineup": {
           "home": [
             {
@@ -14072,42 +14146,68 @@
         },
         "stats": {
           "shots": {
-            "home": 4,
-            "away": 13
+            "home": 10,
+            "away": 20
           },
           "corners": {
-            "home": 1,
-            "away": 3
-          },
-          "fouls": {
-            "home": 5,
+            "home": 4,
             "away": 6
           },
+          "fouls": {
+            "home": 11,
+            "away": 10
+          },
           "offsides": {
-            "home": 1,
+            "home": 2,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Túnez y Países Bajos se inclina claramente a favor de los neerlandeses, quienes llevan una ventaja de 2-0 gracias a los goles de Ellyes Skhiri en propia puerta y Brian Brobbey, ambos ocurridos en los primeros minutos del encuentro. Con esta ventaja, es probable que Países Bajos intente mantener el control del juego y administrar su ventaja, mientras que Túnez necesitará intentar cambiar el curso del partido con algún ajuste táctico o un gol que les permita acercarse en el marcador.",
+        "aiNotes": "En el partido entre Túnez y Países Bajos, los Países Bajos se impusieron con un marcador de 3-1, gracias a los goles de Ellyes Skhiri en propia puerta, Brian Brobbey y Jan Paul van Hecke, mientras que Hazem Mastouri anotó para Túnez. La victoria de los Países Bajos se debió en gran medida a su sólido rendimiento táctico, especialmente en la primera parte del partido, donde lograron anotar dos goles que sentaron las bases para su triunfo.",
         "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021473"
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021473"
       }
     },
     {
       "slug": "japon-vs-suecia",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minute": 51,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
       "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021471",
       "confidence": 0.97,
       "detail": {
-        "goals": [],
+        "goals": [
+          {
+            "minute": 56,
+            "team": "home",
+            "scorer": "Daizen MAEDA",
+            "assist": "Ritsu DOAN.",
+            "type": "goal"
+          },
+          {
+            "minute": 62,
+            "team": "away",
+            "scorer": "Anthony ELANGA",
+            "assist": "Viktor GYOKERES.",
+            "type": "goal"
+          }
+        ],
         "cards": [
           {
             "minute": 32,
             "team": "away",
             "player": "Isak HIEN",
+            "type": "yellow"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "player": "Shogo TANIGUCHI",
+            "type": "yellow"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "player": "Viktor GYOKERES",
             "type": "yellow"
           }
         ],
@@ -14123,6 +14223,54 @@
             "team": "home",
             "playerOut": "Kou ITAKURA",
             "playerIn": "Shogo TANIGUCHI"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Ayase UEDA",
+            "playerIn": "Koki OGAWA"
+          },
+          {
+            "minute": 66,
+            "team": "home",
+            "playerOut": "Ritsu DOAN",
+            "playerIn": "Junya ITO"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "playerOut": "Keito Nakamura",
+            "playerIn": "Yuto NAGATOMO"
+          },
+          {
+            "minute": 75,
+            "team": "home",
+            "playerOut": "Ayumu SEKO",
+            "playerIn": "Tsuyoshi Watanabe"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Alexander BERNHARDSSON",
+            "playerIn": "Daniel SVENSSON"
+          },
+          {
+            "minute": 75,
+            "team": "away",
+            "playerOut": "Elliot STROUD",
+            "playerIn": "Ken SEMA"
+          },
+          {
+            "minute": 87,
+            "team": "away",
+            "playerOut": "Victor LINDELOF",
+            "playerIn": "Carl STARFELT"
+          },
+          {
+            "minute": 87,
+            "team": "away",
+            "playerOut": "Gabriel GUDMUNDSSON",
+            "playerIn": "Benjamin NYGREN"
           }
         ],
         "lineup": {
@@ -14243,63 +14391,497 @@
         },
         "stats": {
           "shots": {
-            "home": 5,
-            "away": 3
+            "home": 8,
+            "away": 11
+          },
+          "corners": {
+            "home": 2,
+            "away": 8
+          },
+          "fouls": {
+            "home": 19,
+            "away": 9
+          },
+          "offsides": {
+            "home": 3,
+            "away": 2
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        "aiNotes": "En el partido entre Japón y Suecia, el equipo japonés se adelantó en el marcador gracias a un gol de Daizen Maeda en el minuto 56, pero su ventaja duró solo seis minutos, ya que Anthony Elanga empató el partido para Suecia en el minuto 62. La igualdad en el marcador refleja un encuentro muy disputado y tácticamente bien librado por ambos equipos, donde la intensidad y la determinación de ambos conjuntos fueron clave para mantener el empate hasta el final del partido.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021471"
+      }
+    },
+    {
+      "slug": "paraguay-vs-australia",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 0,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021461",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [],
+        "cards": [
+          {
+            "minute": 46,
+            "team": "away",
+            "player": "Jackson IRVINE",
+            "type": "yellow"
+          },
+          {
+            "minute": 77,
+            "team": "home",
+            "player": "Diego GOMEZ",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 0,
+            "team": "home",
+            "playerOut": "Alexandro MAIDANA",
+            "playerIn": "MAURICIO"
+          },
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "Cristian VOLPATO",
+            "playerIn": "Ajdin HRUSTIC"
+          },
+          {
+            "minute": 67,
+            "team": "home",
+            "playerOut": "Gabriel AVALOS",
+            "playerIn": "Alex ARCE"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Omar ALDERETE",
+            "playerIn": "Jose CANALE"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Jackson IRVINE",
+            "playerIn": "Paul OKON-ENGSTLER"
+          },
+          {
+            "minute": 84,
+            "team": "away",
+            "playerOut": "Nestory IRANKUNDA",
+            "playerIn": "Tete YENGI"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "playerOut": "Matias GALARZA",
+            "playerIn": "Junior ALONSO"
+          },
+          {
+            "minute": 92,
+            "team": "home",
+            "playerOut": "Diego GOMEZ",
+            "playerIn": "Damian BOBADILLA"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Orlando GILL",
+              "number": 12,
+              "position": "GK"
+            },
+            {
+              "name": "Gustavo VELAZQUEZ",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Omar ALDERETE",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Juan Jose CACERES",
+              "number": 4,
+              "position": "DEF"
+            },
+            {
+              "name": "Gustavo GOMEZ",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Alexandro MAIDANA",
+              "number": 26,
+              "position": "DEF"
+            },
+            {
+              "name": "Diego GOMEZ",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Andres CUBAS",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Matias GALARZA",
+              "number": 23,
+              "position": "MID"
+            },
+            {
+              "name": "Julio ENCISO",
+              "number": 19,
+              "position": "FWD"
+            },
+            {
+              "name": "Gabriel AVALOS",
+              "number": 21,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Patrick BEACH",
+              "number": 18,
+              "position": "GK"
+            },
+            {
+              "name": "Alessandro CIRCATI",
+              "number": 3,
+              "position": "DEF"
+            },
+            {
+              "name": "Jordan BOS",
+              "number": 5,
+              "position": "DEF"
+            },
+            {
+              "name": "Aziz BEHICH",
+              "number": 16,
+              "position": "DEF"
+            },
+            {
+              "name": "Harry SOUTTAR",
+              "number": 19,
+              "position": "DEF"
+            },
+            {
+              "name": "Lucas HERRINGTON",
+              "number": 25,
+              "position": "DEF"
+            },
+            {
+              "name": "Connor METCALFE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Aiden ONEILL",
+              "number": 13,
+              "position": "MID"
+            },
+            {
+              "name": "Jackson IRVINE",
+              "number": 22,
+              "position": "MID"
+            },
+            {
+              "name": "Nestory IRANKUNDA",
+              "number": 17,
+              "position": "FWD"
+            },
+            {
+              "name": "Cristian VOLPATO",
+              "number": 20,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 7,
+            "away": 12
           },
           "corners": {
             "home": 1,
-            "away": 5
+            "away": 3
           },
           "fouls": {
-            "home": 11,
-            "away": 6
+            "home": 8,
+            "away": 5
+          },
+          "yellowCards": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Paraguay busca mejorar su forma reciente apoyándose en la habilidad ofensiva de Julio Enciso, mientras que Australia se presenta con una racha más consistente y confía en la velocidad y habilidad de Nestory Irankunda para generar oportunidades de gol. Mi expectativa es que Australia tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su tendencia a mantener un ritmo constante en los encuentros internacionales, lo que podría permitirle dominar el juego y crear más oportunidades de ataque.",
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021461"
+      }
+    },
+    {
+      "slug": "turquia-vs-estados-unidos",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 2,
+      "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021459",
+      "confidence": 0.97,
+      "detail": {
+        "goals": [
+          {
+            "minute": 3,
+            "team": "away",
+            "scorer": "Auston TRUSTY",
+            "assist": "Sebastian BERHALTER.",
+            "type": "goal"
+          },
+          {
+            "minute": 10,
+            "team": "home",
+            "scorer": "Arda GULER",
+            "assist": "Baris Alper YILMAZ.",
+            "type": "goal"
+          },
+          {
+            "minute": 31,
+            "team": "home",
+            "scorer": "Baris Alper YILMAZ",
+            "assist": "Orkun KOKCU.",
+            "type": "goal"
+          },
+          {
+            "minute": 49,
+            "team": "away",
+            "scorer": "Sebastian BERHALTER",
+            "type": "goal"
+          },
+          {
+            "minute": 98,
+            "team": "home",
+            "scorer": "Kaan AYHAN",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 19,
+            "team": "away",
+            "player": "Sebastian BERHALTER",
+            "type": "yellow"
+          }
+        ],
+        "substitutions": [
+          {
+            "minute": 58,
+            "team": "away",
+            "playerOut": "Timothy WEAH",
+            "playerIn": "Christian PULISIC"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Giovanni REYNA",
+            "playerIn": "Sergino DEST"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Brenden AARONSON",
+            "playerIn": "Alex ZENDEJAS"
+          },
+          {
+            "minute": 76,
+            "team": "away",
+            "playerOut": "Joe SCALLY",
+            "playerIn": "Alex FREEMAN"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Kenan YILDIZ",
+            "playerIn": "Can UZUN"
+          },
+          {
+            "minute": 84,
+            "team": "home",
+            "playerOut": "Zeki CELIK",
+            "playerIn": "Caglar SOYUNCU"
+          },
+          {
+            "minute": 86,
+            "team": "away",
+            "playerOut": "Weston McKENNIE",
+            "playerIn": "Malik TILLMAN"
+          },
+          {
+            "minute": 88,
+            "team": "home",
+            "playerOut": "Orkun KOKCU",
+            "playerIn": "Kaan Ayhan"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "Oguz AYDIN",
+            "playerIn": "Mert MULDUR"
+          },
+          {
+            "minute": 91,
+            "team": "home",
+            "playerOut": "Baris Alper YILMAZ",
+            "playerIn": "Irfan Can KAHVECI"
+          }
+        ],
+        "lineup": {
+          "home": [
+            {
+              "name": "Ugurcan CAKIR",
+              "number": 23,
+              "position": "GK"
+            },
+            {
+              "name": "Zeki CELIK",
+              "number": 2,
+              "position": "DEF"
+            },
+            {
+              "name": "Eren ELMALI",
+              "number": 13,
+              "position": "DEF"
+            },
+            {
+              "name": "Abdulkerim BARDAKCI",
+              "number": 14,
+              "position": "DEF"
+            },
+            {
+              "name": "Ozan KABAK",
+              "number": 15,
+              "position": "DEF"
+            },
+            {
+              "name": "Salih OZCAN",
+              "number": 5,
+              "position": "MID"
+            },
+            {
+              "name": "Orkun KOKCU",
+              "number": 6,
+              "position": "MID"
+            },
+            {
+              "name": "Arda GULER",
+              "number": 8,
+              "position": "FWD"
+            },
+            {
+              "name": "Kenan YILDIZ",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Baris Alper YILMAZ",
+              "number": 21,
+              "position": "FWD"
+            },
+            {
+              "name": "Oguz AYDIN",
+              "number": 24,
+              "position": "FWD"
+            }
+          ],
+          "away": [
+            {
+              "name": "Matt TURNER",
+              "number": 1,
+              "position": "GK"
+            },
+            {
+              "name": "Auston TRUSTY",
+              "number": 6,
+              "position": "DEF"
+            },
+            {
+              "name": "Miles ROBINSON",
+              "number": 12,
+              "position": "DEF"
+            },
+            {
+              "name": "Mark McKENZIE",
+              "number": 22,
+              "position": "DEF"
+            },
+            {
+              "name": "Joe SCALLY",
+              "number": 23,
+              "position": "DEF"
+            },
+            {
+              "name": "Giovanni REYNA",
+              "number": 7,
+              "position": "MID"
+            },
+            {
+              "name": "Weston McKENNIE",
+              "number": 8,
+              "position": "MID"
+            },
+            {
+              "name": "Sebastian BERHALTER",
+              "number": 14,
+              "position": "MID"
+            },
+            {
+              "name": "Ricardo PEPI",
+              "number": 9,
+              "position": "FWD"
+            },
+            {
+              "name": "Brenden AARONSON",
+              "number": 11,
+              "position": "FWD"
+            },
+            {
+              "name": "Timothy WEAH",
+              "number": 21,
+              "position": "FWD"
+            }
+          ]
+        },
+        "stats": {
+          "shots": {
+            "home": 8,
+            "away": 18
+          },
+          "corners": {
+            "home": 2,
+            "away": 9
+          },
+          "fouls": {
+            "home": 13,
+            "away": 12
           },
           "offsides": {
             "home": 2,
-            "away": 1
+            "away": 5
           },
           "yellowCards": {
             "home": 0,
             "away": 1
           }
         },
-        "aiNotes": "En este momento, el partido entre Japón y Suecia se encuentra empatado a cero goles, con ambos equipos mostrando un juego intenso y defensivo, aunque Suecia ha tenido algunas oportunidades claras de anotar, destacando la tarjeta amarilla recibida por Isak Hien en el minuto 32. A medida que el partido avanza, es probable que Japón intente aumentar su presión ofensiva para tratar de anotar el primer gol, lo que podría obligar a Suecia a reajustar su estrategia defensiva y crear oportunidades de contraataque.",
-        "confidence": 0.97,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021471"
-      }
-    },
-    {
-      "slug": "paraguay-vs-australia",
-      "status": "upcoming",
-      "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
-        "lineup": {
-          "home": [],
-          "away": []
-        },
-        "stats": {},
-        "aiNotes": "Ambos equipos llegan al partido con diferentes dinámicas, ya que Paraguay busca mejorar su forma reciente apoyándose en la habilidad ofensiva de Julio Enciso, mientras que Australia se presenta con una racha más consistente y confía en la velocidad y habilidad de Nestory Irankunda para generar oportunidades de gol. Mi expectativa es que Australia tenga una ligera ventaja en el partido debido a su mejor posición en el ranking FIFA y su tendencia a mantener un ritmo constante en los encuentros internacionales, lo que podría permitirle dominar el juego y crear más oportunidades de ataque.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021461"
-      }
-    },
-    {
-      "slug": "turquia-vs-estados-unidos",
-      "status": "upcoming",
-      "detail": {
-        "goals": [],
-        "cards": [],
-        "substitutions": [],
-        "lineup": {
-          "home": [],
-          "away": []
-        },
-        "stats": {},
         "aiNotes": "Los equipos llegan al partido con diferentes dinámicas, ya que Türkiye muestra una forma irregular en los últimos encuentros, pero cuenta con el talento de Arda Güler, mientras que Estados Unidos presenta una solidez defensiva y una delantera peligrosa liderada por Folarin Balogun. Considero que el equipo de Estados Unidos tiene una ligera ventaja debido a su cohesión y consistencia en el juego, lo que podría ser determinante en un partido que se espera muy disputado y tácticamente intenso.",
-        "confidence": 0.8,
-        "evidenceUrl": "https://api.fifa.com/api/v3/live/football/400021459"
+        "confidence": 0.97,
+        "evidenceUrl": "https://api.fifa.com/api/v3/timelines/400021459"
       }
     },
     {
