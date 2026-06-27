@@ -106,7 +106,7 @@ export default async function HomePage() {
             </div>
 
             {/* Live / Next match cards */}
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex w-full flex-col items-center gap-4 lg:max-w-sm">
               {heroMatches.length > 0 ? heroMatches.map((m) => <LiveMatchCard key={m.slug} match={m} />) : (
                 <div className="w-full max-w-sm rounded-2xl bg-white/10 p-6 text-center">
                   <p className="text-sm text-slate-300">No hay partidos programados</p>
@@ -173,6 +173,6 @@ export default async function HomePage() {
   );
 
   function LiveMatchCard({ match: m }: { match: typeof freshMatches[0] }) {
-    return <MatchCard match={m} />;
+    return <MatchCard match={m} className="w-full" />;
   }
 }
