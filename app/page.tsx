@@ -186,25 +186,25 @@ export default async function HomePage() {
           <span>Grupo {m.group}</span>
           {!isLive && <><span aria-hidden>·</span><LocalDate date={m.date} time={m.time} format="dayMonth" /></>}
         </div>
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex min-w-0 flex-1 items-center gap-3">
-            <Flag isoCode={home.isoCode} alt={home.name} width={40} />
-            <span className="text-base font-bold leading-tight">{home.name}</span>
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex min-w-0 flex-[1_1_0] items-center gap-3">
+              <Flag isoCode={home.isoCode} alt={home.name} width={40} />
+              <span className="truncate text-base font-bold leading-tight">{home.name}</span>
+            </div>
+            {isLive ? (
+              <span className="stat-num shrink-0 text-2xl font-extrabold text-pitch-300">
+                {m.homeScore}–{m.awayScore}
+              </span>
+            ) : (
+              <span className="stat-num shrink-0 text-xl font-bold text-pitch-300">
+                <LocalTime date={m.date} time={m.time} />
+              </span>
+            )}
+            <div className="flex min-w-0 flex-[1_1_0] flex-row-reverse items-center gap-3 text-right">
+              <Flag isoCode={away.isoCode} alt={away.name} width={40} />
+              <span className="truncate text-base font-bold leading-tight">{away.name}</span>
+            </div>
           </div>
-          {isLive ? (
-            <span className="stat-num shrink-0 text-2xl font-extrabold text-pitch-300">
-              {m.homeScore}–{m.awayScore}
-            </span>
-          ) : (
-            <span className="stat-num shrink-0 text-xl font-bold text-pitch-300">
-              <LocalTime date={m.date} time={m.time} />
-            </span>
-          )}
-          <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
-            <span className="text-base font-bold leading-tight">{away.name}</span>
-            <Flag isoCode={away.isoCode} alt={away.name} width={40} />
-          </div>
-        </div>
         {!isLive && (
           <p className="mt-3 text-center text-xs text-slate-400">
             {m.stadium} · {m.city}
