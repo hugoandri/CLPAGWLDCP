@@ -78,7 +78,7 @@ export default async function HomePage() {
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative overflow-hidden bg-field bg-navy-950 text-white">
         <div className="container-page relative py-16 sm:py-20 lg:py-24">
-          <div className="grid gap-10 lg:grid-cols-[1fr_380px]">
+          <div className="grid gap-10 lg:grid-cols-[1fr_400px] lg:items-center">
             <div>
               <p className="eyebrow !text-pitch-300">
                 <span className="inline-block h-2 w-2 rounded-full bg-pitch" />
@@ -105,7 +105,7 @@ export default async function HomePage() {
             </div>
 
             {/* Live / Next match cards */}
-            <div className="flex flex-col items-center gap-4 lg:items-end">
+            <div className="flex flex-col items-center gap-4">
               {heroMatches.length > 0 ? heroMatches.map((m) => <LiveMatchCard key={m.slug} match={m} />) : (
                 <div className="w-full max-w-sm rounded-2xl bg-white/10 p-6 text-center">
                   <p className="text-sm text-slate-300">No hay partidos programados</p>
@@ -179,34 +179,34 @@ export default async function HomePage() {
     return (
       <Link
         href={`/partidos/${m.slug}`}
-        className="w-full max-w-sm rounded-2xl bg-white/10 p-5 backdrop-blur-sm transition hover:bg-white/15"
+        className="w-full rounded-2xl bg-white/10 p-6 backdrop-blur-sm transition hover:bg-white/15"
       >
-        <div className="mb-3 flex items-center gap-2 text-xs text-slate-300">
+        <div className="mb-3 flex items-center gap-2 text-sm text-slate-300">
           <StatusBadge status={m.status} minute={m.minute} />
           <span>Grupo {m.group}</span>
           {!isLive && <><span aria-hidden>·</span><LocalDate date={m.date} time={m.time} format="dayMonth" /></>}
         </div>
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5">
-            <Flag isoCode={home.isoCode} alt={home.name} width={36} />
-            <span className="text-sm font-semibold">{home.name}</span>
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex min-w-0 flex-1 items-center gap-3">
+            <Flag isoCode={home.isoCode} alt={home.name} width={44} />
+            <span className="text-base font-bold leading-tight">{home.name}</span>
           </div>
           {isLive ? (
-            <span className="stat-num text-xl font-extrabold text-pitch-300">
+            <span className="stat-num shrink-0 text-2xl font-extrabold text-pitch-300">
               {m.homeScore}–{m.awayScore}
             </span>
           ) : (
-            <span className="stat-num text-lg font-bold text-pitch-300">
+            <span className="stat-num shrink-0 text-xl font-bold text-pitch-300">
               <LocalTime date={m.date} time={m.time} />
             </span>
           )}
-          <div className="flex items-center gap-2.5">
-            <span className="text-sm font-semibold">{away.name}</span>
-            <Flag isoCode={away.isoCode} alt={away.name} width={36} />
+          <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
+            <span className="text-base font-bold leading-tight">{away.name}</span>
+            <Flag isoCode={away.isoCode} alt={away.name} width={44} />
           </div>
         </div>
         {!isLive && (
-          <p className="mt-2 text-center text-xs text-slate-400">
+          <p className="mt-3 text-center text-xs text-slate-400">
             {m.stadium} · {m.city}
           </p>
         )}
