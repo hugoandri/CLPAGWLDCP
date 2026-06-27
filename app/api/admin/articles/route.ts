@@ -31,11 +31,12 @@ export async function GET(request: Request) {
     status: "published",
   }));
 
-  // Merge: editorial first (newest), then static
-  const merged = [
-    ...editorialWithType.reverse(),
-    ...staticWithType.reverse(),
-  ];
+  // Merge and sort by date descending
+  const merged = [...editorialWithType, ...staticWithType].sort((a: Record<string, unknown>, b: Record<string, unknown>) => {
+    const dateA = String(a.date || "");
+    const dateB = String(b.date || "");
+    return dateB.localeCompare(dateA);
+  });
 
   return NextResponse.json({ articles: merged });
 }
