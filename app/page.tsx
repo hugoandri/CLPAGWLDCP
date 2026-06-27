@@ -179,34 +179,44 @@ export default async function HomePage() {
     return (
       <Link
         href={`/partidos/${m.slug}`}
-        className="w-full rounded-2xl bg-white/10 p-6 backdrop-blur-sm transition hover:bg-white/15"
+        className="w-full rounded-2xl bg-white/10 p-4 backdrop-blur-sm transition hover:bg-white/15"
       >
-        <div className="mb-3 flex items-center gap-2 text-sm text-slate-300">
+        <div className="mb-2 flex items-center gap-2 text-xs text-slate-300">
           <StatusBadge status={m.status} minute={m.minute} />
           <span>Grupo {m.group}</span>
           {!isLive && <><span aria-hidden>·</span><LocalDate date={m.date} time={m.time} format="dayMonth" /></>}
         </div>
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex min-w-0 flex-[1_1_0] items-center gap-3">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+          {/* Home team: flag + name (left) */}
+          <div className="flex min-w-0 items-center gap-2.5 text-left">
+            <span aria-hidden className="grid h-10 w-10 shrink-0 place-items-center">
               <Flag isoCode={home.isoCode} alt={home.name} width={40} />
-              <span className="truncate text-base font-bold leading-tight">{home.name}</span>
-            </div>
-            {isLive ? (
-              <span className="stat-num shrink-0 text-2xl font-extrabold text-pitch-300">
-                {m.homeScore}–{m.awayScore}
-              </span>
-            ) : (
-              <span className="stat-num shrink-0 text-xl font-bold text-pitch-300">
+            </span>
+            <span className="truncate text-sm font-bold leading-tight">{home.name}</span>
+          </div>
+          {/* Score / Time */}
+          {isLive ? (
+            <span className="stat-num text-xl font-extrabold text-pitch-300">
+              {m.homeScore}–{m.awayScore}
+            </span>
+          ) : (
+            <div className="text-center leading-tight">
+              <span className="stat-num text-base font-bold text-pitch-300">
                 <LocalTime date={m.date} time={m.time} />
               </span>
-            )}
-            <div className="flex min-w-0 flex-[1_1_0] flex-row-reverse items-center gap-3 text-right">
-              <Flag isoCode={away.isoCode} alt={away.name} width={40} />
-              <span className="truncate text-base font-bold leading-tight">{away.name}</span>
+              <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">vs</div>
             </div>
+          )}
+          {/* Away team: name + flag (right) */}
+          <div className="flex min-w-0 flex-row-reverse items-center gap-2.5 text-right">
+            <span aria-hidden className="grid h-10 w-10 shrink-0 place-items-center">
+              <Flag isoCode={away.isoCode} alt={away.name} width={40} />
+            </span>
+            <span className="truncate text-sm font-bold leading-tight">{away.name}</span>
           </div>
+        </div>
         {!isLive && (
-          <p className="mt-3 text-center text-xs text-slate-400">
+          <p className="mt-2 truncate text-center text-xs text-slate-400">
             {m.stadium} · {m.city}
           </p>
         )}
