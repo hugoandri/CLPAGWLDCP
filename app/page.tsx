@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AdSlot from "@/components/AdSlot";
 import ArticleCard from "@/components/ArticleCard";
 import LocalTime from "@/components/LocalTime";
 import LocalDate from "@/components/LocalDate";
 import TodayMatches from "@/components/TodayMatches";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import Flag from "@/components/Flag";
-import { teams, getTeam } from "@/data/teams";
-import {
-  getFreshMatches,
-  matches,
-} from "@/data/matches";
+import StatusBadge from "@/components/StatusBadge";
+import { getTeam } from "@/data/teams";
+import { getFreshMatches, matches } from "@/data/matches";
 import { computeTopScorers, computeTopAssists } from "@/lib/stats";
 import PlayerStatTable from "@/components/PlayerStatTable";
 import { readLiveUpdatesWithFIFA } from "@/lib/live";
-import { groups } from "@/data/groups";
 import { getLatestArticles } from "@/data/articles";
-import { computeStandings } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
 import LiveAutoRefresh from "@/components/LiveAutoRefresh";
 
@@ -26,33 +21,11 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Mundial 2026: partidos de hoy, tabla, resultados y predicciones",
   description:
-    "Consulta partidos de hoy del Mundial 2026, resultados, tabla por grupos, selecciones, predicciones estadísticas y calculadora de clasificación en DataGoal Lab.",
+    "Consulta partidos de hoy del Mundial 2026, resultados, tabla por grupos, selecciones, predicciones estadísticas y análisis editorial en DataGoal Lab.",
   alternates: { canonical: "/" },
 };
 
-type Surprise = { team: typeof teams[0]; wins: ReturnType<typeof getFreshMatches>[0][]; avgProb: number };
-type TeamWinAcc = { team: typeof teams[0]; wins: ReturnType<typeof getFreshMatches>[0][]; probs: number[] };
-const latestArticles = getLatestArticles(3);
-
-function QuickStatCard({
-  eyebrow,
-  href,
-  children,
-}: {
-  eyebrow: string;
-  href: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <Link href={href} className="card card-hover flex flex-col p-5">
-      <p className="eyebrow">{eyebrow}</p>
-      <div className="mt-3 flex-1">{children}</div>
-      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-pitch-600 dark:text-pitch-300">
-        Ver detalle <span aria-hidden>→</span>
-      </span>
-    </Link>
-  );
-}
+const latestArticles = getLatestArticles(4);
 
 export default async function HomePage() {
   const freshUpdates = await readLiveUpdatesWithFIFA();
@@ -63,347 +36,87 @@ export default async function HomePage() {
     .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
   const nextMatch = upcomingSorted[0];
 
-  const liveMatch = freshMatches.find((m) => m.status === "live" || m.status === "halftime");
+  const liveMatches = freshMatches.filter((m) => m.status === "live" || m.status === "halftime");
   const finishedSorted = [...freshMatches]
     .filter((m) => m.status === "finished")
     .sort((a, b) => `${b.date}T${b.time}`.localeCompare(`${a.date}T${a.time}`));
   const lastFinished = finishedSorted[0];
 
-  const teamWins = new Map<string, TeamWinAcc>();
-  for (const m of freshMatches) {
-    if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) continue;
-    if (m.homeScore > m.awayScore) {
-      const t = getTeam(m.homeSlug);
-      if (t) {
-        const key = t.slug;
-        if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
-        teamWins.get(key)!.wins.push(m);
-        teamWins.get(key)!.probs.push(m.probHome);
-      }
-    } else if (m.awayScore > m.homeScore) {
-      const t = getTeam(m.awaySlug);
-      if (t) {
-        const key = t.slug;
-        if (!teamWins.has(key)) teamWins.set(key, { team: t, wins: [], probs: [] });
-        teamWins.get(key)!.wins.push(m);
-        teamWins.get(key)!.probs.push(m.probAway);
-      }
-    }
-  }
-  const surprises: Surprise[] = Array.from(teamWins.values()).map((entry) => ({
-    team: entry.team,
-    wins: entry.wins,
-    avgProb: Math.round(entry.probs.reduce((a, b) => a + b, 0) / entry.probs.length),
-  }));
-  surprises.sort((a, b) => a.avgProb - b.avgProb);
-  const biggestSurprise = surprises[0];
-
-  const allStandings = groups.flatMap((g) => computeStandings(g.rows));
-  allStandings.sort(
-    (a, b) =>
-      b.points - a.points ||
-      b.gd - a.gd ||
-      b.gf - a.gf ||
-      a.teamSlug.localeCompare(b.teamSlug),
-  );
-  const topRankedGlobal = allStandings.slice(0, 3);
-  const topAdvanceTeam = [...teams].sort((a, b) => b.probAdvance - a.probAdvance)[0];
-
   const topScorers = computeTopScorers(matches);
   const topAssists = computeTopAssists(matches);
 
   const todayStr = new Date().toISOString().slice(0, 10);
-  const liveCount = freshMatches.filter((m) => m.status === "live" || m.status === "halftime").length;
+  const liveCount = liveMatches.length;
 
-  const next = nextMatch ? { home: getTeam(nextMatch.homeSlug), away: getTeam(nextMatch.awaySlug) } : { home: null, away: null };
-  const live = liveMatch
-    ? { match: liveMatch, home: getTeam(liveMatch.homeSlug), away: getTeam(liveMatch.awaySlug) }
-    : lastFinished
-      ? { match: lastFinished, home: getTeam(lastFinished.homeSlug), away: getTeam(lastFinished.awaySlug) }
-      : null;
-  const surpriseTeam = biggestSurprise?.team ?? null;
-  const lastSurpriseMatch = biggestSurprise?.wins[biggestSurprise.wins.length - 1];
-  const surpriseRival = lastSurpriseMatch ? getTeam(
-    lastSurpriseMatch.awaySlug === surpriseTeam!.slug
-      ? lastSurpriseMatch.homeSlug
-      : lastSurpriseMatch.awaySlug
-  ) : null;
-  const surpriseAvgProb = biggestSurprise?.avgProb;
-  const surpriseWins = biggestSurprise?.wins.length ?? 0;
+  const liveMatch = liveMatches.length > 0 ? liveMatches[0] : null;
+  const displayMatch = liveMatch || nextMatch;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: metadata.title,
     description: metadata.description,
     url: siteConfig.url,
-    isPartOf: {
-      "@id": `${siteConfig.url}/#website`,
-    },
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
     inLanguage: "es",
-    about: {
-      "@type": "SportsEvent",
-      name: "Copa Mundial de la FIFA 2026",
-      sport: "Soccer",
-    },
+    about: { "@type": "SportsEvent", name: "Copa Mundial de la FIFA 2026", sport: "Soccer" },
   };
 
   return (
     <>
       <SeoJsonLd data={jsonLd} />
-      {/* Auto-refresh cuando hay partido en vivo o próximo a empezar */}
       {liveMatch && (
-        <LiveAutoRefresh
-          status="live"
-          matchDateUTC={`${liveMatch.date}T${liveMatch.time}:00Z`}
-        />
+        <LiveAutoRefresh status="live" matchDateUTC={`${liveMatch.date}T${liveMatch.time}:00Z`} />
       )}
       {!liveMatch && nextMatch && (
-        <LiveAutoRefresh
-          status="upcoming"
-          matchDateUTC={`${nextMatch.date}T${nextMatch.time}:00Z`}
-        />
+        <LiveAutoRefresh status="upcoming" matchDateUTC={`${nextMatch.date}T${nextMatch.time}:00Z`} />
       )}
+
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative overflow-hidden bg-field bg-navy-950 text-white">
         <div className="container-page relative py-16 sm:py-20 lg:py-24">
-          <p className="eyebrow !text-pitch-300">
-            <span className="inline-block h-2 w-2 rounded-full bg-pitch" />
-            Análisis estadístico · Mundial 2026
-          </p>
-          <h1 className="mt-4 max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Mundial 2026 en datos: partidos, probabilidades y tendencias
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg text-slate-300">
-            Análisis diario, tablas, predicciones estadísticas y visualizaciones
-            del torneo. Sin lenguaje de apuestas: solo números.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/partidos" className="btn-primary">
-              Ver partidos de hoy
-              {liveCount > 0 && (
-                <span className="ml-1 rounded-full bg-white/20 px-2 py-0.5 text-xs">
-                  {liveCount} en vivo
-                </span>
-              )}
-            </Link>
-            <Link href="/predicciones" className="btn-ghost !border-white/20 !text-white hover:!border-pitch-300 hover:!text-pitch-300">
-              Predicciones del torneo
-            </Link>
-          </div>
-
-          <dl className="mt-12 grid max-w-2xl grid-cols-3 gap-6 border-t border-white/10 pt-8">
-            {[
-              { v: "48", l: "Selecciones" },
-              { v: "12", l: "Grupos" },
-              { v: "104", l: "Partidos totales" },
-            ].map((s) => (
-              <div key={s.l}>
-                <dt className="stat-num text-3xl font-extrabold text-white sm:text-4xl">
-                  {s.v}
-                </dt>
-                <dd className="mt-1 text-sm text-slate-400">{s.l}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      <div className="container-page">
-        {/* ───────────────── Tarjetas rápidas ───────────────── */}
-        <section aria-labelledby="rapidas" className="pb-4">
-          <h2 id="rapidas" className="sr-only">
-            Resumen rápido
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <QuickStatCard eyebrow="⚽ Próximo partido" href={nextMatch ? `/partidos/${nextMatch.slug}` : "/partidos"}>
-              {next.home && next.away && (
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span aria-hidden>
-                      <Flag isoCode={next.home.isoCode} alt={next.home.name} width={32} />
-                    </span>
-                    <span className="text-sm font-bold text-slate-400">vs</span>
-                    <span aria-hidden>
-                      <Flag isoCode={next.away.isoCode} alt={next.away.name} width={32} />
-                    </span>
-                  </div>
-                  <p className="mt-2 font-display font-bold leading-tight text-navy dark:text-slate-100">
-                    {next.home.name} · {next.away.name}
-                  </p>
-                  <p className="mt-1 text-xs text-slate-400">
-                    <LocalDate date={nextMatch!.date} time={nextMatch!.time} format="dayMonth" /> · <LocalTime date={nextMatch!.date} time={nextMatch!.time} /> · Gr. {nextMatch!.group}
-                  </p>
-                </div>
-              )}
-            </QuickStatCard>
-
-            <QuickStatCard
-              eyebrow={liveMatch ? "🔴 En vivo" : "⚪ Último resultado"}
-              href={live ? `/partidos/${live.match.slug}` : "/partidos"}
-            >
-              {live && live.home && live.away && (
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span aria-hidden>
-                      <Flag isoCode={live.home.isoCode} alt={live.home.name} width={32} />
-                    </span>
-                    <span className="text-sm font-bold text-slate-400">
-                      {live.match.homeScore ?? ""}-{live.match.awayScore ?? ""}
-                    </span>
-                    <span aria-hidden>
-                      <Flag isoCode={live.away.isoCode} alt={live.away.name} width={32} />
-                    </span>
-                  </div>
-                  <p className="mt-2 font-display font-bold leading-tight text-navy dark:text-slate-100">
-                    {live.home.name} · {live.away.name}
-                  </p>
-                  <p className="mt-1 text-xs text-slate-400">
-                    {liveMatch ? (
-                      `EN VIVO · ${liveMatch.minute ?? ""}'`
-                    ) : (
-                      <>
-                        <LocalDate date={lastFinished!.date} time={lastFinished!.time} format="dayMonth" /> · Finalizado
-                      </>
-                    )}
-                  </p>
-                </div>
-              )}
-            </QuickStatCard>
-
-            <QuickStatCard eyebrow="📈 Sorpresa" href={surpriseTeam ? `/selecciones/${surpriseTeam.slug}` : "#"}>
-              {surpriseTeam && (
-                <div className="flex items-center gap-3">
-                  <span aria-hidden>
-                    <Flag isoCode={surpriseTeam.isoCode} alt={surpriseTeam.name} width={48} />
-                  </span>
-                  <div>
-                    <p className="font-display text-lg font-bold leading-tight text-navy dark:text-slate-100">
-                      {surpriseTeam.name}
-                    </p>
-                    <p className="text-xs text-slate-400">
-                      Promedio {surpriseAvgProb}% de ganar{surpriseWins > 1 ? ` · ${surpriseWins} victorias` : ""} · Venció a {surpriseRival?.name ?? ""}
-                    </p>
-                  </div>
-                </div>
-              )}
-            </QuickStatCard>
-
-            <QuickStatCard eyebrow="🏆 Ranking por rendimiento" href="/tendencias?tab=tabla">
-              <div className="space-y-1.5">
-                {topRankedGlobal.map((s, i) => {
-                  const t = getTeam(s.teamSlug);
-                  if (!t) return null;
-                  return (
-                    <div key={s.teamSlug} className="flex items-center gap-2 text-sm">
-                      <span className="stat-num w-4 font-bold text-slate-400">{i + 1}</span>
-                      <span aria-hidden>
-                        <Flag isoCode={t.isoCode} alt={t.name} width={24} />
-                      </span>
-                      <span className="flex-1 truncate font-semibold text-navy dark:text-slate-100">{t.name}</span>
-                      <span className="stat-num font-bold text-navy dark:text-slate-100">{s.points}</span>
-                      <span className="text-xs text-slate-400">pts</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </QuickStatCard>
-          </div>
-        </section>
-
-        {/* ───────────────── Partidos de hoy ───────────────── */}
-        <section aria-labelledby="hoy" className="py-10">
-          <div className="mb-5 flex items-end justify-between gap-4">
+          <div className="grid gap-10 lg:grid-cols-[1fr_380px]">
             <div>
-              <p className="eyebrow">Jornada</p>
-              <h2 id="hoy" className="section-title">
-                Partidos de hoy
-              </h2>
-            </div>
-            <Link href="/partidos" className="shrink-0 text-sm font-semibold text-pitch-600 hover:underline dark:text-pitch-300">
-              Calendario completo →
-            </Link>
-          </div>
-
-          <TodayMatches matches={freshMatches} initialTodayKey={todayStr} />
-        </section>
-
-        {/* ───────────────── Destacados ───────────────── */}
-        <section aria-labelledby="destacados" className="py-10">
-          <div className="mb-5 flex items-end justify-between gap-4">
-            <div>
-              <p className="eyebrow">Estadísticas</p>
-              <h2 id="destacados" className="section-title">
-                Destacados
-              </h2>
-            </div>
-            <Link href="/tabla" className="shrink-0 text-sm font-semibold text-pitch-600 hover:underline dark:text-pitch-300">
-              Tablas completas →
-            </Link>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-2">
-            <PlayerStatTable
-              title="Goleadores"
-              rows={topScorers}
-              valueLabel="Goles"
-              emptyLabel="Aún no hay goles registrados."
-              limit={5}
-            />
-            <PlayerStatTable
-              title="Asistencias"
-              rows={topAssists}
-              valueLabel="Asist."
-              emptyLabel="Aún no hay asistencias registradas."
-              limit={5}
-            />
-          </div>
-        </section>
-
-        {/* ───────── Tendencias + anuncio lateral (desktop) ───────── */}
-        <section aria-labelledby="tendencias" className="py-10">
-          <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
-            <div>
-              <div className="mb-5">
-                <p className="eyebrow">Lo que dicen los números</p>
-                <h2 id="tendencias" className="section-title">
-                  Tendencias del Mundial
-                </h2>
-              </div>
-              <div className="grid gap-4 sm:grid-cols-3">
-                <TrendStat
-                  emoji="🛡️"
-                  value="Grupo C"
-                  label="El grupo más difícil del torneo según el índice de dificultad"
-                  href="/tendencias/camino-mas-dificil-mundial-2026"
-                />
-                <TrendStat
-                  emoji="🔥"
-                  value={biggestSurprise?.team.name ?? ""}
-                  label="La sorpresa del torneo: el equipo con la victoria más improbable"
-                  href={`/selecciones/${biggestSurprise?.team.slug ?? ""}`}
-                />
-                <TrendStat
-                  emoji="📊"
-                  value={`${topAdvanceTeam.probAdvance}%`}
-                  label={`${topAdvanceTeam.name} lidera la probabilidad de avanzar`}
-                  href="/predicciones"
-                />
-              </div>
-
-              <div className="mt-4">
-                <Link href="/tendencias" className="btn-ghost">
-                  Ver todas las tendencias
+              <p className="eyebrow !text-pitch-300">
+                <span className="inline-block h-2 w-2 rounded-full bg-pitch" />
+                Análisis estadístico · Mundial 2026
+              </p>
+              <h1 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+                Mundial 2026 en datos: partidos, probabilidades y tendencias
+              </h1>
+              <p className="mt-5 max-w-2xl text-lg text-slate-300">
+                Análisis diario, tablas, predicciones estadísticas y visualizaciones
+                del torneo. Sin lenguaje de apuestas: solo números.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/partidos" className="btn-primary">
+                  Ver partidos de hoy
+                  {liveCount > 0 && (
+                    <span className="ml-1 rounded-full bg-white/20 px-2 py-0.5 text-xs">{liveCount} en vivo</span>
+                  )}
+                </Link>
+                <Link href="/predicciones" className="btn-ghost !border-white/20 !text-white hover:!border-pitch-300 hover:!text-pitch-300">
+                  Predicciones del torneo
                 </Link>
               </div>
             </div>
 
+            {/* Live / Next match card */}
+            <div className="flex items-start justify-center lg:justify-end">
+              {displayMatch ? <LiveMatchCard match={displayMatch} /> : (
+                <div className="w-full max-w-sm rounded-2xl bg-white/10 p-6 text-center">
+                  <p className="text-sm text-slate-300">No hay partidos programados</p>
+                </div>
+              )}
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ───────────────── Últimos análisis ───────────────── */}
+      <div className="container-page">
+        {/* ───────────────── Últimos análisis (antes QuickStats) ───────────────── */}
         <section aria-labelledby="analisis" className="py-10">
-          <div className="mb-5 flex items-end justify-between gap-4">
+          <div className="mb-6 flex items-end justify-between gap-4">
             <div>
               <p className="eyebrow">Editorial</p>
               <h2 id="analisis" className="section-title">
@@ -414,38 +127,87 @@ export default async function HomePage() {
               Ver todos →
             </Link>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {latestArticles.map((a) => (
               <ArticleCard key={a.slug} article={a} />
             ))}
           </div>
         </section>
 
+        {/* ───────────────── Partidos de hoy ───────────────── */}
+        <section aria-labelledby="hoy" className="py-10">
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Jornada</p>
+              <h2 id="hoy" className="section-title">Partidos de hoy</h2>
+            </div>
+            <Link href="/partidos" className="shrink-0 text-sm font-semibold text-pitch-600 hover:underline dark:text-pitch-300">
+              Calendario completo →
+            </Link>
+          </div>
+          <TodayMatches matches={freshMatches} initialTodayKey={todayStr} />
+        </section>
+
+        {/* ───────────────── Destacados ───────────────── */}
+        <section aria-labelledby="destacados" className="py-10">
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Estadísticas</p>
+              <h2 id="destacados" className="section-title">Destacados</h2>
+            </div>
+            <Link href="/tabla" className="shrink-0 text-sm font-semibold text-pitch-600 hover:underline dark:text-pitch-300">
+              Tablas completas →
+            </Link>
+          </div>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <PlayerStatTable title="Goleadores" rows={topScorers} valueLabel="Goles" emptyLabel="Aún no hay goles registrados." limit={5} />
+            <PlayerStatTable title="Asistencias" rows={topAssists} valueLabel="Asist." emptyLabel="Aún no hay asistencias registradas." limit={5} />
+          </div>
+        </section>
       </div>
     </>
   );
-}
 
-function TrendStat({
-  emoji,
-  value,
-  label,
-  href,
-}: {
-  emoji: string;
-  value: string;
-  label: string;
-  href: string;
-}) {
-  return (
-    <Link href={href} className="card card-hover flex flex-col p-5">
-      <span aria-hidden className="text-2xl">
-        {emoji}
-      </span>
-      <p className="mt-3 font-display text-xl font-extrabold text-navy dark:text-slate-100">
-        {value}
-      </p>
-      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{label}</p>
-    </Link>
-  );
+  function LiveMatchCard({ match: m }: { match: typeof freshMatches[0] }) {
+    const home = getTeam(m.homeSlug);
+    const away = getTeam(m.awaySlug);
+    if (!home || !away) return null;
+    const isLive = m.status === "live" || m.status === "halftime";
+    return (
+      <Link
+        href={`/partidos/${m.slug}`}
+        className="w-full max-w-sm rounded-2xl bg-white/10 p-5 backdrop-blur-sm transition hover:bg-white/15"
+      >
+        <div className="mb-3 flex items-center gap-2 text-xs text-slate-300">
+          <StatusBadge status={m.status} minute={m.minute} />
+          <span>Grupo {m.group}</span>
+          {!isLive && <><span aria-hidden>·</span><LocalDate date={m.date} time={m.time} format="dayMonth" /></>}
+        </div>
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5">
+            <Flag isoCode={home.isoCode} alt={home.name} width={36} />
+            <span className="text-sm font-semibold">{home.name}</span>
+          </div>
+          {isLive ? (
+            <span className="stat-num text-xl font-extrabold text-pitch-300">
+              {m.homeScore}–{m.awayScore}
+            </span>
+          ) : (
+            <span className="stat-num text-lg font-bold text-pitch-300">
+              <LocalTime date={m.date} time={m.time} />
+            </span>
+          )}
+          <div className="flex items-center gap-2.5">
+            <span className="text-sm font-semibold">{away.name}</span>
+            <Flag isoCode={away.isoCode} alt={away.name} width={36} />
+          </div>
+        </div>
+        {!isLive && (
+          <p className="mt-2 text-center text-xs text-slate-400">
+            {m.stadium} · {m.city}
+          </p>
+        )}
+      </Link>
+    );
+  }
 }

@@ -19,11 +19,10 @@ export const mainNav = [
   { href: "/", label: "Inicio" },
   { href: "/partidos", label: "Partidos" },
   { href: "/tabla", label: "Tabla" },
+  { href: "/eliminatorias", label: "Eliminatorias" },
   { href: "/predicciones", label: "Predicciones" },
   { href: "/selecciones", label: "Selecciones" },
-  { href: "/eliminatorias", label: "Eliminatorias" },
   { href: "/tendencias", label: "Tendencias" },
-  { href: "/calculadora", label: "Calculadora" },
 ] as const;
 
 export const footerNav = [
