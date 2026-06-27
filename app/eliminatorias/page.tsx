@@ -1,112 +1,171 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import GroupTable from "@/components/GroupTable";
 import KnockoutBracket from "@/components/KnockoutBracket";
 import SeoJsonLd from "@/components/SeoJsonLd";
-import Flag from "@/components/Flag";
 import { collectionPageJsonLd } from "@/lib/seo";
 import { groups } from "@/data/groups";
 import { computeStandings } from "@/lib/utils";
-import { GROUP_IDS } from "@/data/teams";
-import { nonQualifiedTeams, getNonQualifiedByConfederation, confederationLabels } from "@/data/teams-nq";
-import type { Confederation } from "@/lib/types";
+import { knockoutRounds as rawKnockoutRounds, type KnockoutMatch, type KnockoutRound } from "@/data/knockout";
+import { getTeam } from "@/data/teams";
+import Flag from "@/components/Flag";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Eliminatorias Mundial 2026: tabla de grupos, resultados y fase final",
+  title: "Eliminatorias Mundial 2026: fase final, cruces y bracket",
   description:
-    "Sigue las eliminatorias del Mundial 2026: tabla de posiciones de los 12 grupos, fase de eliminación directa, resultados en vivo y selecciones eliminadas.",
+    "Cuadro de eliminación directa del Mundial 2026: dieciseisavos, octavos, cuartos, semifinales y final. Resultados en vivo y próximos cruces.",
   alternates: { canonical: "/eliminatorias" },
 };
 
+// Compute which teams qualify from each group (top 2)
+function getQualifiedTeams() {
+  const qualified: Record<string, { position: number; teamSlug: string }[]> = {};
+  for (const group of groups) {
+    const standings = computeStandings(group.rows);
+    qualified[group.id] = standings
+      .filter((s) => s.qualifies)
+      .map((s) => ({ position: s.position, teamSlug: s.teamSlug }));
+  }
+  return qualified;
+}
+
+// Build R32 matchups from group standings
+function buildR32(qualified: ReturnType<typeof getQualifiedTeams>): KnockoutMatch[] {
+  // For 48 teams (12 groups of 4): top 2 from each group + 8 best 3rd places = 32 teams
+  // Standard R32 pairing based on group position
+  const pairings: { home: string; away: string }[] = [
+    { home: "1A", away: "3B/3C/3D" },
+    { home: "1C", away: "2C/2D" },
+    { home: "1E", away: "3A/3C/3D" },
+    { home: "2A", away: "2B" },
+    { home: "1C", away: "3A/3B/3F" },
+    { home: "2E", away: "2F" },
+    { home: "1G", away: "3E/3F/3H" },
+    { home: "2G", away: "2H" },
+    { home: "1B", away: "3A/3E/3F" },
+    { home: "2I", away: "2J" },
+    { home: "1K", away: "3G/3H/3I" },
+    { home: "2K", away: "2L" },
+    { home: "1D", away: "3B/3C/3F" },
+    { home: "2E", away: "2F" },
+    { home: "1I", away: "3J/3K/3L" },
+    { home: "2I", away: "2J" },
+  ];
+
+  return pairings.map((p, i) => {
+    const homePos = p.home;
+    const groupId1 = homePos.slice(-1);
+    const pos1 = parseInt(homePos.charAt(0));
+    const groupTeams1 = qualified[groupId1] || [];
+    const homeTeam = groupTeams1.find((t) => t.position === pos1);
+    const homeLabel = homeTeam ? (getTeam(homeTeam.teamSlug)?.name ?? `1° Grupo ${groupId1}`) : `1° Grupo ${groupId1}`;
+
+    const awayLabel = p.away;
+    // Try to find the specific team for the away slot
+    // For "2C/2D" style, check both groups
+    const awayParts = p.away.split("/");
+    let awayTeamSlug: string | null = null;
+    for (const part of awayParts) {
+      const g = part.slice(-1);
+      const pos = part.charAt(0) === "3" ? 3 : 2;
+      const groupTeams = qualified[g] || [];
+      // For position 3, we need best 3rd places - simplified
+      const t = groupTeams.find((t) => t.position === pos);
+      if (t) { awayTeamSlug = t.teamSlug; break; }
+    }
+    const resolvedAway = awayTeamSlug ? (getTeam(awayTeamSlug)?.name ?? awayLabel) : awayLabel;
+
+    return {
+      slug: `r32-${i + 1}`,
+      round: "dieciseisavos" as const,
+      roundLabel: "Dieciseisavos de final",
+      homeSlug: homeTeam?.teamSlug ?? null,
+      awaySlug: awayTeamSlug,
+      homeLabel,
+      awayLabel: resolvedAway,
+      status: (homeTeam && awayTeamSlug ? "upcoming" : "placeholder") as "upcoming" | "placeholder",
+    };
+  });
+}
+
+function hasRealMatches(round: KnockoutRound): boolean {
+  return round.matches.some((m) => m.status !== "placeholder" && m.homeSlug !== null);
+}
+
 export default function EliminatoriasPage() {
-  const jsonLd = collectionPageJsonLd({
-    name: "Eliminatorias Mundial 2026",
-    description: "Tabla de posiciones de los 12 grupos y fase eliminatoria del Mundial 2026",
-    path: "/eliminatorias",
+  const qualified = getQualifiedTeams();
+  const r32 = buildR32(qualified);
+
+  // Replace the first round with computed data
+  const rounds = rawKnockoutRounds.map((r) => {
+    if (r.id === "dieciseisavos") {
+      return { ...r, matches: r32 };
+    }
+    return r;
   });
 
-  const confederations: Confederation[] = ["UEFA", "CONMEBOL", "CAF", "AFC", "CONCACAF", "OFC"];
+  const visibleRounds = rounds.filter(hasRealMatches);
+  const futureRounds = rounds.filter((r) => !hasRealMatches(r));
+
+  const jsonLd = collectionPageJsonLd({
+    name: "Eliminatorias Mundial 2026",
+    description: "Cuadro de eliminación directa del Mundial 2026",
+    path: "/eliminatorias",
+  });
 
   return (
     <div className="container-page pb-12">
       <SeoJsonLd data={jsonLd} />
       <PageHeader
         eyebrow="Mundial 2026"
-        title="Eliminatorias"
-        description="Tabla de posiciones de la fase de grupos, eliminatorias directas y selecciones eliminadas."
+        title="Fase eliminatoria"
+        description="Cruces de eliminación directa: dieciseisavos, octavos, cuartos, semifinales y final."
       />
 
-      {/* ─── Fase de Grupos ─── */}
-      <section className="mb-12">
-        <h2 className="section-title mb-6 text-2xl">Fase de grupos</h2>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {groups.map((group) => {
-            const standings = computeStandings(group.rows);
-            return (
-              <GroupTable
-                key={group.id}
-                standings={standings}
-                label={`Grupo ${group.id}`}
-              />
-            );
-          })}
+      {visibleRounds.length > 0 ? (
+        <KnockoutBracket rounds={visibleRounds} />
+      ) : (
+        <div className="card p-10 text-center">
+          <p className="text-lg font-semibold text-navy dark:text-slate-100">
+            La fase de grupos aún está en curso
+          </p>
+          <p className="mt-2 text-sm text-slate-500">
+            Los cruces de eliminación directa se definirán cuando finalice la fase de grupos.
+            Mientras tanto, seguí la tabla de posiciones en{" "}
+            <Link href="/tabla" className="text-pitch-600 hover:underline dark:text-pitch-400">
+              Tabla de grupos
+            </Link>.
+          </p>
         </div>
-      </section>
+      )}
 
-      {/* ─── Fase Eliminatoria ─── */}
-      <section className="mb-12">
-        <h2 className="section-title mb-6 text-2xl">Fase eliminatoria</h2>
-        <KnockoutBracket />
-      </section>
-
-      {/* ─── No clasificados ─── */}
-      <section>
-        <h2 className="section-title mb-6 text-2xl">Las que se quedaron fuera</h2>
-        <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">
-          Más de 200 selecciones compitieron por un lugar en el Mundial 2026. Estas son las más
-          destacadas que no lograron clasificar.
-        </p>
-        {confederations.map((conf) => {
-          const teams = getNonQualifiedByConfederation(conf);
-          if (teams.length === 0) return null;
-          return (
-            <details key={conf} className="group mb-4">
-              <summary className="flex cursor-pointer items-center gap-2 rounded-xl bg-slate-50 px-5 py-3 font-display text-lg font-bold text-navy transition hover:bg-slate-100 dark:bg-white/[0.03] dark:text-slate-100 dark:hover:bg-white/[0.06]">
-                <span>{confederationLabels[conf]}</span>
-                <span className="ml-auto text-xs font-normal text-slate-400">
-                  {teams.length} selecciones
-                </span>
-                <span className="text-pitch-500 transition-transform group-open:rotate-45">+</span>
-              </summary>
-              <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {teams.map((team) => (
-                  <div key={team.slug} className="card p-4">
-                    <div className="flex items-center gap-3">
-                      <Flag isoCode={team.isoCode} alt={team.name} width={32} />
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate font-semibold text-navy dark:text-slate-100">{team.name}</p>
-                        <p className="text-xs text-slate-400">FIFA #{team.fifaRank}</p>
-                      </div>
-                    </div>
-                    <p className="mt-2 text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
-                      {team.analysis}
-                    </p>
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      {team.keyPlayers.slice(0, 2).map((p) => (
-                        <span key={p.name} className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] text-slate-500 dark:bg-white/10 dark:text-slate-300">
-                          {p.name}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+      {futureRounds.length > 0 && (
+        <section className="mt-10">
+          <h2 className="section-title mb-4 text-xl">Próximas rondas</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {futureRounds.map((round) => (
+              <div key={round.id} className="card p-5">
+                <h3 className="font-display text-base font-bold text-navy dark:text-slate-100">
+                  {round.label}
+                </h3>
+                <p className="mt-1 text-sm text-slate-400">
+                  {round.matches.length} partido{round.matches.length !== 1 ? "s" : ""}
+                </p>
+                <p className="mt-2 text-xs text-slate-500">
+                  Se define cuando avance la fase de grupos
+                </p>
               </div>
-            </details>
-          );
-        })}
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="mt-10 flex flex-wrap gap-3 border-t border-slate-200 pt-8 dark:border-white/10">
+        <Link href="/tabla" className="btn-ghost text-sm">Ver tabla de grupos</Link>
+        <Link href="/partidos" className="btn-ghost text-sm">Calendario de partidos</Link>
+        <Link href="/predicciones" className="btn-ghost text-sm">Predicciones del torneo</Link>
       </section>
     </div>
   );

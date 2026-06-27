@@ -1,9 +1,10 @@
-import { knockoutRounds } from "@/data/knockout";
-import { getTeam } from "@/data/teams";
+import { knockoutRounds as fallbackRounds } from "@/data/knockout";
+import type { KnockoutRound } from "@/data/knockout";
 import { cn } from "@/lib/utils";
 
 interface KnockoutBracketProps {
   className?: string;
+  rounds?: KnockoutRound[];
 }
 
 function MatchCard({
@@ -42,10 +43,11 @@ function MatchCard({
   );
 }
 
-export default function KnockoutBracket({ className }: KnockoutBracketProps) {
+export default function KnockoutBracket({ className, rounds }: KnockoutBracketProps) {
+  const data = rounds ?? fallbackRounds;
   return (
     <div className={cn("space-y-8", className)}>
-      {knockoutRounds.map((round) => (
+      {data.map((round) => (
         <section key={round.id}>
           <h3 className="font-display text-base font-bold text-navy dark:text-slate-100 mb-3">
             {round.label}
