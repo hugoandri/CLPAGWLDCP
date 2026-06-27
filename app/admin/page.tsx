@@ -9,6 +9,8 @@ interface ArticleForm {
   excerpt: string;
   author: string;
   authorSocial: string;
+  imageUrl: string;
+  imageCaption: string;
   sections: { heading: string; body: string }[];
   faqs: { question: string; answer: string }[];
 }
@@ -23,6 +25,8 @@ const emptyForm = (): ArticleForm => ({
   excerpt: "",
   author: "",
   authorSocial: "",
+  imageUrl: "",
+  imageCaption: "",
   sections: [{ heading: "", body: "" }],
   faqs: [],
 });
@@ -113,6 +117,7 @@ export default function AdminPage() {
 
     const authorLine = form.author ? `"${form.author}"` : '"Redacción DataGoal"';
     const socialLine = form.authorSocial ? `    authorSocial: "${form.authorSocial}",` : '';
+    const imageLine = form.imageUrl ? `    imageUrl: "${form.imageUrl}",\n    imageCaption: "${form.imageCaption || ''}",` : '';
     return `  {
     slug: "${slug}",
     title: "${form.title}",
@@ -122,6 +127,7 @@ export default function AdminPage() {
     excerpt: "${form.excerpt}",
     author: ${authorLine},
     ${socialLine}
+    ${imageLine}
     trend: "${form.category}",
     sections: [\n${sections}\n    ],
     faqs: [\n${faqs}\n    ],
@@ -261,6 +267,24 @@ export default function AdminPage() {
                 </div>
               </div>
 
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">URL de la imagen</label>
+                <input
+                  value={form.imageUrl}
+                  onChange={(e) => setForm({ ...form, imageUrl: e.target.value })}
+                  className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
+                  placeholder="https://ejemplo.com/imagen.jpg"
+                />
+              </div>
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Pie de foto</label>
+                <input
+                  value={form.imageCaption}
+                  onChange={(e) => setForm({ ...form, imageCaption: e.target.value })}
+                  className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
+                  placeholder="Descripción de la imagen"
+                />
+              </div>
               <div>
                 <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Extracto (meta description)</label>
                 <textarea

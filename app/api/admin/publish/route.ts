@@ -12,6 +12,8 @@ interface ArticleInput {
   excerpt: string;
   author?: string;
   authorSocial?: string;
+  imageUrl?: string;
+  imageCaption?: string;
   sections: Section[];
   faqs: Faq[];
 }
@@ -66,6 +68,10 @@ export async function POST(request: Request) {
 
   if (body.authorSocial) {
     article.authorSocial = body.authorSocial;
+  }
+  if (body.imageUrl) {
+    article.imageUrl = body.imageUrl;
+    article.imageCaption = body.imageCaption || "";
   }
 
   // Guardar en data/editorial-articles.json

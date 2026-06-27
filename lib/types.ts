@@ -230,6 +230,8 @@ export interface Article {
   excerpt: string;
   author: string;
   authorSocial?: string; // URL de red social del autor
+  imageUrl?: string;
+  imageCaption?: string;
   trend?: string; // etiqueta corta para TrendBadge
   /** Ruta interna a la que enlaza la tarjeta (herramienta o detalle). */
   href?: string;

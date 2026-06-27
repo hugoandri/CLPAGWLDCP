@@ -134,9 +134,21 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           </div>
         </header>
 
-        <div className="my-8">
-          <AdSlot slotName="articulo-top-banner" format="leaderboard" />
-        </div>
+        {article.imageUrl && (
+          <figure className="my-8 overflow-hidden rounded-2xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={article.imageUrl}
+              alt={article.imageCaption || article.title}
+              className="w-full object-cover"
+            />
+            {article.imageCaption && (
+              <figcaption className="mt-2 text-center text-sm text-slate-400 italic">
+                {article.imageCaption}
+              </figcaption>
+            )}
+          </figure>
+        )}
 
         <div className="space-y-8">
           {article.sections.map((section) => (
