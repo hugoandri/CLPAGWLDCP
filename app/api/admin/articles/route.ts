@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "node:fs";
 import { join } from "node:path";
+import { articles as staticArticles } from "@/data/articles";
 
 export async function GET(request: Request) {
   const auth = request.headers.get("Authorization");
@@ -9,15 +10,34 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // Get editorial articles
+  let editorial: Record<string, unknown>[] = [];
   try {
     const filePath = join(process.cwd(), "data", "editorial-articles.json");
     const content = await fs.readFile(filePath, "utf-8");
-    const data = JSON.parse(content);
-    // Return reversed so newest first
-    return NextResponse.json({ articles: (data.articles || []).reverse() });
-  } catch {
-    return NextResponse.json({ articles: [] });
-  }
+    editorial = JSON.parse(content).articles || [];
+  } catch { /* ignore */ }
+
+  // Map editorial articles with type
+  const editorialWithType = editorial.map((a: Record<string, unknown>) => ({
+    ...a,
+    _type: "editorial",
+  }));
+
+  // Map static articles with type
+  const staticWithType = staticArticles.map((a) => ({
+    ...a,
+    _type: "static",
+    status: "published",
+  }));
+
+  // Merge: editorial first (newest), then static
+  const merged = [
+    ...editorialWithType.reverse(),
+    ...staticWithType.reverse(),
+  ];
+
+  return NextResponse.json({ articles: merged });
 }
 
 export async function DELETE(request: Request) {
