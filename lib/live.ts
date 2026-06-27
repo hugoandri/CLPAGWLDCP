@@ -208,3 +208,48 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
     return fromFile;
   }
 }
+
+// ── Knockout results from FIFA API ────────────────────────────────────────────
+
+export interface FIFAMatchResult {
+  homeScore: number;
+  awayScore: number;
+  status: "finished" | "live";
+}
+
+/**
+ * Fetches all match results (group + knockout) from the FIFA API.
+ * Returns a Map keyed by "{homeSlug}-vs-{awaySlug}" for O(1) lookup.
+ * The bracket page uses this to auto-populate scores for every round.
+ */
+export async function fetchAllFIFAResults(): Promise<Map<string, FIFAMatchResult>> {
+  const results = new Map<string, FIFAMatchResult>();
+  try {
+    const url =
+      `${FIFA_API}/calendar/matches?idCompetition=${ID_COMPETITION}&idSeason=${ID_SEASON}` +
+      `&language=en&count=200&from=2026-06-01T00:00:00Z&to=2026-07-31T00:00:00Z`;
+
+    const res = await fetch(url, { next: { revalidate: 30 } });
+    if (!res.ok) return results;
+
+    const data = await res.json();
+    for (const fm of data.Results ?? []) {
+      const homeSlug = TEAM_SLUG[fm.Home?.TeamName?.[0]?.Description ?? ""];
+      const awaySlug = TEAM_SLUG[fm.Away?.TeamName?.[0]?.Description ?? ""];
+      if (!homeSlug || !awaySlug) continue;
+
+      const isFinished = fm.MatchStatus === 0;
+      const isLive = fm.MatchStatus === 3;
+      if (!isFinished && !isLive) continue;
+
+      results.set(`${homeSlug}-vs-${awaySlug}`, {
+        homeScore: fm.HomeTeamScore ?? 0,
+        awayScore: fm.AwayTeamScore ?? 0,
+        status: isFinished ? "finished" : "live",
+      });
+    }
+  } catch {
+    // silently fall back to empty map (bracket shows placeholders)
+  }
+  return results;
+}
