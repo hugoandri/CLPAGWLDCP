@@ -188,7 +188,7 @@ export default async function HomePage() {
         </div>
         <div className="flex items-center justify-between gap-4">
           <div className="flex min-w-0 flex-1 items-center gap-3">
-            <Flag isoCode={home.isoCode} alt={home.name} width={44} />
+            <Flag isoCode={home.isoCode} alt={home.name} width={40} />
             <span className="text-base font-bold leading-tight">{home.name}</span>
           </div>
           {isLive ? (
@@ -202,7 +202,7 @@ export default async function HomePage() {
           )}
           <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
             <span className="text-base font-bold leading-tight">{away.name}</span>
-            <Flag isoCode={away.isoCode} alt={away.name} width={44} />
+            <Flag isoCode={away.isoCode} alt={away.name} width={40} />
           </div>
         </div>
         {!isLive && (
