@@ -610,7 +610,7 @@ export default function AdminPage() {
           ) : allArticles.length === 0 ? (
             <div className="card p-8 text-center">
               <p className="text-sm text-slate-500">No hay publicaciones editoriales todavía.</p>
-              <p className="mt-1 text-xs text-slate-400">Las publicaciones aparecerán aquí cuando uses el formulario "Nuevo artículo".</p>
+              <p className="mt-1 text-xs text-slate-400">Las publicaciones aparecerán aquí cuando uses el formulario &quot;Nuevo artículo&quot;.</p>
             </div>
           ) : (
             <div className="space-y-3">
