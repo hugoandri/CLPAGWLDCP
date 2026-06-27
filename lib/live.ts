@@ -214,13 +214,16 @@ export async function readLiveUpdatesWithFIFA(): Promise<LiveMatchUpdate[]> {
 export interface FIFAMatchResult {
   homeScore: number;
   awayScore: number;
+  // Set only when the match was decided on penalties
+  homePenalties?: number;
+  awayPenalties?: number;
   status: "finished" | "live";
 }
 
 /**
  * Fetches all match results (group + knockout) from the FIFA API.
  * Returns a Map keyed by "{homeSlug}-vs-{awaySlug}" for O(1) lookup.
- * The bracket page uses this to auto-populate scores for every round.
+ * Includes penalty shootout scores so the bracket knows who advances.
  */
 export async function fetchAllFIFAResults(): Promise<Map<string, FIFAMatchResult>> {
   const results = new Map<string, FIFAMatchResult>();
@@ -242,9 +245,16 @@ export async function fetchAllFIFAResults(): Promise<Map<string, FIFAMatchResult
       const isLive = fm.MatchStatus === 3;
       if (!isFinished && !isLive) continue;
 
+      // Penalty shootout scores (null/undefined when match was decided in normal/extra time)
+      const homePens = fm.HomeTeamPenaltyScore ?? null;
+      const awayPens = fm.AwayTeamPenaltyScore ?? null;
+
       results.set(`${homeSlug}-vs-${awaySlug}`, {
         homeScore: fm.HomeTeamScore ?? 0,
         awayScore: fm.AwayTeamScore ?? 0,
+        ...(homePens !== null && awayPens !== null
+          ? { homePenalties: homePens, awayPenalties: awayPens }
+          : {}),
         status: isFinished ? "finished" : "live",
       });
     }

@@ -55,17 +55,21 @@ function applyFIFAResult(
       ...match,
       homeScore: direct.homeScore,
       awayScore: direct.awayScore,
+      homePenalties: direct.homePenalties,
+      awayPenalties: direct.awayPenalties,
       status: direct.status === "finished" ? "finished" : "upcoming",
     };
   }
 
   const reversed = fifaResults.get(reverseKey);
   if (reversed) {
-    // FIFA has the teams in opposite order — swap the scores
+    // FIFA has the teams in opposite order — swap the scores and penalties
     return {
       ...match,
       homeScore: reversed.awayScore,
       awayScore: reversed.homeScore,
+      homePenalties: reversed.awayPenalties,
+      awayPenalties: reversed.homePenalties,
       status: reversed.status === "finished" ? "finished" : "upcoming",
     };
   }
@@ -73,19 +77,28 @@ function applyFIFAResult(
   return match;
 }
 
-/** Returns the winner of a finished match, or a placeholder label. */
+/** Returns the winner of a finished match, or a placeholder label.
+ *  Handles extra time and penalty shootouts correctly. */
 function winner(m: KnockoutMatch): { slug: string | null; label: string } {
   if (m.status !== "finished") return { slug: null, label: `Gan. ${m.slug.toUpperCase()}` };
-  const homeWins = (m.homeScore ?? 0) > (m.awayScore ?? 0);
+  // Penalties: use shootout score to break the tie
+  const homeWins =
+    m.homePenalties !== undefined && m.awayPenalties !== undefined
+      ? m.homePenalties > m.awayPenalties
+      : (m.homeScore ?? 0) > (m.awayScore ?? 0);
   return homeWins
     ? { slug: m.homeSlug, label: m.homeLabel }
     : { slug: m.awaySlug, label: m.awayLabel };
 }
 
-/** Returns the loser of a finished match (for 3rd-place). */
+/** Returns the loser of a finished match (for 3rd-place).
+ *  Handles penalty shootouts correctly. */
 function loser(m: KnockoutMatch): { slug: string | null; label: string } {
   if (m.status !== "finished") return { slug: null, label: `Per. ${m.slug.toUpperCase()}` };
-  const homeWins = (m.homeScore ?? 0) > (m.awayScore ?? 0);
+  const homeWins =
+    m.homePenalties !== undefined && m.awayPenalties !== undefined
+      ? m.homePenalties > m.awayPenalties
+      : (m.homeScore ?? 0) > (m.awayScore ?? 0);
   return homeWins
     ? { slug: m.awaySlug, label: m.awayLabel }
     : { slug: m.homeSlug, label: m.homeLabel };

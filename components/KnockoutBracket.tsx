@@ -52,8 +52,13 @@ function TeamLabel({ name, isoCode, score, winner }: {
 // ── Match card ────────────────────────────────────────────────────────────────
 function MatchCard({ match }: { match: KnockoutMatch }) {
   const hasScore = match.status === "finished" && match.homeScore !== undefined;
-  const homeWon = hasScore && (match.homeScore ?? 0) > (match.awayScore ?? 0);
-  const awayWon = hasScore && (match.awayScore ?? 0) > (match.homeScore ?? 0);
+  const hasPens = hasScore && match.homePenalties !== undefined;
+  // Winner is decided by penalties if applicable, otherwise by regular score
+  const homeWon = hasScore && (
+    hasPens ? (match.homePenalties ?? 0) > (match.awayPenalties ?? 0)
+            : (match.homeScore ?? 0) > (match.awayScore ?? 0)
+  );
+  const awayWon = hasScore && !homeWon;
   const isPlaceholder = match.status === "placeholder";
 
   const homeIso = match.homeSlug ? getTeam(match.homeSlug)?.isoCode : undefined;
@@ -69,6 +74,11 @@ function MatchCard({ match }: { match: KnockoutMatch }) {
       )}
       style={{ width: MATCH_W }}
     >
+      {hasPens && (
+        <div className="px-2.5 pt-1 text-[9px] text-slate-400 tabular-nums">
+          p. {match.homePenalties}–{match.awayPenalties}
+        </div>
+      )}
       <TeamLabel
         name={match.homeLabel}
         isoCode={homeIso}

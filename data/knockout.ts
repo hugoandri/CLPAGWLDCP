@@ -8,6 +8,8 @@ export interface KnockoutMatch {
   awayLabel: string;
   homeScore?: number;
   awayScore?: number;
+  homePenalties?: number;
+  awayPenalties?: number;
   date?: string;
   time?: string;
   stadium?: string;
