@@ -49,7 +49,10 @@ export default async function HomePage() {
   const liveCount = liveMatches.length;
 
   const liveMatch = liveMatches.length > 0 ? liveMatches[0] : null;
-  const displayMatch = liveMatch || nextMatch;
+  const heroMatches = liveMatches.slice(0, 2);
+  if (heroMatches.length < 2 && nextMatch && !heroMatches.some(m => m.slug === nextMatch.slug)) {
+    heroMatches.push(nextMatch);
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -101,9 +104,9 @@ export default async function HomePage() {
               </div>
             </div>
 
-            {/* Live / Next match card */}
-            <div className="flex items-start justify-center lg:justify-end">
-              {displayMatch ? <LiveMatchCard match={displayMatch} /> : (
+            {/* Live / Next match cards */}
+            <div className="flex flex-col items-center gap-4 lg:items-end">
+              {heroMatches.length > 0 ? heroMatches.map((m) => <LiveMatchCard key={m.slug} match={m} />) : (
                 <div className="w-full max-w-sm rounded-2xl bg-white/10 p-6 text-center">
                   <p className="text-sm text-slate-300">No hay partidos programados</p>
                 </div>

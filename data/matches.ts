@@ -164,17 +164,27 @@ export function getLiveMatches(): Match[] {
  */
 export function getFreshMatches(updates: LiveMatchUpdate[] = []): Match[] {
   const map = new Map(updates.map((u) => [u.slug, u]));
+  const now = new Date();
   return matches.map((m) => {
     const update = map.get(m.slug);
-    if (!update) return m;
-    return {
-      ...m,
-      status: update.status ?? m.status,
-      homeScore: update.homeScore ?? m.homeScore,
-      awayScore: update.awayScore ?? m.awayScore,
-      minute: update.minute ?? m.minute,
-      detail: update.detail ?? m.detail,
-    };
+    // If FIFA live data exists for this match, use it
+    if (update) {
+      return {
+        ...m,
+        status: update.status ?? m.status,
+        homeScore: update.homeScore ?? m.homeScore,
+        awayScore: update.awayScore ?? m.awayScore,
+        minute: update.minute ?? m.minute,
+        detail: update.detail ?? m.detail,
+      };
+    }
+    // Auto-mark old matches as finished
+    const matchDate = new Date(`${m.date}T${m.time || "23:59"}:00`);
+    const hoursDiff = (now.getTime() - matchDate.getTime()) / 1000 / 3600;
+    if (m.status === "upcoming" && hoursDiff > 3) {
+      return { ...m, status: "finished" as const };
+    }
+    return m;
   });
 }
 
