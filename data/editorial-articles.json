@@ -18,6 +18,24 @@
         }
       ],
       "faqs": []
+    },
+    {
+      "slug": "test",
+      "title": "test",
+      "category": "Análisis",
+      "date": "2026-06-27",
+      "readingMinutes": 1,
+      "excerpt": "test excerpt",
+      "author": "Redacción DataGoal",
+      "trend": "Análisis",
+      "sections": [
+        {
+          "heading": "test",
+          "body": "test body"
+        }
+      ],
+      "faqs": [],
+      "status": "published"
     }
   ]
 }
