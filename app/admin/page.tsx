@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 interface ArticleForm {
   title: string;
@@ -40,6 +40,84 @@ function slugify(text: string): string {
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
     .trim();
+}
+
+function ImageUploader({ value, onChange, authPw }: { value: string; onChange: (url: string) => void; authPw: string }) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [uploading, setUploading] = useState(false);
+  const [dragOver, setDragOver] = useState(false);
+
+  const handleFile = async (file: File) => {
+    if (!file.type.startsWith("image/")) {
+      alert("Solo se permiten imágenes");
+      return;
+    }
+    setUploading(true);
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      const res = await fetch("/api/admin/upload", {
+        method: "POST",
+        headers: { Authorization: authPw },
+        body: formData,
+      });
+      const data = await res.json();
+      if (res.ok && data.url) {
+        onChange(data.url);
+      } else {
+        alert("Error al subir: " + (data.error || "desconocido"));
+      }
+    } catch {
+      alert("Error de conexión");
+    }
+    setUploading(false);
+  };
+
+  return (
+    <div>
+      <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Imagen</label>
+      <div
+        className={`mt-1 flex flex-col items-center justify-center rounded-xl border-2 border-dashed p-6 transition-colors cursor-pointer ${
+          dragOver
+            ? "border-pitch bg-pitch/5"
+            : "border-slate-300 bg-slate-50 dark:border-white/20 dark:bg-white/[0.03]"
+        }`}
+        onClick={() => inputRef.current?.click()}
+        onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
+        onDragLeave={() => setDragOver(false)}
+        onDrop={(e) => { e.preventDefault(); setDragOver(false); const f = e.dataTransfer.files[0]; if (f) handleFile(f); }}
+      >
+        {uploading ? (
+          <p className="text-sm text-slate-500">Subiendo imagen...</p>
+        ) : value ? (
+          <div className="w-full space-y-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={value} alt="" className="mx-auto max-h-40 rounded-lg object-cover" />
+            <p className="text-center text-xs text-slate-400">Arrastra o haz clic para cambiar</p>
+          </div>
+        ) : (
+          <>
+            <span className="text-2xl text-slate-300">📷</span>
+            <p className="mt-2 text-sm text-slate-500">Arrastra una imagen o haz clic para seleccionar</p>
+            <p className="mt-1 text-xs text-slate-400">JPG, PNG, WebP</p>
+          </>
+        )}
+      </div>
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/jpeg,image/png,image/webp"
+        className="hidden"
+        onChange={(e) => { const f = e.target.files?.[0]; if (f) handleFile(f); }}
+      />
+      <input
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 text-xs dark:border-white/20 dark:bg-navy-900"
+        placeholder="O pega una URL manualmente"
+      />
+    </div>
+  );
 }
 
 export default function AdminPage() {
@@ -282,15 +360,11 @@ export default function AdminPage() {
                 </div>
               </div>
 
-              <div>
-                <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">URL de la imagen</label>
-                <input
-                  value={form.imageUrl}
-                  onChange={(e) => setForm({ ...form, imageUrl: e.target.value })}
-                  className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
-                  placeholder="https://ejemplo.com/imagen.jpg"
-                />
-              </div>
+              <ImageUploader
+                value={form.imageUrl}
+                onChange={(url) => setForm({ ...form, imageUrl: url })}
+                authPw={storedPw}
+              />
               <div>
                 <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Pie de foto</label>
                 <input
