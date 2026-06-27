@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { knockoutRounds as fallbackRounds } from "@/data/knockout";
 import type { KnockoutRound, KnockoutMatch } from "@/data/knockout";
+import { getTeam } from "@/data/teams";
 import { cn } from "@/lib/utils";
 
 // Each TeamLabel row: py-[7px] (7+7=14px) + text-[11px] leading-tight (~14px) ≈ 28px
@@ -17,8 +19,8 @@ interface KnockoutBracketProps {
 }
 
 // ── Team label ────────────────────────────────────────────────────────────────
-function TeamLabel({ name, score, winner }: {
-  name: string; score?: number; winner?: boolean;
+function TeamLabel({ name, isoCode, score, winner }: {
+  name: string; isoCode?: string; score?: number; winner?: boolean;
 }) {
   return (
     <div
@@ -28,7 +30,18 @@ function TeamLabel({ name, score, winner }: {
       )}
       style={winner ? { background: "rgba(47,184,92,0.12)", color: "#166534" } : {}}
     >
-      <span className="truncate">{name}</span>
+      <span className="flex items-center gap-1.5 min-w-0">
+        {isoCode && (
+          <Image
+            src={`https://flagcdn.com/16x12/${isoCode}.png`}
+            alt=""
+            width={16}
+            height={12}
+            className="shrink-0 rounded-[1px]"
+          />
+        )}
+        <span className="truncate">{name}</span>
+      </span>
       {score !== undefined && (
         <span className="shrink-0 tabular-nums font-bold">{score}</span>
       )}
@@ -43,6 +56,9 @@ function MatchCard({ match }: { match: KnockoutMatch }) {
   const awayWon = hasScore && (match.awayScore ?? 0) > (match.homeScore ?? 0);
   const isPlaceholder = match.status === "placeholder";
 
+  const homeIso = match.homeSlug ? getTeam(match.homeSlug)?.isoCode : undefined;
+  const awayIso = match.awaySlug ? getTeam(match.awaySlug)?.isoCode : undefined;
+
   return (
     <div
       className={cn(
@@ -55,12 +71,14 @@ function MatchCard({ match }: { match: KnockoutMatch }) {
     >
       <TeamLabel
         name={match.homeLabel}
+        isoCode={homeIso}
         score={hasScore ? match.homeScore : undefined}
         winner={homeWon}
       />
       <div className="h-px bg-slate-100 dark:bg-white/5" />
       <TeamLabel
         name={match.awayLabel}
+        isoCode={awayIso}
         score={hasScore ? match.awayScore : undefined}
         winner={awayWon}
       />
