@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 interface ArticleForm {
   title: string;
+  subtitle: string;
   category: string;
   date: string;
   excerpt: string;
@@ -20,6 +21,7 @@ const DRAFTS_KEY = "datagoal-admin-drafts";
 
 const emptyForm = (): ArticleForm => ({
   title: "",
+  subtitle: "",
   category: "Análisis",
   date: new Date().toISOString().slice(0, 10),
   excerpt: "",
@@ -118,9 +120,11 @@ export default function AdminPage() {
     const authorLine = form.author ? `"${form.author}"` : '"Redacción DataGoal"';
     const socialLine = form.authorSocial ? `    authorSocial: "${form.authorSocial}",` : '';
     const imageLine = form.imageUrl ? `    imageUrl: "${form.imageUrl}",\n    imageCaption: "${form.imageCaption || ''}",` : '';
+    const subtitleLine = form.subtitle ? `    subtitle: "${form.subtitle}",` : '';
     return `  {
     slug: "${slug}",
     title: "${form.title}",
+    ${subtitleLine}
     category: "${form.category}" as const,
     date: "${form.date}",
     readingMinutes: Math.ceil((${form.sections.filter(s => s.body).reduce((a, s) => a + s.body.split(' ').length, 0)} / 200) + 1),
@@ -221,6 +225,17 @@ export default function AdminPage() {
                   onChange={(e) => setForm({ ...form, title: e.target.value })}
                   className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
                   placeholder="Título del artículo"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Bajada / Subtítulo</label>
+                <textarea
+                  value={form.subtitle}
+                  onChange={(e) => setForm({ ...form, subtitle: e.target.value })}
+                  className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
+                  rows={2}
+                  placeholder="Texto que aparece justo después del título, antes de la imagen"
                 />
               </div>
 

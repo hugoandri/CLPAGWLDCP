@@ -224,16 +224,16 @@ export interface ArticleSection {
 export interface Article {
   slug: string;
   title: string;
+  subtitle?: string;
   category: ArticleCategory;
   date: string; // ISO
   readingMinutes: number;
   excerpt: string;
   author: string;
-  authorSocial?: string; // URL de red social del autor
+  authorSocial?: string;
   imageUrl?: string;
   imageCaption?: string;
-  trend?: string; // etiqueta corta para TrendBadge
-  /** Ruta interna a la que enlaza la tarjeta (herramienta o detalle). */
+  trend?: string;
   href?: string;
   sections: ArticleSection[];
   faqs: FaqItem[];

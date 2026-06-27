@@ -7,6 +7,7 @@ interface Faq { question: string; answer: string }
 
 interface ArticleInput {
   title: string;
+  subtitle?: string;
   category: string;
   date: string;
   excerpt: string;
@@ -60,6 +61,7 @@ export async function POST(request: Request) {
       sections.reduce((a, s) => a + s.body.split(" ").length, 0) / 200
     )),
     excerpt: body.excerpt,
+    subtitle: body.subtitle || undefined,
     author: body.author || "Redacción DataGoal",
     trend: body.category,
     sections,

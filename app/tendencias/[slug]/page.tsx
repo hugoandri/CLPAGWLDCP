@@ -132,6 +132,11 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <span aria-hidden>·</span>
             <span>{article.readingMinutes} min de lectura</span>
           </div>
+          {article.subtitle && (
+            <p className="mt-4 max-w-3xl text-xl font-semibold leading-snug text-navy dark:text-slate-200">
+              {article.subtitle}
+            </p>
+          )}
         </header>
 
         {article.imageUrl && (
