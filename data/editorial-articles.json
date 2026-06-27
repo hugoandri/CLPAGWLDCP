@@ -1,6 +1,7 @@
 {
   "articles": [
     {
+      "status": "published",
       "slug": "argentina-dependencia-messi-peligro-mundial",
       "title": "Argentina y la dependencia de Messi: una señal que puede costar un Mundial",
       "category": "Análisis",

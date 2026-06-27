@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 interface ArticleForm {
   title: string;
@@ -12,8 +13,15 @@ interface ArticleForm {
   authorSocial: string;
   imageUrl: string;
   imageCaption: string;
+  status: "draft" | "published";
   sections: { heading: string; body: string }[];
   faqs: { question: string; answer: string }[];
+}
+
+interface EditorialEntry extends ArticleForm {
+  slug: string;
+  readingMinutes: number;
+  trend: string;
 }
 
 const CATEGORIES = ["Análisis", "Tendencias", "Datos", "Clasificación", "Herramienta"];
@@ -29,6 +37,7 @@ const emptyForm = (): ArticleForm => ({
   authorSocial: "",
   imageUrl: "",
   imageCaption: "",
+  status: "published",
   sections: [{ heading: "", body: "" }],
   faqs: [],
 });
@@ -125,6 +134,10 @@ export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [storedPw, setStoredPw] = useState("");
   const [form, setForm] = useState<ArticleForm>(emptyForm());
+  const [tab, setTab] = useState<"nuevo" | "todas">("nuevo");
+  const [allArticles, setAllArticles] = useState<EditorialEntry[]>([]);
+  const [editingSlug, setEditingSlug] = useState<string | null>(null);
+  const [loadingList, setLoadingList] = useState(false);
   const [drafts, setDrafts] = useState<ArticleForm[]>([]);
   const [published, setPublished] = useState<string | null>(null);
   const [publishing, setPublishing] = useState(false);
@@ -216,19 +229,70 @@ export default function AdminPage() {
   },`;
   };
 
+  const loadArticlesList = async () => {
+    setLoadingList(true);
+    try {
+      const res = await fetch("/api/admin/articles", { headers: { Authorization: storedPw } });
+      if (res.ok) {
+        const data = await res.json();
+        setAllArticles(data.articles || []);
+      }
+    } catch { /* ignore */ }
+    setLoadingList(false);
+  };
+
+  const startEdit = (article: EditorialEntry) => {
+    setForm({
+      title: article.title,
+      subtitle: article.subtitle || "",
+      category: article.category,
+      date: article.date,
+      excerpt: article.excerpt,
+      author: article.author,
+      authorSocial: article.authorSocial || "",
+      imageUrl: article.imageUrl || "",
+      imageCaption: article.imageCaption || "",
+      status: article.status || "published",
+      sections: article.sections,
+      faqs: article.faqs,
+    });
+    setEditingSlug(article.slug);
+    setTab("nuevo");
+  };
+
+  const deleteArticle = async (slug: string) => {
+    if (!confirm(`¿Eliminar "${slug}"?`)) return;
+    try {
+      const res = await fetch("/api/admin/articles", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json", Authorization: storedPw },
+        body: JSON.stringify({ slug }),
+      });
+      if (res.ok) {
+        loadArticlesList();
+        alert("Artículo eliminado");
+      } else {
+        const data = await res.json();
+        alert("Error: " + (data.error || "desconocido"));
+      }
+    } catch { alert("Error de conexión"); }
+  };
+
   const publish = async () => {
     setPublishing(true);
     setPublished(null);
     try {
+      const payload = { ...form, editingSlug };
       const res = await fetch("/api/admin/publish", {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: storedPw },
-        body: JSON.stringify(form),
+        body: JSON.stringify(payload),
       });
       const data = await res.json();
       if (res.ok) {
-        setPublished(`Artículo publicado. ${data.commitUrl ? `Commit: ${data.commitUrl}` : ""}`);
+        setPublished(form.status === "draft" ? "Borrador guardado." : `Artículo publicado. ${data.commitUrl ? `Commit: ${data.commitUrl}` : ""}`);
         setForm(emptyForm());
+        setEditingSlug(null);
       } else {
         setPublished(`Error: ${data.error}. Código generado abajo para copiar manualmente.`);
       }
@@ -290,10 +354,21 @@ export default function AdminPage() {
         </button>
       </div>
 
+      {/* Tab navigation */}
+      <div className="mb-6 flex gap-2 border-b border-slate-200 pb-2 dark:border-white/10">
+        <button onClick={() => setTab("nuevo")} className={cn("rounded-t-lg px-4 py-2 text-sm font-semibold transition", tab === "nuevo" ? "bg-pitch text-white" : "text-slate-500 hover:text-navy dark:hover:text-slate-200")}>
+          ✏️ Nuevo artículo
+        </button>
+        <button onClick={() => { setTab("todas"); loadArticlesList(); }} className={cn("rounded-t-lg px-4 py-2 text-sm font-semibold transition", tab === "todas" ? "bg-pitch text-white" : "text-slate-500 hover:text-navy dark:hover:text-slate-200")}>
+          📋 Todas las publicaciones
+        </button>
+      </div>
+
+      {tab === "nuevo" && (
       <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
         <div className="space-y-5">
           <section className="card p-6">
-            <h2 className="section-title mb-4 text-xl">Nuevo artículo</h2>
+            <h2 className="section-title mb-4 text-xl">{editingSlug ? "Editar artículo" : "Nuevo artículo"}</h2>
 
             <div className="space-y-4">
               <div>
@@ -383,6 +458,20 @@ export default function AdminPage() {
                   rows={3}
                   placeholder="Resumen del artículo"
                 />
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Estado</label>
+                <div className="mt-1 flex gap-3">
+                  <label className={cn("flex cursor-pointer items-center gap-2 rounded-lg border px-4 py-2 text-sm transition", form.status === "published" ? "border-pitch bg-pitch/10 text-pitch-800 dark:text-pitch-200" : "border-slate-200 text-slate-500 dark:border-white/10")}>
+                    <input type="radio" name="status" value="published" checked={form.status === "published"} onChange={() => setForm({ ...form, status: "published" })} className="sr-only" />
+                    <span>📢 Publicado</span>
+                  </label>
+                  <label className={cn("flex cursor-pointer items-center gap-2 rounded-lg border px-4 py-2 text-sm transition", form.status === "draft" ? "border-gold bg-gold/10 text-gold-800 dark:text-gold-200" : "border-slate-200 text-slate-500 dark:border-white/10")}>
+                    <input type="radio" name="status" value="draft" checked={form.status === "draft"} onChange={() => setForm({ ...form, status: "draft" })} className="sr-only" />
+                    <span>📝 Borrador</span>
+                  </label>
+                </div>
               </div>
             </div>
           </section>
@@ -507,6 +596,48 @@ export default function AdminPage() {
           </section>
         </div>
       </div>
+      )}
+
+      {tab === "todas" && (
+        <div>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="section-title text-xl">Todas las publicaciones</h2>
+            <button onClick={loadArticlesList} className="btn-ghost text-xs">🔄 Refrescar</button>
+          </div>
+
+          {loadingList ? (
+            <p className="text-sm text-slate-400">Cargando...</p>
+          ) : allArticles.length === 0 ? (
+            <div className="card p-8 text-center">
+              <p className="text-sm text-slate-500">No hay publicaciones editoriales todavía.</p>
+              <p className="mt-1 text-xs text-slate-400">Las publicaciones aparecerán aquí cuando uses el formulario "Nuevo artículo".</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {allArticles.map((a) => (
+                <div key={a.slug} className="card flex items-center gap-4 p-4">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-2">
+                      <span className={cn("inline-block h-2 w-2 rounded-full", a.status === "published" ? "bg-pitch" : "bg-gold")} />
+                      <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">{a.status === "published" ? "Publicado" : "Borrador"}</span>
+                      <span className="text-xs text-slate-300">·</span>
+                      <span className="text-xs text-slate-400">{a.category}</span>
+                      <span className="text-xs text-slate-300">·</span>
+                      <span className="text-xs text-slate-400">{a.date}</span>
+                    </div>
+                    <h3 className="mt-1 font-display text-base font-bold text-navy dark:text-slate-100">{a.title}</h3>
+                    <p className="mt-0.5 text-xs text-slate-400">{a.author} · {a.slug}</p>
+                  </div>
+                  <div className="flex shrink-0 gap-2">
+                    <button onClick={() => startEdit(a)} className="btn-ghost text-xs">✏️ Editar</button>
+                    <button onClick={() => deleteArticle(a.slug)} className="btn-ghost text-xs text-red-400 hover:text-red-500">🗑️</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

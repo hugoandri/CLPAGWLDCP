@@ -15,6 +15,8 @@ interface ArticleInput {
   authorSocial?: string;
   imageUrl?: string;
   imageCaption?: string;
+  status?: string;
+  editingSlug?: string;
   sections: Section[];
   faqs: Faq[];
 }
@@ -75,12 +77,25 @@ export async function POST(request: Request) {
     article.imageUrl = body.imageUrl;
     article.imageCaption = body.imageCaption || "";
   }
+  article.status = body.status || "published";
 
   // Guardar en data/editorial-articles.json
   try {
     const filePath = join(process.cwd(), "data", "editorial-articles.json");
     const existing = JSON.parse(await fs.readFile(filePath, "utf-8"));
-    existing.articles.push(article);
+
+    // If editing an existing article, replace it by slug
+    if (body.editingSlug) {
+      const idx = existing.articles.findIndex((a: { slug: string }) => a.slug === body.editingSlug);
+      if (idx >= 0) {
+        existing.articles[idx] = article;
+      } else {
+        existing.articles.push(article);
+      }
+    } else {
+      existing.articles.push(article);
+    }
+
     await fs.writeFile(filePath, JSON.stringify(existing, null, 2), "utf-8");
   } catch (err) {
     console.error("Failed to write editorial file:", err);

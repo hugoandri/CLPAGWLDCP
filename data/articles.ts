@@ -552,8 +552,10 @@ export const articles: Article[] = [
 // Merge editorial articles (published via /admin)
 import editorialSnapshot from "@/data/editorial-articles.json";
 
-const editorialArticles: Article[] = (editorialSnapshot as { articles: Article[] }).articles ?? [];
-const allArticles = [...editorialArticles, ...articles];
+const editorialArticles: (Article & { status?: string })[] = (editorialSnapshot as { articles: (Article & { status?: string })[] }).articles ?? [];
+// Only include published editorial articles (no status = published)
+const publishedEditorial = editorialArticles.filter((a) => a.status !== "draft");
+const allArticles = [...publishedEditorial, ...articles] as Article[];
 
 const articleBySlug = new Map(allArticles.map((a) => [a.slug, a]));
 
