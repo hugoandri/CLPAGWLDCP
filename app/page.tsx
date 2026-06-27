@@ -51,8 +51,12 @@ export default async function HomePage() {
 
   const liveMatch = liveMatches.length > 0 ? liveMatches[0] : null;
   const heroMatches = liveMatches.slice(0, 2);
-  if (heroMatches.length < 2 && nextMatch && !heroMatches.some(m => m.slug === nextMatch.slug)) {
-    heroMatches.push(nextMatch);
+  if (heroMatches.length < 2 && nextMatch) {
+    const nextKey = `${nextMatch.date}T${nextMatch.time}`;
+    const concurrent = upcomingSorted.filter(
+      (m) => `${m.date}T${m.time}` === nextKey && !heroMatches.some((h) => h.slug === m.slug)
+    );
+    heroMatches.push(...concurrent.slice(0, 2 - heroMatches.length));
   }
 
   const jsonLd = {
