@@ -100,8 +100,11 @@ export default function AdminPage() {
   const generateCode = (): string => {
     const slug = slugify(form.title);
     const sections = form.sections
-      .filter((s) => s.heading && s.body)
-      .map((s) => `      { heading: "${s.heading}", body: "${s.body.replace(/"/g, '\\"')}" }`)
+      .filter((s) => s.body)
+      .map((s) => {
+        const h = s.heading || "Análisis";
+        return `      { heading: "${h}", body: "${s.body.replace(/"/g, '\\"')}" }`;
+      })
       .join(",\n");
     const faqs = form.faqs
       .filter((f) => f.question && f.answer)
@@ -293,14 +296,14 @@ export default function AdminPage() {
                     value={s.heading}
                     onChange={(e) => updateSection(i, "heading", e.target.value)}
                     className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold dark:border-white/20 dark:bg-navy-900"
-                    placeholder="Título de la sección"
+                    placeholder="Título (opcional — se usará 'Análisis' si se deja vacío)"
                   />
                   <textarea
                     value={s.body}
                     onChange={(e) => updateSection(i, "body", e.target.value)}
                     className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
-                    rows={4}
-                    placeholder="Contenido de la sección"
+                    rows={10}
+                    placeholder="Contenido de la sección (el heading es opcional)"
                   />
                 </div>
               ))}
