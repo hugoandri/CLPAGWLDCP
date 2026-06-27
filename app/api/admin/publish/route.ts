@@ -10,6 +10,8 @@ interface ArticleInput {
   category: string;
   date: string;
   excerpt: string;
+  author?: string;
+  authorSocial?: string;
   sections: Section[];
   faqs: Faq[];
 }
@@ -42,20 +44,29 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Title, excerpt and at least one section required" }, { status: 400 });
   }
 
-  const article = {
+  const sections = body.sections.filter((s) => s.body);
+  if (sections.length === 0) {
+    sections.push({ heading: "Análisis", body: body.excerpt });
+  }
+
+  const article: Record<string, unknown> = {
     slug: slugify(body.title),
     title: body.title,
     category: body.category,
     date: body.date,
     readingMinutes: Math.max(1, Math.ceil(
-      body.sections.filter((s) => s.body).reduce((a, s) => a + s.body.split(" ").length, 0) / 200
+      sections.reduce((a, s) => a + s.body.split(" ").length, 0) / 200
     )),
     excerpt: body.excerpt,
-    author: "Redacción DataGoal",
+    author: body.author || "Redacción DataGoal",
     trend: body.category,
-    sections: body.sections.filter((s) => s.heading && s.body),
+    sections,
     faqs: body.faqs.filter((f) => f.question && f.answer),
   };
+
+  if (body.authorSocial) {
+    article.authorSocial = body.authorSocial;
+  }
 
   // Guardar en data/editorial-articles.json
   try {

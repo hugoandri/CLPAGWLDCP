@@ -115,7 +115,18 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             {article.excerpt}
           </p>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-400">
-            <span>{article.author}</span>
+            {article.authorSocial ? (
+              <a
+                href={article.authorSocial}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-pitch-600 hover:text-pitch-700 dark:text-pitch-400 dark:hover:text-pitch-300"
+              >
+                {article.author}
+              </a>
+            ) : (
+              <span>{article.author}</span>
+            )}
             <span aria-hidden>·</span>
             <span>{formatDateLong(article.date)}</span>
             <span aria-hidden>·</span>

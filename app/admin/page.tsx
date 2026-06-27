@@ -7,6 +7,8 @@ interface ArticleForm {
   category: string;
   date: string;
   excerpt: string;
+  author: string;
+  authorSocial: string;
   sections: { heading: string; body: string }[];
   faqs: { question: string; answer: string }[];
 }
@@ -19,6 +21,8 @@ const emptyForm = (): ArticleForm => ({
   category: "Análisis",
   date: new Date().toISOString().slice(0, 10),
   excerpt: "",
+  author: "",
+  authorSocial: "",
   sections: [{ heading: "", body: "" }],
   faqs: [],
 });
@@ -35,6 +39,7 @@ function slugify(text: string): string {
 export default function AdminPage() {
   const [authed, setAuthed] = useState(false);
   const [password, setPassword] = useState("");
+  const [storedPw, setStoredPw] = useState("");
   const [form, setForm] = useState<ArticleForm>(emptyForm());
   const [drafts, setDrafts] = useState<ArticleForm[]>([]);
   const [published, setPublished] = useState<string | null>(null);
@@ -103,6 +108,8 @@ export default function AdminPage() {
       .map((f) => `      { question: "${f.question}", answer: "${f.answer.replace(/"/g, '\\"')}" }`)
       .join(",\n");
 
+    const authorLine = form.author ? `"${form.author}"` : '"Redacción DataGoal"';
+    const socialLine = form.authorSocial ? `    authorSocial: "${form.authorSocial}",` : '';
     return `  {
     slug: "${slug}",
     title: "${form.title}",
@@ -110,7 +117,8 @@ export default function AdminPage() {
     date: "${form.date}",
     readingMinutes: Math.ceil((${form.sections.filter(s => s.body).reduce((a, s) => a + s.body.split(' ').length, 0)} / 200) + 1),
     excerpt: "${form.excerpt}",
-    author: "Redacción DataGoal",
+    author: ${authorLine},
+    ${socialLine}
     trend: "${form.category}",
     sections: [\n${sections}\n    ],
     faqs: [\n${faqs}\n    ],
@@ -123,7 +131,7 @@ export default function AdminPage() {
     try {
       const res = await fetch("/api/admin/publish", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Authorization: storedPw },
         body: JSON.stringify(form),
       });
       const data = await res.json();
@@ -158,7 +166,7 @@ export default function AdminPage() {
             onClick={() => {
               const check = async () => {
                 const res = await fetch("/api/admin/check", { headers: { Authorization: password } });
-                if (res.ok) setAuthed(true);
+                if (res.ok) { setAuthed(true); setStoredPw(password); }
                 else alert("Contraseña incorrecta");
               };
               check();
@@ -225,6 +233,27 @@ export default function AdminPage() {
                     value={form.date}
                     onChange={(e) => setForm({ ...form, date: e.target.value })}
                     className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Autor</label>
+                  <input
+                    value={form.author}
+                    onChange={(e) => setForm({ ...form, author: e.target.value })}
+                    className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
+                    placeholder="Ej: Juan Pérez"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wider text-slate-400">Red social del autor</label>
+                  <input
+                    value={form.authorSocial}
+                    onChange={(e) => setForm({ ...form, authorSocial: e.target.value })}
+                    className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 text-sm dark:border-white/20 dark:bg-navy-900"
+                    placeholder="https://twitter.com/usuario"
                   />
                 </div>
               </div>
