@@ -144,9 +144,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               <h2 className="font-display text-2xl font-bold tracking-tight text-navy dark:text-slate-100">
                 {section.heading}
               </h2>
-              <p className="mt-3 text-[1.05rem] leading-relaxed text-slate-600 dark:text-slate-300">
+              <div className="mt-3 text-[1.05rem] leading-relaxed text-slate-600 dark:text-slate-300 whitespace-pre-wrap">
                 {section.body}
-              </p>
+              </div>
             </section>
           ))}
         </div>
