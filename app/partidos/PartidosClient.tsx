@@ -3,25 +3,31 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { getTeam, GROUP_IDS } from "@/data/teams";
 import type { Match, MatchStatus } from "@/lib/types";
+import type { KnockoutMatch } from "@/data/knockout";
 import { formatDateShort, matchLocalDateKey } from "@/lib/utils";
 import FilterTabs, { type FilterOption } from "@/components/FilterTabs";
 import SearchInput from "@/components/SearchInput";
 import MatchTable from "@/components/MatchTable";
+import KnockMatchCard from "@/components/KnockMatchCard";
 
-type StatusFilter = "all" | MatchStatus;
+type StatusFilter = "all" | MatchStatus | "eliminatorias";
 
 const STATUS_OPTIONS: FilterOption[] = [
   { value: "all", label: "Todos" },
+  { value: "eliminatorias", label: "Eliminatorias" },
   { value: "upcoming", label: "Próximos" },
   { value: "live", label: "En vivo" },
   { value: "halftime", label: "Descanso" },
   { value: "finished", label: "Finalizados" },
 ];
 
-export default function PartidosClient({ matches }: { matches: Match[] }) {
-  // `date`/`time` están en UTC. Antes de montar (SSR) usamos el día UTC crudo
-  // para no desincronizar con el render del servidor; tras montar, se corrige
-  // al día calendario de la zona horaria del navegador (igual que LocalTime).
+export default function PartidosClient({
+  matches,
+  knockoutMatches = [],
+}: {
+  matches: Match[];
+  knockoutMatches?: KnockoutMatch[];
+}) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   const dateKeyOf = useCallback(
@@ -46,7 +52,22 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
     [],
   );
 
+  // Show knockout matches sorted by date
+  const knockoutSorted = useMemo(
+    () =>
+      knockoutMatches
+        .filter((m) => m.status !== "placeholder")
+        .sort((a, b) => {
+          const aDate = a.date || "2099-12-31";
+          const bDate = b.date || "2099-12-31";
+          return aDate.localeCompare(bDate);
+        }),
+    [knockoutMatches],
+  );
+
   const filtered = useMemo(() => {
+    if (status === "eliminatorias") return [];
+
     const q = query.trim().toLowerCase();
     return matches
       .filter((m) => {
@@ -62,6 +83,8 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
       })
       .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
   }, [matches, status, group, date, query, dateKeyOf]);
+
+  const count = status === "eliminatorias" ? knockoutSorted.length : filtered.length;
 
   return (
     <div className="space-y-5">
@@ -103,18 +126,33 @@ export default function PartidosClient({ matches }: { matches: Match[] }) {
         aria-label="Filtrar por estado"
       />
 
-      <FilterTabs
-        options={groupOptions}
-        value={group}
-        onChange={setGroup}
-        aria-label="Filtrar por grupo"
-      />
+      {status !== "eliminatorias" && (
+        <FilterTabs
+          options={groupOptions}
+          value={group}
+          onChange={setGroup}
+          aria-label="Filtrar por grupo"
+        />
+      )}
 
       <p className="text-sm text-slate-500 dark:text-slate-400">
-        {filtered.length} {filtered.length === 1 ? "partido" : "partidos"}
+        {count} {count === 1 ? "partido" : "partidos"}
       </p>
 
-      <MatchTable matches={filtered} />
+      {status === "eliminatorias" ? (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {knockoutSorted.map((m) => (
+            <KnockMatchCard key={m.slug} match={m} />
+          ))}
+          {knockoutSorted.length === 0 && (
+            <p className="card col-span-full p-8 text-center text-slate-500 dark:text-slate-400">
+              No hay partidos de eliminatoria disponibles.
+            </p>
+          )}
+        </div>
+      ) : (
+        <MatchTable matches={filtered} />
+      )}
     </div>
   );
 }

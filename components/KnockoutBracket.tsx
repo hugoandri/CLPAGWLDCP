@@ -5,10 +5,10 @@ import { getTeam } from "@/data/teams";
 import { cn } from "@/lib/utils";
 
 // Each TeamLabel row: py-[7px] (7+7=14px) + text-[11px] leading-tight (~14px) ≈ 28px
-// Two rows + 1px divider = 57px actual card height
-const MATCH_H = 57;
-// Each R32 slot = MATCH_H + gap (12px min gap between cards)
-const UNIT = 69; // 57 + 12
+// Two rows + 1px divider + penalty badge = ~63px actual card height
+const MATCH_H = 63;
+// Each R32 slot = MATCH_H + gap
+const UNIT = 78; // 63 + 15
 const MATCH_W = 150;
 const COL_W = 176; // match + connector area
 const CONN_X = MATCH_W + 10;

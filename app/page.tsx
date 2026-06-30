@@ -16,6 +16,7 @@ import { readLiveUpdatesWithFIFA, fetchAllFIFAResults } from "@/lib/live";
 import { getLatestArticles } from "@/data/articles";
 import { siteConfig } from "@/lib/site";
 import LiveAutoRefresh from "@/components/LiveAutoRefresh";
+import KnockMatchCard from "@/components/KnockMatchCard";
 import { buildKnockoutRounds } from "@/lib/knockout-utils";
 
 export const dynamic = "force-dynamic";
@@ -28,46 +29,6 @@ export const metadata: Metadata = {
 };
 
 const latestArticles = getLatestArticles(4);
-
-function KnockMatchCard({ match }: { match: any }) {
-  const home = match.homeSlug ? getTeam(match.homeSlug) : null;
-  const away = match.awaySlug ? getTeam(match.awaySlug) : null;
-  if (!home || !away) return null;
-  return (
-    <Link
-      href="/eliminatorias"
-      className="card card-hover block w-full max-w-sm p-4"
-    >
-      <div className="flex items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
-        <span className="rounded bg-pitch/10 px-2 py-0.5 font-semibold text-pitch-600 dark:text-pitch-400">
-          {match.roundLabel}
-        </span>
-        {match.date && (
-          <span>
-            <LocalDate date={match.date} time={match.time || ""} format="dayMonth" />
-            {match.time && <> · <LocalTime date={match.date} time={match.time} /></>}
-          </span>
-        )}
-      </div>
-      <div className="mt-3 flex items-center justify-between gap-2">
-        <div className="flex min-w-0 items-center gap-2">
-          <Flag isoCode={home.isoCode} alt={home.name} width={28} />
-          <span className="truncate text-sm font-semibold">{home.name}</span>
-        </div>
-        <span className="shrink-0 text-xs font-bold text-slate-400">vs</span>
-        <div className="flex min-w-0 items-center gap-2">
-          <span className="truncate text-sm font-semibold">{away.name}</span>
-          <Flag isoCode={away.isoCode} alt={away.name} width={28} />
-        </div>
-      </div>
-      {match.stadium && (
-        <p className="mt-2 truncate text-center text-xs text-slate-400">
-          {match.stadium} · {match.city}
-        </p>
-      )}
-    </Link>
-  );
-}
 
 export default async function HomePage() {
   const [freshUpdates, fifaResults] = await Promise.all([
