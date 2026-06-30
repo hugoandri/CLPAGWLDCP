@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import AdSlot from "@/components/AdSlot";
 import DisclaimerBox from "@/components/DisclaimerBox";
@@ -6,9 +7,10 @@ import PartidosClient from "./PartidosClient";
 import { DISCLAIMER_BETTING } from "@/lib/site";
 import SeoJsonLd from "@/components/SeoJsonLd";
 import { matches, getFreshMatches } from "@/data/matches";
-import { readLiveUpdatesWithFIFA } from "@/lib/live";
+import { readLiveUpdatesWithFIFA, fetchAllFIFAResults } from "@/lib/live";
 import { getTeam } from "@/data/teams";
 import { collectionPageJsonLd, itemListJsonLd } from "@/lib/seo";
+import { buildKnockoutRounds } from "@/lib/knockout-utils";
 
 export const dynamic = "force-dynamic";
 
@@ -20,8 +22,13 @@ export const metadata: Metadata = {
 };
 
 export default async function PartidosPage() {
-  const updates = await readLiveUpdatesWithFIFA();
+  const [updates, fifaResults] = await Promise.all([
+    readLiveUpdatesWithFIFA(),
+    fetchAllFIFAResults(),
+  ]);
   const liveMatches = getFreshMatches(updates);
+  const rounds = await buildKnockoutRounds(fifaResults);
+  const knockoutMatches = rounds.flatMap((r) => r.matches);
   const jsonLd = [
     collectionPageJsonLd({
       name: "Partidos del Mundial 2026",
@@ -54,7 +61,7 @@ export default async function PartidosPage() {
         <AdSlot slotName="partidos-top-banner" format="leaderboard" />
       </div>
 
-      <PartidosClient matches={liveMatches} />
+      <PartidosClient matches={liveMatches} knockoutMatches={knockoutMatches} />
 
       <section className="card mt-10 p-6">
         <h2 className="section-title mb-3 text-xl">
