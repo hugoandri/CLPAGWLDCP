@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-06-30T04:24:23.368Z",
+  "matches": [
+    {
+      "slug": "sudafrica-vs-canada",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "finished",
+      "date": "2026-06-28"
+    },
+    {
+      "slug": "brasil-vs-japon",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "finished",
+      "date": "2026-06-29"
+    },
+    {
+      "slug": "alemania-vs-paraguay",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenalties": 3,
+      "awayPenalties": 4,
+      "status": "finished",
+      "date": "2026-06-29"
+    },
+    {
+      "slug": "paises-bajos-vs-marruecos",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenalties": 2,
+      "awayPenalties": 3,
+      "status": "finished",
+      "date": "2026-06-30"
+    },
+    {
+      "slug": "costa-de-marfil-vs-noruega",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-06-30"
+    },
+    {
+      "slug": "francia-vs-suecia",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-06-30"
+    },
+    {
+      "slug": "mexico-vs-ecuador",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-01"
+    },
+    {
+      "slug": "inglaterra-vs-rd-congo",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-01"
+    },
+    {
+      "slug": "belgica-vs-senegal",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-01"
+    },
+    {
+      "slug": "estados-unidos-vs-bosnia-herzegovina",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-02"
+    },
+    {
+      "slug": "espana-vs-austria",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-02"
+    },
+    {
+      "slug": "portugal-vs-croacia",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-02"
+    },
+    {
+      "slug": "suiza-vs-argelia",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-03"
+    },
+    {
+      "slug": "australia-vs-egipto",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-03"
+    },
+    {
+      "slug": "argentina-vs-cabo-verde",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-03"
+    },
+    {
+      "slug": "colombia-vs-ghana",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-04"
+    },
+    {
+      "slug": "canada-vs-marruecos",
+      "homeScore": null,
+      "awayScore": null,
+      "homePenalties": null,
+      "awayPenalties": null,
+      "status": "upcoming",
+      "date": "2026-07-04"
+    }
+  ]
+}

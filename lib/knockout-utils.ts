@@ -1,12 +1,56 @@
+import fs from "node:fs";
+import path from "node:path";
 import { computeStandings } from "@/lib/utils";
 import { groups } from "@/data/groups";
 import { knockoutRounds as rawKnockoutRounds, type KnockoutMatch, type KnockoutRound } from "@/data/knockout";
 import { getTeam } from "@/data/teams";
 import { fetchAllFIFAResults, type FIFAMatchResult } from "@/lib/live";
 
+interface FIFAEntry {
+  slug: string;
+  homeScore?: number | null;
+  awayScore?: number | null;
+  homePenalties?: number | null;
+  awayPenalties?: number | null;
+  status: string;
+  date?: string;
+}
+
 function resolveLabel(slug: string | null, defaultLabel: string): string {
   if (!slug) return defaultLabel;
   return getTeam(slug)?.name ?? defaultLabel;
+}
+
+function winner(m: KnockoutMatch): { slug: string | null; label: string } {
+  if (m.status !== "finished") return { slug: null, label: `Gan. ${m.slug.toUpperCase()}` };
+  const homeWins =
+    m.homePenalties !== undefined && m.awayPenalties !== undefined
+      ? m.homePenalties > m.awayPenalties
+      : (m.homeScore ?? 0) > (m.awayScore ?? 0);
+  return homeWins
+    ? { slug: m.homeSlug, label: m.homeLabel }
+    : { slug: m.awaySlug, label: m.awayLabel };
+}
+
+function loser(m: KnockoutMatch): { slug: string | null; label: string } {
+  if (m.status !== "finished") return { slug: null, label: `Per. ${m.slug.toUpperCase()}` };
+  const homeWins =
+    m.homePenalties !== undefined && m.awayPenalties !== undefined
+      ? m.homePenalties > m.awayPenalties
+      : (m.homeScore ?? 0) > (m.awayScore ?? 0);
+  return homeWins
+    ? { slug: m.awaySlug, label: m.awayLabel }
+    : { slug: m.homeSlug, label: m.homeLabel };
+}
+
+function loadFIFAEntries(): FIFAEntry[] {
+  try {
+    const p = path.join(process.cwd(), "data/knockout-fifa.json");
+    const data = JSON.parse(fs.readFileSync(p, "utf-8"));
+    return data.matches ?? [];
+  } catch {
+    return [];
+  }
 }
 
 function applyFIFAResult(
@@ -44,29 +88,172 @@ function applyFIFAResult(
   return match;
 }
 
-function winner(m: KnockoutMatch): { slug: string | null; label: string } {
-  if (m.status !== "finished") return { slug: null, label: `Gan. ${m.slug.toUpperCase()}` };
-  const homeWins =
-    m.homePenalties !== undefined && m.awayPenalties !== undefined
-      ? m.homePenalties > m.awayPenalties
-      : (m.homeScore ?? 0) > (m.awayScore ?? 0);
-  return homeWins
-    ? { slug: m.homeSlug, label: m.homeLabel }
-    : { slug: m.awaySlug, label: m.awayLabel };
+export async function buildKnockoutRounds(fifaResults: Map<string, FIFAMatchResult>): Promise<KnockoutRound[]> {
+  // Try to use real FIFA knockout data first
+  const fifaEntries = loadFIFAEntries();
+
+  if (fifaEntries.length > 0) {
+    return buildFromFIFA(fifaEntries, fifaResults);
+  }
+
+  // Fallback: compute from group standings
+  return buildFromStandings(fifaResults);
 }
 
-function loser(m: KnockoutMatch): { slug: string | null; label: string } {
-  if (m.status !== "finished") return { slug: null, label: `Per. ${m.slug.toUpperCase()}` };
-  const homeWins =
-    m.homePenalties !== undefined && m.awayPenalties !== undefined
-      ? m.homePenalties > m.awayPenalties
-      : (m.homeScore ?? 0) > (m.awayScore ?? 0);
-  return homeWins
-    ? { slug: m.awaySlug, label: m.awayLabel }
-    : { slug: m.homeSlug, label: m.homeLabel };
+function buildFromFIFA(
+  fifaEntries: FIFAEntry[],
+  fifaResults: Map<string, FIFAMatchResult>,
+): KnockoutRound[] {
+  // We have 16+ real R32 matches from FIFA + potentially more rounds
+  // Group all entries by round position
+
+  // First 16 entries are R32, next 8 are R16, etc.
+  // But let's check if FIFA only has R32 (no deeper rounds yet)
+  const r32matches: KnockoutMatch[] = fifaEntries.slice(0, 16).map((entry, i) => {
+    const parts = entry.slug.split("-vs-");
+    const homeSlug = parts[0];
+    const awaySlug = parts[1];
+    const homeName = resolveLabel(homeSlug, homeSlug);
+    const awayName = resolveLabel(awaySlug, awaySlug);
+
+    const match: KnockoutMatch = {
+      slug: `r32-${i + 1}`,
+      round: "dieciseisavos" as const,
+      roundLabel: "Dieciseisavos de final",
+      homeSlug,
+      awaySlug,
+      homeLabel: homeName,
+      awayLabel: awayName,
+      status: "upcoming",
+      date: entry.date,
+    };
+    return match;
+  });
+
+  const r32 = r32matches.map((m) => applyFIFAResult(m, fifaResults));
+
+  const r16 = buildNextRound(r32, "octavos", "Octavos de final", "r16")
+    .map((m) => applyFIFAResult(m, fifaResults));
+  const qf = buildNextRound(r16, "cuartos", "Cuartos de final", "qf")
+    .map((m) => applyFIFAResult(m, fifaResults));
+  const sf = buildNextRound(qf, "semifinales", "Semifinales", "sf")
+    .map((m) => applyFIFAResult(m, fifaResults));
+
+  const third3rd = loser(sf[0]);
+  const third4th = loser(sf[1]);
+  const thirdPlace: KnockoutMatch = applyFIFAResult({
+    slug: "3rd",
+    round: "tercer-puesto",
+    roundLabel: "Tercer puesto",
+    homeSlug: third3rd.slug,
+    awaySlug: third4th.slug,
+    homeLabel: third3rd.slug ? resolveLabel(third3rd.slug, third3rd.label) : third3rd.label,
+    awayLabel: third4th.slug ? resolveLabel(third4th.slug, third4th.label) : third4th.label,
+    status: third3rd.slug && third4th.slug ? "upcoming" : "placeholder",
+  }, fifaResults);
+
+  const finalHome = winner(sf[0]);
+  const finalAway = winner(sf[1]);
+  const storedFinal = rawKnockoutRounds.find((r) => r.id === "final")?.matches[0];
+  const finalMatch: KnockoutMatch = applyFIFAResult({
+    slug: "final",
+    round: "final",
+    roundLabel: "Final",
+    homeSlug: finalHome.slug,
+    awaySlug: finalAway.slug,
+    homeLabel: finalHome.slug ? resolveLabel(finalHome.slug, finalHome.label) : finalHome.label,
+    awayLabel: finalAway.slug ? resolveLabel(finalAway.slug, finalAway.label) : finalAway.label,
+    status: finalHome.slug && finalAway.slug ? "upcoming" : "placeholder",
+    date: storedFinal?.date,
+    time: storedFinal?.time,
+    stadium: storedFinal?.stadium,
+    city: storedFinal?.city,
+  }, fifaResults);
+
+  return [
+    { id: "dieciseisavos", label: "Dieciseisavos de final", matches: r32 },
+    { id: "octavos",       label: "Octavos de final",       matches: r16 },
+    { id: "cuartos",       label: "Cuartos de final",       matches: qf  },
+    { id: "semifinales",   label: "Semifinales",            matches: sf  },
+    { id: "tercer-puesto", label: "Tercer puesto",          matches: [thirdPlace] },
+    { id: "final",         label: "Final",                  matches: [finalMatch] },
+  ];
 }
 
-export function getQualifiedTeams() {
+function buildNextRound(
+  prev: KnockoutMatch[],
+  round: KnockoutMatch["round"],
+  roundLabel: string,
+  slugPrefix: string,
+): KnockoutMatch[] {
+  return Array.from({ length: Math.floor(prev.length / 2) }, (_, i) => {
+    const home = winner(prev[i * 2]);
+    const away = winner(prev[i * 2 + 1]);
+    return {
+      slug: `${slugPrefix}-${i + 1}`,
+      round,
+      roundLabel,
+      homeSlug: home.slug,
+      awaySlug: away.slug,
+      homeLabel: home.slug ? resolveLabel(home.slug, home.label) : home.label,
+      awayLabel: away.slug ? resolveLabel(away.slug, away.label) : away.label,
+      status: home.slug && away.slug ? "upcoming" : "placeholder",
+    } as KnockoutMatch;
+  });
+}
+
+function buildFromStandings(fifaResults: Map<string, FIFAMatchResult>): KnockoutRound[] {
+  const qualified = getQualifiedTeams();
+  const r32 = buildR32(qualified).map((m) => applyFIFAResult(m, fifaResults));
+  const r16 = buildNextRound(r32, "octavos", "Octavos de final", "r16")
+    .map((m) => applyFIFAResult(m, fifaResults));
+  const qf = buildNextRound(r16, "cuartos", "Cuartos de final", "qf")
+    .map((m) => applyFIFAResult(m, fifaResults));
+  const sf = buildNextRound(qf, "semifinales", "Semifinales", "sf")
+    .map((m) => applyFIFAResult(m, fifaResults));
+
+  const third3rd = loser(sf[0]);
+  const third4th = loser(sf[1]);
+  const thirdPlace: KnockoutMatch = applyFIFAResult({
+    slug: "3rd",
+    round: "tercer-puesto",
+    roundLabel: "Tercer puesto",
+    homeSlug: third3rd.slug,
+    awaySlug: third4th.slug,
+    homeLabel: third3rd.slug ? resolveLabel(third3rd.slug, third3rd.label) : third3rd.label,
+    awayLabel: third4th.slug ? resolveLabel(third4th.slug, third4th.label) : third4th.label,
+    status: third3rd.slug && third4th.slug ? "upcoming" : "placeholder",
+  }, fifaResults);
+
+  const finalHome = winner(sf[0]);
+  const finalAway = winner(sf[1]);
+  const storedFinal = rawKnockoutRounds.find((r) => r.id === "final")?.matches[0];
+  const finalMatch: KnockoutMatch = applyFIFAResult({
+    slug: "final",
+    round: "final",
+    roundLabel: "Final",
+    homeSlug: finalHome.slug,
+    awaySlug: finalAway.slug,
+    homeLabel: finalHome.slug ? resolveLabel(finalHome.slug, finalHome.label) : finalHome.label,
+    awayLabel: finalAway.slug ? resolveLabel(finalAway.slug, finalAway.label) : finalAway.label,
+    status: finalHome.slug && finalAway.slug ? "upcoming" : "placeholder",
+    date: storedFinal?.date,
+    time: storedFinal?.time,
+    stadium: storedFinal?.stadium,
+    city: storedFinal?.city,
+  }, fifaResults);
+
+  return [
+    { id: "dieciseisavos", label: "Dieciseisavos de final", matches: r32 },
+    { id: "octavos",       label: "Octavos de final",       matches: r16 },
+    { id: "cuartos",       label: "Cuartos de final",       matches: qf  },
+    { id: "semifinales",   label: "Semifinales",            matches: sf  },
+    { id: "tercer-puesto", label: "Tercer puesto",          matches: [thirdPlace] },
+    { id: "final",         label: "Final",                  matches: [finalMatch] },
+  ];
+}
+
+function getQualifiedTeams() {
   const qualified: Record<string, { position: number; teamSlug: string }[]> = {};
   for (const group of groups) {
     const standings = computeStandings(group.rows);
@@ -77,7 +264,7 @@ export function getQualifiedTeams() {
   return qualified;
 }
 
-export function buildR32(qualified: ReturnType<typeof getQualifiedTeams>): KnockoutMatch[] {
+function buildR32(qualified: ReturnType<typeof getQualifiedTeams>): KnockoutMatch[] {
   const pairings = [
     ["1A", "3B/3C/3D"], ["2E", "2F"],
     ["1E", "3A/3C/3D"], ["2G", "2H"],
@@ -119,78 +306,4 @@ export function buildR32(qualified: ReturnType<typeof getQualifiedTeams>): Knock
       status: homeSlug && awaySlug ? "upcoming" : "placeholder",
     } as KnockoutMatch;
   });
-}
-
-function buildNextRound(
-  prev: KnockoutMatch[],
-  round: KnockoutMatch["round"],
-  roundLabel: string,
-  slugPrefix: string,
-): KnockoutMatch[] {
-  return Array.from({ length: Math.floor(prev.length / 2) }, (_, i) => {
-    const home = winner(prev[i * 2]);
-    const away = winner(prev[i * 2 + 1]);
-    return {
-      slug: `${slugPrefix}-${i + 1}`,
-      round,
-      roundLabel,
-      homeSlug: home.slug,
-      awaySlug: away.slug,
-      homeLabel: home.slug ? resolveLabel(home.slug, home.label) : home.label,
-      awayLabel: away.slug ? resolveLabel(away.slug, away.label) : away.label,
-      status: home.slug && away.slug ? "upcoming" : "placeholder",
-    } as KnockoutMatch;
-  });
-}
-
-export async function buildKnockoutRounds(fifaResults: Map<string, FIFAMatchResult>): Promise<KnockoutRound[]> {
-  const qualified = getQualifiedTeams();
-
-  const r32 = buildR32(qualified).map((m) => applyFIFAResult(m, fifaResults));
-  const r16 = buildNextRound(r32, "octavos", "Octavos de final", "r16")
-                .map((m) => applyFIFAResult(m, fifaResults));
-  const qf  = buildNextRound(r16, "cuartos", "Cuartos de final", "qf")
-                .map((m) => applyFIFAResult(m, fifaResults));
-  const sf  = buildNextRound(qf, "semifinales", "Semifinales", "sf")
-                .map((m) => applyFIFAResult(m, fifaResults));
-
-  const third3rd = loser(sf[0]);
-  const third4th = loser(sf[1]);
-  const thirdPlace: KnockoutMatch = applyFIFAResult({
-    slug: "3rd",
-    round: "tercer-puesto",
-    roundLabel: "Tercer puesto",
-    homeSlug: third3rd.slug,
-    awaySlug: third4th.slug,
-    homeLabel: third3rd.slug ? resolveLabel(third3rd.slug, third3rd.label) : third3rd.label,
-    awayLabel: third4th.slug ? resolveLabel(third4th.slug, third4th.label) : third4th.label,
-    status: third3rd.slug && third4th.slug ? "upcoming" : "placeholder",
-  }, fifaResults);
-
-  const finalHome = winner(sf[0]);
-  const finalAway = winner(sf[1]);
-  const storedFinal = rawKnockoutRounds.find((r) => r.id === "final")?.matches[0];
-  const finalMatch: KnockoutMatch = applyFIFAResult({
-    slug: "final",
-    round: "final",
-    roundLabel: "Final",
-    homeSlug: finalHome.slug,
-    awaySlug: finalAway.slug,
-    homeLabel: finalHome.slug ? resolveLabel(finalHome.slug, finalHome.label) : finalHome.label,
-    awayLabel: finalAway.slug ? resolveLabel(finalAway.slug, finalAway.label) : finalAway.label,
-    status: finalHome.slug && finalAway.slug ? "upcoming" : "placeholder",
-    date: storedFinal?.date,
-    time: storedFinal?.time,
-    stadium: storedFinal?.stadium,
-    city: storedFinal?.city,
-  }, fifaResults);
-
-  return [
-    { id: "dieciseisavos", label: "Dieciseisavos de final", matches: r32 },
-    { id: "octavos",       label: "Octavos de final",       matches: r16 },
-    { id: "cuartos",       label: "Cuartos de final",       matches: qf  },
-    { id: "semifinales",   label: "Semifinales",            matches: sf  },
-    { id: "tercer-puesto", label: "Tercer puesto",          matches: [thirdPlace] },
-    { id: "final",         label: "Final",                  matches: [finalMatch] },
-  ];
 }
