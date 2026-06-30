@@ -36,6 +36,7 @@ const WEEKDAYS_ES = [
 
 /** Convierte "YYYY-MM-DD" en una fecha local (evita desfases de zona horaria). */
 function parseISODate(iso: string): Date {
+  if (!iso) return new Date(NaN);
   const [y, m, d] = iso.split("-").map(Number);
   return new Date(y, (m ?? 1) - 1, d ?? 1);
 }
@@ -47,7 +48,10 @@ function parseISODate(iso: string): Date {
  * UTC cuando localmente caen en el día anterior o siguiente.
  */
 export function matchLocalDateKey(date: string, time: string): string {
+  if (!date) return "";
+  if (!time) return date;
   const instant = new Date(`${date}T${time}:00Z`);
+  if (isNaN(instant.getTime())) return date;
   const y = instant.getFullYear();
   const m = String(instant.getMonth() + 1).padStart(2, "0");
   const d = String(instant.getDate()).padStart(2, "0");
@@ -64,14 +68,20 @@ export function formatDateLong(iso: string): string {
 
 /** "11 jun 2026" */
 export function formatDateShort(iso: string): string {
+  if (!iso) return "";
   const date = parseISODate(iso);
-  return `${date.getDate()} ${MONTHS_ES[date.getMonth()].slice(0, 3)} ${date.getFullYear()}`;
+  const month = MONTHS_ES[date.getMonth()];
+  if (!month) return iso;
+  return `${date.getDate()} ${month.slice(0, 3)} ${date.getFullYear()}`;
 }
 
 /** "11 jun" */
 export function formatDayMonth(iso: string): string {
+  if (!iso) return "";
   const date = parseISODate(iso);
-  return `${date.getDate()} ${MONTHS_ES[date.getMonth()].slice(0, 3)}`;
+  const month = MONTHS_ES[date.getMonth()];
+  if (!month) return iso;
+  return `${date.getDate()} ${month.slice(0, 3)}`;
 }
 
 /**
