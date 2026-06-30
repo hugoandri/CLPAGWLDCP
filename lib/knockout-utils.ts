@@ -105,32 +105,6 @@ function applyFIFAResult(
   return match;
 }
 
-function entryToMatch(
-  entry: FIFAEntry,
-  slug: string,
-  round: KnockoutMatch["round"],
-  roundLabel: string,
-): KnockoutMatch {
-  const m: KnockoutMatch = {
-    slug,
-    round,
-    roundLabel,
-    homeSlug: entry.homeSlug,
-    awaySlug: entry.awaySlug,
-    homeLabel: entry.homeSlug ? resolveLabel(entry.homeSlug, entry.homeSlug) : (entry.homeLabel ?? "?"),
-    awayLabel: entry.awaySlug ? resolveLabel(entry.awaySlug, entry.awaySlug) : (entry.awayLabel ?? "?"),
-    status: entry.homeSlug && entry.awaySlug ? (entry.status as any) : "placeholder",
-    date: entry.date ?? undefined,
-    stadium: entry.stadium ?? undefined,
-    city: entry.city ?? undefined,
-  };
-  if (entry.homeScore != null) m.homeScore = entry.homeScore;
-  if (entry.awayScore != null) m.awayScore = entry.awayScore;
-  if (entry.homePenalties != null) m.homePenalties = entry.homePenalties;
-  if (entry.awayPenalties != null) m.awayPenalties = entry.awayPenalties;
-  return m;
-}
-
 export async function buildKnockoutRounds(fifaResults: Map<string, FIFAMatchResult>): Promise<KnockoutRound[]> {
   const fifaRounds = loadFIFARounds();
 
@@ -141,65 +115,59 @@ export async function buildKnockoutRounds(fifaResults: Map<string, FIFAMatchResu
   return buildFromStandings(fifaResults);
 }
 
-function hasRealTeams(entry: FIFAEntry): boolean {
-  return !!(entry.homeSlug && entry.awaySlug && entry.homeSlug !== "?" && entry.awaySlug !== "?");
-}
+const ROUND_MAP: Record<string, { round: KnockoutMatch["round"]; label: string; slugPrefix: string }> = {
+  dieciseisavos: { round: "dieciseisavos", label: "Dieciseisavos de final", slugPrefix: "r32" },
+  octavos: { round: "octavos", label: "Octavos de final", slugPrefix: "r16" },
+  cuartos: { round: "cuartos", label: "Cuartos de final", slugPrefix: "qf" },
+  semifinales: { round: "semifinales", label: "Semifinales", slugPrefix: "sf" },
+  "tercer-puesto": { round: "tercer-puesto", label: "Tercer puesto", slugPrefix: "3rd" },
+  final: { round: "final", label: "Final", slugPrefix: "final" },
+};
 
 function buildFromFIFA(
   fifaRounds: FIFARounds,
   fifaResults: Map<string, FIFAMatchResult>,
 ): KnockoutRound[] {
-  const r32entries = fifaRounds.dieciseisavos || [];
+  const result: KnockoutRound[] = [];
 
-  // Build R32 from FIFA data
-  const r32: KnockoutMatch[] = r32entries.map((entry, i) => {
-    const m = entryToMatch(entry, `r32-${i + 1}`, "dieciseisavos", "Dieciseisavos de final");
-    return applyFIFAResult(m, fifaResults);
-  });
+  for (const [roundKey, info] of Object.entries(ROUND_MAP)) {
+    const entries = fifaRounds[roundKey as keyof FIFARounds] || [];
+    const matches: KnockoutMatch[] = [];
 
-  // Build subsequent rounds: prefer FIFA data, fall back to computed winners
-  const r16 = buildRoundFromFIFAOrComputed(fifaRounds.octavos || [], r32, "octavos", "Octavos de final", "r16", fifaResults);
-  const qf = buildRoundFromFIFAOrComputed(fifaRounds.cuartos || [], r16, "cuartos", "Cuartos de final", "qf", fifaResults);
-  const sf = buildRoundFromFIFAOrComputed(fifaRounds.semifinales || [], qf, "semifinales", "Semifinales", "sf", fifaResults);
+    entries.forEach((entry, i) => {
+      const slug = info.slugPrefix === "3rd" ? "3rd" : `${info.slugPrefix}-${i + 1}`;
+      const hasTeams = !!(entry.homeSlug && entry.awaySlug &&
+        entry.homeSlug !== "?" && entry.awaySlug !== "?");
 
-  return buildRounds(r32, r16, qf, sf, fifaResults);
-}
-
-function buildRoundFromFIFAOrComputed(
-  fifaEntries: FIFAEntry[],
-  prevRound: KnockoutMatch[],
-  round: KnockoutMatch["round"],
-  roundLabel: string,
-  slugPrefix: string,
-  fifaResults: Map<string, FIFAMatchResult>,
-): KnockoutMatch[] {
-  const expectedCount = Math.floor(prevRound.length / 2);
-  const result: KnockoutMatch[] = [];
-
-  for (let i = 0; i < expectedCount; i++) {
-    const fifaEntry = fifaEntries[i];
-    const slug = `${slugPrefix}-${i + 1}`;
-
-    if (fifaEntry && hasRealTeams(fifaEntry)) {
-      // Use FIFA-defined pairing
-      const m = entryToMatch(fifaEntry, slug, round, roundLabel);
-      result.push(applyFIFAResult(m, fifaResults));
-    } else {
-      // Compute from previous round winners
-      const home = winner(prevRound[i * 2]);
-      const away = winner(prevRound[i * 2 + 1]);
-      result.push(applyFIFAResult({
+      const match: KnockoutMatch = {
         slug,
-        round,
-        roundLabel,
-        homeSlug: home.slug,
-        awaySlug: away.slug,
-        homeLabel: home.slug ? resolveLabel(home.slug, home.label) : home.label,
-        awayLabel: away.slug ? resolveLabel(away.slug, away.label) : away.label,
-        status: home.slug && away.slug ? "upcoming" : "placeholder",
-      }, fifaResults));
-    }
+        round: info.round,
+        roundLabel: info.label,
+        homeSlug: hasTeams ? entry.homeSlug : null,
+        awaySlug: hasTeams ? entry.awaySlug : null,
+        homeLabel: hasTeams
+          ? (entry.homeSlug ? resolveLabel(entry.homeSlug, entry.homeSlug) : entry.homeLabel ?? "?")
+          : "Por definir",
+        awayLabel: hasTeams
+          ? (entry.awaySlug ? resolveLabel(entry.awaySlug, entry.awaySlug) : entry.awayLabel ?? "?")
+          : "Por definir",
+        status: hasTeams ? (entry.status as any) : "placeholder",
+        date: entry.date ?? undefined,
+        stadium: entry.stadium ?? undefined,
+        city: entry.city ?? undefined,
+      };
+
+      if (hasTeams && entry.homeScore != null) match.homeScore = entry.homeScore;
+      if (hasTeams && entry.awayScore != null) match.awayScore = entry.awayScore;
+      if (hasTeams && entry.homePenalties != null) match.homePenalties = entry.homePenalties;
+      if (hasTeams && entry.awayPenalties != null) match.awayPenalties = entry.awayPenalties;
+
+      matches.push(applyFIFAResult(match, fifaResults));
+    });
+
+    result.push({ id: roundKey, label: info.label, matches });
   }
+
   return result;
 }
 
