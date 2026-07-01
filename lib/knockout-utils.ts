@@ -115,60 +115,74 @@ export async function buildKnockoutRounds(fifaResults: Map<string, FIFAMatchResu
   return buildFromStandings(fifaResults);
 }
 
-const ROUND_MAP: Record<string, { round: KnockoutMatch["round"]; label: string; slugPrefix: string }> = {
-  dieciseisavos: { round: "dieciseisavos", label: "Dieciseisavos de final", slugPrefix: "r32" },
-  octavos: { round: "octavos", label: "Octavos de final", slugPrefix: "r16" },
-  cuartos: { round: "cuartos", label: "Cuartos de final", slugPrefix: "qf" },
-  semifinales: { round: "semifinales", label: "Semifinales", slugPrefix: "sf" },
-  "tercer-puesto": { round: "tercer-puesto", label: "Tercer puesto", slugPrefix: "3rd" },
-  final: { round: "final", label: "Final", slugPrefix: "final" },
-};
-
 function buildFromFIFA(
   fifaRounds: FIFARounds,
   fifaResults: Map<string, FIFAMatchResult>,
 ): KnockoutRound[] {
-  const result: KnockoutRound[] = [];
+  // Build R32 from FIFA
+  const r32Matches = (fifaRounds.dieciseisavos || []).map((entry, i) => {
+    const m = fifaEntryToMatch(entry, `r32-${i + 1}`, "dieciseisavos", "Dieciseisavos de final");
+    return applyFIFAResult(m, fifaResults);
+  });
 
-  for (const [roundKey, info] of Object.entries(ROUND_MAP)) {
-    const entries = fifaRounds[roundKey as keyof FIFARounds] || [];
-    const matches: KnockoutMatch[] = [];
+  // Build R16: start from consecutive winners, then overlay FIFA data
+  const r16Computed = buildNextRound(r32Matches, "octavos", "Octavos de final", "r16")
+    .map((m) => applyFIFAResult(m, fifaResults));
 
-    entries.forEach((entry, i) => {
-      const slug = info.slugPrefix === "3rd" ? "3rd" : `${info.slugPrefix}-${i + 1}`;
-      const hasTeams = !!(entry.homeSlug && entry.awaySlug &&
-        entry.homeSlug !== "?" && entry.awaySlug !== "?");
+  const fifaR16 = fifaRounds.octavos || [];
+  const r16Matches = r16Computed.map((computed, i) => {
+    const fEntry = fifaR16[i];
+    if (!fEntry) return computed;
+    const hasTeams = !!(fEntry.homeSlug && fEntry.awaySlug &&
+      fEntry.homeSlug !== "?" && fEntry.awaySlug !== "?");
+    if (!hasTeams) return computed;
+    // Use FIFA-defined pairing
+    const m = fifaEntryToMatch(fEntry, `r16-${i + 1}`, "octavos", "Octavos de final");
+    return applyFIFAResult(m, fifaResults);
+  });
 
-      const match: KnockoutMatch = {
-        slug,
-        round: info.round,
-        roundLabel: info.label,
-        homeSlug: hasTeams ? entry.homeSlug : null,
-        awaySlug: hasTeams ? entry.awaySlug : null,
-        homeLabel: hasTeams
-          ? (entry.homeSlug ? resolveLabel(entry.homeSlug, entry.homeSlug) : entry.homeLabel ?? "?")
-          : "Por definir",
-        awayLabel: hasTeams
-          ? (entry.awaySlug ? resolveLabel(entry.awaySlug, entry.awaySlug) : entry.awayLabel ?? "?")
-          : "Por definir",
-        status: hasTeams ? (entry.status as any) : "placeholder",
-        date: entry.date ?? undefined,
-        stadium: entry.stadium ?? undefined,
-        city: entry.city ?? undefined,
-      };
+  // Subsequent rounds: use consecutive winners
+  const qfMatches = buildNextRound(r16Matches, "cuartos", "Cuartos de final", "qf")
+    .map((m) => applyFIFAResult(m, fifaResults));
+  const sfMatches = buildNextRound(qfMatches, "semifinales", "Semifinales", "sf")
+    .map((m) => applyFIFAResult(m, fifaResults));
 
-      if (hasTeams && entry.homeScore != null) match.homeScore = entry.homeScore;
-      if (hasTeams && entry.awayScore != null) match.awayScore = entry.awayScore;
-      if (hasTeams && entry.homePenalties != null) match.homePenalties = entry.homePenalties;
-      if (hasTeams && entry.awayPenalties != null) match.awayPenalties = entry.awayPenalties;
+  return buildRounds(r32Matches, r16Matches, qfMatches, sfMatches, fifaResults);
+}
 
-      matches.push(applyFIFAResult(match, fifaResults));
-    });
+function fifaEntryToMatch(
+  entry: FIFAEntry,
+  slug: string,
+  round: KnockoutMatch["round"],
+  roundLabel: string,
+): KnockoutMatch {
+  const hasTeams = !!(entry.homeSlug && entry.awaySlug &&
+    entry.homeSlug !== "?" && entry.awaySlug !== "?");
 
-    result.push({ id: roundKey, label: info.label, matches });
-  }
+  const match: KnockoutMatch = {
+    slug,
+    round,
+    roundLabel,
+    homeSlug: hasTeams ? entry.homeSlug : null,
+    awaySlug: hasTeams ? entry.awaySlug : null,
+    homeLabel: hasTeams
+      ? (entry.homeSlug ? resolveLabel(entry.homeSlug, entry.homeSlug) : entry.homeLabel ?? "?")
+      : "Por definir",
+    awayLabel: hasTeams
+      ? (entry.awaySlug ? resolveLabel(entry.awaySlug, entry.awaySlug) : entry.awayLabel ?? "?")
+      : "Por definir",
+    status: hasTeams ? (entry.status as any) : "placeholder",
+    date: entry.date ?? undefined,
+    stadium: entry.stadium ?? undefined,
+    city: entry.city ?? undefined,
+  };
 
-  return result;
+  if (hasTeams && entry.homeScore != null) match.homeScore = entry.homeScore;
+  if (hasTeams && entry.awayScore != null) match.awayScore = entry.awayScore;
+  if (hasTeams && entry.homePenalties != null) match.homePenalties = entry.homePenalties;
+  if (hasTeams && entry.awayPenalties != null) match.awayPenalties = entry.awayPenalties;
+
+  return match;
 }
 
 function buildRounds(
