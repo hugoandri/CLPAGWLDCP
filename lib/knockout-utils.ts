@@ -125,27 +125,69 @@ function buildFromFIFA(
     return applyFIFAResult(m, fifaResults);
   });
 
-  // Build R16: start from consecutive winners, then overlay FIFA data
-  const r16Computed = buildNextRound(r32Matches, "octavos", "Octavos de final", "r16")
-    .map((m) => applyFIFAResult(m, fifaResults));
-
-  const fifaR16 = fifaRounds.octavos || [];
-  const r16Matches = r16Computed.map((computed, i) => {
-    const fEntry = fifaR16[i];
-    if (!fEntry) return computed;
-    const hasTeams = !!(fEntry.homeSlug && fEntry.awaySlug &&
-      fEntry.homeSlug !== "?" && fEntry.awaySlug !== "?");
-    if (!hasTeams) return computed;
-    // Use FIFA-defined pairing
-    const m = fifaEntryToMatch(fEntry, `r16-${i + 1}`, "octavos", "Octavos de final");
-    return applyFIFAResult(m, fifaResults);
+  // Build R16 using the REAL bracket pairing from Wikipedia:
+  // 89:W74-W78  90:W73-W75  91:W76-W77  92:W79-W80
+  // 93:W81-W82  94:W83-W84  95:W86-W88  96:W85-W87
+  const R16_PAIRS = [[1,5],[0,2],[3,4],[6,7],[8,9],[10,11],[13,15],[12,14]];
+  const r16Matches = R16_PAIRS.map(([a, b], i) => {
+    const w1 = winner(r32Matches[a]);
+    const w2 = winner(r32Matches[b]);
+    const homeLabel = w1.slug ? resolveLabel(w1.slug, w1.label) : w1.label;
+    const awayLabel = w2.slug ? resolveLabel(w2.slug, w2.label) : w2.label;
+    const match: KnockoutMatch = {
+      slug: `r16-${i + 1}`,
+      round: "octavos",
+      roundLabel: "Octavos de final",
+      homeSlug: w1.slug,
+      awaySlug: w2.slug,
+      homeLabel,
+      awayLabel,
+      status: w1.slug && w2.slug ? "upcoming" : "placeholder",
+    };
+    return applyFIFAResult(match, fifaResults);
   });
 
-  // Subsequent rounds: use consecutive winners
-  const qfMatches = buildNextRound(r16Matches, "cuartos", "Cuartos de final", "qf")
-    .map((m) => applyFIFAResult(m, fifaResults));
+  // QF: Wikipedia pairs: 97(89v90),98(93v94),99(91v92),100(95v96)
+  const QF_PAIRS = [[0,1],[4,5],[2,3],[6,7]];
+  const qfMatches = QF_PAIRS.map(([a, b], i) => {
+    const w1 = winner(r16Matches[a]);
+    const w2 = winner(r16Matches[b]);
+    const match: KnockoutMatch = {
+      slug: `qf-${i + 1}`,
+      round: "cuartos",
+      roundLabel: "Cuartos de final",
+      homeSlug: w1.slug,
+      awaySlug: w2.slug,
+      homeLabel: w1.slug ? resolveLabel(w1.slug, w1.label) : w1.label,
+      awayLabel: w2.slug ? resolveLabel(w2.slug, w2.label) : w2.label,
+      status: w1.slug && w2.slug ? "upcoming" : "placeholder",
+    };
+    return applyFIFAResult(match, fifaResults);
+  });
+
+  // SF: consecutive QF pairs [0,1],[2,3]
   const sfMatches = buildNextRound(qfMatches, "semifinales", "Semifinales", "sf")
     .map((m) => applyFIFAResult(m, fifaResults));
+
+  // Overlay FIFA scores on R16 matches where available
+  const fifaR16 = fifaRounds.octavos || [];
+  r16Matches.forEach((m, i) => {
+    const fEntry = fifaR16[i];
+    if (!fEntry) return;
+    const hasTeams = !!(fEntry.homeSlug && fEntry.awaySlug &&
+      fEntry.homeSlug !== "?" && fEntry.awaySlug !== "?");
+    if (!hasTeams) return;
+    const fm = applyFIFAResult(
+      fifaEntryToMatch(fEntry, `r16-${i + 1}`, "octavos", "Octavos de final"),
+      fifaResults
+    );
+    if (fm.homeScore !== undefined) m.homeScore = fm.homeScore;
+    if (fm.awayScore !== undefined) m.awayScore = fm.awayScore;
+    if (fm.homePenalties !== undefined) m.homePenalties = fm.homePenalties;
+    if (fm.awayPenalties !== undefined) m.awayPenalties = fm.awayPenalties;
+    if (fm.status !== "placeholder") m.status = fm.status;
+    if (fm.date) m.date = fm.date;
+  });
 
   return buildRounds(r32Matches, r16Matches, qfMatches, sfMatches, fifaResults);
 }
